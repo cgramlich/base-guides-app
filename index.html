@@ -233,7 +233,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.11.1";
+    const APP_VERSION = "0.11.2";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -548,16 +548,16 @@
       const [items, setItems] = useState(null);
       const [state, setState] = useState("loading");
       useEffect(() => {
-        if (!data || data.lat == null) { setState("err"); return; }
+        if (!data || !data.state) { setState("err"); return; }
         let live = true;
-        fetch(apiUrl("/api/schools?lat=" + data.lat + "&lng=" + data.lng + "&st=" + (data.state || ""))).then(async (res) => {
+        fetch(apiUrl("/api/schools?st=" + data.state + "&q=" + encodeURIComponent(data.city || ""))).then(async (res) => {
           if (!live) return;
           if (res.status === 503) { setState("nokey"); return; }
           if (!res.ok) { setState("err"); return; }
           const d = await res.json(); setItems(d.schools || []); setState("ok");
         }).catch(() => { if (live) setState("err"); });
         return () => { live = false; };
-      }, [data && data.lat]);
+      }, [data && data.state, data && data.city]);
       if (state === "nokey") return <div className="live-note">Live school ratings appear here once the schools API key is connected.</div>;
       if (state === "loading") return <div className="center" style={{ padding: 14 }}><div className="spin" /></div>;
       if (state === "err" || !items) return <div className="pending">School data unavailable right now.</div>;
