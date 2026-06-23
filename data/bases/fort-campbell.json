@@ -98,14 +98,27 @@
         "year": 2026,
         "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/",
         "rates": {
+          "E-1": { "w": 1743, "wo": 1470 },
+          "E-2": { "w": 1743, "wo": 1470 },
+          "E-3": { "w": 1743, "wo": 1470 },
           "E-4": { "w": 1743, "wo": 1470 },
           "E-5": { "w": 1815, "wo": 1593 },
           "E-6": { "w": 2100, "wo": 1671 },
           "E-7": { "w": 2244, "wo": 1743 },
+          "E-8": { "w": 2400, "wo": 1878 },
+          "E-9": { "w": 2580, "wo": 1956 },
+          "W-1": { "w": 2121, "wo": 1731 },
+          "W-2": { "w": 2307, "wo": 1875 },
+          "W-3": { "w": 2499, "wo": 1968 },
+          "W-4": { "w": 2610, "wo": 2130 },
+          "W-5": { "w": 2751, "wo": 2277 },
           "O-1": { "w": 1857, "wo": 1668 },
           "O-2": { "w": 2097, "wo": 1794 },
           "O-3": { "w": 2496, "wo": 1995 },
-          "O-4": { "w": 2793, "wo": 2250 }
+          "O-4": { "w": 2793, "wo": 2250 },
+          "O-5": { "w": 3006, "wo": 2334 },
+          "O-6": { "w": 3030, "wo": 2478 },
+          "O-7+": { "w": 3048, "wo": 2520 }
         }
       },
       "source": { "label": "DoD BAH Rate Lookup (MHA KY106, CY2026)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
