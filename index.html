@@ -172,6 +172,14 @@
     .wx-src{margin-left:auto; font-size:10.5px; letter-spacing:0.05em; color:var(--text-faint);}
     .wx-alert{margin:12px 0 0; padding:10px 12px; border-radius:10px; background:rgba(217,96,78,0.14); border:1px solid rgba(217,96,78,0.45); color:#eab0a6; font-size:13px;}
     .wx-alert-h{margin-top:3px; color:#e0b9b1; font-size:12.5px;}
+    .bah-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px;}
+    .bah-sel{flex:0 0 88px; width:88px;}
+    .seg{display:flex; border:1px solid var(--line); border-radius:9px; overflow:hidden; flex:1; min-width:200px;}
+    .seg button{flex:1; padding:9px 6px; font-size:12.5px; color:var(--text-dim); background:var(--bg-2);}
+    .seg button.on{background:var(--accent); color:#10131b; font-weight:600;}
+    .bah-out{display:flex; align-items:baseline; gap:8px; margin:6px 0 8px;}
+    .bah-amt{font-family:'Fraunces',serif; font-size:34px; color:var(--text); line-height:1;}
+    .bah-mo{color:var(--text-faint); font-size:13px;}
 
     .nav{
       position:fixed; bottom:0; left:50%; transform:translateX(-50%);
@@ -213,7 +221,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.7.0";
+    const APP_VERSION = "0.8.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -268,6 +276,7 @@
         case "bookmark": return <svg {...p}><path d="M6 3h12v18l-6-4-6 4z" /></svg>;
         case "bookmarkOn": return <svg {...p}><path d="M6 3h12v18l-6-4-6 4z" fill="currentColor" /></svg>;
         case "download": return <svg {...p}><path d="M12 3v12" /><path d="m7 11 5 5 5-5" /><path d="M5 20h14" /></svg>;
+        case "dollar": return <svg {...p}><path d="M12 2.5v19" /><path d="M16.5 6.6C16.5 4.9 14.5 3.8 12 3.8S7.5 4.9 7.5 6.9 9.5 9.4 12 10s4.5 1.5 4.5 3.5-2 3-4.5 3-4.5-1-4.5-2.7" /></svg>;
         default: return null;
       }
     }
@@ -281,7 +290,7 @@
       for (const k of Object.keys(BRANCH_COLORS)) if (s.indexOf(k) !== -1) return BRANCH_COLORS[k];
       return "var(--accent-dim)";
     }
-    const SECTION_ICONS = { quick_facts: "info", mission: "flag", two_state_decision: "compass", gates: "shield", housing: "home", schools: "cap", healthcare: "health", shopping: "cart", nearby: "map" };
+    const SECTION_ICONS = { quick_facts: "info", mission: "flag", two_state_decision: "compass", gates: "shield", housing: "home", bah: "dollar", schools: "cap", healthcare: "health", shopping: "cart", nearby: "map" };
     function sectionIcon(id) { return SECTION_ICONS[id] || "info"; }
 
     /* ---------------- PWA self-update (ported from MenuCaptain) ---------------- */
@@ -455,6 +464,33 @@
       );
     }
 
+    // BAH calculator - verified DoD rates stored in the guide; official calculator linked.
+    function BAHCalc({ data }) {
+      const grades = Object.keys(data.rates || {});
+      const [grade, setGrade] = useState(grades[0] || "");
+      const [deps, setDeps] = useState(true);
+      const r = data.rates && data.rates[grade] ? data.rates[grade][deps ? "w" : "wo"] : null;
+      return (
+        <div>
+          <div className="bah-row">
+            <select className="fld bah-sel" value={grade} onChange={(e) => setGrade(e.target.value)}>
+              {grades.map((g) => <option key={g} value={g}>{g}</option>)}
+            </select>
+            <div className="seg">
+              <button className={deps ? "on" : ""} onClick={() => setDeps(true)}>With dependents</button>
+              <button className={!deps ? "on" : ""} onClick={() => setDeps(false)}>Without</button>
+            </div>
+          </div>
+          <div className="bah-out">
+            <span className="bah-amt">{r != null ? "$" + r.toLocaleString() : "-"}</span>
+            <span className="bah-mo">/ month, tax-free</span>
+          </div>
+          <div className="muted tiny">{grade}{deps ? ", with dependents" : ", without dependents"} &middot; MHA {data.mha} &middot; CY{data.year}</div>
+          <a className="btn-quiet" style={{ marginTop: 12, display: "inline-flex" }} href={data.calc_url} target="_blank" rel="noopener noreferrer">Other ranks or verify - official DoD calculator</a>
+        </div>
+      );
+    }
+
     function SectionBody({ s, coords }) {
       switch (s.type) {
         case "facts": return <Facts data={s.data} />;
@@ -462,6 +498,7 @@
         case "killer": return <Killer data={s.data} />;
         case "list": return <ItemList data={s.data} />;
         case "places_live": return <LivePlaces coords={coords} note={s.note} />;
+        case "bah": return <BAHCalc data={s.data} />;
         case "places_pending":
           return <div className="live-note">{s.note || "Live nearby recommendations (Google Places) appear here in the app."}</div>;
         case "pending":

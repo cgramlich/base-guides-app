@@ -90,6 +90,28 @@
       "verified": "2026-06-23"
     },
     {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "KY106",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/",
+        "rates": {
+          "E-4": { "w": 1743, "wo": 1470 },
+          "E-5": { "w": 1815, "wo": 1593 },
+          "E-6": { "w": 2100, "wo": 1671 },
+          "E-7": { "w": 2244, "wo": 1743 },
+          "O-1": { "w": 1857, "wo": 1668 },
+          "O-2": { "w": 2097, "wo": 1794 },
+          "O-3": { "w": 2496, "wo": 1995 },
+          "O-4": { "w": 2793, "wo": 2250 }
+        }
+      },
+      "source": { "label": "DoD BAH Rate Lookup (MHA KY106, CY2026)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-23"
+    },
+    {
       "id": "schools",
       "title": "Schools",
       "type": "prose",
