@@ -166,6 +166,12 @@
     .bridge{background:linear-gradient(160deg,rgba(231,178,76,0.13),var(--surface)); border:1px solid rgba(231,178,76,0.4); border-radius:14px; padding:15px; margin-bottom:14px;}
     .bridge-h{font-family:'Fraunces',serif; font-size:17px; margin-bottom:7px;}
     .bridge p{font-family:'Crimson Pro',Georgia,serif; color:var(--text-dim); font-size:15px; margin:0; line-height:1.55;}
+    .wx{display:flex; align-items:center; gap:9px; margin:12px 0 2px;}
+    .wx-temp{font-family:'Fraunces',serif; font-size:19px; color:var(--text);}
+    .wx-cond{font-size:13.5px; color:var(--text-dim);}
+    .wx-src{margin-left:auto; font-size:10.5px; letter-spacing:0.05em; color:var(--text-faint);}
+    .wx-alert{margin:12px 0 0; padding:10px 12px; border-radius:10px; background:rgba(217,96,78,0.14); border:1px solid rgba(217,96,78,0.45); color:#eab0a6; font-size:13px;}
+    .wx-alert-h{margin-top:3px; color:#e0b9b1; font-size:12.5px;}
 
     .nav{
       position:fixed; bottom:0; left:50%; transform:translateX(-50%);
@@ -207,7 +213,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.6.0";
+    const APP_VERSION = "0.7.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -371,39 +377,80 @@
     function LivePlaces({ coords, note }) {
       const [items, setItems] = useState(null);
       const [err, setErr] = useState(null);
+      const [device, setDevice] = useState(null);
+      const [geoBusy, setGeoBusy] = useState(false);
+      const active = device || coords;
+      const alat = active && active.lat, alng = active && active.lng;
       useEffect(() => {
-        if (!coords || coords.lat == null) { setErr("no-coords"); return; }
-        let live = true;
-        const u = apiUrl("/api/places/nearby?lat=" + coords.lat + "&lng=" + coords.lng + "&type=restaurant&radius=5000");
+        if (alat == null) { setErr("no-coords"); return; }
+        let live = true; setItems(null); setErr(null);
+        const u = apiUrl("/api/places/nearby?lat=" + alat + "&lng=" + alng + "&type=restaurant&radius=5000");
         fetchJSON(u)
           .then((d) => { if (live) setItems(d.results || []); })
           .catch((e) => { if (live) setErr(e.message); });
         return () => { live = false; };
-      }, [coords]);
-
+      }, [alat, alng]);
+      const useMyLocation = () => {
+        if (!navigator.geolocation) return;
+        setGeoBusy(true);
+        navigator.geolocation.getCurrentPosition(
+          (pos) => { setGeoBusy(false); setDevice({ lat: pos.coords.latitude, lng: pos.coords.longitude }); },
+          () => { setGeoBusy(false); },
+          { timeout: 10000, maximumAge: 300000 }
+        );
+      };
       if (err) return (
         <div className="live-note">
           {note || "Live nearby places appear here."}
           <br /><span className="faint tiny">(Can't reach the backend - start it to load live results.)</span>
         </div>
       );
-      if (!items) return <div className="center" style={{ padding: "18px" }}><div className="spin" /></div>;
-      if (!items.length) return <div className="pending">No places found nearby.</div>;
       return (
         <div>
-          <div className="faint tiny" style={{ marginBottom: 8 }}>Live from Google Places - near the base.</div>
-          <ul className="lst">
-            {items.slice(0, 10).map((p, i) => (
-              <li key={i}>
-                <div className="t">{p.name} {p.price_level ? <span className="faint">{PRICE[p.price_level] || ""}</span> : null}</div>
-                <div className="d">
-                  {p.rating ? ("* " + p.rating + " (" + (p.user_ratings_total || 0) + ")") : "no rating"}
-                  {p.open_now === true ? " - open now" : (p.open_now === false ? " - closed" : "")}
-                  {p.vicinity ? " - " + p.vicinity : ""}
-                </div>
-              </li>
-            ))}
-          </ul>
+          <div className="between" style={{ marginBottom: 8 }}>
+            <span className="faint tiny">{device ? "Live - near you" : "Live from Google Places - near the base"}</span>
+            <button className="btn-quiet" onClick={useMyLocation} disabled={geoBusy}>{geoBusy ? "Locating..." : (device ? "Update location" : "Use my location")}</button>
+          </div>
+          {!items ? <div className="center" style={{ padding: "18px" }}><div className="spin" /></div> : (
+            !items.length ? <div className="pending">No places found nearby.</div> : (
+              <ul className="lst">
+                {items.slice(0, 10).map((p, i) => (
+                  <li key={i}>
+                    <div className="t">{p.name} {p.price_level ? <span className="faint">{PRICE[p.price_level] || ""}</span> : null}</div>
+                    <div className="d">
+                      {p.rating ? ("* " + p.rating + " (" + (p.user_ratings_total || 0) + ")") : "no rating"}
+                      {p.open_now === true ? " - open now" : (p.open_now === false ? " - closed" : "")}
+                      {p.vicinity ? " - " + p.vicinity : ""}
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            )
+          )}
+        </div>
+      );
+    }
+
+    // Live weather + active alerts (National Weather Service, via the backend).
+    function LiveWeather({ coords }) {
+      const [w, setW] = useState(null);
+      useEffect(() => {
+        if (!coords || coords.lat == null) return;
+        let live = true;
+        fetchJSON(apiUrl("/api/weather?lat=" + coords.lat + "&lng=" + coords.lng))
+          .then((d) => { if (live) setW(d); })
+          .catch(() => { if (live) setW(null); });
+        return () => { live = false; };
+      }, [coords]);
+      if (!w) return null;
+      const c = w.current; const alerts = w.alerts || [];
+      if (!c && !alerts.length) return null;
+      return (
+        <div>
+          {alerts.map((a, i) => (
+            <div key={i} className="wx-alert"><strong>Weather alert: {a.event}</strong>{a.headline ? <div className="wx-alert-h">{a.headline}</div> : null}</div>
+          ))}
+          {c ? <div className="wx"><span className="wx-temp">{c.temp}°{c.unit}</span><span className="wx-cond">{c.short}</span><span className="wx-src">NWS</span></div> : null}
         </div>
       );
     }
@@ -586,6 +633,7 @@
             {data.tagline ? <div className="tag">{data.tagline}</div> : null}
             <div className="basehero-meta">{[data.branch, (data.states || []).join(" / ")].filter(Boolean).join("  ·  ")}</div>
           </div>
+          <LiveWeather coords={data.coords} />
           <AskBox slug={slug} />
           <div style={{ marginTop: 12 }}>
             {(data.sections || []).map((s) => (
