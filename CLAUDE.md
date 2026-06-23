@@ -53,6 +53,15 @@ adding bases/sections needs NO code change. Section `type`s so far: `facts`, `pr
   confirm it transforms cleanly BEFORE delivering, then content-grep each change.
 - For automated edits, assert each anchor string appears EXACTLY ONCE before replacing.
 
+## Rebranding / swapping artwork (BUILD PRINCIPLE - applies to all Forever Apps)
+Brand assets are a **drop-in swap**, never hardcoded, so any app re-skins fast:
+- **Names/text:** `APP_NAME`, `BRAND` in the config block (top of the babel script).
+- **Image assets:** routed through the `ASSETS` object (e.g. `ASSETS.logoMark`) - repoint or replace in place; don't inline image paths in components.
+- **Icon set (fixed filenames at repo root):** replace these same-named files - `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, `apple-touch-icon.png`, `favicon-32.png`, `logo-mark.png` (in-app coin, transparent bg).
+- **Colors:** CSS `:root` palette (`--bg`, `--accent`, ...) + `BRANCH_COLORS`.
+- **Icon generation:** logo -> icon set via Pillow (navy square + white "coin" treatment for a light-background logo). Keep the generation approach repeatable for the next app.
+RULE: route every brand string/color/asset path through config + standard filenames - never inline.
+
 ## Reference docs (read for full context; keep in sync)
 - Scope + architecture:
   `C:\Users\cjgra\Dropbox\My AI\CG Apps\Base Guides\Base Guides Architecture & Design\base-guides-scope-and-architecture.md`
