@@ -31,6 +31,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.6/babel.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 
   <style>
     :root{
@@ -180,6 +182,8 @@
     .bah-out{display:flex; align-items:baseline; gap:8px; margin:6px 0 8px;}
     .bah-amt{font-family:'Fraunces',serif; font-size:34px; color:var(--text); line-height:1;}
     .bah-mo{color:var(--text-faint); font-size:13px;}
+    .leaflet-wrap{height:58vh; border-radius:13px; overflow:hidden; border:1px solid var(--line-soft);}
+    .leaflet-wrap .leaflet-popup-content{font-family:'DM Sans',sans-serif; font-size:13px;}
 
     .nav{
       position:fixed; bottom:0; left:50%; transform:translateX(-50%);
@@ -210,7 +214,7 @@
   </script>
 
   <script type="text/babel" data-presets="react">
-    const { useState, useEffect, useCallback } = React;
+    const { useState, useEffect, useCallback, useRef } = React;
 
     /* ---------------- CONFIG (single source of brand/version) ----------------
        Renaming the app is a one-line change here. Bundle ID lives in the native
@@ -221,7 +225,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.8.0";
+    const APP_VERSION = "0.9.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -811,6 +815,74 @@
       );
     }
 
+    // Map (Leaflet + free OpenStreetMap tiles): base + live nearby places + drive time.
+    function MapScreen({ slug, bases, onOpen }) {
+      const elRef = useRef(null);
+      const [data, setData] = useState(null);
+      const [places, setPlaces] = useState([]);
+      const [drive, setDrive] = useState(null);
+      const [geoBusy, setGeoBusy] = useState(false);
+
+      useEffect(() => {
+        setData(null); setPlaces([]); setDrive(null);
+        if (!slug) return;
+        let live = true;
+        fetchJSON(baseUrl(slug)).then((d) => { if (live) setData(d); }).catch(() => {});
+        return () => { live = false; };
+      }, [slug]);
+
+      useEffect(() => {
+        const c = data && data.coords; if (!c) return;
+        let live = true;
+        fetchJSON(apiUrl("/api/places/nearby?lat=" + c.lat + "&lng=" + c.lng + "&type=restaurant&radius=5000"))
+          .then((d) => { if (live) setPlaces(d.results || []); }).catch(() => {});
+        return () => { live = false; };
+      }, [data]);
+
+      useEffect(() => {
+        const c = data && data.coords;
+        if (!c || !elRef.current || !window.L) return;
+        const map = L.map(elRef.current, { scrollWheelZoom: false }).setView([c.lat, c.lng], 12);
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "(c) OpenStreetMap", maxZoom: 19 }).addTo(map);
+        L.circleMarker([c.lat, c.lng], { radius: 9, color: "#e7b24c", fillColor: "#e7b24c", fillOpacity: 0.9, weight: 2 }).addTo(map).bindPopup("<b>" + (data.name || "") + "</b>");
+        places.forEach((p) => { if (p.location) L.circleMarker([p.location.latitude, p.location.longitude], { radius: 5, color: "#8aa0bf", fillColor: "#8aa0bf", fillOpacity: 0.85, weight: 1 }).addTo(map).bindPopup((p.name || "") + (p.rating ? " - " + p.rating : "")); });
+        setTimeout(() => map.invalidateSize(), 120);
+        return () => map.remove();
+      }, [data, places]);
+
+      const driveFromMe = () => {
+        const c = data && data.coords; if (!c || !navigator.geolocation) return;
+        setGeoBusy(true);
+        navigator.geolocation.getCurrentPosition((pos) => {
+          fetchJSON(apiUrl("/api/directions?from_lat=" + pos.coords.latitude + "&from_lng=" + pos.coords.longitude + "&to_lat=" + c.lat + "&to_lng=" + c.lng))
+            .then((d) => { setGeoBusy(false); setDrive(d); })
+            .catch(() => { setGeoBusy(false); setDrive({ error: true }); });
+        }, () => setGeoBusy(false), { timeout: 10000 });
+      };
+
+      if (!slug) {
+        const ready = (bases || []).filter((b) => b.ready);
+        return (
+          <div className="content"><h2 className="screen-h">Map</h2>
+            <div className="center">Open a base to see its map and nearby places.
+              {ready.length ? <div style={{ marginTop: 14, display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>{ready.map((b) => <button key={b.slug} className="btn-gold" onClick={() => onOpen(b.slug)}>{b.name}</button>)}</div> : null}
+            </div>
+          </div>
+        );
+      }
+      return (
+        <div className="content">
+          <h2 className="screen-h">{data ? data.name : "Map"}</h2>
+          <div ref={elRef} className="leaflet-wrap" />
+          <div className="between" style={{ marginTop: 10 }}>
+            <span className="faint tiny">{places.length ? places.length + " places nearby" : "Loading map..."}</span>
+            <button className="btn-quiet" onClick={driveFromMe} disabled={geoBusy}>{geoBusy ? "Locating..." : "Drive time from me"}</button>
+          </div>
+          {drive ? (drive.error ? <div className="muted tiny" style={{ marginTop: 6 }}>Couldn't get drive time.</div> : <div className="muted small" style={{ marginTop: 6 }}>About {drive.duration_min} min ({drive.distance_mi} mi) from your location to {data.name}.</div>) : null}
+        </div>
+      );
+    }
+
     /* ---------------- App shell ---------------- */
     function App() {
       const [tab, setTab] = useState("home");
@@ -838,6 +910,7 @@
       else if (tab === "guide") body = slug
         ? <BaseDetail slug={slug} onBack={back} saved={saved} onToggleSave={toggleSave} />
         : <Stub label="Guide" note="Pick a base from Home to open its guide." />;
+      else if (tab === "map") body = <MapScreen slug={slug} bases={bases} onOpen={open} />;
       else if (tab === "plan") body = <PlanScreen bases={bases} onOpen={open} />;
       else body = <SavedScreen bases={bases} saved={saved} onToggleSave={toggleSave} onOpen={open} />;
 
@@ -858,6 +931,7 @@
           <div className="nav">
             <NavBtn id="home" icon="home" label="HOME" />
             <NavBtn id="guide" icon="guide" label="GUIDE" />
+            <NavBtn id="map" icon="map" label="MAP" />
             <NavBtn id="plan" icon="calendar" label="PLAN" />
             <NavBtn id="saved" icon="bookmark" label="SAVED" />
           </div>
