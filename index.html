@@ -5,6 +5,7 @@
   Architecture: the app ships with NO base content. Each base's guide is fetched
   ON DEMAND (data/bases/<slug>.json now; backend API later) and cached by the
   service worker. One app, all bases, light forever. (Anti-Touch-Stay design.)
+  Live layer (AI Q&A + nearby places) is served by the backend via API_BASE.
   Notes: all console/log output is plain ASCII (no emoji) by design.
 -->
 <html lang="en">
@@ -81,9 +82,18 @@
     .pill.ready{background:rgba(127,170,107,0.14); border-color:rgba(127,170,107,0.4); color:#a9c98f;}
     .pill.soon{background:rgba(231,178,76,0.12); border-color:rgba(231,178,76,0.35); color:#e0c486;}
 
-    .back{font-size:14px; color:var(--accent); font-weight:500; display:inline-flex; gap:6px; align-items:center; margin-bottom:6px;}
+    .back{font-size:14px; color:var(--accent); font-weight:500; display:inline-flex; gap:6px; align-items:center; margin-bottom:6px; cursor:pointer;}
     .hero{margin:2px 0 4px;}
     .hero .tag{color:var(--text-dim); font-size:14px; margin-top:6px;}
+
+    /* ---- ask box ---- */
+    .ask{ background:var(--surface); border:1px solid var(--line-soft); border-radius:13px; padding:13px; margin-top:12px; }
+    .ask-title{ font-family:'Fraunces',serif; font-size:16px; margin-bottom:9px; }
+    .ask-row{ display:flex; gap:8px; }
+    .ask-row input{ flex:1; min-width:0; background:var(--bg-2); border:1px solid var(--line); border-radius:9px; color:var(--text); padding:9px 11px; }
+    .ask-row button{ flex:0 0 auto; background:var(--accent); color:#10131b; font-weight:600; border-radius:9px; padding:9px 16px; }
+    .ask-row button:disabled{ opacity:0.6; }
+    .ask-ans{ margin-top:10px; font-size:14px; color:var(--text); white-space:pre-wrap; line-height:1.55; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:9px; padding:11px; }
 
     .acc{border:1px solid var(--line-soft); border-radius:13px; margin-bottom:11px; overflow:hidden; background:var(--surface);}
     .acc-head{display:flex; align-items:center; gap:10px; padding:14px 15px; cursor:pointer;}
@@ -106,6 +116,7 @@
     .lst li{padding:9px 0; border-top:1px solid var(--line-soft);}
     .lst li:first-child{border-top:none;}
     .lst .t{color:var(--text); font-weight:500; font-size:14px;}
+    .lst .t .faint{font-weight:400;}
     .lst .d{color:var(--text-dim); font-size:13px; margin-top:2px;}
 
     .pending{font-size:13.5px; color:var(--text-faint); font-style:italic;}
@@ -130,7 +141,6 @@
   <div id="root"></div>
 
   <script>
-    // Service worker registration (offline shell + per-base data cache).
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", function () {
         navigator.serviceWorker.register("sw.js").catch(function (e) {
@@ -148,24 +158,35 @@
        config and is independent of this display name. */
     const APP_NAME = "Base Guides";
     const BRAND = "MilSpo Living";
-    const APP_VERSION = "0.1.0";
-    // Empty until the backend is wired. Empty => read static data/ files.
+    const APP_VERSION = "0.2.0";
+    // Content source. Empty => read static data/ files (resilient, works offline).
     const API_BASE_DEFAULT = "";
     const DATA_BASE = API_BASE_DEFAULT
       ? API_BASE_DEFAULT.replace(/\/$/, "") + "/api/bases"
       : "data/bases";
+    // Backend for the LIVE layer (AI Q&A + nearby places). Only the live features
+    // need this; core content stays on local/cached JSON. Point at Railway in prod.
+    const API_BASE = "http://localhost:8000";
 
     function indexUrl() { return DATA_BASE + "/index.json"; }
     function baseUrl(slug) { return DATA_BASE + "/" + slug + ".json"; }
+    function apiUrl(path) { return API_BASE.replace(/\/$/, "") + path; }
 
     async function fetchJSON(url) {
       const r = await fetch(url, { cache: "no-cache" });
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
     }
+    async function postJSON(url, body) {
+      const r = await fetch(url, {
+        method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    }
 
-    /* ---------------- PWA self-update (ported from MenuCaptain) ----------------
-       Refetch this document, regex out APP_VERSION, compare, offer a refresh. */
+    /* ---------------- PWA self-update (ported from MenuCaptain) ---------------- */
     function useUpdateCheck() {
       const [newer, setNewer] = useState(null);
       useEffect(() => {
@@ -181,7 +202,6 @@
       }, []);
       return newer;
     }
-
     function UpdateBanner() {
       const newer = useUpdateCheck();
       if (!newer) return null;
@@ -199,8 +219,7 @@
       );
     }
 
-    /* ---------------- Section renderer (schema-driven, generic) ----------------
-       Adding sections/bases needs NO code change - the base JSON drives it. */
+    /* ---------------- Section renderer (schema-driven, generic) ---------------- */
     function Facts({ data }) {
       return (
         <dl className="facts">
@@ -251,27 +270,106 @@
         </ul>
       );
     }
-    function SectionBody({ s }) {
+
+    // Live nearby places (Google Places via the backend). Uses the base's coords.
+    const PRICE = {
+      PRICE_LEVEL_INEXPENSIVE: "$", PRICE_LEVEL_MODERATE: "$$",
+      PRICE_LEVEL_EXPENSIVE: "$$$", PRICE_LEVEL_VERY_EXPENSIVE: "$$$$",
+    };
+    function LivePlaces({ coords, note }) {
+      const [items, setItems] = useState(null);
+      const [err, setErr] = useState(null);
+      useEffect(() => {
+        if (!coords || coords.lat == null) { setErr("no-coords"); return; }
+        let live = true;
+        const u = apiUrl("/api/places/nearby?lat=" + coords.lat + "&lng=" + coords.lng + "&type=restaurant&radius=5000");
+        fetchJSON(u)
+          .then((d) => { if (live) setItems(d.results || []); })
+          .catch((e) => { if (live) setErr(e.message); });
+        return () => { live = false; };
+      }, [coords]);
+
+      if (err) return (
+        <div className="live-note">
+          {note || "Live nearby places appear here."}
+          <br /><span className="faint tiny">(Can't reach the backend - start it to load live results.)</span>
+        </div>
+      );
+      if (!items) return <div className="center" style={{ padding: "18px" }}><div className="spin" /></div>;
+      if (!items.length) return <div className="pending">No places found nearby.</div>;
+      return (
+        <div>
+          <div className="faint tiny" style={{ marginBottom: 8 }}>Live from Google Places - near the base.</div>
+          <ul className="lst">
+            {items.slice(0, 10).map((p, i) => (
+              <li key={i}>
+                <div className="t">{p.name} {p.price_level ? <span className="faint">{PRICE[p.price_level] || ""}</span> : null}</div>
+                <div className="d">
+                  {p.rating ? ("* " + p.rating + " (" + (p.user_ratings_total || 0) + ")") : "no rating"}
+                  {p.open_now === true ? " - open now" : (p.open_now === false ? " - closed" : "")}
+                  {p.vicinity ? " - " + p.vicinity : ""}
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      );
+    }
+
+    function SectionBody({ s, coords }) {
       switch (s.type) {
         case "facts": return <Facts data={s.data} />;
         case "prose": return <Prose data={s.data} />;
         case "killer": return <Killer data={s.data} />;
         case "list": return <ItemList data={s.data} />;
+        case "places_live": return <LivePlaces coords={coords} note={s.note} />;
         case "places_pending":
-          return <div className="live-note">{s.note || "In the app, this section shows live nearby recommendations via Google Places."}</div>;
+          return <div className="live-note">{s.note || "Live nearby recommendations (Google Places) appear here in the app."}</div>;
         case "pending":
         default:
           return <div className="pending">{s.note || "Content pending verification."}</div>;
       }
     }
-    function Accordion({ s, open, onToggle }) {
+    function Accordion({ s, open, onToggle, coords }) {
       return (
         <div className={"acc" + (open ? " open" : "")}>
           <div className="acc-head" onClick={onToggle}>
             <h3>{s.title}</h3>
             <span className="acc-chev">v</span>
           </div>
-          {open ? <div className="acc-body"><SectionBody s={s} /></div> : null}
+          {open ? <div className="acc-body"><SectionBody s={s} coords={coords} /></div> : null}
+        </div>
+      );
+    }
+
+    // "Ask about this base" - grounded AI Q&A via the backend.
+    function AskBox({ slug }) {
+      const [q, setQ] = useState("");
+      const [a, setA] = useState(null);
+      const [loading, setLoading] = useState(false);
+      const [err, setErr] = useState(false);
+      const ask = async () => {
+        const question = q.trim();
+        if (!question) return;
+        setLoading(true); setA(null); setErr(false);
+        try {
+          const d = await postJSON(apiUrl("/api/ai/relay"), { slug, question });
+          setA(d.answer || "(no answer)");
+        } catch (e) { setErr(true); }
+        setLoading(false);
+      };
+      return (
+        <div className="ask">
+          <div className="ask-title">Ask about this base</div>
+          <div className="ask-row">
+            <input value={q} onChange={(e) => setQ(e.target.value)}
+              placeholder="e.g. Which side has better schools?"
+              onKeyDown={(e) => { if (e.key === "Enter") ask(); }} />
+            <button onClick={ask} disabled={loading}>{loading ? "..." : "Ask"}</button>
+          </div>
+          {err ? <div className="ask-ans faint">Couldn't reach the assistant. Start the backend and try again.</div> : null}
+          {a ? <div className="ask-ans">{a}</div> : null}
+          <div className="faint tiny" style={{ marginTop: 6 }}>Answers come only from this guide's verified content.</div>
         </div>
       );
     }
@@ -302,26 +400,28 @@
       useEffect(() => {
         let live = true;
         setData(null); setErr(null);
-        // Per-base fetch ON DEMAND - this is the architecture in action.
-        fetchJSON(baseUrl(slug))
+        fetchJSON(baseUrl(slug)) // per-base fetch ON DEMAND - the architecture in action
           .then((d) => { if (live) { setData(d); setOpenId(d.sections && d.sections[0] ? d.sections[0].id : null); } })
           .catch((e) => { if (live) setErr(e.message); });
         return () => { live = false; };
       }, [slug]);
 
-      if (err) return <div className="content"><a className="back" onClick={onBack}>&lt; All bases</a><div className="center">Could not load this guide.<br />{err}</div></div>;
-      if (!data) return <div className="content"><a className="back" onClick={onBack}>&lt; All bases</a><div className="center"><div className="spin" /></div></div>;
+      if (err) return <div className="content"><span className="back" onClick={onBack}>&lt; All bases</span><div className="center">Could not load this guide.<br />{err}</div></div>;
+      if (!data) return <div className="content"><span className="back" onClick={onBack}>&lt; All bases</span><div className="center"><div className="spin" /></div></div>;
 
       return (
         <div className="content">
-          <a className="back" onClick={onBack}>&lt; All bases</a>
+          <span className="back" onClick={onBack}>&lt; All bases</span>
           <div className="hero">
             <h1 style={{ fontSize: 24 }}>{data.name}</h1>
             {data.tagline ? <div className="tag">{data.tagline}</div> : null}
           </div>
+          <AskBox slug={slug} />
           <div style={{ marginTop: 12 }}>
             {(data.sections || []).map((s) => (
-              <Accordion key={s.id} s={s} open={openId === s.id} onToggle={() => setOpenId(openId === s.id ? null : s.id)} />
+              <Accordion key={s.id} s={s} coords={data.coords}
+                open={openId === s.id}
+                onToggle={() => setOpenId(openId === s.id ? null : s.id)} />
             ))}
           </div>
         </div>

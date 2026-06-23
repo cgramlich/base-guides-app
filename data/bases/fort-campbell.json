@@ -6,6 +6,7 @@
   "branch": "U.S. Army",
   "states": ["KY", "TN"],
   "tagline": "Home of the 101st Airborne Division (Air Assault), 5th Special Forces Group, and 160th SOAR.",
+  "coords": { "lat": 36.5298, "lng": -87.3595, "label": "Clarksville, TN (off-post hub)" },
   "last_full_review": null,
   "_note": "Seed record. Killer-content (two-state decision) is drafted/real; other sections are structural stubs pending verified content (see MilHousing-Base-Guide-Schema-v0.1).",
   "sections": [
@@ -65,6 +66,6 @@
     { "id": "housing", "title": "On-Base Housing", "type": "pending", "note": "Privatized housing partner, neighborhoods, and waitlist status - pending verified content." },
     { "id": "schools", "title": "Schools", "type": "pending", "note": "DoDEA on-post schools + off-base districts (CMCSS, Christian County) - pending verified content." },
     { "id": "healthcare", "title": "Healthcare", "type": "pending", "note": "Blanchfield Army Community Hospital + Tricare orientation - pending verified content." },
-    { "id": "nearby", "title": "Food & Things Nearby", "type": "places_pending", "note": "In the app, this section shows live nearby restaurants and services via Google Places - current hours, ratings, and 'near me', with editorial picks pinned on top." }
+    { "id": "nearby", "title": "Food & Things Nearby", "type": "places_live", "note": "Live nearby restaurants via Google Places. Device 'near me' + pinned editorial picks come next." }
   ]
 }
