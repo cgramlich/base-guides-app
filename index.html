@@ -26,7 +26,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
@@ -44,10 +44,16 @@
     *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
     html,body{margin:0; padding:0; background:var(--bg); color:var(--text);}
     body{
-      font-family:'Outfit',-apple-system,BlinkMacSystemFont,sans-serif;
+      font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
       font-size:16px; line-height:1.5; -webkit-font-smoothing:antialiased;
       overscroll-behavior-y:none;
     }
+    /* Editorial long-form reads in Crimson Pro; UI stays DM Sans; headlines Fraunces. */
+    .acc-body, .acc-body p, .ask-ans, .md, .basehero .tag, .hero .tag{ font-family:'Crimson Pro',Georgia,serif; }
+    .acc-body{ font-size:15.5px; line-height:1.6; }
+    .home-hero{ text-align:center; padding:4px 0 20px; }
+    .home-logo{ width:128px; height:128px; }
+    .home-tag{ font-family:'Crimson Pro',Georgia,serif; color:var(--text-dim); font-size:15px; margin-top:4px; }
     input,textarea,select,button{font-family:inherit; font-size:16px;}
     button{cursor:pointer; border:none; background:none; color:inherit;}
     h1,h2,h3{font-family:'Fraunces',Georgia,serif; font-weight:600; margin:0; line-height:1.18;}
@@ -187,7 +193,7 @@
     // Brand artwork behind named files so a rebrand is a drop-in swap (see CLAUDE.md
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
-    const APP_VERSION = "0.4.0";
+    const APP_VERSION = "0.5.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -500,6 +506,10 @@
       if (!bases || !bases.length) return <div className="center">No bases yet.</div>;
       return (
         <div className="content">
+          <div className="home-hero">
+            <img className="home-logo" src={ASSETS.logoMark} alt="MilSpo Living" />
+            <div className="home-tag">Guides for your next duty station.</div>
+          </div>
           {bases.map((b) => (
             <div key={b.slug} className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)} style={{ borderLeft: "4px solid " + branchColor(b.branch) }}>
               <div className="between">
@@ -592,13 +602,8 @@
       return (
         <div id="app-shell">
           <div className="topbar">
-            <div className="brandrow">
-              <img className="brandmark" src={ASSETS.logoMark} alt="MilSpo Living" />
-              <div>
-                <h1>{APP_NAME}</h1>
-                <div className="sub">{BRAND}</div>
-              </div>
-            </div>
+            <h1>{APP_NAME}</h1>
+            <div className="sub">{BRAND}</div>
           </div>
           <UpdateBanner />
           {body}
