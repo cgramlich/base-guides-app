@@ -125,6 +125,12 @@
       "verified": "2026-06-23"
     },
     {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "37040", "label": "Clarksville, TN" }
+    },
+    {
       "id": "schools",
       "title": "Schools",
       "type": "prose",
@@ -135,6 +141,12 @@
       ],
       "source": { "label": "Fort Campbell off-post schools (official)", "url": "https://home.army.mil/campbell/units/tenants/fort-campbell-schools/off-post-schools" },
       "verified": "2026-06-23"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "lat": 36.5298, "lng": -87.3595 }
     },
     {
       "id": "healthcare",

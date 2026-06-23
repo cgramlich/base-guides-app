@@ -186,6 +186,10 @@
     .chip{background:var(--surface-2); border:1px solid var(--line); color:var(--text-dim); font-size:12.5px; padding:5px 11px; border-radius:999px;}
     .chip.pick{cursor:pointer;}
     .chip-on{background:var(--accent); color:#10131b; border-color:var(--accent); font-weight:600;}
+    .re-grid{display:flex; gap:10px;}
+    .re-cell{flex:1; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:11px; padding:12px;}
+    .re-num{font-family:'Fraunces',serif; font-size:22px; color:var(--text); line-height:1.1;}
+    .re-lab{font-size:11px; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.04em; margin-top:3px;}
     .leaflet-wrap{height:58vh; border-radius:13px; overflow:hidden; border:1px solid var(--line-soft);}
     .leaflet-wrap .leaflet-popup-content{font-family:'DM Sans',sans-serif; font-size:13px;}
 
@@ -229,7 +233,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.10.0";
+    const APP_VERSION = "0.11.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -298,7 +302,7 @@
       for (const k of Object.keys(BRANCH_COLORS)) if (s.indexOf(k) !== -1) return BRANCH_COLORS[k];
       return "var(--accent-dim)";
     }
-    const SECTION_ICONS = { quick_facts: "info", mission: "flag", two_state_decision: "compass", gates: "shield", housing: "home", bah: "dollar", schools: "cap", healthcare: "health", shopping: "cart", nearby: "map" };
+    const SECTION_ICONS = { quick_facts: "info", mission: "flag", two_state_decision: "compass", gates: "shield", housing: "home", bah: "dollar", housing_costs: "dollar", schools: "cap", schools_live: "cap", healthcare: "health", shopping: "cart", nearby: "map" };
     function sectionIcon(id) { return SECTION_ICONS[id] || "info"; }
 
     /* ---------------- PWA self-update (ported from MenuCaptain) ---------------- */
@@ -510,6 +514,66 @@
       );
     }
 
+    // Real-estate (RentCast) - graceful "connect key" state via 503 until key is set.
+    function RealEstate({ data }) {
+      const [r, setR] = useState(null);
+      const [state, setState] = useState("loading");
+      useEffect(() => {
+        if (!data || !data.zip) { setState("err"); return; }
+        let live = true;
+        fetch(apiUrl("/api/realestate?zip=" + data.zip)).then(async (res) => {
+          if (!live) return;
+          if (res.status === 503) { setState("nokey"); return; }
+          if (!res.ok) { setState("err"); return; }
+          const d = await res.json(); setR(d); setState("ok");
+        }).catch(() => { if (live) setState("err"); });
+        return () => { live = false; };
+      }, [data && data.zip]);
+      if (state === "nokey") return <div className="live-note">Live rent &amp; home-price estimates appear here once the RentCast key is connected.</div>;
+      if (state === "loading") return <div className="center" style={{ padding: 14 }}><div className="spin" /></div>;
+      if (state === "err" || !r) return <div className="pending">Housing-cost data unavailable right now.</div>;
+      return (
+        <div>
+          <div className="re-grid">
+            <div className="re-cell"><div className="re-num">{r.median_home != null ? "$" + r.median_home.toLocaleString() : "-"}</div><div className="re-lab">Median home</div></div>
+            <div className="re-cell"><div className="re-num">{r.median_rent != null ? "$" + r.median_rent.toLocaleString() : "-"}</div><div className="re-lab">Median rent / mo</div></div>
+          </div>
+          <div className="muted tiny" style={{ marginTop: 8 }}>{data.label} ({data.zip}) &middot; RentCast estimate</div>
+        </div>
+      );
+    }
+
+    // Nearby schools + ratings (SchoolDigger) - graceful "connect key" state.
+    function SchoolsLive({ data }) {
+      const [items, setItems] = useState(null);
+      const [state, setState] = useState("loading");
+      useEffect(() => {
+        if (!data || data.lat == null) { setState("err"); return; }
+        let live = true;
+        fetch(apiUrl("/api/schools?lat=" + data.lat + "&lng=" + data.lng)).then(async (res) => {
+          if (!live) return;
+          if (res.status === 503) { setState("nokey"); return; }
+          if (!res.ok) { setState("err"); return; }
+          const d = await res.json(); setItems(d.schools || []); setState("ok");
+        }).catch(() => { if (live) setState("err"); });
+        return () => { live = false; };
+      }, [data && data.lat]);
+      if (state === "nokey") return <div className="live-note">Live school ratings appear here once the schools API key is connected.</div>;
+      if (state === "loading") return <div className="center" style={{ padding: 14 }}><div className="spin" /></div>;
+      if (state === "err" || !items) return <div className="pending">School data unavailable right now.</div>;
+      if (!items.length) return <div className="pending">No schools found nearby.</div>;
+      return (
+        <div>
+          <ul className="lst">
+            {items.slice(0, 8).map((s, i) => (
+              <li key={i}><div className="t">{s.name}{s.rating ? <span className="faint"> &middot; {s.rating}/5</span> : null}</div><div className="d">{[s.level, s.city].filter(Boolean).join(" - ")}</div></li>
+            ))}
+          </ul>
+          <div className="muted tiny" style={{ marginTop: 6 }}>SchoolDigger ratings</div>
+        </div>
+      );
+    }
+
     function SectionBody({ s, coords }) {
       switch (s.type) {
         case "facts": return <Facts data={s.data} />;
@@ -518,6 +582,8 @@
         case "list": return <ItemList data={s.data} />;
         case "places_live": return <LivePlaces coords={coords} note={s.note} />;
         case "bah": return <BAHCalc data={s.data} />;
+        case "realestate": return <RealEstate data={s.data} />;
+        case "schools_live": return <SchoolsLive data={s.data} />;
         case "places_pending":
           return <div className="live-note">{s.note || "Live nearby recommendations (Google Places) appear here in the app."}</div>;
         case "pending":
