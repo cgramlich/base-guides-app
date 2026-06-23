@@ -146,7 +146,7 @@
       "id": "schools_live",
       "title": "Schools Near Base",
       "type": "schools_live",
-      "data": { "lat": 36.5298, "lng": -87.3595 }
+      "data": { "lat": 36.5298, "lng": -87.3595, "state": "TN" }
     },
     {
       "id": "healthcare",
