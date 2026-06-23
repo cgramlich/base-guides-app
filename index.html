@@ -166,18 +166,17 @@
        config and is independent of this display name. */
     const APP_NAME = "Base Guides";
     const BRAND = "MilSpo Living";
-    const APP_VERSION = "0.2.1";
-    // Content source. Empty => read static data/ files (resilient, works offline).
-    const API_BASE_DEFAULT = "";
-    const DATA_BASE = API_BASE_DEFAULT
-      ? API_BASE_DEFAULT.replace(/\/$/, "") + "/api/bases"
-      : "data/bases";
-    // Backend for the LIVE layer (AI Q&A + nearby places). Only the live features
-    // need this; core content stays on local/cached JSON. Point at Railway in prod.
-    const API_BASE = "http://localhost:8000";
+    const APP_VERSION = "0.2.2";
+    // Deployed backend (Railway). Content + live layer both come from here.
+    // Empty string would fall back to local static data/ files for content.
+    const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
+    const USING_API = !!API_BASE_DEFAULT;
+    const DATA_BASE = USING_API ? API_BASE_DEFAULT.replace(/\/$/, "") + "/api/bases" : "data/bases";
+    // Backend for the LIVE layer (AI Q&A + nearby places).
+    const API_BASE = API_BASE_DEFAULT || "http://localhost:8000";
 
-    function indexUrl() { return DATA_BASE + "/index.json"; }
-    function baseUrl(slug) { return DATA_BASE + "/" + slug + ".json"; }
+    function indexUrl() { return USING_API ? DATA_BASE : DATA_BASE + "/index.json"; }
+    function baseUrl(slug) { return USING_API ? DATA_BASE + "/" + slug : DATA_BASE + "/" + slug + ".json"; }
     function apiUrl(path) { return API_BASE.replace(/\/$/, "") + path; }
 
     async function fetchJSON(url) {
