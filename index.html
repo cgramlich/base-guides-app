@@ -16,6 +16,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Base Guides" />
   <meta name="theme-color" content="#121621" />
+  <link rel="icon" type="image/png" href="favicon-32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="manifest" href="manifest.json" />
   <title>Base Guides</title>
   <meta property="og:title" content="Base Guides" />
@@ -61,6 +63,8 @@
     }
     .topbar h1{font-size:26px; letter-spacing:-0.02em;}
     .topbar .sub{font-size:12px; color:var(--text-faint); margin-top:2px; letter-spacing:0.08em; text-transform:uppercase;}
+    .brandrow{display:flex; align-items:center; gap:12px;}
+    .brandmark{width:48px; height:48px; flex:none; border-radius:50%;}
     .content{padding:14px 18px 24px;}
 
     .banner{
@@ -175,7 +179,7 @@
        config and is independent of this display name. */
     const APP_NAME = "Base Guides";
     const BRAND = "MilSpo Living";
-    const APP_VERSION = "0.3.0";
+    const APP_VERSION = "0.3.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -559,8 +563,13 @@
       return (
         <div id="app-shell">
           <div className="topbar">
-            <h1>{APP_NAME}</h1>
-            <div className="sub">{BRAND}</div>
+            <div className="brandrow">
+              <img className="brandmark" src="logo-mark.png" alt="MilSpo Living" />
+              <div>
+                <h1>{APP_NAME}</h1>
+                <div className="sub">{BRAND}</div>
+              </div>
+            </div>
           </div>
           <UpdateBanner />
           {body}
