@@ -7,8 +7,8 @@
   "states": ["KY", "TN"],
   "tagline": "Home of the 101st Airborne Division (Air Assault), 5th Special Forces Group, and 160th SOAR.",
   "coords": { "lat": 36.5298, "lng": -87.3595, "label": "Clarksville, TN (off-post hub)" },
-  "last_full_review": null,
-  "_note": "Seed record. Killer-content (two-state decision) is drafted/real; other sections are structural stubs pending verified content (see MilHousing-Base-Guide-Schema-v0.1).",
+  "last_full_review": "2026-06-23",
+  "_note": "Killer-content (two-state decision) is drafted/real. Other sections populated from authoritative sources with per-section source + verified date; volatile data (gate hours) links to the official page instead of stating values. Active-duty population left out (not found on an official fact sheet).",
   "sections": [
     {
       "id": "quick_facts",
@@ -18,9 +18,12 @@
         "Branch": "U.S. Army",
         "Location": "Kentucky / Tennessee state line",
         "Nearest city": "Clarksville, TN",
+        "Acreage": "~106,700 acres",
         "Known as": "Home of the Screaming Eagles",
         "Major units": "101st Airborne (Air Assault), 5th SFG, 160th SOAR"
-      }
+      },
+      "source": { "label": "Fort Campbell history (official)", "url": "https://home.army.mil/campbell/units/history" },
+      "verified": "2026-06-23"
     },
     {
       "id": "mission",
@@ -62,10 +65,72 @@
         ]
       }
     },
-    { "id": "gates", "title": "Gates & Access", "type": "pending", "note": "Gate hours and access are the most volatile data in the guide - to be populated and verified against the official garrison page (quarterly refresh)." },
-    { "id": "housing", "title": "On-Base Housing", "type": "pending", "note": "Privatized housing partner, neighborhoods, and waitlist status - pending verified content." },
-    { "id": "schools", "title": "Schools", "type": "pending", "note": "DoDEA on-post schools + off-base districts (CMCSS, Christian County) - pending verified content." },
-    { "id": "healthcare", "title": "Healthcare", "type": "pending", "note": "Blanchfield Army Community Hospital + Tricare orientation - pending verified content." },
-    { "id": "nearby", "title": "Food & Things Nearby", "type": "places_live", "note": "Live nearby restaurants via Google Places. Device 'near me' + pinned editorial picks come next." }
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Fort Campbell has multiple access gates, including Gate 4 (TC Freeman) and Gate 7 - the main 24/7 visitor and commercial gate. Gate openings, hours, and lanes change frequently.",
+        "Visitors without a DoD ID need a pass from the Visitor Control Center (Gate 7, Building 7199, 7199 Glider Road; 270-956-4488). Bring a REAL ID-compliant ID plus your vehicle registration and insurance.",
+        "IMPORTANT: gate hours change often. Always confirm which gates are open and their current hours on the official garrison page before you travel."
+      ],
+      "source": { "label": "Fort Campbell gate hours (official)", "url": "https://home.army.mil/campbell/gate-hours" },
+      "verified": "2026-06-23"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post housing is operated by Campbell Crossing LLC, a Lendlease privatized military housing community.",
+        "Homes are available to military families, unaccompanied service members, reservists, DoD employees, retirees, and qualified civilians. Active-duty service members pay no application fees or security deposits, and you apply through the partner's online application.",
+        "Main office: (931) 431-9003 - confirm current numbers and availability on the partner site."
+      ],
+      "source": { "label": "Campbell Crossing (Lendlease)", "url": "https://www.campbellcrossingllc.com/" },
+      "verified": "2026-06-23"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Families in on-post housing are eligible for DoDEA schools - the Department of Defense Education Activity operates 6 schools at Fort Campbell serving PK through grade 12.",
+        "Off post, the Tennessee side is served primarily by the Clarksville-Montgomery County School System (CMCSS); the Kentucky side primarily by Christian County Public Schools. Other nearby districts include Stewart and Cheatham (TN) and Todd and Trigg (KY).",
+        "School Liaison Office: (270) 798-9874."
+      ],
+      "source": { "label": "Fort Campbell off-post schools (official)", "url": "https://home.army.mil/campbell/units/tenants/fort-campbell-schools/off-post-schools" },
+      "verified": "2026-06-23"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Blanchfield Army Community Hospital (BACH)",
+        "Address": "650 Joel Drive, Fort Campbell, KY 42223",
+        "TRICARE region": "East",
+        "Emergency": "24/7 Emergency Center on site",
+        "Services": "Primary care, pediatrics, behavioral health, pharmacy, lab, and radiology"
+      },
+      "source": { "label": "Blanchfield Army Community Hospital (official)", "url": "https://blanchfield.tricare.mil/" },
+      "verified": "2026-06-23"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Campbell Commissary (DeCA), 2606 Indiana Ave",
+        "Exchange": "Fort Campbell Main Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA Commissary - Fort Campbell", "url": "https://corp.commissaries.com/shopping/store-locations/fort-campbell" },
+      "verified": "2026-06-23"
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby restaurants via Google Places. Device 'near me' + pinned editorial picks come next."
+    }
   ]
 }
