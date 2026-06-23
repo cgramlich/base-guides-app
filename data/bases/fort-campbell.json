@@ -1,0 +1,70 @@
+{
+  "slug": "fort-campbell",
+  "schema_version": "0.1",
+  "name": "Fort Campbell",
+  "short_name": "Campbell",
+  "branch": "U.S. Army",
+  "states": ["KY", "TN"],
+  "tagline": "Home of the 101st Airborne Division (Air Assault), 5th Special Forces Group, and 160th SOAR.",
+  "last_full_review": null,
+  "_note": "Seed record. Killer-content (two-state decision) is drafted/real; other sections are structural stubs pending verified content (see MilHousing-Base-Guide-Schema-v0.1).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Kentucky / Tennessee state line",
+        "Nearest city": "Clarksville, TN",
+        "Known as": "Home of the Screaming Eagles",
+        "Major units": "101st Airborne (Air Assault), 5th SFG, 160th SOAR"
+      }
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Campbell straddles the Kentucky-Tennessee border and is one of the Army's premier power-projection platforms, home to the 101st Airborne Division (Air Assault).",
+        "It also hosts significant special-operations forces, including the 5th Special Forces Group and the 160th Special Operations Aviation Regiment (SOAR)."
+      ]
+    },
+    {
+      "id": "two_state_decision",
+      "title": "Tennessee or Kentucky? The Two-State Decision",
+      "type": "killer",
+      "data": {
+        "subtitle": "For buyers and renters PCSing to Campbell, the side of the line you choose is a several-thousand-dollar decision over a typical tour.",
+        "intro": [
+          "Fort Campbell sits on the Kentucky-Tennessee state line. The post office address is in Kentucky, but most of the housing, most of the gates, and the largest off-post community (Clarksville) sit on the Tennessee side. That geography forces a decision other military families never have to make: which state to live in.",
+          "The two states tax differently, school children differently, and value homes differently. Over a typical three-to-four-year tour the cumulative difference between Clarksville and Hopkinsville or Oak Grove adds up to thousands of dollars - plus a meaningfully different schooling and real-estate experience."
+        ],
+        "table": {
+          "cols": ["Factor", "Tennessee (Clarksville)", "Kentucky (Hopkinsville / Oak Grove)", "Edge"],
+          "rows": [
+            ["State income tax", "None", "3.5% flat (2026)", "TN"],
+            ["Sales tax", "~9.5% combined", "6% flat", "KY"],
+            ["Grocery tax", "Reduced rate", "Most groceries exempt", "KY"],
+            ["Annual vehicle tax", "$74 wheel tax (flat)", "$300-$800 (value-based)", "TN"],
+            ["Median home price", "~$293K", "~$210K Hopkinsville", "KY"],
+            ["Resale velocity", "Faster", "Slower", "TN"],
+            ["Public schools", "CMCSS - 'Advancing'", "Christian Co. - bottom 1/3 KY", "TN"],
+            ["Commute to nearest gate", "15-25 min (Clarksville)", "5-15 min Oak Grove; 20-35 Hopkinsville", "Mixed"]
+          ]
+        },
+        "recommendations": [
+          { "who": "Buyers with school-age kids, 3-4 yr tour", "advice": "Default to Clarksville (Sango or Rossview): stronger schools, faster resale, tax math roughly a wash." },
+          { "who": "Buyers prioritizing dollar-for-dollar home value", "advice": "Look hard at Hopkinsville - noticeably more house per budget; plan for a slower sale at next PCS." },
+          { "who": "Shortest commute / small-town feel", "advice": "Oak Grove - base proximity is unmatched." },
+          { "who": "Renters with kids in school", "advice": "Tennessee (Clarksville) for the schools; the tax advantage compounds less over a short lease." }
+        ]
+      }
+    },
+    { "id": "gates", "title": "Gates & Access", "type": "pending", "note": "Gate hours and access are the most volatile data in the guide - to be populated and verified against the official garrison page (quarterly refresh)." },
+    { "id": "housing", "title": "On-Base Housing", "type": "pending", "note": "Privatized housing partner, neighborhoods, and waitlist status - pending verified content." },
+    { "id": "schools", "title": "Schools", "type": "pending", "note": "DoDEA on-post schools + off-base districts (CMCSS, Christian County) - pending verified content." },
+    { "id": "healthcare", "title": "Healthcare", "type": "pending", "note": "Blanchfield Army Community Hospital + Tricare orientation - pending verified content." },
+    { "id": "nearby", "title": "Food & Things Nearby", "type": "places_pending", "note": "In the app, this section shows live nearby restaurants and services via Google Places - current hours, ratings, and 'near me', with editorial picks pinned on top." }
+  ]
+}

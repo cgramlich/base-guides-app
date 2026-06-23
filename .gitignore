@@ -1,0 +1,14 @@
+# Capacitor build output
+www/
+node_modules/
+android/
+ios/
+
+# env / secrets
+.env
+*.env
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log

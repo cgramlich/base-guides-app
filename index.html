@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<!--
+  BASE GUIDES - single-file mobile web app  (MilSpo Living)
+  Stack: React 18 + Babel Standalone (CDN). No build step. Open or host the file.
+  Architecture: the app ships with NO base content. Each base's guide is fetched
+  ON DEMAND (data/bases/<slug>.json now; backend API later) and cached by the
+  service worker. One app, all bases, light forever. (Anti-Touch-Stay design.)
+  Notes: all console/log output is plain ASCII (no emoji) by design.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Base Guides" />
+  <meta name="theme-color" content="#121621" />
+  <link rel="manifest" href="manifest.json" />
+  <title>Base Guides</title>
+  <meta property="og:title" content="Base Guides" />
+  <meta property="og:description" content="Living guides to U.S. military bases - by MilSpo Living." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.6/babel.min.js"></script>
+
+  <style>
+    :root{
+      --bg:#121621; --bg-2:#161c29; --surface:#1c2433; --surface-2:#243041;
+      --line:#334053; --line-soft:#2b3647;
+      --text:#eef2f8; --text-dim:#aab6c8; --text-faint:#6f7c90;
+      --accent:#e7b24c; --accent-dim:#c5923a;
+      --ok:#7faa6b; --danger:#d9604e;
+      --shadow:0 8px 28px rgba(0,0,0,0.45);
+    }
+    *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+    html,body{margin:0; padding:0; background:var(--bg); color:var(--text);}
+    body{
+      font-family:'Outfit',-apple-system,BlinkMacSystemFont,sans-serif;
+      font-size:16px; line-height:1.5; -webkit-font-smoothing:antialiased;
+      overscroll-behavior-y:none;
+    }
+    input,textarea,select,button{font-family:inherit; font-size:16px;}
+    button{cursor:pointer; border:none; background:none; color:inherit;}
+    h1,h2,h3{font-family:'Fraunces',Georgia,serif; font-weight:600; margin:0; line-height:1.18;}
+
+    #app-shell{
+      max-width:540px; margin:0 auto; min-height:100vh; background:var(--bg);
+      position:relative; padding-bottom:calc(72px + env(safe-area-inset-bottom));
+    }
+    .topbar{
+      position:sticky; top:0; z-index:30; background:var(--bg);
+      padding:calc(14px + env(safe-area-inset-top)) 20px 10px;
+      border-bottom:1px solid var(--line-soft);
+    }
+    .topbar h1{font-size:26px; letter-spacing:-0.02em;}
+    .topbar .sub{font-size:12px; color:var(--text-faint); margin-top:2px; letter-spacing:0.08em; text-transform:uppercase;}
+    .content{padding:14px 18px 24px;}
+
+    .banner{
+      margin:10px 18px 0; padding:10px 13px; border-radius:11px; font-size:13.5px;
+      display:flex; align-items:center; gap:10px; border:1px solid var(--line);
+      background:rgba(231,178,76,0.12); color:#f0d79a; border-color:rgba(231,178,76,0.4);
+    }
+    .banner button{margin-left:auto; font-size:12.5px; color:var(--accent); font-weight:600;}
+
+    .card{
+      background:var(--surface); border:1px solid var(--line-soft);
+      border-radius:15px; padding:15px; margin-bottom:12px;
+    }
+    .card.tap{transition:transform 0.08s ease; cursor:pointer;}
+    .card.tap:active{transform:scale(0.985);}
+    .base-name{font-family:'Fraunces',serif; font-size:19px; font-weight:600; letter-spacing:-0.01em;}
+    .meta-line{font-size:12px; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.05em; margin-top:3px;}
+    .pill{display:inline-block; font-size:11px; padding:2px 9px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); color:var(--text-dim); margin-left:8px; vertical-align:middle;}
+    .pill.ready{background:rgba(127,170,107,0.14); border-color:rgba(127,170,107,0.4); color:#a9c98f;}
+    .pill.soon{background:rgba(231,178,76,0.12); border-color:rgba(231,178,76,0.35); color:#e0c486;}
+
+    .back{font-size:14px; color:var(--accent); font-weight:500; display:inline-flex; gap:6px; align-items:center; margin-bottom:6px;}
+    .hero{margin:2px 0 4px;}
+    .hero .tag{color:var(--text-dim); font-size:14px; margin-top:6px;}
+
+    .acc{border:1px solid var(--line-soft); border-radius:13px; margin-bottom:11px; overflow:hidden; background:var(--surface);}
+    .acc-head{display:flex; align-items:center; gap:10px; padding:14px 15px; cursor:pointer;}
+    .acc-head h3{font-size:16px; flex:1;}
+    .acc-chev{color:var(--text-faint); transition:transform 0.18s ease;}
+    .acc.open .acc-chev{transform:rotate(180deg);}
+    .acc-body{padding:0 15px 15px; font-size:14.5px; color:var(--text-dim);}
+    .acc-body p{margin:0 0 10px;}
+
+    dl.facts{margin:0; display:grid; grid-template-columns:auto 1fr; gap:7px 14px;}
+    dl.facts dt{color:var(--text-faint); font-size:13px;}
+    dl.facts dd{margin:0; color:var(--text); font-size:14px;}
+
+    table.dec{width:100%; border-collapse:collapse; font-size:13px; margin-top:6px;}
+    table.dec th, table.dec td{text-align:left; padding:7px 8px; border-bottom:1px solid var(--line-soft); vertical-align:top;}
+    table.dec th{color:var(--text-faint); font-weight:500; font-size:11.5px; text-transform:uppercase; letter-spacing:0.04em;}
+    table.dec td:first-child{color:var(--text);}
+
+    .lst{list-style:none; margin:0; padding:0;}
+    .lst li{padding:9px 0; border-top:1px solid var(--line-soft);}
+    .lst li:first-child{border-top:none;}
+    .lst .t{color:var(--text); font-weight:500; font-size:14px;}
+    .lst .d{color:var(--text-dim); font-size:13px; margin-top:2px;}
+
+    .pending{font-size:13.5px; color:var(--text-faint); font-style:italic;}
+    .live-note{border:1px dashed var(--accent-dim); border-radius:11px; padding:11px 13px; font-size:13px; color:#e0c486; background:rgba(231,178,76,0.06);}
+
+    .nav{
+      position:fixed; bottom:0; left:50%; transform:translateX(-50%);
+      width:100%; max-width:540px; display:flex; background:var(--bg-2);
+      border-top:1px solid var(--line); z-index:40;
+      padding-bottom:env(safe-area-inset-bottom);
+    }
+    .nav button{flex:1; padding:11px 0 9px; display:flex; flex-direction:column; align-items:center; gap:3px; color:var(--text-faint); font-size:11px; letter-spacing:0.03em;}
+    .nav button.on{color:var(--accent);}
+    .nav .ic{font-size:18px; line-height:1;}
+
+    .center{display:flex; flex-direction:column; align-items:center; justify-content:center; padding:50px 20px; text-align:center; color:var(--text-faint);}
+    .spin{width:22px;height:22px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:sp 0.8s linear infinite;}
+    @keyframes sp{to{transform:rotate(360deg);}}
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    // Service worker registration (offline shell + per-base data cache).
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", function () {
+        navigator.serviceWorker.register("sw.js").catch(function (e) {
+          console.log("[bg] sw register failed:", e && e.message);
+        });
+      });
+    }
+  </script>
+
+  <script type="text/babel" data-presets="react">
+    const { useState, useEffect, useCallback } = React;
+
+    /* ---------------- CONFIG (single source of brand/version) ----------------
+       Renaming the app is a one-line change here. Bundle ID lives in the native
+       config and is independent of this display name. */
+    const APP_NAME = "Base Guides";
+    const BRAND = "MilSpo Living";
+    const APP_VERSION = "0.1.0";
+    // Empty until the backend is wired. Empty => read static data/ files.
+    const API_BASE_DEFAULT = "";
+    const DATA_BASE = API_BASE_DEFAULT
+      ? API_BASE_DEFAULT.replace(/\/$/, "") + "/api/bases"
+      : "data/bases";
+
+    function indexUrl() { return DATA_BASE + "/index.json"; }
+    function baseUrl(slug) { return DATA_BASE + "/" + slug + ".json"; }
+
+    async function fetchJSON(url) {
+      const r = await fetch(url, { cache: "no-cache" });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    }
+
+    /* ---------------- PWA self-update (ported from MenuCaptain) ----------------
+       Refetch this document, regex out APP_VERSION, compare, offer a refresh. */
+    function useUpdateCheck() {
+      const [newer, setNewer] = useState(null);
+      useEffect(() => {
+        (async () => {
+          try {
+            const u = location.pathname + "?vcheck=" + Date.now();
+            const r = await fetch(u, { cache: "no-store" });
+            const txt = await r.text();
+            const m = txt.match(/APP_VERSION\s*=\s*"([0-9.]+)"/);
+            if (m && m[1] && m[1] !== APP_VERSION) setNewer(m[1]);
+          } catch (e) { /* offline - ignore */ }
+        })();
+      }, []);
+      return newer;
+    }
+
+    function UpdateBanner() {
+      const newer = useUpdateCheck();
+      if (!newer) return null;
+      const reload = () => {
+        if (navigator.serviceWorker && navigator.serviceWorker.controller) {
+          navigator.serviceWorker.controller.postMessage("clearCache");
+        }
+        setTimeout(() => location.reload(), 150);
+      };
+      return (
+        <div className="banner">
+          <span>Update available (v{newer}).</span>
+          <button onClick={reload}>Refresh</button>
+        </div>
+      );
+    }
+
+    /* ---------------- Section renderer (schema-driven, generic) ----------------
+       Adding sections/bases needs NO code change - the base JSON drives it. */
+    function Facts({ data }) {
+      return (
+        <dl className="facts">
+          {Object.keys(data).map((k) => (
+            <React.Fragment key={k}><dt>{k}</dt><dd>{data[k]}</dd></React.Fragment>
+          ))}
+        </dl>
+      );
+    }
+    function Prose({ data }) {
+      const arr = Array.isArray(data) ? data : [data];
+      return <div>{arr.map((p, i) => <p key={i}>{p}</p>)}</div>;
+    }
+    function DecisionTable({ table }) {
+      return (
+        <table className="dec">
+          <thead><tr>{table.cols.map((c, i) => <th key={i}>{c}</th>)}</tr></thead>
+          <tbody>
+            {table.rows.map((row, i) => (
+              <tr key={i}>{row.map((cell, j) => <td key={j}>{cell}</td>)}</tr>
+            ))}
+          </tbody>
+        </table>
+      );
+    }
+    function Killer({ data }) {
+      return (
+        <div>
+          {data.subtitle ? <p style={{ color: "var(--accent)", fontWeight: 500 }}>{data.subtitle}</p> : null}
+          <Prose data={data.intro} />
+          {data.table ? <DecisionTable table={data.table} /> : null}
+          {data.recommendations ? (
+            <ul className="lst" style={{ marginTop: 12 }}>
+              {data.recommendations.map((r, i) => (
+                <li key={i}><div className="t">{r.who}</div><div className="d">{r.advice}</div></li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      );
+    }
+    function ItemList({ data }) {
+      return (
+        <ul className="lst">
+          {data.map((it, i) => (
+            <li key={i}><div className="t">{it.name}</div>{it.detail ? <div className="d">{it.detail}</div> : null}</li>
+          ))}
+        </ul>
+      );
+    }
+    function SectionBody({ s }) {
+      switch (s.type) {
+        case "facts": return <Facts data={s.data} />;
+        case "prose": return <Prose data={s.data} />;
+        case "killer": return <Killer data={s.data} />;
+        case "list": return <ItemList data={s.data} />;
+        case "places_pending":
+          return <div className="live-note">{s.note || "In the app, this section shows live nearby recommendations via Google Places."}</div>;
+        case "pending":
+        default:
+          return <div className="pending">{s.note || "Content pending verification."}</div>;
+      }
+    }
+    function Accordion({ s, open, onToggle }) {
+      return (
+        <div className={"acc" + (open ? " open" : "")}>
+          <div className="acc-head" onClick={onToggle}>
+            <h3>{s.title}</h3>
+            <span className="acc-chev">v</span>
+          </div>
+          {open ? <div className="acc-body"><SectionBody s={s} /></div> : null}
+        </div>
+      );
+    }
+
+    /* ---------------- Screens ---------------- */
+    function Home({ bases, loading, onOpen }) {
+      if (loading) return <div className="center"><div className="spin" /></div>;
+      if (!bases || !bases.length) return <div className="center">No bases yet.</div>;
+      return (
+        <div className="content">
+          {bases.map((b) => (
+            <div key={b.slug} className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)}>
+              <div className="base-name">
+                {b.name}
+                {b.ready ? <span className="pill ready">Guide ready</span> : <span className="pill soon">Coming soon</span>}
+              </div>
+              <div className="meta-line">{[b.branch, b.state].filter(Boolean).join("  -  ")}</div>
+            </div>
+          ))}
+        </div>
+      );
+    }
+
+    function BaseDetail({ slug, onBack }) {
+      const [data, setData] = useState(null);
+      const [err, setErr] = useState(null);
+      const [openId, setOpenId] = useState(null);
+      useEffect(() => {
+        let live = true;
+        setData(null); setErr(null);
+        // Per-base fetch ON DEMAND - this is the architecture in action.
+        fetchJSON(baseUrl(slug))
+          .then((d) => { if (live) { setData(d); setOpenId(d.sections && d.sections[0] ? d.sections[0].id : null); } })
+          .catch((e) => { if (live) setErr(e.message); });
+        return () => { live = false; };
+      }, [slug]);
+
+      if (err) return <div className="content"><a className="back" onClick={onBack}>&lt; All bases</a><div className="center">Could not load this guide.<br />{err}</div></div>;
+      if (!data) return <div className="content"><a className="back" onClick={onBack}>&lt; All bases</a><div className="center"><div className="spin" /></div></div>;
+
+      return (
+        <div className="content">
+          <a className="back" onClick={onBack}>&lt; All bases</a>
+          <div className="hero">
+            <h1 style={{ fontSize: 24 }}>{data.name}</h1>
+            {data.tagline ? <div className="tag">{data.tagline}</div> : null}
+          </div>
+          <div style={{ marginTop: 12 }}>
+            {(data.sections || []).map((s) => (
+              <Accordion key={s.id} s={s} open={openId === s.id} onToggle={() => setOpenId(openId === s.id ? null : s.id)} />
+            ))}
+          </div>
+        </div>
+      );
+    }
+
+    function Stub({ label, note }) {
+      return <div className="content"><div className="center"><strong style={{ color: "var(--text-dim)" }}>{label}</strong><br />{note}</div></div>;
+    }
+
+    /* ---------------- App shell ---------------- */
+    function App() {
+      const [tab, setTab] = useState("home");
+      const [bases, setBases] = useState(null);
+      const [loading, setLoading] = useState(true);
+      const [slug, setSlug] = useState(null);
+
+      useEffect(() => {
+        fetchJSON(indexUrl())
+          .then((d) => setBases(d.bases || []))
+          .catch(() => setBases([]))
+          .finally(() => setLoading(false));
+      }, []);
+
+      const open = useCallback((s) => { setSlug(s); setTab("guide"); }, []);
+      const back = useCallback(() => { setSlug(null); setTab("home"); }, []);
+
+      let body;
+      if (tab === "home") body = <Home bases={bases} loading={loading} onOpen={open} />;
+      else if (tab === "guide") body = slug
+        ? <BaseDetail slug={slug} onBack={back} />
+        : <Stub label="Guide" note="Pick a base from Home to open its guide." />;
+      else if (tab === "map") body = <Stub label="Map" note="Gate locations + drive-time and nearby places land here (Leaflet + Google Places)." />;
+      else body = <Stub label="Search" note="Search across bases and live nearby places lands here." />;
+
+      const NavBtn = ({ id, ic, label }) => (
+        <button className={tab === id ? "on" : ""} onClick={() => setTab(id)}>
+          <span className="ic">{ic}</span>{label}
+        </button>
+      );
+
+      return (
+        <div id="app-shell">
+          <div className="topbar">
+            <h1>{APP_NAME}</h1>
+            <div className="sub">{BRAND}</div>
+          </div>
+          <UpdateBanner />
+          {body}
+          <div className="nav">
+            <NavBtn id="home" ic="*" label="HOME" />
+            <NavBtn id="guide" ic="i" label="GUIDE" />
+            <NavBtn id="map" ic="@" label="MAP" />
+            <NavBtn id="search" ic="?" label="SEARCH" />
+          </div>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById("root")).render(<App />);
+  </script>
+</body>
+</html>

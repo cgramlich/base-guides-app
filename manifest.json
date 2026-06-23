@@ -1,0 +1,16 @@
+{
+  "name": "Base Guides",
+  "short_name": "Base Guides",
+  "description": "Living guides to U.S. military bases - by MilSpo Living.",
+  "start_url": ".",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#121621",
+  "theme_color": "#121621",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
