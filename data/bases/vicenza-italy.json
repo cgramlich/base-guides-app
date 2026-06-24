@@ -10,7 +10,7 @@
   "coords": { "lat": 45.5388, "lng": 11.5738, "label": "Vicenza, Italy" },
   "tz": "Europe/Rome",
   "last_full_review": "2026-06-24",
-  "_note": "First OCONUS base (MVP). US-only feeds intentionally omitted (no BAH calculator [overseas uses OHA], no RentCast real-estate, no SchoolDigger). Weather comes via the Open-Meteo global fallback. Verified from official sources (home.army.mil/italy, setaf-africa.army.mil, mhs-europe.tricare.mil, dodea.edu/europe, DeCA/AAFES). Medium-confidence flags: base coords (aggregator, approx Caserma Ederle; Del Din is a few km away), exact DoDEA Vicenza school names (verify on dodea.edu before stating as hard facts).",
+  "_note": "First OCONUS base (MVP). US-only feeds intentionally omitted (no BAH calculator [overseas uses OHA], no RentCast real-estate, no SchoolDigger). Weather comes via the Open-Meteo global fallback. Verified from official sources (home.army.mil/italy, setaf-africa.army.mil, mhs-europe.tricare.mil, dodea.edu/europe, DeCA/AAFES). DoDEA schools verified 2026-06-24 (Vicenza Community Schools: Vicenza ES PK-5, Vicenza MS, Vicenza HS 9-12, per dodea.edu). Medium-confidence flag remaining: coords are Vicenza city center (labeled as such) for map centering, not a specific caserma (Ederle and Del Din are a few km apart).",
   "sections": [
     {
       "id": "quick_facts",
@@ -83,10 +83,10 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "Overseas, children attend Department of Defense Education Activity (DoDEA) schools rather than local U.S. districts. DoDEA Europe operates schools at Vicenza spanning elementary through high school.",
-        "Confirm the current school names, boundaries, and registration steps on the DoDEA site as you plan your move."
+        "Overseas, children attend Department of Defense Education Activity (DoDEA) schools rather than local U.S. districts. DoDEA Europe operates three schools at Vicenza, grouped as Vicenza Community Schools: Vicenza Elementary School (PK through grade 5), Vicenza Middle School, and Vicenza High School (grades 9 through 12).",
+        "Confirm boundaries and the current registration steps on the DoDEA site as you plan your move."
       ],
-      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "source": { "label": "Vicenza Community Schools (DoDEA, official)", "url": "https://www.dodea.edu/europe/eu-south/vicenza-community-schools" },
       "verified": "2026-06-24"
     },
     {
