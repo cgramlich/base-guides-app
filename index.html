@@ -191,6 +191,7 @@
     .bah-out{display:flex; align-items:baseline; gap:8px; margin:6px 0 8px;}
     .bah-amt{font-family:'Fraunces',serif; font-size:34px; color:var(--text); line-height:1;}
     .bah-mo{color:var(--text-faint); font-size:13px;}
+    .bah-help{margin-top:8px; font-size:12px; line-height:1.5; color:var(--text-faint);}
     .chips{display:flex; flex-wrap:wrap; gap:7px;}
     .chip{background:var(--surface-2); border:1px solid var(--line); color:var(--text-dim); font-size:12.5px; padding:5px 11px; border-radius:999px;}
     .chip.pick{cursor:pointer;}
@@ -242,7 +243,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.13.0";
+    const APP_VERSION = "0.13.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -567,7 +568,8 @@
             <span className="bah-mo">/ month, tax-free</span>
           </div>
           <div className="muted tiny">{grade}{deps ? ", with dependents" : ", without dependents"} &middot; MHA {data.mha} &middot; CY{data.year}</div>
-          <a className="btn-quiet" style={{ marginTop: 12, display: "inline-flex" }} href={data.calc_url} target="_blank" rel="noopener noreferrer">Other ranks or verify - official DoD calculator</a>
+          <div className="bah-help">"With dependents" is the rate for a service member with a spouse or family; "without" is the single rate. The amount is set by your pay grade and the base's ZIP code, not by how many dependents you have.</div>
+          <a className="btn-quiet" style={{ marginTop: 12, display: "inline-flex" }} href={data.calc_url} target="_blank" rel="noopener noreferrer">Other ranks or verify on the official DoD calculator</a>
         </div>
       );
     }
