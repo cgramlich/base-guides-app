@@ -117,7 +117,13 @@
       "id": "nearby",
       "title": "Food & Things Nearby",
       "type": "places_live",
-      "note": "Live nearby restaurants and shops via Google Places."
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Piazza dei Signori & Basilica Palladiana", "category": "In town", "blurb": "Vicenza's grand central square, anchored by Andrea Palladio's basilica. The city is a UNESCO World Heritage Site for its Palladian architecture.", "maps_query": "Piazza dei Signori, Vicenza Italy" },
+        { "name": "Venice", "category": "Day trip", "blurb": "About an hour east by car or train, one of the world's most famous cities.", "maps_query": "Venice Italy" },
+        { "name": "Verona", "category": "Day trip", "blurb": "Roughly an hour west, home to a Roman arena and the Juliet legend.", "maps_query": "Verona Italy" },
+        { "name": "The Dolomites", "category": "Outdoors", "blurb": "Dramatic mountain ranges a couple of hours north, for hiking in summer and skiing in winter.", "maps_query": "Dolomites Italy" }
+      ]
     }
   ]
 }

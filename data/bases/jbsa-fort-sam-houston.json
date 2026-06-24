@@ -163,7 +163,13 @@
       "id": "nearby",
       "title": "Food & Things Nearby",
       "type": "places_live",
-      "note": "Live nearby restaurants via Google Places."
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "The Alamo", "category": "Landmark", "blurb": "The iconic 1718 mission and battle site in the heart of downtown San Antonio. Free to enter.", "maps_query": "The Alamo, San Antonio TX" },
+        { "name": "San Antonio River Walk", "category": "Downtown", "blurb": "The city's signature network of riverside walkways, restaurants, and boat tours, just below street level downtown.", "maps_query": "San Antonio River Walk, TX" },
+        { "name": "The Pearl", "category": "Food & shopping", "blurb": "A former brewery turned dining and shopping district north of downtown, with a popular weekend farmers market.", "maps_query": "The Pearl, San Antonio TX" },
+        { "name": "San Antonio Missions National Historical Park", "category": "Outdoors", "blurb": "Four Spanish colonial missions preserved by the National Park Service along the river, part of Texas's only UNESCO World Heritage Site.", "maps_query": "San Antonio Missions National Historical Park" }
+      ]
     }
   ]
 }
