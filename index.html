@@ -109,9 +109,14 @@
     .ask{ background:var(--surface); border:1px solid var(--line-soft); border-radius:13px; padding:13px; margin-top:12px; }
     .ask-title{ font-family:'Fraunces',serif; font-size:16px; margin-bottom:9px; }
     .ask-row{ display:flex; gap:8px; }
-    .ask-row input{ flex:1; min-width:0; background:var(--bg-2); border:1px solid var(--line); border-radius:9px; color:var(--text); padding:9px 11px; }
-    .ask-row button{ flex:0 0 auto; background:var(--accent); color:#10131b; font-weight:600; border-radius:9px; padding:9px 16px; }
-    .ask-row button:disabled{ opacity:0.6; }
+    .ask-inputwrap{ position:relative; flex:1; min-width:0; display:flex; }
+    .ask-row input{ flex:1; min-width:0; background:var(--bg-2); border:1px solid var(--line); border-radius:9px; color:var(--text); padding:9px 32px 9px 11px; }
+    .ask-clear{ position:absolute; right:5px; top:50%; transform:translateY(-50%); background:transparent; border:0; color:var(--text-faint); font-size:20px; line-height:1; padding:0 5px; cursor:pointer; }
+    .ask-clear:hover{ color:var(--text); }
+    .ask-row > button{ flex:0 0 auto; background:var(--accent); color:#10131b; font-weight:600; border-radius:9px; padding:9px 16px; }
+    .ask-row > button:disabled{ opacity:0.6; }
+    .ask-thinking{ display:flex; align-items:center; gap:9px; }
+    .spin-sm{ width:15px; height:15px; border-width:2px; }
     .ask-ans{ margin-top:10px; font-size:14px; color:var(--text); line-height:1.55; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:9px; padding:11px; }
     .md > :first-child{ margin-top:0; } .md > :last-child{ margin-bottom:0; }
     .md p{ margin:0 0 9px; }
@@ -252,7 +257,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.14.0";
+    const APP_VERSION = "0.14.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -758,6 +763,7 @@
       const [a, setA] = useState(null);
       const [loading, setLoading] = useState(false);
       const [err, setErr] = useState(false);
+      const inputRef = useRef(null);
       const ask = async () => {
         const question = q.trim();
         if (!question) return;
@@ -768,15 +774,23 @@
         } catch (e) { setErr(true); }
         setLoading(false);
       };
+      const clear = () => {
+        setQ(""); setA(null); setErr(false);
+        if (inputRef.current) inputRef.current.focus();
+      };
       return (
         <div className="ask">
           <div className="ask-title">Ask about this base</div>
           <div className="ask-row">
-            <input value={q} onChange={(e) => setQ(e.target.value)}
-              placeholder="e.g. Which side has better schools?"
-              onKeyDown={(e) => { if (e.key === "Enter") ask(); }} />
+            <div className="ask-inputwrap">
+              <input ref={inputRef} value={q} onChange={(e) => setQ(e.target.value)}
+                placeholder="e.g. Where should we live?"
+                onKeyDown={(e) => { if (e.key === "Enter") ask(); }} />
+              {q ? <button className="ask-clear" onClick={clear} aria-label="Clear question" title="Clear">&times;</button> : null}
+            </div>
             <button onClick={ask} disabled={loading}>{loading ? "..." : "Ask"}</button>
           </div>
+          {loading ? <div className="ask-ans faint ask-thinking"><span className="spin spin-sm" />Thinking&hellip;</div> : null}
           {err ? <div className="ask-ans faint">Couldn't reach the assistant. Start the backend and try again.</div> : null}
           {a ? <div className="ask-ans"><Markdown text={a} /></div> : null}
           <div className="faint tiny" style={{ marginTop: 6 }}>Answers come only from this guide's verified content.</div>

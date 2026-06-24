@@ -1,0 +1,178 @@
+{
+  "slug": "naval-station-norfolk",
+  "schema_version": "0.1",
+  "name": "Naval Station Norfolk",
+  "short_name": "Norfolk",
+  "branch": "U.S. Navy",
+  "states": ["VA"],
+  "tagline": "The world's largest naval station and the heart of the Atlantic Fleet, on Hampton Roads.",
+  "coords": { "lat": 36.9467, "lng": -76.33, "label": "Norfolk, VA (Sewells Point)" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-24",
+  "_note": "First Navy base. Facts verified from official + well-corroborated sources (cnrma.cnic.navy.mil, norfolknavalhousing.com, portsmouth.tricare.mil, DeCA/NEX, Wikipedia for the headline figures it cites to the Navy). BAH: full VA298 (Norfolk/Portsmouth) 2026 table sourced from the Navy housing partner's published 2026 rates (norfolknavalhousing.com/bah-rates); spot-check against the official DoD calculator before treating as gospel. Killer content (the Hampton Roads commute/tunnel decision) is drawn from cited commute figures. Medium-confidence flags: base coords (approx Sewells Point), representative off-base ZIP 23505, housing partner branding (Lincoln Military Housing per the official Norfolk site; nationally transitioning to Liberty Military Housing in some markets).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Sewells Point, Norfolk, VA (Hampton Roads)",
+        "Known as": "World's largest naval station",
+        "Waterfront": "14 piers, 75+ home-ported ships",
+        "Airfield": "Chambers Field (about 134 aircraft, 11 hangars)",
+        "Fleet": "Homeport for Atlantic Fleet carrier strike groups"
+      },
+      "source": { "label": "Naval Station Norfolk (official)", "url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/About/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Station Norfolk is the world's largest naval station, occupying Sewells Point where the Elizabeth River and the James meet the Chesapeake Bay. It is the center of gravity for the U.S. Atlantic Fleet.",
+        "The station supports more than 75 ships across 14 piers, from aircraft carriers and submarines to surface combatants and Military Sealift Command vessels, plus the air operations at the adjacent Chambers Field. For a huge share of the Navy, a Norfolk tour is simply part of the career."
+      ],
+      "source": { "label": "Naval Station Norfolk (official)", "url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/About/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "commute_decision",
+      "title": "Which Side of the Water? The Hampton Roads Commute",
+      "type": "killer",
+      "data": {
+        "subtitle": "Hampton Roads is a cluster of cities wrapped around the water. For a sailor at Norfolk, where you live decides whether your daily commute includes a tunnel, and the tunnels here are famous for traffic.",
+        "intro": [
+          "The base sits at Sewells Point in north Norfolk, on the 'Southside' of Hampton Roads. The region is really several cities knit together by bridges and tunnels, so the neighborhood you pick sets your commute for the entire tour.",
+          "The single biggest factor is the Hampton Roads Bridge-Tunnel (HRBT) on Interstate 64. It carries roughly 100,000 vehicles a day and can add anywhere from 30 to 90 minutes when traffic, weather, or an incident backs it up. Sailors stationed at Norfolk overwhelmingly live on the Southside to avoid crossing it daily. Living on the Peninsula, in Hampton or Newport News, makes the HRBT part of your routine."
+        ],
+        "recommendations": [
+          { "who": "Shortest commute", "advice": "Live in Norfolk itself. Neighborhoods like Ghent and Larchmont run about 5 to 15 minutes to the base with no tunnel." },
+          { "who": "Suburban feel, still no tunnel", "advice": "Virginia Beach (Kings Grant, Great Neck) or Chesapeake (Western Branch) are roughly 20 to 30 minutes via I-64 and I-564, no tunnel crossing." },
+          { "who": "Think hard before the Peninsula", "advice": "Hampton and Newport News can be more affordable, but a daily HRBT crossing is the longest and least predictable commute in the region. Many Norfolk sailors avoid it." },
+          { "who": "Renting or buying", "advice": "Hampton Roads is a deep, military-heavy housing market that turns over with every PCS season. A local agent who actually knows the tunnels is worth a lot here." }
+        ]
+      },
+      "source": { "label": "Hampton Roads Bridge-Tunnel (background)", "url": "https://en.wikipedia.org/wiki/Hampton_Roads_Bridge%E2%80%93Tunnel" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID, arranged through the installation's Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Naval Station Norfolk site before you go."
+      ],
+      "source": { "label": "Naval Station Norfolk (official)", "url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing at Naval Station Norfolk is privatized, operated by Lincoln Military Housing across about 10 neighborhoods sized to rank and family needs.",
+        "You start with the Navy Housing Service Center, which processes applications and refers you to the property manager. Reach the housing office at (757) 447-9025."
+      ],
+      "source": { "label": "NS Norfolk Navy Housing (partner)", "url": "https://www.norfolknavalhousing.com/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "VA298",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/",
+        "rates": {
+          "E-1": { "w": 2229, "wo": 1707 },
+          "E-2": { "w": 2229, "wo": 1707 },
+          "E-3": { "w": 2229, "wo": 1707 },
+          "E-4": { "w": 2229, "wo": 1707 },
+          "E-5": { "w": 2430, "wo": 1908 },
+          "E-6": { "w": 2559, "wo": 2043 },
+          "E-7": { "w": 2604, "wo": 2235 },
+          "E-8": { "w": 2661, "wo": 2463 },
+          "E-9": { "w": 2796, "wo": 2487 },
+          "W-1": { "w": 2574, "wo": 2166 },
+          "W-2": { "w": 2628, "wo": 2460 },
+          "W-3": { "w": 2697, "wo": 2496 },
+          "W-4": { "w": 2832, "wo": 2562 },
+          "W-5": { "w": 3000, "wo": 2616 },
+          "O-1": { "w": 2454, "wo": 2022 },
+          "O-2": { "w": 2556, "wo": 2367 },
+          "O-3": { "w": 2694, "wo": 2505 },
+          "O-4": { "w": 3054, "wo": 2601 },
+          "O-5": { "w": 3318, "wo": 2625 },
+          "O-6": { "w": 3342, "wo": 2673 },
+          "O-7": { "w": 3366, "wo": 2718 }
+        }
+      },
+      "source": { "label": "2026 BAH, MHA VA298 (Norfolk/Portsmouth) - verify on the DoD calculator", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "23505", "label": "Norfolk, VA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district in Hampton Roads, so children attend the local civilian public schools. On and near the base, that is Norfolk Public Schools.",
+        "Because families spread across Norfolk, Virginia Beach, Chesapeake, Portsmouth, and Suffolk, and each city runs its own school division, your assigned schools depend entirely on your address. Confirm the division and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Norfolk Public Schools (official)", "url": "https://www.npsk12.com/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "VA", "city": "Norfolk" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Naval Medical Center Portsmouth (NMCP)",
+        "Address": "620 John Paul Jones Circle, Portsmouth, VA 23708",
+        "On base": "NAVSTA Norfolk Branch Health Clinic",
+        "Distinction": "Oldest naval hospital in the U.S. (since 1830)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Medical Center Portsmouth (official)", "url": "https://portsmouth.tricare.mil/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Naval Station Norfolk Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Norfolk, one of the largest in the Navy"
+      },
+      "source": { "label": "DeCA Commissary - Naval Station Norfolk", "url": "https://corp.commissaries.com/shopping/store-locations/norfolk-nb" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Nauticus & Battleship Wisconsin", "category": "Waterfront", "blurb": "A maritime science center on the Norfolk waterfront, home to the battleship USS Wisconsin.", "maps_query": "Nauticus, Norfolk VA" },
+        { "name": "Chrysler Museum of Art", "category": "Museum", "blurb": "A well-regarded art museum in Norfolk's Ghent district, free to enter.", "maps_query": "Chrysler Museum of Art, Norfolk VA" },
+        { "name": "Norfolk Botanical Garden", "category": "Outdoors", "blurb": "A large garden next to the airport, just minutes from the base.", "maps_query": "Norfolk Botanical Garden, VA" },
+        { "name": "Virginia Beach Oceanfront", "category": "Day trip", "blurb": "The classic boardwalk and beach, about a half hour southeast on a clear day.", "maps_query": "Virginia Beach Oceanfront Boardwalk, VA" }
+      ]
+    }
+  ]
+}

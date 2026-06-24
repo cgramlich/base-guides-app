@@ -6,7 +6,7 @@
     { "slug": "jbsa-fort-sam-houston", "name": "JBSA Fort Sam Houston", "branch": "U.S. Army", "state": "TX", "ready": true },
     { "slug": "jbsa-randolph", "name": "JBSA Randolph", "branch": "U.S. Air Force", "state": "TX", "ready": true },
     { "slug": "vicenza-italy", "name": "Vicenza, Italy", "branch": "U.S. Army", "state": "Italy", "region": "OCONUS", "ready": true },
-    { "slug": "naval-station-norfolk", "name": "Naval Station Norfolk", "branch": "U.S. Navy", "state": "VA", "ready": false },
+    { "slug": "naval-station-norfolk", "name": "Naval Station Norfolk", "branch": "U.S. Navy", "state": "VA", "ready": true },
     { "slug": "joint-base-langley-eustis", "name": "Joint Base Langley-Eustis", "branch": "Air Force / Army", "state": "VA", "ready": false },
     { "slug": "rock-island-arsenal", "name": "Rock Island Arsenal", "branch": "U.S. Army", "state": "IL", "ready": false }
   ]
