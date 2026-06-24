@@ -5,7 +5,7 @@
   "short_name": "Fort Sam Houston",
   "branch": "U.S. Army",
   "states": ["TX"],
-  "tagline": "The home of military medicine - Brooke Army Medical Center and the military's medical training hub.",
+  "tagline": "The home of military medicine: Brooke Army Medical Center and the military's medical training hub.",
   "coords": { "lat": 29.457, "lng": -98.4458, "label": "San Antonio, TX" },
   "tz": "America/Chicago",
   "last_full_review": "2026-06-24",
@@ -31,7 +31,7 @@
       "type": "prose",
       "data": [
         "JBSA-Fort Sam Houston is the center of U.S. military medicine. Its signature tenant is Brooke Army Medical Center (BAMC), the Army's flagship medical institution and the Defense Department's only Level I Trauma Center.",
-        "The post also hosts the Medical Education & Training Campus (METC) - which trains enlisted medics for the Army, Navy, Air Force, and Coast Guard - and the U.S. Army Medical Center of Excellence (MEDCoE). Installation support is provided by the Air Force's 502d Air Base Wing."
+        "The post also hosts the Medical Education & Training Campus (METC), which trains enlisted medics for the Army, Navy, Air Force, and Coast Guard, plus the U.S. Army Medical Center of Excellence (MEDCoE). Installation support is provided by the Air Force's 502d Air Base Wing."
       ],
       "source": { "label": "Brooke Army Medical Center (official)", "url": "https://bamc.tricare.mil/" },
       "verified": "2026-06-24"
@@ -41,15 +41,15 @@
       "title": "The Home of Military Medicine",
       "type": "killer",
       "data": {
-        "subtitle": "Fort Sam Houston is the center of military medicine - which makes it one of the best-resourced bases in the country for a family's healthcare.",
+        "subtitle": "Fort Sam Houston is the center of military medicine, which makes it one of the best-resourced bases in the country for a family's healthcare.",
         "intro": [
-          "Brooke Army Medical Center anchors the entire San Antonio military health system - it's the DoD's flagship medical center and its only Level I Trauma Center. For families, that means deep healthcare access on and around the post.",
-          "For many service members, an assignment here is tied to medical training or care, given METC and MEDCoE. It's a different feel from an operational post - more campus and care than flight line or motor pool."
+          "Brooke Army Medical Center anchors the entire San Antonio military health system. It's the DoD's flagship medical center and its only Level I Trauma Center, which means deep healthcare access for families on and around the post.",
+          "For many service members, an assignment here is tied to medical training or care, given METC and MEDCoE. It has a different feel from an operational post, more campus and care than flight line or motor pool."
         ],
         "recommendations": [
           { "who": "Healthcare access", "advice": "BAMC serves the whole San Antonio military community; confirm enrollment and referrals through TRICARE West." },
           { "who": "Living near post", "advice": "Established neighborhoods like Alamo Heights / Terrell Hills sit just off post, with a short commute to central San Antonio." },
-          { "who": "City life", "advice": "You're minutes from downtown - the River Walk, the Pearl, and the rest of San Antonio." }
+          { "who": "City life", "advice": "You're minutes from downtown: the River Walk, the Pearl, and the rest of San Antonio." }
         ]
       },
       "source": { "label": "Brooke Army Medical Center (official)", "url": "https://bamc.tricare.mil/" },
@@ -61,7 +61,7 @@
       "type": "prose",
       "data": [
         "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID.",
-        "Gate hours and visitor requirements change - confirm the current details on the official JBSA-Fort Sam Houston visitor information page before you go."
+        "Gate hours and visitor requirements change, so confirm the current details on the official JBSA-Fort Sam Houston visitor information page before you go."
       ],
       "source": { "label": "JBSA-Fort Sam Houston visitor info (official)", "url": "https://www.jbsa.mil/Information/Gate-Hours-Visitor-Information/JBSA-Fort-Sam-Houston-Visitor-Info/" },
       "verified": "2026-06-24"
@@ -72,7 +72,7 @@
       "type": "prose",
       "data": [
         "On-post family housing is privatized, managed by Hunt Military Communities (which took over management in 2021).",
-        "Eligibility and availability vary by rank and family size - check the garrison housing office and the partner for current options and waitlists."
+        "Eligibility and availability vary by rank and family size, so check the garrison housing office and the partner for current options and waitlists."
       ],
       "source": { "label": "JBSA-Fort Sam Houston housing (official)", "url": "https://home.army.mil/samhouston/directorates-1/privatized-army-housing" },
       "verified": "2026-06-24"
@@ -123,8 +123,8 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "On post, schooling is the Fort Sam Houston Independent School District (FSHISD) - a Texas public district physically on the installation (Fort Sam Houston Elementary; Robert G. Cole Middle/High). It is not a DoDEA district.",
-        "Off post, school assignment depends on your San Antonio address - confirm the specific district and campus for any neighborhood you're considering."
+        "On post, schooling is the Fort Sam Houston Independent School District (FSHISD), a Texas public district physically on the installation (Fort Sam Houston Elementary; Robert G. Cole Middle/High). It is not a DoDEA district.",
+        "Off post, school assignment depends on your San Antonio address, so confirm the specific district and campus for any neighborhood you're considering."
       ],
       "source": { "label": "Fort Sam Houston ISD (official)", "url": "https://www.fshisd.net/" },
       "verified": "2026-06-24"

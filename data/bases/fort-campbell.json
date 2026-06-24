@@ -43,7 +43,7 @@
         "subtitle": "For buyers and renters PCSing to Campbell, the side of the line you choose is a several-thousand-dollar decision over a typical tour.",
         "intro": [
           "Fort Campbell sits on the Kentucky-Tennessee state line. The post office address is in Kentucky, but most of the housing, most of the gates, and the largest off-post community (Clarksville) sit on the Tennessee side. That geography forces a decision other military families never have to make: which state to live in.",
-          "The two states tax differently, school children differently, and value homes differently. Over a typical three-to-four-year tour the cumulative difference between Clarksville and Hopkinsville or Oak Grove adds up to thousands of dollars - plus a meaningfully different schooling and real-estate experience."
+          "The two states tax differently, school children differently, and value homes differently. Over a typical three-to-four-year tour the cumulative difference between Clarksville and Hopkinsville or Oak Grove adds up to thousands of dollars, plus a meaningfully different schooling and real estate experience."
         ],
         "table": {
           "cols": ["Factor", "Tennessee (Clarksville)", "Kentucky (Hopkinsville / Oak Grove)", "Edge"],
@@ -60,8 +60,8 @@
         },
         "recommendations": [
           { "who": "Buyers with school-age kids, 3-4 yr tour", "advice": "Default to Clarksville (Sango or Rossview): stronger schools, faster resale, tax math roughly a wash." },
-          { "who": "Buyers prioritizing dollar-for-dollar home value", "advice": "Look hard at Hopkinsville - noticeably more house per budget; plan for a slower sale at next PCS." },
-          { "who": "Shortest commute / small-town feel", "advice": "Oak Grove - base proximity is unmatched." },
+          { "who": "Buyers prioritizing dollar-for-dollar home value", "advice": "Look hard at Hopkinsville. You get noticeably more house per budget, but plan for a slower sale at your next PCS." },
+          { "who": "Shortest commute / small-town feel", "advice": "Oak Grove. Base proximity is unmatched." },
           { "who": "Renters with kids in school", "advice": "Tennessee (Clarksville) for the schools; the tax advantage compounds less over a short lease." }
         ]
       }
@@ -71,7 +71,7 @@
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Fort Campbell has multiple access gates, including Gate 4 (TC Freeman) and Gate 7 - the main 24/7 visitor and commercial gate. Gate openings, hours, and lanes change frequently.",
+        "Fort Campbell has multiple access gates, including Gate 4 (TC Freeman) and Gate 7, the main 24/7 visitor and commercial gate. Gate openings, hours, and lanes change frequently.",
         "Visitors without a DoD ID need a pass from the Visitor Control Center (Gate 7, Building 7199, 7199 Glider Road; 270-956-4488). Bring a REAL ID-compliant ID plus your vehicle registration and insurance.",
         "IMPORTANT: gate hours change often. Always confirm which gates are open and their current hours on the official garrison page before you travel."
       ],
@@ -85,7 +85,7 @@
       "data": [
         "On-post housing is operated by Campbell Crossing LLC, a Lendlease privatized military housing community.",
         "Homes are available to military families, unaccompanied service members, reservists, DoD employees, retirees, and qualified civilians. Active-duty service members pay no application fees or security deposits, and you apply through the partner's online application.",
-        "Main office: (931) 431-9003 - confirm current numbers and availability on the partner site."
+        "Main office: (931) 431-9003. Confirm current numbers and availability on the partner site."
       ],
       "source": { "label": "Campbell Crossing (Lendlease)", "url": "https://www.campbellcrossingllc.com/" },
       "verified": "2026-06-23"
@@ -136,7 +136,7 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "Families in on-post housing are eligible for DoDEA schools - the Department of Defense Education Activity operates 6 schools at Fort Campbell serving PK through grade 12.",
+        "Families in on-post housing are eligible for DoDEA schools. The Department of Defense Education Activity operates 6 schools at Fort Campbell serving PK through grade 12.",
         "Off post, the Tennessee side is served primarily by the Clarksville-Montgomery County School System (CMCSS); the Kentucky side primarily by Christian County Public Schools. Other nearby districts include Stewart and Cheatham (TN) and Todd and Trigg (KY).",
         "School Liaison Office: (270) 798-9874."
       ],

@@ -5,7 +5,7 @@
   "short_name": "Lackland",
   "branch": "U.S. Air Force",
   "states": ["TX"],
-  "tagline": "Gateway to the Air Force - home of Air Force & Space Force Basic Military Training.",
+  "tagline": "Gateway to the Air Force: home of Air Force & Space Force Basic Military Training.",
   "coords": { "lat": 29.3877, "lng": -98.6064, "label": "San Antonio, TX" },
   "tz": "America/Chicago",
   "last_full_review": "2026-06-24",
@@ -30,8 +30,8 @@
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "JBSA-Lackland is home to the 37th Training Wing - the largest training wing in the Department of the Air Force and known as the 'Gateway to the Air Force.'",
-        "Its 737th Training Group runs all enlisted Basic Military Training (BMT) for both the Air Force and Space Force - tens of thousands of recruits a year - alongside a wide range of technical and professional training. JBSA itself is the Department of Defense's largest joint base."
+        "JBSA-Lackland is home to the 37th Training Wing, the largest training wing in the Department of the Air Force and known as the 'Gateway to the Air Force.'",
+        "Its 737th Training Group runs all enlisted Basic Military Training (BMT) for both the Air Force and Space Force, tens of thousands of recruits a year, alongside a wide range of technical and professional training. JBSA itself is the Department of Defense's largest joint base."
       ],
       "source": { "label": "37th Training Wing (official)", "url": "https://www.37trw.af.mil/About/" },
       "verified": "2026-06-24"
@@ -41,15 +41,15 @@
       "title": "BMT Graduation: The Family Guide",
       "type": "killer",
       "data": {
-        "subtitle": "Lackland is the only Basic Military Training site for the Air Force and Space Force - so for most families, the reason you're here is graduation week.",
+        "subtitle": "Lackland is the only Basic Military Training site for the Air Force and Space Force, so for most families the reason you're here is graduation week.",
         "intro": [
           "Graduation week is when you'll see your Airman or Guardian for the first time since they shipped out. Families travel to San Antonio from across the country for it, and a little planning makes the trip far less stressful.",
-          "Graduation is held weekly (typically Thursdays) and includes the Airman's Run. Schedules, locations, dress expectations, and base-access rules change week to week - always confirm the current details on the official BMT graduation site before you travel."
+          "Graduation is held weekly (typically Thursdays) and includes the Airman's Run. Schedules, locations, dress expectations, and base-access rules change week to week, so always confirm the current details on the official BMT graduation site before you travel."
         ],
         "recommendations": [
           { "who": "Sort base access early", "advice": "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID. Check the JBSA-Lackland visitor info page for current gate and pass requirements." },
           { "who": "Book lodging early", "advice": "Graduation weeks fill up fast. On-base lodging is limited, but there are plenty of hotels near the base and across San Antonio." },
-          { "who": "Make a long weekend of it", "advice": "Most families do - the River Walk, the Alamo, and San Antonio's food scene are all close by." }
+          { "who": "Make a long weekend of it", "advice": "Most families do. The River Walk, the Alamo, and San Antonio's food scene are all close by." }
         ]
       },
       "source": { "label": "Air Force BMT Graduation (official)", "url": "https://www.basictraining.af.mil/Home/BMT-Graduation-Information/" },
@@ -61,7 +61,7 @@
       "type": "prose",
       "data": [
         "JBSA-Lackland controls access at its gates; visitors without a DoD ID need a visitor pass plus a REAL ID-compliant ID.",
-        "Gate hours and visitor requirements change - confirm the current details on the official JBSA-Lackland visitor information page before you go."
+        "Gate hours and visitor requirements change, so confirm the current details on the official JBSA-Lackland visitor information page before you go."
       ],
       "source": { "label": "JBSA-Lackland visitor info (official)", "url": "https://www.jbsa.mil/Information/Gate-Hours-Visitor-Information/JBSA-Lackland-Visitor-Info/" },
       "verified": "2026-06-24"
@@ -72,7 +72,7 @@
       "type": "prose",
       "data": [
         "On-base family housing at JBSA-Lackland is privatized, operated by Balfour Beatty Communities.",
-        "Eligibility and availability vary by rank and family size - check the Air Force Housing office and the housing partner for current options and waitlists."
+        "Eligibility and availability vary by rank and family size, so check the Air Force Housing office and the housing partner for current options and waitlists."
       ],
       "source": { "label": "Air Force Housing - JBSA (official)", "url": "https://www.housing.af.mil/Home/Installations/Joint-Base-San-Antonio/" },
       "verified": "2026-06-24"
@@ -123,7 +123,7 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "On base, schooling is the civilian Lackland Independent School District (Lackland Elementary and Virginia Allred Stacey Jr/Sr High School) - there is no DoDEA district here.",
+        "On base, schooling is the civilian Lackland Independent School District (Lackland Elementary and Virginia Allred Stacey Jr/Sr High School). There is no DoDEA district here.",
         "Off base, the area northwest of the installation is served largely by Northside Independent School District, one of the largest districts in Texas."
       ],
       "source": { "label": "Lackland ISD (official)", "url": "https://www.lacklandisd.net/" },
