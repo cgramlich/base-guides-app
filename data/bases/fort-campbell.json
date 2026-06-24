@@ -178,7 +178,13 @@
       "id": "nearby",
       "title": "Food & Things Nearby",
       "type": "places_live",
-      "note": "Live nearby restaurants via Google Places. Device 'near me' + pinned editorial picks come next."
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Don F. Pratt Memorial Museum", "category": "On post", "blurb": "The 101st Airborne Division's museum on Fort Campbell, with aircraft, vehicles, and artifacts from WWII through recent deployments.", "maps_query": "Don F. Pratt Memorial Museum, Fort Campbell" },
+        { "name": "Dunbar Cave State Park", "category": "Outdoors", "blurb": "Guided cave tours and a few miles of wooded walking trails just north of downtown Clarksville.", "maps_query": "Dunbar Cave State Park, Clarksville TN" },
+        { "name": "Beachaven Vineyards & Winery", "category": "Winery", "blurb": "A family-run Clarksville winery since 1986, with free tastings and live music in the warmer months.", "maps_query": "Beachaven Vineyards & Winery, Clarksville TN" },
+        { "name": "Downtown Commons", "category": "Downtown", "blurb": "A downtown park that hosts the Downtown at Sundown outdoor concert series each summer.", "maps_query": "Downtown Commons, Clarksville TN" }
+      ]
     }
   ]
 }

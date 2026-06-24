@@ -10,7 +10,7 @@
    - OSM map tiles -> cache-first, size-capped (passive offline maps).
    VERSION is kept in lockstep with APP_VERSION in index.html.
 */
-const VERSION = "0.13.2";                      // keep in lockstep with APP_VERSION
+const VERSION = "0.14.0";                      // keep in lockstep with APP_VERSION
 const SHELL_CACHE = "bg-shell-" + VERSION;
 const ASSET_CACHE = "bg-assets-" + VERSION;
 const DATA_CACHE  = "bg-data-v1";              // base guides; un-versioned so it

@@ -192,6 +192,15 @@
     .bah-amt{font-family:'Fraunces',serif; font-size:34px; color:var(--text); line-height:1;}
     .bah-mo{color:var(--text-faint); font-size:13px;}
     .bah-help{margin-top:8px; font-size:12px; line-height:1.5; color:var(--text-faint);}
+    .picks-title{font-family:'Fraunces',serif; font-size:15px; color:var(--text); margin:2px 0 9px;}
+    .picks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px;}
+    .pick-card{padding:10px 12px; background:var(--bg-2); border:1px solid var(--line-soft); border-left:3px solid var(--accent); border-radius:10px;}
+    .pick-top{display:flex; align-items:baseline; justify-content:space-between; gap:10px;}
+    .pick-name{font-weight:700; font-size:14px; color:var(--text);}
+    .pick-cat{font-size:11px; color:var(--text-faint); text-transform:uppercase; letter-spacing:.04em; white-space:nowrap;}
+    .pick-blurb{font-family:'Crimson Pro',Georgia,serif; font-size:14px; color:var(--text-dim); margin-top:3px; line-height:1.45;}
+    .pick-link{display:inline-block; margin-top:6px; color:var(--accent); font-size:12.5px; font-weight:600;}
+    .picks-divider{font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--text-faint); margin:14px 0 10px; border-top:1px solid var(--line-soft); padding-top:10px;}
     .chips{display:flex; flex-wrap:wrap; gap:7px;}
     .chip{background:var(--surface-2); border:1px solid var(--line); color:var(--text-dim); font-size:12.5px; padding:5px 11px; border-radius:999px;}
     .chip.pick{cursor:pointer;}
@@ -243,7 +252,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.13.2";
+    const APP_VERSION = "0.14.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -464,7 +473,7 @@
       );
     }
 
-    function LivePlaces({ coords, note }) {
+    function LivePlaces({ coords, note, picks }) {
       const [items, setItems] = useState(null);
       const [err, setErr] = useState(null);
       const [device, setDevice] = useState(null);
@@ -490,29 +499,51 @@
           { timeout: 10000, maximumAge: 300000 }
         );
       };
-      if (err) return (
-        <div className="live-note">
-          {note || "Live nearby places appear here."}
-          <br /><span className="faint tiny">(Can't reach the backend - start it to load live results.)</span>
+      const picksBlock = (picks && picks.length) ? (
+        <div className="picks-wrap">
+          <div className="picks-title">Our picks</div>
+          <ul className="picks">
+            {picks.map((p, i) => (
+              <li key={i} className="pick-card">
+                <div className="pick-top">
+                  <span className="pick-name">{p.name}</span>
+                  {p.category ? <span className="pick-cat">{p.category}</span> : null}
+                </div>
+                {p.blurb ? <div className="pick-blurb">{p.blurb}</div> : null}
+                {p.maps_query ? <a className="pick-link" href={"https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(p.maps_query)} target="_blank" rel="noopener noreferrer">Open in Maps</a> : null}
+              </li>
+            ))}
+          </ul>
         </div>
-      );
+      ) : null;
       return (
         <div>
-          <div className="chips" style={{ marginBottom: 10 }}>
-            {PLACE_CATS.map((ct) => (
-              <button key={ct.key} className={"chip pick" + (cat === ct.key ? " chip-on" : "")} onClick={() => setCat(ct.key)}>{ct.label}</button>
-            ))}
-          </div>
-          <div className="between" style={{ marginBottom: 8 }}>
-            <span className="faint tiny">{device ? "Live - near you" : "Live from Google Places - near the base"}</span>
-            <button className="btn-quiet" onClick={useMyLocation} disabled={geoBusy}>{geoBusy ? "Locating..." : (device ? "Update location" : "Use my location")}</button>
-          </div>
-          {!items ? <div className="center" style={{ padding: "18px" }}><div className="spin" /></div> : (
-            !items.length ? <div className="pending">No places found nearby.</div> : (
-              <ul className="lst">
-                {items.slice(0, 10).map((p, i) => <PlaceRow key={p.place_id || i} p={p} />)}
-              </ul>
-            )
+          {picksBlock}
+          {picksBlock ? <div className="picks-divider">Live nearby</div> : null}
+          {err ? (
+            <div className="live-note">
+              {note || "Live nearby places appear here."}
+              <br /><span className="faint tiny">(Can't reach the backend right now. Try again in a moment for live results.)</span>
+            </div>
+          ) : (
+            <div>
+              <div className="chips" style={{ marginBottom: 10 }}>
+                {PLACE_CATS.map((ct) => (
+                  <button key={ct.key} className={"chip pick" + (cat === ct.key ? " chip-on" : "")} onClick={() => setCat(ct.key)}>{ct.label}</button>
+                ))}
+              </div>
+              <div className="between" style={{ marginBottom: 8 }}>
+                <span className="faint tiny">{device ? "Live - near you" : "Live from Google Places - near the base"}</span>
+                <button className="btn-quiet" onClick={useMyLocation} disabled={geoBusy}>{geoBusy ? "Locating..." : (device ? "Update location" : "Use my location")}</button>
+              </div>
+              {!items ? <div className="center" style={{ padding: "18px" }}><div className="spin" /></div> : (
+                !items.length ? <div className="pending">No places found nearby.</div> : (
+                  <ul className="lst">
+                    {items.slice(0, 10).map((p, i) => <PlaceRow key={p.place_id || i} p={p} />)}
+                  </ul>
+                )
+              )}
+            </div>
           )}
         </div>
       );
@@ -640,7 +671,7 @@
         case "prose": return <Prose data={s.data} />;
         case "killer": return <Killer data={s.data} />;
         case "list": return <ItemList data={s.data} />;
-        case "places_live": return <LivePlaces coords={coords} note={s.note} />;
+        case "places_live": return <LivePlaces coords={coords} note={s.note} picks={s.picks} />;
         case "bah": return <BAHCalc data={s.data} />;
         case "realestate": return <RealEstate data={s.data} />;
         case "schools_live": return <SchoolsLive data={s.data} />;
