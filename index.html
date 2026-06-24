@@ -154,6 +154,13 @@
     .lst .d{color:var(--text-dim); font-size:13px; margin-top:2px;}
 
     .pending{font-size:13.5px; color:var(--text-faint); font-style:italic;}
+    .place-detail{margin:8px 0 4px; padding:11px; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:10px;}
+    .place-photo{width:100%; height:150px; object-fit:cover; border-radius:8px; display:block; margin-bottom:9px;}
+    .place-summary{font-family:'Crimson Pro',Georgia,serif; font-size:14px; color:var(--text-dim); margin-bottom:9px; line-height:1.5;}
+    .place-hours{font-size:12px; color:var(--text-faint); margin-bottom:9px;}
+    .place-hours div{line-height:1.55;}
+    .place-links{display:flex; flex-wrap:wrap; gap:16px;}
+    .place-links a{color:var(--accent); font-size:13px; font-weight:600;}
     .live-note{border:1px dashed var(--accent-dim); border-radius:11px; padding:11px 13px; font-size:13px; color:#e0c486; background:rgba(231,178,76,0.06);}
     .srcline{margin-top:12px; padding-top:9px; border-top:1px solid var(--line-soft); font-size:11.5px; color:var(--text-faint);}
     .srcline a{color:var(--accent-dim);}
@@ -235,7 +242,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.12.1";
+    const APP_VERSION = "0.13.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -402,6 +409,60 @@
       { key: "supermarket", label: "Groceries" }, { key: "gas_station", label: "Gas" },
       { key: "pharmacy", label: "Pharmacy" }, { key: "hospital", label: "Hospitals" },
     ];
+    // A nearby place: tap to expand rich details (photo/hours/phone/website), fetched on demand.
+    function PlaceRow({ p }) {
+      const [open, setOpen] = useState(false);
+      const [d, setD] = useState(null);
+      const [photo, setPhoto] = useState(null);
+      const [loading, setLoading] = useState(false);
+      const [err, setErr] = useState(false);
+      const toggle = () => {
+        if (!p.place_id) return;
+        const n = !open; setOpen(n);
+        if (n && !d && !loading) {
+          setLoading(true); setErr(false);
+          fetchJSON(apiUrl("/api/places/details?place_id=" + encodeURIComponent(p.place_id)))
+            .then((det) => {
+              setD(det); setLoading(false);
+              if (det.photos && det.photos[0]) {
+                fetchJSON(apiUrl("/api/places/photo?name=" + encodeURIComponent(det.photos[0]) + "&w=640"))
+                  .then((ph) => setPhoto(ph.photoUri)).catch(() => {});
+              }
+            })
+            .catch(() => { setLoading(false); setErr(true); });
+        }
+      };
+      return (
+        <li>
+          <div className="place-head" onClick={toggle} style={{ cursor: p.place_id ? "pointer" : "default" }}>
+            <div className="t">{p.name} {p.price_level ? <span className="faint">{PRICE[p.price_level] || ""}</span> : null}</div>
+            <div className="d">
+              {p.rating ? ("* " + p.rating + " (" + (p.user_ratings_total || 0) + ")") : "no rating"}
+              {p.open_now === true ? " - open now" : (p.open_now === false ? " - closed" : "")}
+              {p.vicinity ? " - " + p.vicinity : ""}
+            </div>
+          </div>
+          {open ? (
+            <div className="place-detail">
+              {loading ? <div className="center" style={{ padding: 8 }}><div className="spin" /></div> :
+                (err || !d) ? <div className="pending">Details unavailable.</div> : (
+                  <div>
+                    {photo ? <img className="place-photo" src={photo} alt={d.name || ""} /> : null}
+                    {d.summary ? <div className="place-summary">{d.summary}</div> : null}
+                    {d.hours && d.hours.length ? <div className="place-hours">{d.hours.map((h, i) => <div key={i}>{h}</div>)}</div> : null}
+                    <div className="place-links">
+                      {d.phone ? <a href={"tel:" + d.phone}>{d.phone}</a> : null}
+                      {d.website ? <a href={d.website} target="_blank" rel="noopener noreferrer">Website</a> : null}
+                      {d.maps_url ? <a href={d.maps_url} target="_blank" rel="noopener noreferrer">Directions</a> : null}
+                    </div>
+                  </div>
+                )}
+            </div>
+          ) : null}
+        </li>
+      );
+    }
+
     function LivePlaces({ coords, note }) {
       const [items, setItems] = useState(null);
       const [err, setErr] = useState(null);
@@ -448,16 +509,7 @@
           {!items ? <div className="center" style={{ padding: "18px" }}><div className="spin" /></div> : (
             !items.length ? <div className="pending">No places found nearby.</div> : (
               <ul className="lst">
-                {items.slice(0, 10).map((p, i) => (
-                  <li key={i}>
-                    <div className="t">{p.name} {p.price_level ? <span className="faint">{PRICE[p.price_level] || ""}</span> : null}</div>
-                    <div className="d">
-                      {p.rating ? ("* " + p.rating + " (" + (p.user_ratings_total || 0) + ")") : "no rating"}
-                      {p.open_now === true ? " - open now" : (p.open_now === false ? " - closed" : "")}
-                      {p.vicinity ? " - " + p.vicinity : ""}
-                    </div>
-                  </li>
-                ))}
+                {items.slice(0, 10).map((p, i) => <PlaceRow key={p.place_id || i} p={p} />)}
               </ul>
             )
           )}
