@@ -2,7 +2,7 @@
   "updated": "2026-06-22",
   "bases": [
     { "slug": "fort-campbell", "name": "Fort Campbell", "branch": "U.S. Army", "state": "KY / TN", "ready": true },
-    { "slug": "jbsa-lackland", "name": "JBSA Lackland", "branch": "U.S. Air Force", "state": "TX", "ready": false },
+    { "slug": "jbsa-lackland", "name": "JBSA Lackland", "branch": "U.S. Air Force", "state": "TX", "ready": true },
     { "slug": "naval-station-norfolk", "name": "Naval Station Norfolk", "branch": "U.S. Navy", "state": "VA", "ready": false },
     { "slug": "joint-base-langley-eustis", "name": "Joint Base Langley-Eustis", "branch": "Air Force / Army", "state": "VA", "ready": false },
     { "slug": "rock-island-arsenal", "name": "Rock Island Arsenal", "branch": "U.S. Army", "state": "IL", "ready": false }
