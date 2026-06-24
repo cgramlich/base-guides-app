@@ -242,8 +242,8 @@
     // Brand artwork behind named files so a rebrand is a drop-in swap (see CLAUDE.md
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
-    const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.13.1";
+    const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
+    const APP_VERSION = "0.13.2";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -908,7 +908,7 @@
                 <div className="bridge">
                   <div className="bridge-h">Talk to a vetted realtor at {baseObj.name}</div>
                   <p>You're about {until} days out - a good time to connect with a {baseObj.name}-area realtor who knows the neighborhoods, schools, and the buy-vs-rent math. No pressure, no spam.</p>
-                  <a className="btn-gold" href={"mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent("Realtor intro - " + baseObj.name) + "&body=" + encodeURIComponent("I'm PCSing to " + baseObj.name + " around " + fmtDate(move) + " and would like an introduction to a vetted realtor.")}>Request an introduction</a>
+                  <a className="btn-gold" href={"mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent("Realtor intro for " + baseObj.name) + "&body=" + encodeURIComponent("I'm PCSing to " + baseObj.name + " around " + fmtDate(move) + " and would like an introduction to a vetted realtor.")}>Request an introduction</a>
                 </div>
               ) : null}
               <div className="between" style={{ margin: "4px 2px 10px" }}>
