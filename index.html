@@ -233,7 +233,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.11.2";
+    const APP_VERSION = "0.11.3";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -477,12 +477,16 @@
       if (!w) return null;
       const c = w.current; const alerts = w.alerts || [];
       if (!c && !alerts.length) return null;
+      const extra = [];
+      if (w.high != null) extra.push("H " + w.high + "°");
+      if (w.low != null) extra.push("L " + w.low + "°");
+      if (w.precip != null) extra.push(w.precip + "% precip");
       return (
         <div>
           {alerts.map((a, i) => (
             <div key={i} className="wx-alert"><strong>Weather alert: {a.event}</strong>{a.headline ? <div className="wx-alert-h">{a.headline}</div> : null}</div>
           ))}
-          {c ? <div className="wx"><span className="wx-temp">{c.temp}°{c.unit}</span><span className="wx-cond">{c.short}</span><span className="wx-src">NWS</span></div> : null}
+          {c ? <div className="wx"><span className="wx-temp">{c.temp}°{c.unit}</span><span className="wx-cond">{c.short}{extra.length ? " · " + extra.join(" · ") : ""}</span><span className="wx-src">NWS</span></div> : null}
         </div>
       );
     }
