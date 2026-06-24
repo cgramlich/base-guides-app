@@ -93,6 +93,7 @@
     .pill{display:inline-block; font-size:11px; padding:2px 9px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); color:var(--text-dim); margin-left:8px; vertical-align:middle;}
     .pill.ready{background:rgba(127,170,107,0.14); border-color:rgba(127,170,107,0.4); color:#a9c98f;}
     .pill.soon{background:rgba(231,178,76,0.12); border-color:rgba(231,178,76,0.35); color:#e0c486;}
+    .pill.oconus{background:rgba(111,159,201,0.16); border-color:rgba(111,159,201,0.4); color:#9cc0e0;}
 
     .back{font-size:14px; color:var(--accent); font-weight:500; display:inline-flex; gap:6px; align-items:center; margin-bottom:6px; cursor:pointer;}
     .hero{margin:2px 0 4px;}
@@ -234,7 +235,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.12.0";
+    const APP_VERSION = "0.12.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -714,6 +715,7 @@
                 <div style={{ minWidth: 0 }}>
                   <div className="base-name">
                     {b.name}
+                    {b.region === "OCONUS" ? <span className="pill oconus">OCONUS</span> : null}
                     {b.ready ? <span className="pill ready">Guide ready</span> : <span className="pill soon">Coming soon</span>}
                   </div>
                   <div className="meta-line">{[b.branch, b.state].filter(Boolean).join("  -  ")}</div>

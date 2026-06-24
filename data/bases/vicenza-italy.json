@@ -1,0 +1,123 @@
+{
+  "slug": "vicenza-italy",
+  "schema_version": "0.1",
+  "name": "Vicenza, Italy",
+  "short_name": "Vicenza",
+  "branch": "U.S. Army",
+  "states": ["Italy"],
+  "region": "OCONUS",
+  "tagline": "USAG Italy, home of the 173rd Airborne 'Sky Soldiers' and the classic European tour.",
+  "coords": { "lat": 45.5388, "lng": 11.5738, "label": "Vicenza, Italy" },
+  "tz": "Europe/Rome",
+  "last_full_review": "2026-06-24",
+  "_note": "First OCONUS base (MVP). US-only feeds intentionally omitted (no BAH calculator [overseas uses OHA], no RentCast real-estate, no SchoolDigger). Weather comes via the Open-Meteo global fallback. Verified from official sources (home.army.mil/italy, setaf-africa.army.mil, mhs-europe.tricare.mil, dodea.edu/europe, DeCA/AAFES). Medium-confidence flags: base coords (aggregator, approx Caserma Ederle; Del Din is a few km away), exact DoDEA Vicenza school names (verify on dodea.edu before stating as hard facts).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (USAG Italy)",
+        "Location": "Vicenza, Italy",
+        "Posts": "Caserma Ederle and Caserma Del Din",
+        "Signature unit": "173rd Airborne Brigade (Sky Soldiers)",
+        "Also hosts": "SETAF-AF headquarters"
+      },
+      "source": { "label": "USAG Italy (official)", "url": "https://home.army.mil/italy/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "USAG Italy is the Army's power-projection platform south of the Alps, providing base support to the Vicenza Military Community across Caserma Ederle and Caserma Del Din.",
+        "Vicenza is home to the 173rd Airborne Brigade, the 'Sky Soldiers,' the Army's only airborne brigade in Europe, along with U.S. Army Southern European Task Force, Africa (SETAF-AF) and supporting units. SETAF-AF and several 173rd battalions are based at the newer Caserma Del Din."
+      ],
+      "source": { "label": "USAG Italy (official)", "url": "https://home.army.mil/italy/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "european_tour",
+      "title": "The European Tour",
+      "type": "killer",
+      "data": {
+        "subtitle": "Vicenza is the classic overseas assignment. Most families live off post on the Italian economy, with Venice, the Dolomites, and the rest of Europe a short drive or a cheap flight away.",
+        "intro": [
+          "An assignment to Vicenza is as much a lifestyle as a duty station. The community around the 173rd Airborne and SETAF-AF is famously tight knit, and families tend to leave with a few years of travel and a real fondness for the Veneto.",
+          "The trade for all that adventure is learning to live overseas. Your housing allowance is OHA instead of BAH, much of your medical care runs through Italian hospitals on referral, your children attend DoDEA schools, and renting follows Italian customs. That learning curve is exactly where good local guidance helps the most."
+        ],
+        "recommendations": [
+          { "who": "Most families live off post", "advice": "The Housing Office helps you work through Italian rentals. OHA offsets rent and utilities up to a ceiling set by your rank and dependents." },
+          { "who": "Plan to travel", "advice": "Venice is about an hour away, the Dolomites a bit farther, and budget flights put much of Europe within a long weekend." },
+          { "who": "Build in time to settle", "advice": "Driving permits, the rental process, and host-nation medical referrals all take getting used to. Start early and lean on the in-processing brief." }
+        ]
+      },
+      "source": { "label": "USAG Italy PCS guide (official)", "url": "https://home.army.mil/italy/my-garrison-Italy/pcsguidevic" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing for USAG Italy are handled through the garrison, and overseas access rules differ from stateside posts.",
+        "Confirm the current visitor and access requirements on the official USAG Italy site before you arrive."
+      ],
+      "source": { "label": "USAG Italy PCS guide (official)", "url": "https://home.army.mil/italy/my-garrison-Italy/pcsguidevic" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "housing",
+      "title": "Housing & OHA",
+      "type": "prose",
+      "data": [
+        "Families have two paths at Vicenza: on-post government housing through the Army Family Housing office, or off-post rentals on the Italian economy, where the Housing Office helps you through the local rental process.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH. OHA is individualized, based on your rank, dependents, and actual rent up to a ceiling, so there is no single rate to quote. The Housing Office can walk you through your specific entitlement."
+      ],
+      "source": { "label": "USAG Italy housing (official)", "url": "https://home.army.mil/italy/about/Garrison/directorate-public-works-1/housing" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Overseas, children attend Department of Defense Education Activity (DoDEA) schools rather than local U.S. districts. DoDEA Europe operates schools at Vicenza spanning elementary through high school.",
+        "Confirm the current school names, boundaries, and registration steps on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Vicenza Army Health Clinic",
+        "Care": "Outpatient primary care, behavioral health, pharmacy, lab",
+        "Hospital / specialty": "Referred to Italian host-nation hospitals",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "Vicenza Army Health Clinic (official)", "url": "https://mhs-europe.tricare.mil/Vicenza" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Commissary (DeCA) on Caserma Ederle",
+        "Exchange": "Exchange / PX (AAFES) on Caserma Ederle"
+      },
+      "source": { "label": "USAG Italy welcome (official)", "url": "https://home.army.mil/italy/my-garrison-Italy/pcsguidevic/living-vicenza/welcome-usag-italy" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby restaurants and shops via Google Places."
+    }
+  ]
+}
