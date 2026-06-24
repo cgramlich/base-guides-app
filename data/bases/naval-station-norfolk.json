@@ -9,7 +9,7 @@
   "coords": { "lat": 36.9467, "lng": -76.33, "label": "Norfolk, VA (Sewells Point)" },
   "tz": "America/New_York",
   "last_full_review": "2026-06-24",
-  "_note": "First Navy base. Facts verified from official + well-corroborated sources (cnrma.cnic.navy.mil, norfolknavalhousing.com, portsmouth.tricare.mil, DeCA/NEX, Wikipedia for the headline figures it cites to the Navy). BAH: full VA298 (Norfolk/Portsmouth) 2026 table sourced from the Navy housing partner's published 2026 rates (norfolknavalhousing.com/bah-rates); spot-check against the official DoD calculator before treating as gospel. Killer content (the Hampton Roads commute/tunnel decision) is drawn from cited commute figures. Medium-confidence flags: base coords (approx Sewells Point), representative off-base ZIP 23505, housing partner branding (Lincoln Military Housing per the official Norfolk site; nationally transitioning to Liberty Military Housing in some markets).",
+  "_note": "First Navy base. Facts verified from official + well-corroborated sources (cnrma.cnic.navy.mil, norfolknavalhousing.com, portsmouth.tricare.mil, DeCA/NEX, Wikipedia for the headline figures it cites to the Navy). BAH: full VA298 (Norfolk/Portsmouth) 2026 table, verified value-for-value against the official DoD 2026 BAH rate table (all locations, all pay grades, effective 2026-01-01) on 2026-06-24. Killer content (the Hampton Roads commute/tunnel decision) is drawn from cited commute figures. Medium-confidence flags: base coords (approx Sewells Point), representative off-base ZIP 23505, housing partner branding (Lincoln Military Housing per the official Norfolk site; nationally transitioning to Liberty Military Housing in some markets).",
   "sections": [
     {
       "id": "quick_facts",
@@ -111,7 +111,7 @@
           "O-7": { "w": 3366, "wo": 2718 }
         }
       },
-      "source": { "label": "2026 BAH, MHA VA298 (Norfolk/Portsmouth) - verify on the DoD calculator", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "source": { "label": "DoD 2026 BAH Rates, MHA VA298 (Norfolk/Portsmouth)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
       "verified": "2026-06-24"
     },
     {
