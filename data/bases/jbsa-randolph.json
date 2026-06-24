@@ -1,0 +1,154 @@
+{
+  "slug": "jbsa-randolph",
+  "schema_version": "0.1",
+  "name": "JBSA Randolph",
+  "short_name": "Randolph",
+  "branch": "U.S. Air Force",
+  "states": ["TX"],
+  "tagline": "The 'Showplace of the Air Force' - flying training and AETC headquarters, northeast of San Antonio.",
+  "coords": { "lat": 29.529, "lng": -98.279, "label": "Universal City, TX" },
+  "last_full_review": "2026-06-24",
+  "_note": "JBSA base (San Antonio NE / Universal City). Verified from official sources (jbsa.mil, wilfordhall.tricare.mil, rfisd.net, scucisd.org, randolphfamilyhousing.com, DeCA/AAFES, DoD BAH tool). MHA TX285 (same San Antonio MHA - BAH identical to the other JBSA bases; E-4 directly confirmed at ZIP 78150). Medium-confidence flags: base coords (approx), off-base ZIP 78148 (Universal City; Schertz/Converse also valid).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (Joint Base San Antonio)",
+        "Location": "Universal City / NE San Antonio, TX",
+        "Known as": "Showplace of the Air Force",
+        "Host wing": "12th Flying Training Wing (AETC)",
+        "Also hosts": "HQ Air Education & Training Command + Air Force Personnel Center"
+      },
+      "source": { "label": "JBSA-Randolph fact sheet (official)", "url": "https://www.jbsa.mil/Information/JBSA-History-Fact-Sheets/Article-View/Article/2664767/jbsa-randolph/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "JBSA-Randolph is home to the 12th Flying Training Wing, which conducts pilot instructor training, combat systems officer training, and other specialized flying training.",
+        "It also hosts the headquarters of Air Education and Training Command (AETC) - the Air Force's 'First Command' for recruiting, training, and education - and the Air Force Personnel Center (AFPC)."
+      ],
+      "source": { "label": "JBSA-Randolph fact sheet (official)", "url": "https://www.jbsa.mil/Information/JBSA-History-Fact-Sheets/Article-View/Article/2664767/jbsa-randolph/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "showplace",
+      "title": "The Showplace of the Air Force",
+      "type": "killer",
+      "data": {
+        "subtitle": "Randolph is a flying-training base built around one of the military's most iconic landmarks - and a quieter, family-friendly corner of the JBSA cluster.",
+        "intro": [
+          "Its signature is Building 100, the 1931 blue-and-gold-domed administration tower nicknamed the 'Taj Mahal,' now the 12th Flying Training Wing headquarters - the reason Randolph is called the 'Showplace of the Air Force.'",
+          "The base sits in the Universal City / Schertz area northeast of San Antonio, so the surrounding communities feel more suburban than the central-city posts."
+        ],
+        "recommendations": [
+          { "who": "Where families live", "advice": "Universal City, Schertz, and Cibolo are the close-in communities, served by Schertz-Cibolo-Universal City ISD." },
+          { "who": "On-base schooling", "advice": "Randolph Field ISD runs PK-12 on base for military families." },
+          { "who": "Commute", "advice": "Northeast San Antonio - an easy drive to the rest of JBSA and into the city." }
+        ]
+      },
+      "source": { "label": "JBSA-Randolph fact sheet (official)", "url": "https://www.jbsa.mil/Information/JBSA-History-Fact-Sheets/Article-View/Article/2664767/jbsa-randolph/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID.",
+        "Gate hours and visitor requirements change - confirm the current details on the official JBSA-Randolph visitor information page before you go."
+      ],
+      "source": { "label": "JBSA-Randolph visitor info (official)", "url": "https://www.jbsa.mil/Information/Gate-Hours-Visitor-Information/JBSA-Randolph-Visitor-Info/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, operated by Hunt Military Communities (branded locally as Randolph Family Homes).",
+        "Eligibility and availability vary by rank and family size - check the housing office and the partner for current options."
+      ],
+      "source": { "label": "Randolph Family Housing (partner)", "url": "https://www.randolphfamilyhousing.com/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "TX285",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/",
+        "rates": {
+          "E-4": { "w": 1728, "wo": 1359 },
+          "E-5": { "w": 1869, "wo": 1500 },
+          "E-6": { "w": 2094, "wo": 1596 },
+          "E-7": { "w": 2112, "wo": 1731 },
+          "O-1": { "w": 1905, "wo": 1584 },
+          "O-2": { "w": 2091, "wo": 1827 },
+          "O-3": { "w": 2127, "wo": 2007 },
+          "O-4": { "w": 2307, "wo": 2088 }
+        }
+      },
+      "source": { "label": "DoD BAH Rate Lookup (MHA TX285, CY2026)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "78148", "label": "Universal City, TX" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "On base, schooling is Randolph Field Independent School District (RFISD), a Texas public district located on JBSA-Randolph serving PK-12 (primarily on-base military families). It is not a DoDEA district.",
+        "Off base, the surrounding communities are served largely by Schertz-Cibolo-Universal City ISD (SCUCISD)."
+      ],
+      "source": { "label": "Randolph Field ISD (official)", "url": "https://www.rfisd.net/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "TX", "city": "Universal City" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Randolph Clinic (559th Medical Squadron, 59th Medical Wing)",
+        "Care": "Outpatient (inpatient/hospital care at BAMC, Fort Sam Houston)",
+        "TRICARE region": "West"
+      },
+      "source": { "label": "Randolph Clinic (official)", "url": "https://wilfordhall.tricare.mil/Clinics/Randolph-Clinic" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "JBSA Randolph Commissary (DeCA)",
+        "Exchange": "JBSA Randolph Main Exchange (AAFES)"
+      },
+      "source": { "label": "DeCA Commissary - Randolph", "url": "https://corp.commissaries.com/shopping/store-locations/randolph" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby restaurants via Google Places."
+    }
+  ]
+}
