@@ -7,6 +7,7 @@
   "states": ["TX"],
   "tagline": "Gateway to the Air Force - home of Air Force & Space Force Basic Military Training.",
   "coords": { "lat": 29.3877, "lng": -98.6064, "label": "San Antonio, TX" },
+  "tz": "America/Chicago",
   "last_full_review": "2026-06-24",
   "_note": "Base #2 (schema-portability proof). Facts verified from official sources (jbsa.mil, 37trw.af.mil, basictraining.af.mil, wilfordhall.tricare.mil, lacklandisd.net, nisd.net, DeCA/AAFES, DoD BAH tool). BMT-graduation killer content is general + links the official site; detailed week-of logistics + curated local listings to come from the Touch Stay content. Housing partner (Balfour Beatty), base coords, and off-base ZIP are medium-confidence (confirm before heavy reliance).",
   "sections": [

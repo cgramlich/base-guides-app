@@ -7,6 +7,7 @@
   "states": ["KY", "TN"],
   "tagline": "Home of the 101st Airborne Division (Air Assault), 5th Special Forces Group, and 160th SOAR.",
   "coords": { "lat": 36.5298, "lng": -87.3595, "label": "Clarksville, TN (off-post hub)" },
+  "tz": "America/Chicago",
   "last_full_review": "2026-06-23",
   "_note": "Killer-content (two-state decision) is drafted/real. Other sections populated from authoritative sources with per-section source + verified date; volatile data (gate hours) links to the official page instead of stating values. Active-duty population left out (not found on an official fact sheet).",
   "sections": [

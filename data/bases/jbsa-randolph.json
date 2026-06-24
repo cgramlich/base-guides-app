@@ -7,6 +7,7 @@
   "states": ["TX"],
   "tagline": "The 'Showplace of the Air Force' - flying training and AETC headquarters, northeast of San Antonio.",
   "coords": { "lat": 29.529, "lng": -98.279, "label": "Universal City, TX" },
+  "tz": "America/Chicago",
   "last_full_review": "2026-06-24",
   "_note": "JBSA base (San Antonio NE / Universal City). Verified from official sources (jbsa.mil, wilfordhall.tricare.mil, rfisd.net, scucisd.org, randolphfamilyhousing.com, DeCA/AAFES, DoD BAH tool). MHA TX285 (same San Antonio MHA - BAH identical to the other JBSA bases; E-4 directly confirmed at ZIP 78150). Medium-confidence flags: base coords (approx), off-base ZIP 78148 (Universal City; Schertz/Converse also valid).",
   "sections": [

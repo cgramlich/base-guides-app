@@ -101,6 +101,7 @@
     .basehero h1{font-size:24px; letter-spacing:-0.01em;}
     .basehero .tag{color:var(--text-dim); font-size:14px; margin-top:7px;}
     .basehero-meta{margin-top:10px; font-size:11.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-faint);}
+    .localtime{margin-top:8px; font-size:12.5px; color:var(--text-dim);}
     .sec-ic{color:var(--accent-dim); display:inline-flex; align-items:center; flex:none;}
 
     /* ---- ask box ---- */
@@ -233,7 +234,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "hello@milspoliving.com"; // realtor-intro inbox (CONFIRM address)
-    const APP_VERSION = "0.11.3";
+    const APP_VERSION = "0.12.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -730,6 +731,17 @@
       );
     }
 
+    // Local time at the base (ticks). tz is an IANA zone on the base record.
+    function LocalTime({ tz }) {
+      const [, tick] = useState(0);
+      useEffect(() => { const id = setInterval(() => tick((n) => n + 1), 30000); return () => clearInterval(id); }, []);
+      if (!tz) return null;
+      let s;
+      try { s = new Intl.DateTimeFormat([], { timeZone: tz, weekday: "short", hour: "numeric", minute: "2-digit" }).format(new Date()); }
+      catch (e) { return null; }
+      return <div className="localtime">{s} local time</div>;
+    }
+
     function BaseDetail({ slug, onBack, saved, onToggleSave }) {
       const [data, setData] = useState(null);
       const [err, setErr] = useState(null);
@@ -758,6 +770,7 @@
             </div>
             {data.tagline ? <div className="tag">{data.tagline}</div> : null}
             <div className="basehero-meta">{[data.branch, (data.states || []).join(" / ")].filter(Boolean).join("  ·  ")}</div>
+            <LocalTime tz={data.tz} />
           </div>
           <LiveWeather coords={data.coords} />
           <AskBox slug={slug} />

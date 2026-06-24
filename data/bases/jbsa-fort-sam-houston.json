@@ -7,6 +7,7 @@
   "states": ["TX"],
   "tagline": "The home of military medicine - Brooke Army Medical Center and the military's medical training hub.",
   "coords": { "lat": 29.457, "lng": -98.4458, "label": "San Antonio, TX" },
+  "tz": "America/Chicago",
   "last_full_review": "2026-06-24",
   "_note": "JBSA base (San Antonio). Verified from official sources (jbsa.mil, home.army.mil/samhouston, bamc.tricare.mil, METC/MEDCoE, fshisd.net, DeCA/AAFES, DoD BAH tool). MHA TX285 (same as the other JBSA bases). Medium/low-confidence flags: base coords (approx), off-base ZIP 78209, surrounding off-post school districts (do not publish specific assignment).",
   "sections": [
