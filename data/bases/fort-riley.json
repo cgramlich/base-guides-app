@@ -1,0 +1,201 @@
+{
+  "slug": "fort-riley",
+  "schema_version": "0.1",
+  "name": "Fort Riley",
+  "short_name": "Riley",
+  "branch": "U.S. Army",
+  "states": ["KS"],
+  "tagline": "Home of the 1st Infantry Division, the 'Big Red One,' in the Kansas Flint Hills.",
+  "coords": { "lat": 39.08, "lng": -96.81, "label": "Junction City, KS" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Army post (Flint Hills, KS; Junction City + Manhattan/KSU). Facts verified from official sources (home.army.mil/riley, irwin.tricare.mil, riley.corviaspm.com, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA KS100 (Fort Riley) via the bah_rates single source of truth. Housing operated by Corvias. Medium-confidence flags: base coords (approx), representative off-base ZIP 66441 (Junction City).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Junction City / Manhattan, KS (Flint Hills)",
+        "Signature unit": "1st Infantry Division (Big Red One)",
+        "Distinction": "Oldest continuously serving division in the Regular Army",
+        "Nearby towns": "Junction City (military) and Manhattan (Kansas State University)",
+        "Setting": "Rolling Kansas prairie"
+      },
+      "source": { "label": "Fort Riley (official)", "url": "https://home.army.mil/riley/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Riley is home to the 1st Infantry Division, the 'Big Red One,' the oldest continuously serving division in the Regular Army. It sits in the Flint Hills of northeast Kansas.",
+        "The post combines a deployable combined-arms division with a deep Army history, and it anchors a close-knit community across the surrounding towns of Junction City and Manhattan."
+      ],
+      "source": { "label": "Fort Riley (official)", "url": "https://home.army.mil/riley/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "riley_decision",
+      "title": "Junction City or Manhattan? Flint Hills Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Riley is genuinely affordable, so BAH stretches a long way. The main choice is the military town of Junction City right outside the gate or the college-town feel of Manhattan a bit farther out.",
+        "intro": [
+          "This is one of the more affordable assignments in the Army; the cost of living is low and on-post and off-post options are plentiful. It's a deployable division, so field time and rotations are part of the rhythm.",
+          "Junction City sits about 8 miles from post and is the close-in, affordable military town. Manhattan, home to Kansas State University about 11 miles away, brings a livelier college-town atmosphere with more dining and events."
+        ],
+        "recommendations": [
+          { "who": "Closest and most affordable", "advice": "Junction City is minutes from the gate with the lowest cost of living and a strong military community." },
+          { "who": "College-town energy", "advice": "Manhattan (Kansas State) offers more dining, events, and amenities at a slightly longer commute, and it's popular with families." },
+          { "who": "On-post option", "advice": "On-post housing (Corvias) spans several neighborhoods and is worth considering for proximity and community." },
+          { "who": "Stretch your budget", "advice": "Low Kansas costs mean BAH tends to go far here, so many families find comfortable homes well within their allowance." }
+        ]
+      },
+      "source": { "label": "Fort Riley (official)", "url": "https://home.army.mil/riley/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Riley site before you go."
+      ],
+      "source": { "label": "Fort Riley (official)", "url": "https://home.army.mil/riley/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is privatized, operated by Corvias (Riley's Communities), across five neighborhoods with floor plans from two to five bedrooms.",
+        "Eligibility and availability vary by rank and family size, so start with the Housing Services Office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Fort Riley housing (partner)", "url": "https://riley.corviaspm.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "KS100",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA KS100 (Fort Riley)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "66441", "label": "Junction City, KS" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Geary County (Junction City) serves the close-in area and parts of post; Manhattan-Ogden (USD 383) serves the Manhattan side.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Geary County Schools (official)", "url": "https://www.usd475.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "KS", "city": "Junction City" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Irwin Army Community Hospital",
+        "Care": "A modern hospital on post with emergency, inpatient, and specialty services",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Irwin Army Community Hospital (official)", "url": "https://irwin.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Riley Commissary (DeCA)",
+        "Exchange": "Fort Riley Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Kansas costs are low, so BAH stretches well, but resale can be slower in a smaller market. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Junction City and Manhattan before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Geary County or Manhattan-Ogden schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Irwin Army Community Hospital or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at Fort Riley?", "a": "The 1st Infantry Division, the 'Big Red One,' the oldest continuously serving division in the Regular Army." },
+        { "q": "Junction City or Manhattan?", "a": "Junction City is closest (about 8 miles) and most affordable, a true military town; Manhattan (about 11 miles) is a livelier Kansas State college town. Both are popular with families, and on-post housing is also available." },
+        { "q": "Is it affordable?", "a": "Yes, very. Kansas costs are low, so BAH tends to stretch a long way here." },
+        { "q": "What is the BAH area?", "a": "Fort Riley is MHA KS100. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "1st Infantry Division Museum", "category": "History", "blurb": "The Big Red One's museum and the Cavalry Museum on Fort Riley.", "maps_query": "1st Infantry Division Museum, Fort Riley KS" },
+        { "name": "Konza Prairie", "category": "Outdoors", "blurb": "A protected tallgrass prairie with hiking trails near Manhattan.", "maps_query": "Konza Prairie Nature Trail, Manhattan KS" },
+        { "name": "Aggieville (Manhattan)", "category": "Food & shopping", "blurb": "Kansas State's historic shopping and nightlife district.", "maps_query": "Aggieville, Manhattan KS" },
+        { "name": "Milford Lake", "category": "Outdoors", "blurb": "Kansas's largest lake, just west of Junction City, for boating and fishing.", "maps_query": "Milford Lake, KS" }
+      ]
+    }
+  ]
+}

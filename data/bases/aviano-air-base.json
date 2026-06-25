@@ -1,0 +1,157 @@
+{
+  "slug": "aviano-air-base",
+  "schema_version": "0.1",
+  "name": "Aviano Air Base",
+  "short_name": "Aviano",
+  "branch": "U.S. Air Force",
+  "states": ["Italy"],
+  "region": "OCONUS",
+  "tagline": "The only U.S. F-16 fighter wing in the Mediterranean, at the foot of the Italian Alps near Venice.",
+  "coords": { "lat": 46.03, "lng": 12.6, "label": "Pordenone, Italy" },
+  "tz": "Europe/Rome",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Italy). US-only feeds intentionally omitted (overseas uses OHA, not BAH; no RentCast or SchoolDigger). Weather via the Open-Meteo global fallback. Distinctive: NO U.S. government accompanied family housing, so everyone lives on the Italian economy with OHA. Facts verified from official sources (aviano.af.mil, housing.af.mil, dodea.edu/europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (USAFE)",
+        "Location": "Aviano, Italy (Friuli; Pordenone ~10 mi, Venice ~40 mi)",
+        "Host wing": "31st Fighter Wing",
+        "Aircraft": "F-16 Fighting Falcon (the only U.S. F-16 wing in the Mediterranean)",
+        "Setting": "At the foot of the Italian Alps",
+        "Region": "OCONUS (overseas tour; OHA, not BAH)"
+      },
+      "source": { "label": "Aviano Air Base (official)", "url": "https://www.aviano.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Aviano Air Base is home to the 31st Fighter Wing, the only U.S. F-16 fighter wing in the Mediterranean and a key NATO airpower presence in southern Europe.",
+        "It sits in the Friuli Venezia Giulia region of northeastern Italy, at the foot of the Alps, with Pordenone about 10 miles away and Venice roughly 40 miles to the south."
+      ],
+      "source": { "label": "Aviano Air Base (official)", "url": "https://www.aviano.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "italy_decision",
+      "title": "Living on the Italian Economy",
+      "type": "killer",
+      "data": {
+        "subtitle": "Aviano is unusual: there is no U.S. government family housing, so everyone lives off base on the Italian economy. That makes the rental process and OHA central, and the reward is an immersive northern-Italy tour.",
+        "intro": [
+          "Because there is no on-base accompanied housing, every family rents in the towns around the base, supported by OHA plus allowances for utilities and move-in costs. The base Housing Office helps you navigate Italian leases, which work differently from U.S. ones.",
+          "The trade is the learning curve of living in Italy: the language, the rental and utility customs, and driving. The payoff is the Friuli countryside, the Alps and Adriatic close by, and Venice and the rest of Europe within easy reach."
+        ],
+        "recommendations": [
+          { "who": "Everyone lives off base", "advice": "Plan from day one to rent on the Italian economy; the Housing Office helps with listings, leases, and the OHA process." },
+          { "who": "Town options", "advice": "Families settle in villages around Aviano and toward Pordenone; weigh commute, space, and whether you want a more American or more Italian neighborhood." },
+          { "who": "Budget with OHA", "advice": "OHA offsets rent and utilities up to a ceiling set by rank and dependents, with separate move-in and utility allowances; understand them before you sign." },
+          { "who": "Travel and explore", "advice": "The Dolomites, Venice, Slovenia, Austria, and cheap flights across Europe are all close; many families call the travel the highlight of the tour." }
+        ]
+      },
+      "source": { "label": "Aviano Air Base (official)", "url": "https://www.aviano.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the installation, and overseas access rules differ from stateside bases. You will need status documents under the NATO SOFA.",
+        "Confirm the current visitor and access requirements on the official Aviano site before you arrive."
+      ],
+      "source": { "label": "Aviano Air Base (official)", "url": "https://www.aviano.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing & OHA",
+      "type": "prose",
+      "data": [
+        "There is no U.S. government accompanied family housing at Aviano. All families live off base on the Italian economy, renting in the towns around the installation.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH, individualized by rank, dependents, and actual rent up to a ceiling, alongside allowances for utilities and one-time move-in costs. The Housing Office helps with listings and the Italian rental process."
+      ],
+      "source": { "label": "Aviano Air Base housing (official)", "url": "https://www.aviano.af.mil/Housing-Information/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Europe operates elementary, middle, and high school grades serving the Aviano community.",
+        "Start DoDEA registration early and confirm the specific schools, boundaries, and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "31st Medical Group (Aviano)",
+        "Care": "Outpatient care on base; inpatient and specialty care referred to Italian host-nation hospitals or Landstuhl",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "Aviano Air Base (official)", "url": "https://www.aviano.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Aviano Commissary (DeCA)",
+        "Exchange": "Aviano Exchange (AAFES / BX)"
+      },
+      "source": { "label": "Aviano Air Base (official)", "url": "https://www.aviano.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move, and at Aviano everyone house-hunts off base, so start early."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access schools, the commissary, and benefits. Confirm it through your gaining command." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the NATO SOFA documents that let you live in Italy. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA) while you find a rental." },
+          { "title": "Work the Housing Office early", "text": "There is no on-base family housing, so meet the Housing Office right away for listings, Italian leases, and the OHA process." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA Europe schools; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at the 31st Medical Group." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is there housing on base?", "a": "No. Aviano has no U.S. government accompanied family housing, so every family rents off base on the Italian economy, with OHA and allowances covering the cost." },
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive OHA instead of BAH, individualized by rank, dependents, and actual rent up to a ceiling, plus utility and move-in allowances." },
+        { "q": "What's the mission?", "a": "The 31st Fighter Wing flies the F-16, the only U.S. F-16 fighter wing in the Mediterranean, as a NATO airpower presence in southern Europe." },
+        { "q": "What's the tour like?", "a": "Immersive. You live in the Italian community at the foot of the Alps, with Venice, the Dolomites, and the rest of Europe within easy reach. The trade is the learning curve of living on the local economy." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Venice", "category": "Day trip", "blurb": "The canal city, about an hour and a half south.", "maps_query": "Venice, Italy" },
+        { "name": "The Dolomites", "category": "Outdoors", "blurb": "Dramatic alpine peaks for hiking and skiing, just to the north.", "maps_query": "Dolomites, Italy" },
+        { "name": "Pordenone", "category": "In town", "blurb": "The nearest Italian city, with a historic center, markets, and dining.", "maps_query": "Pordenone, Italy" },
+        { "name": "Lake Barcis", "category": "Outdoors", "blurb": "A turquoise mountain lake in the Valcellina, close to the base.", "maps_query": "Lago di Barcis, Italy" }
+      ]
+    }
+  ]
+}

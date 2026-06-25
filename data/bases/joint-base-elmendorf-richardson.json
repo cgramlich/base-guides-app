@@ -1,0 +1,202 @@
+{
+  "slug": "joint-base-elmendorf-richardson",
+  "schema_version": "0.1",
+  "name": "Joint Base Elmendorf-Richardson",
+  "short_name": "JBER",
+  "branch": "U.S. Air Force / U.S. Army",
+  "states": ["AK"],
+  "region": "OCONUS",
+  "tagline": "Alaska's premier joint base: the 11th Airborne Division and the 3rd Wing, guarding the far north in Anchorage.",
+  "coords": { "lat": 61.25, "lng": -149.79, "label": "Anchorage, AK" },
+  "tz": "America/Anchorage",
+  "last_full_review": "2026-06-25",
+  "_note": "Alaska joint base (Elmendorf AFB + Fort Richardson, merged 2010), Anchorage. Marked OCONUS (an Alaska PCS is an overseas-style move with COLA and vehicle/HHG shipping) but BAH-rated: MHA AK404 (Anchorage), so the full live template stays. Unlike Hawaii/overseas, Alaska kids attend the local Anchorage School District (not DoDEA). Facts verified from official sources (jber.jb.mil, MilitaryINSTALLATIONS, DeCA/AAFES, Wikipedia for corroborated headline facts). Housing: Aurora (Balfour Beatty, AF side) + Army communities. Medium-confidence flags: base coords (approx), representative off-base ZIP 99504 (Anchorage).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "Air Force + Army (joint base)",
+        "Location": "Anchorage, AK",
+        "Army": "11th Airborne Division ('Arctic Angels')",
+        "Air Force": "3rd Wing (and the 673d Air Base Wing as host)",
+        "Also hosts": "Alaskan Command, Alaskan NORAD Region, 11th Air Force",
+        "Region": "Alaska (OCONUS-style PCS, BAH-rated, COLA)"
+      },
+      "source": { "label": "Joint Base Elmendorf-Richardson (official)", "url": "https://www.jber.jb.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Joint Base Elmendorf-Richardson combines the Air Force's Elmendorf and the Army's Fort Richardson, merged in 2010, on the edge of Anchorage. The Army side is home to the 11th Airborne Division (the 'Arctic Angels'), and the Air Force side flies with the 3rd Wing.",
+        "JBER is the hub of U.S. defense in the far north, hosting Alaskan Command, the Alaskan NORAD Region, and Eleventh Air Force. It pairs a serious strategic mission with extraordinary access to the Alaskan outdoors."
+      ],
+      "source": { "label": "Joint Base Elmendorf-Richardson (official)", "url": "https://www.jber.jb.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "alaska_decision",
+      "title": "The Last Frontier: An Alaska Tour",
+      "type": "killer",
+      "data": {
+        "subtitle": "Alaska is a once-in-a-career adventure and a logistics project. The move works like an overseas PCS (ship a vehicle, plan for COLA), and the long winters are real, but so is the outdoor paradise out your door.",
+        "intro": [
+          "Even though Alaska is a U.S. state, a PCS here is OCONUS-style: you can ship a vehicle and household goods the long way, and you receive a cost-of-living allowance to offset higher prices. You still get BAH set by Anchorage, not OHA.",
+          "Winters are long and dark and summers are bright and short, which shapes daily life. Most families embrace the trade: hiking, fishing, skiing, and wildlife are all minutes away. Anchorage is a full-size city, so amenities are close, unlike more remote Alaska posts."
+        ],
+        "recommendations": [
+          { "who": "On-base convenience", "advice": "On-base housing (Aurora on the Air Force side, plus Army neighborhoods) keeps you close to work and is built for the climate." },
+          { "who": "City living", "advice": "Anchorage neighborhoods like Eagle River and the Hillside are popular with military families, with a range of prices and good access to the base." },
+          { "who": "Plan the logistics", "advice": "Arrange your vehicle and household-goods shipment early, budget for COLA-level prices, and gear up for winter before you arrive." },
+          { "who": "Embrace the outdoors", "advice": "Make the most of it: the fishing, hiking, and skiing around Anchorage are a big part of why families love this tour." }
+        ]
+      },
+      "source": { "label": "Joint Base Elmendorf-Richardson (official)", "url": "https://www.jber.jb.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official JBER site before you go."
+      ],
+      "source": { "label": "Joint Base Elmendorf-Richardson (official)", "url": "https://www.jber.jb.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized and split by service: the Air Force side is managed by Aurora (Balfour Beatty), and the Army side has its own communities. Homes are built for the Alaskan climate.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Joint Base Elmendorf-Richardson (official)", "url": "https://www.jber.jb.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AK404",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AK404 (Anchorage)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "99504", "label": "Anchorage, AK" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local Anchorage School District. Three elementary schools sit on base (Aurora, Orion, and Ursa Minor), and students attend middle and high school off base within the district, with bus service.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Anchorage School District (official)", "url": "https://www.asdk12.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AK", "city": "Anchorage" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "JBER Hospital (673d Medical Group, a DoD/VA joint venture)",
+        "Care": "Inpatient, 24/7 emergency, and specialty care on base",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "673d Medical Group (official)", "url": "https://jberhospital.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "JBER Commissary (DeCA)",
+        "Exchange": "JBER Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn Anchorage and the winters before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The Anchorage market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Anchorage is a real housing market with a cost-of-living premium; many families rent first to learn the area and winters. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An Alaska PCS has extra logistics, even though it's a U.S. state. Start these early."],
+        "steps": [
+          { "title": "Plan your vehicle and household goods", "text": "Alaska shipments take time; arrange your vehicle and household-goods shipment early, and plan interim transportation until they arrive." },
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current so TRICARE and base access work. Confirm your cost-of-living allowance (COLA)." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Anchorage neighborhoods before you sign anything." },
+          { "title": "Enroll the kids in school", "text": "Contact the Anchorage School District early and bring records and immunizations." },
+          { "title": "Gear up for winter and set up healthcare", "text": "Plan for cold-weather gear and studded tires, and update TRICARE so you can be seen at the JBER hospital or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is Alaska an OCONUS move?", "a": "Yes, in practice. Though Alaska is a U.S. state, a PCS here is overseas-style: you can ship a vehicle and household goods, and you receive a cost-of-living allowance. You still get BAH (set by Anchorage), not OHA." },
+        { "q": "What's based at JBER?", "a": "The Army's 11th Airborne Division and the Air Force's 3rd Wing, plus Alaskan Command, the Alaskan NORAD Region, and Eleventh Air Force." },
+        { "q": "How bad are the winters?", "a": "Long and dark, with short bright summers. Most families embrace it for the outdoors (hiking, fishing, skiing) and note Anchorage is a full-size city, so amenities are close." },
+        { "q": "What is the BAH area?", "a": "JBER is MHA AK404 (Anchorage). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Chugach State Park", "category": "Outdoors", "blurb": "A half-million-acre wilderness park on Anchorage's doorstep, with hiking and wildlife.", "maps_query": "Chugach State Park, AK" },
+        { "name": "Tony Knowles Coastal Trail", "category": "Outdoors", "blurb": "A scenic Anchorage trail along Cook Inlet with mountain and water views.", "maps_query": "Tony Knowles Coastal Trail, Anchorage AK" },
+        { "name": "Alaska Native Heritage Center", "category": "History", "blurb": "A cultural center showcasing Alaska's Native peoples, in Anchorage.", "maps_query": "Alaska Native Heritage Center, Anchorage AK" },
+        { "name": "Portage Glacier / Turnagain Arm", "category": "Day trip", "blurb": "Glaciers, beluga whales, and dramatic scenery south of Anchorage along the Seward Highway.", "maps_query": "Portage Glacier, AK" }
+      ]
+    }
+  ]
+}

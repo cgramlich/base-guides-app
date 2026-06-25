@@ -1,0 +1,157 @@
+{
+  "slug": "fleet-activities-yokosuka",
+  "schema_version": "0.1",
+  "name": "Fleet Activities Yokosuka",
+  "short_name": "Yokosuka",
+  "branch": "U.S. Navy",
+  "states": ["Japan"],
+  "region": "OCONUS",
+  "tagline": "The largest overseas U.S. naval base, headquarters of the 7th Fleet and home of the forward-deployed carrier, near Tokyo.",
+  "coords": { "lat": 35.29, "lng": 139.67, "label": "Yokosuka, Japan (Kanagawa)" },
+  "tz": "Asia/Tokyo",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Japan). US-only feeds intentionally omitted (overseas uses OHA + COLA, not BAH; no RentCast or SchoolDigger). Weather via the Open-Meteo global fallback. Facts verified from official sources (cnrj.cnic.navy.mil, c7f.navy.mil, dodea.edu/pacific, yokosuka.tricare.mil, Wikipedia for corroborated headline facts). Forward-deployed carrier hull rotates, so not naming a specific ship. Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Yokosuka, Japan (Kanagawa, near Tokyo)",
+        "Role": "Largest overseas U.S. naval installation",
+        "Command": "Headquarters, U.S. 7th Fleet",
+        "Homeport": "The Navy's forward-deployed carrier strike group (CSG 5)",
+        "Region": "OCONUS (overseas tour; OHA and COLA, not BAH)"
+      },
+      "source": { "label": "Commander Fleet Activities Yokosuka (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Yokosuka/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fleet Activities Yokosuka is the largest U.S. naval installation overseas and the headquarters of the U.S. 7th Fleet, the Navy's largest forward-deployed fleet. It maintains and supports the ships of the forward-deployed naval forces in the western Pacific.",
+        "Yokosuka is the homeport of the Navy's only permanently forward-deployed carrier strike group, on Tokyo Bay in Kanagawa Prefecture near Tokyo and Yokohama."
+      ],
+      "source": { "label": "Commander Fleet Activities Yokosuka (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Yokosuka/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "yokosuka_decision",
+      "title": "Forward-Deployed Near Tokyo: On Base or the Economy",
+      "type": "killer",
+      "data": {
+        "subtitle": "Yokosuka pairs a high-tempo forward-deployed mission with a Tokyo-area tour. Command sponsorship and the on-base versus off-base choice shape it, with OHA and COLA helping in an expensive region.",
+        "intro": [
+          "The forward-deployed ships keep an operational pace, so deployments and underway time are part of the tour. Command sponsorship is what brings your family at government expense and unlocks housing, DoDEA schools, and benefits, so confirm it early.",
+          "Housing splits between on-base (main base plus the Ikego Hills annex in nearby Zushi) and renting on the Japanese economy. On-base is convenient and removes the language barrier from daily life; off-base offers a fuller Japanese experience, with OHA covering rent up to a ceiling and COLA helping with costs."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Command sponsorship brings your family and unlocks housing, DoDEA schools, and benefits; sort it through your command early." },
+          { "who": "On-base or Ikego", "advice": "Main-base housing and the wooded Ikego Hills annex in Zushi are convenient and in demand; get on the list early." },
+          { "who": "Off-base immersion", "advice": "Renting in Yokosuka and nearby towns offers a fuller Japanese experience; OHA offsets rent and utilities up to a ceiling." },
+          { "who": "Explore Japan", "advice": "Tokyo and Yokohama are close by train, and Japan's rail network opens up the country; many families call it the best part of the tour." }
+        ]
+      },
+      "source": { "label": "Commander Fleet Activities Yokosuka (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Yokosuka/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the installation, and overseas access rules differ from stateside bases. You will need status documents under the U.S.-Japan SOFA.",
+        "Confirm the current visitor and access requirements on the official CFA Yokosuka site before you arrive."
+      ],
+      "source": { "label": "Commander Fleet Activities Yokosuka (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Yokosuka/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing, OHA & COLA",
+      "type": "prose",
+      "data": [
+        "Families choose between on-base housing (the main base and the Ikego Hills annex in Zushi) and renting on the Japanese economy. On-base housing is convenient and in high demand.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling. An overseas cost-of-living allowance (COLA) also helps with the expensive Tokyo region. The Housing Office assigns on-base housing and helps with off-base rentals."
+      ],
+      "source": { "label": "Commander Fleet Activities Yokosuka (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Yokosuka/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Pacific operates several schools serving Yokosuka, including elementary and middle schools and Nile C. Kinnick High School, with an additional elementary school at the Ikego annex.",
+        "Start DoDEA registration early and confirm the specific schools, boundaries, and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "U.S. Naval Hospital Yokosuka",
+        "Care": "Emergency, inpatient, and outpatient care, with branch clinics across mainland Japan",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "U.S. Naval Hospital Yokosuka (official)", "url": "https://yokosuka.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Yokosuka Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Yokosuka, one of the largest overseas"
+      },
+      "source": { "label": "Commander Fleet Activities Yokosuka (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Yokosuka/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your command." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the U.S.-Japan SOFA documents that let you live in-country. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits. Many families buy a local vehicle rather than ship one; confirm the rules and inspections (JCI)." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA Pacific schools; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at U.S. Naval Hospital Yokosuka." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's special about Yokosuka?", "a": "It's the largest overseas U.S. naval base, headquarters of the 7th Fleet, and homeport of the Navy's only permanently forward-deployed carrier strike group, on Tokyo Bay near Tokyo and Yokohama." },
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive OHA instead of BAH for off-base rentals, plus an overseas cost-of-living allowance (COLA). On-base housing is government-provided." },
+        { "q": "Where do families live?", "a": "On-base (main base or the Ikego Hills annex in Zushi) is convenient and in demand; many also rent on the Japanese economy with OHA." },
+        { "q": "Should I ship a car?", "a": "Often it's easier to buy locally. Importing a vehicle to Japan involves inspections (JCI) and costs, so weigh shipping against buying once you arrive." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Tokyo", "category": "Day trip", "blurb": "The world's largest metro area, about an hour north by train.", "maps_query": "Tokyo Station, Tokyo Japan" },
+        { "name": "Yokohama (Minato Mirai)", "category": "Day trip", "blurb": "Japan's vibrant second city, with a waterfront district, just up the bay.", "maps_query": "Minato Mirai, Yokohama Japan" },
+        { "name": "Kamakura", "category": "History", "blurb": "Historic temples and the Great Buddha, a short trip from Yokosuka.", "maps_query": "Kamakura, Japan" },
+        { "name": "Mount Fuji & Hakone", "category": "Outdoors", "blurb": "Japan's iconic peak and a hot-spring region to the west.", "maps_query": "Hakone, Japan" }
+      ]
+    }
+  ]
+}

@@ -34,6 +34,11 @@
     { "slug": "fort-benning", "name": "Fort Benning", "branch": "U.S. Army", "state": "GA", "ready": true },
     { "slug": "eglin-afb", "name": "Eglin AFB", "branch": "U.S. Air Force", "state": "FL", "ready": true },
     { "slug": "kadena-air-base", "name": "Kadena Air Base", "branch": "U.S. Air Force", "state": "Japan", "region": "OCONUS", "ready": true },
-    { "slug": "naval-station-rota", "name": "Naval Station Rota", "branch": "U.S. Navy", "state": "Spain", "region": "OCONUS", "ready": true }
+    { "slug": "naval-station-rota", "name": "Naval Station Rota", "branch": "U.S. Navy", "state": "Spain", "region": "OCONUS", "ready": true },
+    { "slug": "fort-riley", "name": "Fort Riley", "branch": "U.S. Army", "state": "KS", "ready": true },
+    { "slug": "marine-corps-base-quantico", "name": "Marine Corps Base Quantico", "branch": "U.S. Marine Corps", "state": "VA", "ready": true },
+    { "slug": "joint-base-elmendorf-richardson", "name": "Joint Base Elmendorf-Richardson", "branch": "Air Force / Army", "state": "AK", "region": "OCONUS", "ready": true },
+    { "slug": "fleet-activities-yokosuka", "name": "Fleet Activities Yokosuka", "branch": "U.S. Navy", "state": "Japan", "region": "OCONUS", "ready": true },
+    { "slug": "aviano-air-base", "name": "Aviano Air Base", "branch": "U.S. Air Force", "state": "Italy", "region": "OCONUS", "ready": true }
   ]
 }

@@ -1,0 +1,201 @@
+{
+  "slug": "marine-corps-base-quantico",
+  "schema_version": "0.1",
+  "name": "Marine Corps Base Quantico",
+  "short_name": "Quantico",
+  "branch": "U.S. Marine Corps",
+  "states": ["VA"],
+  "tagline": "The 'Crossroads of the Marine Corps': officer training, Marine Corps University, and the FBI Academy, south of Washington, D.C.",
+  "coords": { "lat": 38.52, "lng": -77.3, "label": "Stafford, VA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Marine Corps base (Northern Virginia, I-95 / Potomac, ~35 mi S of DC). Facts verified from official sources (quantico.marines.mil, MilitaryINSTALLATIONS, Lincoln Military Housing, DeCA/MCX, Wikipedia for corroborated headline facts). BAH MHA VA296 (Quantico/Woodbridge) via the bah_rates single source of truth. Housing operated by Lincoln Military Housing. DoDEA schools on base. Medium-confidence flags: base coords (approx), representative off-base ZIP 22554 (Stafford).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Triangle/Stafford, VA (~35 mi south of D.C.)",
+        "Known as": "Crossroads of the Marine Corps",
+        "Trains": "Officer Candidate School (OCS) and The Basic School (TBS)",
+        "Also hosts": "Marine Corps University, the FBI Academy, DEA training",
+        "Setting": "Potomac River, along the I-95 corridor"
+      },
+      "source": { "label": "MCB Quantico (official)", "url": "https://www.quantico.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Marine Corps Base Quantico is the 'Crossroads of the Marine Corps,' where nearly every Marine officer is trained through Officer Candidate School and The Basic School. It is also home to Marine Corps University and the development command that shapes Marine doctrine and equipment.",
+        "Quantico shares the area with the FBI Academy and DEA training facilities, on the Potomac about 35 miles south of Washington, D.C., along the I-95 corridor."
+      ],
+      "source": { "label": "MCB Quantico (official)", "url": "https://www.quantico.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "dc_commute_decision",
+      "title": "The I-95 Question: Living Near Quantico and D.C.",
+      "type": "killer",
+      "data": {
+        "subtitle": "Quantico sits in the high-cost, high-traffic D.C. orbit. The defining trade-off is commute and price along I-95: cheaper and roomier to the south, closer to D.C. (and pricier) to the north.",
+        "intro": [
+          "Many people at Quantico are here for training or staff tours, and a lot of the community commutes on I-95, one of the most congested corridors in the country. Where you live is largely a calculation of drive time versus cost.",
+          "South of the base, Stafford and Fredericksburg offer more house for the money and a manageable commute. North toward Woodbridge and Prince William County, you're closer to D.C. and the wider job market, but prices and traffic climb."
+        ],
+        "recommendations": [
+          { "who": "Value and space", "advice": "Stafford and Fredericksburg, to the south, stretch your BAH furthest with a reasonable commute to the base." },
+          { "who": "Closer to D.C.", "advice": "Woodbridge and Prince William County put you nearer the capital and its opportunities, at higher prices and heavier traffic." },
+          { "who": "On-base option", "advice": "On-base housing (Lincoln Military Housing) and DoDEA schools keep you out of the I-95 commute entirely; get on the list early." },
+          { "who": "Use the rails", "advice": "The VRE commuter train and a Quantico station give some families a way around I-95; factor transit into where you settle." }
+        ]
+      },
+      "source": { "label": "MCB Quantico (official)", "url": "https://www.quantico.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official MCB Quantico site before you go."
+      ],
+      "source": { "label": "MCB Quantico (official)", "url": "https://www.quantico.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, operated by Lincoln Military Housing, with more than 1,000 homes across nine communities aboard Quantico.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "MCB Quantico housing (official)", "url": "https://www.quantico.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "VA296",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA VA296 (Quantico/Woodbridge)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "22554", "label": "Stafford, VA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Families on base are served by DoDEA schools at Quantico (Crossroads Elementary and Quantico Middle/High School). Off base, Stafford County, Prince William County, and Fredericksburg-area schools serve the surrounding communities.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Stafford County Public Schools (official)", "url": "https://www.staffordschools.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "VA", "city": "Stafford" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Naval Health Clinic Quantico",
+        "Care": "Outpatient primary and specialty care on base; inpatient and major specialty care via the region's military and network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Health Clinic Quantico (official)", "url": "https://quantico.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Quantico Commissary (DeCA)",
+        "Exchange": "Marine Corps Exchange (MCX) Quantico"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In the pricey D.C. orbit it leans toward renting for shorter or training tours, though buying south of the base can pay off for longer stays."],
+        "rent": [
+          "Your tour is short or you're here for a course (OCS/TBS/school).",
+          "You want time to learn the I-95 corridor before committing.",
+          "You'd rather not gamble on resale timing in a fast market.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity in a strong market.",
+          "You're open to Stafford/Fredericksburg for an attainable price.",
+          "You've found a home and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Prices climb as you near D.C., and I-95 traffic is a real cost of its own. Run your BAH against the rent and home prices above, weigh your tour length and commute, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the I-95 corridor before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Virginia vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact DoDEA (on base) or Stafford/Prince William County schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Health Clinic Quantico or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Why is it called the Crossroads of the Marine Corps?", "a": "Because nearly every Marine officer trains here (OCS and The Basic School), and it's home to Marine Corps University and the Corps' combat development command. The FBI Academy and DEA training are here too." },
+        { "q": "Where do families live?", "a": "Stafford and Fredericksburg to the south offer the best value and a reasonable commute; Woodbridge and Prince William County are closer to D.C. but pricier. On-base housing (Lincoln) avoids the I-95 commute." },
+        { "q": "How bad is the commute?", "a": "I-95 here is among the most congested corridors in the country. Many families weigh the VRE commuter train and where they live carefully to manage it." },
+        { "q": "What is the BAH area?", "a": "Quantico is MHA VA296 (Quantico/Woodbridge). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "National Museum of the Marine Corps", "category": "Museum", "blurb": "A striking, free museum honoring Marine Corps history, just outside Quantico's gate.", "maps_query": "National Museum of the Marine Corps, Triangle VA" },
+        { "name": "Prince William Forest Park", "category": "Outdoors", "blurb": "A large wooded national park with trails, next to the base.", "maps_query": "Prince William Forest Park, VA" },
+        { "name": "Historic Fredericksburg", "category": "History", "blurb": "A walkable Colonial and Civil War town south along I-95.", "maps_query": "Downtown Fredericksburg, VA" },
+        { "name": "Washington, D.C.", "category": "Day trip", "blurb": "The nation's capital and its monuments and museums, about 35 miles north.", "maps_query": "National Mall, Washington DC" }
+      ]
+    }
+  ]
+}
