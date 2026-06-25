@@ -114,6 +114,33 @@
       "verified": "2026-06-24"
     },
     {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district or DoDEA early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at the local military treatment facility or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+          {"q": "Do most families live on or off post?", "a": "Most live off post on the Italian economy. The Housing Office helps you through the local rental process, and OHA offsets rent and utilities up to a ceiling set by your rank and dependents."},
+          {"q": "How does housing pay work overseas?", "a": "Overseas you receive OHA instead of BAH. It is individualized by rank, dependents, and your actual rent up to a ceiling, so there is no single rate to quote."},
+          {"q": "What about schools?", "a": "Children attend DoDEA schools: Vicenza Elementary, Vicenza Middle, and Vicenza High, grouped as Vicenza Community Schools."},
+          {"q": "What is healthcare like?", "a": "Routine care is at the Vicenza Army Health Clinic; hospital and specialty care is referred to Italian host-nation hospitals under TRICARE Overseas."}
+      ]
+    },
+    {
       "id": "nearby",
       "title": "Food & Things Nearby",
       "type": "places_live",

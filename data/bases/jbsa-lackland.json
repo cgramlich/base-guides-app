@@ -137,6 +137,54 @@
       "verified": "2026-06-24"
     },
     {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Run your BAH against the rent and home prices above, weigh your tour length and the local market, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district or DoDEA early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at the local military treatment facility or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+          {"q": "Why am I coming to Lackland?", "a": "Lackland runs Air Force and Space Force Basic Military Training, so for many families the visit is graduation week. It is also home to the 37th Training Wing and a great deal of technical training."},
+          {"q": "How do I attend a BMT graduation?", "a": "Graduation is typically held weekly. Bring a REAL ID and arrange base access in advance, and check the official BMT graduation site for the current schedule and rules before you travel."},
+          {"q": "On base or off base in San Antonio?", "a": "On-base family housing is run by Balfour Beatty. Off base, families spread across San Antonio, so your commute and schools depend on where you land."},
+          {"q": "What is the BAH area?", "a": "All of the JBSA bases share MHA TX285 (San Antonio). Use the calculator above for your grade."}
+      ]
+    },
+    {
       "id": "nearby",
       "title": "Food & Things Nearby",
       "type": "places_live",
