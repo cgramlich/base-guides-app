@@ -1,0 +1,201 @@
+{
+  "slug": "nas-patuxent-river",
+  "schema_version": "0.1",
+  "name": "NAS Patuxent River",
+  "short_name": "Pax River",
+  "branch": "U.S. Navy",
+  "states": ["MD"],
+  "tagline": "The Navy's flight-test and aviation R&D hub in southern Maryland, home of the U.S. Naval Test Pilot School.",
+  "coords": { "lat": 38.28, "lng": -76.41, "label": "Lexington Park, MD" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy aviation R&D / flight-test hub (Lexington Park, St. Mary's County, southern MD; on the Chesapeake). CONUS full template (BAH MHA MD135 Patuxent River; RentCast/SchoolDigger work). NAWCAD (Naval Air Warfare Center Aircraft Division), Naval Test Wing Atlantic, US Naval Test Pilot School. Heavy engineering/civilian/contractor workforce; most live off base. Medical: Naval Health Clinic Patuxent River. Facts verified from official sources (cnic.navy.mil NAS Patuxent River, Navy Medicine, DeCA/NEX, Wikipedia for corroborated headline facts). Maryland is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 20653 (Lexington Park).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Lexington Park, MD (St. Mary's County, southern Maryland, on the Chesapeake)",
+        "Role": "Naval aviation research, development, test, and evaluation",
+        "Major tenants": "NAWCAD, Naval Test Wing Atlantic, and the U.S. Naval Test Pilot School",
+        "Workforce": "Heavily engineering, civilian, and contractor",
+        "Setting": "Rural-suburban southern Maryland on the bay"
+      },
+      "source": { "label": "NAS Patuxent River (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_patuxent_river.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Air Station Patuxent River is the Navy's center for aviation research, development, test, and evaluation. It hosts the Naval Air Warfare Center Aircraft Division (NAWCAD), Naval Test Wing Atlantic, and the renowned U.S. Naval Test Pilot School, where aircraft and systems are put through their paces.",
+        "On the Chesapeake Bay in St. Mary's County, southern Maryland, it has a heavily engineering, civilian, and contractor workforce, giving the area a technical, settled, family-oriented feel with most people living off base."
+      ],
+      "source": { "label": "NAS Patuxent River (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_patuxent_river.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pax_decision",
+      "title": "A Settled Tech Community on the Chesapeake",
+      "type": "killer",
+      "data": {
+        "subtitle": "Pax River is an R&D and test community with a stable, family-oriented feel. The main choice is which St. Mary's County town fits your commute and schools, with many families choosing to buy.",
+        "intro": [
+          "Because the workforce is largely engineering, civilian, and contractor with longer tenures, the area feels settled, and many families buy. On-base housing is available; most live off base nearby.",
+          "Where you live mostly comes down to commute and schools across Lexington Park, California, and the surrounding St. Mary's County communities."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Lexington Park borders the base for the shortest commute and the most convenience." },
+          { "who": "Family suburbs", "advice": "California and Leonardtown are popular with families for schools, shopping, and newer neighborhoods." },
+          { "who": "On-base option", "advice": "On-base housing is available; weigh it against the settled local market where many choose to buy." },
+          { "who": "Embrace the bay", "advice": "The Chesapeake means boating, fishing, and waterfront living are part of the lifestyle here." }
+        ]
+      },
+      "source": { "label": "NAS Patuxent River (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_patuxent_river.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official NAS Patuxent River site before you go."
+      ],
+      "source": { "label": "NAS Patuxent River (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_patuxent_river.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "NAS Patuxent River has privatized on-base family housing across several neighborhoods, though most of the workforce lives off base in St. Mary's County.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "NAS Patuxent River (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_patuxent_river.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MD135",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MD135 (Patuxent River)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "20653", "label": "Lexington Park, MD" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. St. Mary's County Public Schools serves the area around the base.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "St. Mary's County Public Schools (official)", "url": "https://www.smcps.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MD", "city": "Lexington Park" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Naval Health Clinic Patuxent River",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via regional network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Health Clinic Patuxent River (TRICARE)", "url": "https://www.tricare.mil/mtf/PatuxentRiver" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NAS Patuxent River Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Patuxent River"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Pax River the longer (often civilian) tenures and settled St. Mary's County market lead many families to buy."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the county before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, common at an R&D hub.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The stable St. Mary's County market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Pax River's longer tenures and settled market make buying worth a serious look. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Most of the workforce lives off base; get the housing office's read on St. Mary's County before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Maryland vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact St. Mary's County Public Schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Health Clinic Patuxent River or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What happens at Pax River?", "a": "It's the Navy's aviation research, development, test, and evaluation hub, home to NAWCAD, Naval Test Wing Atlantic, and the U.S. Naval Test Pilot School. The workforce is heavily engineering and civilian." },
+        { "q": "Where do families live?", "a": "Mostly off base in St. Mary's County. Lexington Park is closest; California and Leonardtown are popular with families for schools." },
+        { "q": "Is it a good place to buy?", "a": "Often. Longer tenures and a settled local market make buying common at Pax River." },
+        { "q": "What is the BAH area?", "a": "NAS Patuxent River is MHA MD135. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Patuxent River Naval Air Museum", "category": "Museum", "blurb": "Flight-test history and aircraft just outside the gate in Lexington Park.", "maps_query": "Patuxent River Naval Air Museum, Lexington Park MD" },
+        { "name": "Solomons Island", "category": "In town", "blurb": "A waterfront town with dining, boating, and the Calvert Marine Museum nearby.", "maps_query": "Solomons Island, MD" },
+        { "name": "Point Lookout State Park", "category": "Outdoors", "blurb": "Beaches, trails, and Civil War history where the Potomac meets the bay.", "maps_query": "Point Lookout State Park, MD" },
+        { "name": "Historic St. Mary's City", "category": "History", "blurb": "Maryland's first capital, a living-history site on the river.", "maps_query": "Historic St. Mary's City, MD" }
+      ]
+    }
+  ]
+}

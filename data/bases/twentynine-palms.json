@@ -1,0 +1,201 @@
+{
+  "slug": "twentynine-palms",
+  "schema_version": "0.1",
+  "name": "MCAGCC Twentynine Palms",
+  "short_name": "Twentynine Palms",
+  "branch": "U.S. Marine Corps",
+  "states": ["CA"],
+  "tagline": "The Marine Corps' largest base and premier live-fire training ground, deep in California's high desert.",
+  "coords": { "lat": 34.23, "lng": -116.05, "label": "Twentynine Palms, CA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Marine Corps Air Ground Combat Center (MAGTFTC), the Corps' largest base, Mojave high desert (San Bernardino County, CA). CONUS full template (BAH MHA CA032 Twentynine Palms MCB; RentCast/SchoolDigger work). Premier combined-arms live-fire training. Remote; most families live on base. Medical: Robert E. Bush Naval Hospital. Schools: Morongo Unified + on-base campuses. Facts verified from official sources (29palms.marines.mil, Naval Hospital Twentynine Palms, DeCA/MCX, Wikipedia for corroborated headline facts). California is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 92277 (Twentynine Palms).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Twentynine Palms, CA (Mojave high desert, San Bernardino County)",
+        "Role": "Marine Air Ground Task Force Training Command (MAGTFTC)",
+        "Distinction": "The Marine Corps' largest base by area",
+        "Known for": "Premier large-scale, combined-arms live-fire training",
+        "Setting": "Remote high desert; most families live on base"
+      },
+      "source": { "label": "MCAGCC Twentynine Palms (official)", "url": "https://www.29palms.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "The Marine Corps Air Ground Combat Center at Twentynine Palms is the Corps' largest base and its premier live-fire, combined-arms training ground. Marine units from across the force rotate through its vast desert ranges to prepare for combat.",
+        "Set deep in California's Mojave high desert, it is remote and self-contained, which shapes life here: a tight-knit community, big desert skies, and a fair distance to the nearest cities."
+      ],
+      "source": { "label": "MCAGCC Twentynine Palms (official)", "url": "https://www.29palms.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "29palms_decision",
+      "title": "A Remote Desert Base: Plan to Live On Base",
+      "type": "killer",
+      "data": {
+        "subtitle": "Twentynine Palms is genuinely isolated, so the on-base versus off-base question mostly answers itself: most families live on base, with the small town of Twentynine Palms just outside the gate.",
+        "intro": [
+          "The high-desert location means there's no large city next door, so the great majority of families live on base, close to work, schools, and the hospital. The base community is large and active to make up for the remoteness.",
+          "Off base, the town of Twentynine Palms and nearby Yucca Valley are the local options, with the Palm Springs area and Joshua Tree within driving distance for amenities and recreation."
+        ],
+        "recommendations": [
+          { "who": "Most families: on base", "advice": "Given the isolation, the great majority of families live on base, close to schools and Naval Hospital Twentynine Palms; get on the housing list early." },
+          { "who": "Off base: in town", "advice": "The town of Twentynine Palms and nearby Yucca Valley are the practical off-base options for a short commute." },
+          { "who": "Plan for the desert", "advice": "Summers are extreme; plan for heat and budget for the drive when you stock up or travel." },
+          { "who": "Embrace the community", "advice": "Isolation makes the on-base community close; lean into unit and family programs, and explore Joshua Tree next door." }
+        ]
+      },
+      "source": { "label": "MCAGCC Twentynine Palms (official)", "url": "https://www.29palms.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official MCAGCC Twentynine Palms site before you go."
+      ],
+      "source": { "label": "MCAGCC Twentynine Palms (official)", "url": "https://www.29palms.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Twentynine Palms has extensive privatized on-base family housing across many neighborhoods, and because the base is remote, most families live on base.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "MCAGCC Twentynine Palms (official)", "url": "https://www.29palms.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA032",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA032 (Twentynine Palms MCB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "92277", "label": "Twentynine Palms, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend public schools, including campuses serving the base operated by the Morongo Unified School District. Off base, Morongo Unified also serves the town and Yucca Valley.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Morongo Unified School District (official)", "url": "https://www.morongousd.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Twentynine Palms" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Robert E. Bush Naval Hospital Twentynine Palms",
+        "Care": "A hospital on base with primary care, pediatrics, behavioral health, emergency care, pharmacy, and lab serving the remote community",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Naval Hospital Twentynine Palms (official)", "url": "https://twentynine-palms.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "MCAGCC Twentynine Palms Commissary (DeCA)",
+        "Exchange": "Marine Corps Exchange (MCX) Twentynine Palms"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. At remote Twentynine Palms most families take on-base housing, but here's the framework if you're weighing the small local market."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer on-base housing for the short commute and community.",
+          "You'd rather not own in a small, isolated desert market.",
+          "Your BAH comfortably covers rent if you go off base."
+        ],
+        "buy": [
+          "You expect to be here three or more years and want to settle in town.",
+          "You want to use your VA loan and build equity.",
+          "You're comfortable with the remoteness and a small resale market.",
+          "You've found a home you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the remoteness leads most Twentynine Palms families to live on base. If you consider buying in town, weigh the small, isolated market and desert maintenance. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and at a remote desert base, planning ahead matters even more."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging before you arrive; off-base options are limited. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Most families live on base here; get on the housing list early." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Morongo Unified (including on-base campuses) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Robert E. Bush Naval Hospital." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Twentynine Palms?", "a": "It's the Marine Corps Air Ground Combat Center, the Corps' largest base and its premier live-fire, combined-arms training ground, set in the Mojave high desert." },
+        { "q": "Do families live on or off base?", "a": "Mostly on base. The location is remote, so the great majority of families live on the installation, close to schools and the hospital." },
+        { "q": "What's nearby?", "a": "The town of Twentynine Palms and Yucca Valley are just outside; Joshua Tree National Park is next door, and the Palm Springs area is a drive away." },
+        { "q": "What is the BAH area?", "a": "Twentynine Palms is MHA CA032. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. The base is remote, so tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Joshua Tree National Park", "category": "Outdoors", "blurb": "Otherworldly rock formations and Joshua trees right next door.", "maps_query": "Joshua Tree National Park, CA" },
+        { "name": "Town of Twentynine Palms", "category": "In town", "blurb": "The local town just outside the gate, with murals, shops, and dining.", "maps_query": "Twentynine Palms, CA" },
+        { "name": "Yucca Valley / Pioneertown", "category": "Day trip", "blurb": "Shopping in Yucca Valley and the quirky Old West Pioneertown nearby.", "maps_query": "Pioneertown, CA" },
+        { "name": "Palm Springs", "category": "Day trip", "blurb": "Resorts, dining, and the desert tramway about an hour-plus away.", "maps_query": "Palm Springs, CA" }
+      ]
+    }
+  ]
+}

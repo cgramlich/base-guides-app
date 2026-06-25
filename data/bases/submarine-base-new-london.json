@@ -1,0 +1,201 @@
+{
+  "slug": "submarine-base-new-london",
+  "schema_version": "0.1",
+  "name": "Naval Submarine Base New London",
+  "short_name": "Groton (Sub Base)",
+  "branch": "U.S. Navy",
+  "states": ["CT"],
+  "tagline": "The Navy's first and primary submarine base, the 'Submarine Capital of the World,' on the Thames River in Groton, Connecticut.",
+  "coords": { "lat": 41.40, "lng": -72.09, "label": "Groton, CT" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy's primary submarine base (located in GROTON, CT, despite the 'New London' name, on the Thames River, SE Connecticut). CONUS full template (BAH MHA CT049 New London; RentCast/SchoolDigger work). Home of the submarine force, Naval Submarine School, and attack submarines; 'Submarine Capital of the World.' Medical: Naval Submarine Medical Center / Naval Health Clinic New England. Facts verified from official sources (cnic.navy.mil SUBASE New London, Navy Medicine, DeCA/NEX, Wikipedia for corroborated headline facts). Connecticut is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 06340 (Groton).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Groton, CT (Thames River, southeastern Connecticut)",
+        "Role": "The Navy's first and primary submarine base",
+        "Nickname": "The 'Submarine Capital of the World'",
+        "Also hosts": "Naval Submarine School and attack submarines",
+        "Note": "Despite the name, the base is in Groton, not New London (across the river)"
+      },
+      "source": { "label": "SUBASE New London (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/navsubase_new_london.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Submarine Base New London is the Navy's first and primary submarine base, the 'Submarine Capital of the World.' It homeports attack submarines and is home to the Naval Submarine School, where submariners train.",
+        "Despite the name, the base sits in Groton, on the east bank of the Thames River in southeastern Connecticut, across from the city of New London. The region pairs maritime history with New England's seasons and coastline."
+      ],
+      "source": { "label": "SUBASE New London (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/navsubase_new_london.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "groton_decision",
+      "title": "New England Coast Living Around the Thames",
+      "type": "killer",
+      "data": {
+        "subtitle": "Southeastern Connecticut is a historic, coastal region with four seasons. The main choice is which town along (or near) the Thames fits your commute and schools.",
+        "intro": [
+          "The area is a mix of small coastal cities and New England towns, with a moderate cost of living for the Northeast. On-base housing is available; many also live off base around Groton and the surrounding towns.",
+          "Where you live mostly comes down to commute and schools across Groton, the shoreline towns, and the inland communities, with both the coast and casinos nearby."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Groton surrounds the base for the shortest commute and the most convenience." },
+          { "who": "Shoreline charm", "advice": "Mystic, Stonington, and the shoreline towns offer New England character a short drive away." },
+          { "who": "More value inland", "advice": "Heading inland toward Ledyard and the surrounding towns can trade a slightly longer commute for more space." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the local market." }
+        ]
+      },
+      "source": { "label": "SUBASE New London (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/navsubase_new_london.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official SUBASE New London site before you go."
+      ],
+      "source": { "label": "SUBASE New London (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/navsubase_new_london.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "SUBASE New London has privatized on-base family housing across several neighborhoods in the Groton area.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "SUBASE New London (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/navsubase_new_london.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CT049",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CT049 (New London)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "06340", "label": "Groton, CT" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Groton Public Schools serves the area nearest the base, with Ledyard, Stonington, and other southeastern Connecticut districts depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Groton Public Schools (official)", "url": "https://www.grotonschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CT", "city": "Groton" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Naval Health Clinic New England (Groton) / Naval Submarine Medical Center",
+        "Care": "Outpatient primary and specialty care on base, including submarine and dive medicine; inpatient and complex care via local network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Navy Medicine / Naval Submarine Medical Center (TRICARE)", "url": "https://www.tricare.mil/mtf/Groton" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "SUBASE New London Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Groton"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and around Groton the call depends on tour length, sea-duty rotations, and the New England market."],
+        "rent": [
+          "Your tour is short (about two years or less) or your sea-duty rotation feels uncertain.",
+          "You want time to learn the shoreline before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat submarine-force assignments in the area.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The southeastern Connecticut market fits your budget for a home you like.",
+          "You've found a town and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Submariners often return to the area, which can make buying worth a look, but weigh Connecticut property taxes and your rotation. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Groton and the shoreline before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Connecticut vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Groton, Ledyard, or Stonington) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Naval Health Clinic in Groton or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is the base in New London or Groton?", "a": "The base is in Groton, on the east side of the Thames River, even though it's named 'New London' (the city across the river). It's the Navy's primary submarine base." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base around Groton and the shoreline towns like Mystic and Stonington, or inland toward Ledyard." },
+        { "q": "What's the area like?", "a": "Historic, coastal New England with four seasons. Mystic and the shoreline are charming, and the casinos (Foxwoods, Mohegan Sun) are nearby." },
+        { "q": "What is the BAH area?", "a": "The sub base is MHA CT049 (New London). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Mystic Seaport & Aquarium", "category": "Family", "blurb": "A maritime museum village and aquarium in nearby Mystic.", "maps_query": "Mystic Seaport Museum, CT" },
+        { "name": "Submarine Force Museum (USS Nautilus)", "category": "Museum", "blurb": "Home of the world's first nuclear submarine, next to the base in Groton.", "maps_query": "Submarine Force Museum, Groton CT" },
+        { "name": "Foxwoods & Mohegan Sun", "category": "Entertainment", "blurb": "Two large casino resorts with dining and shows nearby.", "maps_query": "Foxwoods Resort Casino, CT" },
+        { "name": "Stonington Borough", "category": "In town", "blurb": "A picturesque coastal village with dining and a lighthouse.", "maps_query": "Stonington Borough, CT" }
+      ]
+    }
+  ]
+}

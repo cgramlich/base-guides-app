@@ -1,0 +1,202 @@
+{
+  "slug": "fort-wainwright",
+  "schema_version": "0.1",
+  "name": "Fort Wainwright",
+  "short_name": "Wainwright",
+  "branch": "U.S. Army",
+  "states": ["AK"],
+  "region": "OCONUS",
+  "tagline": "The Army's Arctic post in interior Alaska, home of cold-weather and airborne soldiers near Fairbanks.",
+  "coords": { "lat": 64.83, "lng": -147.64, "label": "Fairbanks, AK" },
+  "tz": "America/Anchorage",
+  "last_full_review": "2026-06-25",
+  "_note": "Army Arctic post (Fairbanks, interior Alaska). Region flagged OCONUS for browse UX, but Alaska is a BAH/RentCast/SchoolDigger state -> KEEPS full CONUS template (BAH MHA AK405 Fairbanks; realestate + schools_live feeds work). Home of 11th Airborne Division elements (Arctic Angels). Extreme cold/dark winters. Medical: Bassett Army Community Hospital. Facts verified from official sources (home.army.mil/wainwright, Bassett ACH, DeCA/AAFES, Wikipedia for corroborated headline facts). Alaska is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 99701 (Fairbanks).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Fairbanks, AK (interior Alaska)",
+        "Major unit": "Elements of the 11th Airborne Division (the 'Arctic Angels')",
+        "Mission": "Arctic and cold-weather operations and training",
+        "Climate": "Subarctic: long, very cold winters and short, warm summers",
+        "Note": "A true Alaska tour; remote and extreme but adventurous"
+      },
+      "source": { "label": "Fort Wainwright (official)", "url": "https://home.army.mil/wainwright/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Wainwright is the Army's interior-Alaska post, home to elements of the 11th Airborne Division, the 'Arctic Angels,' who specialize in Arctic and cold-weather operations. It's built for training and fighting in some of the harshest conditions on earth.",
+        "Right next to Fairbanks, it offers a true Alaska experience: dramatic seasons, the northern lights, and wide-open wilderness, balanced against long, dark, very cold winters that shape daily life."
+      ],
+      "source": { "label": "Fort Wainwright (official)", "url": "https://home.army.mil/wainwright/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "wainwright_decision",
+      "title": "An Alaska Tour: Embrace the Extremes",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fairbanks is remote and brutally cold in winter, which shapes everything. On-post housing is popular for the convenience; the real key is preparing for the climate.",
+        "intro": [
+          "Interior Alaska is an adventure, but winter is no joke: deep cold, long darkness, and the need for engine block heaters and serious gear. Many families choose on-post housing for the short commute and easier winters.",
+          "Off post, Fairbanks and North Pole offer more housing options, and the cost of living is moderate, though goods and travel can be pricey given the remoteness."
+        ],
+        "recommendations": [
+          { "who": "Easiest winters", "advice": "On-post housing keeps the commute short and life simpler through the deep cold; it's a popular choice." },
+          { "who": "Off-post options", "advice": "Fairbanks and nearby North Pole offer more housing, schools, and amenities a short drive out." },
+          { "who": "Prepare for the cold", "advice": "Budget for cold-weather gear, plug-in vehicles (block heaters), and higher heating costs; this is the biggest adjustment." },
+          { "who": "Lean into Alaska", "advice": "Northern lights, fishing, and the outdoors are incredible; embracing them is what makes the tour." }
+        ]
+      },
+      "source": { "label": "Fort Wainwright (official)", "url": "https://home.army.mil/wainwright/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Wainwright site before you go."
+      ],
+      "source": { "label": "Fort Wainwright (official)", "url": "https://home.army.mil/wainwright/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Wainwright has privatized on-post family housing across several neighborhoods, popular for the convenience through Alaska's harsh winters.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Wainwright (official)", "url": "https://home.army.mil/wainwright/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AK405",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AK405 (Fairbanks)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "99701", "label": "Fairbanks, AK" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, including campuses serving the post. Fairbanks North Star Borough School District serves Fort Wainwright, Fairbanks, and North Pole.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Fairbanks North Star Borough School District (official)", "url": "https://www.k12northstar.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AK", "city": "Fairbanks" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Bassett Army Community Hospital",
+        "Care": "A full Army hospital on post with primary, specialty, emergency, and inpatient services for the interior Alaska military community",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Bassett Army Community Hospital (official)", "url": "https://bassett.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Wainwright Commissary (DeCA)",
+        "Exchange": "Fort Wainwright Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In Fairbanks, many families take on-post housing for easier winters, but here's the framework if you're weighing the local market."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer on-post housing for the short commute through the deep cold.",
+          "You'd rather not own in a remote, smaller market.",
+          "Your BAH comfortably covers rent if you go off post."
+        ],
+        "buy": [
+          "You expect to be here three or more years and want to settle in Fairbanks.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "You're comfortable maintaining a home through extreme winters.",
+          "You've found a place and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, and many Wainwright families take on-post housing to simplify Alaska winters. If you buy, weigh maintenance, heating, and a remote resale market. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and an Alaska move adds climate-specific prep. Start early."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-post lodging before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-post housing is popular for easier winters; get on the list early and get the office's read on Fairbanks and North Pole." },
+          { "title": "Winterize and register your vehicle", "text": "Handle Alaska vehicle registration and base access, and prep for the cold: block heater, winter tires, and an emergency kit. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the Fairbanks North Star Borough School District early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Bassett Army Community Hospital." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is Fort Wainwright an overseas tour?", "a": "It's in Alaska, a U.S. state, so it uses stateside pay tools like BAH (not OHA). But it's remote and extreme, so we group it under the OCONUS/Alaska section for browsing." },
+        { "q": "How cold does it get?", "a": "Interior Alaska has long, very cold, dark winters, often well below zero, plus short, bright summers. Cold-weather prep is the biggest adjustment." },
+        { "q": "Where do families live?", "a": "Many take on-post housing for easier winters. Off post, Fairbanks and North Pole offer more options a short drive away." },
+        { "q": "What is the BAH area?", "a": "Fort Wainwright is MHA AK405 (Fairbanks). Because it's a U.S. state, you get BAH; use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Chena Hot Springs", "category": "Outdoors", "blurb": "Natural hot springs and a great spot to watch the northern lights, northeast of Fairbanks.", "maps_query": "Chena Hot Springs Resort, AK" },
+        { "name": "Santa Claus House (North Pole)", "category": "Family", "blurb": "A year-round Christmas attraction in nearby North Pole, AK.", "maps_query": "Santa Claus House, North Pole AK" },
+        { "name": "Denali National Park", "category": "Day trip", "blurb": "North America's tallest peak and vast wilderness, a couple of hours south.", "maps_query": "Denali National Park, AK" },
+        { "name": "Museum of the North (UAF)", "category": "Museum", "blurb": "Alaska art, culture, and natural history at the university in Fairbanks.", "maps_query": "University of Alaska Museum of the North, Fairbanks AK" }
+      ]
+    }
+  ]
+}

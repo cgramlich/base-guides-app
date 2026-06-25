@@ -1,0 +1,201 @@
+{
+  "slug": "presidio-of-monterey",
+  "schema_version": "0.1",
+  "name": "Presidio of Monterey",
+  "short_name": "Monterey",
+  "branch": "U.S. Army",
+  "states": ["CA"],
+  "tagline": "Home of the Defense Language Institute, where the military learns the world's languages, on California's stunning Monterey Peninsula.",
+  "coords": { "lat": 36.59, "lng": -121.91, "label": "Monterey, CA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Army garrison hosting DLIFLC (Defense Language Institute Foreign Language Center), Monterey Peninsula CA. CONUS full template (BAH MHA CA039 Monterey; RentCast/SchoolDigger work). Joint student population (all services). Housing largely at the Ord Military Community (former Fort Ord) in Seaside/Marina. Medical: US Army Health Clinic Presidio of Monterey. Facts verified from official sources (home.army.mil/monterey, dliflc.edu, TRICARE clinic, DeCA/AAFES, Wikipedia for corroborated headline facts). California is TRICARE West. High-cost coastal market. Medium-confidence flags: base coords (approx), off-base ZIP 93940 (Monterey).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (joint student population, all services)",
+        "Location": "Monterey, CA (Monterey Peninsula, Central Coast)",
+        "Role": "Home of the Defense Language Institute Foreign Language Center (DLIFLC)",
+        "Mission": "Foreign-language training for service members across the military",
+        "Housing": "Largely at the Ord Military Community (Seaside/Marina)",
+        "Setting": "Scenic, expensive Monterey Peninsula"
+      },
+      "source": { "label": "Presidio of Monterey (official)", "url": "https://home.army.mil/monterey/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "The Presidio of Monterey is the home of the Defense Language Institute Foreign Language Center, where service members from every branch learn the world's languages in intensive courses. The student population is joint and constantly turning over, giving the post a school-house feel.",
+        "It sits on the spectacular Monterey Peninsula on California's Central Coast, one of the most beautiful, and most expensive, places the military assigns families."
+      ],
+      "source": { "label": "DLIFLC (official)", "url": "https://www.dliflc.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "monterey_decision",
+      "title": "A Language-School Tour in a Pricey Paradise",
+      "type": "killer",
+      "data": {
+        "subtitle": "Monterey is gorgeous but among the priciest coastal markets. Most students live in military housing at the former Fort Ord (Ord Military Community) rather than the expensive peninsula towns.",
+        "intro": [
+          "Because most people here are students on language tours, military housing at the Ord Military Community in Seaside and Marina is the common, cost-effective choice, with limited housing at the Presidio itself.",
+          "Renting on the peninsula is possible but expensive, so where you live mostly comes down to military housing versus how much of the high local rent your BAH will absorb."
+        ],
+        "recommendations": [
+          { "who": "Most students: military housing", "advice": "On-post and Ord Military Community housing (Seaside/Marina) is the easiest, most affordable option; get on the list early." },
+          { "who": "Closer to class", "advice": "Limited housing at the Presidio itself and nearby Seaside keeps the commute to DLI short." },
+          { "who": "Renting the peninsula", "advice": "Monterey, Pacific Grove, and Marina have rentals, but coastal prices are steep, so check your BAH against the market." },
+          { "who": "Enjoy the location", "advice": "Carmel, Big Sur, and the aquarium are at your doorstep; lean into one of the best locations in the military." }
+        ]
+      },
+      "source": { "label": "Presidio of Monterey (official)", "url": "https://home.army.mil/monterey/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Presidio of Monterey site before you go."
+      ],
+      "source": { "label": "Presidio of Monterey (official)", "url": "https://home.army.mil/monterey/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Most family housing is at the Ord Military Community (the former Fort Ord) in Seaside and Marina, a short drive from the Presidio, with limited housing at the Presidio itself.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Presidio of Monterey (official)", "url": "https://home.army.mil/monterey/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA039",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA039 (Monterey)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "93940", "label": "Monterey, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Monterey Peninsula Unified serves Seaside, Marina, and Monterey, with other peninsula districts depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Monterey Peninsula Unified School District (official)", "url": "https://www.mpusd.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Monterey" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "U.S. Army Health Clinic, Presidio of Monterey",
+        "Care": "Outpatient primary and some specialty care; inpatient, emergency, and complex care via the local network on the peninsula",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "U.S. Army Health Clinic Presidio of Monterey (TRICARE)", "url": "https://www.tricare.mil/mtf/Monterey" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Ord Military Community Commissary (DeCA)",
+        "Exchange": "Presidio of Monterey / Ord Exchange (AAFES)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Monterey the short language-school tours and very high prices lead most families to military housing rather than buying."],
+        "rent": [
+          "Your tour is a language course (often under two years), so buying rarely pencils out.",
+          "Peninsula prices are out of comfortable reach for your budget.",
+          "You prefer military housing for the cost and convenience.",
+          "You want flexibility in an expensive market."
+        ],
+        "buy": [
+          "You have a longer assignment (instructor or cadre) and plan to stay.",
+          "You can afford the high entry price and want to build equity.",
+          "You've found a peninsula town and commute you're confident about.",
+          "You're comfortable owning (and possibly renting out) in a costly market."
+        ],
+        "bottom_line": "There is no universal right answer, but short DLI tours and steep peninsula prices lead most students to military housing. Buying mainly makes sense for longer instructor or cadre tours. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-post lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Most housing is at the Ord Military Community; get on the list early before considering the expensive peninsula market." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Monterey Peninsula Unified (or your local district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Presidio of Monterey clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is the Presidio of Monterey?", "a": "It's the home of the Defense Language Institute Foreign Language Center (DLIFLC), where service members from all branches learn foreign languages. Most people here are students on language tours." },
+        { "q": "Where do families live?", "a": "Mostly in military housing at the Ord Military Community (former Fort Ord) in Seaside and Marina, with limited housing at the Presidio. The peninsula is expensive to rent." },
+        { "q": "Is it expensive?", "a": "Yes, very. The Monterey Peninsula is one of the priciest coastal markets, which is why military housing is the common choice." },
+        { "q": "What is the BAH area?", "a": "The Presidio of Monterey is MHA CA039 (Monterey). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Monterey Bay Aquarium", "category": "Family", "blurb": "One of the world's best aquariums on Cannery Row.", "maps_query": "Monterey Bay Aquarium, CA" },
+        { "name": "17-Mile Drive & Pebble Beach", "category": "Outdoors", "blurb": "A famous scenic coastal drive past iconic golf and shoreline.", "maps_query": "17-Mile Drive, Pebble Beach CA" },
+        { "name": "Carmel-by-the-Sea", "category": "In town", "blurb": "A storybook village of galleries, dining, and a white-sand beach.", "maps_query": "Carmel-by-the-Sea, CA" },
+        { "name": "Big Sur", "category": "Day trip", "blurb": "Dramatic cliffs and redwoods down the coast on Highway 1.", "maps_query": "Big Sur, CA" }
+      ]
+    }
+  ]
+}

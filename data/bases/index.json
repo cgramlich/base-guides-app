@@ -79,6 +79,16 @@
     { "slug": "vandenberg-sfb", "name": "Vandenberg SFB", "branch": "U.S. Space Force", "state": "CA", "ready": true },
     { "slug": "nas-lemoore", "name": "NAS Lemoore", "branch": "U.S. Navy", "state": "CA", "ready": true },
     { "slug": "naval-station-mayport", "name": "Naval Station Mayport", "branch": "U.S. Navy", "state": "FL", "ready": true },
-    { "slug": "raf-lakenheath", "name": "RAF Lakenheath", "branch": "U.S. Air Force", "state": "England", "region": "OCONUS", "ready": true }
+    { "slug": "raf-lakenheath", "name": "RAF Lakenheath", "branch": "U.S. Air Force", "state": "England", "region": "OCONUS", "ready": true },
+    { "slug": "presidio-of-monterey", "name": "Presidio of Monterey", "branch": "U.S. Army", "state": "CA", "ready": true },
+    { "slug": "fort-wainwright", "name": "Fort Wainwright", "branch": "U.S. Army", "state": "AK", "region": "OCONUS", "ready": true },
+    { "slug": "nas-oceana", "name": "NAS Oceana", "branch": "U.S. Navy", "state": "VA", "ready": true },
+    { "slug": "naval-station-great-lakes", "name": "Naval Station Great Lakes", "branch": "U.S. Navy", "state": "IL", "ready": true },
+    { "slug": "submarine-base-new-london", "name": "Naval Submarine Base New London", "branch": "U.S. Navy", "state": "CT", "ready": true },
+    { "slug": "nas-patuxent-river", "name": "NAS Patuxent River", "branch": "U.S. Navy", "state": "MD", "ready": true },
+    { "slug": "mcrd-parris-island", "name": "MCRD Parris Island", "branch": "U.S. Marine Corps", "state": "SC", "ready": true },
+    { "slug": "mcas-miramar", "name": "MCAS Miramar", "branch": "U.S. Marine Corps", "state": "CA", "ready": true },
+    { "slug": "twentynine-palms", "name": "MCAGCC Twentynine Palms", "branch": "U.S. Marine Corps", "state": "CA", "ready": true },
+    { "slug": "spangdahlem-air-base", "name": "Spangdahlem Air Base", "branch": "U.S. Air Force", "state": "Germany", "region": "OCONUS", "ready": true }
   ]
 }

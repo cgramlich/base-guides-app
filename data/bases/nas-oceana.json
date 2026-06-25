@@ -1,0 +1,201 @@
+{
+  "slug": "nas-oceana",
+  "schema_version": "0.1",
+  "name": "NAS Oceana",
+  "short_name": "Oceana",
+  "branch": "U.S. Navy",
+  "states": ["VA"],
+  "tagline": "The Navy's East Coast master jet base in Virginia Beach, home of the Atlantic Fleet's strike fighters.",
+  "coords": { "lat": 36.82, "lng": -76.03, "label": "Virginia Beach, VA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy master jet base (Virginia Beach, Hampton Roads VA). CONUS full template (BAH MHA VA298 Norfolk/Portsmouth, which covers Virginia Beach; RentCast/SchoolDigger work). Home of Atlantic Fleet strike fighters (F/A-18E/F Super Hornet). Part of the Hampton Roads Navy complex (NS Norfolk already in app); JEB Little Creek nearby. Medical: branch clinic under Naval Medical Center Portsmouth. Facts verified from official sources (cnic.navy.mil NAS Oceana, NMC Portsmouth, DeCA/NEX, Wikipedia for corroborated headline facts). Virginia is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 23454 (Virginia Beach).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Virginia Beach, VA (Hampton Roads)",
+        "Role": "The Navy's East Coast master jet base",
+        "Aircraft": "F/A-18E/F Super Hornet strike fighters",
+        "Nearby": "JEB Little Creek and the larger Hampton Roads Navy complex",
+        "Setting": "A large coastal city with Atlantic beaches"
+      },
+      "source": { "label": "NAS Oceana (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_oceana.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Air Station Oceana is the Navy's East Coast master jet base, home to the Atlantic Fleet's strike fighter squadrons flying the F/A-18E/F Super Hornet. Its jets are a constant presence over Virginia Beach.",
+        "It's part of the dense Hampton Roads military region, which also includes Naval Station Norfolk and JEB Little Creek, in a large coastal city known for its Atlantic beaches and an affordable-for-the-coast cost of living."
+      ],
+      "source": { "label": "NAS Oceana (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_oceana.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "oceana_decision",
+      "title": "Big-City Beach Living in Hampton Roads",
+      "type": "killer",
+      "data": {
+        "subtitle": "Virginia Beach is a large, military-friendly beach city. The main choice is balancing how close to the oceanfront you want to be against commute, schools, and price.",
+        "intro": [
+          "Hampton Roads is one of the biggest military regions in the country, so the area is used to military families and offers a wide range of neighborhoods and prices. On-base housing is available; many live off base across Virginia Beach.",
+          "Where you live mostly comes down to commute and schools, balancing the beach areas against the more suburban, often more affordable parts of the city."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Central Virginia Beach neighborhoods near Oceana keep the commute short." },
+          { "who": "Beach life", "advice": "The oceanfront and nearby areas put you by the Atlantic, lively and popular but busier in summer." },
+          { "who": "Family suburbs", "advice": "Southern and western Virginia Beach (and Chesapeake) offer newer homes, good schools, and more space." },
+          { "who": "On-base option", "advice": "On-base housing is available across the Hampton Roads complex; weigh it against the local market." }
+        ]
+      },
+      "source": { "label": "NAS Oceana (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_oceana.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official NAS Oceana site before you go."
+      ],
+      "source": { "label": "NAS Oceana (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_oceana.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "NAS Oceana and the surrounding Hampton Roads complex have privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "NAS Oceana (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_oceana.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "VA298",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA VA298 (Norfolk/Portsmouth, covers Virginia Beach)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "23454", "label": "Virginia Beach, VA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Virginia Beach City Public Schools serves most military families, with neighboring Chesapeake and Norfolk districts depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Virginia Beach City Public Schools (official)", "url": "https://www.vbschools.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "VA", "city": "Virginia Beach" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Branch Health Clinic Oceana (Boone Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient and complex care via Naval Medical Center Portsmouth and the network",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Medical Center Portsmouth (official)", "url": "https://portsmouth.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NAS Oceana Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Oceana"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in military-heavy Hampton Roads many sailors return to the area, which makes buying worth a look."],
+        "rent": [
+          "Your tour is short (about two years or less) or your sea-duty rotation feels uncertain.",
+          "You want time to learn the area and pick the right part of the city.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat Hampton Roads assignments, which are common.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable-for-the-coast market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the large Navy presence and repeat tours make Hampton Roads a common place to buy. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Virginia Beach before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Virginia vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Virginia Beach City Public Schools (or your local district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Oceana clinic or Naval Medical Center Portsmouth." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What flies out of Oceana?", "a": "It's the Navy's East Coast master jet base, home to Atlantic Fleet strike fighter squadrons flying the F/A-18E/F Super Hornet." },
+        { "q": "Where do families live?", "a": "Across Virginia Beach. Central neighborhoods are close to the gate; the oceanfront is lively; southern and western Virginia Beach and Chesapeake offer more space and good schools. On-base housing is also available." },
+        { "q": "How does it relate to Norfolk?", "a": "Both are part of the Hampton Roads Navy region. Oceana is the Virginia Beach jet base; Naval Station Norfolk is the huge ship homeport nearby." },
+        { "q": "What is the BAH area?", "a": "Oceana falls in MHA VA298 (Norfolk/Portsmouth, which covers Virginia Beach). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Virginia Beach Oceanfront", "category": "Beach", "blurb": "The classic boardwalk, beach, and dining along the Atlantic.", "maps_query": "Virginia Beach Oceanfront, VA" },
+        { "name": "First Landing State Park", "category": "Outdoors", "blurb": "Trails and beaches where the first English colonists landed.", "maps_query": "First Landing State Park, Virginia Beach VA" },
+        { "name": "Military Aviation Museum", "category": "Museum", "blurb": "A large collection of flying WWI and WWII aircraft in Virginia Beach.", "maps_query": "Military Aviation Museum, Virginia Beach VA" },
+        { "name": "Sandbridge & Back Bay", "category": "Outdoors", "blurb": "A quieter beach and wildlife refuge at the south end of the city.", "maps_query": "Back Bay National Wildlife Refuge, Virginia Beach VA" }
+      ]
+    }
+  ]
+}

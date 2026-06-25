@@ -1,0 +1,201 @@
+{
+  "slug": "mcrd-parris-island",
+  "schema_version": "0.1",
+  "name": "MCRD Parris Island",
+  "short_name": "Parris Island",
+  "branch": "U.S. Marine Corps",
+  "states": ["SC"],
+  "tagline": "The legendary Marine Corps recruit depot in South Carolina's Lowcountry, where Marines are made.",
+  "coords": { "lat": 32.34, "lng": -80.69, "label": "Beaufort, SC" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Marine Corps Recruit Depot (Port Royal/Beaufort, SC Lowcountry). CONUS full template (BAH MHA SC258 Beaufort/Parris Island; RentCast/SchoolDigger work). Trains recruits from east of the Mississippi and all female recruits. Population = recruits + drill instructors + cadre/staff. Nearby MCAS Beaufort. Medical: Naval Hospital Beaufort. Facts verified from official sources (mcrdpi.marines.mil, Naval Hospital Beaufort, DeCA/MCX, Wikipedia for corroborated headline facts). South Carolina is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 29906 (Beaufort).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Port Royal / Beaufort, SC (Lowcountry)",
+        "Role": "Marine Corps Recruit Depot (boot camp)",
+        "Trains": "Recruits from east of the Mississippi and all female Marine recruits",
+        "Population": "Recruits, drill instructors, and cadre/staff",
+        "Nearby": "MCAS Beaufort, a short drive away"
+      },
+      "source": { "label": "MCRD Parris Island (official)", "url": "https://www.mcrdpi.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Marine Corps Recruit Depot Parris Island is one of the two places that make Marines, training recruits from east of the Mississippi River and all female recruits through the Corps' demanding boot camp.",
+        "It sits in South Carolina's Lowcountry near Beaufort, a historic, scenic coastal area. For families, this is typically a tour as a drill instructor, instructor, or support staff, set in a warm, marshy, beautiful corner of the South."
+      ],
+      "source": { "label": "MCRD Parris Island (official)", "url": "https://www.mcrdpi.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "parris_decision",
+      "title": "Lowcountry Living Around Beaufort",
+      "type": "killer",
+      "data": {
+        "subtitle": "This is usually a drill-instructor or staff tour, often demanding on time. The main choice is which Beaufort-area community fits your commute and family, since recruits live on the depot.",
+        "intro": [
+          "Family housing decisions here are for staff and cadre (recruits are berthed on the depot). The Beaufort area is a charming, moderately priced Lowcountry community, and on-base housing is available.",
+          "Where you live mostly comes down to commute and schools across Beaufort, Port Royal, and the surrounding Lowcountry, with the coast and Hilton Head nearby."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Port Royal and Beaufort sit nearest the depot for the shortest commute, important on a demanding DI schedule." },
+          { "who": "Family areas", "advice": "Beaufort and the surrounding Lowcountry towns are family-friendly with a relaxed pace." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the local market." },
+          { "who": "Enjoy the Lowcountry", "advice": "Historic Beaufort, the marshes, and nearby beaches and Hilton Head make for a beautiful setting." }
+        ]
+      },
+      "source": { "label": "MCRD Parris Island (official)", "url": "https://www.mcrdpi.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center. Access is busier around recruit graduations (family day and graduation).",
+        "Gate hours and visitor requirements change, so confirm the current details on the official MCRD Parris Island site before you go."
+      ],
+      "source": { "label": "MCRD Parris Island (official)", "url": "https://www.mcrdpi.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "MCRD Parris Island has on-base family housing for staff and cadre (recruits are berthed separately on the depot), with additional Marine housing in the Beaufort area.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "MCRD Parris Island (official)", "url": "https://www.mcrdpi.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "SC258",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA SC258 (Beaufort/Parris Island)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "29906", "label": "Beaufort, SC" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Beaufort County School District serves the area around the depot.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Beaufort County School District (official)", "url": "https://www.beaufortschools.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "SC", "city": "Beaufort" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Naval Hospital Beaufort",
+        "Care": "Primary and specialty outpatient care with some inpatient services, serving the depot and MCAS Beaufort; complex care via the regional network",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Hospital Beaufort (official)", "url": "https://beaufort.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "MCRD Parris Island Commissary (DeCA)",
+        "Exchange": "Marine Corps Exchange (MCX) Parris Island"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and around Beaufort the call depends on your tour length and the Lowcountry market."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "A demanding DI or staff schedule makes a short commute and low hassle a priority.",
+          "You want time to learn the area before committing.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The moderate Lowcountry market fits your budget for a home you like.",
+          "You've found a town and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Beaufort is moderately priced and charming, so buying can pencil out on a longer tour, but factor in coastal insurance and your schedule. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier, especially before a demanding training schedule starts."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Beaufort and Port Royal before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and South Carolina vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Beaufort County School District early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Hospital Beaufort or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Parris Island?", "a": "It's a Marine Corps Recruit Depot, one of two places that make Marines, training recruits from east of the Mississippi and all female recruits. For families, it's usually a drill-instructor or staff tour." },
+        { "q": "Where do families live?", "a": "Staff and cadre live in on-base housing or around Beaufort and Port Royal (recruits are berthed on the depot)." },
+        { "q": "Can families visit during boot camp?", "a": "Yes, around graduation (family day and graduation), when access is busier. Check current dates and access rules with the depot." },
+        { "q": "What is the BAH area?", "a": "Parris Island is MHA SC258 (Beaufort/Parris Island). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Historic Beaufort", "category": "In town", "blurb": "Antebellum streets, waterfront dining, and Lowcountry charm.", "maps_query": "Downtown Beaufort, SC" },
+        { "name": "Hunting Island State Park", "category": "Outdoors", "blurb": "A wild beach, lighthouse, and maritime forest nearby.", "maps_query": "Hunting Island State Park, SC" },
+        { "name": "Hilton Head Island", "category": "Day trip", "blurb": "Resort beaches and golf about an hour southwest.", "maps_query": "Hilton Head Island, SC" },
+        { "name": "Savannah, GA", "category": "Day trip", "blurb": "The historic Georgia city about an hour south.", "maps_query": "Savannah, GA" }
+      ]
+    }
+  ]
+}

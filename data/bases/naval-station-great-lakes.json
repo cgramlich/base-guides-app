@@ -1,0 +1,201 @@
+{
+  "slug": "naval-station-great-lakes",
+  "schema_version": "0.1",
+  "name": "Naval Station Great Lakes",
+  "short_name": "Great Lakes",
+  "branch": "U.S. Navy",
+  "states": ["IL"],
+  "tagline": "The Navy's only boot camp and largest training installation, on the shore of Lake Michigan north of Chicago.",
+  "coords": { "lat": 42.31, "lng": -87.84, "label": "North Chicago, IL" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy's only Recruit Training Command (boot camp) + many 'A' schools (Lake County IL, Lake Michigan, ~35 mi N of Chicago). CONUS full template (BAH MHA IL092 Great Lakes NAVTRACEN; RentCast/SchoolDigger work). Population = recruits + students + staff/instructors. Medical: Captain James A. Lovell Federal Health Care Center (joint VA-DoD). Facts verified from official sources (cnic.navy.mil NS Great Lakes, Lovell FHCC, DeCA/NEX, Wikipedia for corroborated headline facts). Illinois moved to TRICARE West in 2024. Medium-confidence flags: base coords (approx), off-base ZIP 60085 (Waukegan).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "North Chicago / Lake County, IL (Lake Michigan, ~35 mi N of Chicago)",
+        "Role": "The Navy's only boot camp (Recruit Training Command) and largest training installation",
+        "Also hosts": "Numerous Navy 'A' schools (initial technical training)",
+        "Population": "Recruits, students, and staff/instructors",
+        "Setting": "Lakefront suburbs north of Chicago"
+      },
+      "source": { "label": "Naval Station Great Lakes (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/ns_great_lakes.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Station Great Lakes is the home of Recruit Training Command, the Navy's only boot camp, where every new Sailor begins. It's also the Navy's largest training installation, hosting many 'A' schools for initial technical training.",
+        "On the shore of Lake Michigan about 35 miles north of Chicago, the population is a constant flow of recruits and students plus the staff and instructors who train them, set among Lake County's suburbs."
+      ],
+      "source": { "label": "Naval Station Great Lakes (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/ns_great_lakes.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "greatlakes_decision",
+      "title": "Lake County Living, With Chicago Nearby",
+      "type": "killer",
+      "data": {
+        "subtitle": "For staff and instructors, the choice is which Lake County suburb fits your commute and schools, with Chicago's metro amenities within reach and four real seasons to plan for.",
+        "intro": [
+          "Most family housing decisions here are for staff and instructors (recruits and many students live in barracks). Lake County offers a range of suburbs and prices, and on-base housing is available.",
+          "Where you live mostly comes down to commute and schools across the northern suburbs, balancing lakefront towns against more affordable inland areas, with Chicago a train ride away."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "North Chicago, Waukegan, and Gurnee sit near the base for a short commute." },
+          { "who": "Family suburbs", "advice": "Libertyville, Gurnee, and the surrounding Lake County towns are popular with families for their schools." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the local suburbs." },
+          { "who": "Plan for winter", "advice": "Expect real Midwest winters and lake-effect weather; budget for heating and winter driving." }
+        ]
+      },
+      "source": { "label": "Naval Station Great Lakes (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/ns_great_lakes.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center. Access can be busier around recruit graduations.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Naval Station Great Lakes site before you go."
+      ],
+      "source": { "label": "Naval Station Great Lakes (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/ns_great_lakes.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Naval Station Great Lakes has privatized on-base family housing across several neighborhoods for staff and instructors (recruits and many students are berthed in barracks).",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Naval Station Great Lakes (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/ns_great_lakes.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "IL092",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA IL092 (Great Lakes NAVTRACEN)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "60085", "label": "Waukegan, IL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. North Chicago, Waukegan, Gurnee, and other Lake County districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Gurnee School District 56 (official)", "url": "https://www.gurneesd56.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "IL", "city": "Waukegan" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Captain James A. Lovell Federal Health Care Center",
+        "Care": "A unique joint VA-DoD facility providing primary, specialty, inpatient, and emergency care for service members, recruits, families, and veterans",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Captain James A. Lovell FHCC (official)", "url": "https://www.lovell.fhcc.va.gov/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Naval Station Great Lakes Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Great Lakes"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Great Lakes the call depends on your tour length and how settled you want to be in the suburbs."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn Lake County before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The Lake County market fits your budget for a home you like.",
+          "You've found a suburb and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Weigh your tour length and Illinois property taxes (which run high) against the benefits of owning. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Lake County before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Illinois vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (North Chicago, Waukegan, Gurnee, or another Lake County district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Lovell Federal Health Care Center." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Naval Station Great Lakes?", "a": "It's home to Recruit Training Command, the Navy's only boot camp, plus many 'A' schools. It's the Navy's largest training installation." },
+        { "q": "Where do families live?", "a": "Staff and instructors live in on-base housing or across Lake County (North Chicago, Waukegan, Gurnee, Libertyville). Recruits and many students are berthed on base." },
+        { "q": "Is the medical facility different here?", "a": "Yes. The Captain James A. Lovell Federal Health Care Center is a unique joint VA-DoD facility serving both military and veteran populations." },
+        { "q": "What is the BAH area?", "a": "Great Lakes is MHA IL092. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Six Flags Great America (Gurnee)", "category": "Family", "blurb": "A major theme and water park minutes from base.", "maps_query": "Six Flags Great America, Gurnee IL" },
+        { "name": "Chicago", "category": "Day trip", "blurb": "World-class museums, food, and sports about an hour south by car or Metra train.", "maps_query": "Chicago, IL" },
+        { "name": "Illinois Beach State Park", "category": "Outdoors", "blurb": "Lake Michigan shoreline, dunes, and trails near Zion.", "maps_query": "Illinois Beach State Park, Zion IL" },
+        { "name": "Gurnee Mills", "category": "Food & shopping", "blurb": "A large outlet and shopping mall nearby.", "maps_query": "Gurnee Mills, Gurnee IL" }
+      ]
+    }
+  ]
+}

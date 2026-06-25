@@ -1,0 +1,157 @@
+{
+  "slug": "spangdahlem-air-base",
+  "schema_version": "0.1",
+  "name": "Spangdahlem Air Base",
+  "short_name": "Spangdahlem",
+  "branch": "U.S. Air Force",
+  "states": ["Germany"],
+  "region": "OCONUS",
+  "tagline": "Home of the 52nd Fighter Wing in Germany's scenic Eifel region, near Trier and the Luxembourg border.",
+  "coords": { "lat": 49.97, "lng": 6.69, "label": "Spangdahlem, Germany" },
+  "tz": "Europe/Berlin",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (Germany). OHA housing, DoDEA Europe schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy sections (US-only feeds). USAF 52nd Fighter Wing (F-16). Eifel region near Bitburg and Trier (Germany's oldest city); Luxembourg close. Medical: 52nd Medical Group clinic; complex care via Landstuhl. Facts verified from official sources (spangdahlem.af.mil, 52 MDG/TRICARE, DeCA/AAFES, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Spangdahlem, Germany (Eifel region, Rhineland-Palatinate)",
+        "Major unit": "52nd Fighter Wing",
+        "Aircraft": "F-16 Fighting Falcon",
+        "Near": "Bitburg and Trier (Germany's oldest city); Luxembourg is close",
+        "Tour type": "Accompanied (command-sponsored) for most"
+      },
+      "source": { "label": "Spangdahlem Air Base (official)", "url": "https://www.spangdahlem.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Spangdahlem Air Base is home to the U.S. Air Force's 52nd Fighter Wing, flying the F-16 Fighting Falcon and providing combat airpower across the European theater.",
+        "It sits in Germany's scenic Eifel region near the towns of Bitburg and Trier, the country's oldest city, with Luxembourg just to the west. The countryside setting gives families an authentic German experience with the rest of Europe close at hand."
+      ],
+      "source": { "label": "Spangdahlem Air Base (official)", "url": "https://www.spangdahlem.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "spangdahlem_decision",
+      "title": "An Eifel Tour: On-Base vs. Living in a German Village",
+      "type": "killer",
+      "data": {
+        "subtitle": "A tour in the Eifel is a favorite. The main choice is on-base housing versus renting 'on the economy' in the surrounding German villages, each with real trade-offs.",
+        "intro": [
+          "Most families come command-sponsored and choose between on-base housing and renting on the German economy with the Overseas Housing Allowance (OHA). The villages around Spangdahlem and Bitburg are popular with American families.",
+          "On base is the simplest, most American option with the shortest commute. Living on the economy means an authentic German-village experience, often with more space, balanced against a German lease, the language, and a commute through the countryside."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-base housing keeps you close to work, schools, and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting in the surrounding Eifel villages and the Bitburg area offers the real German experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-base housing and must approve economy rentals, and helps with leases, utilities, and OHA, so start there before signing anything." },
+          { "who": "Embrace the location", "advice": "Trier, Luxembourg, and the Mosel wine region are close, and the rest of Europe is within easy reach for travel." }
+        ]
+      },
+      "source": { "label": "Spangdahlem Air Base (official)", "url": "https://www.spangdahlem.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas installations can be stricter and change with force-protection levels, so confirm the current details on the official Spangdahlem site before you go."
+      ],
+      "source": { "label": "Spangdahlem Air Base (official)", "url": "https://www.spangdahlem.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base & OHA)",
+      "type": "prose",
+      "data": [
+        "Spangdahlem has on-base family housing, and many families instead live on the German economy in the surrounding villages, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-base housing and must approve economy rentals; it also helps with leases, utilities, and OHA paperwork. Start there as soon as you have orders."
+      ],
+      "source": { "label": "Spangdahlem Air Base (official)", "url": "https://www.spangdahlem.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools in the Spangdahlem and Bitburg community, which serve students from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Europe and the base, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "52nd Medical Group (Spangdahlem Clinic)",
+        "Care": "Outpatient primary and specialty care on base; inpatient and complex care via Landstuhl Regional Medical Center and host-nation hospitals",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "52nd Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Spangdahlem" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Spangdahlem Commissary (DeCA)",
+        "Exchange": "Spangdahlem Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Germany has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-base housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your USAFE driver's license, register or ship your vehicle, and complete SOFA documentation. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Spangdahlem/Bitburg schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the 52nd Medical Group clinic and host-nation providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Spangdahlem?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-base housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "Where do families live?", "a": "Either in on-base housing or on the German economy in the surrounding Eifel villages and the Bitburg area, using OHA." },
+        { "q": "What about schools?", "a": "Kids attend DoDEA schools in the Spangdahlem and Bitburg community, from elementary through high school." },
+        { "q": "Is it a good tour for travel?", "a": "Excellent. Trier, Luxembourg, and the Mosel wine region are close, and the rest of Europe is within easy reach by car or train." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Trier", "category": "Day trip", "blurb": "Germany's oldest city, with Roman ruins like the Porta Nigra, nearby.", "maps_query": "Porta Nigra, Trier Germany" },
+        { "name": "Mosel Wine Region", "category": "Outdoors", "blurb": "Steep riverside vineyards and wine villages along the Mosel.", "maps_query": "Mosel Valley, Germany" },
+        { "name": "Luxembourg City", "category": "Day trip", "blurb": "The historic capital of Luxembourg, a short drive west.", "maps_query": "Luxembourg City, Luxembourg" },
+        { "name": "Eifel National Park", "category": "Outdoors", "blurb": "Forests, lakes, and hiking across the volcanic Eifel region.", "maps_query": "Eifel National Park, Germany" }
+      ]
+    }
+  ]
+}
