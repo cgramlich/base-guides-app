@@ -1,0 +1,158 @@
+{
+  "slug": "camp-humphreys",
+  "schema_version": "0.1",
+  "name": "Camp Humphreys",
+  "short_name": "Humphreys",
+  "branch": "U.S. Army",
+  "states": ["South Korea"],
+  "region": "OCONUS",
+  "tagline": "The hub of U.S. Forces Korea, home of Eighth Army and the 2nd Infantry Division, in Pyeongtaek.",
+  "coords": { "lat": 36.96, "lng": 127.03, "label": "Pyeongtaek, South Korea" },
+  "tz": "Asia/Seoul",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (South Korea). US-only feeds intentionally omitted (overseas uses OHA, not BAH; no RentCast or SchoolDigger). Weather via the Open-Meteo global fallback. Facts verified from official sources (home.army.mil/humphreys, 8tharmy.korea.army.mil, dodea.edu/pacific, TRICARE Overseas, Wikipedia for corroborated headline facts). Command sponsorship is central to a Korea tour. Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (USAG Humphreys)",
+        "Location": "Pyeongtaek, South Korea",
+        "Major commands": "Eighth Army HQ; 2nd Infantry Division; hub of U.S. Forces Korea",
+        "Airfield": "The Army's most active airfield in the Pacific",
+        "Schools": "DoDEA (four schools on post)",
+        "Region": "OCONUS (overseas tour; OHA, not BAH)"
+      },
+      "source": { "label": "USAG Humphreys (official)", "url": "https://home.army.mil/humphreys/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Camp Humphreys is the hub of U.S. Forces Korea and the largest U.S. overseas Army installation, in Pyeongtaek south of Seoul. It is the headquarters of Eighth Army and home to the 2nd Infantry Division and the Army's most active airfield in the Pacific.",
+        "A massive build-out consolidated forces here from older posts like Yongsan, so the installation is modern and largely self-contained, with its own hospital, DoDEA schools, and extensive housing."
+      ],
+      "source": { "label": "USAG Humphreys (official)", "url": "https://home.army.mil/humphreys/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "korea_decision",
+      "title": "Command Sponsorship: The Decision That Shapes a Korea Tour",
+      "type": "killer",
+      "data": {
+        "subtitle": "In Korea the first question is whether your tour is accompanied (command-sponsored) or not. It determines whether your family comes at government expense and whether you get housing, schools, and full benefits here.",
+        "intro": [
+          "Korea assignments come in accompanied and unaccompanied versions. Command sponsorship is what brings your family over at government expense and unlocks on-post housing, DoDEA schools, and the commissary. Confirm it early, before you make any plans, through your gaining command.",
+          "If you're command-sponsored, the next call is on-post versus off-post. About 40 percent of command-sponsored families live on post, often in mid- and high-rise towers; others live off post in Pyeongtaek and Anjeong-ri with OHA covering rent up to a ceiling."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Nothing else matters until command sponsorship is approved; work it through your unit's personnel office (MPD/S1) as early as possible." },
+          { "who": "On-post living", "advice": "On-post towers and homes put you steps from work, schools, and amenities, and demand is high, so get on the list early." },
+          { "who": "Off-post living", "advice": "Pyeongtaek and Anjeong-ri offer apartments on the local economy; OHA offsets rent and utilities up to a ceiling set by your rank and dependents." },
+          { "who": "Make the most of it", "advice": "Seoul, fast trains, and cheap regional flights make Korea a launchpad for travel across Asia." }
+        ]
+      },
+      "source": { "label": "Eighth Army newcomers (official)", "url": "https://8tharmy.korea.army.mil/site/newcomers/housing.asp" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the garrison, and overseas access rules differ from stateside posts. You will need status documents under the U.S.-Korea SOFA.",
+        "Confirm the current visitor and access requirements on the official USAG Humphreys site before you arrive."
+      ],
+      "source": { "label": "USAG Humphreys (official)", "url": "https://home.army.mil/humphreys/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing & OHA",
+      "type": "prose",
+      "data": [
+        "Command-sponsored families choose between on-post government housing (apartments, townhomes, and single-family homes, generally two to five bedrooms) and off-post rentals on the Korean economy. About 40 percent of command-sponsored families live on post.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for those living off post. It is individualized by rank, dependents, and actual rent up to a ceiling, so there is no single rate to quote. The Housing Office assigns on-post housing and helps with off-post rentals."
+      ],
+      "source": { "label": "USAG Humphreys housing (official)", "url": "https://home.army.mil/humphreys/about/garrison/directorate-public-works/housing-division" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA operates four schools on Camp Humphreys: Humphreys Central and Humphreys West Elementary Schools, Humphreys Middle School, and Humphreys High School.",
+        "Start DoDEA registration early and confirm boundaries and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Brian D. Allgood Army Community Hospital (BDAACH)",
+        "Care": "Full Army hospital on post: inpatient, emergency, and specialty care",
+        "Coverage": "TRICARE Overseas",
+        "Note": "Some specialty care may be referred to host-nation or other military facilities"
+      },
+      "source": { "label": "Brian D. Allgood Army Community Hospital (official)", "url": "https://humphreys.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Camp Humphreys Commissary (DeCA)",
+        "Exchange": "Camp Humphreys Exchange (AAFES / PX), one of the largest overseas"
+      },
+      "source": { "label": "USAG Humphreys (official)", "url": "https://home.army.mil/humphreys/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your gaining command before you plan anything." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the status documents that let you live in-country under the SOFA. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits, and there are rules on shipping a vehicle. Confirm what you can bring and the timelines." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA schools here; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at the on-post hospital or clinic." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is command sponsorship and why does it matter?", "a": "It's official approval for your family to accompany you at government expense. It unlocks on-post housing, DoDEA schools, the commissary, and family travel. Without it, a Korea tour is typically unaccompanied. Confirm it early." },
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive OHA (for off-post rentals) instead of BAH, individualized by rank, dependents, and your actual rent up to a ceiling. On-post housing is government-provided." },
+        { "q": "Where do families live?", "a": "About 40 percent of command-sponsored families live on post, often in towers; others rent off post in Pyeongtaek and Anjeong-ri with OHA." },
+        { "q": "Can I bring pets?", "a": "Usually yes, but Korea has import and documentation requirements, and on-post housing has pet policies. Start the process early; rules and timelines are strict." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Seoul (Gyeongbokgung Palace)", "category": "Day trip", "blurb": "Korea's capital, with grand palaces, food, and shopping, about an hour north by car or train.", "maps_query": "Gyeongbokgung Palace, Seoul South Korea" },
+        { "name": "Everland", "category": "Family", "blurb": "Korea's largest theme park, in nearby Yongin.", "maps_query": "Everland, Yongin South Korea" },
+        { "name": "Korean Folk Village", "category": "History", "blurb": "A living-history village showcasing traditional Korean life, in Yongin.", "maps_query": "Korean Folk Village, Yongin South Korea" },
+        { "name": "Anjeong-ri", "category": "Food & shopping", "blurb": "The lively district just outside Camp Humphreys, full of restaurants and shops.", "maps_query": "Anjeong-ri, Pyeongtaek South Korea" }
+      ]
+    }
+  ]
+}

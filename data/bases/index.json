@@ -26,6 +26,9 @@
     { "slug": "fort-bliss", "name": "Fort Bliss", "branch": "U.S. Army", "state": "TX", "ready": true },
     { "slug": "fort-carson", "name": "Fort Carson", "branch": "U.S. Army", "state": "CO", "ready": true },
     { "slug": "joint-base-pearl-harbor-hickam", "name": "Joint Base Pearl Harbor-Hickam", "branch": "Navy / Air Force", "state": "HI", "region": "OCONUS", "ready": true },
-    { "slug": "schofield-barracks", "name": "Schofield Barracks", "branch": "U.S. Army", "state": "HI", "region": "OCONUS", "ready": true }
+    { "slug": "schofield-barracks", "name": "Schofield Barracks", "branch": "U.S. Army", "state": "HI", "region": "OCONUS", "ready": true },
+    { "slug": "camp-humphreys", "name": "Camp Humphreys", "branch": "U.S. Army", "state": "South Korea", "region": "OCONUS", "ready": true },
+    { "slug": "ramstein-air-base", "name": "Ramstein Air Base", "branch": "U.S. Air Force", "state": "Germany", "region": "OCONUS", "ready": true },
+    { "slug": "yokota-air-base", "name": "Yokota Air Base", "branch": "U.S. Air Force", "state": "Japan", "region": "OCONUS", "ready": true }
   ]
 }

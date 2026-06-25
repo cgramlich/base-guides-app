@@ -1,0 +1,158 @@
+{
+  "slug": "ramstein-air-base",
+  "schema_version": "0.1",
+  "name": "Ramstein Air Base",
+  "short_name": "Ramstein",
+  "branch": "U.S. Air Force",
+  "states": ["Germany"],
+  "region": "OCONUS",
+  "tagline": "The gateway to Europe: 86th Airlift Wing, U.S. Air Forces in Europe, and the heart of the Kaiserslautern Military Community.",
+  "coords": { "lat": 49.44, "lng": 7.6, "label": "Kaiserslautern, Germany" },
+  "tz": "Europe/Berlin",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Germany). US-only feeds intentionally omitted (overseas uses OHA, not BAH; no RentCast or SchoolDigger). Weather via the Open-Meteo global fallback. Facts verified from official sources (ramstein.af.mil, dodea.edu/europe, Landstuhl/TRICARE, Wikipedia for corroborated headline facts). Part of the Kaiserslautern Military Community (KMC), the largest U.S. community outside the U.S. Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (USAFE)",
+        "Location": "Kaiserslautern area, Germany",
+        "Host wing": "86th Airlift Wing",
+        "Also hosts": "Headquarters U.S. Air Forces in Europe (USAFE)",
+        "Community": "Kaiserslautern Military Community (KMC), largest U.S. community overseas",
+        "Region": "OCONUS (overseas tour; OHA, not BAH)"
+      },
+      "source": { "label": "Ramstein Air Base (official)", "url": "https://www.ramstein.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Ramstein is the U.S. military's gateway to Europe. The host 86th Airlift Wing flies airlift and aeromedical evacuation missions, and the base is the headquarters of U.S. Air Forces in Europe (USAFE) and a hub for moving people and cargo across the theater.",
+        "Ramstein anchors the Kaiserslautern Military Community (KMC), the largest concentration of Americans outside the United States, which spans several installations around Kaiserslautern."
+      ],
+      "source": { "label": "Ramstein Air Base (official)", "url": "https://www.ramstein.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "germany_decision",
+      "title": "On Base or On the Economy: Living in the KMC",
+      "type": "killer",
+      "data": {
+        "subtitle": "Germany is a favorite tour for the travel and quality of life. The defining choice is living on base versus renting on the German economy, where OHA and generous space often make off-base living appealing.",
+        "intro": [
+          "The Kaiserslautern Military Community is big and well-supported, with American schools, hospitals, and shopping. Demand for on-base housing is high, so many families live off base in the surrounding German towns.",
+          "Renting on the economy is common and often spacious; OHA plus a move-in housing allowance offset rent and utilities up to a ceiling. Living off base immerses you in German life, with the trade-offs of a different rental system, the language, and a commute."
+        ],
+        "recommendations": [
+          { "who": "Simplicity and community", "advice": "On-base or American-managed housing keeps you close to schools and amenities; get on the list early, as demand is high." },
+          { "who": "Space and immersion", "advice": "Renting in nearby German towns often gets you more space and a local experience; OHA offsets rent and utilities up to a ceiling." },
+          { "who": "Travel the continent", "advice": "Ramstein's location and flights make weekend trips across Europe easy; many families say the travel is the best part of the tour." },
+          { "who": "Plan for the rental system", "advice": "German leases, utilities, and customs differ from the U.S.; lean on the Housing Office to navigate them." }
+        ]
+      },
+      "source": { "label": "Ramstein Air Base (official)", "url": "https://www.ramstein.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the installation, and overseas access rules differ from stateside bases. You will need status documents under the NATO SOFA.",
+        "Confirm the current visitor and access requirements on the official Ramstein site before you arrive."
+      ],
+      "source": { "label": "Ramstein Air Base (official)", "url": "https://www.ramstein.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing & OHA",
+      "type": "prose",
+      "data": [
+        "Families choose between on-base or American-managed housing and renting on the German economy. Demand for on-base housing is high, so many families live off base in the surrounding towns.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for those off base, individualized by rank, dependents, and actual rent up to a ceiling, alongside allowances for move-in costs and utilities. The Housing Office helps with both paths and the German rental process."
+      ],
+      "source": { "label": "Ramstein Air Base (official)", "url": "https://www.ramstein.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Europe operates several elementary, middle, and high schools across the Kaiserslautern Military Community.",
+        "Start DoDEA registration early and confirm the specific schools, boundaries, and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Landstuhl Regional Medical Center (LRMC)",
+        "Care": "The largest U.S. military hospital outside the United States: inpatient, emergency, and specialty care",
+        "On base": "86th Medical Group clinic at Ramstein",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "Landstuhl Regional Medical Center (official)", "url": "https://landstuhl.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Ramstein / KMC Commissary (DeCA)",
+        "Exchange": "Kaiserslautern Military Community Center (KMCC), one of the largest exchanges overseas"
+      },
+      "source": { "label": "Ramstein Air Base (official)", "url": "https://www.ramstein.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your gaining command." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the NATO SOFA documents that let you live in-country. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits, and a vehicle must meet German and U.S. requirements. Confirm what you can bring and the timelines." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA Europe schools; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at the Ramstein clinic or Landstuhl." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is the KMC?", "a": "The Kaiserslautern Military Community, the largest U.S. military community outside the United States. Ramstein is its center, and it spans several installations around Kaiserslautern with American schools, hospitals, and shopping." },
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive OHA instead of BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling, plus allowances for utilities and move-in costs." },
+        { "q": "On base or on the economy?", "a": "Both are common. On-base is convenient but in high demand; renting on the German economy often gets you more space and a local experience, with OHA offsetting the cost." },
+        { "q": "Is the travel as good as people say?", "a": "For many families, yes. Ramstein's location and flights make weekend trips across Europe easy, and it's often cited as the highlight of the tour." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Kaiserslautern", "category": "In town", "blurb": "The lively university city at the center of the KMC, with markets, dining, and football (1. FC Kaiserslautern).", "maps_query": "Kaiserslautern, Germany" },
+        { "name": "Trier", "category": "History", "blurb": "Germany's oldest city, with remarkable Roman ruins, about an hour away.", "maps_query": "Trier, Germany" },
+        { "name": "Heidelberg", "category": "Day trip", "blurb": "A romantic old town and castle on the Neckar, a popular day trip.", "maps_query": "Heidelberg, Germany" },
+        { "name": "Mosel & Rhine Wine Country", "category": "Outdoors", "blurb": "Storybook river valleys, vineyards, and castles within easy reach.", "maps_query": "Mosel Valley, Germany" }
+      ]
+    }
+  ]
+}

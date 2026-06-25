@@ -1,0 +1,157 @@
+{
+  "slug": "yokota-air-base",
+  "schema_version": "0.1",
+  "name": "Yokota Air Base",
+  "short_name": "Yokota",
+  "branch": "U.S. Air Force",
+  "states": ["Japan"],
+  "region": "OCONUS",
+  "tagline": "Headquarters of U.S. Forces Japan and the 374th Airlift Wing, on the Kanto Plain near Tokyo.",
+  "coords": { "lat": 35.748, "lng": 139.348, "label": "Fussa, Japan (Tokyo area)" },
+  "tz": "Asia/Tokyo",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Japan). US-only feeds intentionally omitted (overseas uses OHA + COLA, not BAH; no RentCast or SchoolDigger). Weather via the Open-Meteo global fallback. Facts verified from official sources (yokota.af.mil, usfj.mil, dodea.edu/pacific, TRICARE Overseas, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Fussa, Japan (about 28 miles NW of Tokyo)",
+        "Host wing": "374th Airlift Wing",
+        "Also hosts": "Headquarters U.S. Forces Japan and Fifth Air Force",
+        "Role": "Strategic airlift hub for the western Pacific",
+        "Region": "OCONUS (overseas tour; OHA and COLA, not BAH)"
+      },
+      "source": { "label": "Yokota Air Base (official)", "url": "https://www.yokota.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Yokota Air Base sits on the Kanto Plain near Tokyo and is the headquarters of U.S. Forces Japan and Fifth Air Force. The host 374th Airlift Wing flies tactical airlift and aeromedical evacuation and serves as a key strategic airlift hub for the western Pacific.",
+        "With its command headquarters and Tokyo-area location, Yokota is one of the most visible U.S. installations in Japan and a common gateway for personnel moving through the theater."
+      ],
+      "source": { "label": "Yokota Air Base (official)", "url": "https://www.yokota.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "japan_decision",
+      "title": "A Tokyo-Area Tour: Cost, Sponsorship, and Living Off Base",
+      "type": "killer",
+      "data": {
+        "subtitle": "Yokota puts you near one of the world's great cities. Command sponsorship and the on-base versus off-base choice shape the tour, and Japan's allowances (OHA plus COLA) help with a high cost of living.",
+        "intro": [
+          "As with all overseas tours, command sponsorship determines whether your family comes at government expense and gets housing, schools, and full benefits. Confirm it early through your gaining command.",
+          "On-base housing is convenient and in demand; off-base, you rent on the Japanese economy with OHA, plus an overseas cost-of-living allowance (COLA) that helps with the expensive Tokyo region. Living off base is an immersive experience with a different rental system and language to navigate."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Command sponsorship is what brings your family and unlocks housing, DoDEA schools, and benefits; sort it through your unit early." },
+          { "who": "On-base living", "advice": "On-base housing keeps you close to schools and amenities and removes the language barrier from daily life; demand is high, so get on the list early." },
+          { "who": "Off-base immersion", "advice": "Renting in the towns around Fussa offers a fuller Japanese experience; OHA offsets rent and utilities up to a ceiling, and COLA helps with everyday costs." },
+          { "who": "Explore Japan", "advice": "Tokyo, Mount Fuji, and Japan's famous rail network are all close; many families say exploring Japan is the highlight of the tour." }
+        ]
+      },
+      "source": { "label": "Yokota Air Base (official)", "url": "https://www.yokota.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the installation, and overseas access rules differ from stateside bases. You will need status documents under the U.S.-Japan SOFA.",
+        "Confirm the current visitor and access requirements on the official Yokota site before you arrive."
+      ],
+      "source": { "label": "Yokota Air Base (official)", "url": "https://www.yokota.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing, OHA & COLA",
+      "type": "prose",
+      "data": [
+        "Families choose between on-base housing and renting on the Japanese economy around Fussa. On-base housing is convenient and in high demand.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling. An overseas cost-of-living allowance (COLA) also helps offset the high cost of the Tokyo region. The Housing Office assigns on-base housing and helps with off-base rentals."
+      ],
+      "source": { "label": "Yokota Air Base newcomers (official)", "url": "https://www.yokota.af.mil/Newcomers-Sponsors/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Pacific operates elementary, middle, and high schools at Yokota.",
+        "Start DoDEA registration early and confirm the specific schools, boundaries, and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "374th Medical Group (Yokota)",
+        "Care": "Outpatient care on base; inpatient and specialty care referred to U.S. Naval Hospital Yokosuka or host-nation facilities",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "Yokota Air Base (official)", "url": "https://www.yokota.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Yokota Commissary (DeCA)",
+        "Exchange": "Yokota Exchange (AAFES / BX)"
+      },
+      "source": { "label": "Yokota Air Base (official)", "url": "https://www.yokota.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your gaining command." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the U.S.-Japan SOFA documents that let you live in-country. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits, and importing a vehicle to Japan involves inspections (JCI) and costs. Many families buy a local vehicle instead; confirm the rules." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA Pacific schools; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at the 374th Medical Group clinic." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Yokota?", "a": "No. Overseas you receive OHA instead of BAH for off-base rentals, plus an overseas cost-of-living allowance (COLA) for the expensive Tokyo region. On-base housing is government-provided." },
+        { "q": "Why does command sponsorship matter?", "a": "It's what brings your family at government expense and unlocks on-base housing, DoDEA schools, and benefits. Confirm it before making plans." },
+        { "q": "Should I ship my car?", "a": "Often it's easier to buy a vehicle locally. Importing a car to Japan involves inspections (JCI) and costs, so weigh shipping against buying once you arrive." },
+        { "q": "What's there to do?", "a": "A lot. Tokyo is close, with Mount Fuji, Hakone, and Japan's rail network within easy reach. Many families call exploring Japan the best part of the tour." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Tokyo (Shibuya)", "category": "Day trip", "blurb": "The heart of the world's largest metro area, about an hour away by train.", "maps_query": "Shibuya, Tokyo Japan" },
+        { "name": "Mount Fuji", "category": "Outdoors", "blurb": "Japan's iconic peak, with the Fuji Five Lakes region for hiking and views.", "maps_query": "Mount Fuji, Japan" },
+        { "name": "Showa Kinen Park", "category": "Outdoors", "blurb": "A huge national garden park in nearby Tachikawa, great for families.", "maps_query": "Showa Kinen Park, Tachikawa Japan" },
+        { "name": "Hakone", "category": "Day trip", "blurb": "A hot-spring resort area with views of Mount Fuji, southwest of Tokyo.", "maps_query": "Hakone, Japan" }
+      ]
+    }
+  ]
+}
