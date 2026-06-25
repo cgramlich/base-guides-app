@@ -1,0 +1,203 @@
+{
+  "slug": "offutt-afb",
+  "schema_version": "0.1",
+  "name": "Offutt AFB",
+  "short_name": "Offutt",
+  "branch": "U.S. Air Force",
+  "states": ["NE"],
+  "tagline": "Home of U.S. Strategic Command and the 55th Wing's global reconnaissance fleet, in the Omaha metro.",
+  "coords": { "lat": 41.118, "lng": -95.9125, "label": "Bellevue, NE (Omaha metro)" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Midwest base (Omaha metro, Bellevue NE). Facts verified from official sources (offutt.af.mil, offutt.tricare.mil, housing.af.mil, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA NE192 (Omaha/Offutt AFB) via the bah_rates single source of truth. Housing owned by Burlington Capital, branded locally as Rising View. Medium-confidence flags: base coords (approx), representative off-base ZIP 68123 (Bellevue).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Bellevue, NE (south of Omaha)",
+        "Host wing": "55th Wing",
+        "Signature tenant": "U.S. Strategic Command (USSTRATCOM) HQ",
+        "Also hosts": "557th Weather Wing; E-4B 'Nightwatch' (NAOC)",
+        "Mission": "Worldwide reconnaissance (RC-135) and strategic command"
+      },
+      "source": { "label": "Offutt Air Force Base (official)", "url": "https://www.offutt.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Offutt Air Force Base sits just south of Omaha in Bellevue and carries one of the military's most strategic missions. It is the headquarters of U.S. Strategic Command (USSTRATCOM), which oversees nuclear deterrence and global strike.",
+        "The host 55th Wing flies worldwide reconnaissance and intelligence missions with aircraft like the RC-135 Rivet Joint. Offutt is also home to the E-4B airborne command post (the 'Nightwatch' National Airborne Operations Center) and the 557th Weather Wing."
+      ],
+      "source": { "label": "Offutt Air Force Base (official)", "url": "https://www.offutt.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "omaha_decision",
+      "title": "An Easy Midwest Metro",
+      "type": "killer",
+      "data": {
+        "subtitle": "Offutt sits in the Omaha metro, one of the more affordable and family-friendly places the Air Force will send you, with short commutes and strong suburban schools.",
+        "intro": [
+          "Offutt is the home of U.S. Strategic Command and the 55th Wing's reconnaissance fleet, a high-profile, stable mission set that draws a large, settled military and civilian community just south of Omaha.",
+          "For families, the appeal is the Omaha metro: a low cost of living, easy commutes, and well-regarded suburban schools. Winters are cold and snowy, but day-to-day life here is about as low-friction as base assignments get."
+        ],
+        "recommendations": [
+          { "who": "Closest to base", "advice": "Bellevue borders Offutt and has the largest military community, with a short commute to the gates." },
+          { "who": "Family schools", "advice": "Papillion and La Vista (Papillion-La Vista schools) and nearby Gretna are popular with families for their schools and newer neighborhoods." },
+          { "who": "City life", "advice": "Parts of south and west Omaha put you near the city's dining and amenities with a still-manageable drive." },
+          { "who": "Stretch your budget", "advice": "Omaha's lower cost of living means BAH often goes further here than at coastal bases, which makes buying worth a look for a longer tour." }
+        ]
+      },
+      "source": { "label": "Offutt Air Force Base (official)", "url": "https://www.offutt.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Offutt AFB site before you go."
+      ],
+      "source": { "label": "Offutt Air Force Base (official)", "url": "https://www.offutt.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, owned by Burlington Capital and branded locally as Rising View.",
+        "Eligibility and availability vary by rank and family size, so start with the base housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Air Force Housing - Offutt AFB (official)", "url": "https://www.housing.af.mil/Home/Installations/Offutt-AFB/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NE192",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NE192 (Omaha/Offutt AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "68123", "label": "Bellevue, NE" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here, so children attend the local civilian public schools. The closest are Bellevue Public Schools, with Papillion-La Vista Community Schools and Gretna popular among families in the newer suburbs.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Bellevue Public Schools (official)", "url": "https://www.bellevuepublicschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NE", "city": "Bellevue" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "55th Medical Group, Ehrling Bergquist Clinic",
+        "Address": "2501 Capehart Rd, Offutt AFB, NE 68113",
+        "Care": "Outpatient; inpatient and specialty care referred to Omaha-area network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "55th Medical Group (official)", "url": "https://offutt.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Offutt AFB Commissary (DeCA)",
+        "Exchange": "Offutt AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Omaha's lower cost of living often stretches BAH further than coastal bases, which can make buying attractive. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district or DoDEA early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at the local military treatment facility or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's the mission at Offutt?", "a": "Offutt hosts U.S. Strategic Command and the 55th Wing, which flies worldwide reconnaissance aircraft like the RC-135 Rivet Joint. The E-4B 'Nightwatch' airborne command post is also based here." },
+        { "q": "Where do military families live?", "a": "Bellevue borders the base and has the largest military community; Papillion, La Vista, and Gretna are popular with families for their schools; parts of Omaha are an easy drive." },
+        { "q": "Is it affordable?", "a": "Yes. The Omaha metro has a low cost of living, so BAH often goes further here than at coastal bases, which makes buying worth a look for a longer tour." },
+        { "q": "Who runs on-base housing?", "a": "The privatized family housing is owned by Burlington Capital and branded locally as Rising View. Start with the base housing office for eligibility and availability." },
+        { "q": "What is the BAH area?", "a": "Offutt AFB is MHA NE192 (Omaha/Offutt AFB). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Henry Doorly Zoo & Aquarium", "category": "Family", "blurb": "One of the country's top-rated zoos, in Omaha, with a famous indoor rainforest and aquarium.", "maps_query": "Henry Doorly Zoo and Aquarium, Omaha NE" },
+        { "name": "Strategic Air Command & Aerospace Museum", "category": "Museum", "blurb": "A large aviation and Cold War museum near Ashland, fitting for Offutt's strategic mission.", "maps_query": "Strategic Air Command and Aerospace Museum, Ashland NE" },
+        { "name": "The Old Market", "category": "Food & shopping", "blurb": "Omaha's historic downtown district of cobblestone streets, restaurants, and shops.", "maps_query": "Old Market, Omaha NE" },
+        { "name": "Eugene T. Mahoney State Park", "category": "Outdoors", "blurb": "A popular family state park between Omaha and Lincoln with trails, a lodge, and activities.", "maps_query": "Eugene T. Mahoney State Park, NE" }
+      ]
+    }
+  ]
+}
