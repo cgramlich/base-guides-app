@@ -1,0 +1,202 @@
+{
+  "slug": "nas-kingsville",
+  "schema_version": "0.1",
+  "name": "NAS Kingsville",
+  "short_name": "Kingsville",
+  "branch": "U.S. Navy",
+  "states": ["TX"],
+  "tagline": "Where Navy and Marine Corps strike pilots earn their wings, in small-town South Texas.",
+  "coords": { "lat": 27.5072, "lng": -97.8097, "label": "Kingsville, TX" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy jet-training base in South Texas (Kleberg County, ~40 mi SW of Corpus Christi). Facts verified from official sources (cnic.navy.mil/nas_kingsville, Navy housing, DeCA/NEX, Wikipedia for corroborated headline facts). BAH MHA TX275 (Corpus Christi) via the bah_rates single source of truth; Kleberg County falls in the Corpus Christi MHA. Limited on-base housing (one PPV neighborhood, Hunter's Cove). Medium-confidence flags: base coords (approx), representative off-base ZIP 78363 (Kingsville).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Kingsville, TX (South Texas)",
+        "Mission": "Undergraduate jet/strike pilot training",
+        "Host": "Training Air Wing TWO (VT-21, VT-22)",
+        "Aircraft": "T-45C Goshawk",
+        "Trains": "Navy and Marine Corps aviators"
+      },
+      "source": { "label": "NAS Kingsville (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Kingsville/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "NAS Kingsville exists to train strike pilots. Training Air Wing TWO flies the T-45C Goshawk with squadrons VT-21 and VT-22, producing the next generation of Navy and Marine Corps jet aviators.",
+        "It is a small base in a small town, so most people here are students earning their wings, instructors, or the maintenance and support team that keeps the training going."
+      ],
+      "source": { "label": "NAS Kingsville (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Kingsville/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "smalltown_decision",
+      "title": "A Small-Town Pilot-Training Base",
+      "type": "killer",
+      "data": {
+        "subtitle": "Kingsville is a jet-training base in small-town South Texas, with an easygoing, affordable lifestyle and the Gulf Coast within reach. Most people are here to train, instruct, or support.",
+        "intro": [
+          "Because the base is a training pipeline, your time here is usually defined by the syllabus, whether you are a student, an instructor, or support. The community is tight and the pace is small-town.",
+          "On-base family housing is limited to one privatized neighborhood (Hunter's Cove), so many families live in Kingsville itself or commute from the larger Corpus Christi area about 40 minutes to the northeast. Summers are hot, and the cost of living is low."
+        ],
+        "recommendations": [
+          { "who": "Closest and simplest", "advice": "Kingsville itself puts you minutes from the gate, with the lowest cost of living and the shortest commute." },
+          { "who": "More to do", "advice": "The Corpus Christi area, about 40 minutes northeast, offers more shopping, dining, and Gulf beaches at a longer commute." },
+          { "who": "On-base option", "advice": "Hunter's Cove is the single privatized neighborhood on base; waitlists move seasonally, so check early." },
+          { "who": "Stretch your budget", "advice": "BAH is set by the Corpus Christi area and South Texas housing is inexpensive, so your allowance tends to go far here." }
+        ]
+      },
+      "source": { "label": "NAS Kingsville (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Kingsville/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official NAS Kingsville site before you go."
+      ],
+      "source": { "label": "NAS Kingsville (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Kingsville/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "NAS Kingsville does not offer traditional government family housing. The one on-base option is a privatized neighborhood, Hunter's Cove, a few minutes from the base.",
+        "Most families live off base in Kingsville or the Corpus Christi area. Start with the Navy Housing office for current options and waitlists."
+      ],
+      "source": { "label": "NAS Kingsville housing (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Kingsville/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "TX275",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA TX275 (Corpus Christi)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "78363", "label": "Kingsville, TX" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here, so children attend the local civilian public schools, primarily Kingsville ISD, with Santa Gertrudis and Ricardo ISDs also serving parts of the area.",
+        "Families who live toward Corpus Christi fall in those districts instead. Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Kingsville ISD (official)", "url": "https://www.kisd.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "TX", "city": "Kingsville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Branch Health Clinic Kingsville",
+        "Parent": "Naval Health Clinic Corpus Christi",
+        "Care": "Active-duty primary and dental care on base; families and specialty care via TRICARE network (Corpus Christi area)",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Branch Health Clinic Kingsville (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Kingsville/About/Tenant-Commands/Branch-Health-Clinic/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NAS Kingsville Commissary (DeCA)",
+        "Exchange": "NAS Kingsville Navy Exchange (NEX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. South Texas housing is inexpensive, so BAH often stretches far here. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district or DoDEA early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at the local military treatment facility or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What happens at NAS Kingsville?", "a": "It's a Navy jet-training base. Training Air Wing TWO flies the T-45C Goshawk with squadrons VT-21 and VT-22 to train Navy and Marine Corps strike pilots." },
+        { "q": "Is there housing on base?", "a": "There's no traditional government family housing, just one privatized neighborhood (Hunter's Cove). Most families live in Kingsville or the Corpus Christi area." },
+        { "q": "Where do families live?", "a": "Kingsville itself is closest and cheapest; the Corpus Christi area, about 40 minutes northeast, offers more amenities and Gulf beaches with a longer commute." },
+        { "q": "What is the BAH area?", "a": "NAS Kingsville is in the Corpus Christi MHA (TX275). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "King Ranch", "category": "Landmark", "blurb": "One of the world's largest ranches, headquartered in Kingsville, with tours and a saddle shop.", "maps_query": "King Ranch, Kingsville TX" },
+        { "name": "Padre Island National Seashore", "category": "Outdoors", "blurb": "The longest stretch of undeveloped barrier island in the world, on the Gulf near Corpus Christi.", "maps_query": "Padre Island National Seashore, TX" },
+        { "name": "USS Lexington Museum", "category": "Museum", "blurb": "A WWII aircraft carrier turned museum on Corpus Christi Bay.", "maps_query": "USS Lexington Museum, Corpus Christi TX" },
+        { "name": "Texas State Aquarium", "category": "Family", "blurb": "A large aquarium on the Corpus Christi waterfront, about 40 minutes from base.", "maps_query": "Texas State Aquarium, Corpus Christi TX" }
+      ]
+    }
+  ]
+}

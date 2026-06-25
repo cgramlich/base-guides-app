@@ -1,0 +1,202 @@
+{
+  "slug": "fort-hunter-liggett",
+  "schema_version": "0.1",
+  "name": "Fort Hunter Liggett",
+  "short_name": "Hunter Liggett",
+  "branch": "U.S. Army",
+  "states": ["CA"],
+  "tagline": "The Army Reserve's largest training installation, 160,000+ remote acres in the hills of southern Monterey County.",
+  "coords": { "lat": 36.0, "lng": -121.23, "label": "Jolon, CA (Monterey County)" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Remote Army Reserve training installation (Jolon, southern Monterey County, CA). Facts verified from official sources (home.army.mil/liggett, usar.army.mil, Wikipedia for corroborated headline facts). BAH MHA CA039 (Monterey), county-wide, via the bah_rates single source of truth, so BAH reflects pricey Monterey County while local rural housing costs far less. Small permanent population; ~80 family housing units. Medium-confidence flags: base coords (approx, Jolon area), MHA assumes CA039 (Monterey County) covers Jolon, verify if used precisely; representative off-base ZIP 93930 (King City).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (Army Reserve)",
+        "Location": "Jolon, CA (southern Monterey County)",
+        "Type": "Largest U.S. Army Reserve installation",
+        "Size": "More than 160,000 acres",
+        "Mission": "Field training, live-fire, and maneuver support",
+        "Note": "Remote, with a small permanent population"
+      },
+      "source": { "label": "Fort Hunter Liggett (official)", "url": "https://home.army.mil/liggett/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Hunter Liggett is the U.S. Army Reserve's largest installation, with more than 160,000 acres of training land whose varied terrain resembles a wide range of the world's environments. Its job is to provide ranges, maneuver areas, and airspace for Reserve and active units to train.",
+        "Because it is built around training rather than a resident operational unit, the permanent-party population is small. It feels more like a remote training center than a typical post."
+      ],
+      "source": { "label": "Fort Hunter Liggett (official)", "url": "https://home.army.mil/liggett/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "remote_decision",
+      "title": "A Remote Training Post Where BAH Goes Far",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Hunter Liggett is a remote training installation in southern Monterey County. The permanent community is tiny, but because BAH is set by pricey Monterey County, your allowance stretches a long way in the rural towns nearby.",
+        "intro": [
+          "If you are assigned here as permanent party, expect a small, close community and a job centered on supporting training. There is no large garrison population, so the surrounding rural area becomes your world.",
+          "The post sits near Jolon, well off the beaten path, roughly 80 miles from both Monterey and San Luis Obispo. There are only about 80 family housing units on post, so most who are assigned here live in the nearby rural communities. The quirk worth knowing: BAH follows Monterey County's high rates, while housing in King City, Bradley, Lockwood, and Paso Robles costs much less, so your allowance can go a long way."
+        ],
+        "recommendations": [
+          { "who": "On-post (limited)", "advice": "About 80 family housing units sit on the post itself; they are convenient to work but limited, so check availability early." },
+          { "who": "Nearest towns", "advice": "King City and the small communities of Lockwood and Bradley are the closest off-post options." },
+          { "who": "More amenities", "advice": "Paso Robles, to the south, offers more shopping, schools, and wine-country amenities at a longer commute." },
+          { "who": "Stretch your BAH", "advice": "Because BAH is set by Monterey County's high rates, it goes much further in these rural areas than it would on the Monterey Peninsula." }
+        ]
+      },
+      "source": { "label": "Fort Hunter Liggett (official)", "url": "https://home.army.mil/liggett/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Hunter Liggett site before you go."
+      ],
+      "source": { "label": "Fort Hunter Liggett (official)", "url": "https://home.army.mil/liggett/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is very limited, with roughly 80 units. Most people assigned here live off post in the surrounding rural communities.",
+        "Start with the Fort Hunter Liggett housing office for the limited on-post options and for help finding a place in King City, Bradley, Lockwood, or Paso Robles."
+      ],
+      "source": { "label": "Fort Hunter Liggett (official)", "url": "https://home.army.mil/liggett/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA039",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA039 (Monterey)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "93930", "label": "King City, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here, so children attend the local civilian public schools. The nearest are in the King City area (South Monterey County districts); families who settle toward Paso Robles fall in San Luis Obispo County districts.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any community you are considering."
+      ],
+      "source": { "label": "Fort Hunter Liggett (official garrison)", "url": "https://home.army.mil/liggett/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "King City" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Fort Hunter Liggett Medical Clinic (Building 210)",
+        "Care": "Limited on-post care; most medical services are sought from TRICARE network providers in the surrounding communities",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Fort Hunter Liggett (official)", "url": "https://home.army.mil/liggett/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "On post": "Limited on-post retail; nearest full grocery and shopping are in King City",
+        "Note": "Plan to stock up in town given the remote location"
+      },
+      "source": { "label": "Fort Hunter Liggett (official)", "url": "https://home.army.mil/liggett/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a community.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a community and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Here the standout factor is that BAH follows Monterey County's high rates while the nearby rural housing is far cheaper, so the allowance can go a long way. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and at a remote post like this, planning ahead matters even more."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-post lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "With only about 80 on-post units, get the housing office's read on the nearby communities early before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at the clinic or network providers in the surrounding communities." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Fort Hunter Liggett?", "a": "It's the U.S. Army Reserve's largest installation, more than 160,000 acres of training land in southern Monterey County. It's built around field training and live-fire ranges rather than a resident operational unit, so the permanent population is small." },
+        { "q": "Where do families live?", "a": "There are only about 80 on-post family housing units, so most live off post in King City and the small communities of Lockwood and Bradley, or further south toward Paso Robles." },
+        { "q": "Why is the BAH so high for such a rural area?", "a": "BAH is set by Monterey County (MHA CA039), which includes the expensive Monterey Peninsula. Since the rural towns near the post cost far less, your allowance tends to stretch a long way." },
+        { "q": "How remote is it?", "a": "Very. It's near Jolon, roughly 80 miles from both Monterey and San Luis Obispo, so plan around limited local services and a drive for most amenities." },
+        { "q": "What is the BAH area?", "a": "Fort Hunter Liggett falls in MHA CA039 (Monterey). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. The post is remote, so tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Mission San Antonio de Padua", "category": "History", "blurb": "A beautifully preserved 1771 Spanish mission located on Fort Hunter Liggett itself.", "maps_query": "Mission San Antonio de Padua, Jolon CA" },
+        { "name": "Pinnacles National Park", "category": "Outdoors", "blurb": "Dramatic rock spires, caves, and condors, within day-trip range to the north.", "maps_query": "Pinnacles National Park, CA" },
+        { "name": "Paso Robles Wine Country", "category": "Food & drink", "blurb": "A large wine region with tasting rooms and dining, to the south.", "maps_query": "Paso Robles, CA" },
+        { "name": "Hearst Castle", "category": "Landmark", "blurb": "The famous hilltop estate on the Central Coast at San Simeon.", "maps_query": "Hearst Castle, San Simeon CA" }
+      ]
+    }
+  ]
+}

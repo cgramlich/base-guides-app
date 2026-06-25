@@ -1,0 +1,202 @@
+{
+  "slug": "yuma-proving-ground",
+  "schema_version": "0.1",
+  "name": "Yuma Proving Ground",
+  "short_name": "Yuma PG",
+  "branch": "U.S. Army",
+  "states": ["AZ"],
+  "tagline": "One of the largest test ranges in the world, where the Army proves its equipment in extreme desert conditions.",
+  "coords": { "lat": 32.85, "lng": -114.4, "label": "Yuma area, AZ" },
+  "tz": "America/Phoenix",
+  "last_full_review": "2026-06-25",
+  "_note": "Army desert test range (~30 mi N of Yuma, SW Arizona). Distinct from MCAS Yuma. Facts verified from official sources (home.army.mil/yuma, Army housing, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA AZ016 (Yuma) via the bah_rates single source of truth. Housing operated by Desert Oasis Communities. Small, heavily civilian population; mission is testing, not training/operations. Arizona does not observe DST (America/Phoenix). Medium-confidence flags: base coords (approx, the cantonment is remote; centered near the Yuma area for usable nearby results), representative off-base ZIP 85365 (Yuma).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "About 30 miles north of Yuma, AZ",
+        "Command": "Army Test and Evaluation Command (Yuma Test Center)",
+        "Mission": "Desert testing of weapons, munitions, vehicles, and parachute systems",
+        "Size": "Over 1,300 square miles",
+        "Climate": "Extreme desert"
+      },
+      "source": { "label": "Yuma Proving Ground (official)", "url": "https://home.army.mil/yuma/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Yuma Proving Ground is the Army's premier site for testing weapons, munitions, vehicles, and parachute systems in extreme desert conditions, part of the U.S. Army Test and Evaluation Command. Long-range firing corridors and reliably clear weather allow year-round testing.",
+        "At over 1,300 square miles, it is one of the largest military installations in the world. The population is small and heavily civilian, and the mission is testing rather than training or operations."
+      ],
+      "source": { "label": "Yuma Proving Ground (official)", "url": "https://home.army.mil/yuma/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "desert_decision",
+      "title": "Testing in the Desert, 30 Miles from Town",
+      "type": "killer",
+      "data": {
+        "subtitle": "Yuma Proving Ground is a remote desert test range about 30 miles north of Yuma. It's a small, mission-focused community, and the main choice is on-post convenience versus living in the city.",
+        "intro": [
+          "YPG is a testing installation, not a training or operational base, so the population is small and largely civilian. If you are assigned here, you are part of a tight, specialized team.",
+          "The headquarters sits about 30 miles north of Yuma across open desert. That distance is the central trade-off: on-post housing is convenient to work but far from town, while living in Yuma puts you near services and schools and adds a long commute. Summers are extreme; winters are mild and draw seasonal visitors."
+        ],
+        "recommendations": [
+          { "who": "Convenient to work", "advice": "On-post housing (Desert Oasis Communities) keeps you close to the test center, with a long drive to the city." },
+          { "who": "Near services and schools", "advice": "Living in Yuma puts you near shopping, schools, and the airport, but adds a roughly 30-mile commute each way." },
+          { "who": "Prepare for the heat", "advice": "Summer temperatures are among the hottest in the country; plan for extreme heat, while winters are mild and pleasant." },
+          { "who": "Small, remote community", "advice": "This is an isolated installation, so set expectations for limited on-post services and lean on the housing office." }
+        ]
+      },
+      "source": { "label": "Yuma Proving Ground (official)", "url": "https://home.army.mil/yuma/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Yuma Proving Ground site before you go."
+      ],
+      "source": { "label": "Yuma Proving Ground (official)", "url": "https://home.army.mil/yuma/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is privatized, operated by Desert Oasis Communities, with three- to five-bedroom homes assigned by pay grade and family size. On post is convenient to work but well outside the city.",
+        "Many families instead live in Yuma, about 30 miles south, for the schools and services. Start with the housing office for current options."
+      ],
+      "source": { "label": "Yuma Proving Ground housing (official)", "url": "https://home.army.mil/yuma/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AZ016",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AZ016 (Yuma)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "85365", "label": "Yuma, AZ" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here, so children attend the local civilian public schools in the Yuma area, including the Yuma Elementary and Yuma Union High School districts. There is no public school district on the proving ground itself.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Yuma Proving Ground (official garrison)", "url": "https://home.army.mil/yuma/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AZ", "city": "Yuma" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Yuma Proving Ground Health Clinic",
+        "Care": "Limited on-post care; most medical services are sought from TRICARE network providers in Yuma",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Yuma Proving Ground (official)", "url": "https://home.army.mil/yuma/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Yuma Proving Ground Commissary (DeCA)",
+        "Exchange": "Yuma Proving Ground Exchange (AAFES)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood, or to the on-post versus Yuma choice.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, and the long commute makes the on-post versus Yuma choice central here. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on living in Yuma before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at the clinic or Yuma-area network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What happens at Yuma Proving Ground?", "a": "It's one of the world's largest test ranges, where the Army tests weapons, munitions, vehicles, and parachute systems in extreme desert conditions. It's a testing installation, not a training or operational base, and the workforce is mostly civilian." },
+        { "q": "Is this the same as MCAS Yuma?", "a": "No. Yuma Proving Ground is a separate Army test installation north of the city; Marine Corps Air Station Yuma is a different base." },
+        { "q": "On post or in Yuma?", "a": "On-post housing (Desert Oasis Communities) is convenient to work but about 30 miles from the city. Living in Yuma puts you near schools and services with a long commute." },
+        { "q": "How hot does it get?", "a": "Summers are among the hottest in the country, so plan for extreme heat. Winters are mild and pleasant." },
+        { "q": "What is the BAH area?", "a": "Yuma Proving Ground is MHA AZ016 (Yuma). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. The proving ground is remote, so tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Yuma Territorial Prison State Historic Park", "category": "History", "blurb": "A famous Old West prison turned museum overlooking the Colorado River in Yuma.", "maps_query": "Yuma Territorial Prison State Historic Park, AZ" },
+        { "name": "Castle Dome Mines Museum & Ghost Town", "category": "History", "blurb": "A restored mining ghost town in the desert near the proving ground.", "maps_query": "Castle Dome Mines Museum, Yuma AZ" },
+        { "name": "Imperial Sand Dunes (Glamis)", "category": "Outdoors", "blurb": "Vast sand dunes west of Yuma, popular for off-road recreation.", "maps_query": "Imperial Sand Dunes Recreation Area, CA" },
+        { "name": "Historic Downtown Yuma", "category": "Food & shopping", "blurb": "Yuma's walkable historic main street with restaurants and shops.", "maps_query": "Historic Downtown Yuma, AZ" }
+      ]
+    }
+  ]
+}

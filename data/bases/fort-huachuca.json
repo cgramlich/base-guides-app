@@ -1,0 +1,203 @@
+{
+  "slug": "fort-huachuca",
+  "schema_version": "0.1",
+  "name": "Fort Huachuca",
+  "short_name": "Huachuca",
+  "branch": "U.S. Army",
+  "states": ["AZ"],
+  "tagline": "The Army's military intelligence schoolhouse and a growing cyber and signal hub, in the high desert of southeast Arizona.",
+  "coords": { "lat": 31.5559, "lng": -110.3447, "label": "Sierra Vista, AZ" },
+  "tz": "America/Phoenix",
+  "last_full_review": "2026-06-25",
+  "_note": "Army intelligence/cyber post in SE Arizona high desert (Sierra Vista, Cochise County, ~15 mi from the Mexican border). Facts verified from official sources (home.army.mil/huachuca, raymond-bliss.tricare.mil, Army housing, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA AZ014 (Fort Huachuca) via the bah_rates single source of truth. Housing operated by Michaels Military Housing (~1,064 homes, 10 areas). Arizona does not observe DST (America/Phoenix). Medium-confidence flags: base coords (approx), representative off-base ZIP 85635 (Sierra Vista).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Sierra Vista, AZ (high desert)",
+        "Signature": "U.S. Army Intelligence Center of Excellence (USAICoE)",
+        "Also hosts": "NETCOM (9th Signal Command)",
+        "Elevation": "About 4,800 feet",
+        "Note": "About 15 miles from the Mexican border"
+      },
+      "source": { "label": "Fort Huachuca (official)", "url": "https://home.army.mil/huachuca/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Huachuca is the home of the U.S. Army Intelligence Center of Excellence (USAICoE), the Army's schoolhouse for military intelligence, and the Network Enterprise Technology Command (NETCOM), which runs and defends the Army's global network.",
+        "That makes it the center of Army military intelligence and a growing cyber and signal mission. Many people arrive as MI students or instructors. The post dates to 1877 and sits in the high desert beside Sierra Vista."
+      ],
+      "source": { "label": "Fort Huachuca (official)", "url": "https://home.army.mil/huachuca/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "highdesert_decision",
+      "title": "An Intel Town in the High Desert",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Huachuca is the Army's intelligence schoolhouse in southeast Arizona. Sierra Vista grew up around the post, so it's a true military town with plenty of on-base housing and an affordable, mild-climate lifestyle.",
+        "intro": [
+          "Between the intelligence school and NETCOM, much of the community is here to train, instruct, or support the intel and cyber mission. The post and the city of Sierra Vista are tightly linked, economically and socially.",
+          "The post sits at about 4,800 feet in the high desert, roughly 15 miles from the Mexican border. The climate is mild and dry with four gentle seasons, the cost of living is low, and Sierra Vista is essentially a military town."
+        ],
+        "recommendations": [
+          { "who": "On-base is realistic here", "advice": "Unlike many posts, Fort Huachuca has ample on-base housing (about 1,000 homes across ten neighborhoods via Michaels Military Housing), so living on post is a real option." },
+          { "who": "Off-base in Sierra Vista", "advice": "Sierra Vista wraps around the post with affordable homes and a short commute, and it's where most off-base families land." },
+          { "who": "Climate and altitude", "advice": "At about 4,800 feet the weather is mild and dry, a relief from the typical low-desert Arizona heat." },
+          { "who": "Plan around a small market", "advice": "This is a smaller, remote area (Tucson is about 75 miles away), so amenities are limited; lean on the housing office and the local community." }
+        ]
+      },
+      "source": { "label": "Fort Huachuca (official)", "url": "https://home.army.mil/huachuca/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Huachuca site before you go."
+      ],
+      "source": { "label": "Fort Huachuca (official)", "url": "https://home.army.mil/huachuca/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is privatized, operated by Michaels Military Housing, with roughly 1,064 homes across ten neighborhoods. Compared with most posts, on-base is a realistic option here.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Fort Huachuca housing (official)", "url": "https://home.army.mil/huachuca/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AZ014",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AZ014 (Fort Huachuca)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "85635", "label": "Sierra Vista, AZ" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here, so children attend the local civilian public schools, primarily Sierra Vista Unified School District. Some students who live on post attend schools within the Sierra Vista system as well.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Sierra Vista Unified School District (official)", "url": "https://www.svusd68.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AZ", "city": "Sierra Vista" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Raymond W. Bliss Army Health Center (RWBAHC)",
+        "Care": "Primary care for all ages, plus pharmacy, optometry, physical therapy, and select specialty clinics",
+        "Hospital care": "Inpatient and major specialty care referred to Tucson-area network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Raymond W. Bliss Army Health Center (official)", "url": "https://raymond-bliss.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Huachuca Commissary (DeCA)",
+        "Exchange": "Fort Huachuca Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Sierra Vista's low cost of living means BAH often stretches well here, and on-base housing is a real alternative. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district or DoDEA early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at the local military treatment facility or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's the mission at Fort Huachuca?", "a": "It's the Army's military intelligence schoolhouse (the U.S. Army Intelligence Center of Excellence) and home to NETCOM, the command that runs and defends the Army's network, so it's also a growing cyber and signal hub." },
+        { "q": "Should I live on or off post?", "a": "Either works. Fort Huachuca has a lot of on-base housing (about 1,000 homes), and Sierra Vista wraps right around the post with affordable off-base options and short commutes." },
+        { "q": "What's the climate like?", "a": "It's high desert at about 4,800 feet, so it's milder and drier than low-desert Arizona, with four gentle seasons." },
+        { "q": "How remote is it?", "a": "It's a smaller area near the Mexican border; Tucson is about 75 miles away, so plan for limited local amenities." },
+        { "q": "What is the BAH area?", "a": "Fort Huachuca is MHA AZ014. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Kartchner Caverns State Park", "category": "Outdoors", "blurb": "A famous living limestone cave with guided tours, a short drive from Sierra Vista.", "maps_query": "Kartchner Caverns State Park, AZ" },
+        { "name": "Ramsey Canyon Preserve", "category": "Outdoors", "blurb": "A world-renowned birding and hiking canyon in the Huachuca Mountains.", "maps_query": "Ramsey Canyon Preserve, Hereford AZ" },
+        { "name": "Tombstone", "category": "History", "blurb": "The historic Old West town of 'the Gunfight at the O.K. Corral,' about 25 miles away.", "maps_query": "Tombstone, AZ" },
+        { "name": "Coronado National Memorial", "category": "Outdoors", "blurb": "Trails and views along the Mexican border marking the Coronado expedition.", "maps_query": "Coronado National Memorial, AZ" }
+      ]
+    }
+  ]
+}
