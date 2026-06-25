@@ -1,0 +1,201 @@
+{
+  "slug": "joint-base-lewis-mcchord",
+  "schema_version": "0.1",
+  "name": "Joint Base Lewis-McChord",
+  "short_name": "JBLM",
+  "branch": "U.S. Army / U.S. Air Force",
+  "states": ["WA"],
+  "tagline": "Army (Lewis) and Air Force (McChord) joined south of Tacoma: I Corps, the 7th Infantry Division, and C-17 airlift in the Pacific Northwest.",
+  "coords": { "lat": 47.1, "lng": -122.58, "label": "Tacoma, WA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Large Pacific Northwest joint base (Army Fort Lewis + McChord AFB, merged 2010), south of Tacoma. Facts verified from official sources (home.army.mil/lewis-mcchord, housing.af.mil, jointbaselewismcchordhousing.com, livelmh.com, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA WA311 (Tacoma) via the bah_rates single source of truth. Housing operated by Liberty Military Housing (Lewis-McChord Communities), 5,159 homes. Medium-confidence flags: base coords (approx), representative off-base ZIP 98516 (Lacey).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "Army + Air Force (joint base)",
+        "Location": "South of Tacoma, WA (Puget Sound)",
+        "Army (Lewis)": "I Corps and the 7th Infantry Division",
+        "Air Force (McChord)": "62nd Airlift Wing (C-17), with the Reserve 446th",
+        "Formed": "Fort Lewis + McChord AFB merged in 2010",
+        "Population": "One of the largest military communities on the West Coast"
+      },
+      "source": { "label": "Joint Base Lewis-McChord (official)", "url": "https://home.army.mil/lewis-mcchord/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Joint Base Lewis-McChord combines the Army's Fort Lewis and the Air Force's McChord Field, merged in 2010. The Army side is led by I Corps, a three-star headquarters overseeing forces across the Pacific, and is home to the 7th Infantry Division.",
+        "The Air Force side flies the C-17 Globemaster III with the 62nd Airlift Wing and its Reserve partner, the 446th Airlift Wing. Together they make JBLM the Pacific Northwest's largest military community."
+      ],
+      "source": { "label": "Joint Base Lewis-McChord (official)", "url": "https://home.army.mil/lewis-mcchord/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pnw_decision",
+      "title": "Lewis or McChord, and Living in the Pacific Northwest",
+      "type": "killer",
+      "data": {
+        "subtitle": "JBLM joins an Army post and an Air Force field, so which side you report to plus the realities of I-5 traffic and Pacific Northwest weather shape where you settle along the south Puget Sound.",
+        "intro": [
+          "The base has two main centers: Lewis (Army) and McChord (Air Force). They share services but sit a few minutes apart, so which gate you use daily nudges where it makes sense to live.",
+          "Life here is green and outdoorsy, with Mount Rainier on the horizon, but it rains a lot and the I-5 corridor between Olympia and Tacoma gets congested. Most families weigh commute against community as they choose between the south-end and north-end suburbs."
+        ],
+        "recommendations": [
+          { "who": "South of base", "advice": "Lacey, Olympia, and DuPont sit just south with an easy commute and are popular with families." },
+          { "who": "North and east", "advice": "Lakewood, Puyallup, and Spanaway are close on the Tacoma side; Yelm is a quieter option to the southeast." },
+          { "who": "Beat the I-5 traffic", "advice": "Living on the same side as your gate, and near an on-ramp, makes a real difference given corridor congestion." },
+          { "who": "On-base option", "advice": "On-base housing (Liberty Military Housing, Lewis-McChord Communities) is large and convenient to both sides." }
+        ]
+      },
+      "source": { "label": "Joint Base Lewis-McChord (official)", "url": "https://home.army.mil/lewis-mcchord/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Each side of the base has its own gates off I-5. Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official JBLM site before you go."
+      ],
+      "source": { "label": "Joint Base Lewis-McChord (official)", "url": "https://home.army.mil/lewis-mcchord/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, operated by Liberty Military Housing (branded Lewis-McChord Communities), with roughly 5,100 homes across both sides of the base.",
+        "Eligibility and availability vary by rank and family size, so start with the Housing Division and the partner for current options and waitlists."
+      ],
+      "source": { "label": "JBLM housing (partner)", "url": "https://www.jointbaselewismcchordhousing.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "WA311",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA WA311 (Tacoma)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "98516", "label": "Lacey, WA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, and the district depends on where you live. Clover Park serves Lakewood and parts of the base; North Thurston (Lacey), Yelm, Steilacoom, and Puyallup serve other popular areas.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Clover Park School District (official)", "url": "https://www.cloverpark.k12.wa.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "WA", "city": "Lacey" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Madigan Army Medical Center",
+        "Care": "One of the Army's largest medical centers: inpatient, emergency, and specialty care",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Madigan Army Medical Center (official)", "url": "https://madigan.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Commissary (DeCA) on both the Lewis and McChord sides",
+        "Exchange": "Exchange (AAFES) on base"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood, or to a side of the base.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The Puget Sound market is solid and commute matters a lot here. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Madigan Army Medical Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's the difference between Lewis and McChord?", "a": "Lewis is the Army side (I Corps and the 7th Infantry Division); McChord is the Air Force side (62nd Airlift Wing, flying C-17s). They merged into one joint base in 2010 and sit a few minutes apart off I-5." },
+        { "q": "Where do families live?", "a": "Lacey, Olympia, and DuPont are popular to the south; Lakewood, Puyallup, and Spanaway to the north; Yelm a bit southeast. On-base housing (Liberty Military Housing) is large." },
+        { "q": "What's day-to-day life like?", "a": "Green and outdoorsy with Mount Rainier nearby, but rainy, and I-5 traffic is a real factor, so living near your gate helps." },
+        { "q": "What is the BAH area?", "a": "JBLM is MHA WA311 (Tacoma). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Mount Rainier National Park", "category": "Outdoors", "blurb": "The iconic glaciated volcano and its trails, about an hour and a half from base.", "maps_query": "Mount Rainier National Park, WA" },
+        { "name": "Point Defiance Park & Zoo", "category": "Family", "blurb": "A large waterfront park in Tacoma with a zoo and aquarium.", "maps_query": "Point Defiance Park, Tacoma WA" },
+        { "name": "LeMay - America's Car Museum", "category": "Museum", "blurb": "One of the largest auto museums in the country, in Tacoma.", "maps_query": "LeMay America's Car Museum, Tacoma WA" },
+        { "name": "Northwest Trek Wildlife Park", "category": "Family", "blurb": "A drive-through wildlife park with native Northwest animals near Eatonville.", "maps_query": "Northwest Trek Wildlife Park, Eatonville WA" }
+      ]
+    }
+  ]
+}

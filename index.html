@@ -61,6 +61,10 @@
     .home-selects{ display:flex; gap:8px; margin-bottom:10px; }
     .home-selects select{ flex:1; min-width:0; }
     .state-header{ font-family:'Fraunces',serif; font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-faint); margin:18px 2px 8px; }
+    .feedback{ margin:18px 0 4px; padding:14px; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:11px; text-align:center; }
+    .feedback-q{ display:block; font-size:13.5px; color:var(--text-dim); margin-bottom:7px; }
+    .feedback-link{ display:inline-block; color:var(--accent); font-weight:600; font-size:14px; }
+    .feedback-note{ font-size:11.5px; color:var(--text-faint); margin-top:7px; }
     input,textarea,select,button{font-family:inherit; font-size:16px;}
     button{cursor:pointer; border:none; background:none; color:inherit;}
     h1,h2,h3{font-family:'Fraunces',Georgia,serif; font-weight:600; margin:0; line-height:1.18;}
@@ -276,7 +280,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.17.2";
+    const APP_VERSION = "0.18.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -337,7 +341,7 @@
     }
 
     // Per-branch accent color (scannable list + base-page header).
-    const BRANCH_COLORS = { army: "#7d8b4e", "air force": "#4a90c2", navy: "#3f7cb0", marines: "#b23a3a", "coast guard": "#e07b39", "space force": "#8d9bb0", joint: "#9b7bc0" };
+    const BRANCH_COLORS = { army: "#7d8b4e", "air force": "#4a90c2", navy: "#3f7cb0", marine: "#b23a3a", "coast guard": "#e07b39", "space force": "#8d9bb0", joint: "#9b7bc0" };
     function branchColor(b) {
       if (!b) return "var(--accent-dim)";
       const s = b.toLowerCase();
@@ -917,7 +921,7 @@
       );
     }
 
-    const BRANCH_FILTERS = [["all", "All"], ["army", "Army"], ["air force", "Air Force"], ["navy", "Navy"], ["joint", "Joint"]];
+    const BRANCH_FILTERS = [["all", "All"], ["army", "Army"], ["air force", "Air Force"], ["navy", "Navy"], ["marine", "Marines"], ["joint", "Joint"]];
     const STATE_NAMES = {
       AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado",
       CT: "Connecticut", DE: "Delaware", DC: "District of Columbia", FL: "Florida", GA: "Georgia",
@@ -1055,6 +1059,11 @@
                 open={openId === s.id}
                 onToggle={() => setOpenId(openId === s.id ? null : s.id)} />
             ))}
+          </div>
+          <div className="feedback">
+            <span className="feedback-q">Stationed here or spot something off?</span>
+            <a className="feedback-link" href={"mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent("Base guide feedback: " + data.name) + "&body=" + encodeURIComponent("Base: " + data.name + "\n\nType (correction / clarification / enhancement):\n\nDetails:\n")} target="_blank" rel="noopener noreferrer">Suggest a correction or improvement</a>
+            <div className="feedback-note">Real families keep these guides accurate. Thank you.</div>
           </div>
         </div>
       );

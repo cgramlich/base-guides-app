@@ -1,0 +1,202 @@
+{
+  "slug": "fort-bragg",
+  "schema_version": "0.1",
+  "name": "Fort Bragg",
+  "short_name": "Bragg",
+  "branch": "U.S. Army",
+  "states": ["NC"],
+  "tagline": "The largest Army installation in the country, home of the airborne and special operations forces, near Fayetteville.",
+  "coords": { "lat": 35.139, "lng": -79.006, "label": "Fayetteville, NC" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Marquee Army post (Sandhills, NC). Name history: Fort Bragg -> Fort Liberty (June 2023) -> Fort Bragg (Feb 2025, now honoring WWII Pfc. Roland L. Bragg, not the Confederate general). Facts verified from official sources (home.army.mil/bragg, womack.tricare.mil, fortbragghousing.com, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA NC182 (Fort Bragg/Pope) via the bah_rates single source of truth. Housing operated by Corvias. Medium-confidence flags: base coords (approx), representative off-base ZIP 28314 (Fayetteville).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Fayetteville, NC (Sandhills)",
+        "Known as": "Home of the Airborne and Special Operations Forces",
+        "Major units": "XVIII Airborne Corps, 82nd Airborne Division, USASOC",
+        "Also hosts": "FORSCOM and Army Reserve Command HQ",
+        "Scale": "Most populous Army installation in the U.S."
+      },
+      "source": { "label": "Fort Bragg (official)", "url": "https://home.army.mil/bragg/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Bragg is the largest Army installation in the country by population and the home of the airborne and special operations forces. It hosts the XVIII Airborne Corps, the 82nd Airborne Division, and U.S. Army Special Operations Command (USASOC).",
+        "It is also home to Forces Command (FORSCOM) and the Army Reserve Command. The post briefly carried the name Fort Liberty (2023 to 2025) before reverting to Fort Bragg, now honoring a World War II soldier."
+      ],
+      "source": { "label": "Fort Bragg (official)", "url": "https://home.army.mil/bragg/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bragg_decision",
+      "title": "A High-Tempo Post: Where to Land Around Fayetteville",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Bragg is huge and deployment-heavy, especially the rapid-response 82nd Airborne. Where you live around Fayetteville is the main decision, and proximity and a strong support network matter more here than at a quiet post.",
+        "intro": [
+          "This is a fast-paced, deeply military community. The 82nd keeps a brigade on short-notice readiness, so deployments and field time are a way of life, and many families prioritize living close to the unit and to other military families.",
+          "The base sprawls across the Sandhills near Fayetteville. On-post housing is extensive, and off-post options range from close-in Fayetteville and Spring Lake to the golf-town schools of the Southern Pines and Pinehurst area a bit farther out."
+        ],
+        "recommendations": [
+          { "who": "Closest to the unit", "advice": "Fayetteville and Spring Lake put you nearest the gates and are the most affordable, which matters during a deployment-heavy tour." },
+          { "who": "Schools and a quieter feel", "advice": "Southern Pines, Pinehurst, and the Sandhills offer well-regarded schools and a calmer pace at a longer commute." },
+          { "who": "On-post option", "advice": "Fort Bragg has one of the Army's largest on-post housing inventories (Corvias), worth considering for proximity and built-in community." },
+          { "who": "Stretch your budget", "advice": "Fayetteville's cost of living is low, so BAH tends to go a long way here." }
+        ]
+      },
+      "source": { "label": "Fort Bragg (official)", "url": "https://home.army.mil/bragg/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Bragg site before you go."
+      ],
+      "source": { "label": "Fort Bragg (official)", "url": "https://home.army.mil/bragg/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is privatized, operated by Corvias, across a large number of neighborhoods, one of the biggest on-post inventories in the Army.",
+        "Eligibility and availability vary by rank and family size, so start with the Housing Services Office and Corvias for current options and waitlists."
+      ],
+      "source": { "label": "Fort Bragg housing (partner)", "url": "https://www.fortbragghousing.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NC182",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NC182 (Fort Bragg/Pope)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "28314", "label": "Fayetteville, NC" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "On-post families are served by DoDEA schools at Fort Bragg, plus the surrounding civilian districts. Off post, Cumberland County Schools covers Fayetteville and Spring Lake; Harnett, Hoke, and Moore County (Southern Pines/Pinehurst) cover other popular areas.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Cumberland County Schools (official)", "url": "https://www.ccs.k12.nc.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NC", "city": "Fayetteville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Womack Army Medical Center (WAMC)",
+        "Care": "Full hospital with inpatient, emergency, and specialty care",
+        "Beneficiaries": "Largest Army beneficiary population in the country",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Womack Army Medical Center (official)", "url": "https://womack.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Bragg Commissary (DeCA)",
+        "Exchange": "Fort Bragg Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Fayetteville's low cost of living means BAH often stretches well here. Run your BAH against the rent and home prices above, weigh your tour length and the deployment tempo, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district or DoDEA early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at Womack Army Medical Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is it Fort Bragg or Fort Liberty?", "a": "Fort Bragg. It was renamed Fort Liberty in 2023, then changed back to Fort Bragg in 2025, this time honoring a World War II soldier rather than the Confederate general." },
+        { "q": "What's the mission here?", "a": "It's the home of the airborne and special operations forces: the XVIII Airborne Corps, the 82nd Airborne Division, and Army Special Operations Command, plus FORSCOM. It's the most populous Army installation in the country." },
+        { "q": "Where do families live?", "a": "Fayetteville and Spring Lake are closest and most affordable; Southern Pines and Pinehurst offer strong schools at a longer commute. On-post housing (Corvias) is extensive." },
+        { "q": "What is the BAH area?", "a": "Fort Bragg is MHA NC182 (Fort Bragg/Pope). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Airborne & Special Operations Museum", "category": "Museum", "blurb": "A free downtown Fayetteville museum honoring airborne and special operations history.", "maps_query": "Airborne and Special Operations Museum, Fayetteville NC" },
+        { "name": "Cape Fear Botanical Garden", "category": "Outdoors", "blurb": "An 80-acre garden along the Cape Fear River in Fayetteville.", "maps_query": "Cape Fear Botanical Garden, Fayetteville NC" },
+        { "name": "Pinehurst Resort", "category": "Golf", "blurb": "The famous golf resort in the Sandhills, about 40 minutes from base.", "maps_query": "Pinehurst Resort, NC" },
+        { "name": "Carvers Creek State Park", "category": "Outdoors", "blurb": "Trails and a historic millpond just north of the base.", "maps_query": "Carvers Creek State Park, NC" }
+      ]
+    }
+  ]
+}

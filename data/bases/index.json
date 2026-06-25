@@ -16,6 +16,12 @@
     { "slug": "offutt-afb", "name": "Offutt AFB", "branch": "U.S. Air Force", "state": "NE", "ready": true },
     { "slug": "fort-hunter-liggett", "name": "Fort Hunter Liggett", "branch": "U.S. Army", "state": "CA", "ready": true },
     { "slug": "fort-huachuca", "name": "Fort Huachuca", "branch": "U.S. Army", "state": "AZ", "ready": true },
-    { "slug": "yuma-proving-ground", "name": "Yuma Proving Ground", "branch": "U.S. Army", "state": "AZ", "ready": true }
+    { "slug": "yuma-proving-ground", "name": "Yuma Proving Ground", "branch": "U.S. Army", "state": "AZ", "ready": true },
+    { "slug": "fort-bragg", "name": "Fort Bragg", "branch": "U.S. Army", "state": "NC", "ready": true },
+    { "slug": "fort-hood", "name": "Fort Hood", "branch": "U.S. Army", "state": "TX", "ready": true },
+    { "slug": "camp-lejeune", "name": "Marine Corps Base Camp Lejeune", "branch": "U.S. Marine Corps", "state": "NC", "ready": true },
+    { "slug": "camp-pendleton", "name": "Marine Corps Base Camp Pendleton", "branch": "U.S. Marine Corps", "state": "CA", "ready": true },
+    { "slug": "naval-base-san-diego", "name": "Naval Base San Diego", "branch": "U.S. Navy", "state": "CA", "ready": true },
+    { "slug": "joint-base-lewis-mcchord", "name": "Joint Base Lewis-McChord", "branch": "Army / Air Force", "state": "WA", "ready": true }
   ]
 }

@@ -1,0 +1,201 @@
+{
+  "slug": "fort-hood",
+  "schema_version": "0.1",
+  "name": "Fort Hood",
+  "short_name": "Hood",
+  "branch": "U.S. Army",
+  "states": ["TX"],
+  "tagline": "One of the largest military installations in the world, a major armored-forces post in Central Texas.",
+  "coords": { "lat": 31.138, "lng": -97.78, "label": "Killeen, TX" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Large Army post (Central Texas, Killeen). Name history: Fort Hood -> Fort Cavazos (May 2023) -> Fort Hood (July 2025, now honoring WWI Col. Robert B. Hood). A 2026 congressional proposal could change it back to Cavazos; verify the current name on future updates. Facts verified from official sources (home.army.mil/hood, Army.mil, Lendlease/Cavalry Family Housing, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA TX286 (Fort Hood) via the bah_rates single source of truth. Housing operated by Lendlease (Cavalry Family Housing). Medium-confidence flags: base coords (approx), representative off-base ZIP 76542 (Killeen).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Killeen, TX (Central Texas)",
+        "Major commands": "III Armored Corps and the 1st Cavalry Division",
+        "Also hosts": "3rd Cavalry Regiment and supporting units",
+        "Footprint": "One of the largest installations in the world by area",
+        "Identity": "Heavy armored and cavalry forces"
+      },
+      "source": { "label": "Fort Hood (official)", "url": "https://home.army.mil/hood/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Hood is one of the largest military installations in the world by area and a major armored-forces post. It is home to III Armored Corps and the 1st Cavalry Division, with the 3rd Cavalry Regiment and many supporting units.",
+        "The post carried the name Fort Cavazos from 2023 to 2025 before reverting to Fort Hood, now honoring a World War I soldier. Its wide-open Central Texas ranges make it a premier place to train armored and aviation units."
+      ],
+      "source": { "label": "Fort Hood (official)", "url": "https://home.army.mil/hood/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "centraltx_decision",
+      "title": "Affordable Central Texas: Lots of Room to Choose",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Hood is huge and Central Texas is affordable, so BAH stretches and families have plenty of options around Killeen. The main call is commute and schools across the surrounding towns.",
+        "intro": [
+          "This is a big armored post with a large, settled community. The cost of living is low, so your BAH tends to go far, and there is a lot of both on-post and off-post housing to choose from.",
+          "The surrounding towns each have their own feel and schools. Killeen and Harker Heights sit right outside the gates, while Belton, Temple, and Copperas Cove offer alternatives a bit farther out, and Austin is roughly an hour south for a big-city day trip."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gates", "advice": "Killeen and Harker Heights are right next to the base with the shortest commute; Harker Heights is popular for its schools." },
+          { "who": "A bit more space", "advice": "Belton and Temple, to the east, and Copperas Cove, to the west, offer alternatives with their own school districts." },
+          { "who": "Stretch your budget", "advice": "Central Texas is inexpensive, so BAH often covers a comfortable home; with longer tours common, many families buy." },
+          { "who": "On-post option", "advice": "On-post housing (Cavalry Family Housing) is extensive and being modernized, worth considering for proximity and community." }
+        ]
+      },
+      "source": { "label": "Fort Hood (official)", "url": "https://home.army.mil/hood/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Hood site before you go."
+      ],
+      "source": { "label": "Fort Hood (official)", "url": "https://home.army.mil/hood/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is privatized, operated by Lendlease as Cavalry Family Housing, across many neighborhoods, with a multi-year construction and renovation program underway.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Fort Hood housing (official)", "url": "https://home.army.mil/hood/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "TX286",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA TX286 (Fort Hood)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "76542", "label": "Killeen, TX" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Killeen ISD is the largest and covers much of the area including parts of post; Harker Heights falls in Killeen ISD, while Belton, Temple, Copperas Cove, and Lampasas have their own districts.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Killeen ISD (official)", "url": "https://www.killeenisd.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "TX", "city": "Killeen" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Carl R. Darnall Army Medical Center (CRDAMC)",
+        "Care": "Full hospital with inpatient, emergency, and specialty care",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Carl R. Darnall Army Medical Center (official)", "url": "https://crdamc.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Hood Commissary (DeCA)",
+        "Exchange": "Fort Hood Exchange (AAFES / PX), one of the largest in the system"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Fort Hood the affordable market and longer tours lead many families to buy."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, which is common at Fort Hood.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "Affordable Central Texas prices fit your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the low cost of living and longer tours make buying worth a serious look here. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Killeen ISD or the relevant district early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Carl R. Darnall Army Medical Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is it Fort Hood or Fort Cavazos?", "a": "Fort Hood, as of July 2025. It was Fort Cavazos from 2023 to 2025; the name now honors a World War I soldier. A 2026 proposal could change it back, so it may be worth double-checking." },
+        { "q": "What's based here?", "a": "III Armored Corps and the 1st Cavalry Division, with the 3rd Cavalry Regiment, on one of the largest installations in the world by area." },
+        { "q": "Where do families live?", "a": "Killeen and Harker Heights are closest; Belton, Temple, and Copperas Cove are popular nearby; Austin is about an hour south. On-post housing is extensive." },
+        { "q": "What is the BAH area?", "a": "Fort Hood is MHA TX286. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "1st Cavalry Division Museum", "category": "History", "blurb": "The division's museum on post, tracing its history from horse cavalry to today.", "maps_query": "1st Cavalry Division Museum, Fort Hood TX" },
+        { "name": "Belton Lake (BLORA)", "category": "Outdoors", "blurb": "The Belton Lake Outdoor Recreation Area, a popular lake escape near post.", "maps_query": "Belton Lake Outdoor Recreation Area, TX" },
+        { "name": "Stillhouse Hollow Lake", "category": "Outdoors", "blurb": "A clear Central Texas reservoir for boating, fishing, and swimming near Belton.", "maps_query": "Stillhouse Hollow Lake, TX" },
+        { "name": "Downtown Austin (day trip)", "category": "Day trip", "blurb": "Live music, food, and city life about an hour south.", "maps_query": "Downtown Austin, TX" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "camp-lejeune",
+  "schema_version": "0.1",
+  "name": "Marine Corps Base Camp Lejeune",
+  "short_name": "Camp Lejeune",
+  "branch": "U.S. Marine Corps",
+  "states": ["NC"],
+  "tagline": "The East Coast home of Marine expeditionary forces, on the North Carolina coast at Jacksonville.",
+  "coords": { "lat": 34.6, "lng": -77.34, "label": "Jacksonville, NC" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "First Marine Corps base in the app. Coastal NC (Jacksonville, Onslow County). Facts verified from official sources (lejeune.marines.mil, MilitaryINSTALLATIONS, camplejeunefamilyhousing.com, DeCA/MCX, Wikipedia for corroborated headline facts). BAH MHA NC178 (Camp Lejeune) via the bah_rates single source of truth. Housing operated by Atlantic Marine Corps Communities (Lendlease). Medium-confidence flags: base coords (approx), representative off-base ZIP 28546 (Jacksonville).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Jacksonville, NC (Onslow County coast)",
+        "Known as": "Home of Expeditionary Forces in Readiness",
+        "Major commands": "II Marine Expeditionary Force (II MEF), 2nd Marine Division",
+        "Also hosts": "2nd Marine Logistics Group, School of Infantry, MARSOC",
+        "Footprint": "About 246 square miles with miles of coastline"
+      },
+      "source": { "label": "MCB Camp Lejeune (official)", "url": "https://www.lejeune.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Camp Lejeune is the East Coast's home of Marine expeditionary forces. It is home to the II Marine Expeditionary Force (II MEF), the 2nd Marine Division, and the 2nd Marine Logistics Group, the ground, logistics, and command backbone of the Atlantic Marine force.",
+        "It also hosts the School of Infantry, the Marine Corps Combat Service Support Schools, and Marine special operations units. The base runs along the New River and the Atlantic in coastal North Carolina."
+      ],
+      "source": { "label": "MCB Camp Lejeune (official)", "url": "https://www.lejeune.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "coast_decision",
+      "title": "A Coastal Marine Town: Where to Live",
+      "type": "killer",
+      "data": {
+        "subtitle": "Jacksonville grew up around Camp Lejeune, so this is a true Marine town on the coast. It's affordable and deployment-paced, and where you live mostly comes down to commute and which beaches and schools you want nearby.",
+        "intro": [
+          "Expeditionary units deploy often, so a strong support network and a manageable commute matter. The community is overwhelmingly Marine and Navy, and Jacksonville's economy revolves around the base.",
+          "On-base housing is plentiful, and off-base options run from Jacksonville right outside the gates to the coastal towns of Sneads Ferry, Swansboro, and Hubert, with Wilmington's beaches about an hour south."
+        ],
+        "recommendations": [
+          { "who": "Closest and most affordable", "advice": "Jacksonville borders the base with the shortest commute and the lowest cost of living." },
+          { "who": "Coastal living", "advice": "Sneads Ferry, Swansboro, and Hubert put you near the water and the Intracoastal at a slightly longer drive." },
+          { "who": "On-base option", "advice": "On-base housing (Atlantic Marine Corps Communities) is extensive and keeps you close to the unit." },
+          { "who": "Weekend getaways", "advice": "Wilmington and Wrightsville Beach are about an hour south for a bigger-city and beach scene." }
+        ]
+      },
+      "source": { "label": "MCB Camp Lejeune (official)", "url": "https://www.lejeune.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Camp Lejeune site before you go."
+      ],
+      "source": { "label": "MCB Camp Lejeune (official)", "url": "https://www.lejeune.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, operated by Atlantic Marine Corps Communities (a Lendlease community), across many neighborhoods aboard the installation.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Camp Lejeune Family Housing (partner)", "url": "https://www.camplejeunefamilyhousing.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NC178",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NC178 (Camp Lejeune)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "28546", "label": "Jacksonville, NC" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, primarily Onslow County Schools, which serves Jacksonville and the surrounding coastal towns.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Onslow County Schools (official)", "url": "https://www.onslow.k12.nc.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NC", "city": "Jacksonville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Naval Medical Center Camp Lejeune",
+        "Care": "Inpatient, outpatient, and specialty care; TRICARE Prime primary care manager for enrolled families",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Medical Center Camp Lejeune (official)", "url": "https://camp-lejeune.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Camp Lejeune Commissary (DeCA)",
+        "Exchange": "Marine Corps Exchange (MCX) Camp Lejeune"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The Jacksonville area is affordable, so BAH often stretches well, but the market is heavily military and turns over with deployments and PCS season. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Onslow County Schools early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Medical Center Camp Lejeune or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at Camp Lejeune?", "a": "It's the East Coast home of Marine expeditionary forces: II Marine Expeditionary Force, the 2nd Marine Division, and the 2nd Marine Logistics Group, plus the School of Infantry and Marine special operations units." },
+        { "q": "Where do families live?", "a": "Jacksonville borders the base and is the most affordable; coastal towns like Sneads Ferry, Swansboro, and Hubert are popular; Wilmington's beaches are about an hour south. On-base housing is extensive." },
+        { "q": "Who runs on-base housing?", "a": "Atlantic Marine Corps Communities, a Lendlease community. Start with the base housing office for availability." },
+        { "q": "What is the BAH area?", "a": "Camp Lejeune is MHA NC178. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Onslow Beach", "category": "Outdoors", "blurb": "The base's own Atlantic beach on Camp Lejeune, for military families and guests.", "maps_query": "Onslow Beach, Camp Lejeune NC" },
+        { "name": "Hammocks Beach State Park", "category": "Outdoors", "blurb": "A pristine, ferry-access barrier island beach near Swansboro.", "maps_query": "Hammocks Beach State Park, Swansboro NC" },
+        { "name": "Lejeune Memorial Gardens", "category": "History", "blurb": "A Jacksonville memorial park honoring Marines, including a Vietnam memorial wall.", "maps_query": "Lejeune Memorial Gardens, Jacksonville NC" },
+        { "name": "Wrightsville Beach (Wilmington)", "category": "Day trip", "blurb": "A popular beach town about an hour south, near historic Wilmington.", "maps_query": "Wrightsville Beach, NC" }
+      ]
+    }
+  ]
+}

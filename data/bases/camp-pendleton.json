@@ -1,0 +1,201 @@
+{
+  "slug": "camp-pendleton",
+  "schema_version": "0.1",
+  "name": "Marine Corps Base Camp Pendleton",
+  "short_name": "Camp Pendleton",
+  "branch": "U.S. Marine Corps",
+  "states": ["CA"],
+  "tagline": "125,000 acres of Southern California coast and the West Coast home of the I Marine Expeditionary Force.",
+  "coords": { "lat": 33.385, "lng": -117.565, "label": "Oceanside, CA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "West Coast Marine base (SoCal coast, Oceanside to San Clemente). Facts verified from official sources (pendleton.marines.mil, camp-pendleton.tricare.mil, livelmh.com, DeCA/MCX, Wikipedia for corroborated headline facts). BAH MHA CA024 (Camp Pendleton) via the bah_rates single source of truth, high SoCal rates. Housing operated by Liberty Military Housing (formerly Lincoln). Medium-confidence flags: base coords (approx), representative off-base ZIP 92057 (Oceanside).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Oceanside, CA (Southern California coast)",
+        "Major command": "I Marine Expeditionary Force (I MEF)",
+        "Also hosts": "1st Marine Division, training commands",
+        "Footprint": "About 125,000 acres from Oceanside to San Clemente",
+        "Setting": "17 miles of Pacific coastline"
+      },
+      "source": { "label": "MCB Camp Pendleton (official)", "url": "https://www.pendleton.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Camp Pendleton is one of the largest and most complex Marine Corps installations in the country, stretching about 125,000 acres along the Southern California coast from Oceanside to San Clemente.",
+        "It is the West Coast home of the I Marine Expeditionary Force (I MEF) and the 1st Marine Division, along with major training commands. The terrain, from beaches to inland hills, supports the full range of Marine training."
+      ],
+      "source": { "label": "MCB Camp Pendleton (official)", "url": "https://www.pendleton.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "socal_decision",
+      "title": "Beautiful and Expensive: The SoCal Cost Question",
+      "type": "killer",
+      "data": {
+        "subtitle": "Camp Pendleton is a gorgeous, sprawling coastal base, and also one of the priciest places the military will send you. Which gate you work near and how you handle Southern California's cost of living drive where you live.",
+        "intro": [
+          "The base is enormous, so the practical question is which area you report to and which gate you'll use daily. A short hop on I-5 can mean a very different commute depending on the part of the base.",
+          "Southern California is expensive. BAH here is high, but so are rents and home prices, so the allowance does not stretch the way it does inland. Most families rent, and many look just off base in Oceanside or a bit inland for value."
+        ],
+        "recommendations": [
+          { "who": "Closest and most affordable", "advice": "Oceanside borders the south end of the base and is the most common, most affordable choice for a short commute." },
+          { "who": "More house for the money", "advice": "Inland communities like Fallbrook, Vista, and Temecula (over the county line) trade a longer drive for more space." },
+          { "who": "North-end commuters", "advice": "If you work the north end, San Clemente and south Orange County are close, though pricier." },
+          { "who": "On-base option", "advice": "On-base housing (Liberty Military Housing) is spread across many areas of Pendleton and can be a strong value given local rents." }
+        ]
+      },
+      "source": { "label": "MCB Camp Pendleton (official)", "url": "https://www.pendleton.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Camp Pendleton site before you go."
+      ],
+      "source": { "label": "MCB Camp Pendleton (official)", "url": "https://www.pendleton.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, operated by Liberty Military Housing (formerly Lincoln Military Housing), across many neighborhoods spread along the base.",
+        "Given high local rents, on-base can be a strong value. Eligibility and availability vary by rank and family size, so start with the housing office and the partner early; waitlists can be long."
+      ],
+      "source": { "label": "Liberty Military Housing - Camp Pendleton (partner)", "url": "https://livelmh.com/installations/camp-pendleton-mcb/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA024",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA024 (Camp Pendleton)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "92057", "label": "Oceanside, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Oceanside Unified and Vista Unified serve the close-in areas, with Fallbrook, Bonsall, and (over the county line) Temecula Valley schools popular farther inland.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Oceanside Unified School District (official)", "url": "https://www.oside.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Oceanside" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Naval Hospital Camp Pendleton",
+        "Care": "Emergency, inpatient, outpatient, and specialty care, plus area Marine-centered medical homes",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Naval Hospital Camp Pendleton (official)", "url": "https://camp-pendleton.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Camp Pendleton Commissary (DeCA)",
+        "Exchange": "Marine Corps Exchange (MCX) Camp Pendleton"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In Southern California it leans toward renting for many families, because home prices are high and a typical tour is short relative to the cost of buying and selling."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "Local home prices are out of reach for your budget, which is common here.",
+          "You'd rather not gamble on resale timing in a pricey market.",
+          "On-base or off-base renting keeps your housing costs predictable."
+        ],
+        "buy": [
+          "You expect to be here several years and can carry SoCal prices.",
+          "You want to use your VA loan and start building equity.",
+          "You're open to inland areas (Fallbrook, Temecula) for a more attainable price.",
+          "You've found a home and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but high SoCal prices make renting (on or off base) the common choice. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Given long waitlists and high rents, check on-base availability and get the housing office's read on off-base areas early." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Hospital Camp Pendleton or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at Camp Pendleton?", "a": "It's the West Coast home of the I Marine Expeditionary Force and the 1st Marine Division, plus major training commands, across 125,000 acres of coast from Oceanside to San Clemente." },
+        { "q": "Is it expensive?", "a": "Yes. BAH is high, but Southern California rents and home prices are high too, so the allowance doesn't stretch like it does inland. Most families rent." },
+        { "q": "Where do families live?", "a": "Oceanside is closest and most affordable; Fallbrook, Vista, and Temecula offer more space inland; San Clemente suits north-end commuters. On-base (Liberty Military Housing) can be a strong value." },
+        { "q": "What is the BAH area?", "a": "Camp Pendleton is MHA CA024. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Oceanside Pier & Harbor", "category": "Outdoors", "blurb": "A classic Southern California pier, beach, and harbor just south of the base.", "maps_query": "Oceanside Pier, Oceanside CA" },
+        { "name": "LEGOLAND California", "category": "Family", "blurb": "A large family theme park in nearby Carlsbad.", "maps_query": "LEGOLAND California, Carlsbad CA" },
+        { "name": "Mission San Luis Rey", "category": "History", "blurb": "The 'King of the Missions,' a historic Spanish mission in Oceanside.", "maps_query": "Mission San Luis Rey, Oceanside CA" },
+        { "name": "San Diego Zoo", "category": "Family", "blurb": "One of the world's most famous zoos, in Balboa Park about 45 minutes south.", "maps_query": "San Diego Zoo, San Diego CA" }
+      ]
+    }
+  ]
+}
