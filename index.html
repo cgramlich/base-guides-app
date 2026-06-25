@@ -56,6 +56,9 @@
     .home-hero{ text-align:center; padding:4px 0 20px; }
     .home-logo{ width:128px; height:128px; }
     .home-tag{ font-family:'Crimson Pro',Georgia,serif; color:var(--text-dim); font-size:15px; margin-top:4px; }
+    .home-controls{ margin-bottom:6px; }
+    .home-search{ margin-bottom:9px; }
+    .state-header{ font-family:'Fraunces',serif; font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-faint); margin:18px 2px 8px; }
     input,textarea,select,button{font-family:inherit; font-size:16px;}
     button{cursor:pointer; border:none; background:none; color:inherit;}
     h1,h2,h3{font-family:'Fraunces',Georgia,serif; font-weight:600; margin:0; line-height:1.18;}
@@ -271,7 +274,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.16.0";
+    const APP_VERSION = "0.17.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -888,33 +891,74 @@
     }
 
     /* ---------------- Screens ---------------- */
+    // A single base card (shared by Home and Saved).
+    function BaseCard({ b, onOpen, saved, onToggleSave }) {
+      return (
+        <div className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)} style={{ borderLeft: "4px solid " + branchColor(b.branch) }}>
+          <div className="between">
+            <div style={{ minWidth: 0 }}>
+              <div className="base-name">
+                {b.name}
+                {b.region === "OCONUS" ? <span className="pill oconus">OCONUS</span> : null}
+                {b.ready ? <span className="pill ready">Guide ready</span> : <span className="pill soon">Coming soon</span>}
+              </div>
+              <div className="meta-line">{[b.branch, b.state].filter(Boolean).join("  -  ")}</div>
+            </div>
+            <div className="card-actions">
+              <button className="iconbtn" style={saved.includes(b.slug) ? { color: "var(--accent)" } : null} onClick={(e) => { e.stopPropagation(); onToggleSave(b.slug); }} aria-label="Save">
+                <Icon name={saved.includes(b.slug) ? "bookmarkOn" : "bookmark"} size={18} />
+              </button>
+              {b.ready ? <span className="card-go"><Icon name="cardchev" size={20} /></span> : null}
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    const BRANCH_FILTERS = [["all", "All"], ["army", "Army"], ["air force", "Air Force"], ["navy", "Navy"], ["joint", "Joint"]];
+    const REGION_FILTERS = [["all", "All"], ["conus", "CONUS"], ["oconus", "OCONUS"]];
     function Home({ bases, loading, onOpen, saved, onToggleSave }) {
+      const [q, setQ] = useState("");
+      const [branch, setBranch] = useState("all");
+      const [region, setRegion] = useState("all");
       if (loading) return <div className="center"><div className="spin" /></div>;
       if (!bases || !bases.length) return <div className="center">No bases yet.</div>;
+
+      const ql = q.trim().toLowerCase();
+      const matchBranch = (b) => {
+        if (branch === "all") return true;
+        const s = (b.branch || "").toLowerCase();
+        if (branch === "joint") return s.indexOf("/") !== -1;
+        return s.indexOf("/") === -1 && s.indexOf(branch) !== -1;
+      };
+      const matchRegion = (b) => region === "all" || (region === "oconus" ? b.region === "OCONUS" : b.region !== "OCONUS");
+      const matchQ = (b) => !ql || (b.name + " " + (b.state || "")).toLowerCase().indexOf(ql) !== -1;
+      const filtered = bases.filter((b) => matchBranch(b) && matchRegion(b) && matchQ(b));
+
+      const groups = {};
+      filtered.forEach((b) => { const k = b.state || "Other"; (groups[k] = groups[k] || []).push(b); });
+      const stateKeys = Object.keys(groups).sort((a, b) => a.localeCompare(b));
+      stateKeys.forEach((k) => groups[k].sort((a, b) => a.name.localeCompare(b.name)));
+
       return (
         <div className="content">
           <div className="home-hero">
             <img className="home-logo" src={ASSETS.logoMark} alt="MilSpo Living" />
             <div className="home-tag">Guides for your next duty station.</div>
           </div>
-          {bases.map((b) => (
-            <div key={b.slug} className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)} style={{ borderLeft: "4px solid " + branchColor(b.branch) }}>
-              <div className="between">
-                <div style={{ minWidth: 0 }}>
-                  <div className="base-name">
-                    {b.name}
-                    {b.region === "OCONUS" ? <span className="pill oconus">OCONUS</span> : null}
-                    {b.ready ? <span className="pill ready">Guide ready</span> : <span className="pill soon">Coming soon</span>}
-                  </div>
-                  <div className="meta-line">{[b.branch, b.state].filter(Boolean).join("  -  ")}</div>
-                </div>
-                <div className="card-actions">
-                  <button className="iconbtn" style={saved.includes(b.slug) ? { color: "var(--accent)" } : null} onClick={(e) => { e.stopPropagation(); onToggleSave(b.slug); }} aria-label="Save">
-                    <Icon name={saved.includes(b.slug) ? "bookmarkOn" : "bookmark"} size={18} />
-                  </button>
-                  {b.ready ? <span className="card-go"><Icon name="cardchev" size={20} /></span> : null}
-                </div>
-              </div>
+          <div className="home-controls">
+            <input className="fld home-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search base or state" />
+            <div className="chips">
+              {BRANCH_FILTERS.map(([k, l]) => <button key={k} className={"chip pick" + (branch === k ? " chip-on" : "")} onClick={() => setBranch(k)}>{l}</button>)}
+            </div>
+            <div className="chips" style={{ marginTop: 7 }}>
+              {REGION_FILTERS.map(([k, l]) => <button key={k} className={"chip pick" + (region === k ? " chip-on" : "")} onClick={() => setRegion(k)}>{l}</button>)}
+            </div>
+          </div>
+          {!filtered.length ? <div className="pending">No bases match your filters.</div> : stateKeys.map((k) => (
+            <div key={k}>
+              <div className="state-header">{k}</div>
+              {groups[k].map((b) => <BaseCard key={b.slug} b={b} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />)}
             </div>
           ))}
         </div>
