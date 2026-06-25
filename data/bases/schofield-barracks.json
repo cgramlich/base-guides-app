@@ -1,0 +1,203 @@
+{
+  "slug": "schofield-barracks",
+  "schema_version": "0.1",
+  "name": "Schofield Barracks",
+  "short_name": "Schofield",
+  "branch": "U.S. Army",
+  "states": ["HI"],
+  "region": "OCONUS",
+  "tagline": "Home of the 25th Infantry Division, the 'Tropic Lightning' division, in the heart of Oahu.",
+  "coords": { "lat": 21.49, "lng": -158.06, "label": "Wahiawa, HI (central Oahu)" },
+  "tz": "Pacific/Honolulu",
+  "last_full_review": "2026-06-25",
+  "_note": "Army Hawaii (USAG Hawaii), central Oahu. Marked OCONUS (Hawaii PCS is an overseas-style move) but BAH-rated: MHA HI408 (Honolulu County). Facts verified from official sources (home.army.mil/hawaii, islandpalmcommunities.com, tripler.tricare.mil, DeCA/AAFES, Wikipedia for corroborated headline facts). Housing via Island Palm Communities (Lendlease). No DoDEA in Hawaii (Hawaii State DOE). Medium-confidence flags: base coords (approx), representative off-base ZIP 96789 (Mililani).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (USAG Hawaii)",
+        "Location": "Central Oahu, HI (near Wahiawa)",
+        "Signature unit": "25th Infantry Division (Tropic Lightning)",
+        "Also part of": "U.S. Army Garrison Hawaii (with Wheeler, Fort Shafter)",
+        "Established": "1908; largest Army installation in Hawaii",
+        "Region": "Hawaii (OCONUS PCS, BAH-rated)"
+      },
+      "source": { "label": "U.S. Army Garrison Hawaii (official)", "url": "https://home.army.mil/hawaii/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Schofield Barracks is the largest Army installation in Hawaii and has been the home of the 25th Infantry Division, the 'Tropic Lightning' division, since 1941. It sits on the central plateau of Oahu near Wahiawa.",
+        "It anchors U.S. Army Garrison Hawaii, which also includes Wheeler Army Airfield, Fort Shafter (the Army's Pacific headquarters), and several smaller posts across the island."
+      ],
+      "source": { "label": "U.S. Army Garrison Hawaii (official)", "url": "https://home.army.mil/hawaii/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "island_decision",
+      "title": "An Island Assignment: Central Oahu Army Life",
+      "type": "killer",
+      "data": {
+        "subtitle": "Hawaii is paradise and a logistical puzzle. BAH is high but the cost of living is higher, and from Schofield's central-Oahu perch the commute and climate trade-offs differ from the town-side bases.",
+        "intro": [
+          "A Hawaii tour is a true OCONUS-style move even though it's a U.S. state: household goods ship by sea, you usually bring one vehicle at government expense, and imported goods cost more. On-base housing is often the best value against high island rents.",
+          "Schofield sits on the cooler, greener central plateau. Nearby Mililani and Wahiawa are convenient, while commuting to Honolulu means the famously congested H-1 and H-2 freeways, so many families prioritize living close to post."
+        ],
+        "recommendations": [
+          { "who": "Best value: on base", "advice": "Island Palm Communities (Lendlease) runs the Army's Oahu housing; get on the list early, since on-base often beats high island rents and includes utilities." },
+          { "who": "Close and family-friendly", "advice": "Mililani and Wahiawa sit near Schofield with shorter commutes and are popular with Army families." },
+          { "who": "Plan the logistics early", "advice": "Arrange your one-vehicle shipment, expect a sea shipment for household goods, and budget for a higher cost of living than the BAH suggests." },
+          { "who": "Mind the freeways", "advice": "H-1 and H-2 traffic into Honolulu is heavy; living near post saves real time day to day." }
+        ]
+      },
+      "source": { "label": "U.S. Army Garrison Hawaii (official)", "url": "https://home.army.mil/hawaii/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official USAG Hawaii site before you go."
+      ],
+      "source": { "label": "U.S. Army Garrison Hawaii (official)", "url": "https://home.army.mil/hawaii/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing across the Army's Oahu installations is privatized, operated by Island Palm Communities (Lendlease), with neighborhoods at Schofield, Wheeler, Helemano, Fort Shafter, and more.",
+        "Given high island rents, on-base is often the best value, so get on the list early. Eligibility and availability vary by rank and family size."
+      ],
+      "source": { "label": "Island Palm Communities (partner)", "url": "https://www.islandpalmcommunities.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "HI408",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA HI408 (Honolulu County)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "96789", "label": "Mililani, HI" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Hawaii runs a single statewide public school system (the Hawaii State Department of Education), so there is no separate local district and no DoDEA here; your school is assigned by your home address.",
+        "Confirm the specific school for any neighborhood you are considering, and ask the School Liaison Office about geographic exceptions if needed."
+      ],
+      "source": { "label": "Hawaii State Department of Education (official)", "url": "https://www.hawaiipublicschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "HI", "city": "Mililani" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Tripler Army Medical Center (serves all services in Hawaii)",
+        "On base": "Schofield Barracks Health Clinic",
+        "Care": "Tripler is the major inpatient and specialty hospital for the Pacific region",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Tripler Army Medical Center (official)", "url": "https://tripler.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Schofield Barracks Commissary (DeCA)",
+        "Exchange": "Schofield Barracks Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In Hawaii it leans toward renting or living on base for most families, because home prices are among the highest in the country and tours are usually a fixed length."],
+        "rent": [
+          "Your tour is a standard length and your orders feel fixed.",
+          "Island home prices are out of reach for your budget, which is common.",
+          "On-base housing offers a strong value against high island rents.",
+          "You'd rather not manage a high-priced home from afar after you leave."
+        ],
+        "buy": [
+          "You expect a long tour or plan to return to or retire in Hawaii.",
+          "You can carry Hawaii's high prices and want to build equity with your VA loan.",
+          "You're comfortable potentially renting it out at island rates later.",
+          "You've found a home and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but high prices and fixed tours make on-base or renting the common choice in Hawaii. Run your BAH against the rent and home prices above, factor the higher cost of living, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An island PCS has extra logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Allowance (TLA) for OCONUS-style moves; confirm the current rules." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Get on the housing list early", "text": "On-base is often the best value against island rents, so contact Island Palm Communities right away while you look off base." },
+          { "title": "Sort your vehicle and shipment", "text": "Track your sea shipment of household goods and your one shipped vehicle; arrange interim transportation and Hawaii registration." },
+          { "title": "Enroll the kids in school", "text": "Hawaii uses one statewide system; confirm your assigned school by address and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Tripler Army Medical Center or the Schofield clinic." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at Schofield?", "a": "The 25th Infantry Division (Tropic Lightning). Schofield is the largest Army installation in Hawaii and the core of U.S. Army Garrison Hawaii, which also includes Wheeler and Fort Shafter." },
+        { "q": "Is Hawaii an OCONUS move?", "a": "Yes. A PCS here works like an overseas move (sea shipment, one vehicle, island allowances), though you still receive BAH set by Honolulu County rather than OHA." },
+        { "q": "Where do families live?", "a": "On-base via Island Palm Communities is often the best value; off base, Mililani and Wahiawa are close and popular. Expect H-1/H-2 traffic toward Honolulu." },
+        { "q": "What is the BAH area?", "a": "Schofield is MHA HI408 (Honolulu County). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Dole Plantation", "category": "Family", "blurb": "A famous pineapple plantation with a giant maze and train, just north of Schofield.", "maps_query": "Dole Plantation, Wahiawa HI" },
+        { "name": "North Shore (Haleiwa)", "category": "Outdoors", "blurb": "Oahu's legendary surf coast and laid-back town, a short drive north.", "maps_query": "Haleiwa, HI" },
+        { "name": "Waimea Valley", "category": "Outdoors", "blurb": "A lush botanical valley with a waterfall on the North Shore.", "maps_query": "Waimea Valley, Haleiwa HI" },
+        { "name": "Kukaniloko Birthing Stones", "category": "History", "blurb": "A sacred Hawaiian cultural site on the central plateau near Wahiawa.", "maps_query": "Kukaniloko Birthing Stones State Monument, HI" }
+      ]
+    }
+  ]
+}

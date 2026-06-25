@@ -1,0 +1,203 @@
+{
+  "slug": "joint-base-pearl-harbor-hickam",
+  "schema_version": "0.1",
+  "name": "Joint Base Pearl Harbor-Hickam",
+  "short_name": "Pearl Harbor-Hickam",
+  "branch": "U.S. Navy / U.S. Air Force",
+  "states": ["HI"],
+  "region": "OCONUS",
+  "tagline": "The Navy and Air Force heart of the Indo-Pacific, on Oahu, where Pearl Harbor and Hickam come together.",
+  "coords": { "lat": 21.34, "lng": -157.95, "label": "Honolulu, HI (Oahu)" },
+  "tz": "Pacific/Honolulu",
+  "last_full_review": "2026-06-25",
+  "_note": "Hawaii joint base (Naval Station Pearl Harbor + Hickam AFB, merged 2010), Oahu. Marked OCONUS (a Hawaii PCS is an overseas-style move) but BAH-rated: MHA HI408 (Honolulu County) via the bah_rates single source of truth, so the full live template stays. Facts verified from official sources (cnic.navy.mil, housing.af.mil, jbpearlharborhickamhousing.com, tripler.tricare.mil, DeCA/NEX, Wikipedia for corroborated headline facts). Housing via Ohana/Hickam Communities (Hunt). No DoDEA in Hawaii (Hawaii State DOE). Medium-confidence flags: base coords (approx), representative off-base ZIP 96818 (Honolulu).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "Navy + Air Force (joint base)",
+        "Location": "Oahu, HI (Honolulu area)",
+        "Navy": "Commander Pacific Fleet; Submarine Force Pacific; Pearl Harbor Naval Shipyard",
+        "Air Force": "Pacific Air Forces HQ; 15th Wing",
+        "Formed": "Pearl Harbor + Hickam merged in 2010",
+        "Region": "Hawaii (OCONUS PCS, BAH-rated)"
+      },
+      "source": { "label": "Joint Base Pearl Harbor-Hickam (official)", "url": "https://www.cnic.navy.mil/regions/cnrh/installations/jb_pearl_harbor_hickam.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Joint Base Pearl Harbor-Hickam is the center of gravity for U.S. forces in the Indo-Pacific, combining the Navy's historic Naval Station Pearl Harbor and the Air Force's Hickam Field, merged in 2010.",
+        "It hosts the headquarters of the Pacific Fleet and the Pacific submarine force, Pearl Harbor Naval Shipyard, Pacific Air Forces headquarters, and the 15th Wing. For the Navy and Air Force, it is one of the most sought-after, and most strategic, places to serve."
+      ],
+      "source": { "label": "Joint Base Pearl Harbor-Hickam (official)", "url": "https://www.cnic.navy.mil/regions/cnrh/installations/jb_pearl_harbor_hickam.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "island_decision",
+      "title": "An Island Assignment: Cost, Housing, and the Aloha Trade-offs",
+      "type": "killer",
+      "data": {
+        "subtitle": "Hawaii is paradise and a logistical puzzle. BAH is high but the cost of living is higher, housing is tight, and an island PCS comes with quirks (shipping a car, limited space) that reward planning early.",
+        "intro": [
+          "A Hawaii tour is a true OCONUS-style move even though it's a U.S. state: you ship household goods by sea, can usually bring only one vehicle at government expense, and everything imported costs more. Many families lean on on-base housing because it's a strong value against high island rents.",
+          "Where you live trades commute against cost and climate. The leeward (Ewa, Kapolei) side is drier and newer; town and windward areas are greener but pricier or farther; and Oahu's H-1 traffic is a daily reality wherever you are."
+        ],
+        "recommendations": [
+          { "who": "Best value: on base", "advice": "Get on the housing list early (Ohana on the Navy side, Hickam Communities on the Air Force side, both Hunt). On-base often beats high island rents and includes utilities." },
+          { "who": "Newer and more space", "advice": "The leeward side (Ewa Beach, Kapolei) has newer homes and is popular with families, at a longer commute into town." },
+          { "who": "Plan the logistics early", "advice": "Arrange your one-vehicle shipment, expect a sea shipment for household goods, and budget for a higher cost of living than the BAH suggests." },
+          { "who": "Embrace island time", "advice": "Traffic on H-1 is real and island life is slower; build it into your commute and expectations." }
+        ]
+      },
+      "source": { "label": "Joint Base Pearl Harbor-Hickam (official)", "url": "https://www.cnic.navy.mil/regions/cnrh/installations/jb_pearl_harbor_hickam.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official JBPHH site before you go."
+      ],
+      "source": { "label": "Joint Base Pearl Harbor-Hickam (official)", "url": "https://www.cnic.navy.mil/regions/cnrh/installations/jb_pearl_harbor_hickam.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized and managed by Hunt Military Communities, branded Ohana on the Navy side and Hickam Communities on the Air Force side, across many neighborhoods on and around the installation.",
+        "Given high island rents, on-base is often the best value, so get on the list early. Eligibility and availability vary by rank and family size."
+      ],
+      "source": { "label": "JBPHH housing (partner)", "url": "https://www.jbpearlharborhickamhousing.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "HI408",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA HI408 (Honolulu County)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "96818", "label": "Honolulu, HI" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Hawaii runs a single statewide public school system (the Hawaii State Department of Education), so there is no separate local district and no DoDEA here; your school is assigned by your home address.",
+        "Confirm the specific school for any neighborhood you are considering, and ask the School Liaison Office about geographic exceptions if needed."
+      ],
+      "source": { "label": "Hawaii State Department of Education (official)", "url": "https://www.hawaiipublicschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "HI", "city": "Honolulu" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Tripler Army Medical Center (serves all services in Hawaii)",
+        "On base": "Branch clinics at Pearl Harbor and Hickam",
+        "Care": "Tripler is the major inpatient and specialty hospital for the Pacific region",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Tripler Army Medical Center (official)", "url": "https://tripler.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Commissary (DeCA) at Pearl Harbor and Hickam",
+        "Exchange": "Navy Exchange (NEX) and Exchange (AAFES) on base"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In Hawaii it leans toward renting or living on base for most families, because home prices are among the highest in the country and tours are usually a fixed length."],
+        "rent": [
+          "Your tour is a standard length and your orders feel fixed.",
+          "Island home prices are out of reach for your budget, which is common.",
+          "On-base housing offers a strong value against high island rents.",
+          "You'd rather not manage a high-priced home from afar after you leave."
+        ],
+        "buy": [
+          "You expect a long tour or plan to return to or retire in Hawaii.",
+          "You can carry Hawaii's high prices and want to build equity with your VA loan.",
+          "You're comfortable potentially renting it out at island rates later.",
+          "You've found a home and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but high prices and fixed tours make on-base or renting the common choice in Hawaii. Run your BAH against the rent and home prices above, factor the higher cost of living, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An island PCS has extra logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Allowance (TLA) for OCONUS-style moves; confirm the current rules." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Get on the housing list early", "text": "On-base is often the best value against island rents, so contact Ohana/Hickam Communities right away while you look off base." },
+          { "title": "Sort your vehicle and shipment", "text": "Track your sea shipment of household goods and your one shipped vehicle; arrange interim transportation and Hawaii registration." },
+          { "title": "Enroll the kids in school", "text": "Hawaii uses one statewide system; confirm your assigned school by address and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Tripler Army Medical Center or a base clinic." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is Hawaii an OCONUS move?", "a": "Yes. Even though Hawaii is a U.S. state, a PCS here works like an overseas move: you ship household goods by sea, usually ship one vehicle, and receive island allowances. You still get BAH (not OHA), set by Honolulu County." },
+        { "q": "Should I live on base?", "a": "Often yes. Island rents are high, so on-base housing (Ohana on the Navy side, Hickam Communities on the Air Force side) is frequently the best value. Get on the list early." },
+        { "q": "Where is healthcare?", "a": "Tripler Army Medical Center serves all the services in Hawaii, with branch clinics at Pearl Harbor and Hickam." },
+        { "q": "What is the BAH area?", "a": "JBPHH is MHA HI408 (Honolulu County). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Pearl Harbor National Memorial", "category": "History", "blurb": "The USS Arizona Memorial and visitor center honoring December 7, 1941.", "maps_query": "Pearl Harbor National Memorial, HI" },
+        { "name": "Waikiki Beach", "category": "Outdoors", "blurb": "Honolulu's iconic beach and resort district.", "maps_query": "Waikiki Beach, Honolulu HI" },
+        { "name": "Diamond Head State Monument", "category": "Outdoors", "blurb": "The famous volcanic crater with a hike to panoramic views over Honolulu.", "maps_query": "Diamond Head State Monument, Honolulu HI" },
+        { "name": "Bishop Museum", "category": "Museum", "blurb": "Hawaii's premier museum of Hawaiian and Pacific culture and natural history.", "maps_query": "Bishop Museum, Honolulu HI" }
+      ]
+    }
+  ]
+}

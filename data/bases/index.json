@@ -22,6 +22,10 @@
     { "slug": "camp-lejeune", "name": "Marine Corps Base Camp Lejeune", "branch": "U.S. Marine Corps", "state": "NC", "ready": true },
     { "slug": "camp-pendleton", "name": "Marine Corps Base Camp Pendleton", "branch": "U.S. Marine Corps", "state": "CA", "ready": true },
     { "slug": "naval-base-san-diego", "name": "Naval Base San Diego", "branch": "U.S. Navy", "state": "CA", "ready": true },
-    { "slug": "joint-base-lewis-mcchord", "name": "Joint Base Lewis-McChord", "branch": "Army / Air Force", "state": "WA", "ready": true }
+    { "slug": "joint-base-lewis-mcchord", "name": "Joint Base Lewis-McChord", "branch": "Army / Air Force", "state": "WA", "ready": true },
+    { "slug": "fort-bliss", "name": "Fort Bliss", "branch": "U.S. Army", "state": "TX", "ready": true },
+    { "slug": "fort-carson", "name": "Fort Carson", "branch": "U.S. Army", "state": "CO", "ready": true },
+    { "slug": "joint-base-pearl-harbor-hickam", "name": "Joint Base Pearl Harbor-Hickam", "branch": "Navy / Air Force", "state": "HI", "region": "OCONUS", "ready": true },
+    { "slug": "schofield-barracks", "name": "Schofield Barracks", "branch": "U.S. Army", "state": "HI", "region": "OCONUS", "ready": true }
   ]
 }

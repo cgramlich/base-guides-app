@@ -1,0 +1,201 @@
+{
+  "slug": "fort-bliss",
+  "schema_version": "0.1",
+  "name": "Fort Bliss",
+  "short_name": "Bliss",
+  "branch": "U.S. Army",
+  "states": ["TX"],
+  "tagline": "Home of the 1st Armored Division and one of the Army's largest installations, in El Paso on the Texas-New Mexico border.",
+  "coords": { "lat": 31.81, "lng": -106.42, "label": "El Paso, TX" },
+  "tz": "America/Denver",
+  "last_full_review": "2026-06-25",
+  "_note": "Large Army post (El Paso, far West Texas; straddles into New Mexico). Facts verified from official sources (home.army.mil/bliss, William Beaumont AMC, fortblisshousing/Balfour Beatty, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA TX279 (El Paso) via the bah_rates single source of truth. El Paso is in the Mountain time zone (America/Denver). Housing operated by Balfour Beatty Communities. Medium-confidence flags: base coords (approx), representative off-base ZIP 79936 (El Paso east side).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "El Paso, TX (Texas-New Mexico border)",
+        "Signature unit": "1st Armored Division (Old Ironsides)",
+        "Scale": "One of the largest Army installations by land area",
+        "Training land": "Over a million acres",
+        "Setting": "High desert; Mountain time zone"
+      },
+      "source": { "label": "Fort Bliss (official)", "url": "https://home.army.mil/bliss/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Bliss is home of the 1st Armored Division (Old Ironsides) and one of the Army's largest installations, with more than a million acres of training land spanning West Texas and southern New Mexico.",
+        "Its vast maneuver area and clear desert weather make it a premier site for armored and air-defense training. The 1st Armored Division relocated here from Germany in 2011, making Bliss a major power-projection platform."
+      ],
+      "source": { "label": "Fort Bliss (official)", "url": "https://home.army.mil/bliss/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "elpaso_decision",
+      "title": "Affordable El Paso on the Border",
+      "type": "killer",
+      "data": {
+        "subtitle": "El Paso is an affordable, safe, deeply bicultural border city, so BAH stretches and most families find plenty of options. The main call is which side of the metro fits your commute and schools.",
+        "intro": [
+          "El Paso is consistently ranked among the safer large U.S. cities and has a low cost of living, so your BAH tends to go a long way. The culture is richly bilingual and tied to neighboring Ciudad Juarez across the border.",
+          "Fort Bliss is large and mostly on the city's northeast and east sides. Where you live usually comes down to commute and schools, with extensive on-post housing also available."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gates", "advice": "Northeast El Paso sits nearest much of the post for a short commute." },
+          { "who": "Newer suburbs and schools", "advice": "Far East El Paso (Socorro and Ysleta ISD areas) has newer homes and is popular with families." },
+          { "who": "Stretch your budget", "advice": "El Paso's low cost of living means BAH covers a comfortable home; with larger tours common, many families buy." },
+          { "who": "On-post option", "advice": "On-post housing (Balfour Beatty) is extensive and modern, worth considering for proximity and community." }
+        ]
+      },
+      "source": { "label": "Fort Bliss (official)", "url": "https://home.army.mil/bliss/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Bliss site before you go."
+      ],
+      "source": { "label": "Fort Bliss (official)", "url": "https://home.army.mil/bliss/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is privatized, operated by Balfour Beatty Communities, with several thousand homes across many neighborhoods on the sprawling installation.",
+        "Eligibility and availability vary by rank and family size, so start with the Housing Division and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Fort Bliss housing (official)", "url": "https://home.army.mil/bliss/about/Garrison/directorate-public-works/housing-division" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "TX279",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA TX279 (El Paso)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "79936", "label": "El Paso, TX" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. The main districts are El Paso ISD, Ysleta ISD, and Socorro ISD (far East), with Canutillo and others on the city's edges.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Socorro ISD (official)", "url": "https://www.sisd.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "TX", "city": "El Paso" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "William Beaumont Army Medical Center (WBAMC)",
+        "Care": "A modern hospital complex (opened 2021) with inpatient, emergency, and specialty care",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "William Beaumont Army Medical Center (official)", "url": "https://wbamc.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Bliss Commissary (DeCA)",
+        "Exchange": "Fort Bliss Exchange (AAFES / PX), one of the largest in the system"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Fort Bliss the affordable El Paso market and larger tours lead many families to buy."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "Affordable El Paso prices fit your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but El Paso's low cost of living makes buying worth a serious look. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (El Paso, Ysleta, or Socorro ISD) early and bring records and immunizations. The School Liaison Office can help." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at William Beaumont Army Medical Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at Fort Bliss?", "a": "The 1st Armored Division (Old Ironsides) and a large air-defense and training community, on one of the Army's largest installations by land area." },
+        { "q": "Is El Paso a good place to live?", "a": "Many families like it: it's affordable, consistently ranks among safer large U.S. cities, and has a rich bicultural, bilingual culture on the border." },
+        { "q": "Where do families live?", "a": "Northeast El Paso is closest to much of the post; far East El Paso (Socorro/Ysleta areas) has newer homes and schools. On-post housing is extensive." },
+        { "q": "What is the BAH area?", "a": "Fort Bliss is MHA TX279 (El Paso). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Franklin Mountains State Park", "category": "Outdoors", "blurb": "A large urban mountain park with hiking and views over El Paso.", "maps_query": "Franklin Mountains State Park, El Paso TX" },
+        { "name": "Hueco Tanks State Park", "category": "Outdoors", "blurb": "Desert rock formations famous for bouldering and ancient pictographs, east of the city.", "maps_query": "Hueco Tanks State Park and Historic Site, TX" },
+        { "name": "White Sands National Park", "category": "Day trip", "blurb": "Otherworldly white gypsum dunes in New Mexico, about an hour and a half north.", "maps_query": "White Sands National Park, NM" },
+        { "name": "Scenic Drive Overlook", "category": "Outdoors", "blurb": "A classic El Paso lookout over the city and into Mexico.", "maps_query": "Scenic Drive Overlook, El Paso TX" }
+      ]
+    }
+  ]
+}
