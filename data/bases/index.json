@@ -12,7 +12,7 @@
     { "slug": "wright-patterson-afb", "name": "Wright-Patterson AFB", "branch": "U.S. Air Force", "state": "OH", "ready": false },
     { "slug": "joint-base-charleston", "name": "Joint Base Charleston", "branch": "Air Force / Navy", "state": "SC", "ready": true },
     { "slug": "nas-kingsville", "name": "NAS Kingsville", "branch": "U.S. Navy", "state": "TX", "ready": false },
-    { "slug": "hill-afb", "name": "Hill AFB", "branch": "U.S. Air Force", "state": "UT", "ready": false },
+    { "slug": "hill-afb", "name": "Hill AFB", "branch": "U.S. Air Force", "state": "UT", "ready": true },
     { "slug": "offutt-afb", "name": "Offutt AFB", "branch": "U.S. Air Force", "state": "NE", "ready": false },
     { "slug": "fort-hunter-liggett", "name": "Fort Hunter Liggett", "branch": "U.S. Army", "state": "CA", "ready": false },
     { "slug": "fort-huachuca", "name": "Fort Huachuca", "branch": "U.S. Army", "state": "AZ", "ready": false },

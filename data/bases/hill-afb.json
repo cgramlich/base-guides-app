@@ -1,0 +1,202 @@
+{
+  "slug": "hill-afb",
+  "schema_version": "0.1",
+  "name": "Hill AFB",
+  "short_name": "Hill",
+  "branch": "U.S. Air Force",
+  "states": ["UT"],
+  "tagline": "F-35s, a major depot, and the Wasatch Front: one of the Air Force's most popular places to be stationed.",
+  "coords": { "lat": 41.1239, "lng": -111.973, "label": "Ogden area, UT" },
+  "tz": "America/Denver",
+  "last_full_review": "2026-06-25",
+  "_note": "Mountain West base (Wasatch Front, northern Utah). Facts verified from official sources (hill.af.mil, housing.af.mil, hillhousing.com, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA UT291 (Ogden/Hill AFB) via the bah_rates single source of truth. Housing operator confirmed as Boyer Military Housing (hillhousing.com). Medium-confidence flags: base coords (approx), representative off-base ZIP 84041 (Layton).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Ogden area, UT (Wasatch Front)",
+        "Host wing": "75th Air Base Wing",
+        "Flying": "388th & 419th Fighter Wings (F-35A Lightning II)",
+        "Depot": "Ogden Air Logistics Complex (F-35, F-16, A-10, Minuteman III)",
+        "Nearby cities": "Layton, Clearfield, Roy, Ogden"
+      },
+      "source": { "label": "Hill Air Force Base (official)", "url": "https://www.hill.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Hill Air Force Base is both a major depot and a fighter base, supported by the 75th Air Base Wing. The Ogden Air Logistics Complex provides worldwide engineering and depot maintenance for the F-35, F-16, A-10, and the Minuteman III intercontinental ballistic missile.",
+        "Hill was the Air Force's first operational F-35A base. The active-duty 388th Fighter Wing and the Air Force Reserve 419th Fighter Wing fly the F-35A together in total-force integration, sharing the aircraft and facilities."
+      ],
+      "source": { "label": "Hill Air Force Base (official)", "url": "https://www.hill.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "wasatch_decision",
+      "title": "The Base People Don't Want to Leave",
+      "type": "killer",
+      "data": {
+        "subtitle": "Hill pairs a stable, long-tour mission with the Wasatch Front lifestyle, so more families here put down roots and buy than at a typical assignment.",
+        "intro": [
+          "Hill is a depot and F-35 powerhouse: the Ogden Air Logistics Complex sustains several major weapon systems, and the 388th and 419th Fighter Wings fly the F-35A. That mix means a lot of longer tours, civilian positions, and people who stay in the area, which changes the rent-versus-buy math.",
+          "The draw is northern Utah itself. Hill sits along the Wasatch Front between Salt Lake City and Ogden, with world-class skiing, mountains, and lakes within an hour and a generally lower cost of living than the coasts. The trade-offs are real winters and the occasional valley inversion."
+        ],
+        "recommendations": [
+          { "who": "Closest to base", "advice": "Layton sits just outside the South Gate and has the heaviest military concentration; Clearfield and Roy are close and tend to stretch your BAH the furthest." },
+          { "who": "Family schools", "advice": "Davis School District (Layton, Kaysville, Syracuse, Farmington) is well-regarded, and the Kaysville and Farmington areas are popular with families." },
+          { "who": "Thinking long-term", "advice": "With longer tours common here, more families buy. If you might stay three or more years, run the buy math, and note that many keep their Utah homes after they leave." },
+          { "who": "Outdoor life", "advice": "If skiing and the mountains are the point, living toward the canyons trades a longer commute for quick access to the Wasatch." }
+        ]
+      },
+      "source": { "label": "Hill Air Force Base (official)", "url": "https://www.hill.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Hill AFB site before you go."
+      ],
+      "source": { "label": "Hill Air Force Base (official)", "url": "https://www.hill.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, operated by Boyer Military Housing.",
+        "Eligibility and availability vary by rank and family size, so start with the base housing office and the partner for current options and waitlists. Reach the housing office or Boyer at (801) 679-4514."
+      ],
+      "source": { "label": "Hill AFB Housing (partner)", "url": "https://www.hillhousing.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "UT291",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA UT291 (Ogden/Hill AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "84041", "label": "Layton, UT" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here, so children attend the local civilian public schools. Most military families fall in Davis School District (Layton, Clearfield, Syracuse, Kaysville, Farmington) or Weber School District (Ogden, Roy).",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Davis School District (official)", "url": "https://www.davis.k12.ut.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "UT", "city": "Layton" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "75th Medical Group (Hill AFB)",
+        "Care": "Outpatient; inpatient and specialty care referred to local network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Hill AFB / 75th Medical Group (official)", "url": "https://www.hill.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Hill AFB Commissary (DeCA)",
+        "Exchange": "Hill AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Hill it tilts toward buying more than most bases because tours run long and many families stay in the area."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, which is common at Hill.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "You might keep the home as a rental after you leave Utah.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Hill's longer tours make buying worth a serious look. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district or DoDEA early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at the local military treatment facility or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's the mission at Hill?", "a": "Hill is both a major depot and a fighter base. The Ogden Air Logistics Complex sustains the F-35, F-16, A-10, and Minuteman III ICBM, and the 388th and 419th Fighter Wings fly the F-35A." },
+        { "q": "Where do military families live?", "a": "Layton is closest to the South Gate with the heaviest military concentration; Clearfield and Roy stretch your BAH; Kaysville, Syracuse, and Farmington are popular for schools." },
+        { "q": "Should I buy here?", "a": "More families buy at Hill than at a typical base because tours can run long and many stay in the area. If you expect three or more years, run the buy math; see the rent-or-buy section above." },
+        { "q": "Who runs on-base housing?", "a": "Boyer Military Housing operates the privatized family housing. Start with the base housing office for eligibility and availability." },
+        { "q": "What is the BAH area?", "a": "Hill AFB is MHA UT291 (Ogden/Hill AFB). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Hill Aerospace Museum", "category": "Museum", "blurb": "A large, free Air Force museum at the north end of Hill AFB, with dozens of historic aircraft and missiles.", "maps_query": "Hill Aerospace Museum, Roy UT" },
+        { "name": "Antelope Island State Park", "category": "Outdoors", "blurb": "A large island in the Great Salt Lake with bison herds, beaches, and hiking, a short drive from base.", "maps_query": "Antelope Island State Park, UT" },
+        { "name": "Snowbasin Resort", "category": "Outdoors", "blurb": "A major ski and mountain resort east of Ogden that hosted 2002 Winter Olympic events.", "maps_query": "Snowbasin Resort, UT" },
+        { "name": "Historic 25th Street, Ogden", "category": "Food & shopping", "blurb": "Ogden's restored historic main street, lined with restaurants, breweries, and shops.", "maps_query": "Historic 25th Street, Ogden UT" }
+      ]
+    }
+  ]
+}
