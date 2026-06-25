@@ -1,0 +1,154 @@
+{
+  "slug": "joint-base-langley-eustis",
+  "schema_version": "0.1",
+  "name": "Joint Base Langley-Eustis",
+  "short_name": "Langley-Eustis",
+  "branch": "U.S. Air Force / U.S. Army",
+  "states": ["VA"],
+  "tagline": "Two installations, one joint base: F-22s and Air Combat Command at Langley, Army TRADOC and the Transportation Corps at Eustis.",
+  "coords": { "lat": 37.0827, "lng": -76.3604, "label": "Hampton, VA (Langley)" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-24",
+  "_note": "Second Hampton Roads base, but on the PENINSULA (not the Southside like Norfolk). Two installations ~17 miles apart: Langley AFB (Hampton) + Fort Eustis (Newport News). Facts verified from official sources (jble.af.mil, langleyeustis.tricare.mil, langleyfamilyhousing.com, Air Force/Army housing, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA VA297 (Hampton/Newport News) - DIFFERENT from Norfolk's VA298; rates come from the bah_rates single source of truth. Medium-confidence flags: base coords (Langley side, approx), representative off-base ZIP 23666 (Hampton), two housing partners (Hunt at Langley, Balfour Beatty at Eustis).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "Air Force + Army (joint base)",
+        "Location": "Hampton & Newport News, VA (Peninsula)",
+        "Host wing": "633d Air Base Wing",
+        "Langley AFB": "1st Fighter Wing (F-22 Raptor), HQ Air Combat Command",
+        "Fort Eustis": "HQ Army TRADOC, Army Transportation Corps",
+        "Layout": "Two installations about 17 miles apart"
+      },
+      "source": { "label": "Joint Base Langley-Eustis (official)", "url": "https://www.jble.af.mil/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Joint Base Langley-Eustis joins two very different installations under one host wing, the 633d Air Base Wing. Langley Air Force Base in Hampton flies the F-22 Raptor with the 1st Fighter Wing and hosts the headquarters of Air Combat Command.",
+        "Fort Eustis, about 17 miles up the Peninsula in Newport News, is the home of Army Training and Doctrine Command (TRADOC) and the Army Transportation Corps, training transportation and aviation-maintenance soldiers. The two halves share support services but operate as distinct posts."
+      ],
+      "source": { "label": "Joint Base Langley-Eustis (official)", "url": "https://www.jble.af.mil/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "peninsula_decision",
+      "title": "Langley or Eustis? Living on the Peninsula",
+      "type": "killer",
+      "data": {
+        "subtitle": "JBLE is two installations 17 miles apart. Which one you report to, and where you settle on the Peninsula, shapes your whole tour, and it usually keeps you off Hampton Roads' worst tunnel traffic.",
+        "intro": [
+          "Joint Base Langley-Eustis is unusual: its two halves are not next to each other. Langley AFB sits in Hampton; Fort Eustis is about 17 miles up the Peninsula in Newport News. They share one installation-support wing but feel like two different posts, so step one is simply knowing which side you report to.",
+          "The upside of the Peninsula is traffic. Unlike sailors stationed across the water at Norfolk, most JBLE families never cross the notorious Hampton Roads Bridge-Tunnel for the daily commute. The trade is that the Peninsula is its own world: if a spouse works or you have regular business on the Southside (Norfolk, Virginia Beach), that tunnel becomes part of your life."
+        ],
+        "recommendations": [
+          { "who": "Assigned to Langley (Hampton)", "advice": "Hampton keeps the commute short. Poquoson, just east, is a popular family choice known for its schools." },
+          { "who": "Assigned to Fort Eustis (Newport News)", "advice": "Newport News and the upper Peninsula (Yorktown, Williamsburg) put you closer to Eustis and the Historic Triangle." },
+          { "who": "Ties to both ends", "advice": "Central Newport News gives the most flexible commute in either direction along the Peninsula." },
+          { "who": "Avoid the tunnel tax", "advice": "Staying on the Peninsula keeps you off the HRBT for the daily drive. Think hard before committing to a Southside address with a JBLE job." }
+        ]
+      },
+      "source": { "label": "Hampton Roads Bridge-Tunnel (background)", "url": "https://en.wikipedia.org/wiki/Hampton_Roads_Bridge%E2%80%93Tunnel" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Each installation controls its own gates. Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details for Langley or Fort Eustis on the official JBLE site before you go."
+      ],
+      "source": { "label": "Joint Base Langley-Eustis (official)", "url": "https://www.jble.af.mil/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, and the partner differs by installation: Langley AFB is managed by Hunt Military Communities (Langley Family Housing), and Fort Eustis is managed by Balfour Beatty Communities.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for your installation and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Air Force Housing - JBLE (official)", "url": "https://www.housing.af.mil/Home/Installations/Joint-Base-Langley-Eustis/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "VA297",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA VA297 (Hampton/Newport News)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "23666", "label": "Hampton, VA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district on the Peninsula, so children attend the local civilian public schools. The Langley side falls largely in Hampton City Schools; the Fort Eustis side in Newport News Public Schools.",
+        "Nearby Poquoson, York County, and Williamsburg-James City County run their own divisions and are popular with military families. Your assigned schools depend on your address, so confirm the division and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Hampton City Schools (official)", "url": "https://www.hampton.k12.va.us/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "VA", "city": "Hampton" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Langley": "633d Medical Group (USAF Hospital Langley)",
+        "Fort Eustis": "McDonald Army Health Center",
+        "Care": "Outpatient + select inpatient; specialty referrals across Hampton Roads",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "633d Medical Group (official)", "url": "https://langleyeustis.tricare.mil/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Commissary (DeCA) at both Langley AFB and Fort Eustis",
+        "Exchange": "Exchange (AAFES) at both installations"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Virginia Air & Space Science Center", "category": "Museum", "blurb": "The official visitor center for NASA Langley, in downtown Hampton, with aircraft, spacecraft, and an IMAX theater.", "maps_query": "Virginia Air and Space Science Center, Hampton VA" },
+        { "name": "Fort Monroe National Monument", "category": "History", "blurb": "A historic moated fort on the Hampton waterfront, now a national monument with beaches and trails.", "maps_query": "Fort Monroe National Monument, Hampton VA" },
+        { "name": "The Mariners' Museum and Park", "category": "Museum", "blurb": "One of the largest maritime museums in the country, in Newport News, with a large lake and trail park.", "maps_query": "The Mariners' Museum and Park, Newport News VA" },
+        { "name": "Colonial Williamsburg", "category": "Day trip", "blurb": "The famous living-history town, about a half hour up the Peninsula and part of the Historic Triangle with Yorktown and Jamestown.", "maps_query": "Colonial Williamsburg, VA" }
+      ]
+    }
+  ]
+}
