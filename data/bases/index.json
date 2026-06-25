@@ -8,7 +8,7 @@
     { "slug": "vicenza-italy", "name": "Vicenza, Italy", "branch": "U.S. Army", "state": "Italy", "region": "OCONUS", "ready": true },
     { "slug": "naval-station-norfolk", "name": "Naval Station Norfolk", "branch": "U.S. Navy", "state": "VA", "ready": true },
     { "slug": "joint-base-langley-eustis", "name": "Joint Base Langley-Eustis", "branch": "Air Force / Army", "state": "VA", "ready": true },
-    { "slug": "rock-island-arsenal", "name": "Rock Island Arsenal", "branch": "U.S. Army", "state": "IL", "ready": false },
+    { "slug": "rock-island-arsenal", "name": "Rock Island Arsenal", "branch": "U.S. Army", "state": "IL / IA", "ready": true },
     { "slug": "wright-patterson-afb", "name": "Wright-Patterson AFB", "branch": "U.S. Air Force", "state": "OH", "ready": true },
     { "slug": "joint-base-charleston", "name": "Joint Base Charleston", "branch": "Air Force / Navy", "state": "SC", "ready": true },
     { "slug": "nas-kingsville", "name": "NAS Kingsville", "branch": "U.S. Navy", "state": "TX", "ready": false },
