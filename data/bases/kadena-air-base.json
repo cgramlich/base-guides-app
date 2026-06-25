@@ -1,0 +1,157 @@
+{
+  "slug": "kadena-air-base",
+  "schema_version": "0.1",
+  "name": "Kadena Air Base",
+  "short_name": "Kadena",
+  "branch": "U.S. Air Force",
+  "states": ["Japan"],
+  "region": "OCONUS",
+  "tagline": "The 'Keystone of the Pacific': the Air Force's largest combat wing, on Okinawa.",
+  "coords": { "lat": 26.35, "lng": 127.77, "label": "Okinawa, Japan" },
+  "tz": "Asia/Tokyo",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Okinawa, Japan). US-only feeds intentionally omitted (overseas uses OHA + COLA, not BAH; no RentCast or SchoolDigger). Weather via the Open-Meteo global fallback. Facts verified from official sources (kadena.af.mil, dodea.edu/pacific, TRICARE Overseas, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Okinawa, Japan",
+        "Host wing": "18th Wing (the Air Force's largest combat wing)",
+        "Command": "Fifth Air Force / Pacific Air Forces",
+        "Community": "Team Kadena, nearly 18,000 Americans",
+        "Region": "OCONUS (overseas tour; OHA and COLA, not BAH)"
+      },
+      "source": { "label": "Kadena Air Base (official)", "url": "https://www.kadena.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Kadena Air Base on Okinawa is known as the 'Keystone of the Pacific.' Its host 18th Wing is the largest combat wing in the Air Force, and the base is a central node for U.S. airpower in the Indo-Pacific.",
+        "Okinawa hosts a large, multi-service U.S. presence, and Kadena is the hub of it, with nearly 18,000 Americans in the Team Kadena community."
+      ],
+      "source": { "label": "Kadena Air Base (official)", "url": "https://www.kadena.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "okinawa_decision",
+      "title": "Island Life on Okinawa: On Base or Off",
+      "type": "killer",
+      "data": {
+        "subtitle": "Okinawa is a beautiful, dense subtropical island with a strong American community. Command sponsorship and the on-base versus off-base choice define the tour, and OHA plus COLA help with island costs.",
+        "intro": [
+          "As with any overseas tour, command sponsorship is what brings your family at government expense and unlocks housing, DoDEA schools, and benefits. Confirm it early through your gaining command.",
+          "Housing splits between on-base and off-base rentals on the Japanese economy. On-base is convenient and removes the language barrier from daily life; off-base offers a fuller Okinawan experience, with OHA covering rent up to a ceiling. The island is compact, so beaches and dive sites are never far, but expect typhoon season and dense traffic."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Command sponsorship determines whether your family comes and gets housing, schools, and benefits; sort it through your unit early." },
+          { "who": "On-base living", "advice": "On-base housing is convenient to work, schools, and amenities and is in high demand; get on the list early." },
+          { "who": "Off-base immersion", "advice": "Renting on the local economy offers a fuller island experience; OHA offsets rent and utilities up to a ceiling, and COLA helps with everyday costs." },
+          { "who": "Embrace the island", "advice": "Okinawa's beaches, diving, and culture are a highlight; plan around typhoon season and the island's heavy traffic." }
+        ]
+      },
+      "source": { "label": "Kadena Air Base (official)", "url": "https://www.kadena.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the installation, and overseas access rules differ from stateside bases. You will need status documents under the U.S.-Japan SOFA.",
+        "Confirm the current visitor and access requirements on the official Kadena site before you arrive."
+      ],
+      "source": { "label": "Kadena Air Base (official)", "url": "https://www.kadena.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing, OHA & COLA",
+      "type": "prose",
+      "data": [
+        "Families choose between on-base housing and renting on the Okinawan economy. On-base housing is convenient and in high demand, so get on the list early.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling. An overseas cost-of-living allowance (COLA) also helps with island costs. The Housing Office assigns on-base housing and helps with off-base rentals."
+      ],
+      "source": { "label": "Kadena Air Base (official)", "url": "https://www.kadena.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Pacific operates several elementary, middle, and high schools serving Kadena and the surrounding Okinawa installations.",
+        "Start DoDEA registration early and confirm the specific schools, boundaries, and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "18th Medical Group (Kadena)",
+        "Care": "Hospital and clinic care on base; some specialty care referred to other military or host-nation facilities",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "Kadena Air Base (official)", "url": "https://www.kadena.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Kadena Commissary (DeCA)",
+        "Exchange": "Kadena Exchange (AAFES / BX), one of the largest overseas"
+      },
+      "source": { "label": "Kadena Air Base (official)", "url": "https://www.kadena.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your gaining command." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the U.S.-Japan SOFA documents that let you live in-country. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits. Many families buy a local vehicle rather than ship one; confirm the rules and inspections." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA Pacific schools; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at the 18th Medical Group." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Kadena?", "a": "No. Overseas you receive OHA instead of BAH for off-base rentals, plus an overseas cost-of-living allowance (COLA). On-base housing is government-provided." },
+        { "q": "On base or off base?", "a": "Both are common. On-base is convenient and removes the language barrier from daily life; off-base offers a fuller Okinawan experience with OHA covering the cost." },
+        { "q": "What's island life like?", "a": "Subtropical and beautiful, with beaches and diving close by, but the island is dense with heavy traffic and a real typhoon season from summer into fall." },
+        { "q": "Can I bring pets?", "a": "Often yes, but Japan has strict import and quarantine requirements and on-base pet policies. Start the process months early." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Okinawa Churaumi Aquarium", "category": "Family", "blurb": "One of the world's great aquariums, on the island's north end.", "maps_query": "Okinawa Churaumi Aquarium, Japan" },
+        { "name": "Shurijo Castle Park", "category": "History", "blurb": "The historic Ryukyu Kingdom castle site in Naha.", "maps_query": "Shuri Castle, Naha Okinawa" },
+        { "name": "American Village (Mihama)", "category": "Food & shopping", "blurb": "A seaside entertainment and shopping district in Chatan, near Kadena.", "maps_query": "American Village, Chatan Okinawa" },
+        { "name": "Cape Manzamo", "category": "Outdoors", "blurb": "A famous coastal cliff and viewpoint on Okinawa's west coast.", "maps_query": "Cape Manzamo, Okinawa Japan" }
+      ]
+    }
+  ]
+}

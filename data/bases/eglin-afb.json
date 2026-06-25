@@ -1,0 +1,201 @@
+{
+  "slug": "eglin-afb",
+  "schema_version": "0.1",
+  "name": "Eglin AFB",
+  "short_name": "Eglin",
+  "branch": "U.S. Air Force",
+  "states": ["FL"],
+  "tagline": "The Air Force's premier weapons test center and an F-35 training hub, on Florida's Emerald Coast.",
+  "coords": { "lat": 30.46, "lng": -86.55, "label": "Fort Walton Beach, FL" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Large Air Force test/training base (FL Panhandle / Emerald Coast; Central time zone). Facts verified from official sources (eglin.af.mil, 96th Medical Group, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA FL056 (Eglin AFB) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the base housing office). Medium-confidence flags: base coords (approx), representative off-base ZIP 32547 (Fort Walton Beach).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Fort Walton Beach / Niceville, FL (Emerald Coast)",
+        "Host wing": "96th Test Wing",
+        "Major tenant": "33rd Fighter Wing (F-35 training)",
+        "Also hosts": "53rd Wing, Air Force Research Laboratory, U.S. Army 7th Special Forces Group",
+        "Setting": "Gulf Coast; one of the largest bases by area"
+      },
+      "source": { "label": "Eglin Air Force Base (official)", "url": "https://www.eglin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Eglin is the Air Force's test and evaluation center for air-delivered weapons, guidance, and command-and-control systems, hosted by the 96th Test Wing. It is one of the largest bases in the Air Force by land area.",
+        "Its largest tenant is the 33rd Fighter Wing, which trains F-35 pilots and maintainers. Eglin also hosts the 53rd Wing, the Air Force Research Laboratory's munitions work, and the U.S. Army's 7th Special Forces Group, all on Florida's Emerald Coast."
+      ],
+      "source": { "label": "Eglin Air Force Base (official)", "url": "https://www.eglin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "emerald_coast_decision",
+      "title": "Living on the Emerald Coast",
+      "type": "killer",
+      "data": {
+        "subtitle": "Eglin sits on one of the prettiest stretches of the Gulf Coast, so the lifestyle is a real draw. Where you live trades beach proximity and schools against price along the Fort Walton Beach to Crestview corridor.",
+        "intro": [
+          "The Emerald Coast's white-sand beaches and emerald water make Eglin a popular assignment, and the broader area also includes Hurlburt Field and Duke Field. Demand keeps coastal prices up, especially toward Destin.",
+          "Most families weigh commute, schools, and how close they want to be to the water. Niceville and Bluewater Bay near the base are known for strong schools; Fort Walton Beach is central; Crestview to the north is more affordable; and Destin is the priciest, beach-resort option."
+        ],
+        "recommendations": [
+          { "who": "Schools near base", "advice": "Niceville and Bluewater Bay (Okaloosa County schools) are popular with families and close to the main gate." },
+          { "who": "Central and convenient", "advice": "Fort Walton Beach sits between the installations with a range of prices and a short commute." },
+          { "who": "Stretch your budget", "advice": "Crestview, north up I-85/SR-85, is the most affordable and where BAH goes furthest, at a longer drive." },
+          { "who": "Beach life (for a price)", "advice": "Destin and the coastal areas offer resort living, but prices run high and traffic peaks in tourist season." }
+        ]
+      },
+      "source": { "label": "Eglin Air Force Base (official)", "url": "https://www.eglin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Eglin AFB site before you go."
+      ],
+      "source": { "label": "Eglin Air Force Base (official)", "url": "https://www.eglin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Eglin has privatized on-base family housing across several neighborhoods, with thousands of homes serving the base community.",
+        "Eligibility and availability vary by rank and family size, so start with the 96th Civil Engineer Group housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Eglin Air Force Base (official)", "url": "https://www.eglin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "FL056",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA FL056 (Eglin AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "32547", "label": "Fort Walton Beach, FL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Okaloosa County School District covers Niceville, Fort Walton Beach, and Crestview, and is well-regarded; families toward Destin and Freeport fall in Okaloosa and Walton County districts.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Okaloosa County School District (official)", "url": "https://www.okaloosaschools.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "FL", "city": "Niceville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Eglin Hospital (96th Medical Group)",
+        "Care": "Inpatient and outpatient care; one of the Air Force's larger medical facilities",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Eglin AFB / 96th Medical Group (official)", "url": "https://www.eglin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Eglin AFB Commissary (DeCA)",
+        "Exchange": "Eglin AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Coastal prices (especially toward Destin) run high, while Crestview and inland areas are more affordable. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Florida vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Okaloosa County (or Walton County) schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Eglin Hospital or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's the mission at Eglin?", "a": "It's the Air Force's premier weapons test center (96th Test Wing) and a major F-35 training base (33rd Fighter Wing), plus the 53rd Wing, AFRL munitions work, and the Army's 7th Special Forces Group, on one of the largest base footprints in the Air Force." },
+        { "q": "Where do families live?", "a": "Niceville and Bluewater Bay are popular for schools near base; Fort Walton Beach is central; Crestview is the most affordable; Destin is the priciest, beach-resort option." },
+        { "q": "What's the lifestyle like?", "a": "Emerald Coast beach living, with white sand and warm water. It's a sought-after assignment, which keeps coastal prices up, especially in summer tourist season." },
+        { "q": "What is the BAH area?", "a": "Eglin AFB is MHA FL056. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Destin Harbor & Beaches", "category": "Outdoors", "blurb": "Emerald-water Gulf beaches and a lively harbor, a short drive from base.", "maps_query": "Destin Harbor Boardwalk, Destin FL" },
+        { "name": "Air Force Armament Museum", "category": "Museum", "blurb": "A free museum of Air Force weapons and aircraft just outside Eglin's gate.", "maps_query": "Air Force Armament Museum, Eglin AFB FL" },
+        { "name": "Henderson Beach State Park", "category": "Outdoors", "blurb": "Protected dunes and white-sand beach in Destin.", "maps_query": "Henderson Beach State Park, Destin FL" },
+        { "name": "Gulfarium Marine Adventure Park", "category": "Family", "blurb": "A marine park on Okaloosa Island in Fort Walton Beach.", "maps_query": "Gulfarium Marine Adventure Park, Fort Walton Beach FL" }
+      ]
+    }
+  ]
+}

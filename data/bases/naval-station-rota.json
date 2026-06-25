@@ -1,0 +1,157 @@
+{
+  "slug": "naval-station-rota",
+  "schema_version": "0.1",
+  "name": "Naval Station Rota",
+  "short_name": "Rota",
+  "branch": "U.S. Navy",
+  "states": ["Spain"],
+  "region": "OCONUS",
+  "tagline": "The 'Gateway to the Mediterranean': forward-deployed destroyers and a sun-soaked tour on Spain's Andalusian coast.",
+  "coords": { "lat": 36.62, "lng": -6.35, "label": "Rota, Spain (Cadiz)" },
+  "tz": "Europe/Madrid",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Spain), jointly used Spanish/U.S. Navy base in Cadiz province, Andalusia. US-only feeds intentionally omitted (overseas uses OHA, not BAH; no RentCast or SchoolDigger). Weather via the Open-Meteo global fallback. Facts verified from official sources (cnreurafcent.cnic.navy.mil, navy.mil, dodea.edu/europe, TRICARE Overseas, Wikipedia for corroborated headline facts). Largest U.S. community in Spain. Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy (joint Spanish-U.S. base)",
+        "Location": "Rota, Spain (Cadiz, Andalusia)",
+        "Role": "Forward-deployed homeport for U.S. Navy destroyers",
+        "Nickname": "Gateway to the Mediterranean",
+        "Community": "Largest U.S. military community in Spain",
+        "Region": "OCONUS (overseas tour; OHA, not BAH)"
+      },
+      "source": { "label": "Naval Station Rota (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NS-Rota/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Station Rota is a Spanish base jointly used by the Spanish and U.S. Navies on the Atlantic coast of Andalusia. Known as the 'Gateway to the Mediterranean,' it provides refueling, resupply, and support for ships and aircraft moving between the Atlantic and the Med.",
+        "Rota is the forward-deployed homeport for a squadron of U.S. Navy guided-missile destroyers central to European missile defense, and it is the largest U.S. military community in Spain."
+      ],
+      "source": { "label": "Naval Station Rota (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NS-Rota/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "spain_decision",
+      "title": "Forward-Deployed in Andalusia",
+      "type": "killer",
+      "data": {
+        "subtitle": "Rota pairs a forward-deployed sea-duty tempo with one of the most beloved overseas tours there is. Command sponsorship and on-base versus the Spanish economy shape the experience, with OHA covering off-base rent.",
+        "intro": [
+          "Sailors on the forward-deployed destroyers keep an operational tempo, so deployments and underway time are part of the tour. The community is tight and supportive, and the Andalusian setting (beaches, sherry country, and easy travel) makes it a favorite assignment.",
+          "Command sponsorship brings your family at government expense and unlocks housing, DoDEA schools, and benefits. Housing splits between on-base (a limited number of family homes) and renting in the surrounding towns with OHA."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Command sponsorship is what brings your family and unlocks housing, the DoDEA school, and benefits; sort it through your command early." },
+          { "who": "On-base living", "advice": "On-base family housing is convenient but limited (around 800 homes), so get on the list early." },
+          { "who": "Off-base in the towns", "advice": "Rota, El Puerto de Santa Maria, and nearby towns offer Spanish-economy rentals; OHA offsets rent and utilities up to a ceiling." },
+          { "who": "Make the most of it", "advice": "Beaches, Andalusian culture, and cheap flights across Europe and to Morocco make Rota a launchpad for travel." }
+        ]
+      },
+      "source": { "label": "Naval Station Rota (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NS-Rota/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the installation, and overseas access rules differ from stateside bases. You will need status documents under the U.S.-Spain agreement and NATO SOFA.",
+        "Confirm the current visitor and access requirements on the official Naval Station Rota site before you arrive."
+      ],
+      "source": { "label": "Naval Station Rota (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NS-Rota/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing & OHA",
+      "type": "prose",
+      "data": [
+        "Families choose between on-base family housing (around 800 homes, in high demand) and renting on the Spanish economy in Rota, El Puerto de Santa Maria, and nearby towns.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling, plus allowances for move-in costs and utilities. The Housing Office assigns on-base housing and helps with the Spanish rental process."
+      ],
+      "source": { "label": "Naval Station Rota (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NS-Rota/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Europe operates the David Glasgow Farragut schools (elementary through high school) at Naval Station Rota.",
+        "Start DoDEA registration early and confirm boundaries and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "U.S. Naval Hospital Rota",
+        "Care": "Primary and select specialty care on base; some specialty and inpatient care referred to Spanish host-nation hospitals",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "U.S. Naval Hospital Rota (official)", "url": "https://rota.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NS Rota Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Rota"
+      },
+      "source": { "label": "Naval Station Rota (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NS-Rota/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your command." },
+          { "title": "Get no-fee passports and status documents", "text": "Apply for no-fee passports for family members and the status documents that let you live in Spain under the U.S.-Spain agreement. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits, and there are rules and registration steps for bringing a vehicle to Spain. Confirm what you can bring." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend the DoDEA (Farragut) schools at Rota; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at U.S. Naval Hospital Rota." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's special about Rota?", "a": "It's a joint Spanish-U.S. Navy base on the Andalusian coast, the forward-deployed homeport for U.S. destroyers and the 'Gateway to the Mediterranean.' It's the largest U.S. military community in Spain and a beloved tour." },
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive OHA instead of BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling, plus utility and move-in allowances. On-base housing is government-provided." },
+        { "q": "On base or off base?", "a": "On-base family housing (around 800 homes) is convenient but limited; many families rent in Rota, El Puerto de Santa Maria, and nearby towns with OHA." },
+        { "q": "What about travel?", "a": "Excellent. Andalusia's beaches and cities are at the doorstep, and cheap flights reach the rest of Europe and Morocco; many families call the travel the best part." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Rota Old Town & Beaches", "category": "Outdoors", "blurb": "The charming town center and Atlantic beaches right outside the base.", "maps_query": "Rota, Cadiz Spain" },
+        { "name": "Cadiz", "category": "History", "blurb": "One of the oldest cities in Western Europe, on a peninsula across the bay.", "maps_query": "Cadiz, Spain" },
+        { "name": "Jerez de la Frontera", "category": "Food & drink", "blurb": "Home of sherry, flamenco, and Andalusian horses, a short drive inland.", "maps_query": "Jerez de la Frontera, Spain" },
+        { "name": "Seville", "category": "Day trip", "blurb": "Andalusia's grand capital, with its cathedral, Alcazar, and old quarter.", "maps_query": "Seville, Spain" }
+      ]
+    }
+  ]
+}

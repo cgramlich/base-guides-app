@@ -1,0 +1,201 @@
+{
+  "slug": "fort-benning",
+  "schema_version": "0.1",
+  "name": "Fort Benning",
+  "short_name": "Benning",
+  "branch": "U.S. Army",
+  "states": ["GA"],
+  "tagline": "The Army's Maneuver Center of Excellence, home of the Infantry and Armor, near Columbus.",
+  "coords": { "lat": 32.35, "lng": -84.97, "label": "Columbus, GA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Army training post (Columbus GA, on the Alabama line). Name history: Fort Benning -> Fort Moore (2023) -> Fort Benning (March 2025, now honoring WWI Cpl. Fred G. Benning, not the Confederate general). Facts verified from official sources (home.army.mil/benning, martin.tricare.mil, fortbenninghousing.com, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA GA075 (Fort Benning) via the bah_rates single source of truth. Housing operated by Balfour Beatty. Medium-confidence flags: base coords (approx), representative off-base ZIP 31909 (Columbus).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Columbus, GA (Georgia-Alabama line)",
+        "Known as": "Maneuver Center of Excellence",
+        "Schools": "U.S. Army Infantry School and Armor School",
+        "Also hosts": "Elements of the 75th Ranger Regiment, 1st SFAB",
+        "Note": "Reverted from 'Fort Moore' to 'Fort Benning' in 2025 (new namesake)"
+      },
+      "source": { "label": "Fort Benning (official)", "url": "https://home.army.mil/benning/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Benning is the Army's Maneuver Center of Excellence, home of the Infantry School and the Armor School, where much of the Army's close-combat force is trained. It also hosts elements of the 75th Ranger Regiment and the 1st Security Force Assistance Brigade.",
+        "It sits on the Georgia-Alabama line next to Columbus. The post carried the name Fort Moore from 2023 to 2025 before reverting to Fort Benning, now honoring a World War I corporal."
+      ],
+      "source": { "label": "Fort Benning (official)", "url": "https://home.army.mil/benning/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "benning_decision",
+      "title": "A Training Post on the Chattahoochee",
+      "type": "killer",
+      "data": {
+        "subtitle": "Benning is a high-throughput training post, so a lot of the population is in school or instructing. Columbus is affordable, and the main choice is the Georgia or Alabama side of the river.",
+        "intro": [
+          "As the Maneuver Center, Benning runs constant courses (Infantry, Armor, Ranger, Airborne), so many people are here for training or as cadre. The community is large and the cost of living is low.",
+          "Columbus, Georgia sits on one side of the Chattahoochee River and Phenix City, Alabama on the other, so where you live can even mean which state. Both are close to the gates, with on-post housing also available."
+        ],
+        "recommendations": [
+          { "who": "Closest and most affordable", "advice": "Columbus neighborhoods near the post and Phenix City, Alabama (just across the river) offer short commutes and low costs." },
+          { "who": "Schools and newer homes", "advice": "North Columbus and the Harris County area (Midland) are popular with families for schools, at a slightly longer drive." },
+          { "who": "On-post option", "advice": "On-post housing (Balfour Beatty) is extensive; note arrival waitlists can run a few months during renovations." },
+          { "who": "Stretch your budget", "advice": "The Columbus area is inexpensive, so BAH tends to go a long way here." }
+        ]
+      },
+      "source": { "label": "Fort Benning (official)", "url": "https://home.army.mil/benning/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Benning site before you go."
+      ],
+      "source": { "label": "Fort Benning (official)", "url": "https://home.army.mil/benning/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is privatized, operated by Balfour Beatty Communities, across about ten neighborhoods. Because of high occupancy and ongoing renovations, arriving families should plan for possible waitlists.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner early for current options."
+      ],
+      "source": { "label": "Fort Benning housing (partner)", "url": "https://www.fortbenninghousing.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "GA075",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA GA075 (Fort Benning)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "31909", "label": "Columbus, GA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Muscogee County (Columbus) serves much of the area, with Harris County (Midland) popular for schools and Russell County / Phenix City on the Alabama side.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Muscogee County School District (official)", "url": "https://www.muscogee.k12.ga.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "GA", "city": "Columbus" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Martin Army Community Hospital",
+        "Care": "A modern hospital on post with inpatient, emergency, and specialty care",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Martin Army Community Hospital (official)", "url": "https://martin.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Benning Commissary (DeCA)",
+        "Exchange": "Fort Benning Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or you're here for a course.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Columbus market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The Columbus area is inexpensive, so BAH often stretches well and many longer-tour families buy. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability (and waitlist) and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Muscogee, Harris, or Phenix City) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Martin Army Community Hospital or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is it Fort Benning or Fort Moore?", "a": "Fort Benning, as of March 2025. It was Fort Moore from 2023 to 2025; the name now honors a World War I corporal, Fred G. Benning, rather than the Confederate general." },
+        { "q": "What happens at Benning?", "a": "It's the Maneuver Center of Excellence, home of the Infantry and Armor Schools, plus Ranger training and elements of the 75th Ranger Regiment. Many people are here for training or as cadre." },
+        { "q": "Where do families live?", "a": "Columbus and Phenix City (Alabama, across the river) are closest and most affordable; North Columbus and Harris County are popular for schools. On-post housing is extensive but can have waitlists." },
+        { "q": "What is the BAH area?", "a": "Fort Benning is MHA GA075. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "National Infantry Museum", "category": "Museum", "blurb": "An acclaimed museum honoring the Army infantry, just outside Fort Benning.", "maps_query": "National Infantry Museum, Columbus GA" },
+        { "name": "Columbus Riverwalk & Whitewater", "category": "Outdoors", "blurb": "A scenic Chattahoochee riverwalk and the longest urban whitewater rafting course in the world.", "maps_query": "Columbus Riverwalk, Columbus GA" },
+        { "name": "Providence Canyon State Park", "category": "Outdoors", "blurb": "Georgia's 'Little Grand Canyon,' colorful gullies a short drive south.", "maps_query": "Providence Canyon State Park, GA" },
+        { "name": "Callaway Gardens", "category": "Outdoors", "blurb": "A large gardens and resort destination at Pine Mountain, north of Columbus.", "maps_query": "Callaway Gardens, Pine Mountain GA" }
+      ]
+    }
+  ]
+}

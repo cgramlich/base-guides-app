@@ -29,6 +29,11 @@
     { "slug": "schofield-barracks", "name": "Schofield Barracks", "branch": "U.S. Army", "state": "HI", "region": "OCONUS", "ready": true },
     { "slug": "camp-humphreys", "name": "Camp Humphreys", "branch": "U.S. Army", "state": "South Korea", "region": "OCONUS", "ready": true },
     { "slug": "ramstein-air-base", "name": "Ramstein Air Base", "branch": "U.S. Air Force", "state": "Germany", "region": "OCONUS", "ready": true },
-    { "slug": "yokota-air-base", "name": "Yokota Air Base", "branch": "U.S. Air Force", "state": "Japan", "region": "OCONUS", "ready": true }
+    { "slug": "yokota-air-base", "name": "Yokota Air Base", "branch": "U.S. Air Force", "state": "Japan", "region": "OCONUS", "ready": true },
+    { "slug": "fort-stewart", "name": "Fort Stewart", "branch": "U.S. Army", "state": "GA", "ready": true },
+    { "slug": "fort-benning", "name": "Fort Benning", "branch": "U.S. Army", "state": "GA", "ready": true },
+    { "slug": "eglin-afb", "name": "Eglin AFB", "branch": "U.S. Air Force", "state": "FL", "ready": true },
+    { "slug": "kadena-air-base", "name": "Kadena Air Base", "branch": "U.S. Air Force", "state": "Japan", "region": "OCONUS", "ready": true },
+    { "slug": "naval-station-rota", "name": "Naval Station Rota", "branch": "U.S. Navy", "state": "Spain", "region": "OCONUS", "ready": true }
   ]
 }
