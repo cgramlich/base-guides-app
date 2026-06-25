@@ -58,6 +58,8 @@
     .home-tag{ font-family:'Crimson Pro',Georgia,serif; color:var(--text-dim); font-size:15px; margin-top:4px; }
     .home-controls{ margin-bottom:6px; }
     .home-search{ margin-bottom:9px; }
+    .home-selects{ display:flex; gap:8px; margin-bottom:10px; }
+    .home-selects select{ flex:1; min-width:0; }
     .state-header{ font-family:'Fraunces',serif; font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-faint); margin:18px 2px 8px; }
     input,textarea,select,button{font-family:inherit; font-size:16px;}
     button{cursor:pointer; border:none; background:none; color:inherit;}
@@ -274,7 +276,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.17.0";
+    const APP_VERSION = "0.17.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -916,11 +918,26 @@
     }
 
     const BRANCH_FILTERS = [["all", "All"], ["army", "Army"], ["air force", "Air Force"], ["navy", "Navy"], ["joint", "Joint"]];
-    const REGION_FILTERS = [["all", "All"], ["conus", "CONUS"], ["oconus", "OCONUS"]];
+    const STATE_NAMES = {
+      AL: "Alabama", AK: "Alaska", AZ: "Arizona", AR: "Arkansas", CA: "California", CO: "Colorado",
+      CT: "Connecticut", DE: "Delaware", DC: "District of Columbia", FL: "Florida", GA: "Georgia",
+      HI: "Hawaii", ID: "Idaho", IL: "Illinois", IN: "Indiana", IA: "Iowa", KS: "Kansas", KY: "Kentucky",
+      LA: "Louisiana", ME: "Maine", MD: "Maryland", MA: "Massachusetts", MI: "Michigan", MN: "Minnesota",
+      MS: "Mississippi", MO: "Missouri", MT: "Montana", NE: "Nebraska", NV: "Nevada", NH: "New Hampshire",
+      NJ: "New Jersey", NM: "New Mexico", NY: "New York", NC: "North Carolina", ND: "North Dakota",
+      OH: "Ohio", OK: "Oklahoma", OR: "Oregon", PA: "Pennsylvania", RI: "Rhode Island", SC: "South Carolina",
+      SD: "South Dakota", TN: "Tennessee", TX: "Texas", UT: "Utah", VT: "Vermont", VA: "Virginia",
+      WA: "Washington", WV: "West Virginia", WI: "Wisconsin", WY: "Wyoming",
+    };
+    function stateTokens(s) { return (s || "").split("/").map((x) => x.trim()).filter(Boolean); }
+    function stateFull(t) { return STATE_NAMES[t] || t; }
+    function stateLabel(s) { return stateTokens(s).map(stateFull).join(" / ") || "Other"; }
+
     function Home({ bases, loading, onOpen, saved, onToggleSave }) {
       const [q, setQ] = useState("");
       const [branch, setBranch] = useState("all");
-      const [region, setRegion] = useState("all");
+      const [loc, setLoc] = useState("all");
+      const [sortBy, setSortBy] = useState("state");
       if (loading) return <div className="center"><div className="spin" /></div>;
       if (!bases || !bases.length) return <div className="center">No bases yet.</div>;
 
@@ -931,14 +948,33 @@
         if (branch === "joint") return s.indexOf("/") !== -1;
         return s.indexOf("/") === -1 && s.indexOf(branch) !== -1;
       };
-      const matchRegion = (b) => region === "all" || (region === "oconus" ? b.region === "OCONUS" : b.region !== "OCONUS");
-      const matchQ = (b) => !ql || (b.name + " " + (b.state || "")).toLowerCase().indexOf(ql) !== -1;
-      const filtered = bases.filter((b) => matchBranch(b) && matchRegion(b) && matchQ(b));
+      const matchLoc = (b) => loc === "all" || stateTokens(b.state).indexOf(loc) !== -1;
+      const matchQ = (b) => {
+        if (!ql) return true;
+        const hay = (b.name + " " + (b.state || "") + " " + stateTokens(b.state).map(stateFull).join(" ")).toLowerCase();
+        return hay.indexOf(ql) !== -1;
+      };
+      const filtered = bases.filter((b) => matchBranch(b) && matchLoc(b) && matchQ(b));
+      const locOptions = Array.from(new Set(bases.flatMap((b) => stateTokens(b.state)))).sort((a, b) => stateFull(a).localeCompare(stateFull(b)));
 
-      const groups = {};
-      filtered.forEach((b) => { const k = b.state || "Other"; (groups[k] = groups[k] || []).push(b); });
-      const stateKeys = Object.keys(groups).sort((a, b) => a.localeCompare(b));
-      stateKeys.forEach((k) => groups[k].sort((a, b) => a.name.localeCompare(b.name)));
+      let body;
+      if (!filtered.length) {
+        body = <div className="pending">No bases match your filters.</div>;
+      } else if (sortBy === "name") {
+        body = [...filtered].sort((a, b) => a.name.localeCompare(b.name))
+          .map((b) => <BaseCard key={b.slug} b={b} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />);
+      } else {
+        const groups = {};
+        filtered.forEach((b) => { const k = b.state || "Other"; (groups[k] = groups[k] || []).push(b); });
+        const keys = Object.keys(groups).sort((a, b) => stateLabel(a).localeCompare(stateLabel(b)));
+        keys.forEach((k) => groups[k].sort((a, b) => a.name.localeCompare(b.name)));
+        body = keys.map((k) => (
+          <div key={k}>
+            <div className="state-header">{stateLabel(k)}</div>
+            {groups[k].map((b) => <BaseCard key={b.slug} b={b} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />)}
+          </div>
+        ));
+      }
 
       return (
         <div className="content">
@@ -948,19 +984,21 @@
           </div>
           <div className="home-controls">
             <input className="fld home-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search base or state" />
+            <div className="home-selects">
+              <select className="fld" value={loc} onChange={(e) => setLoc(e.target.value)}>
+                <option value="all">All locations</option>
+                {locOptions.map((t) => <option key={t} value={t}>{stateFull(t)}</option>)}
+              </select>
+              <select className="fld" value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
+                <option value="state">Sort: by state</option>
+                <option value="name">Sort: name (A-Z)</option>
+              </select>
+            </div>
             <div className="chips">
               {BRANCH_FILTERS.map(([k, l]) => <button key={k} className={"chip pick" + (branch === k ? " chip-on" : "")} onClick={() => setBranch(k)}>{l}</button>)}
             </div>
-            <div className="chips" style={{ marginTop: 7 }}>
-              {REGION_FILTERS.map(([k, l]) => <button key={k} className={"chip pick" + (region === k ? " chip-on" : "")} onClick={() => setRegion(k)}>{l}</button>)}
-            </div>
           </div>
-          {!filtered.length ? <div className="pending">No bases match your filters.</div> : stateKeys.map((k) => (
-            <div key={k}>
-              <div className="state-header">{k}</div>
-              {groups[k].map((b) => <BaseCard key={b.slug} b={b} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />)}
-            </div>
-          ))}
+          {body}
         </div>
       );
     }
