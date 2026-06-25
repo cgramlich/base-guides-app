@@ -1,0 +1,201 @@
+{
+  "slug": "naval-base-kitsap",
+  "schema_version": "0.1",
+  "name": "Naval Base Kitsap",
+  "short_name": "Kitsap",
+  "branch": "U.S. Navy",
+  "states": ["WA"],
+  "tagline": "The Navy's Pacific Northwest hub: ballistic-missile submarines, the Puget Sound shipyard, and carriers, across the Kitsap Peninsula.",
+  "coords": { "lat": 47.56, "lng": -122.65, "label": "Bremerton / Silverdale, WA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy base (Kitsap Peninsula, WA; Bremerton + Bangor, merged 2004). Facts verified from official sources (cnrnw.cnic.navy.mil, Naval Hospital Bremerton, DeCA/NEX, Wikipedia for corroborated headline facts). BAH MHA WA306 (Bremerton) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the housing office). Washington is TRICARE West. Medium-confidence flags: base coords (approx), representative off-base ZIP 98311 (Bremerton/Silverdale).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Kitsap Peninsula, WA (Bremerton + Bangor)",
+        "Submarines": "Trident ballistic-missile submarine homeport (West Coast)",
+        "Shipyard": "Puget Sound Naval Shipyard (one of the Navy's nuclear shipyards)",
+        "Also": "Carrier and surface-ship support; the only West Coast dry dock for a Nimitz-class carrier",
+        "Region": "Commander, Navy Region Northwest"
+      },
+      "source": { "label": "Naval Base Kitsap (official)", "url": "https://cnrnw.cnic.navy.mil/Installations/NAVBASE-Kitsap/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Base Kitsap is the largest naval organization in the Pacific Northwest, formed in 2004 by merging Naval Station Bremerton with Naval Submarine Base Bangor. It supports surface ships, carriers, and the West Coast force of Trident ballistic-missile submarines.",
+        "It is home to the Puget Sound Naval Shipyard, one of the Navy's nuclear shipyards, and spans installations at Bremerton, Bangor, and several smaller sites across the Kitsap Peninsula."
+      ],
+      "source": { "label": "Naval Base Kitsap (official)", "url": "https://cnrnw.cnic.navy.mil/Installations/NAVBASE-Kitsap/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pnw_decision",
+      "title": "Bremerton or Bangor? Puget Sound Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Kitsap is split across the peninsula, so which installation you report to (the Bremerton shipyard or the Bangor sub base) shapes where you live, all in the green, ferry-connected Puget Sound.",
+        "intro": [
+          "The base has two main centers: Bremerton (shipyard and surface side) to the south and Bangor (submarine side) to the north, near Silverdale. Which one you work at naturally pulls you toward that end of the peninsula.",
+          "Life here is quintessential Pacific Northwest: forests, water, and ferries to Seattle, with plenty of rain. Most families weigh commute and schools across Bremerton, Silverdale, and the surrounding towns."
+        ],
+        "recommendations": [
+          { "who": "Shipyard / Bremerton side", "advice": "Bremerton and East Bremerton sit closest to the shipyard, with the most affordable options on the peninsula." },
+          { "who": "Submarine / Bangor side", "advice": "Silverdale and Poulsbo are convenient to Bangor and popular with families (Central Kitsap schools)." },
+          { "who": "Commuting to Seattle", "advice": "Ferries connect Bremerton and Bainbridge Island to downtown Seattle; some families use them for a spouse's job or city access." },
+          { "who": "On-base option", "advice": "On-base housing spans both areas; start with the housing office, as on-base can ease the search in a tight market." }
+        ]
+      },
+      "source": { "label": "Naval Base Kitsap (official)", "url": "https://cnrnw.cnic.navy.mil/Installations/NAVBASE-Kitsap/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Navy Region Northwest site before you go."
+      ],
+      "source": { "label": "Naval Base Kitsap (official)", "url": "https://cnrnw.cnic.navy.mil/Installations/NAVBASE-Kitsap/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Naval Base Kitsap has privatized military family housing across the Bremerton and Bangor areas.",
+        "Eligibility and availability vary by rank and family size, so start with the Navy housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Naval Base Kitsap (official)", "url": "https://cnrnw.cnic.navy.mil/Installations/NAVBASE-Kitsap/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "WA306",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA WA306 (Bremerton)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "98311", "label": "Bremerton, WA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Central Kitsap serves the Silverdale and Bangor area; Bremerton and South Kitsap districts serve the southern peninsula.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Central Kitsap School District (official)", "url": "https://www.ckschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "WA", "city": "Silverdale" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Naval Hospital Bremerton",
+        "Care": "Inpatient and outpatient care, with branch clinics including one at Bangor",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Naval Hospital Bremerton (official)", "url": "https://bremerton.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Commissary (DeCA) at Bangor and Bremerton",
+        "Exchange": "Navy Exchange (NEX) Kitsap"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or you expect to be at sea often.",
+          "You want time to learn the peninsula before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years (shipyard tours can be long).",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The Kitsap market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Kitsap is more affordable than Seattle proper but still a solid Puget Sound market, and shipyard tours can run long, which favors buying for some. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the Bremerton and Bangor sides before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Washington vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Central Kitsap, Bremerton, or South Kitsap) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Hospital Bremerton or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's at Naval Base Kitsap?", "a": "It's the Navy's Pacific Northwest hub: the West Coast Trident ballistic-missile submarine force at Bangor, the Puget Sound Naval Shipyard at Bremerton, and surface-ship and carrier support across the peninsula." },
+        { "q": "Bremerton or Bangor?", "a": "Bremerton (south) is the shipyard and surface side; Bangor (north, near Silverdale) is the submarine side. Where you work pulls you toward that end of the peninsula." },
+        { "q": "Where do families live?", "a": "Bremerton and East Bremerton near the shipyard; Silverdale and Poulsbo near Bangor (Central Kitsap schools). Ferries connect to Seattle for some commuters." },
+        { "q": "What is the BAH area?", "a": "Naval Base Kitsap is MHA WA306 (Bremerton). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Seattle (by ferry)", "category": "Day trip", "blurb": "Downtown Seattle is a scenic ferry ride from Bremerton or Bainbridge Island.", "maps_query": "Seattle Waterfront, Seattle WA" },
+        { "name": "Olympic National Park", "category": "Outdoors", "blurb": "Rainforests, mountains, and coast on the peninsula to the west.", "maps_query": "Olympic National Park, WA" },
+        { "name": "Poulsbo (Little Norway)", "category": "Food & shopping", "blurb": "A charming Scandinavian-themed waterfront town near Bangor.", "maps_query": "Poulsbo, WA" },
+        { "name": "Puget Sound Navy Museum", "category": "Museum", "blurb": "Naval and shipyard history on the Bremerton waterfront.", "maps_query": "Puget Sound Navy Museum, Bremerton WA" }
+      ]
+    }
+  ]
+}

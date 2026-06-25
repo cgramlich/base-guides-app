@@ -1,0 +1,201 @@
+{
+  "slug": "fort-leonard-wood",
+  "schema_version": "0.1",
+  "name": "Fort Leonard Wood",
+  "short_name": "Leonard Wood",
+  "branch": "U.S. Army",
+  "states": ["MO"],
+  "tagline": "The Maneuver Support Center of Excellence, training Engineers, Military Police, and Chemical soldiers in the Missouri Ozarks.",
+  "coords": { "lat": 37.75, "lng": -92.13, "label": "Waynesville / St. Robert, MO" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Army training post (Pulaski County, MO Ozarks). Facts verified from official sources (home.army.mil/wood, GLWACH, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA MO163 (Fort Leonard Wood) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the housing office). Missouri is TRICARE East. Medium-confidence flags: base coords (approx), representative off-base ZIP 65584 (St. Robert).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Pulaski County, MO (Ozarks; St. Robert / Waynesville)",
+        "Known as": "Maneuver Support Center of Excellence",
+        "Schools": "Army Engineer, Military Police, and CBRN Schools",
+        "Also": "Basic Combat Training and advanced individual training",
+        "Trains": "Nearly 80,000 students a year"
+      },
+      "source": { "label": "Fort Leonard Wood (official)", "url": "https://home.army.mil/wood/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Leonard Wood is the Army's Maneuver Support Center of Excellence, home to the Engineer School, the Military Police School, and the Chemical, Biological, Radiological and Nuclear (CBRN) School.",
+        "It is a high-volume training post in the Missouri Ozarks, running Basic Combat Training and advanced individual training for tens of thousands of soldiers each year, so much of the community is here to train, instruct, or support."
+      ],
+      "source": { "label": "Fort Leonard Wood (official)", "url": "https://home.army.mil/wood/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "lwood_decision",
+      "title": "Ozarks Living: A Remote, Affordable Training Post",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Leonard Wood is set in the rural Ozarks, so it's remote and very affordable. The main choice is the close-in towns of St. Robert and Waynesville or on-post housing.",
+        "intro": [
+          "As a major training center, the post is busy with students and cadre, and the surrounding area is small and tied closely to the installation. The nearest larger cities are a drive away.",
+          "St. Robert and Waynesville, just off post, are where most off-base families live, both served by the Waynesville school district. The Ozarks setting means lakes, rivers, and outdoor recreation are close by."
+        ],
+        "recommendations": [
+          { "who": "Closest and most affordable", "advice": "St. Robert and Waynesville sit right outside the gates with low costs and a short commute." },
+          { "who": "On-post option", "advice": "On-post housing is available; start with the housing office, since on-base can be convenient at a remote post." },
+          { "who": "Plan for remoteness", "advice": "Set expectations for a small-town area; bigger-city amenities (and airports) are a drive away in Springfield or the St. Louis direction." },
+          { "who": "Embrace the outdoors", "advice": "The Ozarks offer lakes, rivers, and trails; many families make the outdoors the highlight of the tour." }
+        ]
+      },
+      "source": { "label": "Fort Leonard Wood (official)", "url": "https://home.army.mil/wood/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Leonard Wood site before you go."
+      ],
+      "source": { "label": "Fort Leonard Wood (official)", "url": "https://home.army.mil/wood/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Leonard Wood has privatized on-post family housing across several neighborhoods. A high share of military families live off post in St. Robert and Waynesville.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Leonard Wood (official)", "url": "https://home.army.mil/wood/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MO163",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MO163 (Fort Leonard Wood)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "65584", "label": "St. Robert, MO" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, primarily the Waynesville R-VI School District, which serves both the post and the surrounding towns.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Waynesville R-VI School District (official)", "url": "https://www.waynesville.k12.mo.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MO", "city": "Waynesville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "General Leonard Wood Army Community Hospital (GLWACH)",
+        "Care": "Inpatient, outpatient, and specialty care on post",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "General Leonard Wood ACH (official)", "url": "https://glwach.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Leonard Wood Commissary (DeCA)",
+        "Exchange": "Fort Leonard Wood Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or you're here for a course.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing in a small market.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The Ozarks area is inexpensive, so BAH stretches well, but resale can be slow in a small, training-driven market. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on St. Robert and Waynesville before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the Waynesville R-VI district early and bring records and immunizations. The School Liaison Office can help." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at General Leonard Wood ACH or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based here?", "a": "It's the Maneuver Support Center of Excellence, home of the Engineer, Military Police, and CBRN schools, plus Basic Combat Training. It trains nearly 80,000 students a year." },
+        { "q": "Where do families live?", "a": "St. Robert and Waynesville, right outside the gates (both Waynesville R-VI schools), are the close-in choices; on-post housing is also available." },
+        { "q": "How remote is it?", "a": "Fairly. It's in the rural Ozarks, so plan for a small-town area with bigger-city amenities a drive away. The upside is low costs and great outdoor recreation." },
+        { "q": "What is the BAH area?", "a": "Fort Leonard Wood is MHA MO163. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Lake of the Ozarks", "category": "Outdoors", "blurb": "A huge recreational lake with boating and shoreline towns, north of post.", "maps_query": "Lake of the Ozarks State Park, MO" },
+        { "name": "Bennett Spring State Park", "category": "Outdoors", "blurb": "A popular trout-fishing spring and park near Lebanon.", "maps_query": "Bennett Spring State Park, MO" },
+        { "name": "U.S. Army Engineer Museum", "category": "History", "blurb": "Maneuver-support history (Engineer, MP, Chemical corps) on Fort Leonard Wood.", "maps_query": "U.S. Army Engineer Museum, Fort Leonard Wood MO" },
+        { "name": "Route 66 (Devils Elbow)", "category": "History", "blurb": "Historic Route 66 sites and the scenic Big Piney River near the post.", "maps_query": "Devils Elbow, MO" }
+      ]
+    }
+  ]
+}

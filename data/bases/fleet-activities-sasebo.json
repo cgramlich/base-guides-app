@@ -1,0 +1,157 @@
+{
+  "slug": "fleet-activities-sasebo",
+  "schema_version": "0.1",
+  "name": "Fleet Activities Sasebo",
+  "short_name": "Sasebo",
+  "branch": "U.S. Navy",
+  "states": ["Japan"],
+  "region": "OCONUS",
+  "tagline": "The Navy's amphibious foothold in the Far East, homeport of the forward-deployed expeditionary force, on Kyushu.",
+  "coords": { "lat": 33.16, "lng": 129.72, "label": "Sasebo, Japan (Nagasaki)" },
+  "tz": "Asia/Tokyo",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Japan, Kyushu). US-only feeds omitted (overseas uses OHA + COLA, not BAH; no RentCast or SchoolDigger). Weather via Open-Meteo fallback. Facts verified from official sources (cnrj.cnic.navy.mil, dodea.edu/pacific, TRICARE Overseas, Wikipedia for corroborated headline facts). Amphibious hull assignments rotate, so not naming a specific ship. Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Sasebo, Japan (Nagasaki Prefecture, Kyushu)",
+        "Role": "Homeport for the forward-deployed amphibious force (Expeditionary Strike Group 7)",
+        "Mission": "Supports Navy-Marine amphibious operations in the western Pacific",
+        "Community": "About 6,000 personnel, civilians, and family members",
+        "Region": "OCONUS (overseas tour; OHA and COLA, not BAH)"
+      },
+      "source": { "label": "Commander Fleet Activities Sasebo (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Sasebo/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fleet Activities Sasebo, at the northwestern tip of Kyushu, is the Navy's amphibious foothold in the Far East. It is the homeport of the forward-deployed amphibious force (Expeditionary Strike Group 7), the ships that carry and land Marines across the western Pacific.",
+        "It is a smaller, tight-knit overseas base of roughly 6,000 people, with a scenic harbor setting in southern Japan."
+      ],
+      "source": { "label": "Commander Fleet Activities Sasebo (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Sasebo/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "sasebo_decision",
+      "title": "A Smaller Tour in Southern Japan",
+      "type": "killer",
+      "data": {
+        "subtitle": "Sasebo is a close-knit amphibious base on Kyushu with a high sea-going tempo. Command sponsorship and on-base versus the Japanese economy define the tour, with OHA and COLA helping in-country.",
+        "intro": [
+          "The amphibious ships keep an operational pace, so deployments are part of the tour, and the small community is famously supportive. Command sponsorship is what brings your family at government expense and unlocks housing, DoDEA schools, and benefits.",
+          "Housing splits between on-base (the main base and the Hario Village family-housing area) and renting in Sasebo on the Japanese economy. On-base is convenient; off-base offers a fuller local experience, with OHA covering rent up to a ceiling and COLA helping with costs."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Command sponsorship brings your family and unlocks housing, DoDEA schools, and benefits; sort it through your command early." },
+          { "who": "On-base or Hario", "advice": "Main-base housing and the Hario Village family area are convenient and in demand; get on the list early." },
+          { "who": "Off-base immersion", "advice": "Renting in Sasebo offers a fuller Japanese experience; OHA offsets rent and utilities up to a ceiling." },
+          { "who": "Explore Kyushu", "advice": "Sasebo's coastline, the Kujukushima islands, and Kyushu's hot springs and cities are close by; travel is a highlight." }
+        ]
+      },
+      "source": { "label": "Commander Fleet Activities Sasebo (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Sasebo/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the installation, and overseas access rules differ from stateside bases. You will need status documents under the U.S.-Japan SOFA.",
+        "Confirm the current visitor and access requirements on the official CFA Sasebo site before you arrive."
+      ],
+      "source": { "label": "Commander Fleet Activities Sasebo (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Sasebo/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing, OHA & COLA",
+      "type": "prose",
+      "data": [
+        "Families choose between on-base housing (the main base and the Hario Village family-housing area) and renting on the Japanese economy in Sasebo. On-base housing is convenient and in demand.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling, with an overseas cost-of-living allowance (COLA) on top. The Housing Office assigns on-base housing and helps with off-base rentals."
+      ],
+      "source": { "label": "Commander Fleet Activities Sasebo (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Sasebo/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Pacific operates the E.J. King School at Sasebo, serving elementary through high school grades.",
+        "Start DoDEA registration early and confirm boundaries and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "U.S. Naval Hospital Yokosuka, Branch Health Clinic Sasebo",
+        "Care": "Outpatient care on base; inpatient and specialty care referred to U.S. Naval Hospital Yokosuka or host-nation facilities",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "Commander Fleet Activities Sasebo (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Sasebo/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Sasebo Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Sasebo"
+      },
+      "source": { "label": "Commander Fleet Activities Sasebo (official)", "url": "https://cnrj.cnic.navy.mil/Installations/CFA-Sasebo/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your command." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the U.S.-Japan SOFA documents that let you live in-country. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits. Many families buy a local vehicle rather than ship one; confirm the rules and inspections (JCI)." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend the DoDEA E.J. King School; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at the Sasebo branch clinic." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at Sasebo?", "a": "It's the homeport of the Navy's forward-deployed amphibious force (Expeditionary Strike Group 7), the ships that carry and land Marines in the western Pacific. It's a smaller, close-knit base on Kyushu." },
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive OHA instead of BAH for off-base rentals, plus an overseas cost-of-living allowance (COLA). On-base housing is government-provided." },
+        { "q": "Where do families live?", "a": "On-base (the main base or the Hario Village family area) or renting in Sasebo on the Japanese economy with OHA." },
+        { "q": "What's the area like?", "a": "Scenic southern Japan, with a harbor city, the Kujukushima islands, and Kyushu's hot springs and culture close by. The community is small and supportive." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Kujukushima Islands", "category": "Outdoors", "blurb": "A scenic archipelago and pearl-sea coast right by Sasebo, with boat tours.", "maps_query": "Kujukushima, Sasebo Japan" },
+        { "name": "Huis Ten Bosch", "category": "Family", "blurb": "A large Dutch-themed park near Sasebo with gardens and seasonal lights.", "maps_query": "Huis Ten Bosch, Sasebo Japan" },
+        { "name": "Nagasaki", "category": "History", "blurb": "The historic port city with the Peace Park, about an hour and a half away.", "maps_query": "Nagasaki, Japan" },
+        { "name": "Fukuoka", "category": "Day trip", "blurb": "Kyushu's largest city, known for ramen and shopping, to the north.", "maps_query": "Fukuoka, Japan" }
+      ]
+    }
+  ]
+}

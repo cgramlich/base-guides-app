@@ -39,6 +39,16 @@
     { "slug": "marine-corps-base-quantico", "name": "Marine Corps Base Quantico", "branch": "U.S. Marine Corps", "state": "VA", "ready": true },
     { "slug": "joint-base-elmendorf-richardson", "name": "Joint Base Elmendorf-Richardson", "branch": "Air Force / Army", "state": "AK", "region": "OCONUS", "ready": true },
     { "slug": "fleet-activities-yokosuka", "name": "Fleet Activities Yokosuka", "branch": "U.S. Navy", "state": "Japan", "region": "OCONUS", "ready": true },
-    { "slug": "aviano-air-base", "name": "Aviano Air Base", "branch": "U.S. Air Force", "state": "Italy", "region": "OCONUS", "ready": true }
+    { "slug": "aviano-air-base", "name": "Aviano Air Base", "branch": "U.S. Air Force", "state": "Italy", "region": "OCONUS", "ready": true },
+    { "slug": "fort-sill", "name": "Fort Sill", "branch": "U.S. Army", "state": "OK", "ready": true },
+    { "slug": "fort-leonard-wood", "name": "Fort Leonard Wood", "branch": "U.S. Army", "state": "MO", "ready": true },
+    { "slug": "fort-jackson", "name": "Fort Jackson", "branch": "U.S. Army", "state": "SC", "ready": true },
+    { "slug": "fort-drum", "name": "Fort Drum", "branch": "U.S. Army", "state": "NY", "ready": true },
+    { "slug": "nellis-afb", "name": "Nellis AFB", "branch": "U.S. Air Force", "state": "NV", "ready": true },
+    { "slug": "travis-afb", "name": "Travis AFB", "branch": "U.S. Air Force", "state": "CA", "ready": true },
+    { "slug": "naval-base-kitsap", "name": "Naval Base Kitsap", "branch": "U.S. Navy", "state": "WA", "ready": true },
+    { "slug": "fleet-activities-sasebo", "name": "Fleet Activities Sasebo", "branch": "U.S. Navy", "state": "Japan", "region": "OCONUS", "ready": true },
+    { "slug": "nas-sigonella", "name": "NAS Sigonella", "branch": "U.S. Navy", "state": "Italy", "region": "OCONUS", "ready": true },
+    { "slug": "osan-air-base", "name": "Osan Air Base", "branch": "U.S. Air Force", "state": "South Korea", "region": "OCONUS", "ready": true }
   ]
 }

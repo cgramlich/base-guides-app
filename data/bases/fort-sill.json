@@ -1,0 +1,201 @@
+{
+  "slug": "fort-sill",
+  "schema_version": "0.1",
+  "name": "Fort Sill",
+  "short_name": "Sill",
+  "branch": "U.S. Army",
+  "states": ["OK"],
+  "tagline": "The Army's Fires Center of Excellence, home of the Field Artillery and Air Defense Artillery, in southwest Oklahoma.",
+  "coords": { "lat": 34.65, "lng": -98.4, "label": "Lawton, OK" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Army post (Lawton OK, ~85 mi SW of OKC). Facts verified from official sources (sill-www.army.mil, reynolds.tricare.mil, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA OK237 (Fort Sill/Lawton) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the housing office). Oklahoma is TRICARE West (moved from East in 2024). Medium-confidence flags: base coords (approx), representative off-base ZIP 73505 (Lawton).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Lawton, OK (southwest Oklahoma)",
+        "Known as": "Fires Center of Excellence",
+        "Home of": "The Field Artillery and Air Defense Artillery branches",
+        "Also": "Basic Combat Training and artillery AIT",
+        "Established": "1869"
+      },
+      "source": { "label": "Fort Sill (official)", "url": "https://sill-www.army.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Sill is the Army's Fires Center of Excellence and the home of the Field Artillery and Air Defense Artillery branches, the premier fires training installation in the Army. It covers nearly 94,000 acres in southwest Oklahoma north of Lawton.",
+        "Along with branch training, Fort Sill runs Basic Combat Training, so much of the population is here to train, instruct, or support."
+      ],
+      "source": { "label": "Fort Sill (official)", "url": "https://sill-www.army.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "sill_decision",
+      "title": "Affordable Lawton: Training-Post Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Sill is among the most affordable assignments in the Army, so BAH goes a long way. Lawton is the close-in, convenient choice, and the post's training mission keeps the community busy.",
+        "intro": [
+          "As a fires and training hub, Fort Sill cycles a lot of students and instructors, with a steady, friendly community around the post.",
+          "Lawton, just south of the gates, is inexpensive and convenient, with most families either living there or on post. Oklahoma City is about 85 miles northeast for a bigger-city day out."
+        ],
+        "recommendations": [
+          { "who": "Closest and most affordable", "advice": "Lawton sits right outside the post with low rents and home prices and a short commute." },
+          { "who": "On-post option", "advice": "On-post housing is available; start with the housing office, as on-base can be a strong value here." },
+          { "who": "Stretch your budget", "advice": "Costs are low, so BAH tends to cover a comfortable home with room to spare." },
+          { "who": "Bigger-city trips", "advice": "Oklahoma City, about 85 miles northeast, offers more shopping, dining, and an airport for a day or weekend." }
+        ]
+      },
+      "source": { "label": "Fort Sill (official)", "url": "https://sill-www.army.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Sill site before you go."
+      ],
+      "source": { "label": "Fort Sill (official)", "url": "https://sill-www.army.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Sill has privatized on-post family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Sill (official)", "url": "https://sill-www.army.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "OK237",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA OK237 (Fort Sill/Lawton)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "73505", "label": "Lawton, OK" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, primarily Lawton Public Schools, with some smaller districts serving outlying areas.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Lawton Public Schools (official)", "url": "https://www.lawtonps.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "OK", "city": "Lawton" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Reynolds Army Health Clinic",
+        "Care": "Outpatient primary and specialty care plus an urgent-care walk-in clinic; inpatient care referred to Lawton-area hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Reynolds Army Health Clinic (official)", "url": "https://reynolds.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Sill Commissary (DeCA)",
+        "Exchange": "Fort Sill Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or you're here for a course.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Lawton market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Lawton is very affordable, so BAH stretches well, though resale can be slower in a smaller market. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Lawton neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Lawton Public Schools early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Reynolds Army Health Clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at Fort Sill?", "a": "It's the Army's Fires Center of Excellence, home of the Field Artillery and Air Defense Artillery branches, and it also runs Basic Combat Training." },
+        { "q": "Where do families live?", "a": "Lawton, right outside the gates, is the close-in and affordable choice; on-post housing is also available." },
+        { "q": "Is it affordable?", "a": "Very. Fort Sill is among the most affordable Army assignments, so BAH stretches a long way." },
+        { "q": "What is the BAH area?", "a": "Fort Sill is MHA OK237 (Fort Sill/Lawton). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Wichita Mountains Wildlife Refuge", "category": "Outdoors", "blurb": "Bison, longhorns, and granite peaks just northwest of Fort Sill.", "maps_query": "Wichita Mountains Wildlife Refuge, OK" },
+        { "name": "Fort Sill National Historic Landmark & Museum", "category": "History", "blurb": "Historic Old Post buildings and the Army's field artillery heritage on base.", "maps_query": "Fort Sill National Historic Landmark and Museum, OK" },
+        { "name": "Museum of the Great Plains", "category": "Museum", "blurb": "A regional history museum in Lawton.", "maps_query": "Museum of the Great Plains, Lawton OK" },
+        { "name": "Medicine Park", "category": "Outdoors", "blurb": "A cobblestone resort town with a creek and lake at the foot of the Wichitas.", "maps_query": "Medicine Park, OK" }
+      ]
+    }
+  ]
+}

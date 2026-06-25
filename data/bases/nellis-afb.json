@@ -1,0 +1,201 @@
+{
+  "slug": "nellis-afb",
+  "schema_version": "0.1",
+  "name": "Nellis AFB",
+  "short_name": "Nellis",
+  "branch": "U.S. Air Force",
+  "states": ["NV"],
+  "tagline": "The Air Force's advanced combat-training hub, home of Red Flag and the Weapons School, in Las Vegas.",
+  "coords": { "lat": 36.24, "lng": -115.03, "label": "Las Vegas, NV" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force base (Las Vegas, NV). Facts verified from official sources (nellis.af.mil, Mike O'Callaghan MMC, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA NV212 (Nellis AFB/Las Vegas) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the housing office). Nevada is TRICARE West. Medium-confidence flags: base coords (approx), representative off-base ZIP 89115 (Las Vegas).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Las Vegas, NV",
+        "Host wing": "99th Air Base Wing (U.S. Air Force Warfare Center)",
+        "Known for": "Red Flag exercises and the U.S. Air Force Weapons School",
+        "Range": "The Nevada Test and Training Range (2.9 million acres)",
+        "Setting": "Mojave Desert; no state income tax"
+      },
+      "source": { "label": "Nellis Air Force Base (official)", "url": "https://www.nellis.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Nellis is the home of the Air Force's advanced aerial combat training, hosting the U.S. Air Force Warfare Center, the Weapons School, and the famous Red Flag exercises over the vast Nevada Test and Training Range.",
+        "The host 99th Air Base Wing runs the installation, which is one of the busiest and most storied flying bases in the Air Force, on the northeast edge of Las Vegas."
+      ],
+      "source": { "label": "Nellis Air Force Base (official)", "url": "https://www.nellis.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "vegas_decision",
+      "title": "Living in Las Vegas",
+      "type": "killer",
+      "data": {
+        "subtitle": "Nellis comes with a full-size, fast-growing city and no state income tax. The main choice is which part of the Las Vegas valley fits your commute, schools, and budget.",
+        "intro": [
+          "Las Vegas offers big-city amenities, an international airport, and Nevada's lack of a state income tax, which stretches take-home pay. Summers are very hot, but housing has historically been more attainable than coastal California.",
+          "Nellis sits on the northeast side of the valley, so commute is the main trade-off. North Las Vegas is closest; Henderson and Summerlin are popular for schools and amenities at a longer drive."
+        ],
+        "recommendations": [
+          { "who": "Closest to base", "advice": "North Las Vegas and the northeast valley sit nearest Nellis for the shortest commute." },
+          { "who": "Schools and amenities", "advice": "Henderson and Summerlin are popular master-planned areas for families, at a longer commute across the valley." },
+          { "who": "No state income tax", "advice": "Nevada has no state income tax, which effectively stretches your pay; factor that into the rent-versus-buy math." },
+          { "who": "Plan for the heat", "advice": "Summer temperatures are extreme; budget for cooling and look for shade and a pool if that matters to you." }
+        ]
+      },
+      "source": { "label": "Nellis Air Force Base (official)", "url": "https://www.nellis.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Nellis AFB site before you go."
+      ],
+      "source": { "label": "Nellis Air Force Base (official)", "url": "https://www.nellis.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Nellis has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the base housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Nellis Air Force Base (official)", "url": "https://www.nellis.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NV212",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NV212 (Nellis AFB/Las Vegas)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "89115", "label": "Las Vegas, NV" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, all within the Clark County School District, one of the largest districts in the country, which covers the entire Las Vegas valley.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering, and ask about magnet and open-enrollment options."
+      ],
+      "source": { "label": "Clark County School District (official)", "url": "https://www.ccsd.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NV", "city": "Las Vegas" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Mike O'Callaghan Military Medical Center (a DoD/VA joint facility at Nellis)",
+        "Care": "Inpatient, emergency, and specialty care",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Mike O'Callaghan Military Medical Center (official)", "url": "https://mikeocallaghan.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Nellis AFB Commissary (DeCA)",
+        "Exchange": "Nellis AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the valley before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing in a market that can swing.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "You're comfortable with the Las Vegas market, which has risen in recent years.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Nevada's lack of a state income tax helps your budget, and Las Vegas housing is generally more attainable than coastal California. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the Las Vegas valley before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Nevada vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Register with the Clark County School District early and bring records and immunizations; ask about magnet and open enrollment." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Mike O'Callaghan Military Medical Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's the mission at Nellis?", "a": "It's the Air Force's advanced combat-training hub, home of the Warfare Center, the Weapons School, and Red Flag exercises over the Nevada Test and Training Range." },
+        { "q": "Where do families live?", "a": "North Las Vegas and the northeast valley are closest; Henderson and Summerlin are popular for schools and amenities. The whole valley is the Clark County School District." },
+        { "q": "Any financial perks?", "a": "Nevada has no state income tax, which effectively stretches your pay, and Las Vegas housing is generally more attainable than coastal California." },
+        { "q": "What is the BAH area?", "a": "Nellis is MHA NV212 (Nellis AFB/Las Vegas). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Red Rock Canyon", "category": "Outdoors", "blurb": "A stunning desert conservation area with a scenic loop and hiking west of the city.", "maps_query": "Red Rock Canyon National Conservation Area, NV" },
+        { "name": "The Las Vegas Strip", "category": "Entertainment", "blurb": "World-famous resorts, shows, and dining a short drive from base.", "maps_query": "Las Vegas Strip, NV" },
+        { "name": "Lake Mead & Hoover Dam", "category": "Outdoors", "blurb": "Boating and recreation on the reservoir, plus the iconic dam, southeast of town.", "maps_query": "Lake Mead National Recreation Area, NV" },
+        { "name": "Valley of Fire State Park", "category": "Outdoors", "blurb": "Brilliant red sandstone formations about an hour northeast.", "maps_query": "Valley of Fire State Park, NV" }
+      ]
+    }
+  ]
+}

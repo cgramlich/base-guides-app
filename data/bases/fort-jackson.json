@@ -1,0 +1,201 @@
+{
+  "slug": "fort-jackson",
+  "schema_version": "0.1",
+  "name": "Fort Jackson",
+  "short_name": "Jackson",
+  "branch": "U.S. Army",
+  "states": ["SC"],
+  "tagline": "The Army's main Basic Combat Training center, where a large share of new soldiers earn the title, in Columbia.",
+  "coords": { "lat": 34.05, "lng": -80.92, "label": "Columbia, SC" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Army basic-training post (Columbia SC). Facts verified from official sources (home.army.mil/jackson, moncrief.tricare.mil, Balfour Beatty, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA SC260 (Columbia/Fort Jackson) via the bah_rates single source of truth. Housing operated by Balfour Beatty. South Carolina is TRICARE East. Medium-confidence flags: base coords (approx), representative off-base ZIP 29209 (Columbia).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Columbia, SC",
+        "Known as": "The Army's main Basic Combat Training center",
+        "Trains": "Roughly half of all soldiers, and most women, entering the Army",
+        "Also hosts": "The Army Drill Sergeant Academy, Soldier Support Institute, and Chaplain Center",
+        "Setting": "Midlands of South Carolina"
+      },
+      "source": { "label": "Fort Jackson (official)", "url": "https://home.army.mil/jackson/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Jackson is the Army's largest and most active Initial Entry Training center, producing a large share of the Army's new soldiers through Basic Combat Training, including most of the women entering the Army.",
+        "It also hosts the Drill Sergeant Academy, the Soldier Support Institute, and the Army Chaplain Center and School, on the edge of Columbia in the South Carolina Midlands."
+      ],
+      "source": { "label": "Fort Jackson (official)", "url": "https://home.army.mil/jackson/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "jackson_decision",
+      "title": "A Training Post in the Capital City",
+      "type": "killer",
+      "data": {
+        "subtitle": "For many families the reason to visit Fort Jackson is a basic-training graduation. For those stationed here, it's an affordable assignment right in Columbia, the state capital and a college town.",
+        "intro": [
+          "Fort Jackson sits inside Columbia, so unlike many training posts it comes with a full-size city: dining, the University of South Carolina, and an airport, all close by. Cadre and support staff make up much of the permanent community.",
+          "If you're traveling for a graduation, plan base access and lodging early. If you're PCSing here, you'll weigh Columbia's neighborhoods and the surrounding suburbs against the on-post option."
+        ],
+        "recommendations": [
+          { "who": "Coming for graduation", "advice": "Arrange a visitor pass and a REAL ID in advance, and book lodging early; check the official Fort Jackson graduation information before you travel." },
+          { "who": "Closest neighborhoods", "advice": "Northeast Columbia and the areas near the post offer short commutes; Forest Acres is close-in and established." },
+          { "who": "Suburbs and schools", "advice": "Lexington and the Northeast (Richland Two) are popular with families for schools, at a slightly longer drive." },
+          { "who": "On-post option", "advice": "On-post housing (Balfour Beatty) spans several neighborhoods and is worth considering for proximity." }
+        ]
+      },
+      "source": { "label": "Fort Jackson (official)", "url": "https://home.army.mil/jackson/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center. Graduation weeks bring extra traffic and access procedures.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Jackson site before you go."
+      ],
+      "source": { "label": "Fort Jackson (official)", "url": "https://home.army.mil/jackson/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is privatized, operated by Balfour Beatty Communities, across neighborhoods including Pierce Terrace (enlisted) and Mabry Manor and Howie Village (officer).",
+        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Fort Jackson (official)", "url": "https://home.army.mil/jackson/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "SC260",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA SC260 (Columbia/Fort Jackson)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "29209", "label": "Columbia, SC" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Richland County School District One serves the close-in and on-post area; Richland Two (Northeast) and Lexington-area districts are popular with families in the suburbs.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Richland County School District One (official)", "url": "https://www.richlandone.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "SC", "city": "Columbia" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Moncrief Army Health Clinic",
+        "Care": "Primary, dental, and specialty outpatient care; inpatient care via Columbia-area network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Moncrief Army Health Clinic (official)", "url": "https://moncrief.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Jackson Commissary (DeCA)",
+        "Exchange": "Fort Jackson Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn Columbia before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The Columbia market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Columbia is a reasonably affordable mid-size market. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Columbia neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and South Carolina vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Richland One/Two or Lexington) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Moncrief Army Health Clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Why is Fort Jackson so well known?", "a": "It's the Army's main Basic Combat Training center, training about half of all new soldiers and most of the women entering the Army, so many families visit for a graduation." },
+        { "q": "I'm coming for a graduation, what should I do?", "a": "Arrange a visitor pass and bring a REAL ID, book lodging early, and check the official Fort Jackson graduation information for the current schedule and base-access rules." },
+        { "q": "Where do families live?", "a": "Northeast Columbia and Forest Acres are close-in; Lexington and Richland Two suburbs are popular for schools. On-post housing (Balfour Beatty) is also available." },
+        { "q": "What is the BAH area?", "a": "Fort Jackson is MHA SC260 (Columbia/Fort Jackson). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Riverbanks Zoo & Garden", "category": "Family", "blurb": "A top-rated zoo and botanical garden in Columbia.", "maps_query": "Riverbanks Zoo and Garden, Columbia SC" },
+        { "name": "Congaree National Park", "category": "Outdoors", "blurb": "Old-growth bottomland forest and boardwalk trails southeast of the city.", "maps_query": "Congaree National Park, SC" },
+        { "name": "South Carolina State House & Main Street", "category": "History", "blurb": "The capitol grounds and downtown Columbia's dining and museums.", "maps_query": "South Carolina State House, Columbia SC" },
+        { "name": "Lake Murray", "category": "Outdoors", "blurb": "A large recreational lake just west of Columbia for boating and beaches.", "maps_query": "Lake Murray, SC" }
+      ]
+    }
+  ]
+}

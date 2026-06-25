@@ -1,0 +1,201 @@
+{
+  "slug": "fort-drum",
+  "schema_version": "0.1",
+  "name": "Fort Drum",
+  "short_name": "Drum",
+  "branch": "U.S. Army",
+  "states": ["NY"],
+  "tagline": "Home of the 10th Mountain Division, a deploy-ready light infantry post in New York's snowy North Country.",
+  "coords": { "lat": 44.05, "lng": -75.78, "label": "Watertown, NY" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Army post (North Country NY, near Watertown / Jefferson County). Famous for heavy lake-effect snow. Facts verified from official sources (home.army.mil/drum, guthrie clinic, fortdrummch.com, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA NY225 (Fort Drum/Watertown) via the bah_rates single source of truth. Housing operated by Mountain Community Homes (Lendlease). New York is TRICARE East. Medium-confidence flags: base coords (approx), representative off-base ZIP 13601 (Watertown).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Near Watertown, NY (North Country, Jefferson County)",
+        "Signature unit": "10th Mountain Division (Light Infantry)",
+        "Tempo": "One of the most-deployed divisions in the Army",
+        "Climate": "Heavy lake-effect snow and cold winters",
+        "Setting": "Rural northern New York, near the Thousand Islands and Adirondacks"
+      },
+      "source": { "label": "Fort Drum (official)", "url": "https://home.army.mil/drum/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Drum is home to the 10th Mountain Division, a rapidly deployable light-infantry division and one of the most-deployed in the modern Army, along with about 40 tenant organizations.",
+        "It sits in New York's rural North Country near Watertown, between Lake Ontario, the Thousand Islands, and the Adirondacks, a setting defined by serious winters and abundant outdoor recreation."
+      ],
+      "source": { "label": "Fort Drum (official)", "url": "https://home.army.mil/drum/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "drum_decision",
+      "title": "The North Country: Deployments and Real Winters",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Drum pairs a high deployment tempo with famous lake-effect snow. It's affordable and tight-knit, and where you live mostly comes down to commute and how you feel about a long, snowy winter.",
+        "intro": [
+          "The 10th Mountain deploys often, so field time and rotations are part of the rhythm, and a strong support network matters. The community is close and the cost of living is low.",
+          "Watertown is the main hub just outside the gates, with smaller towns like Carthage and Evans Mills nearby. Winters are long with heavy snow, so families plan for cold-weather living, and the trade is easy access to skiing, lakes, and the outdoors."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gates", "advice": "Watertown and Evans Mills sit nearest the post with the shortest commutes and the most services." },
+          { "who": "Quieter and family-friendly", "advice": "Carthage, Black River, and Calcium are popular small communities near the post (Carthage and Indian River school districts)." },
+          { "who": "On-post option", "advice": "On-post housing (Mountain Community Homes) is built for the climate; waitlists can run a few months, so apply early." },
+          { "who": "Plan for winter", "advice": "Lake-effect snow is real here; budget for cold-weather gear and good tires, and lean into the skiing and outdoor scene." }
+        ]
+      },
+      "source": { "label": "Fort Drum (official)", "url": "https://home.army.mil/drum/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Drum site before you go."
+      ],
+      "source": { "label": "Fort Drum (official)", "url": "https://home.army.mil/drum/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is privatized, operated by Mountain Community Homes, across communities including Monument Ridge, Adirondack Creek, Crescent Woods, and Rhicard Hills, with homes built for the climate.",
+        "Waitlists can run several months, so start with the Housing Services Office and the partner early for current options."
+      ],
+      "source": { "label": "Fort Drum Mountain Community Homes (partner)", "url": "https://www.fortdrummch.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NY225",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NY225 (Fort Drum/Watertown)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "13601", "label": "Watertown, NY" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. The Watertown City, Carthage Central, and Indian River school districts serve most military families, depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Indian River Central School District (official)", "url": "https://www.indianriverschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NY", "city": "Watertown" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Guthrie Army Health Clinic",
+        "Care": "Outpatient primary and specialty care on post; emergency, labor & delivery, and inpatient care at Samaritan Medical Center in Watertown",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Guthrie Army Health Clinic (official)", "url": "https://guthrie.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Drum Commissary (DeCA)",
+        "Exchange": "Fort Drum Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area and a North Country winter before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The Watertown area is affordable, so BAH stretches well, but resale can be slower in a smaller, military-dependent market. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability (waitlists can be long) and get the housing office's read on Watertown-area towns before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and New York vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Watertown, Carthage, or Indian River) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Guthrie Army Health Clinic or Samaritan Medical Center." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at Fort Drum?", "a": "The 10th Mountain Division (Light Infantry), one of the most-deployed divisions in the Army, plus about 40 tenant organizations." },
+        { "q": "How bad are the winters?", "a": "Real. The North Country gets heavy lake-effect snow and long cold winters, so plan for cold-weather gear and good tires. The upside is excellent skiing and outdoor recreation." },
+        { "q": "Where do families live?", "a": "Watertown and Evans Mills are closest; Carthage, Black River, and Calcium are popular small towns. On-post housing (Mountain Community Homes) can have multi-month waitlists." },
+        { "q": "What is the BAH area?", "a": "Fort Drum is MHA NY225 (Fort Drum/Watertown). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Thousand Islands", "category": "Outdoors", "blurb": "Islands, boat tours, and castles along the St. Lawrence River, north of Watertown.", "maps_query": "Thousand Islands, Alexandria Bay NY" },
+        { "name": "Adirondack Park", "category": "Outdoors", "blurb": "Vast mountains, lakes, and trails to the east, with great hiking and skiing.", "maps_query": "Adirondack Park, NY" },
+        { "name": "Sackets Harbor", "category": "History", "blurb": "A historic War of 1812 village on Lake Ontario near Watertown.", "maps_query": "Sackets Harbor, NY" },
+        { "name": "Thompson Park", "category": "Family", "blurb": "A Watertown park with a small zoo and city views.", "maps_query": "Thompson Park, Watertown NY" }
+      ]
+    }
+  ]
+}

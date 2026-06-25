@@ -1,0 +1,201 @@
+{
+  "slug": "travis-afb",
+  "schema_version": "0.1",
+  "name": "Travis AFB",
+  "short_name": "Travis",
+  "branch": "U.S. Air Force",
+  "states": ["CA"],
+  "tagline": "The 'Gateway to the Pacific': the largest air-mobility wing in the Air Force, between San Francisco and Sacramento.",
+  "coords": { "lat": 38.27, "lng": -121.93, "label": "Fairfield, CA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force airlift base (Fairfield, Solano County, NorCal). Facts verified from official sources (travis.af.mil, David Grant MC, Balfour Beatty, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA CA036 (Vallejo/Travis AFB) via the bah_rates single source of truth. Housing operated by Balfour Beatty. California is TRICARE West. Medium-confidence flags: base coords (approx), representative off-base ZIP 94533 (Fairfield).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Fairfield, CA (Solano County)",
+        "Host wing": "60th Air Mobility Wing (largest in Air Mobility Command)",
+        "Aircraft": "C-5 Galaxy, KC-46 Pegasus, and C-17 Globemaster III",
+        "Nickname": "Gateway to the Pacific",
+        "Setting": "Between San Francisco and Sacramento"
+      },
+      "source": { "label": "Travis Air Force Base (official)", "url": "https://www.travis.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Travis is the 'Gateway to the Pacific,' home to the 60th Air Mobility Wing, the largest wing in Air Mobility Command, flying a mix of C-5, KC-46, and C-17 aircraft for global airlift and air refueling.",
+        "It sits in Fairfield in Solano County, in the corridor between San Francisco and Sacramento, and is the largest employer in the county."
+      ],
+      "source": { "label": "Travis Air Force Base (official)", "url": "https://www.travis.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "norcal_decision",
+      "title": "Northern California on a Budget",
+      "type": "killer",
+      "data": {
+        "subtitle": "Travis offers Northern California living at a lower cost than the Bay Area core. Where you live trades commute against price across Solano County, with the Bay Area and wine country close by.",
+        "intro": [
+          "The base sits in a relatively affordable pocket of Northern California: Solano County prices are well below San Francisco's, while still putting the Bay Area, Sacramento, Napa, and the coast within reach.",
+          "Most families weigh commute and schools among the nearby towns. Fairfield and Suisun City are closest; Vacaville is a popular family choice a bit north; some commute from farther out for more space."
+        ],
+        "recommendations": [
+          { "who": "Closest to base", "advice": "Fairfield and Suisun City sit right by Travis with the shortest commutes." },
+          { "who": "Schools and newer homes", "advice": "Vacaville, just north, is popular with families for its schools and neighborhoods." },
+          { "who": "On-base option", "advice": "On-base housing (Balfour Beatty) spans several neighborhoods and can be a strong value given California rents." },
+          { "who": "Explore the region", "advice": "The Bay Area, Sacramento, Napa Valley, and Lake Tahoe are all within day-trip range." }
+        ]
+      },
+      "source": { "label": "Travis Air Force Base (official)", "url": "https://www.travis.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Travis AFB site before you go."
+      ],
+      "source": { "label": "Travis Air Force Base (official)", "url": "https://www.travis.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, operated by Balfour Beatty Communities, across five neighborhoods.",
+        "Given California rents, on-base can be a strong value. Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Travis Air Force Base (official)", "url": "https://www.travis.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA036",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA036 (Vallejo/Travis AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "94533", "label": "Fairfield, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Travis Unified serves on-base and nearby families; Fairfield-Suisun Unified and Vacaville Unified cover the surrounding towns.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Travis Unified School District (official)", "url": "https://www.travisusd.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Fairfield" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "David Grant USAF Medical Center",
+        "Care": "The largest Air Force medical facility on the West Coast, with inpatient, emergency, surgery, and specialty care",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "David Grant USAF Medical Center (official)", "url": "https://travis.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Travis AFB Commissary (DeCA)",
+        "Exchange": "Travis AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In Northern California it leans toward renting for shorter tours, though Solano County is more attainable than the Bay Area core for longer stays."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "California home prices are out of reach for your budget right now.",
+          "On-base or off-base renting keeps your housing costs predictable.",
+          "You'd rather not gamble on resale timing in a pricey market."
+        ],
+        "buy": [
+          "You expect to be here several years and can carry California prices.",
+          "You want to use your VA loan and start building equity.",
+          "Solano County (Fairfield, Vacaville) fits your budget better than the Bay.",
+          "You've found a home and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Solano County is cheaper than San Francisco but still California-priced; on-base can be a strong value. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Solano County before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Travis, Fairfield-Suisun, or Vacaville) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at David Grant USAF Medical Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's the mission at Travis?", "a": "It's the largest air-mobility wing in the Air Force (the 60th AMW), flying C-5, KC-46, and C-17 aircraft for global airlift and refueling, the 'Gateway to the Pacific.'" },
+        { "q": "Where do families live?", "a": "Fairfield and Suisun City are closest; Vacaville is popular for schools. On-base housing (Balfour Beatty) can be a strong value given California rents." },
+        { "q": "Is it as expensive as the Bay Area?", "a": "No. Solano County is well below San Francisco prices while still putting the Bay Area, Sacramento, and Napa within reach, though it's still California-priced." },
+        { "q": "What is the BAH area?", "a": "Travis is MHA CA036 (Vallejo/Travis AFB). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Napa Valley", "category": "Food & drink", "blurb": "World-famous wine country, just to the west.", "maps_query": "Napa Valley, CA" },
+        { "name": "San Francisco", "category": "Day trip", "blurb": "The city by the bay, about an hour southwest.", "maps_query": "San Francisco, CA" },
+        { "name": "Jelly Belly Factory", "category": "Family", "blurb": "A popular candy-factory tour right in Fairfield.", "maps_query": "Jelly Belly Visitor Center, Fairfield CA" },
+        { "name": "Lake Tahoe", "category": "Outdoors", "blurb": "Alpine lake and ski country, a couple of hours northeast.", "maps_query": "Lake Tahoe, CA" }
+      ]
+    }
+  ]
+}

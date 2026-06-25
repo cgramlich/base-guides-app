@@ -1,0 +1,157 @@
+{
+  "slug": "nas-sigonella",
+  "schema_version": "0.1",
+  "name": "NAS Sigonella",
+  "short_name": "Sigonella",
+  "branch": "U.S. Navy",
+  "states": ["Italy"],
+  "region": "OCONUS",
+  "tagline": "The 'Hub of the Med': a strategic Navy air station in Sicily supporting operations across three continents.",
+  "coords": { "lat": 37.4, "lng": 14.92, "label": "Sigonella, Sicily, Italy" },
+  "tz": "Europe/Rome",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Sicily, Italy). US-only feeds omitted (overseas uses OHA, not BAH; no RentCast or SchoolDigger). Weather via Open-Meteo fallback. Facts verified from official sources (cnreurafcent.cnic.navy.mil, sigonella.tricare.mil, dodea.edu/europe, Wikipedia for corroborated headline facts). Two sites: NAS I (support/housing/hospital) and NAS II (airfield). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy (on an Italian Air Force base)",
+        "Location": "Sicily, Italy (near Catania)",
+        "Nickname": "The Hub of the Med",
+        "Role": "Supports U.S., NATO, and allied operations across Europe, Africa, and the Middle East",
+        "Layout": "NAS I (support, housing, hospital) and NAS II (airfield)",
+        "Region": "OCONUS (overseas tour; OHA, not BAH)"
+      },
+      "source": { "label": "NAS Sigonella (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NAS-Sigonella/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Air Station Sigonella, on the Italian Air Force base in Sicily, is known as the 'Hub of the Med' for its strategic location supporting U.S. Navy, NATO, and allied operations across Europe, Africa, and the Middle East.",
+        "It hosts maritime patrol and reconnaissance aircraft and serves as landlord to more than 40 other commands, split between NAS I (support, housing, and the hospital) and NAS II (the airfield)."
+      ],
+      "source": { "label": "NAS Sigonella (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NAS-Sigonella/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "sicily_decision",
+      "title": "Living in Sicily: On Base or the Italian Economy",
+      "type": "killer",
+      "data": {
+        "subtitle": "Sigonella is a beloved Mediterranean tour. Command sponsorship and the on-base versus off-base choice shape it, with OHA covering off-base rent and Sicily's history and coast at your doorstep.",
+        "intro": [
+          "Command sponsorship is what brings your family at government expense and unlocks housing, DoDEA schools, and benefits, so confirm it early. The base supports a large community despite its remote-feeling Sicilian setting.",
+          "Housing splits between on-base options (including the Marinai housing community) and renting in the towns around the base. On-base is convenient and removes the language barrier from daily life; off-base immerses you in Sicilian life, with OHA covering rent up to a ceiling."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Command sponsorship brings your family and unlocks housing, DoDEA schools, and benefits; sort it through your command early." },
+          { "who": "On-base / Marinai", "advice": "On-base and the Marinai housing community are convenient and in demand; get on the list early." },
+          { "who": "Off-base immersion", "advice": "Renting in the surrounding towns offers a fuller Sicilian experience; OHA offsets rent and utilities up to a ceiling, and the Housing Office helps with Italian leases." },
+          { "who": "Explore Sicily and beyond", "advice": "Mount Etna, beaches, Greek and Roman ruins, and cheap flights across Europe make this a travel-rich tour." }
+        ]
+      },
+      "source": { "label": "NAS Sigonella (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NAS-Sigonella/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the installation, and overseas access rules differ from stateside bases. You will need status documents under the NATO SOFA.",
+        "Confirm the current visitor and access requirements on the official NAS Sigonella site before you arrive."
+      ],
+      "source": { "label": "NAS Sigonella (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NAS-Sigonella/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing & OHA",
+      "type": "prose",
+      "data": [
+        "Families choose between on-base housing (including the Marinai community) and renting in the Sicilian towns around the base. On-base housing is convenient and in demand.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling, with allowances for utilities and move-in costs. The Housing Office assigns on-base housing and helps with the Italian rental process."
+      ],
+      "source": { "label": "NAS Sigonella (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NAS-Sigonella/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Europe operates elementary, middle, and high school grades serving the Sigonella community.",
+        "Start DoDEA registration early and confirm the specific schools, boundaries, and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "U.S. Naval Hospital Sigonella",
+        "Care": "A community hospital on NAS I with outpatient and limited inpatient care; some specialty care referred to Italian host-nation facilities or Landstuhl",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "U.S. Naval Hospital Sigonella (official)", "url": "https://sigonella.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Sigonella Commissary (DeCA) on NAS I",
+        "Exchange": "Navy Exchange (NEX) Sigonella"
+      },
+      "source": { "label": "NAS Sigonella (official)", "url": "https://cnreurafcent.cnic.navy.mil/Installations/NAS-Sigonella/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your command." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the NATO SOFA documents that let you live in Italy. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits, and there are steps to register a vehicle in Italy. Confirm what you can bring." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA Europe schools; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at U.S. Naval Hospital Sigonella." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Why the 'Hub of the Med'?", "a": "Sigonella's location in Sicily makes it a strategic hub supporting U.S., NATO, and allied operations across Europe, Africa, and the Middle East, with maritime patrol aircraft and 40-plus tenant commands." },
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive OHA instead of BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling, plus utility and move-in allowances." },
+        { "q": "On base or off base?", "a": "Both are common. On-base (including the Marinai community) is convenient; renting in the Sicilian towns offers a fuller local experience with OHA covering the cost." },
+        { "q": "What's the tour like?", "a": "An immersive Mediterranean tour with Mount Etna, beaches, ancient ruins, and easy travel across Europe. The trade is adjusting to life and the rental system in Sicily." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Mount Etna", "category": "Outdoors", "blurb": "Europe's most active volcano, with hiking and tours, near Catania.", "maps_query": "Mount Etna, Sicily Italy" },
+        { "name": "Catania", "category": "In town", "blurb": "Sicily's lively baroque port city, close to the base.", "maps_query": "Catania, Sicily Italy" },
+        { "name": "Taormina", "category": "Day trip", "blurb": "A clifftop resort town with a Greek theater and sea views.", "maps_query": "Taormina, Sicily Italy" },
+        { "name": "Syracuse (Siracusa)", "category": "History", "blurb": "Ancient Greek ruins and the island of Ortigia, south of the base.", "maps_query": "Syracuse, Sicily Italy" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "slug": "osan-air-base",
+  "schema_version": "0.1",
+  "name": "Osan Air Base",
+  "short_name": "Osan",
+  "branch": "U.S. Air Force",
+  "states": ["South Korea"],
+  "region": "OCONUS",
+  "tagline": "The most forward-deployed permanently based wing in the Air Force: 7th Air Force and the 51st Fighter Wing, near Pyeongtaek.",
+  "coords": { "lat": 37.09, "lng": 127.03, "label": "Pyeongtaek (Songtan), South Korea" },
+  "tz": "Asia/Seoul",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (South Korea). US-only feeds omitted (overseas uses OHA, not BAH; no RentCast or SchoolDigger). Weather via Open-Meteo fallback. Facts verified from official sources (osan.af.mil, dodea.edu/pacific, TRICARE Overseas, Wikipedia for corroborated headline facts). Command sponsorship is central to a Korea tour. Near Camp Humphreys (Army). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Songtan, Pyeongtaek, South Korea (40 mi south of Seoul)",
+        "Command": "Headquarters Seventh Air Force",
+        "Host wing": "51st Fighter Wing (A-10 and F-16)",
+        "Distinction": "The most forward-deployed permanently based wing in the Air Force",
+        "Region": "OCONUS (overseas tour; OHA, not BAH)"
+      },
+      "source": { "label": "Osan Air Base (official)", "url": "https://www.osan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Osan Air Base is home to Headquarters Seventh Air Force and the 51st Fighter Wing, which flies the A-10 Thunderbolt II and F-16 Fighting Falcon. It is the most forward-deployed permanently based wing in the Air Force.",
+        "It sits in Songtan, part of Pyeongtaek, about 40 miles south of Seoul and not far from the Army's Camp Humphreys, anchoring U.S. airpower on the Korean Peninsula."
+      ],
+      "source": { "label": "Osan Air Base (official)", "url": "https://www.osan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "korea_decision",
+      "title": "Command Sponsorship and a Korea Tour",
+      "type": "killer",
+      "data": {
+        "subtitle": "As at any Korea base, the first question is whether your tour is accompanied (command-sponsored). It decides whether your family comes and whether you get housing, schools, and full benefits, and OHA covers off-base rent.",
+        "intro": [
+          "Korea assignments come in accompanied and unaccompanied versions. Command sponsorship brings your family at government expense and unlocks on-base housing, DoDEA schools, and the commissary. Confirm it early through your gaining unit before you make plans.",
+          "If you're command-sponsored, you'll choose between on-base housing and renting off base in Songtan and the wider Pyeongtaek area, where OHA covers rent up to a ceiling. The area is well used to the American community."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Nothing else matters until command sponsorship is approved; work it through your unit early." },
+          { "who": "On-base living", "advice": "On-base housing keeps you close to work, schools, and amenities; demand is high, so get on the list early." },
+          { "who": "Off-base in Songtan", "advice": "Songtan and the Pyeongtaek area offer apartments on the local economy; OHA offsets rent and utilities up to a ceiling." },
+          { "who": "Make the most of it", "advice": "Seoul, fast trains, and budget flights make Korea a launchpad for travel across Asia, and Camp Humphreys' amenities are close by." }
+        ]
+      },
+      "source": { "label": "Osan Air Base (official)", "url": "https://www.osan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the installation, and overseas access rules differ from stateside bases. You will need status documents under the U.S.-Korea SOFA.",
+        "Confirm the current visitor and access requirements on the official Osan AB site before you arrive."
+      ],
+      "source": { "label": "Osan Air Base (official)", "url": "https://www.osan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing & OHA",
+      "type": "prose",
+      "data": [
+        "Command-sponsored families choose between on-base government housing and renting off base in Songtan and the surrounding Pyeongtaek area. On-base housing is convenient and in demand.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for those living off base, individualized by rank, dependents, and actual rent up to a ceiling. The Housing Office assigns on-base housing and helps with off-base rentals."
+      ],
+      "source": { "label": "Osan Air Base (official)", "url": "https://www.osan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Pacific operates schools serving the Osan community (Osan American Elementary and Middle/High School).",
+        "Start DoDEA registration early and confirm boundaries and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "51st Medical Group (Osan Clinic)",
+        "Care": "Outpatient primary and specialty care; inpatient care referred to Brian D. Allgood Army Community Hospital at Camp Humphreys or host-nation facilities",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "Osan Air Base (official)", "url": "https://www.osan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Osan Commissary (DeCA)",
+        "Exchange": "Osan Exchange (AAFES / BX)"
+      },
+      "source": { "label": "Osan Air Base (official)", "url": "https://www.osan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your gaining unit before you plan anything." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the U.S.-Korea SOFA documents that let you live in-country. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits, and there are rules on shipping a vehicle. Confirm what you can bring and the timelines." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA Pacific schools; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at the 51st Medical Group clinic." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at Osan?", "a": "Headquarters Seventh Air Force and the 51st Fighter Wing (A-10s and F-16s), the most forward-deployed permanently based wing in the Air Force." },
+        { "q": "Why does command sponsorship matter?", "a": "It's official approval for your family to accompany you at government expense. It unlocks on-base housing, DoDEA schools, the commissary, and benefits. Without it, a Korea tour is typically unaccompanied. Confirm it early." },
+        { "q": "Where do families live?", "a": "On-base housing is convenient and in demand; many also rent off base in Songtan and the Pyeongtaek area with OHA. The Army's Camp Humphreys and its amenities are close by." },
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive OHA (for off-base rentals) instead of BAH, individualized by rank, dependents, and actual rent up to a ceiling. On-base housing is government-provided." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Seoul (Gyeongbokgung Palace)", "category": "Day trip", "blurb": "Korea's capital, with palaces, food, and shopping, about an hour north.", "maps_query": "Gyeongbokgung Palace, Seoul South Korea" },
+        { "name": "Songtan Entertainment District", "category": "Food & shopping", "blurb": "The lively district just outside Osan's main gate.", "maps_query": "Songtan, Pyeongtaek South Korea" },
+        { "name": "Everland", "category": "Family", "blurb": "Korea's largest theme park, in nearby Yongin.", "maps_query": "Everland, Yongin South Korea" },
+        { "name": "Korean Folk Village", "category": "History", "blurb": "A living-history village of traditional Korean life, in Yongin.", "maps_query": "Korean Folk Village, Yongin South Korea" }
+      ]
+    }
+  ]
+}
