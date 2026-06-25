@@ -1,0 +1,203 @@
+{
+  "slug": "joint-base-charleston",
+  "schema_version": "0.1",
+  "name": "Joint Base Charleston",
+  "short_name": "Charleston",
+  "branch": "U.S. Air Force / U.S. Navy",
+  "states": ["SC"],
+  "tagline": "C-17 airlift at Charleston AFB and Navy nuclear-power training at the Weapons Station, in the heart of the Lowcountry.",
+  "coords": { "lat": 32.8987, "lng": -80.0405, "label": "North Charleston, SC (Charleston AFB)" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-24",
+  "_note": "Joint base, two installations ~10 miles apart: Charleston AFB (North Charleston) + Naval Weapons Station Charleston (Goose Creek). Facts verified from official sources (jbcharleston.jb.mil, charleston.tricare.mil, housing.af.mil, jbcharlestonfamilyhousing.com, DeCA/AAFES). BAH MHA SC259 (Charleston) via the bah_rates single source of truth. Medium-confidence flags: base coords (Air Base side, approx), representative off-base ZIP 29483 (Summerville), two housing partners (Hunt on the Air Base, Balfour Beatty at the Weapons Station).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "Air Force + Navy (joint base)",
+        "Location": "North Charleston & Goose Creek, SC",
+        "Host wing": "628th Air Base Wing",
+        "Charleston AFB": "437th & 315th Airlift Wings (C-17 Globemaster III)",
+        "Weapons Station": "Naval Nuclear Power Training Command, NIWC Atlantic",
+        "Layout": "Two installations about 10 miles apart"
+      },
+      "source": { "label": "Joint Base Charleston (official)", "url": "https://www.jbcharleston.jb.mil/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Joint Base Charleston spans two installations under the 628th Air Base Wing. Charleston Air Force Base in North Charleston flies the C-17 Globemaster III with the active-duty 437th Airlift Wing and the Air Force Reserve 315th Airlift Wing, which share the same aircraft.",
+        "The Naval Weapons Station in Goose Creek is built around the Navy's nuclear power training pipeline (Naval Nuclear Power Training Command and the prototype training unit), along with Naval Information Warfare Center (NIWC) Atlantic and dozens of other tenant commands."
+      ],
+      "source": { "label": "Joint Base Charleston (official)", "url": "https://www.jbcharleston.jb.mil/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "lowcountry_decision",
+      "title": "Air Base or Weapons Station? Living in the Lowcountry",
+      "type": "killer",
+      "data": {
+        "subtitle": "JB Charleston is two installations about 10 miles apart in a fast-growing, popular metro. Which one you report to, plus traffic and the Lowcountry's flooding, should drive where you settle.",
+        "intro": [
+          "Joint Base Charleston has two halves: Charleston AFB in North Charleston (the C-17 airlift mission) and the Naval Weapons Station up in Goose Creek (Navy nuclear power training and NIWC Atlantic). They are roughly 10 miles apart, so the first question is which side you report to.",
+          "Charleston is one of the most popular places the military will send you, which means demand, traffic, and rising prices. It is also the Lowcountry, where tidal and heavy-rain flooding is a real factor in some neighborhoods. Where you live becomes a balance of commute, budget, and staying out of the flood-prone spots."
+        ],
+        "recommendations": [
+          { "who": "Assigned to Charleston AFB", "advice": "North Charleston and Summerville keep the commute reasonable, with Summerville long popular with families for its Dorchester Two schools." },
+          { "who": "Assigned to the Weapons Station", "advice": "Goose Creek, Hanahan, and Moncks Corner sit closest to the Weapons Station in Berkeley County." },
+          { "who": "Mind the water", "advice": "The Lowcountry sees tidal and storm flooding. Check the flood zone and insurance for any home, especially near the water, before you commit." },
+          { "who": "Buying in a hot market", "advice": "Charleston prices have climbed and inventory moves fast. Run your BAH against current rents and prices, and lean on a local agent who knows the flood maps." }
+        ]
+      },
+      "source": { "label": "Joint Base Charleston (official)", "url": "https://www.jbcharleston.jb.mil/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Each installation controls its own gates. Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details for the Air Base or the Weapons Station on the official Joint Base Charleston site before you go."
+      ],
+      "source": { "label": "Joint Base Charleston (official)", "url": "https://www.jbcharleston.jb.mil/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, and the partner differs by installation: the Air Base is managed by Hunt Military Communities, and the Weapons Station is managed by Balfour Beatty Communities.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for your installation and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Air Force Housing - JB Charleston (official)", "url": "https://www.housing.af.mil/Home/Installations/Joint-Base-Charleston/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "SC259",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA SC259 (Charleston)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "29483", "label": "Summerville, SC" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here, so children attend the local civilian public schools. Three districts cover most military families: Dorchester District Two (Summerville), Berkeley County (Goose Creek, Hanahan, Moncks Corner), and Charleston County (North Charleston).",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Dorchester School District Two (official)", "url": "https://www.ddtwo.org/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "SC", "city": "Summerville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Air Base": "628th Medical Group (Charleston AFB clinic)",
+        "Weapons Station": "Naval Health Clinic Charleston (Joint Ambulatory Care Clinic)",
+        "Care": "Outpatient; inpatient and specialty care referred to local network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "628th Medical Group (official)", "url": "https://charleston.tricare.mil/" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Commissary (DeCA) at both Charleston AFB and the Weapons Station",
+        "Exchange": "Exchange (AAFES / NEX) at both installations"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-24"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The market is steady and you could rent the home out later if needed.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Run your BAH against the rent and home prices above, weigh your tour length and the local market, and talk to a lender and an agent who work with military families before you commit. In Charleston, factor flood zones and insurance into the math."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district or DoDEA early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at the local military treatment facility or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Air Base or Weapons Station, what's the difference?", "a": "Charleston AFB in North Charleston flies the C-17 airlift mission; the Naval Weapons Station in Goose Creek is built around Navy nuclear power training and NIWC Atlantic. They are about 10 miles apart, so where you live should follow which one you report to." },
+        { "q": "Where do military families live?", "a": "Summerville (Dorchester Two schools) is a longtime favorite; Goose Creek, Hanahan, and Moncks Corner sit closer to the Weapons Station; North Charleston is closest to the Air Base." },
+        { "q": "Is flooding really a concern?", "a": "Yes. The Lowcountry sees tidal and heavy-rain flooding in some areas. Check the flood zone and insurance for any home, especially near the water, before you commit." },
+        { "q": "Who runs on-base housing?", "a": "Two partners: Hunt Military Communities on the Air Base side and Balfour Beatty Communities at the Weapons Station." },
+        { "q": "What is the BAH area?", "a": "Joint Base Charleston is MHA SC259 (Charleston). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Charleston Historic District & The Battery", "category": "History", "blurb": "The famous waterfront promenade, Rainbow Row, and antebellum streets of downtown Charleston.", "maps_query": "The Battery, Charleston SC" },
+        { "name": "Patriots Point & USS Yorktown", "category": "Museum", "blurb": "A naval and maritime museum in Mount Pleasant centered on the WWII aircraft carrier USS Yorktown.", "maps_query": "Patriots Point Naval and Maritime Museum, Mount Pleasant SC" },
+        { "name": "Folly Beach", "category": "Outdoors", "blurb": "A laid-back barrier-island beach town just south of the city.", "maps_query": "Folly Beach, SC" },
+        { "name": "Charleston City Market", "category": "Shopping", "blurb": "A historic downtown market with local sweetgrass baskets, crafts, and food.", "maps_query": "Charleston City Market, SC" }
+      ]
+    }
+  ]
+}
