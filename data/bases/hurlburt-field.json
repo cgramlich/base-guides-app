@@ -1,0 +1,201 @@
+{
+  "slug": "hurlburt-field",
+  "schema_version": "0.1",
+  "name": "Hurlburt Field",
+  "short_name": "Hurlburt",
+  "branch": "U.S. Air Force",
+  "states": ["FL"],
+  "tagline": "Headquarters of Air Force Special Operations Command on Florida's Emerald Coast.",
+  "coords": { "lat": 30.43, "lng": -86.69, "label": "Fort Walton Beach, FL" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force special operations base (Okaloosa County, FL panhandle / Emerald Coast; Central time). CONUS full template (BAH MHA FL056 Eglin AFB, which covers the Fort Walton Beach/Okaloosa area incl. Hurlburt; RentCast/SchoolDigger work). HQ Air Force Special Operations Command (AFSOC) + 1st Special Operations Wing (AC-130 gunships, CV-22, MC-130). Adjacent to Eglin AFB (already in app). Medical: 1st Special Operations Medical Group clinic. Facts verified from official sources (hurlburt.af.mil, 1 SOMDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Florida is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 32547 (Fort Walton Beach).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Fort Walton Beach area, FL (Okaloosa County, Emerald Coast)",
+        "Major command": "Headquarters, Air Force Special Operations Command (AFSOC)",
+        "Major unit": "1st Special Operations Wing",
+        "Aircraft": "AC-130 gunships, CV-22 Osprey, and MC-130 special operations aircraft",
+        "Nearby": "Adjacent to Eglin AFB on Florida's Emerald Coast"
+      },
+      "source": { "label": "Hurlburt Field (official)", "url": "https://www.hurlburt.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Hurlburt Field is the headquarters of Air Force Special Operations Command and home to the 1st Special Operations Wing, flying AC-130 gunships, CV-22 Ospreys, and MC-130s. It's the heart of Air Force special operations aviation.",
+        "On Florida's Emerald Coast near Fort Walton Beach and adjacent to Eglin AFB, it pairs an elite mission with sugar-white Gulf beaches and an affordable-for-the-coast cost of living."
+      ],
+      "source": { "label": "Hurlburt Field (official)", "url": "https://www.hurlburt.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "hurlburt_decision",
+      "title": "Emerald Coast Living Near the Beaches",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Emerald Coast pairs Gulf beaches with a reasonable cost of living. The main choice is which Okaloosa-area community fits your commute and schools, with Eglin's larger community right next door.",
+        "intro": [
+          "The Fort Walton Beach and Destin area is a popular Gulf-Coast spot, affordable relative to many beach markets, so BAH stretches reasonably. On-base housing is available; many live off base nearby.",
+          "Where you live mostly comes down to commute and schools across Fort Walton Beach, Mary Esther, Navarre, and Niceville, with the beaches and Eglin nearby."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Fort Walton Beach and Mary Esther sit right by Hurlburt for a short commute." },
+          { "who": "Family suburbs", "advice": "Niceville (well-regarded schools) and Navarre are popular with families a short drive out." },
+          { "who": "Beach life", "advice": "Destin and the beach communities put you on the Gulf, with higher costs and summer crowds." },
+          { "who": "On-base option", "advice": "On-base housing is available; weigh it against the local market and the nearby Eglin community." }
+        ]
+      },
+      "source": { "label": "Hurlburt Field (official)", "url": "https://www.hurlburt.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Hurlburt Field site before you go."
+      ],
+      "source": { "label": "Hurlburt Field (official)", "url": "https://www.hurlburt.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Hurlburt Field has privatized on-base family housing across several neighborhoods, with additional Air Force housing available at nearby Eglin AFB.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Hurlburt Field (official)", "url": "https://www.hurlburt.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "FL056",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA FL056 (Eglin AFB / Fort Walton Beach, covers Hurlburt)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "32547", "label": "Fort Walton Beach, FL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Okaloosa County School District serves the area, with Niceville schools especially well regarded and Santa Rosa County (Navarre) serving families to the west.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Okaloosa County School District (official)", "url": "https://www.okaloosaschools.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "FL", "city": "Fort Walton Beach" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "1st Special Operations Medical Group (Hurlburt Field Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via Eglin's hospital and the area network",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Hurlburt Field / 1st SOMDG (TRICARE)", "url": "https://www.tricare.mil/mtf/Hurlburt" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Hurlburt Field Commissary (DeCA)",
+        "Exchange": "Hurlburt Field Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the Emerald Coast's popularity and repeat special-ops tours make buying worth a look for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area and pick beachside versus inland.",
+          "You'd rather not gamble on resale timing or coastal insurance costs.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat Emerald Coast assignments (common in special ops).",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The Emerald Coast market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the Emerald Coast's desirability and repeat tours make buying worth a look for longer assignments. Factor in coastal insurance and run your BAH against the rent and home prices above, then talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability (Hurlburt and Eglin) and get the office's read on the Emerald Coast communities before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Florida vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Okaloosa or Santa Rosa County) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Hurlburt clinic, with Eglin's hospital for higher-level care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Hurlburt Field known for?", "a": "It's the headquarters of Air Force Special Operations Command and home to the 1st Special Operations Wing, flying AC-130 gunships, CV-22 Ospreys, and MC-130s." },
+        { "q": "How is it related to Eglin?", "a": "Hurlburt is adjacent to Eglin AFB on the Emerald Coast and shares the same BAH area; many services, including Eglin's hospital, support both." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base. Fort Walton Beach and Mary Esther are closest; Niceville and Navarre are popular for schools; Destin is the beach option." },
+        { "q": "What is the BAH area?", "a": "Hurlburt falls in MHA FL056 (Eglin AFB/Fort Walton Beach). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Okaloosa Island / Destin beaches", "category": "Beach", "blurb": "Sugar-white sand and emerald water along the Gulf.", "maps_query": "Okaloosa Island Beach, Fort Walton Beach FL" },
+        { "name": "Gulfarium Marine Adventure Park", "category": "Family", "blurb": "A marine park on Okaloosa Island.", "maps_query": "Gulfarium Marine Adventure Park, Fort Walton Beach FL" },
+        { "name": "Destin Harbor Boardwalk", "category": "Food & shopping", "blurb": "Dining, fishing charters, and waterfront fun in Destin.", "maps_query": "Destin Harbor Boardwalk, FL" },
+        { "name": "Air Force Armament Museum (Eglin)", "category": "Museum", "blurb": "Aircraft and weapons history just up the road at Eglin.", "maps_query": "Air Force Armament Museum, Eglin AFB FL" }
+      ]
+    }
+  ]
+}

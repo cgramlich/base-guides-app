@@ -1,0 +1,201 @@
+{
+  "slug": "buckley-sfb",
+  "schema_version": "0.1",
+  "name": "Buckley SFB",
+  "short_name": "Buckley",
+  "branch": "U.S. Space Force",
+  "states": ["CO"],
+  "tagline": "A missile-warning and space operations hub in the Denver metro, in Aurora, Colorado.",
+  "coords": { "lat": 39.70, "lng": -104.75, "label": "Aurora, CO" },
+  "tz": "America/Denver",
+  "last_full_review": "2026-06-25",
+  "_note": "Space Force base (Aurora, Denver metro CO). CONUS full template (BAH MHA CO045 Denver; RentCast/SchoolDigger work). Space Base Delta 2; missile warning / space domain awareness (SBIRS) + Aerospace Data Facility; also hosts the 140th Wing (Colorado ANG, F-16). 4th Space Force base in app (Peterson, Vandenberg, Patrick, Buckley) -> Space Force filter chip. Note: separate MHA from Peterson (Colorado Springs); Buckley is Denver CO045. Medical: Buckley clinic. Facts verified from official sources (buckley.spaceforce.mil, TRICARE clinic, DeCA/AAFES, Wikipedia for corroborated headline facts). Colorado is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 80011 (Aurora).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Space Force",
+        "Location": "Aurora, CO (Denver metro)",
+        "Major unit": "Space Base Delta 2",
+        "Mission": "Missile warning, space domain awareness, and intelligence (SBIRS, Aerospace Data Facility)",
+        "Also hosts": "The 140th Wing (Colorado Air National Guard, F-16)",
+        "Setting": "The Denver metro at the foot of the Rockies"
+      },
+      "source": { "label": "Buckley SFB (official)", "url": "https://www.buckley.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Buckley Space Force Base, run by Space Base Delta 2, is a key node for missile warning and space domain awareness, operating space-based infrared systems and hosting a major intelligence presence. The Colorado Air National Guard's 140th Wing also flies F-16s from here.",
+        "In Aurora within the Denver metro, it offers big-city amenities and quick access to the Rocky Mountains, with the cost of living rising as the metro has grown."
+      ],
+      "source": { "label": "Buckley SFB (official)", "url": "https://www.buckley.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "buckley_decision",
+      "title": "Big-City Denver Living at the Foot of the Rockies",
+      "type": "killer",
+      "data": {
+        "subtitle": "Buckley is a true metro assignment with mountains nearby. The main choice is which Denver-area suburb fits your commute and schools, with costs higher than Colorado Springs.",
+        "intro": [
+          "The Denver metro has grown fast, so housing costs more than Colorado Springs (Peterson), but the amenities and Rocky Mountain access are a big draw. On-base housing is available; many live off base across the metro.",
+          "Where you live mostly comes down to commute and schools across Aurora and the surrounding suburbs, with the mountains an easy weekend away."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Aurora surrounds the base for the shortest commute and lots of amenities." },
+          { "who": "Family suburbs", "advice": "Aurora's Cherry Creek school area and suburbs like Centennial and Parker are popular with families." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient in this pricier metro; get on the list early." },
+          { "who": "Enjoy Colorado", "advice": "Downtown Denver, the airport, and the Rockies are all within easy reach for work and play." }
+        ]
+      },
+      "source": { "label": "Buckley SFB (official)", "url": "https://www.buckley.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Buckley SFB site before you go."
+      ],
+      "source": { "label": "Buckley SFB (official)", "url": "https://www.buckley.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Buckley SFB has privatized on-base family housing across several neighborhoods, a convenient option in the pricier Denver metro.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Buckley SFB (official)", "url": "https://www.buckley.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CO045",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CO045 (Denver)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "80011", "label": "Aurora, CO" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Cherry Creek and Aurora Public Schools serve the area nearest the base, with Douglas County and other metro districts depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Cherry Creek School District (official)", "url": "https://www.cherrycreekschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CO", "city": "Aurora" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Buckley SFB Clinic",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the Denver-area network (and the VA medical center in Aurora)",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Buckley SFB Clinic (TRICARE)", "url": "https://www.tricare.mil/mtf/Buckley" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Buckley SFB Commissary (DeCA)",
+        "Exchange": "Buckley SFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in the growing, pricier Denver metro the call depends on tour length and your budget."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "Denver-metro prices put a purchase out of comfortable reach for your budget.",
+          "You want flexibility in a fast-moving market.",
+          "On-base housing or renting keeps you closer in without overextending."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat Colorado assignments (Front Range bases are common).",
+          "You can afford the entry price and want to build equity with your VA loan.",
+          "You've found a suburb and commute that work and plan to hold the home.",
+          "You're comfortable with a higher-cost, appreciating market."
+        ],
+        "bottom_line": "There is no universal right answer. The Denver metro has grown pricey, so weigh your budget and tour length. Many take on-base housing or rent; longer or repeat Colorado tours can make buying worthwhile. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In a big metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is convenient in this pricier metro; get on the list early and get the office's read on the suburbs before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Colorado vehicle registration (and emissions where required), and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Cherry Creek, Aurora, or another metro district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Buckley clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Buckley SFB known for?", "a": "It's a Space Force base in the Denver metro focused on missile warning and space domain awareness (run by Space Base Delta 2), and it also hosts the Colorado Air National Guard's 140th Wing flying F-16s." },
+        { "q": "How is it different from Peterson?", "a": "Both are Colorado Space Force bases, but Buckley is in the Denver metro (BAH area CO045) while Peterson is in Colorado Springs (a separate, generally lower-cost area)." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base across the Denver suburbs. Aurora is closest, with Cherry Creek schools and suburbs like Centennial and Parker popular for families." },
+        { "q": "What is the BAH area?", "a": "Buckley is MHA CO045 (Denver). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Downtown Denver", "category": "Day trip", "blurb": "Sports, dining, and museums in the Mile High City.", "maps_query": "Downtown Denver, CO" },
+        { "name": "Rocky Mountains (Front Range)", "category": "Outdoors", "blurb": "Skiing, hiking, and peaks an easy drive west.", "maps_query": "Rocky Mountain National Park, CO" },
+        { "name": "Cherry Creek State Park", "category": "Outdoors", "blurb": "A reservoir and trails close to the base.", "maps_query": "Cherry Creek State Park, Aurora CO" },
+        { "name": "Stanley Marketplace", "category": "Food & shopping", "blurb": "A popular food and shopping hall in Aurora.", "maps_query": "Stanley Marketplace, Aurora CO" }
+      ]
+    }
+  ]
+}

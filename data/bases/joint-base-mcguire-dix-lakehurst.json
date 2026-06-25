@@ -1,0 +1,201 @@
+{
+  "slug": "joint-base-mcguire-dix-lakehurst",
+  "schema_version": "0.1",
+  "name": "Joint Base McGuire-Dix-Lakehurst",
+  "short_name": "JB MDL",
+  "branch": "Air Force / Army / Navy",
+  "states": ["NJ"],
+  "tagline": "The military's only tri-service joint base, a major air-mobility hub in central New Jersey.",
+  "coords": { "lat": 40.02, "lng": -74.59, "label": "Wrightstown, NJ" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Tri-service joint base (Burlington/Ocean County, central NJ; near Trenton/Philadelphia). CONUS full template (BAH MHA NJ204 JB McGuire-Dix-Lakehurst; RentCast/SchoolDigger work). Combines McGuire (Air Force, 87th Air Base Wing / air mobility), Fort Dix (Army, training & reserve), and Lakehurst (Navy, NAWCAD). Only AF/Army/Navy joint base. isJoint() picks it up via name. Medical: 87th Medical Group clinic. Facts verified from official sources (jbmdl.jb.mil / af.mil, 87 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). New Jersey is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 08015 (Browns Mills).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (lead), U.S. Army, and U.S. Navy",
+        "Location": "Central New Jersey (Burlington/Ocean County, near Trenton)",
+        "Distinction": "The military's only tri-service joint base",
+        "Made up of": "McGuire (Air Force), Fort Dix (Army), and Lakehurst (Navy)",
+        "Mission": "Air mobility (airlift and air refueling) plus Army training and Navy engineering",
+        "Setting": "Between Philadelphia and the Jersey Shore"
+      },
+      "source": { "label": "Joint Base MDL (official)", "url": "https://www.jbmdl.jb.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Joint Base McGuire-Dix-Lakehurst is the military's only tri-service joint base, combining an Air Force installation (McGuire), an Army post (Fort Dix), and a Navy facility (Lakehurst). McGuire's 87th Air Base Wing anchors a major air-mobility mission of airlift and air refueling.",
+        "In central New Jersey between Philadelphia and the Jersey Shore, it's a large, multi-service community with a wide range of units and a long aviation history (Lakehurst is the historic site of the Hindenburg)."
+      ],
+      "source": { "label": "Joint Base MDL (official)", "url": "https://www.jbmdl.jb.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "jbmdl_decision",
+      "title": "Central Jersey Living, With Cities and Shore Nearby",
+      "type": "killer",
+      "data": {
+        "subtitle": "The base sits in central New Jersey within reach of Philadelphia, Princeton, and the shore. The main choice is which surrounding town fits your commute, schools, and budget.",
+        "intro": [
+          "New Jersey costs more than many inland states, but central Jersey is more moderate than the close-in NYC/Philly suburbs, and on-base housing is available across the joint base.",
+          "Where you live mostly comes down to commute and schools across the Burlington and Ocean County towns, with Philadelphia, Princeton, and the Jersey Shore all reachable."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Wrightstown, Browns Mills, and the nearby Burlington County towns keep the commute short." },
+          { "who": "Family suburbs", "advice": "Towns toward Mount Laurel, Medford, and the better-rated school districts are popular with families." },
+          { "who": "On-base option", "advice": "On-base housing is available across the joint base; weigh it against the local market." },
+          { "who": "Enjoy the location", "advice": "Philadelphia, Princeton, the Jersey Shore, and even NYC are all within reach for trips." }
+        ]
+      },
+      "source": { "label": "Joint Base MDL (official)", "url": "https://www.jbmdl.jb.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center. The joint base has multiple gates across its three sites.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Joint Base MDL site before you go."
+      ],
+      "source": { "label": "Joint Base MDL (official)", "url": "https://www.jbmdl.jb.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Joint Base MDL has privatized on-base family housing across several neighborhoods spanning the McGuire, Dix, and Lakehurst areas.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Joint Base MDL (official)", "url": "https://www.jbmdl.jb.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NJ204",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NJ204 (JB McGuire-Dix-Lakehurst)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "08015", "label": "Browns Mills, NJ" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. North Hanover, Pemberton, and other Burlington and Ocean County districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "North Hanover Township School District (official)", "url": "https://www.nhanover.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NJ", "city": "Wrightstown" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "87th Medical Group (JB MDL Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the regional network (Philadelphia/central NJ)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "JB MDL / 87th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/McGuire" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Joint Base MDL Commissary (DeCA)",
+        "Exchange": "Joint Base MDL Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in central New Jersey the call depends on tour length and the higher-tax market."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn central Jersey before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "You've found a town and commute you're confident about.",
+          "You're comfortable with New Jersey's property taxes (which run high)."
+        ],
+        "bottom_line": "There is no universal right answer. Central Jersey is more moderate than the close-in metros, but New Jersey property taxes are high, so weigh that with your tour length. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability across the joint base and get the office's read on the local towns before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and New Jersey vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (North Hanover, Pemberton, or another local district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 87th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What makes JB MDL unique?", "a": "It's the military's only tri-service joint base, combining McGuire (Air Force), Fort Dix (Army), and Lakehurst (Navy). McGuire anchors a major air-mobility mission." },
+        { "q": "Where do families live?", "a": "On-base housing is available across the joint base; many live off base in Burlington and Ocean County towns. Wrightstown and Browns Mills are closest." },
+        { "q": "What's nearby?", "a": "Philadelphia, Princeton, the Jersey Shore, and even New York City are all within reach for trips." },
+        { "q": "What is the BAH area?", "a": "JB MDL is MHA NJ204. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Philadelphia", "category": "Day trip", "blurb": "History, cheesesteaks, and museums about 45 minutes west.", "maps_query": "Philadelphia, PA" },
+        { "name": "Jersey Shore (Long Beach Island)", "category": "Beach", "blurb": "Atlantic beaches a short drive east.", "maps_query": "Long Beach Island, NJ" },
+        { "name": "Princeton", "category": "Day trip", "blurb": "The historic university town to the north.", "maps_query": "Princeton, NJ" },
+        { "name": "Six Flags Great Adventure", "category": "Family", "blurb": "A major theme park and safari in nearby Jackson.", "maps_query": "Six Flags Great Adventure, Jackson NJ" }
+      ]
+    }
+  ]
+}

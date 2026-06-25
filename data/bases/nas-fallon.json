@@ -1,0 +1,201 @@
+{
+  "slug": "nas-fallon",
+  "schema_version": "0.1",
+  "name": "NAS Fallon",
+  "short_name": "Fallon",
+  "branch": "U.S. Navy",
+  "states": ["NV"],
+  "tagline": "The Navy's premier air-combat training center and current home of TOPGUN, in the Nevada high desert.",
+  "coords": { "lat": 39.42, "lng": -118.70, "label": "Fallon, NV" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy air-warfare training base (Fallon, Churchill County, NV high desert; ~60 mi E of Reno). CONUS full template (BAH MHA NV211 Fallon NAS; RentCast/SchoolDigger work). Home of the Naval Aviation Warfighting Development Center (NAWDC), which includes TOPGUN (moved here from Miramar in 1996); carrier air-wing and strike training. Somewhat remote. Medical: Branch Health Clinic Fallon. Schools: Churchill County. Facts verified from official sources (cnic.navy.mil NAS Fallon, Navy Medicine, DeCA/NEX, Wikipedia for corroborated headline facts). Nevada is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 89406 (Fallon).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Fallon, NV (Churchill County, high desert; ~60 mi east of Reno)",
+        "Role": "The Navy's premier air-combat and strike training center",
+        "Home of": "Naval Aviation Warfighting Development Center (NAWDC), including TOPGUN",
+        "History": "TOPGUN moved here from Miramar in 1996",
+        "Setting": "Remote high desert; the town of Fallon is small"
+      },
+      "source": { "label": "NAS Fallon (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/nas_fallon.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Air Station Fallon is the Navy's premier air-combat training center, home to the Naval Aviation Warfighting Development Center (NAWDC), which includes the famous TOPGUN school. Carrier air wings come here to sharpen their strike and air-combat skills over the vast desert ranges.",
+        "In the Nevada high desert near the small town of Fallon, about 60 miles east of Reno, it's a somewhat remote, mission-focused posting with wide-open spaces and an affordable cost of living."
+      ],
+      "source": { "label": "NAS Fallon (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/nas_fallon.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "fallon_decision",
+      "title": "Small-Town Desert Living, With Reno Within Reach",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fallon is a small, affordable desert town. The main choice is on-base housing or the town of Fallon, with Reno an option for those who want more and don't mind the commute.",
+        "intro": [
+          "The Fallon area is inexpensive, so BAH stretches well, but it's a small town and somewhat remote. On-base housing is popular; many also live in Fallon.",
+          "Where you live mostly comes down to commute and schools in and around Fallon, with Reno (about an hour west) for big-city amenities."
+        ],
+        "recommendations": [
+          { "who": "On-base convenience", "advice": "On-base housing keeps the commute short and is a popular choice given the small town." },
+          { "who": "In town", "advice": "The town of Fallon offers affordable housing and Churchill County schools close to base." },
+          { "who": "Big-city option", "advice": "The Reno area, about an hour west, has more amenities for those who don't mind the commute." },
+          { "who": "Embrace the desert", "advice": "Wide-open ranges, fishing, and the outdoors are the draw; lean into the small-town pace." }
+        ]
+      },
+      "source": { "label": "NAS Fallon (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/nas_fallon.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official NAS Fallon site before you go."
+      ],
+      "source": { "label": "NAS Fallon (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/nas_fallon.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "NAS Fallon has privatized on-base family housing, popular given the small, somewhat remote town.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "NAS Fallon (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/nas_fallon.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NV211",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NV211 (Fallon NAS)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "89406", "label": "Fallon, NV" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Churchill County School District serves Fallon and the area around the base.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Churchill County School District (official)", "url": "https://www.churchillcsd.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NV", "city": "Fallon" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Branch Health Clinic Fallon",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the Reno-area network",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Branch Health Clinic Fallon (TRICARE)", "url": "https://www.tricare.mil/mtf/Fallon" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NAS Fallon Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Fallon"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. At small, somewhat remote Fallon many families take on-base housing, but the affordable town can make buying attractive."],
+        "rent": [
+          "Your tour is short or your sea-duty rotation feels uncertain.",
+          "You prefer on-base housing for the short commute and convenience.",
+          "You'd rather not own in a small, somewhat remote market.",
+          "Your BAH comfortably covers rent if you go off base."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Fallon market fits your budget for a home you like.",
+          "You're comfortable with a small resale market and have found a place you trust."
+        ],
+        "bottom_line": "There is no universal right answer. Fallon is affordable, so BAH stretches and buying can pencil out, but the small market affects resale, and some weigh the Reno area instead. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is popular given the small town; get on the list early and get the office's read on Fallon." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Nevada vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the Churchill County School District early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Branch Health Clinic Fallon, with the Reno area for specialty care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is TOPGUN at Fallon?", "a": "Yes. TOPGUN (the Navy Fighter Weapons School) is part of the Naval Aviation Warfighting Development Center at NAS Fallon, where it moved from Miramar in 1996." },
+        { "q": "Where do families live?", "a": "On-base housing is popular given the small town; many also live in Fallon. Some choose the Reno area about an hour west despite the commute." },
+        { "q": "Is it remote?", "a": "Somewhat. Fallon is a small high-desert town, affordable but with limited amenities; Reno provides big-city options about an hour away." },
+        { "q": "What is the BAH area?", "a": "NAS Fallon is MHA NV211. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Grimes Point / Sand Mountain", "category": "Outdoors", "blurb": "Ancient petroglyphs and a giant singing sand dune east of Fallon.", "maps_query": "Sand Mountain Recreation Area, NV" },
+        { "name": "Reno / Lake Tahoe", "category": "Day trip", "blurb": "Casinos, dining, and the lake about an hour-plus west.", "maps_query": "Reno, NV" },
+        { "name": "Lahontan State Recreation Area", "category": "Outdoors", "blurb": "A reservoir for boating and fishing near Fallon.", "maps_query": "Lahontan State Recreation Area, NV" },
+        { "name": "Downtown Fallon", "category": "In town", "blurb": "The small-town center, known as the 'Oasis of Nevada.'", "maps_query": "Downtown Fallon, NV" }
+      ]
+    }
+  ]
+}

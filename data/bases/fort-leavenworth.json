@@ -1,0 +1,201 @@
+{
+  "slug": "fort-leavenworth",
+  "schema_version": "0.1",
+  "name": "Fort Leavenworth",
+  "short_name": "Leavenworth",
+  "branch": "U.S. Army",
+  "states": ["KS"],
+  "tagline": "The 'Intellectual Center of the Army,' home of the Command and General Staff College on the Missouri River.",
+  "coords": { "lat": 39.36, "lng": -94.92, "label": "Leavenworth, KS" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Army PME hub (Leavenworth KS, on the Missouri River, ~30 mi NW of Kansas City; Central time). CONUS full template (BAH MHA KS102 Fort Leavenworth; RentCast/SchoolDigger work). Home of the Command and General Staff College (CGSC); the oldest active Army post west of Washington; also the U.S. Disciplinary Barracks (military prison). Mid-career officer + family throughput. Medical: Munson Army Health Center. On-post public schools: Fort Leavenworth USD 207. Facts verified from official sources (home.army.mil/leavenworth, Munson AHC, DeCA/AAFES, Wikipedia for corroborated headline facts). Kansas is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 66048 (Leavenworth).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Leavenworth, KS (Missouri River, ~30 mi NW of Kansas City)",
+        "Role": "Home of the Command and General Staff College (CGSC)",
+        "Nickname": "The 'Intellectual Center of the Army'",
+        "History": "The oldest active Army post west of Washington, D.C.",
+        "Also home to": "The U.S. Disciplinary Barracks (the military's prison)"
+      },
+      "source": { "label": "Fort Leavenworth (official)", "url": "https://home.army.mil/leavenworth/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Leavenworth is the 'Intellectual Center of the Army,' home to the Command and General Staff College, where mid-career officers study before their next level of leadership. Most families here are on a one-year academic tour or supporting it as faculty and staff.",
+        "On the Missouri River about 30 miles northwest of Kansas City, it's the oldest active Army post west of Washington, with a historic, settled feel, and it's also home to the U.S. Disciplinary Barracks."
+      ],
+      "source": { "label": "Fort Leavenworth (official)", "url": "https://home.army.mil/leavenworth/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "leavenworth_decision",
+      "title": "A One-Year School Tour: On-Post Is Popular",
+      "type": "killer",
+      "data": {
+        "subtitle": "Most families come for a one-year CGSC course, which shapes the housing choice: on-post (with its well-regarded schools) is very popular, with Leavenworth and the KC metro as off-post options.",
+        "intro": [
+          "Because the typical tour is about a year, many families take on-post housing for the convenience and the on-post public schools (USD 207), which are popular. The cost of living is affordable.",
+          "Off post, the town of Leavenworth is closest, and some families choose the Kansas City metro (including the Kansas suburbs) if they don't mind a longer commute."
+        ],
+        "recommendations": [
+          { "who": "Most CGSC families: on post", "advice": "On-post housing and the USD 207 schools are very popular for the one-year tour; get on the list as early as you can." },
+          { "who": "Closest town", "advice": "Leavenworth borders the post with affordable housing and a short commute." },
+          { "who": "Metro option", "advice": "The Kansas City suburbs (e.g., the Kansas side) offer more amenities for those who prefer a longer commute." },
+          { "who": "Plan for one year", "advice": "With a short tour, weigh the simplicity of on-post housing against setting up a household off post." }
+        ]
+      },
+      "source": { "label": "Fort Leavenworth (official)", "url": "https://home.army.mil/leavenworth/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Leavenworth site before you go."
+      ],
+      "source": { "label": "Fort Leavenworth (official)", "url": "https://home.army.mil/leavenworth/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Leavenworth has privatized on-post family housing across several historic and newer neighborhoods, very popular with CGSC families for the convenience and the on-post schools.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Leavenworth (official)", "url": "https://home.army.mil/leavenworth/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "KS102",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA KS102 (Fort Leavenworth)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "66048", "label": "Leavenworth, KS" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Fort Leavenworth has its own well-regarded on-post public school district (Fort Leavenworth USD 207) serving students who live on post. Off post, Leavenworth and other area districts serve families who live there.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Fort Leavenworth USD 207 (official)", "url": "https://www.usd207.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "KS", "city": "Leavenworth" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Munson Army Health Center",
+        "Care": "Outpatient primary and specialty care on post; inpatient, emergency, and complex care via Kansas City-area network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Munson Army Health Center (official)", "url": "https://munson.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Leavenworth Commissary (DeCA)",
+        "Exchange": "Fort Leavenworth Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Fort Leavenworth the typical one-year CGSC tour usually tips the scale toward on-post housing or renting."],
+        "rent": [
+          "Your tour is the one-year CGSC course, so buying rarely pencils out.",
+          "You prefer on-post housing for the convenience and the USD 207 schools.",
+          "You want flexibility for a short tour.",
+          "Your BAH comfortably covers rent if you go off post."
+        ],
+        "buy": [
+          "You have a longer faculty or staff tour and plan to stay.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Leavenworth or KC market fits your budget for a home you like.",
+          "You're comfortable with resale timing on a longer tour."
+        ],
+        "bottom_line": "There is no universal right answer, but a one-year CGSC tour usually favors on-post housing or renting, while longer faculty and staff tours can make buying worth a look. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-post lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-post housing is very popular for the one-year tour and the USD 207 schools; get on the list as early as possible." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Kansas vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact USD 207 (on post) or your local district early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Munson Army Health Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Fort Leavenworth known for?", "a": "It's the home of the Command and General Staff College, the 'Intellectual Center of the Army,' where mid-career officers study. It's the oldest active Army post west of Washington and also home to the U.S. Disciplinary Barracks." },
+        { "q": "How long is a typical tour?", "a": "Most families come for the roughly one-year CGSC course, which is why on-post housing and renting are so common." },
+        { "q": "Where do families live?", "a": "On-post housing (with the well-regarded USD 207 schools) is very popular; off post, Leavenworth is closest and the Kansas City suburbs are an option." },
+        { "q": "What is the BAH area?", "a": "Fort Leavenworth is MHA KS102. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Frontier Army Museum", "category": "Museum", "blurb": "Frontier and Army history on post.", "maps_query": "Frontier Army Museum, Fort Leavenworth KS" },
+        { "name": "Kansas City", "category": "Day trip", "blurb": "Barbecue, sports, and big-city amenities about 30 miles southeast.", "maps_query": "Kansas City, MO" },
+        { "name": "Historic downtown Leavenworth", "category": "In town", "blurb": "The riverfront town's shops and dining near the post.", "maps_query": "Downtown Leavenworth, KS" },
+        { "name": "Weston / Missouri River bluffs", "category": "Outdoors", "blurb": "Wineries, orchards, and bluff scenery across the river in Missouri.", "maps_query": "Weston, MO" }
+      ]
+    }
+  ]
+}

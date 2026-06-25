@@ -109,6 +109,16 @@
     { "slug": "patrick-sfb", "name": "Patrick SFB", "branch": "U.S. Space Force", "state": "FL", "ready": true },
     { "slug": "fort-detrick", "name": "Fort Detrick", "branch": "U.S. Army", "state": "MD", "ready": true },
     { "slug": "naval-base-guam", "name": "Naval Base Guam", "branch": "U.S. Navy", "state": "Guam", "region": "OCONUS", "ready": true },
-    { "slug": "raf-mildenhall", "name": "RAF Mildenhall", "branch": "U.S. Air Force", "state": "England", "region": "OCONUS", "ready": true }
+    { "slug": "raf-mildenhall", "name": "RAF Mildenhall", "branch": "U.S. Air Force", "state": "England", "region": "OCONUS", "ready": true },
+    { "slug": "joint-base-mcguire-dix-lakehurst", "name": "Joint Base McGuire-Dix-Lakehurst", "branch": "Air Force / Army / Navy", "state": "NJ", "ready": true },
+    { "slug": "fort-leavenworth", "name": "Fort Leavenworth", "branch": "U.S. Army", "state": "KS", "ready": true },
+    { "slug": "submarine-base-kings-bay", "name": "Naval Submarine Base Kings Bay", "branch": "U.S. Navy", "state": "GA", "ready": true },
+    { "slug": "hurlburt-field", "name": "Hurlburt Field", "branch": "U.S. Air Force", "state": "FL", "ready": true },
+    { "slug": "buckley-sfb", "name": "Buckley SFB", "branch": "U.S. Space Force", "state": "CO", "ready": true },
+    { "slug": "mcrd-san-diego", "name": "MCRD San Diego", "branch": "U.S. Marine Corps", "state": "CA", "ready": true },
+    { "slug": "nas-fallon", "name": "NAS Fallon", "branch": "U.S. Navy", "state": "NV", "ready": true },
+    { "slug": "usag-bavaria", "name": "USAG Bavaria", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
+    { "slug": "camp-zama", "name": "Camp Zama", "branch": "U.S. Army", "state": "Japan", "region": "OCONUS", "ready": true },
+    { "slug": "nsa-bahrain", "name": "NSA Bahrain", "branch": "U.S. Navy", "state": "Bahrain", "region": "OCONUS", "ready": true }
   ]
 }

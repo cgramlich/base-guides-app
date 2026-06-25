@@ -1,0 +1,201 @@
+{
+  "slug": "submarine-base-kings-bay",
+  "schema_version": "0.1",
+  "name": "Naval Submarine Base Kings Bay",
+  "short_name": "Kings Bay",
+  "branch": "U.S. Navy",
+  "states": ["GA"],
+  "tagline": "Home of the Atlantic Fleet's ballistic-missile submarines, on the Georgia coast near the Florida line.",
+  "coords": { "lat": 30.80, "lng": -81.51, "label": "Kings Bay, GA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy SSBN (ballistic-missile submarine) base (Camden County, SE Georgia coast, near St. Marys/Kingsland; ~40 mi N of Jacksonville FL). CONUS full template (BAH MHA GA074 Kings Bay/Brunswick; RentCast/SchoolDigger work). Homeport for Atlantic Ohio-class Trident SSBNs. Medical: Naval Branch Health Clinic Kings Bay (under Naval Hospital Jacksonville). Schools: Camden County. Facts verified from official sources (cnic.navy.mil SUBASE Kings Bay, Navy Medicine, DeCA/NEX, Wikipedia for corroborated headline facts). Georgia is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 31558 (Kingsland).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Camden County, GA (southeast Georgia coast, near St. Marys/Kingsland)",
+        "Role": "Atlantic Fleet ballistic-missile submarine (SSBN) homeport",
+        "Submarines": "Ohio-class Trident ballistic-missile submarines",
+        "Nearby city": "Jacksonville, FL, about 40 miles south",
+        "Setting": "Coastal southeast Georgia (the Golden Isles region)"
+      },
+      "source": { "label": "SUBASE Kings Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/navsubase_kings_bay.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Submarine Base Kings Bay is the Atlantic Fleet's home for ballistic-missile submarines, the Ohio-class boats that carry the sea-based leg of the nuclear deterrent. It's a strategic, security-focused installation.",
+        "On the southeast Georgia coast near St. Marys and Kingsland, just north of the Florida line, it offers an affordable coastal lifestyle in the Golden Isles region, with Jacksonville about 40 miles south."
+      ],
+      "source": { "label": "SUBASE Kings Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/navsubase_kings_bay.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "kingsbay_decision",
+      "title": "Affordable Coastal Georgia Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Kings Bay area is an affordable stretch of the Georgia coast. The main choice is which nearby town fits your commute and schools, with the Jacksonville metro reachable to the south.",
+        "intro": [
+          "Southeast Georgia is affordable, so BAH stretches well, and the coastal setting is a draw. On-base housing is available; many also live off base in the nearby towns.",
+          "Where you live mostly comes down to commute and schools across St. Marys, Kingsland, and Camden County, with some families choosing the northern Jacksonville (FL) suburbs."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "St. Marys and Kingsland sit right by the base for a short commute and affordable housing." },
+          { "who": "Family areas", "advice": "Camden County communities are family-friendly with a relaxed coastal pace." },
+          { "who": "Toward Jacksonville", "advice": "North Jacksonville-area suburbs (FL) are an option for those who want a bigger metro and don't mind the commute." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." }
+        ]
+      },
+      "source": { "label": "SUBASE Kings Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/navsubase_kings_bay.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "As a strategic installation, Kings Bay has strict access control. Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official SUBASE Kings Bay site before you go."
+      ],
+      "source": { "label": "SUBASE Kings Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/navsubase_kings_bay.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "SUBASE Kings Bay has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "SUBASE Kings Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/navsubase_kings_bay.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "GA074",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA GA074 (Kings Bay/Brunswick)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "31558", "label": "Kingsland, GA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Camden County Schools serves St. Marys, Kingsland, and the area around the base.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Camden County Schools (official)", "url": "https://www.camden.k12.ga.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "GA", "city": "Kingsland" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Naval Branch Health Clinic Kings Bay",
+        "Care": "Outpatient primary and some specialty care on base; inpatient and complex care via Naval Hospital Jacksonville and the regional network",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Hospital Jacksonville (official)", "url": "https://jacksonville.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "SUBASE Kings Bay Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Kings Bay"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Kings Bay's affordable coastal market makes buying a real option, especially with repeat submarine-force tours."],
+        "rent": [
+          "Your tour is short (about two years or less) or your sea-duty rotation feels uncertain.",
+          "You want time to learn the area before committing.",
+          "You'd rather not gamble on resale timing or coastal insurance costs.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat Kings Bay/Jacksonville-area assignments.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable coastal Georgia market fits your budget for a home you like.",
+          "You've found a town and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the affordable market and repeat submarine-force tours make buying worth a look. Factor in coastal insurance and run your BAH against the rent and home prices above, then talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on St. Marys and Kingsland before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Georgia vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Camden County Schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Kings Bay clinic or Naval Hospital Jacksonville." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Kings Bay?", "a": "It's the Atlantic Fleet's homeport for Ohio-class ballistic-missile submarines, the sea-based leg of the nuclear deterrent, on the southeast Georgia coast." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base in St. Marys and Kingsland (Camden County). Some choose the north Jacksonville suburbs to the south." },
+        { "q": "Is it affordable?", "a": "Yes. Southeast Georgia is affordable, so BAH stretches, and the coastal Golden Isles setting is a draw." },
+        { "q": "What is the BAH area?", "a": "Kings Bay is MHA GA074 (Kings Bay/Brunswick). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Cumberland Island National Seashore", "category": "Outdoors", "blurb": "Wild beaches, ruins, and feral horses, reached by ferry from St. Marys.", "maps_query": "Cumberland Island National Seashore, GA" },
+        { "name": "Historic St. Marys", "category": "In town", "blurb": "A charming riverfront town with dining and the ferry to Cumberland Island.", "maps_query": "Downtown St. Marys, GA" },
+        { "name": "Jacksonville", "category": "Day trip", "blurb": "The big-city amenities and beaches of Jacksonville, FL, about 40 miles south.", "maps_query": "Jacksonville, FL" },
+        { "name": "Jekyll & St. Simons Islands", "category": "Beach", "blurb": "Georgia's Golden Isles, north along the coast.", "maps_query": "Jekyll Island, GA" }
+      ]
+    }
+  ]
+}

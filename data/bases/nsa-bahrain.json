@@ -1,0 +1,157 @@
+{
+  "slug": "nsa-bahrain",
+  "schema_version": "0.1",
+  "name": "NSA Bahrain",
+  "short_name": "Bahrain",
+  "branch": "U.S. Navy",
+  "states": ["Bahrain"],
+  "region": "OCONUS",
+  "tagline": "The Navy's hub in the Middle East, headquarters of U.S. 5th Fleet, in Manama, Bahrain.",
+  "coords": { "lat": 26.21, "lng": 50.61, "label": "Manama, Bahrain" },
+  "tz": "Asia/Bahrain",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (Bahrain, Persian Gulf). OHA housing, DoDEA Europe schools (Bahrain), command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy sections (US-only feeds). NSA Bahrain = HQ U.S. Naval Forces Central Command (NAVCENT) / U.S. 5th Fleet. Accompanied (command-sponsored) tour, but a Middle East posting with heightened force-protection and a more restricted environment; command sponsorship is essential and not guaranteed for all. Medical: Branch Health Clinic Bahrain. DoDEA school: Bahrain Elementary/Middle + High School. Facts verified from official sources (cnic.navy.mil NSA Bahrain, Navy Medicine, DeCA/NEX, DoDEA, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Manama, Bahrain (Persian Gulf, Middle East)",
+        "Role": "Headquarters of U.S. Naval Forces Central Command (NAVCENT) and U.S. 5th Fleet",
+        "Mission": "Naval operations and security across the Middle East region",
+        "Tour type": "Accompanied (command-sponsored) for many, but command sponsorship is essential and not guaranteed",
+        "Setting": "An island nation in the Gulf; hot desert climate"
+      },
+      "source": { "label": "NSA Bahrain (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnreurafcent/installations/nsa_bahrain.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Support Activity Bahrain is the Navy's hub in the Middle East, home to the headquarters of U.S. Naval Forces Central Command and the U.S. 5th Fleet, which operate across the Gulf region. It's a strategically vital, operationally busy installation.",
+        "On the island nation of Bahrain near the capital, Manama, it's an overseas tour with a distinctly Middle Eastern setting and a hot desert climate. Many tours are accompanied, but command sponsorship matters a great deal here and is not guaranteed for every assignment."
+      ],
+      "source": { "label": "NSA Bahrain (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnreurafcent/installations/nsa_bahrain.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bahrain_decision",
+      "title": "A Middle East Tour: Command Sponsorship Comes First",
+      "type": "killer",
+      "data": {
+        "subtitle": "The defining factor in a Bahrain tour is whether it's accompanied and command-sponsored. That determines whether your family comes, and your housing and OHA. Most who are accompanied live on the economy with OHA.",
+        "intro": [
+          "Bahrain can be an accompanied or unaccompanied tour, and command sponsorship is essential for bringing family, accessing OHA, and enrolling kids in the DoDEA school. Confirm your status early; it shapes everything.",
+          "For accompanied families, most live on the local economy in apartments and villas around Manama using the Overseas Housing Allowance (OHA), with the base providing schools, the commissary, the clinic, and community services."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Command sponsorship determines whether your family comes and unlocks OHA and the DoDEA school; nail this down before anything else." },
+          { "who": "Living on the economy", "advice": "Most accompanied families rent apartments or villas around Manama with OHA; the housing office helps with leases and the local market." },
+          { "who": "Lean on the base community", "advice": "The base provides the school, commissary, exchange, clinic, and morale programs that anchor family life here." },
+          { "who": "Plan for the region", "advice": "Expect a hot climate, a Middle Eastern security environment with force-protection rules, and a culture worth learning before you arrive." }
+        ]
+      },
+      "source": { "label": "NSA Bahrain (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnreurafcent/installations/nsa_bahrain.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation rules, with heightened force protection given the region. Visitors without a DoD ID must be sponsored and registered through the Visitor Control Center.",
+        "Requirements are stricter than at many installations and change with the security environment, so confirm the current details on the official NSA Bahrain site before you go."
+      ],
+      "source": { "label": "NSA Bahrain (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnreurafcent/installations/nsa_bahrain.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (Government & OHA)",
+      "type": "prose",
+      "data": [
+        "Bahrain has some government housing, but most command-sponsored families live on the local economy in apartments and villas around Manama, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "Whether your family can be housed here depends heavily on command sponsorship. The housing office helps with the local market, leases, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "NSA Bahrain (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnreurafcent/installations/nsa_bahrain.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of command-sponsored personnel attend the Department of Defense Education Activity (DoDEA) schools in Bahrain (Bahrain Elementary/Middle School and Bahrain High School), serving students from elementary through high school.",
+        "Confirm current schools and registration through DoDEA and the command, and bring records and immunizations when you register. Some families also consider local international schools."
+      ],
+      "source": { "label": "DoDEA (official)", "url": "https://www.dodea.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Branch Health Clinic Bahrain",
+        "Care": "Outpatient primary and some specialty care on base; inpatient and complex care via host-nation hospitals and medical evacuation to regional military hospitals as needed",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Branch Health Clinic Bahrain (TRICARE)", "url": "https://www.tricare.mil/mtf/Bahrain" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NSA Bahrain Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Bahrain"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Bahrain has extra steps, and command sponsorship shapes many of them. Get these sorted early."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "This is the big one: it determines whether your family can come, your OHA, and DoDEA enrollment. Verify your status as early as possible." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Most accompanied families rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle the local logistics", "text": "Learn the driving and licensing rules, residency/visa requirements, and force-protection guidance for the region; the command and housing office will brief you." },
+          { "title": "Enroll the kids in school", "text": "If command-sponsored, register with the DoDEA Bahrain schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Bahrain clinic, with host-nation hospitals and medical evacuation for higher-level care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Bahrain?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in government housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "Can my family come?", "a": "Often, but it depends on command sponsorship, which is essential and not guaranteed for every assignment. Command sponsorship unlocks family travel, OHA, and the DoDEA school, so confirm it early." },
+        { "q": "Where do families live?", "a": "Mostly on the local economy in apartments and villas around Manama using OHA, with some government housing. The base provides schools, the commissary, the clinic, and community services." },
+        { "q": "What's the tour like?", "a": "It's an operationally busy Middle East tour with a hot climate and heightened force protection, but also a chance to experience the region. Many find it a rewarding, community-focused assignment." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Bahrain National Museum", "category": "Museum", "blurb": "The country's history and culture in Manama.", "maps_query": "Bahrain National Museum, Manama" },
+        { "name": "Bab Al Bahrain & the souq", "category": "In town", "blurb": "The historic gateway and traditional market in central Manama.", "maps_query": "Bab Al Bahrain, Manama" },
+        { "name": "Qal'at al-Bahrain (Bahrain Fort)", "category": "History", "blurb": "A UNESCO World Heritage archaeological site on the coast.", "maps_query": "Qal'at al-Bahrain, Bahrain" },
+        { "name": "Tree of Life", "category": "Outdoors", "blurb": "A famous lone tree standing in the desert.", "maps_query": "Tree of Life, Bahrain" }
+      ]
+    }
+  ]
+}

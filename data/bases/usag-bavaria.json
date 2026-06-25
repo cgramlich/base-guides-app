@@ -1,0 +1,157 @@
+{
+  "slug": "usag-bavaria",
+  "schema_version": "0.1",
+  "name": "USAG Bavaria",
+  "short_name": "Bavaria",
+  "branch": "U.S. Army",
+  "states": ["Germany"],
+  "region": "OCONUS",
+  "tagline": "The Army's major training community in eastern Bavaria, spanning Grafenwöhr, Vilseck, and Hohenfels.",
+  "coords": { "lat": 49.70, "lng": 11.94, "label": "Grafenwöhr, Germany" },
+  "tz": "Europe/Berlin",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (Germany). OHA housing, DoDEA Europe schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy sections (US-only feeds). USAG Bavaria spans Grafenwöhr (HQ + major training area), Vilseck/Rose Barracks (2nd Cavalry Regiment), and Hohenfels (Joint Multinational Readiness Center, JMRC). One of the largest Army communities in Europe. Eastern Bavaria, near Nuremberg. Medical: Grafenwoehr Army Health Clinic + Landstuhl for higher care. Facts verified from official sources (home.army.mil/bavaria, TRICARE, DeCA/AAFES, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx, Grafenwöhr).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Eastern Bavaria, Germany (near Nuremberg)",
+        "Spans": "Grafenwöhr (HQ), Vilseck (Rose Barracks), and Hohenfels",
+        "Major units": "2nd Cavalry Regiment (Vilseck) and the Joint Multinational Readiness Center (Hohenfels)",
+        "Distinction": "One of the largest Army communities in Europe with major training areas",
+        "Tour type": "Accompanied (command-sponsored) for most"
+      },
+      "source": { "label": "USAG Bavaria (official)", "url": "https://home.army.mil/bavaria/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "U.S. Army Garrison Bavaria is one of the Army's largest overseas communities, built around major training areas. It spans Grafenwöhr (the headquarters and a huge training range), Vilseck's Rose Barracks (home of the 2nd Cavalry Regiment), and Hohenfels (the Joint Multinational Readiness Center, where units from across NATO train).",
+        "In the rolling countryside of eastern Bavaria near Nuremberg, it gives families an authentic German experience with the Alps, Prague, and the rest of Europe within reach."
+      ],
+      "source": { "label": "USAG Bavaria (official)", "url": "https://home.army.mil/bavaria/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bavaria_decision",
+      "title": "A Bavaria Tour: On-Post vs. a German Village",
+      "type": "killer",
+      "data": {
+        "subtitle": "A tour in Bavaria is a favorite. The main choice is on-post housing versus renting 'on the economy' in a German village, plus which of the communities (Grafenwöhr, Vilseck, or Hohenfels) you're tied to.",
+        "intro": [
+          "Most families come command-sponsored and choose between on-post housing and renting on the German economy with the Overseas Housing Allowance (OHA). Your unit usually determines which community you're near.",
+          "On post is the simplest, most American option with schools and services on site. Living on the economy means a richer Bavarian experience and often more space, balanced against a German lease, the language, and a commute."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-post housing at Grafenwöhr, Vilseck, or Hohenfels keeps you close to work, schools, and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting in the surrounding Bavarian villages offers the real German experience, with OHA to offset rent." },
+          { "who": "Match your community", "advice": "Your unit ties you to Grafenwöhr, Vilseck, or Hohenfels; house-hunt near the right one to keep the commute reasonable." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-post housing and must approve economy rentals, and helps with leases and OHA, so start there before signing anything." }
+        ]
+      },
+      "source": { "label": "USAG Bavaria (official)", "url": "https://home.army.mil/bavaria/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas installations can be stricter and change with force-protection levels, so confirm the current details on the official USAG Bavaria site before you go."
+      ],
+      "source": { "label": "USAG Bavaria (official)", "url": "https://home.army.mil/bavaria/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Post & OHA)",
+      "type": "prose",
+      "data": [
+        "USAG Bavaria has on-post family housing across its communities (Grafenwöhr, Vilseck, Hohenfels), and many families instead live on the German economy in the surrounding villages, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-post housing and must approve economy rentals; it also helps with leases, utilities, and OHA paperwork. Start there as soon as you have orders."
+      ],
+      "source": { "label": "USAG Bavaria (official)", "url": "https://home.army.mil/bavaria/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools in the Grafenwöhr, Vilseck, and Hohenfels communities, serving students from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Europe and the garrison, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Grafenwoehr Army Health Clinic (with clinics at Vilseck and Hohenfels)",
+        "Care": "Outpatient primary and specialty care in the communities; inpatient and complex care via Landstuhl Regional Medical Center and host-nation hospitals",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Grafenwoehr Army Health Clinic (TRICARE)", "url": "https://www.tricare.mil/mtf/Grafenwoehr" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Grafenwöhr Commissary (DeCA; also Vilseck/Hohenfels)",
+        "Exchange": "Grafenwöhr Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Germany has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first, and house-hunt near your community (Grafenwöhr, Vilseck, or Hohenfels). Choose on-post housing or get approval to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your USAREUR driver's license, register or ship your vehicle, and complete SOFA documentation. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA schools in your community early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at your community clinic, with Landstuhl and host-nation providers for higher-level care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at USAG Bavaria?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-post housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "What are the different communities?", "a": "USAG Bavaria spans Grafenwöhr (HQ and a major training area), Vilseck (2nd Cavalry Regiment), and Hohenfels (the Joint Multinational Readiness Center). Your unit determines which one you're near." },
+        { "q": "What about schools?", "a": "Kids attend DoDEA schools in the Grafenwöhr, Vilseck, and Hohenfels communities, from elementary through high school." },
+        { "q": "Is it a good tour for travel?", "a": "Excellent. Eastern Bavaria puts the Alps, Nuremberg, Prague, and the rest of Europe within easy reach." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Nuremberg", "category": "Day trip", "blurb": "A historic Bavarian city with a castle, old town, and famous Christmas market.", "maps_query": "Nuremberg, Germany" },
+        { "name": "Regensburg", "category": "Day trip", "blurb": "A UNESCO-listed medieval old town on the Danube.", "maps_query": "Regensburg Old Town, Germany" },
+        { "name": "Bavarian Alps", "category": "Outdoors", "blurb": "Mountains, lakes, and castles to the south for weekend trips.", "maps_query": "Bavarian Alps, Germany" },
+        { "name": "Prague", "category": "Day trip", "blurb": "The Czech capital is a reachable weekend drive to the east.", "maps_query": "Prague, Czech Republic" }
+      ]
+    }
+  ]
+}

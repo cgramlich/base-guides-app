@@ -1,0 +1,157 @@
+{
+  "slug": "camp-zama",
+  "schema_version": "0.1",
+  "name": "Camp Zama",
+  "short_name": "Zama",
+  "branch": "U.S. Army",
+  "states": ["Japan"],
+  "region": "OCONUS",
+  "tagline": "Headquarters of U.S. Army Japan, in the Tokyo metropolitan area.",
+  "coords": { "lat": 35.51, "lng": 139.40, "label": "Zama, Japan" },
+  "tz": "Asia/Tokyo",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (Japan). OHA housing, DoDEA Pacific schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy sections (US-only feeds). Camp Zama = HQ U.S. Army Japan (and I Corps Forward), Kanagawa Prefecture in greater Tokyo; nearby Sagami General Depot. Medical: BG Crawford F. Sams U.S. Army Health Clinic Japan (Camp Zama). DoDEA Pacific schools (Arnn Elementary, Zama Middle/High). Facts verified from official sources (home.army.mil/zama, TRICARE, DeCA/AAFES, DoDEA Pacific, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Zama, Kanagawa Prefecture, Japan (greater Tokyo)",
+        "Role": "Headquarters of U.S. Army Japan",
+        "Also hosts": "I Corps (Forward) and the nearby Sagami General Depot",
+        "Setting": "Suburban Tokyo metro area",
+        "Tour type": "Accompanied (command-sponsored) for most"
+      },
+      "source": { "label": "Camp Zama (official)", "url": "https://home.army.mil/zama/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Camp Zama is the headquarters of U.S. Army Japan, coordinating Army forces and the alliance with Japan, and it hosts I Corps (Forward). The nearby Sagami General Depot supports logistics in the region.",
+        "In Kanagawa Prefecture within the greater Tokyo metropolitan area, it offers a rare combination: an overseas Army tour with one of the world's great cities at your doorstep, served by Japan's superb rail network."
+      ],
+      "source": { "label": "Camp Zama (official)", "url": "https://home.army.mil/zama/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "zama_decision",
+      "title": "A Tokyo-Area Tour: On-Post vs. Living on the Economy",
+      "type": "killer",
+      "data": {
+        "subtitle": "Camp Zama puts you in the Tokyo metro. The main choice is on-post housing versus renting 'on the economy' in the surrounding Japanese communities with the Overseas Housing Allowance (OHA).",
+        "intro": [
+          "Most families come command-sponsored and choose between on-post housing and renting on the Japanese economy with OHA. On-post (and nearby housing areas like Sagamihara) is convenient and community-focused.",
+          "Living on the economy means deeper immersion in Japanese life and the Tokyo metro, balanced against a Japanese lease, the language, and navigating a dense urban area (where many rely on trains rather than a car)."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-post housing (and the nearby Sagamihara housing area) keeps you close to work, DoDEA schools, and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting on the economy in the surrounding communities offers a deeper Japanese and Tokyo-metro experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-post housing and must approve economy rentals, and helps with leases and OHA, so start there." },
+          { "who": "Embrace the trains", "advice": "Japan's rail network makes Tokyo and the whole country accessible; many families rely on transit over driving." }
+        ]
+      },
+      "source": { "label": "Camp Zama (official)", "url": "https://home.army.mil/zama/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas installations can be stricter and change with force-protection levels, so confirm the current details on the official Camp Zama site before you go."
+      ],
+      "source": { "label": "Camp Zama (official)", "url": "https://home.army.mil/zama/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Post & OHA)",
+      "type": "prose",
+      "data": [
+        "Camp Zama has on-post family housing, with additional housing in nearby areas (such as Sagamihara). Many families instead rent on the Japanese economy and receive the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-post housing and must approve economy rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "Camp Zama (official)", "url": "https://home.army.mil/zama/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools in the Camp Zama community (such as Arnn Elementary and Zama Middle/High School), serving students from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Pacific and the garrison, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "BG Crawford F. Sams U.S. Army Health Clinic Japan (Camp Zama)",
+        "Care": "Outpatient primary and specialty care on post; inpatient and complex care via larger military hospitals in Japan and host-nation facilities",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "BG Crawford F. Sams Army Health Clinic (TRICARE)", "url": "https://www.tricare.mil/mtf/CampZama" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Camp Zama Commissary (DeCA)",
+        "Exchange": "Camp Zama Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Japan has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-post housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and transport", "text": "Get your SOFA driver's license and complete SOFA documentation. In the Tokyo metro many families rely on excellent trains; decide whether you need a car." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Camp Zama schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Camp Zama clinic, with larger Japan military hospitals and host-nation providers for specialty care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Camp Zama?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-post housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "What is Camp Zama?", "a": "It's the headquarters of U.S. Army Japan (and hosts I Corps Forward), in the greater Tokyo metropolitan area in Kanagawa Prefecture." },
+        { "q": "Where do families live?", "a": "Either in on-post housing (and nearby areas like Sagamihara) or on the Japanese economy using OHA." },
+        { "q": "What's it like being near Tokyo?", "a": "Excellent for families: Japan's rail network puts Tokyo and the whole country within reach, and many rely on trains rather than driving." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Tokyo", "category": "Day trip", "blurb": "One of the world's great cities, reachable by train for food, culture, and shopping.", "maps_query": "Tokyo, Japan" },
+        { "name": "Yokohama", "category": "Day trip", "blurb": "A big waterfront city with Chinatown and a famous harbor nearby.", "maps_query": "Yokohama, Japan" },
+        { "name": "Hakone & Mount Fuji", "category": "Outdoors", "blurb": "Hot springs, lake views, and Mount Fuji to the west.", "maps_query": "Hakone, Japan" },
+        { "name": "Kamakura", "category": "History", "blurb": "Temples, shrines, and the Great Buddha on the nearby coast.", "maps_query": "Kamakura, Japan" }
+      ]
+    }
+  ]
+}
