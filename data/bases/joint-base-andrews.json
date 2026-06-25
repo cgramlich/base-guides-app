@@ -1,0 +1,201 @@
+{
+  "slug": "joint-base-andrews",
+  "schema_version": "0.1",
+  "name": "Joint Base Andrews",
+  "short_name": "Andrews",
+  "branch": "Air Force / Navy",
+  "states": ["MD"],
+  "tagline": "Home of Air Force One and presidential airlift, just outside Washington, D.C.",
+  "coords": { "lat": 38.81, "lng": -76.87, "label": "Camp Springs, MD (DC metro)" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Joint Base Andrews-NAF Washington (Air Force lead + Navy), Prince George's County MD, DC metro. CONUS full template (BAH MHA DC053 Washington DC Metro; RentCast/SchoolDigger work). Home of the 89th Airlift Wing / presidential airlift (Air Force One). Joint base -> picked up by isJoint() via name. Medical: Malcolm Grow Medical Clinics & Surgery Center. Facts verified from official sources (jba.af.mil, Malcolm Grow/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Maryland is TRICARE East. High-cost DC metro market. Medium-confidence flags: base coords (approx), off-base ZIP 20746 (Suitland/Camp Springs).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (lead) with U.S. Navy (NAF Washington)",
+        "Location": "Camp Springs, MD (Prince George's County, DC metro)",
+        "Known as": "Home of Air Force One",
+        "Major unit": "89th Airlift Wing (presidential and senior-leader airlift)",
+        "Also hosts": "Naval Air Facility Washington and many tenant units",
+        "Setting": "Washington, D.C. suburbs (high cost of living)"
+      },
+      "source": { "label": "Joint Base Andrews (official)", "url": "https://www.jba.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Joint Base Andrews is best known as the home of Air Force One and presidential airlift, flown by the 89th Airlift Wing. It's a joint installation, Air Force-led and combined with Naval Air Facility Washington, hosting a wide range of tenant units.",
+        "Just outside Washington, D.C., in Prince George's County, it offers proximity to the national capital region, with everything that brings: career opportunities, traffic, and a high cost of living."
+      ],
+      "source": { "label": "Joint Base Andrews (official)", "url": "https://www.jba.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "andrews_decision",
+      "title": "Living in the D.C. Metro: Commute Is Everything",
+      "type": "killer",
+      "data": {
+        "subtitle": "Andrews sits in the expensive, traffic-heavy D.C. metro. The defining choice is balancing commute (and the Beltway) against price across the Maryland suburbs.",
+        "intro": [
+          "The national capital region is costly and congested, so where you live is mostly about commute. On-base housing is in demand; off base, families spread across the Maryland suburbs south and east of the city.",
+          "Closer-in areas cost more; heading farther into southern Maryland trades a longer drive for more space and lower prices."
+        ],
+        "recommendations": [
+          { "who": "Shortest commute", "advice": "Camp Springs, Clinton, and Upper Marlboro sit close to the base in Prince George's County." },
+          { "who": "More space for the money", "advice": "Waldorf and southern Charles County offer newer homes and more room, with a longer drive." },
+          { "who": "Family suburbs", "advice": "Bowie and the Crofton/Anne Arundel area are popular with families; weigh the commute and traffic." },
+          { "who": "On-base option", "advice": "On-base housing is convenient in this pricey market and in demand; get on the list early." }
+        ]
+      },
+      "source": { "label": "Joint Base Andrews (official)", "url": "https://www.jba.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "As a high-profile installation, Andrews has strict access control. Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, especially around official movements, so confirm the current details on the official Joint Base Andrews site before you go."
+      ],
+      "source": { "label": "Joint Base Andrews (official)", "url": "https://www.jba.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Joint Base Andrews has privatized on-base family housing across several neighborhoods, a convenient option in the high-cost D.C. metro.",
+        "Demand is high, so eligibility and waitlists matter. Start with the housing office for the current manager, options, and timelines."
+      ],
+      "source": { "label": "Joint Base Andrews (official)", "url": "https://www.jba.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "DC053",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA DC053 (Washington, DC Metro)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "20746", "label": "Camp Springs / Suitland, MD" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Prince George's County Public Schools serves the area around the base, with neighboring districts (Charles, Anne Arundel) depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Prince George's County Public Schools (official)", "url": "https://www.pgcps.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MD", "city": "Camp Springs" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Malcolm Grow Medical Clinics & Surgery Center",
+        "Care": "Outpatient primary, specialty, and surgical care on base; inpatient care via Walter Reed (Bethesda) and the DC-area network",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Malcolm Grow Medical Clinics (official)", "url": "https://malcolmgrow.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Joint Base Andrews Commissary (DeCA)",
+        "Exchange": "Joint Base Andrews Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in the expensive D.C. metro the math is tougher than at most duty stations."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "Home prices closer in are out of comfortable reach for your budget.",
+          "You want flexibility in a costly, fast-moving market.",
+          "On-base housing or renting keeps you closer in without overextending."
+        ],
+        "buy": [
+          "You expect a long tour or repeat assignments in the capital region, which is common.",
+          "You can afford the entry price and want to build equity with your VA loan.",
+          "You've found a Maryland suburb and commute that work and plan to hold the home.",
+          "You're comfortable being a long-distance landlord if you PCS before selling."
+        ],
+        "bottom_line": "There is no universal right answer, and the D.C. metro's high prices make buying a bigger commitment. Many families rent or take on-base housing, especially on shorter tours, while those expecting repeat DC assignments often buy. Run your BAH against the rent and home prices above, weigh your commute, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In a big, expensive metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is in demand; get on the list early and get the office's read on the metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Maryland vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Prince George's, Charles, or Anne Arundel County) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Malcolm Grow or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is this where Air Force One is based?", "a": "Yes. Joint Base Andrews is home to the 89th Airlift Wing, which flies presidential and senior-leader airlift, including Air Force One." },
+        { "q": "Where do families live?", "a": "Across the Maryland suburbs. Camp Springs, Clinton, and Upper Marlboro are close; Waldorf and southern Maryland offer more space; Bowie/Crofton are popular for schools. On-base housing is in demand." },
+        { "q": "Is it expensive?", "a": "Yes. It's the D.C. metro, one of the costlier and most congested regions, so commute and budget drive where you live." },
+        { "q": "What is the BAH area?", "a": "Andrews is MHA DC053 (Washington, DC Metro). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "National Mall & Smithsonian", "category": "Family", "blurb": "World-class free museums and monuments in downtown D.C.", "maps_query": "National Mall, Washington DC" },
+        { "name": "National Harbor", "category": "Food & shopping", "blurb": "Waterfront dining, shops, and the Capital Wheel, just across the river.", "maps_query": "National Harbor, MD" },
+        { "name": "Chesapeake Bay (Annapolis)", "category": "Day trip", "blurb": "Maryland's sailing capital and historic waterfront, a short drive east.", "maps_query": "Annapolis, MD" },
+        { "name": "Six Flags America", "category": "Family", "blurb": "A regional theme and water park in nearby Bowie.", "maps_query": "Six Flags America, Bowie MD" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "vandenberg-sfb",
+  "schema_version": "0.1",
+  "name": "Vandenberg SFB",
+  "short_name": "Vandenberg",
+  "branch": "U.S. Space Force",
+  "states": ["CA"],
+  "tagline": "The Space Force's West Coast launch base on California's Central Coast, gateway to polar-orbit space launches.",
+  "coords": { "lat": 34.74, "lng": -120.57, "label": "Lompoc, CA (Central Coast)" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Space Force launch base (Lompoc, Santa Barbara County, CA Central Coast). CONUS full template (BAH MHA CA026 Vandenberg SFB; RentCast/SchoolDigger work). Space Launch Delta 30 operates the Western Range; primary US site for polar/sun-synchronous orbit launches. 2nd Space Force base in app (after Peterson SFB) -> Space Force filter chip. Medical: on-base clinic. Facts verified from official sources (vandenberg.spaceforce.mil, TRICARE clinic, DeCA/AAFES, Wikipedia for corroborated headline facts). California is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 93436 (Lompoc).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Space Force",
+        "Location": "Lompoc, CA (Santa Barbara County, Central Coast)",
+        "Major unit": "Space Launch Delta 30 (operates the Western Range)",
+        "Role": "West Coast space launch; primary US site for polar/sun-synchronous orbits",
+        "Setting": "Coastal Central California",
+        "Note": "One of the Space Force's premier launch installations"
+      },
+      "source": { "label": "Vandenberg SFB (official)", "url": "https://www.vandenberg.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Vandenberg Space Force Base is the Space Force's main West Coast launch installation, run by Space Launch Delta 30, which operates the Western Range. Its coastal geography makes it the primary U.S. site for launching satellites into polar and sun-synchronous orbits.",
+        "On California's Central Coast near Lompoc, it combines a high-tech launch mission with a relatively quiet, scenic coastal setting between Santa Barbara and San Luis Obispo."
+      ],
+      "source": { "label": "Vandenberg SFB (official)", "url": "https://www.vandenberg.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "vandenberg_decision",
+      "title": "Central Coast Living: Scenic, Quieter, and Pricey",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Central Coast is beautiful but California-expensive. The main choice is on-base housing or the nearby towns, balancing the higher cost of living against the lifestyle.",
+        "intro": [
+          "The area is scenic and mild but carries California coastal prices, so budgets matter. On-base housing is a popular, cost-effective choice; off base, most families settle in the nearby towns to keep the commute short.",
+          "Where you live mostly comes down to commute and schools across Lompoc, Santa Maria, and the surrounding Central Coast communities."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Lompoc sits right by the base for the shortest commute and the most affordable local option." },
+          { "who": "More amenities", "advice": "Santa Maria, a bit north, is larger with more shopping, dining, and housing choices." },
+          { "who": "On-base option", "advice": "On-base housing is convenient and cost-effective in this pricey area; get on the list early." },
+          { "who": "Enjoy the coast", "advice": "Wine country, beaches, and Santa Barbara are all within reach for weekends." }
+        ]
+      },
+      "source": { "label": "Vandenberg SFB (official)", "url": "https://www.vandenberg.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, especially around launch operations, so confirm the current details on the official Vandenberg SFB site before you go."
+      ],
+      "source": { "label": "Vandenberg SFB (official)", "url": "https://www.vandenberg.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Vandenberg has privatized on-base family housing across several neighborhoods, a cost-effective option on the pricey Central Coast.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Vandenberg SFB (official)", "url": "https://www.vandenberg.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA026",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA026 (Vandenberg SFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "93436", "label": "Lompoc, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Lompoc Unified serves the area nearest the base, with Santa Maria-area districts also serving military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Lompoc Unified School District (official)", "url": "https://www.lusd.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Lompoc" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Vandenberg SFB Clinic",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via Central Coast network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Vandenberg SFB Clinic (TRICARE)", "url": "https://www.tricare.mil/mtf/Vandenberg" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Vandenberg SFB Commissary (DeCA)",
+        "Exchange": "Vandenberg SFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and on the pricey Central Coast many families lean toward on-base housing or renting."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "California coastal prices put a purchase out of comfortable reach.",
+          "You prefer on-base housing for the short commute and cost.",
+          "You want flexibility in an expensive market."
+        ],
+        "buy": [
+          "You expect a long tour or repeat Central Coast assignments.",
+          "You can afford the entry price and want to build equity with your VA loan.",
+          "You've found a town and commute you're confident about.",
+          "You're comfortable owning (and possibly renting out) in a higher-cost market."
+        ],
+        "bottom_line": "There is no universal right answer, and Central Coast prices make buying a bigger commitment. Many families take on-base housing or rent. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is cost-effective here; get on the list early and get the office's read on Lompoc and Santa Maria before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Lompoc Unified or a Santa Maria-area district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Vandenberg clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Vandenberg?", "a": "It's the Space Force's West Coast launch base, operated by Space Launch Delta 30. Its coastal location makes it the primary U.S. site for launching satellites into polar and sun-synchronous orbits." },
+        { "q": "Where do families live?", "a": "On-base housing is popular and cost-effective. Off base, Lompoc is closest; Santa Maria offers more amenities a bit north." },
+        { "q": "Is it expensive?", "a": "It's California coastal, so prices are higher than many bases. On-base housing or renting helps BAH stretch." },
+        { "q": "What is the BAH area?", "a": "Vandenberg is MHA CA026. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Santa Barbara Wine Country (Santa Ynez)", "category": "Day trip", "blurb": "Rolling vineyards and tasting towns just inland.", "maps_query": "Santa Ynez Valley wineries, CA" },
+        { "name": "Pismo Beach", "category": "Beach", "blurb": "A classic Central Coast beach town with dunes and a pier, a short drive north.", "maps_query": "Pismo Beach, CA" },
+        { "name": "La Purisima Mission", "category": "History", "blurb": "A beautifully restored Spanish mission and state park near Lompoc.", "maps_query": "La Purisima Mission State Historic Park, Lompoc CA" },
+        { "name": "Santa Barbara", "category": "Day trip", "blurb": "The 'American Riviera' with beaches, dining, and Spanish architecture about an hour south.", "maps_query": "Santa Barbara, CA" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "nas-lemoore",
+  "schema_version": "0.1",
+  "name": "NAS Lemoore",
+  "short_name": "Lemoore",
+  "branch": "U.S. Navy",
+  "states": ["CA"],
+  "tagline": "The Navy's West Coast master jet base in California's Central Valley, home of the Pacific Fleet's strike fighters.",
+  "coords": { "lat": 36.33, "lng": -119.95, "label": "Lemoore, CA (Central Valley)" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy master jet base (Lemoore, Kings County, CA Central Valley; rural/agricultural). CONUS full template (BAH MHA CA023 Lemoore NAS; RentCast/SchoolDigger work). Home of Pacific Fleet strike fighters (F/A-18E/F Super Hornet, F-35C). Affordable Central Valley; many live on base or in Lemoore/Hanford/Visalia. Medical: Naval Hospital Lemoore. Facts verified from official sources (cnic.navy.mil NAS Lemoore, Naval Hospital Lemoore, DeCA/NEX, Wikipedia for corroborated headline facts). California is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 93245 (Lemoore).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Lemoore, CA (Kings County, San Joaquin / Central Valley)",
+        "Role": "The Navy's West Coast master jet base",
+        "Aircraft": "F/A-18E/F Super Hornet and F-35C Lightning II strike fighters",
+        "Setting": "Rural, agricultural Central Valley (affordable, hot summers)",
+        "Note": "A self-contained base somewhat removed from big cities"
+      },
+      "source": { "label": "NAS Lemoore (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/nas_lemoore.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Air Station Lemoore is the Navy's West Coast master jet base, home to the Pacific Fleet's strike fighter squadrons flying the F/A-18E/F Super Hornet and the F-35C Lightning II. It's a large, modern air station central to carrier aviation.",
+        "It sits in California's rural Central Valley near the town of Lemoore, an agricultural area that's affordable and quiet, but a fair drive from major cities and coastlines."
+      ],
+      "source": { "label": "NAS Lemoore (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/nas_lemoore.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "lemoore_decision",
+      "title": "Affordable, Self-Contained Valley Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Lemoore is one of the more affordable California postings, but it's rural and a bit isolated. The choice is on-base housing versus the nearby Central Valley towns.",
+        "intro": [
+          "Unlike coastal California, the Central Valley is genuinely affordable, so BAH stretches and many families do well here. The trade-off is the rural setting and distance from big cities. On-base housing is extensive and popular.",
+          "Where you live mostly comes down to commute and schools across Lemoore, Hanford, and the broader valley, with bigger amenities a drive away."
+        ],
+        "recommendations": [
+          { "who": "Most convenient", "advice": "On-base housing is extensive and popular here; with the rural location, it's a common, easy choice." },
+          { "who": "Closest town", "advice": "Lemoore sits right by the base; Hanford, a bit east, is larger with more shopping and dining." },
+          { "who": "More amenities", "advice": "Visalia and the Fresno area offer big-city options, a longer drive north and east." },
+          { "who": "Plan for the setting", "advice": "Summers are hot and the coast and mountains are a couple of hours away; plan trips accordingly." }
+        ]
+      },
+      "source": { "label": "NAS Lemoore (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/nas_lemoore.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official NAS Lemoore site before you go."
+      ],
+      "source": { "label": "NAS Lemoore (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/nas_lemoore.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "NAS Lemoore has extensive privatized on-base family housing, and given the rural location it's a popular choice for many families.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "NAS Lemoore (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/nas_lemoore.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA023",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA023 (Lemoore NAS)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "93245", "label": "Lemoore, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, including campuses serving the base. Lemoore-area districts and, to the east, Hanford districts serve most military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Lemoore Union Elementary School District (official)", "url": "https://www.luesd.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Lemoore" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Naval Hospital Lemoore",
+        "Care": "Primary and specialty outpatient care on base; inpatient, emergency, and complex care via Central Valley network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Naval Hospital Lemoore (official)", "url": "https://lemoore.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NAS Lemoore Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Lemoore"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Lemoore's affordable Central Valley market makes buying a real option, though many take on-base housing."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You prefer on-base housing for convenience in a rural area.",
+          "You want time to learn the valley before committing.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable valley market fits your budget for a home you like.",
+          "You've found a town and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The Central Valley is affordable, so BAH stretches and buying can pencil out, but the small, rural market affects resale. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is popular here; get on the list early and get the office's read on Lemoore and Hanford before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Lemoore or Hanford area) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Hospital Lemoore or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What flies out of Lemoore?", "a": "It's the Navy's West Coast master jet base, home to Pacific Fleet strike fighter squadrons flying the F/A-18E/F Super Hornet and the F-35C Lightning II." },
+        { "q": "Where do families live?", "a": "On-base housing is extensive and popular. Off base, Lemoore is closest and Hanford is a larger town nearby; Visalia and Fresno offer more amenities a drive away." },
+        { "q": "Is it affordable?", "a": "Yes, by California standards. The Central Valley is genuinely affordable, so BAH stretches, though it's rural and a couple of hours from the coast." },
+        { "q": "What is the BAH area?", "a": "NAS Lemoore is MHA CA023. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Hanford (historic downtown)", "category": "In town", "blurb": "A walkable historic downtown with shops and dining near the base.", "maps_query": "Downtown Hanford, CA" },
+        { "name": "Sequoia & Kings Canyon National Parks", "category": "Outdoors", "blurb": "Giant sequoias and mountains a couple of hours east.", "maps_query": "Sequoia National Park, CA" },
+        { "name": "Pismo Beach / Central Coast", "category": "Day trip", "blurb": "The nearest beaches are roughly a couple of hours west.", "maps_query": "Pismo Beach, CA" },
+        { "name": "Fresno", "category": "Day trip", "blurb": "The Central Valley's largest city, with big-city shopping and dining to the north.", "maps_query": "Fresno, CA" }
+      ]
+    }
+  ]
+}

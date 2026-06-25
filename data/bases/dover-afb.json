@@ -1,0 +1,201 @@
+{
+  "slug": "dover-afb",
+  "schema_version": "0.1",
+  "name": "Dover AFB",
+  "short_name": "Dover",
+  "branch": "U.S. Air Force",
+  "states": ["DE"],
+  "tagline": "A major strategic airlift hub in Delaware and home of the nation's military mortuary, where fallen service members are returned with honor.",
+  "coords": { "lat": 39.13, "lng": -75.47, "label": "Dover, DE" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force strategic airlift base (Dover DE, state capital). CONUS full template (BAH MHA DE054 Dover AFB/Rehoboth; RentCast/SchoolDigger work). 436th Airlift Wing (C-5M/C-17) + AF Mortuary Affairs Operations (Dover Port Mortuary, dignified transfers). Medical: 436th Medical Group clinic. Facts verified from official sources (dover.af.mil, TRICARE/436 MDG, DeCA/AAFES, Wikipedia for corroborated headline facts). Delaware is TRICARE East. Note: DE has no state sales tax. Medium-confidence flags: base coords (approx), off-base ZIP 19901 (Dover).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Dover, DE (state capital, central Delaware)",
+        "Major unit": "436th Airlift Wing (C-5M Super Galaxy and C-17 strategic airlift)",
+        "Also home to": "Air Force Mortuary Affairs Operations (Dover Port Mortuary)",
+        "Role": "Major East Coast strategic airlift hub",
+        "Note": "Delaware has no state sales tax"
+      },
+      "source": { "label": "Dover AFB (official)", "url": "https://www.dover.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Dover Air Force Base is one of the military's largest strategic airlift hubs, home to the 436th Airlift Wing flying the C-5M Super Galaxy and C-17 Globemaster III. Its aircraft move outsized cargo around the world.",
+        "Dover is also home to Air Force Mortuary Affairs Operations and the Dover Port Mortuary, where America's fallen service members are returned with honor in dignified transfers, a solemn mission that defines the base's character."
+      ],
+      "source": { "label": "Dover AFB (official)", "url": "https://www.dover.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "dover_decision",
+      "title": "Affordable Central Delaware, Near the Beaches",
+      "type": "killer",
+      "data": {
+        "subtitle": "Dover is an affordable state capital with no sales tax and the Delaware beaches an hour away. The main choice is on-base housing versus the Dover-area communities.",
+        "intro": [
+          "Central Delaware is reasonably priced, and Delaware's lack of a state sales tax is a nice bonus, so BAH tends to stretch. On-base housing is available; many also live off base around Dover.",
+          "Where you live mostly comes down to commute and schools, with the Delaware and Maryland beaches within an easy drive for weekends."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Dover itself surrounds the base, with the shortest commute and the most amenities." },
+          { "who": "Family-friendly towns", "advice": "Camden-Wyoming and the surrounding Kent County areas are popular with families." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Beach access", "advice": "Rehoboth, Lewes, and the Delaware beaches are roughly an hour southeast for weekends." }
+        ]
+      },
+      "source": { "label": "Dover AFB (official)", "url": "https://www.dover.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Dover AFB site before you go."
+      ],
+      "source": { "label": "Dover AFB (official)", "url": "https://www.dover.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Dover AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Dover AFB (official)", "url": "https://www.dover.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "DE054",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA DE054 (Dover AFB/Rehoboth)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "19901", "label": "Dover, DE" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Capital School District serves Dover, with Caesar Rodney and other Kent County districts nearby depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Caesar Rodney School District (official)", "url": "https://www.cr.k12.de.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "DE", "city": "Dover" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "436th Medical Group (Dover AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via local network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Dover AFB / 436th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Dover" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Dover AFB Commissary (DeCA)",
+        "Exchange": "Dover AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Dover's affordable market and no-sales-tax bonus make buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable central Delaware market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Dover's affordability makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the Dover area before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Delaware vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Capital or Caesar Rodney) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 436th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Dover AFB known for?", "a": "It's a major strategic airlift hub flying C-5M and C-17 aircraft, and it's home to the Dover Port Mortuary, where fallen service members are returned with honor in dignified transfers." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many also live off base in and around Dover. Camden-Wyoming and Kent County are popular with families." },
+        { "q": "Is it affordable?", "a": "Yes. Central Delaware is reasonably priced, and Delaware has no state sales tax, so BAH stretches well. The beaches are about an hour away." },
+        { "q": "What is the BAH area?", "a": "Dover AFB is MHA DE054 (Dover AFB/Rehoboth). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Air Mobility Command Museum", "category": "Museum", "blurb": "Historic transport and tanker aircraft on display at Dover AFB.", "maps_query": "Air Mobility Command Museum, Dover DE" },
+        { "name": "Delaware Beaches (Rehoboth/Lewes)", "category": "Beach", "blurb": "Boardwalks and Atlantic beaches about an hour southeast.", "maps_query": "Rehoboth Beach, DE" },
+        { "name": "Dover Downs / Bally's & raceway", "category": "Entertainment", "blurb": "Casino, hotel, and NASCAR racing in Dover.", "maps_query": "Bally's Dover Casino Resort, DE" },
+        { "name": "First State Heritage Park (Dover)", "category": "History", "blurb": "Delaware's capital green and historic district downtown.", "maps_query": "First State Heritage Park, Dover DE" }
+      ]
+    }
+  ]
+}

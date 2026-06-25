@@ -1,0 +1,157 @@
+{
+  "slug": "raf-lakenheath",
+  "schema_version": "0.1",
+  "name": "RAF Lakenheath",
+  "short_name": "Lakenheath",
+  "branch": "U.S. Air Force",
+  "states": ["England"],
+  "region": "OCONUS",
+  "tagline": "The U.S. Air Force's 'Liberty Wing' in the English countryside, the largest USAF fighter wing in Europe.",
+  "coords": { "lat": 52.41, "lng": 0.56, "label": "Lakenheath, Suffolk, England" },
+  "tz": "Europe/London",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (England). OHA housing, DoDEA Europe schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy sections (US-only feeds). RAF station hosting USAF 48th Fighter Wing (Liberty Wing): F-15E Strike Eagle + F-35A Lightning II; largest USAF fighter wing in Europe. Near RAF Mildenhall. Medical: 48th Medical Group (Liberty Medical hospital on base). Facts verified from official sources (lakenheath.af.mil, 48 MDG/TRICARE, DeCA/AAFES, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (on a Royal Air Force station)",
+        "Location": "Lakenheath, Suffolk, England (East Anglia, ~70 mi NE of London)",
+        "Major unit": "48th Fighter Wing, the 'Liberty Wing'",
+        "Aircraft": "F-15E Strike Eagle and F-35A Lightning II",
+        "Distinction": "The largest U.S. Air Force fighter wing in Europe",
+        "Tour type": "Accompanied (command-sponsored) for most"
+      },
+      "source": { "label": "RAF Lakenheath (official)", "url": "https://www.lakenheath.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "RAF Lakenheath is a Royal Air Force station that hosts the U.S. Air Force's 48th Fighter Wing, the 'Liberty Wing,' the largest USAF fighter wing in Europe. It flies the F-15E Strike Eagle and the F-35A Lightning II, providing combat airpower across the European theater.",
+        "It sits in the English countryside of Suffolk, in East Anglia, near sister base RAF Mildenhall and about 70 miles northeast of London, giving families an English village setting with the rest of Europe within easy reach."
+      ],
+      "source": { "label": "RAF Lakenheath (official)", "url": "https://www.lakenheath.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "lakenheath_decision",
+      "title": "An England Tour: On-Base vs. Living in an English Village",
+      "type": "killer",
+      "data": {
+        "subtitle": "A tour in England is a favorite. The main choice is on-base housing versus renting 'on the economy' in a Suffolk village, each with real trade-offs.",
+        "intro": [
+          "Most families come command-sponsored and choose between on-base housing and renting on the British economy with the Overseas Housing Allowance (OHA). The local area around Lakenheath, Mildenhall, and the market towns is popular with American families.",
+          "On base is the simplest, most American option with the shortest commute. Living on the economy means an authentic English-village experience, often with more space and character, balanced against a UK lease, driving on the left, and a commute."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-base housing keeps you close to work, schools, and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting in nearby villages and towns like Brandon, Mildenhall, Bury St Edmunds, or Newmarket offers the real English experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-base housing and must approve economy rentals, and helps with leases, utilities, and OHA, so start there before signing anything." },
+          { "who": "Embrace the location", "advice": "London, Cambridge, and the rest of Europe are all within easy reach for travel by train, car, or the nearby airports." }
+        ]
+      },
+      "source": { "label": "RAF Lakenheath (official)", "url": "https://www.lakenheath.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas installations can be stricter and change with force-protection levels, so confirm the current details on the official RAF Lakenheath site before you go."
+      ],
+      "source": { "label": "RAF Lakenheath (official)", "url": "https://www.lakenheath.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base & OHA)",
+      "type": "prose",
+      "data": [
+        "Lakenheath has on-base family housing, and many families instead live on the British economy in the surrounding villages and towns, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-base housing and must approve economy rentals; it also helps with leases, utilities, and OHA paperwork. Start there as soon as you have orders."
+      ],
+      "source": { "label": "RAF Lakenheath (official)", "url": "https://www.lakenheath.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools in the Lakenheath community, which serve students from elementary through high school on or near the installation.",
+        "Confirm current schools, boundaries, and registration through DoDEA Europe and the base, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "48th Medical Group (Liberty Medical, RAF Lakenheath)",
+        "Care": "On-base hospital with primary and specialty outpatient care and limited inpatient services; complex care via host-nation (NHS) and regional facilities",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "48th Medical Group (TRICARE)", "url": "https://lakenheath.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "RAF Lakenheath Commissary (DeCA)",
+        "Exchange": "RAF Lakenheath Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to England has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-base housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle driving and your vehicle", "text": "Get set up to drive on the left, sort UK registration/insurance or ship a vehicle, and learn local road rules. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Lakenheath schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the 48th Medical Group hospital and host-nation (NHS) providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Lakenheath?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-base housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "Where do families live?", "a": "Either in on-base housing or on the British economy in nearby villages and towns like Brandon, Mildenhall, Bury St Edmunds, and Newmarket, using OHA." },
+        { "q": "What about schools?", "a": "Kids attend DoDEA schools in the Lakenheath community, from elementary through high school." },
+        { "q": "Is it a good tour for travel?", "a": "Excellent. London and Cambridge are close, and the rest of Europe is within easy reach by train, car, or the nearby airports." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Cambridge", "category": "Day trip", "blurb": "The historic university city with colleges, punting, and museums, a short drive away.", "maps_query": "Cambridge, England" },
+        { "name": "Bury St Edmunds", "category": "In town", "blurb": "A charming Suffolk market town with abbey gardens and pubs.", "maps_query": "Bury St Edmunds, England" },
+        { "name": "London", "category": "Day trip", "blurb": "The capital is roughly 90 minutes away by train for world-class sights.", "maps_query": "London, England" },
+        { "name": "Thetford Forest", "category": "Outdoors", "blurb": "Trails, cycling, and an adventure park in England's largest lowland pine forest.", "maps_query": "Thetford Forest Park, England" }
+      ]
+    }
+  ]
+}

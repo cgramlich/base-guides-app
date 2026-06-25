@@ -1,0 +1,201 @@
+{
+  "slug": "aberdeen-proving-ground",
+  "schema_version": "0.1",
+  "name": "Aberdeen Proving Ground",
+  "short_name": "Aberdeen",
+  "branch": "U.S. Army",
+  "states": ["MD"],
+  "tagline": "The Army's oldest active proving ground and a major research, testing, and acquisition hub in northeastern Maryland.",
+  "coords": { "lat": 39.47, "lng": -76.13, "label": "Aberdeen, MD" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Army research/test/acquisition hub (Harford County, NE Maryland; on the Chesapeake). CONUS full template (BAH MHA MD127 Aberdeen Proving Grounds; RentCast/SchoolDigger work). Heavy civilian/contractor workforce; most live off post. Tenants incl. CECOM, ARL, ATEC, DEVCOM. Medical: Kirk Army Health Clinic. Facts verified from official sources (home.army.mil/apg, Kirk AHC, DeCA/AAFES, Wikipedia for corroborated headline facts). Maryland is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 21001 (Aberdeen).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Harford County, MD (Chesapeake Bay, ~30 mi NE of Baltimore)",
+        "Role": "The Army's oldest active proving ground; research, testing, and acquisition",
+        "Major tenants": "CECOM, Army Research Laboratory, ATEC, and DEVCOM elements",
+        "Workforce": "Heavily civilian and contractor",
+        "Setting": "Northeastern Maryland on the bay"
+      },
+      "source": { "label": "Aberdeen Proving Ground (official)", "url": "https://home.army.mil/apg/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Aberdeen Proving Ground is the Army's oldest active proving ground and a major center for research, testing, and acquisition. It hosts commands like CECOM, the Army Research Laboratory, ATEC, and DEVCOM elements, with a heavily civilian and contractor workforce.",
+        "On the Chesapeake Bay in Harford County, about 30 miles northeast of Baltimore, it functions more like a technology and engineering campus than an operational post, with most people living off post in the surrounding communities."
+      ],
+      "source": { "label": "Aberdeen Proving Ground (official)", "url": "https://home.army.mil/apg/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "apg_decision",
+      "title": "A Tech-Hub Tour Between Baltimore and the Bay",
+      "type": "killer",
+      "data": {
+        "subtitle": "APG is a research and acquisition post with limited on-post housing, so the real question is which Harford County (or wider Baltimore-area) community fits your commute and schools.",
+        "intro": [
+          "Because the workforce is largely civilian and contractor, most families live off post across Harford County and the northeastern Baltimore suburbs. The area offers a range of prices and well-regarded schools.",
+          "Where you live mostly comes down to commute and schools, with the bay and Baltimore both within easy reach."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Aberdeen, Bel Air, and Abingdon put you close to APG with a short commute and lots of amenities." },
+          { "who": "Family suburbs", "advice": "Bel Air and the broader Harford County area are popular with families for their schools." },
+          { "who": "More space or value", "advice": "Heading toward Havre de Grace or farther out can trade a longer commute for more home for the money." },
+          { "who": "On-post option", "advice": "On-post housing is limited; most live off post, so start your search in Harford County early." }
+        ]
+      },
+      "source": { "label": "Aberdeen Proving Ground (official)", "url": "https://home.army.mil/apg/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official APG site before you go."
+      ],
+      "source": { "label": "Aberdeen Proving Ground (official)", "url": "https://home.army.mil/apg/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "APG has a limited amount of on-post family housing, so the great majority of personnel live off post across Harford County and the surrounding area.",
+        "Start with the housing office for the current on-post options and for help finding a place off post in the surrounding communities."
+      ],
+      "source": { "label": "Aberdeen Proving Ground (official)", "url": "https://home.army.mil/apg/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MD127",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MD127 (Aberdeen Proving Grounds)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "21001", "label": "Aberdeen, MD" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Harford County Public Schools serves most military families, with neighboring districts depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Harford County Public Schools (official)", "url": "https://www.hcps.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MD", "city": "Aberdeen" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Kirk Army Health Clinic",
+        "Care": "Outpatient primary and specialty care on post; inpatient, emergency, and complex care via Baltimore-area network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Kirk Army Health Clinic (official)", "url": "https://kirk.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Aberdeen Proving Ground Commissary (DeCA)",
+        "Exchange": "Aberdeen Proving Ground Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at APG the longer (often civilian) tours and stable Harford County market make buying a real option."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn Harford County before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, common at a research hub.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The stable Harford County market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but APG's longer tours and steady local market make buying worth a look. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-post housing is limited; get the housing office's read on Harford County before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Maryland vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Harford County Public Schools (or your local district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Kirk Army Health Clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What happens at Aberdeen Proving Ground?", "a": "It's the Army's oldest active proving ground and a major research, testing, and acquisition hub, home to commands like CECOM and the Army Research Laboratory. The workforce is largely civilian." },
+        { "q": "Where do families live?", "a": "Mostly off post in Harford County. Aberdeen, Bel Air, and Abingdon are close to the gate; Bel Air is popular for schools." },
+        { "q": "Is it a good place to buy?", "a": "Often. Tours can be long or civilian and the Harford County market is stable, so buying is common." },
+        { "q": "What is the BAH area?", "a": "APG is MHA MD127 (Aberdeen Proving Grounds). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Havre de Grace", "category": "In town", "blurb": "A charming bayfront town with a promenade, lighthouse, and museums.", "maps_query": "Havre de Grace, MD" },
+        { "name": "Ripken Stadium", "category": "Family", "blurb": "Home of minor-league baseball and youth tournaments in Aberdeen.", "maps_query": "Leidos Field at Ripken Stadium, Aberdeen MD" },
+        { "name": "Rocks State Park", "category": "Outdoors", "blurb": "Hiking and the King and Queen Seat overlook in northern Harford County.", "maps_query": "Rocks State Park, MD" },
+        { "name": "Baltimore Inner Harbor", "category": "Day trip", "blurb": "Aquarium, museums, and waterfront dining about 30 miles southwest.", "maps_query": "Baltimore Inner Harbor, MD" }
+      ]
+    }
+  ]
+}

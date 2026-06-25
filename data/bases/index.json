@@ -69,6 +69,16 @@
     { "slug": "marine-corps-base-hawaii", "name": "Marine Corps Base Hawaii", "branch": "U.S. Marine Corps", "state": "HI", "region": "OCONUS", "ready": true },
     { "slug": "usag-wiesbaden", "name": "USAG Wiesbaden", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
     { "slug": "mcas-iwakuni", "name": "MCAS Iwakuni", "branch": "U.S. Marine Corps", "state": "Japan", "region": "OCONUS", "ready": true },
-    { "slug": "usag-daegu", "name": "USAG Daegu", "branch": "U.S. Army", "state": "South Korea", "region": "OCONUS", "ready": true }
+    { "slug": "usag-daegu", "name": "USAG Daegu", "branch": "U.S. Army", "state": "South Korea", "region": "OCONUS", "ready": true },
+    { "slug": "west-point", "name": "West Point (USMA)", "branch": "U.S. Army", "state": "NY", "ready": true },
+    { "slug": "aberdeen-proving-ground", "name": "Aberdeen Proving Ground", "branch": "U.S. Army", "state": "MD", "ready": true },
+    { "slug": "joint-base-andrews", "name": "Joint Base Andrews", "branch": "Air Force / Navy", "state": "MD", "ready": true },
+    { "slug": "dover-afb", "name": "Dover AFB", "branch": "U.S. Air Force", "state": "DE", "ready": true },
+    { "slug": "keesler-afb", "name": "Keesler AFB", "branch": "U.S. Air Force", "state": "MS", "ready": true },
+    { "slug": "davis-monthan-afb", "name": "Davis-Monthan AFB", "branch": "U.S. Air Force", "state": "AZ", "ready": true },
+    { "slug": "vandenberg-sfb", "name": "Vandenberg SFB", "branch": "U.S. Space Force", "state": "CA", "ready": true },
+    { "slug": "nas-lemoore", "name": "NAS Lemoore", "branch": "U.S. Navy", "state": "CA", "ready": true },
+    { "slug": "naval-station-mayport", "name": "Naval Station Mayport", "branch": "U.S. Navy", "state": "FL", "ready": true },
+    { "slug": "raf-lakenheath", "name": "RAF Lakenheath", "branch": "U.S. Air Force", "state": "England", "region": "OCONUS", "ready": true }
   ]
 }

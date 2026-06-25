@@ -1,0 +1,201 @@
+{
+  "slug": "west-point",
+  "schema_version": "0.1",
+  "name": "West Point (USMA)",
+  "short_name": "West Point",
+  "branch": "U.S. Army",
+  "states": ["NY"],
+  "tagline": "The United States Military Academy on the Hudson River, the Army's oldest post and its officer-producing institution.",
+  "coords": { "lat": 41.39, "lng": -73.96, "label": "West Point, NY (Hudson Valley)" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "United States Military Academy + USAG West Point (Hudson Valley, NY). CONUS full template (BAH MHA NY217 West Point; RentCast/SchoolDigger work). Population is cadets plus faculty/staff. On-post schools operated by DoDEA Americas (West Point Elementary & Middle); HS via Highland Falls. Medical: Keller Army Community Hospital. Facts verified from official sources (westpoint.edu, home.army.mil/westpoint, Keller ACH, DeCA/AAFES, DoDEA Americas, Wikipedia for corroborated headline facts). New York is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 10996 (West Point) / Highland Falls.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "West Point, NY (Hudson Valley, ~50 mi north of NYC)",
+        "Role": "The United States Military Academy (USMA), the Army's four-year officer academy",
+        "Founded": "1802; the Army's oldest continuously operating post",
+        "Population": "Cadets plus assigned faculty, staff, and their families",
+        "Setting": "Historic campus on the Hudson River"
+      },
+      "source": { "label": "USMA West Point (official)", "url": "https://www.westpoint.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "West Point is the United States Military Academy, the Army's four-year college that educates and commissions new officers, and it is the Army's oldest continuously operating post. The cadet population defines the place, supported by a large faculty and staff.",
+        "It sits on the Hudson River about 50 miles north of New York City, a historic, scenic campus where assignments are typically as faculty, staff, or in the garrison rather than an operational unit."
+      ],
+      "source": { "label": "USMA West Point (official)", "url": "https://www.westpoint.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "westpoint_decision",
+      "title": "A Faculty/Staff Tour in the Hudson Valley",
+      "type": "killer",
+      "data": {
+        "subtitle": "West Point is a staff-and-faculty posting, not an operational one. The main choice is on-post housing for the short commute versus the Hudson Valley towns, with New York City within reach.",
+        "intro": [
+          "Most families here are assigned as faculty, staff, or garrison, and many take on-post housing given the historic, somewhat enclosed campus. Off post means the Hudson Valley, which is scenic but can be pricey closer to the city.",
+          "Where you live is a balance of commute, schools, and how much Hudson Valley (or NYC) access you want, since the metro area is roughly an hour-plus south."
+        ],
+        "recommendations": [
+          { "who": "Shortest commute", "advice": "On-post housing keeps you minutes from work and the academy's schools and services; it's a popular choice here." },
+          { "who": "Nearby towns", "advice": "Highland Falls sits right outside the gate; Cornwall, New Windsor, and the Newburgh area offer more options a short drive out." },
+          { "who": "More space for the money", "advice": "Heading north and west in the Hudson Valley generally trades a longer commute for lower costs." },
+          { "who": "Use NYC sparingly", "advice": "New York City is about an hour-plus south by car or train, great for visits but a long daily commute." }
+        ]
+      },
+      "source": { "label": "USMA West Point (official)", "url": "https://www.westpoint.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "West Point is a controlled-access historic post. Visitors without a DoD ID need a pass and a REAL ID-compliant ID, typically processed through the Visitors Control Center; tourism to the academy is also coordinated through the visitor center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official West Point site before you go."
+      ],
+      "source": { "label": "USMA West Point (official)", "url": "https://www.westpoint.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "West Point has on-post family housing across historic and newer neighborhoods, popular with faculty and staff for the short commute.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "USMA West Point (official)", "url": "https://www.westpoint.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NY217",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NY217 (West Point)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "10996", "label": "West Point / Highland Falls, NY" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "West Point has on-post schools operated by DoDEA Americas (West Point Elementary and West Point Middle School). High-school students typically attend James I. O'Neill High School in the Highland Falls-Fort Montgomery district just outside the gate.",
+        "Other Hudson Valley districts serve families who live farther out, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "DoDEA Americas (official)", "url": "https://www.dodea.edu/americas" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NY", "city": "Highland Falls" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Keller Army Community Hospital",
+        "Care": "Primary and specialty outpatient care with some inpatient services on post; complex care referred to the regional network",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Keller Army Community Hospital (official)", "url": "https://keller.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "West Point Commissary (DeCA)",
+        "Exchange": "West Point Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at West Point many staff and faculty take on-post housing rather than buy in the Hudson Valley."],
+        "rent": [
+          "Your tour is a standard length (often three years for faculty) and you'll PCS out.",
+          "You prefer on-post housing for the short commute and community.",
+          "You'd rather not navigate a varied Hudson Valley market on a fixed timeline.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat assignments in the area.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "You've found a Hudson Valley town and commute you're confident about.",
+          "You're comfortable owning and possibly renting it out later."
+        ],
+        "bottom_line": "There is no universal right answer, and many West Point families simply take on-post housing. If you buy, weigh Hudson Valley prices and your tour length. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book the on-post Five Star Inn or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-post housing is popular here; get on the list early and get the office's read on the Hudson Valley before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and New York vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact DoDEA Americas (on-post schools) or the Highland Falls district for high school early, and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Keller Army Community Hospital or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What kind of assignment is West Point?", "a": "It's the United States Military Academy. Tours here are typically as faculty, staff, or garrison supporting cadet education, not operational units." },
+        { "q": "Where do families live?", "a": "Many take on-post housing for the short commute. Off post, Highland Falls is right outside the gate, with Cornwall, Newburgh, and the wider Hudson Valley farther out." },
+        { "q": "What about schools?", "a": "On-post elementary and middle schools are run by DoDEA Americas; high-school students generally attend O'Neill High School in Highland Falls." },
+        { "q": "What is the BAH area?", "a": "West Point is MHA NY217. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "West Point campus & Trophy Point", "category": "History", "blurb": "The historic academy grounds and Hudson River overlook (visitor center access).", "maps_query": "Trophy Point, West Point NY" },
+        { "name": "Bear Mountain State Park", "category": "Outdoors", "blurb": "Hiking, lakes, and Hudson views just south of West Point.", "maps_query": "Bear Mountain State Park, NY" },
+        { "name": "Storm King Art Center", "category": "Family", "blurb": "A famous outdoor sculpture park in the Hudson Valley.", "maps_query": "Storm King Art Center, New Windsor NY" },
+        { "name": "New York City", "category": "Day trip", "blurb": "The city is about an hour-plus south by car or Metro-North/rail.", "maps_query": "New York, NY" }
+      ]
+    }
+  ]
+}

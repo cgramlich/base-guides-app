@@ -1,0 +1,201 @@
+{
+  "slug": "naval-station-mayport",
+  "schema_version": "0.1",
+  "name": "Naval Station Mayport",
+  "short_name": "Mayport",
+  "branch": "U.S. Navy",
+  "states": ["FL"],
+  "tagline": "A major Atlantic Fleet homeport and naval air facility at the Jacksonville beaches in northeast Florida.",
+  "coords": { "lat": 30.39, "lng": -81.42, "label": "Jacksonville (Mayport), FL" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy homeport + naval air facility (Mayport, Jacksonville FL beaches). CONUS full template (BAH MHA FL058 Jacksonville; RentCast/SchoolDigger work). Surface combatants (destroyers/cruisers), amphibs, and helicopter squadrons; harbor + airfield. Part of the larger Jacksonville Navy complex (with NAS Jax already in app). Medical: Naval Branch Health Clinic Mayport (under Naval Hospital Jacksonville). Facts verified from official sources (cnic.navy.mil NS Mayport, Naval Hospital Jacksonville, DeCA/NEX, Wikipedia for corroborated headline facts). Florida is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 32233 (Atlantic Beach).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Mayport, Jacksonville, FL (Atlantic beaches, NE Florida)",
+        "Role": "Major Atlantic Fleet homeport with a harbor and a naval air facility",
+        "Ships": "Destroyers, cruisers, and amphibious ships",
+        "Aircraft": "Navy helicopter squadrons",
+        "Setting": "Jacksonville beaches; part of the larger Jacksonville Navy complex"
+      },
+      "source": { "label": "Naval Station Mayport (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/ns_mayport.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Station Mayport is a major Atlantic Fleet homeport, combining a protected harbor with a naval air facility. It supports surface combatants like destroyers and cruisers, amphibious ships, and Navy helicopter squadrons.",
+        "It sits right at the Jacksonville beaches in northeast Florida, part of the larger Jacksonville Navy complex that also includes NAS Jacksonville inland. The location pairs fleet operations with a relaxed coastal lifestyle and an affordable cost of living."
+      ],
+      "source": { "label": "Naval Station Mayport (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/ns_mayport.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mayport_decision",
+      "title": "Beach Living at an Affordable Price",
+      "type": "killer",
+      "data": {
+        "subtitle": "Mayport puts you right at the Jacksonville beaches, where the cost of living is reasonable for a coastal area. The choice is how close to the sand you want to be versus commute and schools.",
+        "intro": [
+          "The Jacksonville area is affordable for a coastal metro, so BAH stretches and beach living is within reach. On-base housing is available; many also live off base in the beaches communities and across the city.",
+          "Where you live mostly comes down to commute and schools, balancing the beach towns right by the station against more space inland."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Atlantic Beach, Neptune Beach, and Mayport sit right by the station for the shortest commute and the beach lifestyle." },
+          { "who": "Family beaches", "advice": "Jacksonville Beach and nearby areas are popular with families and lively on weekends." },
+          { "who": "More space inland", "advice": "Heading toward Jacksonville proper or the Southside trades a longer commute for more home for the money." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable beaches market." }
+        ]
+      },
+      "source": { "label": "Naval Station Mayport (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/ns_mayport.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official NS Mayport site before you go."
+      ],
+      "source": { "label": "Naval Station Mayport (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/ns_mayport.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "NS Mayport has privatized on-base family housing across several neighborhoods, with additional Navy housing available across the Jacksonville complex.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Naval Station Mayport (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/ns_mayport.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "FL058",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA FL058 (Jacksonville)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "32233", "label": "Atlantic Beach, FL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Duval County Public Schools serves Jacksonville and the beaches, with St. Johns County (to the south) well regarded and serving families who live that way.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Duval County Public Schools (official)", "url": "https://dcps.duvalschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "FL", "city": "Atlantic Beach" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Naval Branch Health Clinic Mayport",
+        "Care": "Outpatient primary and some specialty care on base; inpatient and complex care via Naval Hospital Jacksonville and the network",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Hospital Jacksonville (official)", "url": "https://jacksonville.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NS Mayport Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Mayport"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Jacksonville's affordable coastal market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your sea-duty rotation feels uncertain.",
+          "You want time to learn the beaches and the city before committing.",
+          "You'd rather not gamble on resale timing or coastal insurance costs.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years or anticipate repeat Jacksonville tours.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Jacksonville market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Jacksonville's affordability makes buying worth a look for longer tours, and many sailors return to the area. Factor in coastal insurance and run your BAH against the rent and home prices above, then talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the beaches and the city before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Florida vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Duval or St. Johns County) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Mayport clinic or Naval Hospital Jacksonville." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Naval Station Mayport?", "a": "A major Atlantic Fleet homeport at the Jacksonville beaches, with a harbor for destroyers, cruisers, and amphibious ships plus a naval air facility for helicopter squadrons." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base. Atlantic Beach, Neptune Beach, and Jacksonville Beach are closest; inland Jacksonville offers more space. St. Johns County is well regarded for schools." },
+        { "q": "How is it different from NAS Jacksonville?", "a": "Mayport is the oceanfront homeport (ships and helos) at the beaches; NAS Jacksonville is the larger air station inland. Both are part of the Jacksonville Navy complex." },
+        { "q": "What is the BAH area?", "a": "Mayport is MHA FL058 (Jacksonville). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Atlantic & Neptune Beaches", "category": "Beach", "blurb": "Laid-back beach towns with dining right by the station.", "maps_query": "Atlantic Beach, FL" },
+        { "name": "Kathryn Abbey Hanna Park", "category": "Outdoors", "blurb": "A large oceanfront park with trails, a lake, and camping near Mayport.", "maps_query": "Hanna Park, Jacksonville FL" },
+        { "name": "St. Augustine", "category": "Day trip", "blurb": "The nation's oldest city, with historic streets and forts, about an hour south.", "maps_query": "St. Augustine, FL" },
+        { "name": "Downtown Jacksonville / Riverside", "category": "Food & shopping", "blurb": "The city's dining, breweries, and riverfront a short drive inland.", "maps_query": "Riverside, Jacksonville FL" }
+      ]
+    }
+  ]
+}

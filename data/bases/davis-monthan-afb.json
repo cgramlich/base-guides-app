@@ -1,0 +1,201 @@
+{
+  "slug": "davis-monthan-afb",
+  "schema_version": "0.1",
+  "name": "Davis-Monthan AFB",
+  "short_name": "Davis-Monthan",
+  "branch": "U.S. Air Force",
+  "states": ["AZ"],
+  "tagline": "Tucson's Air Force base, home of A-10 operations and the famous 'Boneyard' aircraft storage facility.",
+  "coords": { "lat": 32.17, "lng": -110.88, "label": "Tucson, AZ" },
+  "tz": "America/Phoenix",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force base in Tucson, AZ (Sonoran Desert; Arizona does not observe DST -> America/Phoenix). CONUS full template (BAH MHA AZ015 Davis-Monthan AFB; RentCast/SchoolDigger work). 355th Wing (A-10 Thunderbolt II / close air support) + AMARG 'Boneyard' (309th Aerospace Maintenance and Regeneration Group). Medical: 355th Medical Group clinic. Facts verified from official sources (dm.af.mil, TRICARE/355 MDG, DeCA/AAFES, Wikipedia for corroborated headline facts). Arizona is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 85710 (east Tucson).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Tucson, AZ (Sonoran Desert, southern Arizona)",
+        "Major unit": "355th Wing (A-10 Thunderbolt II close air support)",
+        "Famous for": "The 'Boneyard' (AMARG), the military's huge aircraft storage and regeneration facility",
+        "Climate": "Warm, dry desert with lots of sun",
+        "Note": "Arizona does not observe daylight saving time"
+      },
+      "source": { "label": "Davis-Monthan AFB (official)", "url": "https://www.dm.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Davis-Monthan Air Force Base is Tucson's Air Force installation, home to the 355th Wing and longtime hub of A-10 Thunderbolt II close air support operations, along with rescue and other missions.",
+        "It's also famous for the Boneyard, the Aerospace Maintenance and Regeneration Group (AMARG), where thousands of aircraft are stored and preserved in the dry desert air. The Sonoran Desert setting brings warm, sunny weather and an affordable cost of living."
+      ],
+      "source": { "label": "Davis-Monthan AFB (official)", "url": "https://www.dm.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "dm_decision",
+      "title": "Affordable Desert Living in Tucson",
+      "type": "killer",
+      "data": {
+        "subtitle": "Tucson is an affordable, sunny desert city. The main choice is which part of the metro fits your commute and schools, with on-base housing also available.",
+        "intro": [
+          "Tucson's cost of living is reasonable, so BAH tends to stretch, and the desert lifestyle (sun, hiking, and mild winters) is a big draw. On-base housing is available; many also live off base across the metro.",
+          "Where you live mostly comes down to commute and schools, balancing east-side proximity to the base against the broader Tucson area."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "East Tucson neighborhoods near the base offer the shortest commute." },
+          { "who": "Family suburbs", "advice": "The Vail and far-east areas (and northwest toward Oro Valley) are popular with families for schools, with a longer drive." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Plan for the heat", "advice": "Summers are hot; budget for cooling and lean into the great fall, winter, and spring weather." }
+        ]
+      },
+      "source": { "label": "Davis-Monthan AFB (official)", "url": "https://www.dm.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Davis-Monthan AFB site before you go."
+      ],
+      "source": { "label": "Davis-Monthan AFB (official)", "url": "https://www.dm.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Davis-Monthan AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Davis-Monthan AFB (official)", "url": "https://www.dm.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AZ015",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AZ015 (Davis-Monthan AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "85710", "label": "Tucson, AZ" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Tucson Unified, Vail, and other area districts serve military families depending on where you live; Vail is well regarded.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Vail School District (official)", "url": "https://www.vailschooldistrict.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AZ", "city": "Tucson" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "355th Medical Group (Davis-Monthan AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the Tucson network",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Davis-Monthan / 355th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/DavisMonthan" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Davis-Monthan AFB Commissary (DeCA)",
+        "Exchange": "Davis-Monthan AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Tucson's affordable market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Tucson market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Tucson's affordability makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the Tucson metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Arizona vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Tucson Unified, Vail, or another area district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 355th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Davis-Monthan known for?", "a": "It's Tucson's Air Force base, a longtime A-10 close air support hub, and home of the 'Boneyard' (AMARG), the military's massive desert aircraft storage and regeneration facility." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base across Tucson. East-side neighborhoods are closest; Vail and northwest areas are popular for schools." },
+        { "q": "What's the weather like?", "a": "Warm, sunny Sonoran Desert: hot summers but excellent fall, winter, and spring. Note Arizona doesn't observe daylight saving time." },
+        { "q": "What is the BAH area?", "a": "Davis-Monthan is MHA AZ015. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Pima Air & Space Museum / Boneyard tours", "category": "Museum", "blurb": "One of the world's largest aerospace museums, with tours of the adjacent Boneyard.", "maps_query": "Pima Air and Space Museum, Tucson AZ" },
+        { "name": "Saguaro National Park", "category": "Outdoors", "blurb": "Iconic giant cacti and desert hiking on both sides of Tucson.", "maps_query": "Saguaro National Park, Tucson AZ" },
+        { "name": "Mount Lemmon", "category": "Day trip", "blurb": "A sky-island drive to pine forests and cooler air above the desert.", "maps_query": "Mount Lemmon, AZ" },
+        { "name": "Downtown Tucson / 4th Avenue", "category": "Food & shopping", "blurb": "A lively district of restaurants, shops, and Tucson's famous food scene.", "maps_query": "4th Avenue, Tucson AZ" }
+      ]
+    }
+  ]
+}

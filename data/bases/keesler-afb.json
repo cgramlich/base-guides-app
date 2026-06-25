@@ -1,0 +1,201 @@
+{
+  "slug": "keesler-afb",
+  "schema_version": "0.1",
+  "name": "Keesler AFB",
+  "short_name": "Keesler",
+  "branch": "U.S. Air Force",
+  "states": ["MS"],
+  "tagline": "The Air Force's technical training hub on the Mississippi Gulf Coast, and home of the Hurricane Hunters.",
+  "coords": { "lat": 30.41, "lng": -88.92, "label": "Biloxi, MS" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force technical training base (Biloxi, MS Gulf Coast; Central time). CONUS full template (BAH MHA MS168 Gulfport, which covers the Harrison County/Biloxi Gulf Coast; RentCast/SchoolDigger work). 81st Training Wing (cyber, electronics, IT, weather tech training) + 403rd Wing (Hurricane Hunters, AF Reserve). Keesler Medical Center is a major AF hospital. Facts verified from official sources (keesler.af.mil, Keesler Medical Center, DeCA/AAFES, Wikipedia for corroborated headline facts). Mississippi is TRICARE East. Coastal/hurricane insurance consideration. Medium-confidence flags: base coords (approx), off-base ZIP 39530 (Biloxi).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Biloxi, MS (Mississippi Gulf Coast)",
+        "Major unit": "81st Training Wing (technical training)",
+        "Trains": "Cyber, electronics, IT, weather, and other technical career fields",
+        "Also home to": "403rd Wing, the Hurricane Hunters (AF Reserve)",
+        "Setting": "Gulf Coast beach town (hurricane-prone)"
+      },
+      "source": { "label": "Keesler AFB (official)", "url": "https://www.keesler.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Keesler Air Force Base is a major Air Force technical training hub, home to the 81st Training Wing, which trains Airmen in cyber, electronics, IT, weather, and other technical fields. Much of the population is here for training pipelines or as instructors.",
+        "On the Mississippi Gulf Coast in Biloxi, it's also home to the 403rd Wing, the famed Hurricane Hunters who fly into storms to gather data. The coastal setting brings beaches and an affordable cost of living, along with hurricane-season planning."
+      ],
+      "source": { "label": "Keesler AFB (official)", "url": "https://www.keesler.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "keesler_decision",
+      "title": "Affordable Gulf Coast Living, With Storm Awareness",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Mississippi Gulf Coast is affordable and on the water. The main choice is which coast community fits your commute and schools, with hurricane season a real planning factor.",
+        "intro": [
+          "The Gulf Coast is one of the more affordable beach areas, so BAH stretches well, and many families enjoy the coastal lifestyle. On-base housing is available; many also live off base along the coast.",
+          "Where you live mostly comes down to commute and schools across Biloxi, Gulfport, and the surrounding towns, plus how you weigh being right on the coast against insurance and storm risk."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Biloxi and D'Iberville sit near the base for a short commute and coast access." },
+          { "who": "Family suburbs", "advice": "Ocean Springs and Gulfport/Long Beach are popular with families for schools and amenities." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Plan for hurricane season", "advice": "Budget for higher coastal insurance, know your evacuation plan, and factor storm risk into where (and whether) you buy." }
+        ]
+      },
+      "source": { "label": "Keesler AFB (official)", "url": "https://www.keesler.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Keesler AFB site before you go."
+      ],
+      "source": { "label": "Keesler AFB (official)", "url": "https://www.keesler.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Keesler AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Keesler AFB (official)", "url": "https://www.keesler.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MS168",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MS168 (Gulfport / MS Gulf Coast)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "39530", "label": "Biloxi, MS" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Biloxi, Harrison County, Ocean Springs, and Gulfport school districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Ocean Springs School District (official)", "url": "https://www.ossdms.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MS", "city": "Biloxi" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Keesler Medical Center",
+        "Care": "A major Air Force medical center with full inpatient, specialty, and emergency care, plus a graduate medical education program",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Keesler Medical Center (official)", "url": "https://keesler.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Keesler AFB Commissary (DeCA)",
+        "Exchange": "Keesler AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and on the Gulf Coast affordability and coastal insurance both factor into the call."],
+        "rent": [
+          "Your tour is short or you're here for a training pipeline.",
+          "You want time to learn the coast before committing.",
+          "You'd rather not take on coastal insurance and storm risk as an owner.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable coast market fits your budget for a home you like.",
+          "You're comfortable with coastal insurance and have found a place you trust."
+        ],
+        "bottom_line": "There is no universal right answer. The Gulf Coast is affordable, so BAH stretches, but coastal insurance and hurricane risk are real costs to weigh. Run your BAH against the rent and home prices above, factor in insurance, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the coast communities before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Mississippi vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Biloxi, Harrison County, Ocean Springs, or Gulfport) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Keesler Medical Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What happens at Keesler?", "a": "It's a major Air Force technical training hub (81st Training Wing) for cyber, electronics, IT, weather, and more. It's also home to the 403rd Wing, the Hurricane Hunters." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base along the coast. Biloxi and D'Iberville are close; Ocean Springs and Gulfport are popular for schools." },
+        { "q": "What about hurricanes?", "a": "It's a Gulf Coast base, so hurricane season is a real planning factor: budget for coastal insurance and know your evacuation plan." },
+        { "q": "What is the BAH area?", "a": "Keesler is in MHA MS168 (the MS Gulf Coast/Gulfport area). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Biloxi Beach & Boardwalk", "category": "Beach", "blurb": "Miles of Gulf shoreline right along Highway 90.", "maps_query": "Biloxi Beach, MS" },
+        { "name": "Ocean Springs (downtown)", "category": "Food & shopping", "blurb": "An artsy, walkable town with galleries and dining across the bay.", "maps_query": "Downtown Ocean Springs, MS" },
+        { "name": "Biloxi casinos", "category": "Entertainment", "blurb": "Beachfront casino resorts with dining and shows.", "maps_query": "Biloxi casinos, MS" },
+        { "name": "New Orleans", "category": "Day trip", "blurb": "The Big Easy is about 90 minutes west along the coast.", "maps_query": "New Orleans, LA" }
+      ]
+    }
+  ]
+}
