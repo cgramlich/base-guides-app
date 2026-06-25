@@ -1,0 +1,202 @@
+{
+  "slug": "wright-patterson-afb",
+  "schema_version": "0.1",
+  "name": "Wright-Patterson AFB",
+  "short_name": "Wright-Patt",
+  "branch": "U.S. Air Force",
+  "states": ["OH"],
+  "tagline": "The Air Force's acquisition, research, and intelligence powerhouse, and home of the National Museum of the U.S. Air Force.",
+  "coords": { "lat": 39.8261, "lng": -84.0488, "label": "Dayton area, OH" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Great Lakes / Midwest base (Dayton, OH). Facts verified from official sources (wpafb.af.mil, housing.af.mil, wpafbhomes.com, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA OH231 (Wright-Patterson AFB) via the bah_rates single source of truth. Housing managed by Culmen Real Estate Services (The Properties at Wright Field). Medium-confidence flags: base coords (approx), representative off-base ZIP 45324 (Fairborn).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Dayton area, OH (Fairborn / Riverside)",
+        "Host wing": "88th Air Base Wing",
+        "Headquarters": "Air Force Materiel Command (AFMC)",
+        "Also hosts": "AFRL, AFIT, NASIC, National Museum of the U.S. Air Force",
+        "Scale": "Largest single-site employer in Ohio"
+      },
+      "source": { "label": "Wright-Patterson AFB (official)", "url": "https://www.wpafb.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Wright-Patterson is the Air Force's center of gravity for acquisition, research, and intelligence. It is the headquarters of Air Force Materiel Command and home to the Air Force Research Laboratory (AFRL), the Air Force Institute of Technology (AFIT), and the National Air and Space Intelligence Center (NASIC).",
+        "The 88th Air Base Wing runs the installation, which also houses the National Museum of the U.S. Air Force and the Air Force Reserve's 445th Airlift Wing. With 60-plus tenant units, Wright-Patt is the largest single-site employer in Ohio."
+      ],
+      "source": { "label": "Wright-Patterson AFB (official)", "url": "https://www.wpafb.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "research_hub_decision",
+      "title": "A Research Hub Where People Settle In",
+      "type": "killer",
+      "data": {
+        "subtitle": "Wright-Patt is an acquisition, research, and intelligence base, not a flightline-first one, so tours run long, the civilian workforce is huge, and many families plant roots in the Dayton suburbs.",
+        "intro": [
+          "Between AFMC headquarters, AFRL, NASIC, and the AFIT graduate school, Wright-Patterson draws a large, settled community with longer assignments and a heavy civilian and contractor presence. It has more of a campus-and-office feel than an operational flying base.",
+          "Day to day, it is a Dayton-suburbs lifestyle: a low cost of living, well-regarded schools, and short commutes. BAH here is lower than coastal bases, but so are home prices, so it often balances out, and many families buy."
+        ],
+        "recommendations": [
+          { "who": "Top schools", "advice": "Beavercreek sits right next to the base via I-675 and is the most popular choice for families focused on schools and convenience." },
+          { "who": "Closest to the gates", "advice": "Fairborn borders the base for the shortest commute, with Riverside and Huber Heights also close." },
+          { "who": "Established suburbs", "advice": "Centerville, Bellbrook, Kettering, and Oakwood are well-regarded suburbs south of Dayton, a bit further out." },
+          { "who": "Longer tours, consider buying", "advice": "With many multi-year and civilian tours here, buying is common. Lower Ohio home prices plus your VA loan make it worth a look for a three-plus-year stay." }
+        ]
+      },
+      "source": { "label": "Wright-Patterson AFB (official)", "url": "https://www.wpafb.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "The base is split into Area A and Area B, each with its own gates. Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Wright-Patterson AFB site before you go."
+      ],
+      "source": { "label": "Wright-Patterson AFB (official)", "url": "https://www.wpafb.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, managed by Culmen Real Estate Services and branded as The Properties at Wright Field (the neighborhoods The Prairies and The Woods).",
+        "Eligibility and availability vary by rank and family size, so start with the base housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "The Properties at Wright Field (partner)", "url": "https://www.wpafbhomes.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "OH231",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA OH231 (Wright-Patterson AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "45324", "label": "Fairborn, OH" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here, so children attend the local civilian public schools. Beavercreek City Schools (adjacent to the base) and Fairborn City Schools cover the closest communities, with Kettering, Centerville, and Bellbrook-Sugarcreek popular a bit further out.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Beavercreek City Schools (official)", "url": "https://www.beavercreek.k12.oh.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "OH", "city": "Beavercreek" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Wright-Patterson Medical Center (88th Medical Group)",
+        "Care": "One of the Air Force's larger medical centers, with inpatient and outpatient care",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "88th Medical Group (official)", "url": "https://www.wpafb.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Wright-Patterson AFB Commissary (DeCA)",
+        "Exchange": "Wright-Patterson AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Wright-Patt it tilts toward buying for many families because tours run long and Dayton-area home prices are reasonable."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, which is common at Wright-Patt.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "Reasonable Dayton-area prices fit your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Wright-Patt's longer tours and affordable market make buying worth a serious look. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining school district or DoDEA early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE region and enrollment so you can be seen at the local military treatment facility or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What kind of base is Wright-Patt?", "a": "It's an acquisition, research, and intelligence hub rather than a flightline-first base. It hosts HQ Air Force Materiel Command, AFRL, AFIT (the Air Force's graduate school), NASIC, and the National Museum of the U.S. Air Force." },
+        { "q": "Where do military families live?", "a": "Beavercreek is the top choice for schools and sits right next to the base; Fairborn borders the base for the shortest commute; Centerville, Bellbrook, Kettering, and Oakwood are popular established suburbs." },
+        { "q": "Is it affordable?", "a": "BAH is lower here than at coastal bases, but so are Dayton-area home prices, so it tends to balance out. With longer tours common, many families buy." },
+        { "q": "Who runs on-base housing?", "a": "Culmen Real Estate Services, branded as The Properties at Wright Field (The Prairies and The Woods). Start with the base housing office." },
+        { "q": "What is the BAH area?", "a": "Wright-Patterson AFB is MHA OH231. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "National Museum of the U.S. Air Force", "category": "Museum", "blurb": "The world's largest military aviation museum, on Wright-Patterson AFB, free to visit.", "maps_query": "National Museum of the United States Air Force, Dayton OH" },
+        { "name": "Carillon Historical Park", "category": "History", "blurb": "A Dayton history park with the original 1905 Wright Flyer III and a landmark carillon tower.", "maps_query": "Carillon Historical Park, Dayton OH" },
+        { "name": "Dayton Aviation Heritage NHP", "category": "History", "blurb": "A national historical park honoring the Wright brothers and aviation pioneer Paul Laurence Dunbar.", "maps_query": "Dayton Aviation Heritage National Historical Park, OH" },
+        { "name": "The Greene Town Center", "category": "Food & shopping", "blurb": "An open-air shopping and dining district in Beavercreek, close to the base.", "maps_query": "The Greene Town Center, Beavercreek OH" }
+      ]
+    }
+  ]
+}
