@@ -1,0 +1,201 @@
+{
+  "slug": "sheppard-afb",
+  "schema_version": "0.1",
+  "name": "Sheppard AFB",
+  "short_name": "Sheppard",
+  "branch": "U.S. Air Force",
+  "states": ["TX"],
+  "tagline": "The Air Force's largest training base, home of technical training and the multinational ENJJPT pilot program, in north Texas.",
+  "coords": { "lat": 33.97, "lng": -98.49, "label": "Wichita Falls, TX" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force training base (Wichita Falls, north TX; Central time). CONUS full template (BAH MHA TX288 Wichita Falls/Sheppard AFB; RentCast/SchoolDigger work). 82nd Training Wing (technical training) + 80th Flying Training Wing (ENJJPT, the only multinational pilot training program). Medical: 82nd Medical Group clinic. Facts verified from official sources (sheppard.af.mil, 82 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Texas moved to TRICARE West in 2024. Medium-confidence flags: base coords (approx), off-base ZIP 76308 (Wichita Falls).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Wichita Falls, TX (north Texas, near the Oklahoma line)",
+        "Role": "The Air Force's largest and most diversified training base",
+        "Major units": "82nd Training Wing (technical training) and 80th Flying Training Wing",
+        "Notable": "Home of ENJJPT, the only multinational (NATO) jet pilot training program",
+        "Setting": "Affordable north Texas city"
+      },
+      "source": { "label": "Sheppard AFB (official)", "url": "https://www.sheppard.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Sheppard Air Force Base is the Air Force's largest and most diversified training base. The 82nd Training Wing runs a huge range of technical training, while the 80th Flying Training Wing hosts the Euro-NATO Joint Jet Pilot Training program (ENJJPT), the world's only multinational pilot training program.",
+        "In Wichita Falls in north Texas, the base has a constant flow of students and instructors and an affordable cost of living, with an international flavor thanks to ENJJPT's partner nations."
+      ],
+      "source": { "label": "Sheppard AFB (official)", "url": "https://www.sheppard.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "sheppard_decision",
+      "title": "Affordable North Texas Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Wichita Falls is an affordable, manageable-size city. The main choice is on-base housing versus the local neighborhoods, with a short commute either way.",
+        "intro": [
+          "Wichita Falls has a low cost of living, so BAH stretches well, and the city is small enough that commutes are short wherever you land. On-base housing is available; many also live off base.",
+          "Where you live mostly comes down to schools and preference across Wichita Falls and nearby Burkburnett, with the DFW metro a couple of hours southeast for bigger trips."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Northern Wichita Falls and Burkburnett sit near the base for a short commute." },
+          { "who": "Family neighborhoods", "advice": "Wichita Falls and Burkburnett offer affordable family neighborhoods and schools." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient, popular given the training-heavy population." },
+          { "who": "Stretch your budget", "advice": "The area is very affordable, so BAH tends to go a long way." }
+        ]
+      },
+      "source": { "label": "Sheppard AFB (official)", "url": "https://www.sheppard.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Sheppard AFB site before you go."
+      ],
+      "source": { "label": "Sheppard AFB (official)", "url": "https://www.sheppard.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Sheppard AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Sheppard AFB (official)", "url": "https://www.sheppard.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "TX288",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA TX288 (Wichita Falls/Sheppard AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "76308", "label": "Wichita Falls, TX" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Wichita Falls ISD serves the city, and nearby Burkburnett ISD serves families on the north side near the base.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Wichita Falls ISD (official)", "url": "https://www.wfisd.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "TX", "city": "Wichita Falls" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "82nd Medical Group (Sheppard AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via Wichita Falls-area network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Sheppard AFB / 82nd Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Sheppard" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Sheppard AFB Commissary (DeCA)",
+        "Exchange": "Sheppard AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Wichita Falls' very affordable market makes the call mostly about your tour length."],
+        "rent": [
+          "Your tour is short or you're here for a training pipeline.",
+          "You want time to learn the area before committing.",
+          "You'd rather not gamble on resale timing in a smaller market.",
+          "You prefer on-base housing for the short commute and convenience."
+        ],
+        "buy": [
+          "You expect to be here three or more years (often instructor tours).",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The very affordable Wichita Falls market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Wichita Falls is inexpensive, so BAH stretches well and buying can pencil out on a longer tour, though the smaller market affects resale. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Wichita Falls and Burkburnett before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Texas vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Wichita Falls ISD or Burkburnett ISD) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 82nd Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sheppard AFB known for?", "a": "It's the Air Force's largest and most diversified training base, home to wide-ranging technical training (82nd Training Wing) and ENJJPT, the only multinational NATO jet pilot training program (80th Flying Training Wing)." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base in Wichita Falls or nearby Burkburnett. Commutes are short either way." },
+        { "q": "Is it affordable?", "a": "Very. Wichita Falls has a low cost of living, so BAH stretches well." },
+        { "q": "What is the BAH area?", "a": "Sheppard is MHA TX288 (Wichita Falls/Sheppard AFB). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Wichita Falls (the falls) & Lucy Park", "category": "Outdoors", "blurb": "The city's namesake waterfall and a riverside park with trails.", "maps_query": "Wichita Falls Waterfall, Lucy Park TX" },
+        { "name": "Hotter'N Hell Hundred", "category": "Annual event", "blurb": "One of the nation's largest cycling events, held in Wichita Falls each summer.", "maps_query": "Hotter N Hell Hundred, Wichita Falls TX" },
+        { "name": "Lake Arrowhead State Park", "category": "Outdoors", "blurb": "Boating and fishing on a large lake south of the city.", "maps_query": "Lake Arrowhead State Park, TX" },
+        { "name": "Dallas-Fort Worth", "category": "Day trip", "blurb": "The DFW metroplex is roughly two hours southeast for big-city extras.", "maps_query": "Fort Worth, TX" }
+      ]
+    }
+  ]
+}

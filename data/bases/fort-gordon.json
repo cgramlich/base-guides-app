@@ -1,0 +1,201 @@
+{
+  "slug": "fort-gordon",
+  "schema_version": "0.1",
+  "name": "Fort Gordon",
+  "short_name": "Gordon",
+  "branch": "U.S. Army",
+  "states": ["GA"],
+  "tagline": "The Army's cyber and signal headquarters near Augusta, Georgia, home of Army Cyber Command.",
+  "coords": { "lat": 33.42, "lng": -82.14, "label": "Augusta, GA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Army cyber/signal hub (Augusta GA; Eastern time). CONUS full template (BAH MHA GA073 Fort Gordon; RentCast/SchoolDigger work). NAME HISTORY: Fort Gordon -> Fort Eisenhower (Oct 2023) -> Fort Gordon (2025; effective June 11, 2025, formally Sept 26, 2025). Now honors MSG Gary I. Gordon (Medal of Honor, Battle of Mogadishu/Black Hawk Down), NOT the Confederate general (verified via Army.mil + WRDW + Wikipedia, June 2026). Home of Army Cyber Center of Excellence, ARCYBER HQ, NSA Georgia, Signal Corps. Medical: Dwight D. Eisenhower Army Medical Center (DDEAMC; hospital named for Eisenhower since 1974, predates base rename). Georgia is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 30809 (Evans).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Augusta, GA (Central Savannah River Area)",
+        "Role": "The Army's cyber and signal headquarters",
+        "Major commands": "Cyber Center of Excellence, Army Cyber Command (ARCYBER), and NSA Georgia",
+        "Current name": "Fort Gordon (now honoring MSG Gary I. Gordon, Medal of Honor)",
+        "Name note": "Was Fort Eisenhower from 2023 to 2025 before reverting"
+      },
+      "source": { "label": "Fort Gordon (official)", "url": "https://home.army.mil/gordon/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Gordon is the Army's center for cyber and signal operations, home to the Cyber Center of Excellence, the headquarters of Army Cyber Command, and a major National Security Agency presence (NSA Georgia). It's a high-tech, fast-growing hub for the Army's information and cyber forces.",
+        "Near Augusta, Georgia, in the Central Savannah River Area, the post carried the name Fort Eisenhower from 2023 to 2025 before reverting to Fort Gordon, now honoring a Medal of Honor recipient rather than the Confederate general."
+      ],
+      "source": { "label": "Fort Gordon (official)", "url": "https://home.army.mil/gordon/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gordon_decision",
+      "title": "Augusta Living: Affordable, With Strong School Options",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Augusta area is affordable, and the key choice for many families is Columbia County (popular schools) versus closer-in options, balanced against your commute.",
+        "intro": [
+          "Augusta's cost of living is reasonable, so BAH stretches, and the cyber mission draws a lot of families and a growing tech community. On-post housing is available; many live off post.",
+          "Where you live mostly comes down to commute and schools, with Columbia County a favorite of families for its schools, and closer-in options trading a shorter drive for a different school mix."
+        ],
+        "recommendations": [
+          { "who": "Top schools", "advice": "Columbia County (Evans, Grovetown, Martinez) is the favorite for families, with well-regarded schools a manageable drive out." },
+          { "who": "Closest to the gate", "advice": "Areas near the post and into Augusta (Richmond County) keep the commute short." },
+          { "who": "On-post option", "advice": "On-post housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Stretch your budget", "advice": "Augusta is affordable, so BAH tends to go far and many families buy." }
+        ]
+      },
+      "source": { "label": "Fort Gordon (official)", "url": "https://home.army.mil/gordon/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Gordon site before you go."
+      ],
+      "source": { "label": "Fort Gordon (official)", "url": "https://home.army.mil/gordon/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Gordon has privatized on-post family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Gordon (official)", "url": "https://home.army.mil/gordon/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "GA073",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA GA073 (Fort Gordon)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "30809", "label": "Evans, GA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Columbia County (Evans, Grovetown, Martinez) is highly regarded and popular with families; Richmond County serves Augusta and the area closest to the post.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Columbia County School District (official)", "url": "https://www.ccboe.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "GA", "city": "Evans" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Dwight D. Eisenhower Army Medical Center (DDEAMC)",
+        "Care": "A full Army medical center with primary, specialty, inpatient, and emergency care, plus graduate medical education",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Eisenhower Army Medical Center (official)", "url": "https://eisenhower.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Gordon Commissary (DeCA)",
+        "Exchange": "Fort Gordon Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Augusta's affordable, growing market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area and pick the right county for schools.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, common with the cyber mission.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable, growing Augusta market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Augusta's affordability and growth make buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-post lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Get the housing office's read on Columbia County (schools) versus closer-in options before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Georgia vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Columbia or Richmond County) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Eisenhower Army Medical Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is it Fort Gordon or Fort Eisenhower?", "a": "Fort Gordon, as of 2025. It was Fort Eisenhower from 2023 to 2025; the name now honors Master Sergeant Gary I. Gordon, a Medal of Honor recipient from the 1993 Battle of Mogadishu, rather than the Confederate general." },
+        { "q": "What does the Army do at Fort Gordon?", "a": "It's the Army's cyber and signal headquarters, home to the Cyber Center of Excellence, Army Cyber Command, and a major NSA presence." },
+        { "q": "Where do families live?", "a": "On-post housing is available; many live off post. Columbia County (Evans, Grovetown, Martinez) is the favorite for schools; Richmond County is closest to the post." },
+        { "q": "What is the BAH area?", "a": "Fort Gordon is MHA GA073. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Augusta Riverwalk", "category": "In town", "blurb": "A scenic walk and event space along the Savannah River downtown.", "maps_query": "Augusta Riverwalk, GA" },
+        { "name": "Augusta National (Masters)", "category": "Landmark", "blurb": "Home of the Masters Tournament each spring (private club; the area buzzes in April).", "maps_query": "Augusta National Golf Club, GA" },
+        { "name": "Clarks Hill / Thurmond Lake", "category": "Outdoors", "blurb": "A huge lake for boating and fishing northwest of Augusta.", "maps_query": "J. Strom Thurmond Lake, GA" },
+        { "name": "Columbia County (Evans) Town Center", "category": "Food & shopping", "blurb": "Family-friendly dining, shops, and an amphitheater in Evans.", "maps_query": "Evans Towne Center Park, Evans GA" }
+      ]
+    }
+  ]
+}

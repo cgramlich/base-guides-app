@@ -89,6 +89,16 @@
     { "slug": "mcrd-parris-island", "name": "MCRD Parris Island", "branch": "U.S. Marine Corps", "state": "SC", "ready": true },
     { "slug": "mcas-miramar", "name": "MCAS Miramar", "branch": "U.S. Marine Corps", "state": "CA", "ready": true },
     { "slug": "twentynine-palms", "name": "MCAGCC Twentynine Palms", "branch": "U.S. Marine Corps", "state": "CA", "ready": true },
-    { "slug": "spangdahlem-air-base", "name": "Spangdahlem Air Base", "branch": "U.S. Air Force", "state": "Germany", "region": "OCONUS", "ready": true }
+    { "slug": "spangdahlem-air-base", "name": "Spangdahlem Air Base", "branch": "U.S. Air Force", "state": "Germany", "region": "OCONUS", "ready": true },
+    { "slug": "fort-knox", "name": "Fort Knox", "branch": "U.S. Army", "state": "KY", "ready": true },
+    { "slug": "fort-gordon", "name": "Fort Gordon", "branch": "U.S. Army", "state": "GA", "ready": true },
+    { "slug": "fort-lee", "name": "Fort Lee", "branch": "U.S. Army", "state": "VA", "ready": true },
+    { "slug": "maxwell-afb", "name": "Maxwell AFB", "branch": "U.S. Air Force", "state": "AL", "ready": true },
+    { "slug": "luke-afb", "name": "Luke AFB", "branch": "U.S. Air Force", "state": "AZ", "ready": true },
+    { "slug": "tinker-afb", "name": "Tinker AFB", "branch": "U.S. Air Force", "state": "OK", "ready": true },
+    { "slug": "sheppard-afb", "name": "Sheppard AFB", "branch": "U.S. Air Force", "state": "TX", "ready": true },
+    { "slug": "nsa-naples", "name": "NSA Naples", "branch": "U.S. Navy", "state": "Italy", "region": "OCONUS", "ready": true },
+    { "slug": "misawa-air-base", "name": "Misawa Air Base", "branch": "U.S. Air Force", "state": "Japan", "region": "OCONUS", "ready": true },
+    { "slug": "kunsan-air-base", "name": "Kunsan Air Base", "branch": "U.S. Air Force", "state": "South Korea", "region": "OCONUS", "ready": true }
   ]
 }

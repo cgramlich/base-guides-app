@@ -1,0 +1,157 @@
+{
+  "slug": "kunsan-air-base",
+  "schema_version": "0.1",
+  "name": "Kunsan Air Base",
+  "short_name": "Kunsan",
+  "branch": "U.S. Air Force",
+  "states": ["South Korea"],
+  "region": "OCONUS",
+  "tagline": "Home of the 8th Fighter Wing 'Wolf Pack' on Korea's west coast, a remote, mostly unaccompanied one-year tour.",
+  "coords": { "lat": 35.90, "lng": 126.62, "label": "Gunsan, South Korea" },
+  "tz": "Asia/Seoul",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (South Korea), but DIFFERENT from accompanied tours: Kunsan is a REMOTE, predominantly UNACCOMPANIED 1-year tour. No command-sponsored family housing/OHA in the usual sense and no DoDEA school on base; members live in on-base dorms. Template adapted to reflect this honestly (no rent_buy, no family housing/OHA/DoDEA sections framed as normal). 8th Fighter Wing 'Wolf Pack' (F-16). Medical: 8th Medical Group clinic. Facts verified from official sources (kunsan.af.mil, 8 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Gunsan, South Korea (Jeollabuk-do, west coast)",
+        "Major unit": "8th Fighter Wing, the 'Wolf Pack'",
+        "Aircraft": "F-16 Fighting Falcon",
+        "Tour type": "Remote, predominantly unaccompanied (typically one year)",
+        "Living": "Members live in on-base dormitories"
+      },
+      "source": { "label": "Kunsan Air Base (official)", "url": "https://www.kunsan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Kunsan Air Base is home to the 8th Fighter Wing, the legendary 'Wolf Pack,' flying F-16s on the west coast of South Korea. It's a frontline, mission-focused base with a strong squadron culture.",
+        "Unlike most overseas assignments, Kunsan is a remote tour that is predominantly unaccompanied, typically one year, with members living in on-base dormitories. That shapes the whole experience: it's about the mission and the squadron rather than setting up a household with family."
+      ],
+      "source": { "label": "Kunsan Air Base (official)", "url": "https://www.kunsan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "kunsan_decision",
+      "title": "A Remote, Unaccompanied Tour: What to Expect",
+      "type": "killer",
+      "data": {
+        "subtitle": "Kunsan is different from a typical family OCONUS move. It's a remote, mostly unaccompanied one-year tour, so families usually do not relocate here, and there's no family housing, OHA, or on-base DoDEA school in the usual sense.",
+        "intro": [
+          "Most members come on a one-year unaccompanied tour and live in on-base dormitories. Because it's a remote tour, command-sponsored dependents generally don't accompany you, so the planning is very different from an accompanied PCS.",
+          "The flip side is a famously tight squadron community (the 'Wolf Pack' culture) and strong camaraderie. If you have a family, the bigger task is planning for the separation and a possible follow-on assignment."
+        ],
+        "recommendations": [
+          { "who": "Expect dorm living", "advice": "Members live in on-base dormitories; there isn't the usual menu of on-base family housing or economy rentals with OHA." },
+          { "who": "Plan the family separation", "advice": "Since it's unaccompanied, sort out where your family will live during the tour and your finances and communication plan early." },
+          { "who": "Lean into the Wolf Pack", "advice": "The squadron culture and base community are a big part of what makes Kunsan; get involved." },
+          { "who": "Explore Korea", "advice": "Gunsan and the wider country are accessible on time off; trips to Seoul and beyond are part of the tour." }
+        ]
+      },
+      "source": { "label": "Kunsan Air Base (official)", "url": "https://www.kunsan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas installations can be stricter and change with force-protection levels, so confirm the current details on the official Kunsan Air Base site before you go."
+      ],
+      "source": { "label": "Kunsan Air Base (official)", "url": "https://www.kunsan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base Dormitories)",
+      "type": "prose",
+      "data": [
+        "Because Kunsan is a remote, predominantly unaccompanied tour, members live in on-base dormitories rather than family housing. There isn't the usual on-base family housing or economy-rental-with-OHA setup found at accompanied overseas bases.",
+        "Your unit and the dorm management office handle your room assignment when you arrive; confirm the current arrangements through your sponsor and the base."
+      ],
+      "source": { "label": "Kunsan Air Base (official)", "url": "https://www.kunsan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Because Kunsan is a remote, unaccompanied tour, dependents generally do not accompany members, and there is no on-base DoDEA school of the kind found at family (accompanied) overseas bases.",
+        "If you have school-age children, they typically remain at your designated location during the tour; coordinate schooling there and confirm your specific situation with your command."
+      ],
+      "source": { "label": "Kunsan Air Base (official)", "url": "https://www.kunsan.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "8th Medical Group (Kunsan AB Clinic)",
+        "Care": "Outpatient primary and limited specialty care on base for the assigned population; inpatient and complex care via larger military hospitals in Korea and host-nation facilities",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Kunsan AB / 8th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Kunsan" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Kunsan AB Commissary (DeCA)",
+        "Exchange": "Kunsan AB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (Remote Tour)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["A remote, unaccompanied tour has its own checklist. The focus is on-base in-processing and squaring away your family's situation back home, not setting up a household here."],
+        "steps": [
+          { "title": "Connect with your sponsor", "text": "Your sponsor and unit help you settle into the dorms and learn the base. Reach out before you travel." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Get your dorm room set up", "text": "Coordinate your dormitory room with your unit and the dorm office; this is your home for the tour." },
+          { "title": "Square away the home front", "text": "Confirm where your family lives during the tour, sort finances, allotments, powers of attorney, and a communication plan for the year apart." },
+          { "title": "Handle SOFA and getting around", "text": "Complete SOFA documentation and learn local transportation options; many rely on base shuttles and Korea's transit rather than a personal car." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the 8th Medical Group clinic, with larger Korea military hospitals for specialty care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Can my family come with me to Kunsan?", "a": "Generally no. Kunsan is a remote tour that is predominantly unaccompanied, typically one year, so command-sponsored dependents usually don't relocate here, and there's no family housing or on-base DoDEA school in the usual sense." },
+        { "q": "Where will I live?", "a": "In on-base dormitories. The unit and dorm office handle your room assignment when you arrive." },
+        { "q": "What is the 'Wolf Pack'?", "a": "It's the nickname of the 8th Fighter Wing at Kunsan, known for its strong squadron culture and F-16 mission." },
+        { "q": "Do I get BAH or OHA here?", "a": "Kunsan is unaccompanied, so the usual accompanied-tour housing allowances don't apply the same way. Confirm your specific entitlements (and any continued BAH for a family back home) with finance." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Gunsan (downtown)", "category": "In town", "blurb": "The nearby port city, with markets, cafes, and historic sites.", "maps_query": "Gunsan, South Korea" },
+        { "name": "Gyeongam-dong Railroad Village", "category": "History", "blurb": "A nostalgic, photogenic old neighborhood in Gunsan.", "maps_query": "Gyeongam-dong Railroad Village, Gunsan" },
+        { "name": "Seonyudo Island", "category": "Outdoors", "blurb": "Scenic islands and beaches off the coast near Gunsan.", "maps_query": "Seonyudo Island, South Korea" },
+        { "name": "Jeonju Hanok Village", "category": "Day trip", "blurb": "A famous traditional village and food city a short drive inland.", "maps_query": "Jeonju Hanok Village, South Korea" }
+      ]
+    }
+  ]
+}

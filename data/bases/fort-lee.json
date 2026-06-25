@@ -1,0 +1,201 @@
+{
+  "slug": "fort-lee",
+  "schema_version": "0.1",
+  "name": "Fort Lee",
+  "short_name": "Lee",
+  "branch": "U.S. Army",
+  "states": ["VA"],
+  "tagline": "The Army's sustainment and logistics training center near Petersburg, Virginia.",
+  "coords": { "lat": 37.24, "lng": -77.33, "label": "Petersburg, VA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Army sustainment/logistics training post (Petersburg/Prince George VA, Richmond metro). CONUS full template (BAH MHA VA301 Richmond/Fort Lee; RentCast/SchoolDigger work). NAME HISTORY: Fort Lee -> Fort Gregg-Adams (Apr 2023) -> Fort Lee (2025; effective June 2025). Now honors Pvt. Fitz Lee (Medal of Honor, Buffalo Soldier, 10th Cavalry, from Dinwiddie County VA), NOT the Confederate general (verified via Army.mil + WTVR/12OnYourSide + Wikipedia, June 2026). Home of CASCOM and the sustainment schools (Quartermaster, Ordnance, Transportation) + Army Logistics University. Medical: Kenner Army Health Clinic. Virginia is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 23875 (Prince George).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Prince George / Petersburg, VA (Richmond metro)",
+        "Role": "The Army's sustainment and logistics training center",
+        "Major commands": "CASCOM, the Quartermaster, Ordnance, and Transportation schools, and Army Logistics University",
+        "Current name": "Fort Lee (now honoring Pvt. Fitz Lee, Medal of Honor)",
+        "Name note": "Was Fort Gregg-Adams from 2023 to 2025 before reverting"
+      },
+      "source": { "label": "Fort Lee (official)", "url": "https://home.army.mil/lee/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Lee is the Army's home for sustainment and logistics training, hosting the Combined Arms Support Command (CASCOM) and the Quartermaster, Ordnance, and Transportation schools, plus the Army Logistics University. Many soldiers pass through for initial and advanced logistics training.",
+        "Near Petersburg in the Richmond metro, the post carried the name Fort Gregg-Adams from 2023 to 2025 before reverting to Fort Lee, now honoring a Buffalo Soldier and Medal of Honor recipient rather than the Confederate general."
+      ],
+      "source": { "label": "Fort Lee (official)", "url": "https://home.army.mil/lee/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "lee_decision",
+      "title": "Richmond-Area Living at an Affordable Price",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Lee sits in the affordable southern Richmond metro. The main choice is which community fits your commute and schools, with Richmond's big-city amenities close.",
+        "intro": [
+          "The southern Richmond area is reasonably priced, so BAH stretches, and the metro offers a wide range of neighborhoods and schools. On-post housing is available; many also live off post.",
+          "Where you live mostly comes down to commute and schools across Prince George, Colonial Heights, Chesterfield, and into the Richmond suburbs."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Prince George and Colonial Heights border the post for a short commute." },
+          { "who": "Family suburbs", "advice": "Chesterfield County and the southern Richmond suburbs are popular with families for schools and amenities." },
+          { "who": "On-post option", "advice": "On-post housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Big-city access", "advice": "Richmond is a short drive north for dining, history, and a major airport." }
+        ]
+      },
+      "source": { "label": "Fort Lee (official)", "url": "https://home.army.mil/lee/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Lee site before you go."
+      ],
+      "source": { "label": "Fort Lee (official)", "url": "https://home.army.mil/lee/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Lee has privatized on-post family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Lee (official)", "url": "https://home.army.mil/lee/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "VA301",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA VA301 (Richmond/Fort Lee)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "23875", "label": "Prince George, VA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Prince George County and Colonial Heights serve the area nearest the post, with Chesterfield County and other Richmond-area districts serving families farther out.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Prince George County Public Schools (official)", "url": "https://www.pgs.k12.va.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "VA", "city": "Prince George" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Kenner Army Health Clinic",
+        "Care": "Outpatient primary and specialty care on post; inpatient, emergency, and complex care via Richmond-area network hospitals (and the Richmond VA)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Kenner Army Health Clinic (official)", "url": "https://kenner.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Lee Commissary (DeCA)",
+        "Exchange": "Fort Lee Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the affordable Richmond-area market makes buying a real option for many families on longer tours."],
+        "rent": [
+          "Your tour is short (about two years or less) or you're here for a training pipeline.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years or anticipate repeat Richmond-area tours.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable southern Richmond market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the affordable Richmond metro makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-post lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-post availability and get the housing office's read on Prince George, Colonial Heights, and Chesterfield before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Virginia vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Prince George, Colonial Heights, or Chesterfield) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Kenner Army Health Clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is it Fort Lee or Fort Gregg-Adams?", "a": "Fort Lee, as of 2025. It was Fort Gregg-Adams from 2023 to 2025; the name now honors Private Fitz Lee, a Buffalo Soldier and Medal of Honor recipient from Dinwiddie County, Virginia, rather than the Confederate general." },
+        { "q": "What does the Army do at Fort Lee?", "a": "It's the Army's sustainment and logistics training center, home to CASCOM, the Quartermaster, Ordnance, and Transportation schools, and the Army Logistics University." },
+        { "q": "Where do families live?", "a": "On-post housing is available; many live off post. Prince George and Colonial Heights are closest; Chesterfield County and the Richmond suburbs are popular for schools." },
+        { "q": "What is the BAH area?", "a": "Fort Lee is MHA VA301 (Richmond/Fort Lee). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Petersburg National Battlefield", "category": "History", "blurb": "Civil War battlefield and trails just south of the post.", "maps_query": "Petersburg National Battlefield, VA" },
+        { "name": "Richmond (downtown & museums)", "category": "Day trip", "blurb": "The state capital's history, dining, and riverfront a short drive north.", "maps_query": "Richmond, VA" },
+        { "name": "U.S. Army Quartermaster Museum", "category": "Museum", "blurb": "Army logistics and sustainment history (check current access and status).", "maps_query": "U.S. Army Quartermaster Museum, Fort Lee VA" },
+        { "name": "Pocahontas State Park", "category": "Outdoors", "blurb": "Trails, a lake, and a big aquatic center in Chesterfield.", "maps_query": "Pocahontas State Park, VA" }
+      ]
+    }
+  ]
+}

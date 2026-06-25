@@ -1,0 +1,201 @@
+{
+  "slug": "tinker-afb",
+  "schema_version": "0.1",
+  "name": "Tinker AFB",
+  "short_name": "Tinker",
+  "branch": "U.S. Air Force",
+  "states": ["OK"],
+  "tagline": "A major Air Force logistics and sustainment hub in the Oklahoma City metro, home of the AWACS fleet.",
+  "coords": { "lat": 35.42, "lng": -97.39, "label": "Oklahoma City, OK" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force sustainment/logistics hub (Midwest City, OKC metro OK; Central time). CONUS full template (BAH MHA OK239 Oklahoma City; RentCast/SchoolDigger work). Oklahoma City Air Logistics Complex (major depot), 72nd Air Base Wing; home of E-3 AWACS and E-6 Mercury fleets. Medical: 72nd Medical Group clinic. Facts verified from official sources (tinker.af.mil, 72 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Oklahoma moved to TRICARE West in 2024. Medium-confidence flags: base coords (approx), off-base ZIP 73110 (Midwest City).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Midwest City, OK (Oklahoma City metro)",
+        "Role": "Major Air Force logistics, sustainment, and depot maintenance hub",
+        "Major tenants": "Oklahoma City Air Logistics Complex and the 72nd Air Base Wing",
+        "Home of": "The E-3 AWACS and E-6 Mercury fleets",
+        "Setting": "Affordable Oklahoma City suburbs"
+      },
+      "source": { "label": "Tinker AFB (official)", "url": "https://www.tinker.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Tinker Air Force Base is one of the Air Force's largest logistics and sustainment hubs, home to the Oklahoma City Air Logistics Complex, which performs major depot maintenance on aircraft and engines. It also hosts the 72nd Air Base Wing and the distinctive E-3 AWACS and E-6 Mercury fleets.",
+        "In the Oklahoma City metro near Midwest City, it has a large workforce and an affordable cost of living, with a settled, family-oriented feel."
+      ],
+      "source": { "label": "Tinker AFB (official)", "url": "https://www.tinker.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "tinker_decision",
+      "title": "Affordable OKC-Metro Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Oklahoma City metro is affordable and family-friendly. The main choice is which suburb fits your commute and schools, with on-base housing also available.",
+        "intro": [
+          "Oklahoma City's cost of living is low, so BAH stretches well, and the metro offers a range of suburbs and good schools. On-base housing is available; many also live off base nearby.",
+          "Where you live mostly comes down to commute and schools across Midwest City, Choctaw, Moore, and the surrounding OKC suburbs."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Midwest City and Del City border the base for the shortest commute." },
+          { "who": "Family suburbs", "advice": "Choctaw, Moore, and Edmond are popular with families for schools, a bit farther out." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Stretch your budget", "advice": "The OKC metro is affordable, so BAH tends to go far and many families buy." }
+        ]
+      },
+      "source": { "label": "Tinker AFB (official)", "url": "https://www.tinker.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Tinker AFB site before you go."
+      ],
+      "source": { "label": "Tinker AFB (official)", "url": "https://www.tinker.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Tinker AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Tinker AFB (official)", "url": "https://www.tinker.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "OK239",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA OK239 (Oklahoma City)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "73110", "label": "Midwest City, OK" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Mid-Del (Midwest City-Del City), Choctaw-Nicoma Park, Moore, and Edmond districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Mid-Del Public Schools (official)", "url": "https://www.mid-del.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "OK", "city": "Midwest City" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "72nd Medical Group (Tinker AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the Oklahoma City network",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Tinker AFB / 72nd Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Tinker" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Tinker AFB Commissary (DeCA)",
+        "Exchange": "Tinker AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the affordable OKC metro and longer sustainment tours make buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, common with sustainment tours.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable OKC market fits your budget for a home you like.",
+          "You've found a suburb and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the affordable OKC metro and longer tours make buying worth a look. Note Oklahoma sees occasional severe weather (tornado season), so factor in insurance. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the OKC suburbs before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Oklahoma vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Mid-Del, Choctaw, Moore, or Edmond) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 72nd Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What does Tinker do?", "a": "It's a major Air Force logistics and depot-maintenance hub (the Oklahoma City Air Logistics Complex) and home to the E-3 AWACS and E-6 Mercury fleets, plus the 72nd Air Base Wing." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base. Midwest City and Del City are closest; Choctaw, Moore, and Edmond are popular with families for schools." },
+        { "q": "Is it affordable?", "a": "Yes. The Oklahoma City metro is affordable, so BAH stretches well and many families on longer tours buy." },
+        { "q": "What is the BAH area?", "a": "Tinker is MHA OK239 (Oklahoma City). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Bricktown (OKC)", "category": "Food & nightlife", "blurb": "Downtown Oklahoma City's canal, dining, and entertainment district.", "maps_query": "Bricktown, Oklahoma City OK" },
+        { "name": "Oklahoma City National Memorial", "category": "History", "blurb": "A moving memorial and museum downtown.", "maps_query": "Oklahoma City National Memorial, OK" },
+        { "name": "Tinker Air Force Base Air Park", "category": "Family", "blurb": "Static aircraft displays celebrating the base's history.", "maps_query": "Tinker Air Force Base Air Park, OK" },
+        { "name": "Lake Thunderbird State Park", "category": "Outdoors", "blurb": "Boating, trails, and beaches near Norman, southeast of the metro.", "maps_query": "Lake Thunderbird State Park, OK" }
+      ]
+    }
+  ]
+}

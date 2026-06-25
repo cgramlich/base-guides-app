@@ -1,0 +1,201 @@
+{
+  "slug": "maxwell-afb",
+  "schema_version": "0.1",
+  "name": "Maxwell AFB",
+  "short_name": "Maxwell",
+  "branch": "U.S. Air Force",
+  "states": ["AL"],
+  "tagline": "The intellectual center of the Air Force, home of Air University, in Montgomery, Alabama.",
+  "coords": { "lat": 32.38, "lng": -86.36, "label": "Montgomery, AL" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force professional military education hub (Montgomery AL; Central time). CONUS full template (BAH MHA AL005 Montgomery; RentCast/SchoolDigger work). Home of Air University (Air War College, ACSC, OTS, Squadron Officer School) + Gunter Annex. Medical: 42nd Medical Group clinic. Facts verified from official sources (maxwell.af.mil, airuniversity.af.edu, 42 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Alabama is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 36117 (east Montgomery).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Montgomery, AL (state capital, central Alabama)",
+        "Role": "The intellectual and education center of the Air Force",
+        "Home of": "Air University (Air War College, ACSC, OTS, Squadron Officer School)",
+        "Also includes": "Gunter Annex",
+        "Setting": "Affordable central Alabama capital city"
+      },
+      "source": { "label": "Maxwell AFB (official)", "url": "https://www.maxwell.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Maxwell Air Force Base is the intellectual center of the Air Force, home to Air University, which runs the service's professional military education from officer training through the Air War College. Many assignments here are as students, faculty, or staff supporting that education mission.",
+        "In Montgomery, Alabama's capital, the base (with its Gunter Annex) sits in an affordable, historic Southern city, giving a more academic, settled pace than an operational flying wing."
+      ],
+      "source": { "label": "Maxwell AFB (official)", "url": "https://www.maxwell.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "maxwell_decision",
+      "title": "Affordable Capital-City Living in Montgomery",
+      "type": "killer",
+      "data": {
+        "subtitle": "Montgomery is affordable, and the key choice for many families is the east-side suburbs (popular schools) versus closer-in options, balanced against your commute.",
+        "intro": [
+          "Central Alabama's cost of living is low, so BAH stretches well. Many education-mission tours are a year or more, and families often settle into the suburbs. On-base housing is available.",
+          "Where you live mostly comes down to commute and schools, with east Montgomery and the suburbs popular with families."
+        ],
+        "recommendations": [
+          { "who": "Family suburbs", "advice": "East Montgomery, Pike Road, and Prattville are popular with families for schools and newer neighborhoods." },
+          { "who": "Closest to the gate", "advice": "Areas near the base keep the commute short, convenient for shorter PME courses." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Stretch your budget", "advice": "Montgomery is affordable, so BAH tends to go far and many families buy on longer tours." }
+        ]
+      },
+      "source": { "label": "Maxwell AFB (official)", "url": "https://www.maxwell.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Maxwell AFB site before you go."
+      ],
+      "source": { "label": "Maxwell AFB (official)", "url": "https://www.maxwell.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Maxwell AFB has privatized on-base family housing across several neighborhoods, with additional housing at the Gunter Annex.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Maxwell AFB (official)", "url": "https://www.maxwell.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AL005",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AL005 (Montgomery)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "36117", "label": "Montgomery, AL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Montgomery Public Schools serves the city, while many families choose the Pike Road, Prattville (Autauga County), and east-side options for schools.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Pike Road Schools (official)", "url": "https://www.pikeroadschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AL", "city": "Montgomery" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "42nd Medical Group (Maxwell AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via Montgomery-area network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Maxwell AFB / 42nd Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Maxwell" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Maxwell AFB Commissary (DeCA)",
+        "Exchange": "Maxwell AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Montgomery's affordable market makes buying a real option, especially on longer education-mission tours."],
+        "rent": [
+          "Your tour is a short PME course (a year or less).",
+          "You want time to learn the area before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer faculty or staff tour and want to settle in.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Montgomery market fits your budget for a home you like.",
+          "You've found a suburb and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Short PME courses usually favor renting or on-base housing, while longer faculty and staff tours often make buying worth a look in the affordable Montgomery market. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on east Montgomery and the suburbs before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Alabama vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Montgomery, Pike Road, or Prattville) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 42nd Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Maxwell AFB known for?", "a": "It's the intellectual center of the Air Force, home to Air University, which runs professional military education from officer training through the Air War College. It includes the Gunter Annex." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base. East Montgomery, Pike Road, and Prattville are popular with families for schools." },
+        { "q": "Is it affordable?", "a": "Yes. Montgomery is an affordable Southern capital, so BAH stretches well and many families on longer tours buy." },
+        { "q": "What is the BAH area?", "a": "Maxwell is MHA AL005 (Montgomery). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Montgomery civil rights sites", "category": "History", "blurb": "The Rosa Parks Museum, Legacy Museum, and National Memorial for Peace and Justice downtown.", "maps_query": "Legacy Museum, Montgomery AL" },
+        { "name": "Riverfront & Riverwalk Stadium", "category": "Family", "blurb": "Minor-league baseball and a revitalized riverfront downtown.", "maps_query": "Riverwalk Stadium, Montgomery AL" },
+        { "name": "Alabama Shakespeare Festival / Blount Park", "category": "Arts", "blurb": "A noted theater and large park in east Montgomery.", "maps_query": "Alabama Shakespeare Festival, Montgomery AL" },
+        { "name": "Gulf Coast beaches", "category": "Day trip", "blurb": "The Alabama Gulf Coast is roughly a few hours south for weekend trips.", "maps_query": "Gulf Shores, AL" }
+      ]
+    }
+  ]
+}

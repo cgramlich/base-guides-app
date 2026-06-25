@@ -1,0 +1,201 @@
+{
+  "slug": "luke-afb",
+  "schema_version": "0.1",
+  "name": "Luke AFB",
+  "short_name": "Luke",
+  "branch": "U.S. Air Force",
+  "states": ["AZ"],
+  "tagline": "'Home of the Fighter Pilot,' the Air Force's premier F-35 and F-16 training base in the Phoenix West Valley.",
+  "coords": { "lat": 33.53, "lng": -112.38, "label": "Glendale, AZ" },
+  "tz": "America/Phoenix",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force fighter-pilot training base (Glendale/West Valley, Phoenix metro AZ; Arizona does not observe DST -> America/Phoenix). CONUS full template (BAH MHA AZ013 Phoenix; RentCast/SchoolDigger work). 56th Fighter Wing trains F-35A and F-16 pilots; 'Home of the Fighter Pilot.' Medical: 56th Medical Group clinic. Facts verified from official sources (luke.af.mil, 56 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Arizona is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 85340 (Litchfield Park).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Glendale, AZ (West Valley, Phoenix metro)",
+        "Major unit": "56th Fighter Wing",
+        "Mission": "F-35A Lightning II and F-16 fighter pilot training",
+        "Nickname": "'Home of the Fighter Pilot'",
+        "Note": "Arizona does not observe daylight saving time"
+      },
+      "source": { "label": "Luke AFB (official)", "url": "https://www.luke.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Luke Air Force Base is the Air Force's premier fighter-pilot training base, home to the 56th Fighter Wing, which trains F-35A and F-16 pilots. Known as the 'Home of the Fighter Pilot,' its skies are busy with training sorties year-round.",
+        "It sits in the West Valley of metro Phoenix near Glendale, in the warm, sunny Sonoran Desert, with all the amenities of a major metropolitan area close by."
+      ],
+      "source": { "label": "Luke AFB (official)", "url": "https://www.luke.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "luke_decision",
+      "title": "West Valley Living in Metro Phoenix",
+      "type": "killer",
+      "data": {
+        "subtitle": "Luke is in the growing, affordable West Valley of Phoenix. The main choice is which West Valley suburb fits your commute and schools, with the whole metro within reach.",
+        "intro": [
+          "The West Valley is one of metro Phoenix's fast-growing, relatively affordable areas, so BAH stretches reasonably and there's lots of newer housing. On-base housing is available; many live off base nearby.",
+          "Where you live mostly comes down to commute and schools across the West Valley suburbs, with the desert sun (and hot summers) part of the deal."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Litchfield Park, Goodyear, and Glendale sit near the base for a short commute." },
+          { "who": "Family suburbs", "advice": "Litchfield Park, Goodyear, Surprise, and Peoria offer newer neighborhoods and well-regarded schools." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the growing local market." },
+          { "who": "Plan for the heat", "advice": "Summers are very hot; budget for cooling and enjoy the excellent fall, winter, and spring." }
+        ]
+      },
+      "source": { "label": "Luke AFB (official)", "url": "https://www.luke.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Luke AFB site before you go."
+      ],
+      "source": { "label": "Luke AFB (official)", "url": "https://www.luke.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Luke AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Luke AFB (official)", "url": "https://www.luke.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AZ013",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AZ013 (Phoenix)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "85340", "label": "Litchfield Park, AZ" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Litchfield Elementary, Agua Fria Union High, Dysart, and other West Valley districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Litchfield Elementary School District (official)", "url": "https://www.lesd79.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AZ", "city": "Litchfield Park" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "56th Medical Group (Luke AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the Phoenix-area network",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Luke AFB / 56th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Luke" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Luke AFB Commissary (DeCA)",
+        "Exchange": "Luke AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the growing, relatively affordable West Valley makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The growing West Valley market fits your budget for a home you like.",
+          "You've found a suburb and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the growing, relatively affordable West Valley makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the West Valley suburbs before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Arizona vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Litchfield, Agua Fria, Dysart, or another West Valley district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 56th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Luke AFB known for?", "a": "It's the Air Force's premier fighter-pilot training base, the 'Home of the Fighter Pilot,' where the 56th Fighter Wing trains F-35A and F-16 pilots." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base in the West Valley. Litchfield Park, Goodyear, Surprise, and Peoria are popular with families for schools and newer homes." },
+        { "q": "What's the weather like?", "a": "Warm, sunny Sonoran Desert: hot summers but excellent fall, winter, and spring. Note Arizona doesn't observe daylight saving time." },
+        { "q": "What is the BAH area?", "a": "Luke is MHA AZ013 (Phoenix). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "State Farm Stadium & Westgate", "category": "Entertainment", "blurb": "NFL Cardinals stadium plus dining and shopping in Glendale.", "maps_query": "State Farm Stadium, Glendale AZ" },
+        { "name": "White Tank Mountain Regional Park", "category": "Outdoors", "blurb": "Desert hiking and waterfalls in the West Valley.", "maps_query": "White Tank Mountain Regional Park, AZ" },
+        { "name": "Downtown Phoenix & Scottsdale", "category": "Day trip", "blurb": "Big-city dining, sports, and nightlife across the metro.", "maps_query": "Downtown Phoenix, AZ" },
+        { "name": "Spring training (Cactus League)", "category": "Family", "blurb": "MLB spring training fills the West Valley each March.", "maps_query": "Cactus League spring training, Phoenix AZ" }
+      ]
+    }
+  ]
+}

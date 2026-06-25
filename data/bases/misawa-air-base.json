@@ -1,0 +1,157 @@
+{
+  "slug": "misawa-air-base",
+  "schema_version": "0.1",
+  "name": "Misawa Air Base",
+  "short_name": "Misawa",
+  "branch": "U.S. Air Force",
+  "states": ["Japan"],
+  "region": "OCONUS",
+  "tagline": "A unique joint U.S.-Japanese air base in northern Japan, home of the 35th Fighter Wing.",
+  "coords": { "lat": 40.70, "lng": 141.37, "label": "Misawa, Japan" },
+  "tz": "Asia/Tokyo",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (Japan). OHA housing, DoDEA Pacific schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy sections (US-only feeds). USAF-led 35th Fighter Wing (F-16); a unique combined base shared by USAF, US Navy, US Army, and the Japan Air Self-Defense Force. Northern Honshu (Aomori Prefecture); cold/snowy winters. Medical: 35th Medical Group clinic. Facts verified from official sources (misawa.af.mil, 35 MDG/TRICARE, DeCA/AAFES, DoDEA Pacific, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (joint, and shared with Japan)",
+        "Location": "Misawa, Aomori Prefecture, Japan (northern Honshu)",
+        "Major unit": "35th Fighter Wing",
+        "Aircraft": "F-16 Fighting Falcon",
+        "Unique": "A combined base shared by U.S. Air Force, Navy, Army, and the Japan Air Self-Defense Force",
+        "Climate": "Four seasons with cold, snowy winters"
+      },
+      "source": { "label": "Misawa Air Base (official)", "url": "https://www.misawa.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Misawa Air Base is home to the U.S. Air Force's 35th Fighter Wing, flying F-16s, and is unique as a combined installation shared by the U.S. Air Force, Navy, and Army alongside the Japan Air Self-Defense Force.",
+        "It sits in Aomori Prefecture on the northern end of Honshu, a region of four distinct seasons, including cold, snowy winters. The tight-knit base community and authentic rural-Japan setting make it a memorable overseas tour."
+      ],
+      "source": { "label": "Misawa Air Base (official)", "url": "https://www.misawa.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "misawa_decision",
+      "title": "A Northern Japan Tour: On-Base vs. Living Off Base",
+      "type": "killer",
+      "data": {
+        "subtitle": "Misawa is a beloved, community-focused overseas tour. The main choice is on-base housing versus living off base in the local Japanese community with OHA.",
+        "intro": [
+          "Most families come command-sponsored. The base community is famously tight-knit, and on-base housing is a common, easy choice for a northern-Japan tour with snowy winters.",
+          "Living off base in Misawa city or nearby means deeper immersion in Japanese life, using the Overseas Housing Allowance (OHA), balanced against a Japanese lease, the language, and winter driving."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-base housing keeps you close to work, DoDEA schools, and services, ideal for a first overseas tour and easier through the snowy winters." },
+          { "who": "Full immersion", "advice": "Renting off base in Misawa offers a deeper Japanese experience with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-base housing and must approve off-base rentals, and helps with leases and OHA, so start there." },
+          { "who": "Embrace the seasons", "advice": "Misawa has real winters with great skiing nearby; lean into the snow and the local festivals." }
+        ]
+      },
+      "source": { "label": "Misawa Air Base (official)", "url": "https://www.misawa.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas installations can be stricter and change with force-protection levels, so confirm the current details on the official Misawa Air Base site before you go."
+      ],
+      "source": { "label": "Misawa Air Base (official)", "url": "https://www.misawa.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base & OHA)",
+      "type": "prose",
+      "data": [
+        "Misawa has on-base family housing, and many families instead live off base in the local community, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-base housing and must approve off-base rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "Misawa Air Base (official)", "url": "https://www.misawa.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools on base, serving students from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Pacific and the base, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "35th Medical Group (Misawa AB Clinic)",
+        "Care": "Outpatient primary and specialty care on base; inpatient and complex care via larger military hospitals in Japan and host-nation facilities",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Misawa AB / 35th Medical Group (TRICARE)", "url": "https://misawa.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Misawa AB Commissary (DeCA)",
+        "Exchange": "Misawa AB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Japan has extra steps beyond a stateside move, and northern Japan adds winter prep. Get these sorted early."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-base housing or get approval and help to rent off base with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your SOFA driver's license, register a vehicle locally (many families buy a used car in Japan), and prep for snowy winter driving. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Misawa schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the 35th Medical Group clinic, with larger Japan military hospitals and host-nation providers for specialty care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Misawa?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for off-base rentals, or you live in on-base housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "What makes Misawa unique?", "a": "It's a combined base shared by the U.S. Air Force, Navy, and Army alongside the Japan Air Self-Defense Force, home to the 35th Fighter Wing flying F-16s." },
+        { "q": "What's the weather like?", "a": "Four real seasons, including cold, snowy winters in northern Japan, with skiing nearby. Plan for winter driving." },
+        { "q": "What about schools?", "a": "Kids attend DoDEA schools on base, from elementary through high school." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Lake Ogawara", "category": "Outdoors", "blurb": "A large lake near Misawa known for fishing and waterside scenery.", "maps_query": "Lake Ogawara, Misawa Japan" },
+        { "name": "Hakkoda Mountains (skiing)", "category": "Outdoors", "blurb": "Renowned snow and skiing in the Aomori mountains.", "maps_query": "Hakkoda Ropeway, Aomori Japan" },
+        { "name": "Aomori City & Nebuta Festival", "category": "In town", "blurb": "The prefecture's capital and its famous summer festival.", "maps_query": "Nebuta Museum WA RASSE, Aomori Japan" },
+        { "name": "Towada-Hachimantai National Park", "category": "Outdoors", "blurb": "Caldera lakes, gorges, and hot springs in the mountains.", "maps_query": "Lake Towada, Japan" }
+      ]
+    }
+  ]
+}

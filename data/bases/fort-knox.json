@@ -1,0 +1,201 @@
+{
+  "slug": "fort-knox",
+  "schema_version": "0.1",
+  "name": "Fort Knox",
+  "short_name": "Knox",
+  "branch": "U.S. Army",
+  "states": ["KY"],
+  "tagline": "The Army's human-resources and ROTC headquarters in Kentucky, next to the legendary gold vault.",
+  "coords": { "lat": 37.89, "lng": -85.96, "label": "Fort Knox, KY" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Army post south of Louisville KY (Eastern time). CONUS full template (BAH MHA KY110 Fort Knox; RentCast/SchoolDigger work). Home of U.S. Army Human Resources Command (HRC), Cadet Command (ROTC), and Recruiting Command; adjacent to the U.S. Bullion Depository (the gold vault, run by Treasury, not the Army). On-post DoDEA Americas schools (Fort Knox Community Schools). Medical: Ireland Army Health Clinic. Facts verified from official sources (home.army.mil/knox, Ireland AHC, DeCA/AAFES, DoDEA Americas, Wikipedia for corroborated headline facts). Kentucky is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 40160 (Radcliff).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Fort Knox, KY (~35 mi south of Louisville)",
+        "Major commands": "Army Human Resources Command (HRC), Cadet Command (ROTC), Recruiting Command",
+        "Famous neighbor": "The U.S. Bullion Depository (the gold vault, run by the Treasury)",
+        "History": "Longtime 'Home of Armor' (the Armor School has since moved to Fort Benning)",
+        "Setting": "North-central Kentucky near Louisville and Elizabethtown"
+      },
+      "source": { "label": "Fort Knox (official)", "url": "https://home.army.mil/knox/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Knox is best known to the public for the gold vault next door, but the post itself is a major Army headquarters hub: it's home to Army Human Resources Command, Cadet Command (which runs Army ROTC), and Recruiting Command.",
+        "Historically the 'Home of Armor,' the post now centers on personnel, training, and administrative missions in north-central Kentucky, a comfortable drive from Louisville and Elizabethtown."
+      ],
+      "source": { "label": "Fort Knox (official)", "url": "https://home.army.mil/knox/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "knox_decision",
+      "title": "Affordable Kentucky Living Near Louisville",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Fort Knox area is affordable, with a mix of on-post housing and nearby towns. The main choice is which community fits your commute and schools, with Louisville's big-city amenities close.",
+        "intro": [
+          "Central Kentucky's cost of living is low, so BAH stretches well, and many families do well here. On-post housing (with DoDEA schools) is popular; many also live off post in the nearby towns.",
+          "Where you live mostly comes down to commute and schools across Radcliff, Elizabethtown, and the surrounding area, with Louisville within reach for big-city extras."
+        ],
+        "recommendations": [
+          { "who": "On-post convenience", "advice": "On-post housing keeps you close to work and the on-post DoDEA schools; it's a popular, easy choice." },
+          { "who": "Closest towns", "advice": "Radcliff borders the post and Vine Grove is nearby for a short commute and low costs." },
+          { "who": "More amenities", "advice": "Elizabethtown ('E-town') is a larger town with shopping and schools a bit south; Louisville is the big-city option north." },
+          { "who": "Stretch your budget", "advice": "The area is affordable, so BAH tends to go a long way and many families buy." }
+        ]
+      },
+      "source": { "label": "Fort Knox (official)", "url": "https://home.army.mil/knox/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Knox site before you go."
+      ],
+      "source": { "label": "Fort Knox (official)", "url": "https://home.army.mil/knox/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Knox has privatized on-post family housing across several neighborhoods, popular for the short commute and the on-post schools.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Knox (official)", "url": "https://home.army.mil/knox/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "KY110",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA KY110 (Fort Knox)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "40160", "label": "Radcliff, KY" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Fort Knox has on-post schools operated by DoDEA Americas (Fort Knox Community Schools), serving children who live on post. Off post, Hardin County Schools (including Radcliff and Vine Grove) and the Elizabethtown area serve families who live there.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "DoDEA Americas (official)", "url": "https://www.dodea.edu/americas" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "KY", "city": "Radcliff" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Ireland Army Health Clinic",
+        "Care": "Outpatient primary and specialty care on post; inpatient, emergency, and complex care via Louisville-area network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Ireland Army Health Clinic (official)", "url": "https://ireland.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Knox Commissary (DeCA)",
+        "Exchange": "Fort Knox Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Fort Knox's affordable Kentucky market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You prefer on-post housing for the short commute and DoDEA schools.",
+          "You want time to learn the area before committing.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable central Kentucky market fits your budget for a home you like.",
+          "You've found a town and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Fort Knox's affordability makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-post lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-post housing is popular for the DoDEA schools; get on the list early and get the office's read on Radcliff and Elizabethtown before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Kentucky vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact DoDEA Americas (on-post) or Hardin County Schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Ireland Army Health Clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is the gold actually at Fort Knox?", "a": "The U.S. Bullion Depository, the famous gold vault, sits next to the post, but it's run by the Treasury Department, not the Army, and isn't open to the public." },
+        { "q": "What does the Army do at Fort Knox?", "a": "It's a major headquarters hub: Army Human Resources Command, Cadet Command (ROTC), and Recruiting Command. It was historically the 'Home of Armor.'" },
+        { "q": "Where do families live?", "a": "On-post housing (with DoDEA schools) is popular. Off post, Radcliff and Vine Grove are closest; Elizabethtown is larger; Louisville is the big city to the north." },
+        { "q": "What is the BAH area?", "a": "Fort Knox is MHA KY110. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "General George Patton Museum", "category": "Museum", "blurb": "Armor and cavalry history on Fort Knox.", "maps_query": "General George Patton Museum of Leadership, Fort Knox KY" },
+        { "name": "Louisville", "category": "Day trip", "blurb": "Bourbon, the Louisville Slugger Museum, and Churchill Downs about 35 miles north.", "maps_query": "Louisville, KY" },
+        { "name": "Bourbon Trail (Bardstown)", "category": "Day trip", "blurb": "Historic distilleries in nearby Bardstown, the 'Bourbon Capital.'", "maps_query": "Bardstown, KY" },
+        { "name": "Bernheim Forest", "category": "Outdoors", "blurb": "A large arboretum and research forest with trails between Knox and Louisville.", "maps_query": "Bernheim Arboretum and Research Forest, KY" }
+      ]
+    }
+  ]
+}
