@@ -1,0 +1,201 @@
+{
+  "slug": "naval-base-coronado",
+  "schema_version": "0.1",
+  "name": "Naval Base Coronado",
+  "short_name": "Coronado",
+  "branch": "U.S. Navy",
+  "states": ["CA"],
+  "tagline": "The West Coast hub for naval aviation and Navy SEALs, spanning eight sites around San Diego.",
+  "coords": { "lat": 32.70, "lng": -117.20, "label": "Coronado / San Diego, CA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy 'metro base' of eight installations across San Diego (NAS North Island, NAB Coronado/home of West Coast SEALs & BUD/S, Naval Outlying Landing Field Imperial Beach, etc.). Facts verified from official sources (cnic.navy.mil Naval Base Coronado, Naval Medical Center San Diego, DeCA/NEX, Wikipedia for corroborated headline facts). BAH MHA CA038 (San Diego) via the bah_rates single source of truth. California is TRICARE West. San Diego is a high-cost market. Medium-confidence flags: base coords (approx, North Island), off-base ZIP 92118 (Coronado).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Coronado and around San Diego, CA",
+        "Made up of": "Eight installations, including NAS North Island and Naval Amphibious Base Coronado",
+        "Known for": "West Coast naval aviation and the home of the Navy SEALs (BUD/S)",
+        "Carriers": "Homeport for Pacific Fleet aircraft carriers at North Island",
+        "Setting": "Coastal Southern California (high cost of living)"
+      },
+      "source": { "label": "Naval Base Coronado (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/navbase_coronado.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Base Coronado is a 'metro base' of eight installations across the San Diego area. Its anchors are Naval Air Station North Island, a major West Coast naval aviation hub and carrier homeport, and Naval Amphibious Base Coronado, the home of West Coast Navy SEALs and BUD/S training.",
+        "Together the sites support carriers, helicopter squadrons, special warfare, and amphibious forces, all in a prime Southern California coastal setting that is as expensive as it is desirable."
+      ],
+      "source": { "label": "Naval Base Coronado (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/navbase_coronado.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "coronado_decision",
+      "title": "San Diego: Beautiful, Desirable, and Expensive",
+      "type": "killer",
+      "data": {
+        "subtitle": "San Diego is one of the most desirable, and most expensive, places the Navy sends families. The central question is balancing commute against how far out you'll go to make your BAH stretch.",
+        "intro": [
+          "Coronado itself is gorgeous and pricey, so few junior families live on the island off base. Most spread across the wider San Diego metro and trade a longer commute for more affordable housing. On-base housing is in high demand.",
+          "Where you live is a balance of commute to your specific site (North Island, the Amphib Base, or elsewhere) against price, with the South Bay and inland suburbs offering more room for the money."
+        ],
+        "recommendations": [
+          { "who": "Shortest commute", "advice": "Coronado and nearby Imperial Beach put you closest to North Island and the Amphib Base, but Coronado is expensive." },
+          { "who": "Value in the South Bay", "advice": "Chula Vista, Eastlake, and the South Bay offer newer homes and more space for the money, a reasonable drive south." },
+          { "who": "Family suburbs", "advice": "Inland and North County areas have well-regarded schools; weigh the longer commute and traffic." },
+          { "who": "On-base option", "advice": "On-base housing across the Coronado complex is in high demand; get on the list as early as possible." }
+        ]
+      },
+      "source": { "label": "Naval Base Coronado (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/navbase_coronado.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center. Each of the Coronado complex's sites has its own gates.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Naval Base Coronado site before you go."
+      ],
+      "source": { "label": "Naval Base Coronado (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/navbase_coronado.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "The Coronado complex has privatized on-base family housing across several neighborhoods, including communities on and near Coronado.",
+        "Demand is high in this expensive market, so eligibility and waitlists matter. Start with the housing office for the current manager, options, and timelines."
+      ],
+      "source": { "label": "Naval Base Coronado (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/navbase_coronado.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA038",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA038 (San Diego)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "92118", "label": "Coronado, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Coronado Unified serves the island, while families across the metro attend districts like Chula Vista, Sweetwater Union, and San Diego Unified depending on where they live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Coronado Unified School District (official)", "url": "https://www.coronadousd.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Coronado" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Naval Medical Center San Diego (Balboa)",
+        "Care": "Major military medical center for the San Diego region, with branch clinics including at North Island; full inpatient, specialty, and emergency care",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Naval Medical Center San Diego (official)", "url": "https://sandiego.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NAS North Island Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) San Diego / North Island"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in pricey San Diego the math is tougher than at most duty stations."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "Home prices put a purchase out of comfortable reach for your budget.",
+          "You want flexibility in an expensive, fast-moving market.",
+          "On-base housing or renting keeps you closer to your site without overextending."
+        ],
+        "buy": [
+          "You expect a long tour or repeat San Diego assignments, common in the fleet.",
+          "You can afford the entry price and want to build equity with your VA loan.",
+          "You've found a neighborhood and commute that work and plan to hold the home.",
+          "You're comfortable being a long-distance landlord if you PCS before selling."
+        ],
+        "bottom_line": "There is no universal right answer, and San Diego's high prices make buying a bigger commitment than usual. Many families rent or take on-base housing, especially on shorter tours. Run your BAH against the rent and home prices above, weigh your tour length and commute, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In a big, expensive metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is in high demand; get on the list early and get the housing office's read on the metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Coronado, Chula Vista, San Diego Unified, etc.) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Medical Center San Diego (Balboa) or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Naval Base Coronado?", "a": "A Navy 'metro base' of eight San Diego-area installations, anchored by NAS North Island (carrier aviation) and Naval Amphibious Base Coronado (home of West Coast SEALs and BUD/S)." },
+        { "q": "Where do families live?", "a": "Across the San Diego metro. Coronado and Imperial Beach are closest but pricey; the South Bay (Chula Vista, Eastlake) and inland suburbs offer more space for the money. On-base housing is in high demand." },
+        { "q": "Is it expensive?", "a": "Yes. San Diego is one of the costlier markets in the country, so plan on a longer commute or on-base housing to make BAH stretch." },
+        { "q": "What is the BAH area?", "a": "Naval Base Coronado is MHA CA038 (San Diego). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Coronado Beach & Hotel del Coronado", "category": "Beach", "blurb": "A top-rated beach and the iconic historic hotel on Coronado.", "maps_query": "Hotel del Coronado, CA" },
+        { "name": "Balboa Park", "category": "Family", "blurb": "Museums, gardens, and the San Diego Zoo in one huge urban park.", "maps_query": "Balboa Park, San Diego CA" },
+        { "name": "USS Midway Museum", "category": "Museum", "blurb": "A retired aircraft carrier turned museum on the San Diego waterfront.", "maps_query": "USS Midway Museum, San Diego CA" },
+        { "name": "Gaslamp Quarter", "category": "Food & nightlife", "blurb": "Downtown San Diego's dining and entertainment district.", "maps_query": "Gaslamp Quarter, San Diego CA" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "slug": "usag-daegu",
+  "schema_version": "0.1",
+  "name": "USAG Daegu",
+  "short_name": "Daegu",
+  "branch": "U.S. Army",
+  "states": ["South Korea"],
+  "region": "OCONUS",
+  "tagline": "The Army's logistics and sustainment hub in southeastern South Korea, centered on Camp Walker and Camp Henry.",
+  "coords": { "lat": 35.84, "lng": 128.59, "label": "Daegu, South Korea" },
+  "tz": "Asia/Seoul",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (South Korea). OHA housing, DoDEA schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy sections (US-only feeds). USAG Daegu = Camp Walker, Camp Henry, Camp George, Camp Carroll (Waegwan); 19th Expeditionary Sustainment Command. Note tours can be unaccompanied or accompanied; command sponsorship is key. Facts verified from official sources (home.army.mil/daegu, Brian Allgood ACH / Camp Humphreys medicine + Daegu clinic, DeCA/AAFES, DoDEA Pacific, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx, Camp Walker).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Daegu, South Korea (southeast of the peninsula)",
+        "Main sites": "Camp Walker, Camp Henry, Camp George, and Camp Carroll (Waegwan)",
+        "Major command": "19th Expeditionary Sustainment Command",
+        "Role": "Logistics and sustainment hub for U.S. forces in Korea",
+        "Tour type": "Accompanied or unaccompanied; command sponsorship matters"
+      },
+      "source": { "label": "USAG Daegu (official)", "url": "https://home.army.mil/daegu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "U.S. Army Garrison Daegu supports U.S. forces across southeastern South Korea and is home to the 19th Expeditionary Sustainment Command, making it the Army's main logistics and sustainment hub on the peninsula. It spans several camps, including Camp Walker, Camp Henry, Camp George, and Camp Carroll near Waegwan.",
+        "Daegu is one of South Korea's largest cities, offering a fully urban Korean experience: extensive transit, dining, and culture, with the rest of the country, including Seoul, reachable by high-speed rail."
+      ],
+      "source": { "label": "USAG Daegu (official)", "url": "https://home.army.mil/daegu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "daegu_decision",
+      "title": "A Korea Tour: Command Sponsorship Shapes Everything",
+      "type": "killer",
+      "data": {
+        "subtitle": "The biggest factor in a Daegu tour is whether your family is command-sponsored, which determines your housing, OHA, and whether dependents can come on the government's dime.",
+        "intro": [
+          "Korea tours can be accompanied or unaccompanied. If your family is command-sponsored, you'll get on-base housing or live off base on the Korean economy with the Overseas Housing Allowance (OHA); if not, options are more limited.",
+          "On-base housing across the Daegu camps is convenient and community-focused. Living off base immerses you in a major Korean city, with OHA to offset rent, balanced against a Korean lease and the language."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Command sponsorship determines your entitlements, housing, OHA, and DoDEA enrollment; nail this down before anything else." },
+          { "who": "Easiest transition", "advice": "On-base housing on the Daegu camps keeps you close to work, schools, and services." },
+          { "who": "City immersion", "advice": "Living off base in Daegu offers a vibrant Korean city experience with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-base housing and approves off-base rentals, and helps with leases and OHA, so start there." }
+        ]
+      },
+      "source": { "label": "USAG Daegu (official)", "url": "https://home.army.mil/daegu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas installations can be stricter and change with force-protection levels, so confirm the current details on the official USAG Daegu site before you go."
+      ],
+      "source": { "label": "USAG Daegu (official)", "url": "https://home.army.mil/daegu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base & OHA)",
+      "type": "prose",
+      "data": [
+        "The Daegu camps have on-base family housing for command-sponsored families. Others live off base on the Korean economy and receive the Overseas Housing Allowance (OHA) to offset rent and utilities, rather than the stateside BAH.",
+        "Whether and how your family can be housed depends heavily on command sponsorship. The housing office assigns on-base housing, approves off-base rentals, and helps with leases and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "USAG Daegu (official)", "url": "https://home.army.mil/daegu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of command-sponsored personnel attend Department of Defense Education Activity (DoDEA) schools in the Daegu community, including campuses at Camp George, serving elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Pacific and the garrison, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Camp Walker Health Clinic (Daegu)",
+        "Care": "Outpatient primary and specialty care on the camps; inpatient and complex care via Brian Allgood Army Community Hospital at Camp Humphreys and host-nation hospitals",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Brian Allgood Army Community Hospital (official)", "url": "https://humphreys.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Camp Walker Commissary (DeCA)",
+        "Exchange": "Camp Walker / Daegu Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Korea has extra steps beyond a stateside move, and command sponsorship shapes many of them. Get these sorted early."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "This is the big one in Korea: it drives whether your family can join you on the government's dime, your OHA, on-base housing, and DoDEA enrollment. Verify it as early as possible." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-base housing or get approval and help to rent off base with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and transport", "text": "Complete SOFA documentation and get a USFK driver's license if you'll drive. Many families rely on Korea's excellent public transit instead of a car." },
+          { "title": "Enroll the kids in school", "text": "If command-sponsored, register with the DoDEA Daegu schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Camp Walker clinic, with Camp Humphreys hospital and host-nation providers for specialty care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Daegu?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for off-base rentals, or you live in on-base housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "Why does command sponsorship matter so much?", "a": "In Korea it determines whether your family can come on the government's dime and unlocks on-base housing, OHA, and DoDEA schools. Confirm your status early; it shapes the whole tour." },
+        { "q": "Where do families live?", "a": "Command-sponsored families live in on-base housing on the Daegu camps or off base in the city using OHA." },
+        { "q": "What's Daegu like?", "a": "It's one of South Korea's largest cities, fully urban with great transit, food, and culture, and high-speed rail to Seoul and the rest of the country." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Seomun Market", "category": "In town", "blurb": "One of Daegu's largest traditional markets, famous for street food.", "maps_query": "Seomun Market, Daegu South Korea" },
+        { "name": "Apsan Park", "category": "Outdoors", "blurb": "A mountain park with a cable car and city views, near Camp Walker.", "maps_query": "Apsan Park, Daegu South Korea" },
+        { "name": "Donggseong-ro Street", "category": "Food & shopping", "blurb": "Daegu's bustling downtown shopping and dining district.", "maps_query": "Dongseong-ro, Daegu South Korea" },
+        { "name": "Seoul (KTX high-speed rail)", "category": "Day trip", "blurb": "The capital is under two hours away by KTX bullet train.", "maps_query": "Seoul, South Korea" }
+      ]
+    }
+  ]
+}

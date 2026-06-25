@@ -1,0 +1,201 @@
+{
+  "slug": "redstone-arsenal",
+  "schema_version": "0.1",
+  "name": "Redstone Arsenal",
+  "short_name": "Redstone",
+  "branch": "U.S. Army",
+  "states": ["AL"],
+  "tagline": "The Army's missiles, aviation, and space hub next to Huntsville, 'Rocket City,' alongside NASA's Marshall Space Flight Center.",
+  "coords": { "lat": 34.68, "lng": -86.65, "label": "Huntsville, AL" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Army arsenal / tech hub (Huntsville AL; Central time zone). Mostly civilian/contractor workforce; many live off post in the Huntsville metro. Facts verified from official sources (home.army.mil/redstone, Fox Army Health Center, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA AL003 (Huntsville) via the bah_rates single source of truth. Alabama is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 35802 (Huntsville).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Huntsville, AL ('Rocket City')",
+        "Major tenants": "Army Materiel Command, Aviation & Missile Command, Missile Defense Agency",
+        "Also hosts": "NASA's Marshall Space Flight Center, U.S. Space Command, the FBI's largest field presence outside DC",
+        "Workforce": "36,000-40,000 daily, largely civilian and contractor",
+        "Setting": "North Alabama tech corridor"
+      },
+      "source": { "label": "Redstone Arsenal (official)", "url": "https://home.army.mil/redstone/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Redstone Arsenal is the Army's center for missiles, aviation, and related technology, hosting Army Materiel Command, the Aviation and Missile Command, and the Missile Defense Agency. It also shares its grounds with NASA's Marshall Space Flight Center and a growing federal presence.",
+        "Next to Huntsville, the original home of the Army's rocket program, it is a research, acquisition, and engineering hub with a heavily civilian and contractor workforce, so it functions more like a technology campus than an operational post."
+      ],
+      "source": { "label": "Redstone Arsenal (official)", "url": "https://home.army.mil/redstone/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "huntsville_decision",
+      "title": "Rocket City: A Booming, Affordable Tech Town",
+      "type": "killer",
+      "data": {
+        "subtitle": "Huntsville is one of the South's fastest-growing, most affordable tech metros, with strong schools. Redstone's workforce is largely civilian, so nearly everyone lives off post across the Huntsville-Madison area.",
+        "intro": [
+          "Because Redstone is a tech and acquisition hub, on-post housing is limited and most people live off post in the Huntsville metro. The area combines aerospace and defense jobs, a low cost of living, and well-regarded schools.",
+          "Where you live mostly comes down to commute and schools across Huntsville, Madison, and the surrounding towns, all within easy reach of the gates."
+        ],
+        "recommendations": [
+          { "who": "Top schools and newer homes", "advice": "Madison and the city of Madison schools are a favorite for families, with newer neighborhoods and a quick commute." },
+          { "who": "City living", "advice": "Huntsville proper offers a range of established and new neighborhoods close to the Arsenal and downtown." },
+          { "who": "Stretch your budget", "advice": "The Huntsville area is affordable for a growing tech metro, so BAH tends to go a long way and many families buy." },
+          { "who": "Plan around limited on-post housing", "advice": "On-post housing is limited; most live off post, so start your search in the metro early." }
+        ]
+      },
+      "source": { "label": "Redstone Arsenal (official)", "url": "https://home.army.mil/redstone/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Redstone Arsenal site before you go."
+      ],
+      "source": { "label": "Redstone Arsenal (official)", "url": "https://home.army.mil/redstone/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Redstone has a limited amount of on-post family housing, so the great majority of personnel live off post in the Huntsville-Madison metro.",
+        "Start with the housing office for the current on-post options and for help finding a place off post in the surrounding area."
+      ],
+      "source": { "label": "Redstone Arsenal (official)", "url": "https://home.army.mil/redstone/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AL003",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AL003 (Huntsville)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "35802", "label": "Huntsville, AL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Huntsville City, Madison City (highly regarded), and Madison County districts serve most military families, depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Madison City Schools (official)", "url": "https://www.madisoncity.k12.al.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AL", "city": "Huntsville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Fox Army Health Center",
+        "Care": "Outpatient primary and specialty care on the Arsenal; inpatient care via Huntsville-area network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Fox Army Health Center (official)", "url": "https://fox.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Redstone Arsenal Commissary (DeCA)",
+        "Exchange": "Redstone Arsenal Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Redstone the affordable, growing Huntsville market and longer (often civilian) tours lead many families to buy."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, which is common at Redstone.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable, appreciating Huntsville market fits your plan.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Huntsville's affordability, growth, and longer tours make buying worth a serious look. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-post housing is limited; get the housing office's read on the Huntsville-Madison metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Alabama vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Huntsville City, Madison City, or Madison County) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Fox Army Health Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's at Redstone Arsenal?", "a": "The Army's missiles, aviation, and space hub: Army Materiel Command, the Aviation and Missile Command, and the Missile Defense Agency, alongside NASA's Marshall Space Flight Center and a large federal presence. The workforce is mostly civilian." },
+        { "q": "Where do families live?", "a": "Almost entirely off post in the Huntsville metro. Madison (and Madison City schools) is a favorite for families; Huntsville proper offers a range of neighborhoods." },
+        { "q": "Is it a good place to buy?", "a": "Often. Huntsville is affordable and growing with strong schools, and many tours are long or civilian, so buying is common." },
+        { "q": "What is the BAH area?", "a": "Redstone is MHA AL003 (Huntsville). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "U.S. Space & Rocket Center", "category": "Museum", "blurb": "Home of Space Camp and a huge collection of rockets, including a Saturn V, in Huntsville.", "maps_query": "U.S. Space and Rocket Center, Huntsville AL" },
+        { "name": "Huntsville Botanical Garden", "category": "Outdoors", "blurb": "A popular garden and nature center in Huntsville.", "maps_query": "Huntsville Botanical Garden, AL" },
+        { "name": "Monte Sano State Park", "category": "Outdoors", "blurb": "A mountaintop park with trails and views over the city.", "maps_query": "Monte Sano State Park, Huntsville AL" },
+        { "name": "Downtown Huntsville (Campus No. 805)", "category": "Food & shopping", "blurb": "A revitalized downtown with breweries, dining, and entertainment districts.", "maps_query": "Campus No 805, Huntsville AL" }
+      ]
+    }
+  ]
+}

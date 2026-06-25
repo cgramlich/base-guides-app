@@ -1,0 +1,201 @@
+{
+  "slug": "fort-irwin",
+  "schema_version": "0.1",
+  "name": "Fort Irwin",
+  "short_name": "Irwin",
+  "branch": "U.S. Army",
+  "states": ["CA"],
+  "tagline": "The Army's National Training Center, a remote force-on-force proving ground in the Mojave Desert.",
+  "coords": { "lat": 35.26, "lng": -116.68, "label": "Barstow, CA (Mojave Desert)" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Army National Training Center (Mojave Desert, ~37 mi NE of Barstow; remote). Facts verified from official sources (home.army.mil/irwin, weed-irwin.tricare.mil, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA CA028 (Barstow/Fort Irwin) via the bah_rates single source of truth. Most families live on post given the remote location. Housing partner not named pending confirmation. California is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 92311 (Barstow).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Mojave Desert, CA (~37 mi NE of Barstow)",
+        "Known as": "The National Training Center (NTC)",
+        "Mission": "Large-scale, force-on-force combat training rotations",
+        "Resident OPFOR": "11th Armored Cavalry Regiment (the Blackhorse)",
+        "Setting": "Remote high desert; most families live on post"
+      },
+      "source": { "label": "Fort Irwin / NTC (official)", "url": "https://home.army.mil/irwin/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Irwin is the Army's National Training Center, where brigades rotate through large-scale, force-on-force exercises against a dedicated opposing force, the 11th Armored Cavalry Regiment. It is one of the Army's premier combat-training installations.",
+        "It sits deep in the Mojave Desert about 37 miles northeast of Barstow, which shapes everything about living here: it is remote, self-contained, and tight-knit."
+      ],
+      "source": { "label": "Fort Irwin / NTC (official)", "url": "https://home.army.mil/irwin/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "irwin_decision",
+      "title": "A Remote Desert Post: Plan to Live On Base",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Irwin is genuinely isolated, so the on-base versus off-base question mostly answers itself: the great majority of families live on post, because the nearest town is a 37-mile drive.",
+        "intro": [
+          "The NTC's location in the open Mojave means there is no commuter town next door. Barstow, about 37 miles away on I-15, is the only real off-post option, so most families with children live on post.",
+          "On-base living is convenient and community-focused, with schools, a hospital, and services on the installation. The trade is the remoteness and the desert climate, with the nearest big city (and airport) a longer drive toward Las Vegas or the Inland Empire."
+        ],
+        "recommendations": [
+          { "who": "Most families: on post", "advice": "Given the 37-mile drive to town, the great majority of families live on post, close to work, schools, and Weed Army Community Hospital." },
+          { "who": "Off post: Barstow", "advice": "Barstow is the only practical off-post community; expect the long daily commute if you choose it." },
+          { "who": "Plan for the desert", "advice": "Summers are extreme; plan for heat and budget for the drive when you stock up or travel." },
+          { "who": "Embrace the community", "advice": "Isolation makes the on-post community close; lean into unit and family programs to make the tour." }
+        ]
+      },
+      "source": { "label": "Fort Irwin / NTC (official)", "url": "https://home.army.mil/irwin/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Irwin site before you go."
+      ],
+      "source": { "label": "Fort Irwin / NTC (official)", "url": "https://home.army.mil/irwin/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Irwin has privatized on-post family housing, and because the post is remote, most families live on post rather than commuting from Barstow.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Irwin / NTC (official)", "url": "https://home.army.mil/irwin/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA028",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA028 (Barstow/Fort Irwin)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "92311", "label": "Barstow, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend public schools, including schools on the installation operated by the Silver Valley Unified School District. Off post, Barstow Unified serves the nearest town.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Silver Valley Unified School District (official)", "url": "https://www.svusd.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Barstow" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Weed Army Community Hospital",
+        "Care": "A modern hospital on post with primary care, pediatrics, behavioral health, emergency care, pharmacy, and lab",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Weed Army Community Hospital (official)", "url": "https://weed-irwin.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Irwin Commissary (DeCA)",
+        "Exchange": "Fort Irwin Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. At remote Fort Irwin most families simply take on-post housing, but here's the general framework if you're weighing Barstow."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer on-post housing for the short commute and community.",
+          "You'd rather not own in a small, isolated market.",
+          "Your BAH comfortably covers rent if you go off post."
+        ],
+        "buy": [
+          "You expect to be here three or more years and want to settle in Barstow.",
+          "You want to use your VA loan and build equity.",
+          "You're comfortable with the long commute and a small resale market.",
+          "You've found a home you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the remoteness leads most Fort Irwin families to live on post. If you consider Barstow, weigh the 37-mile commute and a small market. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and at a remote post like this, planning ahead matters even more."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging before you arrive; off-post options are far away. You can claim Temporary Lodging Expense (TLE) for a limited number of days." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Most families live on post here; get on the housing list early." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Silver Valley Unified (on post) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Weed Army Community Hospital." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Fort Irwin?", "a": "It's the Army's National Training Center, where units rotate through large force-on-force exercises against the 11th Armored Cavalry Regiment, in the Mojave Desert." },
+        { "q": "Do families live on or off post?", "a": "Mostly on post. The nearest town, Barstow, is about 37 miles away, so the great majority of families with children live on the installation." },
+        { "q": "What's the climate like?", "a": "High desert: hot summers, cooler nights, and isolation. Plan for the heat and the drive for big-city amenities." },
+        { "q": "What is the BAH area?", "a": "Fort Irwin is MHA CA028 (Barstow/Fort Irwin). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. The post is remote, so tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Barstow", "category": "In town", "blurb": "The nearest city, with shopping, Route 66 history, and outlet malls, about 37 miles away.", "maps_query": "Barstow, CA" },
+        { "name": "Calico Ghost Town", "category": "History", "blurb": "A restored Old West silver-mining town near Barstow.", "maps_query": "Calico Ghost Town, Yermo CA" },
+        { "name": "Las Vegas", "category": "Day trip", "blurb": "The entertainment capital, a couple of hours northeast on I-15.", "maps_query": "Las Vegas Strip, NV" },
+        { "name": "Mojave National Preserve", "category": "Outdoors", "blurb": "Dunes, lava tubes, and Joshua trees across the eastern Mojave.", "maps_query": "Mojave National Preserve, CA" }
+      ]
+    }
+  ]
+}

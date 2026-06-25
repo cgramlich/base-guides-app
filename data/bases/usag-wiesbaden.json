@@ -1,0 +1,157 @@
+{
+  "slug": "usag-wiesbaden",
+  "schema_version": "0.1",
+  "name": "USAG Wiesbaden",
+  "short_name": "Wiesbaden",
+  "branch": "U.S. Army",
+  "states": ["Germany"],
+  "region": "OCONUS",
+  "tagline": "Headquarters of U.S. Army Europe and Africa, in a historic spa city in Germany's Rhine-Main region.",
+  "coords": { "lat": 50.06, "lng": 8.32, "label": "Wiesbaden, Germany" },
+  "tz": "Europe/Berlin",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (Germany). OHA housing, DoDEA schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy sections (US-only feeds). Home of HQ U.S. Army Europe and Africa at Clay Kaserne (Wiesbaden Army Airfield). Facts verified from official sources (home.army.mil/wiesbaden, Wiesbaden Army Health Clinic, DeCA/AAFES, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx, Clay Kaserne).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (USAREUR-AF headquarters)",
+        "Location": "Wiesbaden, Germany (Rhine-Main region, near Frankfurt)",
+        "Main site": "Clay Kaserne (Wiesbaden Army Airfield)",
+        "Role": "Headquarters of U.S. Army Europe and Africa",
+        "Tour type": "Accompanied (command-sponsored) for most",
+        "Setting": "Historic German spa city in the Rhine valley"
+      },
+      "source": { "label": "USAG Wiesbaden (official)", "url": "https://home.army.mil/wiesbaden/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "U.S. Army Garrison Wiesbaden is the home of the headquarters of U.S. Army Europe and Africa, the Army's senior command on the continent. Its hub is Clay Kaserne, on Wiesbaden Army Airfield.",
+        "Wiesbaden itself is an elegant spa city in Germany's Rhine-Main region, near Frankfurt and Mainz, giving families a central base for exploring Europe with excellent rail and autobahn connections and a major international airport close by."
+      ],
+      "source": { "label": "USAG Wiesbaden (official)", "url": "https://home.army.mil/wiesbaden/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "wiesbaden_decision",
+      "title": "An Overseas Tour: On-Post Convenience vs. Living on the Economy",
+      "type": "killer",
+      "data": {
+        "subtitle": "A Germany tour is one of the best in the Army. The main choice is on-post housing versus living 'on the economy' in a German town, each with real trade-offs.",
+        "intro": [
+          "Most families come command-sponsored and choose between on-post housing at Clay Kaserne (or nearby Army communities) and renting on the German economy with the Overseas Housing Allowance (OHA).",
+          "On post is the simplest, most American option with the shortest commute. Living on the economy means a richer cultural experience and often more space, balanced against a German lease, the language, and a commute."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-post housing at Clay Kaserne keeps you close to work, schools, and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting on the economy in Wiesbaden or surrounding villages offers space and the real German experience, with OHA to offset rent and utilities." },
+          { "who": "Use the housing office", "advice": "The housing office must approve economy rentals and helps with leases, utilities, and your OHA, so start there before signing anything." },
+          { "who": "Embrace the location", "advice": "Wiesbaden's central spot near Frankfurt makes weekend travel across Europe easy by train, car, or plane." }
+        ]
+      },
+      "source": { "label": "USAG Wiesbaden (official)", "url": "https://home.army.mil/wiesbaden/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas installations can be stricter and change with force-protection levels, so confirm the current details on the official USAG Wiesbaden site before you go."
+      ],
+      "source": { "label": "USAG Wiesbaden (official)", "url": "https://home.army.mil/wiesbaden/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Post & OHA)",
+      "type": "prose",
+      "data": [
+        "Wiesbaden has on-post family housing at Clay Kaserne and nearby Army communities. Many families instead live on the German economy and receive the Overseas Housing Allowance (OHA) to offset rent and utilities, rather than the stateside BAH.",
+        "The housing office assigns on-post housing and must approve economy rentals; it also helps with leases, utilities, and OHA paperwork. Start there as soon as you have orders."
+      ],
+      "source": { "label": "USAG Wiesbaden (official)", "url": "https://home.army.mil/wiesbaden/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools in the Wiesbaden community, which serve students from elementary through high school on or near the installation.",
+        "Confirm current schools, boundaries, and registration through DoDEA Europe and the garrison, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Wiesbaden Army Health Clinic (Clay Kaserne)",
+        "Care": "Outpatient primary and specialty care; inpatient and complex care via Landstuhl Regional Medical Center and host-nation hospitals",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Wiesbaden Army Health Clinic (official)", "url": "https://wiesbaden.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Wiesbaden Commissary (DeCA)",
+        "Exchange": "Wiesbaden Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and ration/logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-post housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your USAREUR driver's license, register or ship your vehicle, and complete SOFA documentation. Confirm whether you need a no-fee (official) passport for family members." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Wiesbaden schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Wiesbaden Army Health Clinic and host-nation providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Wiesbaden?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-post/government housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "Where do families live?", "a": "Either in on-post housing at Clay Kaserne (and nearby communities) or on the German economy in Wiesbaden and surrounding towns using OHA." },
+        { "q": "What about schools?", "a": "Kids attend DoDEA schools in the Wiesbaden community, from elementary through high school." },
+        { "q": "Is it a good tour for travel?", "a": "Excellent. Wiesbaden's central location near Frankfurt makes weekend trips across Europe easy by train, car, or plane." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Wiesbaden Old Town & Kurhaus", "category": "In town", "blurb": "The historic spa district with the grand Kurhaus, market square, and cafes.", "maps_query": "Kurhaus Wiesbaden, Germany" },
+        { "name": "Rheingau Wine Region", "category": "Day trip", "blurb": "Riesling vineyards and Rhine-side villages just west of the city.", "maps_query": "Rheingau, Germany" },
+        { "name": "Frankfurt", "category": "Day trip", "blurb": "The nearby international city, with its airport, museums, and shopping, a short train ride away.", "maps_query": "Frankfurt, Germany" },
+        { "name": "Rhine River (Rüdesheim)", "category": "Outdoors", "blurb": "Castles, river cruises, and the famous Drosselgasse in the Rhine Gorge.", "maps_query": "Rüdesheim am Rhein, Germany" }
+      ]
+    }
+  ]
+}

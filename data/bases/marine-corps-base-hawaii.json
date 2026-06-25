@@ -1,0 +1,202 @@
+{
+  "slug": "marine-corps-base-hawaii",
+  "schema_version": "0.1",
+  "name": "Marine Corps Base Hawaii",
+  "short_name": "MCB Hawaii",
+  "branch": "U.S. Marine Corps",
+  "states": ["HI"],
+  "region": "OCONUS",
+  "tagline": "The Marine Corps' Pacific home on Oahu's windward shore at Kaneohe Bay.",
+  "coords": { "lat": 21.45, "lng": -157.76, "label": "Kaneohe, Oahu, HI" },
+  "tz": "Pacific/Honolulu",
+  "last_full_review": "2026-06-25",
+  "_note": "Marine Corps base on Mokapu Peninsula, Kaneohe Bay, windward Oahu. Region flagged OCONUS for the browse UX, but Hawaii is a BAH/RentCast/SchoolDigger state, so it KEEPS the full CONUS template (BAH MHA HI408 Kaneohe via bah_rates; realestate + schools_live feeds work). Home of 3rd Marine Littoral Regiment and Marine aviation. Facts verified from official sources (mcbhawaii.marines.mil, Naval Health Clinic Hawaii, DeCA/MCX, Wikipedia for corroborated headline facts). Hawaii is TRICARE West. High cost of living. Medium-confidence flags: base coords (approx), off-base ZIP 96744 (Kaneohe).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Mokapu Peninsula, Kaneohe Bay, windward Oahu, HI",
+        "Major units": "3rd Marine Littoral Regiment and Marine Corps aviation",
+        "Setting": "Windward Oahu, between the Koolau mountains and the Pacific",
+        "Cost of living": "High (island/Oahu market)",
+        "Note": "An accompanied tour for most; a true island posting"
+      },
+      "source": { "label": "Marine Corps Base Hawaii (official)", "url": "https://www.mcbhawaii.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Marine Corps Base Hawaii is the Corps' main installation in the Pacific, on the Mokapu Peninsula at Kaneohe Bay on the windward side of Oahu. It hosts the 3rd Marine Littoral Regiment and Marine aviation units central to the Corps' Indo-Pacific role.",
+        "The setting is spectacular, framed by the Koolau mountains and the ocean, but it is still an island posting: housing is tight, the cost of living is high, and everything arrives by ship or plane."
+      ],
+      "source": { "label": "Marine Corps Base Hawaii (official)", "url": "https://www.mcbhawaii.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "hawaii_decision",
+      "title": "Paradise, With Island-Sized Costs",
+      "type": "killer",
+      "data": {
+        "subtitle": "Oahu is beautiful but among the most expensive places the military sends families. On-base housing is the easiest path; off base means navigating a tight, pricey windward market.",
+        "intro": [
+          "Almost everyone wants to live here, and the lifestyle delivers, but the cost of living is steep and housing is limited. On-base housing at MCB Hawaii is the most common choice and is in high demand.",
+          "Off base, most families stay on the windward side near Kaneohe to keep the commute short, since crossing the Koolau range to town adds time and traffic."
+        ],
+        "recommendations": [
+          { "who": "Most families: on base", "advice": "On-base housing is the simplest, most cost-effective option here; get on the list as early as your orders allow." },
+          { "who": "Windward side", "advice": "Kaneohe and Kailua keep you close to base with that famous windward scenery, but rents are high." },
+          { "who": "More for your money", "advice": "Areas over the pali or toward central Oahu can be cheaper, at the cost of a longer, traffic-heavy commute." },
+          { "who": "Plan island logistics", "advice": "Shipping a vehicle, higher prices, and limited inventory are all part of a Hawaii PCS; budget and plan ahead." }
+        ]
+      },
+      "source": { "label": "Marine Corps Base Hawaii (official)", "url": "https://www.mcbhawaii.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official MCB Hawaii site before you go."
+      ],
+      "source": { "label": "Marine Corps Base Hawaii (official)", "url": "https://www.mcbhawaii.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "MCB Hawaii has privatized on-base family housing across several neighborhoods on the peninsula, and it's the most common choice given the island's high costs.",
+        "Demand is high, so eligibility and waitlists matter. Start with the housing office as soon as you have orders for the current manager, options, and timelines."
+      ],
+      "source": { "label": "Marine Corps Base Hawaii (official)", "url": "https://www.mcbhawaii.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "HI408",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA HI408 (Kaneohe/MCB Hawaii)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "96744", "label": "Kaneohe, HI" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend Hawaii's statewide public school system, the Hawaii State Department of Education, plus a Mokapu campus that serves base families. Private and charter options exist across Oahu.",
+        "Your assigned school depends on your address within the statewide system, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Hawaii State Department of Education (official)", "url": "https://www.hawaiipublicschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "HI", "city": "Kaneohe" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Naval Health Clinic Hawaii (Kaneohe Bay branch)",
+        "Care": "Outpatient primary and specialty care on base; inpatient and major specialty care via Tripler Army Medical Center and the network",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Naval Health Clinic Hawaii (official)", "url": "https://hawaii.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "MCB Hawaii Commissary (DeCA)",
+        "Exchange": "Marine Corps Exchange (MCX) Hawaii"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in Hawaii's pricey island market most families rent or take on-base housing rather than buy."],
+        "rent": [
+          "Your tour is a standard length and you'll PCS off the island.",
+          "Home prices on Oahu are out of comfortable reach for your budget.",
+          "On-base housing covers you without overextending.",
+          "You want flexibility in an expensive, competitive market."
+        ],
+        "buy": [
+          "You expect a long tour or plan to keep a home in Hawaii long term.",
+          "You can afford Oahu's high entry price and want to build equity.",
+          "You're comfortable being a long-distance landlord after you PCS.",
+          "You've found a property and location you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Oahu's high prices lead most military families to rent or use on-base housing. Buying makes sense mainly for long or repeat tours and bigger budgets. Run your BAH against the rent and home prices above, and talk to a lender and an agent who know the island and military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and a Hawaii PCS adds island-specific steps like shipping a vehicle. Start early."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Allowance (TLA) for OCONUS/Hawaii while you house-hunt; know the rules before you travel." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is the most common choice here; get on the list as soon as you have orders, and get the office's read on the windward market." },
+          { "title": "Sort your vehicle and access", "text": "Plan vehicle shipping early, handle Hawaii registration and safety inspection on arrival, and learn the visitor-pass process for guests." },
+          { "title": "Enroll the kids in school", "text": "Contact the Hawaii State DOE (or the Mokapu campus) early and bring records and immunizations; Hawaii has specific entry health requirements." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Kaneohe Bay clinic, with Tripler and network providers for specialty care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is MCB Hawaii a real overseas tour?", "a": "It's in Hawaii, a U.S. state, so it uses stateside pay tools like BAH (not OHA). But it's a true island posting with shipping, high costs, and accompanied-tour planning, which is why we flag it under the OCONUS/island group." },
+        { "q": "Where do families live?", "a": "Most live in on-base housing given the island's high costs. Off base, Kaneohe and Kailua on the windward side keep the commute short but rents are high." },
+        { "q": "How expensive is it?", "a": "Oahu is one of the most expensive markets in the country. On-base housing is the most cost-effective option for many families." },
+        { "q": "What is the BAH area?", "a": "MCB Hawaii is MHA HI408 (Kaneohe). Because it's a U.S. state, you get BAH; use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Kailua Beach Park", "category": "Beach", "blurb": "One of Oahu's most famous beaches, minutes from base on the windward side.", "maps_query": "Kailua Beach Park, HI" },
+        { "name": "Hoomaluhia Botanical Garden", "category": "Outdoors", "blurb": "A lush garden under the Koolau cliffs in Kaneohe.", "maps_query": "Hoomaluhia Botanical Garden, Kaneohe HI" },
+        { "name": "Lanikai Pillbox Hike", "category": "Outdoors", "blurb": "A short, scenic ridge hike with sweeping windward views.", "maps_query": "Lanikai Pillbox Hike, Kailua HI" },
+        { "name": "Honolulu / Waikiki", "category": "Day trip", "blurb": "The city, dining, and Waikiki Beach over the pali on the south shore.", "maps_query": "Waikiki Beach, Honolulu HI" }
+      ]
+    }
+  ]
+}

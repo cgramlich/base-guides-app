@@ -1,0 +1,157 @@
+{
+  "slug": "mcas-iwakuni",
+  "schema_version": "0.1",
+  "name": "MCAS Iwakuni",
+  "short_name": "Iwakuni",
+  "branch": "U.S. Marine Corps",
+  "states": ["Japan"],
+  "region": "OCONUS",
+  "tagline": "A growing Marine and Navy air station on Japan's Seto Inland Sea, near Hiroshima.",
+  "coords": { "lat": 34.14, "lng": 132.24, "label": "Iwakuni, Japan" },
+  "tz": "Asia/Tokyo",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (Japan). OHA housing, DoDEA schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy sections (US-only feeds). MCAS Iwakuni is a joint Marine/Navy air station; received the carrier air wing relocated from Atsugi. Facts verified from official sources (mcasiwakuni.marines.mil, Branch Health Clinic Iwakuni / Navy Medicine, DeCA/MCX, DoDEA Pacific, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx), name of housing partner not applicable (govt/OHA).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps (joint with U.S. Navy)",
+        "Location": "Iwakuni, Yamaguchi Prefecture, Japan (Seto Inland Sea)",
+        "Near": "Hiroshima (about an hour away)",
+        "Role": "Forward Marine and Navy aviation in the western Pacific",
+        "Tour type": "Accompanied (command-sponsored) for most",
+        "Note": "Home to a relocated carrier air wing; a growing community"
+      },
+      "source": { "label": "MCAS Iwakuni (official)", "url": "https://www.mcasiwakuni.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Marine Corps Air Station Iwakuni is a joint Marine and Navy air station on Japan's Seto Inland Sea, a key forward aviation hub in the western Pacific. It grew significantly after a U.S. Navy carrier air wing relocated here, expanding the community and its facilities.",
+        "It sits near Hiroshima in Yamaguchi Prefecture, blending an operational tempo with a uniquely Japanese setting of islands, mountains, and the Inland Sea."
+      ],
+      "source": { "label": "MCAS Iwakuni (official)", "url": "https://www.mcasiwakuni.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "iwakuni_decision",
+      "title": "A Japan Tour: On-Base Community vs. Living Off Base",
+      "type": "killer",
+      "data": {
+        "subtitle": "Iwakuni offers a strong on-base community on a modern, expanded station, plus the option to live off base in the local Japanese community with OHA.",
+        "intro": [
+          "Most families come command-sponsored. The station has grown a lot, with extensive on-base housing and amenities, and on base is the most common, easiest choice for a Japan tour.",
+          "Living off base in Iwakuni or nearby means more immersion in Japanese life, using the Overseas Housing Allowance (OHA), balanced against a Japanese lease and the language."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-base housing on the expanded station keeps you close to work, DoDEA schools, and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting off base in the Iwakuni area offers a deeper Japanese experience with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-base housing and must approve off-base rentals, and helps with leases and OHA, so start there." },
+          { "who": "Embrace the location", "advice": "Hiroshima is about an hour away, and Japan's rail network opens up the country for travel." }
+        ]
+      },
+      "source": { "label": "MCAS Iwakuni (official)", "url": "https://www.mcasiwakuni.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas installations can be stricter and change with force-protection levels, so confirm the current details on the official MCAS Iwakuni site before you go."
+      ],
+      "source": { "label": "MCAS Iwakuni (official)", "url": "https://www.mcasiwakuni.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base & OHA)",
+      "type": "prose",
+      "data": [
+        "Iwakuni has extensive on-base family housing following the station's expansion, and it's the most common choice for families. Others live off base in the local community and receive the Overseas Housing Allowance (OHA) to offset rent and utilities, rather than the stateside BAH.",
+        "The housing office assigns on-base housing and must approve off-base rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "MCAS Iwakuni (official)", "url": "https://www.mcasiwakuni.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools on the station, serving students from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Pacific and the station, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Branch Health Clinic Iwakuni (Robert M. Casey Medical & Dental Clinic)",
+        "Care": "Outpatient primary and specialty care on the station; inpatient and complex care via the larger Navy hospitals in Japan and host-nation facilities",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "U.S. Naval Hospital Yokosuka / Navy Medicine (official)", "url": "https://yokosuka.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "MCAS Iwakuni Commissary (DeCA)",
+        "Exchange": "Marine Corps Exchange (MCX) Iwakuni"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Japan has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-base housing or get approval and help to rent off base with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your SOFA driver's license, register a vehicle locally (many families buy a used car in Japan), and complete SOFA documentation. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Iwakuni schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Iwakuni clinic, with Navy hospitals and host-nation providers for specialty care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Iwakuni?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for off-base rentals, or you live in on-base housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "Where do families live?", "a": "Most live in on-base housing on the expanded station; others rent off base in the local community using OHA." },
+        { "q": "What about schools?", "a": "Kids attend DoDEA schools on the station, from elementary through high school." },
+        { "q": "What's nearby?", "a": "Hiroshima is about an hour away, and the Seto Inland Sea and Japan's rail network make for great travel and exploring." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Kintai Bridge", "category": "In town", "blurb": "Iwakuni's iconic five-arched wooden bridge over the Nishiki River.", "maps_query": "Kintai Bridge, Iwakuni Japan" },
+        { "name": "Hiroshima Peace Memorial Park", "category": "Day trip", "blurb": "The Peace Memorial and museum, about an hour away.", "maps_query": "Hiroshima Peace Memorial Park, Japan" },
+        { "name": "Miyajima (Itsukushima Shrine)", "category": "Day trip", "blurb": "The famous floating torii gate on a nearby island.", "maps_query": "Itsukushima Shrine, Miyajima Japan" },
+        { "name": "Iwakuni Castle", "category": "History", "blurb": "A reconstructed mountaintop castle reached by ropeway, with Inland Sea views.", "maps_query": "Iwakuni Castle, Japan" }
+      ]
+    }
+  ]
+}

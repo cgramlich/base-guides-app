@@ -1,0 +1,201 @@
+{
+  "slug": "fort-rucker",
+  "schema_version": "0.1",
+  "name": "Fort Rucker",
+  "short_name": "Rucker",
+  "branch": "U.S. Army",
+  "states": ["AL"],
+  "tagline": "The 'Home of Army Aviation,' where Army pilots earn their wings, in southeast Alabama's Wiregrass.",
+  "coords": { "lat": 31.34, "lng": -85.71, "label": "Daleville / Enterprise, AL" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Army aviation training post (southeast AL Wiregrass; Central time zone). Name history: Fort Rucker -> Fort Novosel (2023) -> Fort Rucker (June 2025, now honoring WWI aviator Capt. Edward W. Rucker, not the Confederate general). Facts verified from official sources (home.army.mil/rucker, Lyster AHC, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA AL002 (Fort Rucker) via the bah_rates single source of truth. Housing partner not named pending confirmation. Alabama is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 36330 (Enterprise).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Southeast Alabama (Wiregrass; Daleville/Ozark/Enterprise)",
+        "Known as": "Home of Army Aviation",
+        "Mission": "U.S. Army Aviation Center of Excellence and flight training",
+        "Also hosts": "Army Aeromedical Research Lab, School of Aviation Medicine, Aviation Museum",
+        "Note": "Reverted from 'Fort Novosel' to 'Fort Rucker' in 2025 (new namesake)"
+      },
+      "source": { "label": "Fort Rucker (official)", "url": "https://home.army.mil/rucker/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Rucker is the home of Army Aviation, where the U.S. Army Aviation Center of Excellence trains the Army's helicopter pilots and develops aviation doctrine and tactics. Much of the population is here for flight school or as instructors.",
+        "It sits in the Wiregrass region of southeast Alabama, bordered by Daleville, Ozark, and Enterprise. The post carried the name Fort Novosel from 2023 to 2025 before reverting to Fort Rucker, now honoring a World War I aviator."
+      ],
+      "source": { "label": "Fort Rucker (official)", "url": "https://home.army.mil/rucker/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rucker_decision",
+      "title": "Flight School in the Wiregrass",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Rucker is an affordable, small-town aviation post. The main choice is which of the surrounding towns fits your commute and schools, with on-post housing also available.",
+        "intro": [
+          "As the Army's flight-training hub, the community is full of student pilots and instructors, and the cost of living in the Wiregrass is low, so BAH stretches well.",
+          "Three towns border the post, each with its own feel and schools: Daleville is closest, Enterprise is the larger, family-popular choice, and Ozark sits on the north side."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Daleville borders the post for the shortest commute and the lowest costs." },
+          { "who": "Schools and amenities", "advice": "Enterprise is the larger town, popular with families for its schools and shopping, a short drive away." },
+          { "who": "North-side option", "advice": "Ozark sits on the north side of the post and is another close, affordable community." },
+          { "who": "On-post option", "advice": "On-post housing is available; with low local costs, weigh it against renting or buying nearby." }
+        ]
+      },
+      "source": { "label": "Fort Rucker (official)", "url": "https://home.army.mil/rucker/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Rucker site before you go."
+      ],
+      "source": { "label": "Fort Rucker (official)", "url": "https://home.army.mil/rucker/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Rucker has privatized on-post family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Rucker (official)", "url": "https://home.army.mil/rucker/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AL002",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AL002 (Fort Rucker)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "36330", "label": "Enterprise, AL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Daleville City, Enterprise City, Ozark City, and Dale County schools serve the towns around the post, depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Enterprise City Schools (official)", "url": "https://www.enterpriseschools.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AL", "city": "Enterprise" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Lyster Army Health Clinic",
+        "Care": "Outpatient primary and specialty care, including aviation medicine; inpatient care via Wiregrass-area network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Lyster Army Health Clinic (official)", "url": "https://lyster.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Rucker Commissary (DeCA)",
+        "Exchange": "Fort Rucker Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or you're here for flight school.",
+          "You want time to learn the area before committing to a town.",
+          "You'd rather not gamble on resale timing in a small market.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Wiregrass market fits your budget for a home you like.",
+          "You've found a town and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The Wiregrass is inexpensive, so BAH stretches well, but resale can be slow in a small, training-driven market. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Daleville, Enterprise, and Ozark before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Daleville, Enterprise, Ozark, or Dale County) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Lyster Army Health Clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is it Fort Rucker or Fort Novosel?", "a": "Fort Rucker, as of June 2025. It was Fort Novosel from 2023 to 2025; the name now honors a World War I aviator, Capt. Edward W. Rucker, rather than the Confederate general." },
+        { "q": "What happens at Fort Rucker?", "a": "It's the Home of Army Aviation, the U.S. Army Aviation Center of Excellence, where Army helicopter pilots train. Many people are here for flight school or as instructors." },
+        { "q": "Where do families live?", "a": "Daleville is closest; Enterprise is the larger, family-popular town for schools; Ozark sits on the north side. On-post housing is also available." },
+        { "q": "What is the BAH area?", "a": "Fort Rucker is MHA AL002. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "U.S. Army Aviation Museum", "category": "Museum", "blurb": "A large collection of Army helicopters and aviation history on Fort Rucker.", "maps_query": "United States Army Aviation Museum, Fort Rucker AL" },
+        { "name": "Landmark Park (Dothan)", "category": "Family", "blurb": "Alabama's official agricultural museum and a living-history park near Dothan.", "maps_query": "Landmark Park, Dothan AL" },
+        { "name": "Gulf Coast Beaches", "category": "Day trip", "blurb": "The Florida Panhandle's Emerald Coast beaches are roughly a couple of hours south.", "maps_query": "Panama City Beach, FL" },
+        { "name": "Downtown Enterprise (Boll Weevil Monument)", "category": "History", "blurb": "Enterprise's famous monument and small-town downtown near the post.", "maps_query": "Boll Weevil Monument, Enterprise AL" }
+      ]
+    }
+  ]
+}

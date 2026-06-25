@@ -1,0 +1,201 @@
+{
+  "slug": "nas-whidbey-island",
+  "schema_version": "0.1",
+  "name": "NAS Whidbey Island",
+  "short_name": "Whidbey",
+  "branch": "U.S. Navy",
+  "states": ["WA"],
+  "tagline": "The Navy's Pacific Northwest aviation hub on Puget Sound, home of the EA-18G Growler and maritime patrol squadrons.",
+  "coords": { "lat": 48.35, "lng": -122.66, "label": "Oak Harbor, WA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy aviation station (Oak Harbor, Whidbey Island, WA; Puget Sound). Home of the EA-18G Growler electronic-attack community and P-8 maritime patrol squadrons. Facts verified from official sources (cnic.navy.mil NAS Whidbey Island, Naval Hospital Oak Harbor, DeCA/NEX, Wikipedia for corroborated headline facts). BAH MHA WA312 (Whidbey Island) via the bah_rates single source of truth. Washington is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 98277 (Oak Harbor).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Oak Harbor, Whidbey Island, WA (Puget Sound)",
+        "Mission": "Pacific Northwest naval aviation hub",
+        "Aircraft": "EA-18G Growler electronic-attack and P-8 Poseidon maritime patrol",
+        "Setting": "Island in Puget Sound, north of Seattle",
+        "Note": "Some squadrons train at Outlying Field Coupeville (OLF)"
+      },
+      "source": { "label": "NAS Whidbey Island (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrnw/installations/nas_whidbey_island.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Air Station Whidbey Island is the Navy's primary Pacific Northwest aviation base. It's the home of the Navy's EA-18G Growler electronic-attack squadrons and a major hub for P-8 Poseidon maritime patrol aircraft.",
+        "The station sits on Whidbey Island in Puget Sound near Oak Harbor, north of Seattle, in a scenic but rainy island setting known for the Cascades, the San Juans, and the water all around."
+      ],
+      "source": { "label": "NAS Whidbey Island (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrnw/installations/nas_whidbey_island.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "whidbey_decision",
+      "title": "Island Living: Stunning, Tight-Knit, and a Bit Remote",
+      "type": "killer",
+      "data": {
+        "subtitle": "Whidbey is a beautiful island posting with a small-town feel. The trade-off is that it's somewhat removed from the mainland, so most families settle in or near Oak Harbor.",
+        "intro": [
+          "The Pacific Northwest scenery is a big draw, but island life means a smaller community and a drive (or the Mukilteo ferry) to reach the Seattle metro. Most families live in Oak Harbor, close to the station.",
+          "Housing is on-base or in the Oak Harbor area; commuting from the mainland is impractical for most, so plan to live on the island."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Oak Harbor surrounds the station and is where most families live, with the shortest commute and the most amenities on the island." },
+          { "who": "Quieter island towns", "advice": "Coupeville and the central island offer a slower pace and charm, a bit farther from base." },
+          { "who": "On-base option", "advice": "On-base housing is available; given island logistics, it's a popular, convenient choice, so get on the list early." },
+          { "who": "Plan for island logistics", "advice": "Reaching the mainland means the Deception Pass bridge north or the Clinton-Mukilteo ferry south; factor that into trips and travel." }
+        ]
+      },
+      "source": { "label": "NAS Whidbey Island (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrnw/installations/nas_whidbey_island.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official NAS Whidbey Island site before you go."
+      ],
+      "source": { "label": "NAS Whidbey Island (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrnw/installations/nas_whidbey_island.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "NAS Whidbey Island has privatized on-base family housing across several neighborhoods on the island.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "NAS Whidbey Island (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrnw/installations/nas_whidbey_island.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "WA312",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA WA312 (Whidbey Island)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "98277", "label": "Oak Harbor, WA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Oak Harbor School District serves most military families, with Coupeville and other island districts also nearby.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Oak Harbor School District (official)", "url": "https://www.ohsd.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "WA", "city": "Oak Harbor" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Naval Hospital Oak Harbor",
+        "Care": "Outpatient primary and specialty care; inpatient, emergency, and specialty needs are referred to mainland network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Naval Hospital Oak Harbor (official)", "url": "https://oak-harbor.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NAS Whidbey Island Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Whidbey Island"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and on Whidbey it's shaped by a small island market and PCS timing."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the island before committing.",
+          "You'd rather not gamble on resale timing in a small, somewhat seasonal market.",
+          "You prefer on-base housing for the short commute and convenience."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "You're comfortable owning in a smaller island market and like the area.",
+          "You've found a home and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The island market is small, so resale can take longer, but many families love it enough to buy. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. On an island, planning ahead matters even more."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is popular here; get on the list early and get the housing office's read on Oak Harbor before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Washington vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Oak Harbor School District early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Hospital Oak Harbor or network providers; know your mainland referral options." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What flies out of Whidbey?", "a": "It's the Navy's home for the EA-18G Growler electronic-attack community and a major P-8 Poseidon maritime patrol hub in the Pacific Northwest." },
+        { "q": "Where do families live?", "a": "Mostly in and around Oak Harbor, close to the station, or in on-base housing. Coupeville and other island towns offer a quieter pace." },
+        { "q": "How far is Seattle?", "a": "It's a drive plus the Deception Pass bridge or the Clinton-Mukilteo ferry; reachable for trips, but not a daily commute for most." },
+        { "q": "What is the BAH area?", "a": "NAS Whidbey Island is MHA WA312 (Whidbey Island). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Deception Pass State Park", "category": "Outdoors", "blurb": "Dramatic bridge, cliffs, and beaches at the north end of the island.", "maps_query": "Deception Pass State Park, WA" },
+        { "name": "Coupeville / Ebey's Landing", "category": "Outdoors", "blurb": "A historic waterfront town and national historical reserve with bluff trails.", "maps_query": "Ebey's Landing National Historical Reserve, Coupeville WA" },
+        { "name": "PBY-Naval Air Museum", "category": "Museum", "blurb": "A local museum celebrating Whidbey's naval aviation heritage in Oak Harbor.", "maps_query": "PBY Naval Air Museum, Oak Harbor WA" },
+        { "name": "San Juan Islands (Anacortes ferry)", "category": "Day trip", "blurb": "Whale-watching and island-hopping from the nearby Anacortes ferry terminal.", "maps_query": "Anacortes Ferry Terminal, WA" }
+      ]
+    }
+  ]
+}

@@ -59,6 +59,16 @@
     { "slug": "mcas-cherry-point", "name": "MCAS Cherry Point", "branch": "U.S. Marine Corps", "state": "NC", "ready": true },
     { "slug": "usag-stuttgart", "name": "USAG Stuttgart", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
     { "slug": "camp-foster", "name": "Marine Corps Base Camp Butler (Camp Foster)", "branch": "U.S. Marine Corps", "state": "Japan", "region": "OCONUS", "ready": true },
-    { "slug": "andersen-afb", "name": "Andersen AFB", "branch": "U.S. Air Force", "state": "Guam", "region": "OCONUS", "ready": true }
+    { "slug": "andersen-afb", "name": "Andersen AFB", "branch": "U.S. Air Force", "state": "Guam", "region": "OCONUS", "ready": true },
+    { "slug": "fort-irwin", "name": "Fort Irwin", "branch": "U.S. Army", "state": "CA", "ready": true },
+    { "slug": "fort-rucker", "name": "Fort Rucker", "branch": "U.S. Army", "state": "AL", "ready": true },
+    { "slug": "redstone-arsenal", "name": "Redstone Arsenal", "branch": "U.S. Army", "state": "AL", "ready": true },
+    { "slug": "nas-pensacola", "name": "NAS Pensacola", "branch": "U.S. Navy", "state": "FL", "ready": true },
+    { "slug": "nas-whidbey-island", "name": "NAS Whidbey Island", "branch": "U.S. Navy", "state": "WA", "ready": true },
+    { "slug": "naval-base-coronado", "name": "Naval Base Coronado", "branch": "U.S. Navy", "state": "CA", "ready": true },
+    { "slug": "marine-corps-base-hawaii", "name": "Marine Corps Base Hawaii", "branch": "U.S. Marine Corps", "state": "HI", "region": "OCONUS", "ready": true },
+    { "slug": "usag-wiesbaden", "name": "USAG Wiesbaden", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
+    { "slug": "mcas-iwakuni", "name": "MCAS Iwakuni", "branch": "U.S. Marine Corps", "state": "Japan", "region": "OCONUS", "ready": true },
+    { "slug": "usag-daegu", "name": "USAG Daegu", "branch": "U.S. Army", "state": "South Korea", "region": "OCONUS", "ready": true }
   ]
 }
