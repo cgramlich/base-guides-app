@@ -1,0 +1,157 @@
+{
+  "slug": "camp-foster",
+  "schema_version": "0.1",
+  "name": "Marine Corps Base Camp Butler (Camp Foster)",
+  "short_name": "Camp Foster",
+  "branch": "U.S. Marine Corps",
+  "states": ["Japan"],
+  "region": "OCONUS",
+  "tagline": "The heart of the Marine Corps on Okinawa: III Marine Expeditionary Force and the island's network of Marine camps.",
+  "coords": { "lat": 26.28, "lng": 127.78, "label": "Okinawa, Japan" },
+  "tz": "Asia/Tokyo",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Okinawa, Japan). Marine Corps Base Camp Smedley D. Butler is a network of camps (Foster, Courtney, Hansen, Schwab, Kinser) plus MCAS Futenma; Camp Foster is the headquarters hub. US-only feeds omitted (OHA + COLA, not BAH; no RentCast/SchoolDigger). Weather via Open-Meteo fallback. Facts verified from official sources (mcbbutler.marines.mil, dodea.edu/pacific, U.S. Naval Hospital Okinawa, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Okinawa, Japan",
+        "Signature command": "III Marine Expeditionary Force (III MEF)",
+        "Also hosts": "3rd Marine Division, 1st Marine Aircraft Wing, 3rd Marine Logistics Group, MCIPAC",
+        "Footprint": "A network of camps (Foster, Courtney, Hansen, Schwab, Kinser) plus MCAS Futenma",
+        "Region": "OCONUS (overseas tour; OHA and COLA, not BAH)"
+      },
+      "source": { "label": "MCB Camp Butler (official)", "url": "https://www.mcbbutler.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Camp Foster is the headquarters hub of Marine Corps Base Camp Smedley D. Butler, the network of Marine installations across Okinawa. It hosts the headquarters of III Marine Expeditionary Force and Marine Corps Installations Pacific.",
+        "Okinawa is the center of Marine Corps presence in the Indo-Pacific, home to the 3rd Marine Division, the 1st Marine Aircraft Wing, and the 3rd Marine Logistics Group, spread across camps from Kinser in the south to Schwab in the north."
+      ],
+      "source": { "label": "MCB Camp Butler (official)", "url": "https://www.mcbbutler.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "okinawa_decision",
+      "title": "Marine Life on Okinawa: On Base or Off",
+      "type": "killer",
+      "data": {
+        "subtitle": "Okinawa is a subtropical island packed with Marine camps. Command sponsorship and the on-base versus off-base choice define the tour, with OHA and COLA helping in a dense, island setting.",
+        "intro": [
+          "Command sponsorship is what brings your family at government expense and unlocks housing, DoDEA schools, and benefits, so confirm it early. Which camp you report to (Foster, Courtney, Hansen, Schwab, Kinser, or MCAS Futenma) shapes where it makes sense to live.",
+          "Housing splits between on-base and renting on the Okinawan economy. On-base is convenient and removes the language barrier from daily life; off-base offers a fuller island experience, with OHA covering rent up to a ceiling and COLA helping with costs. The island is compact, with beaches and dive sites close, but expect typhoon season and heavy traffic."
+        ],
+        "recommendations": [
+          { "who": "Confirm sponsorship first", "advice": "Command sponsorship determines whether your family comes and gets housing, schools, and benefits; sort it through your unit early." },
+          { "who": "Match your camp", "advice": "Okinawa's camps run from Kinser in the south to Schwab in the north; live with your specific camp and commute in mind." },
+          { "who": "On-base or off", "advice": "On-base housing is convenient and in demand (get on the list early); off-base rentals on the local economy are common, with OHA and COLA helping." },
+          { "who": "Embrace the island", "advice": "Okinawa's beaches, diving, and culture are a highlight; plan around typhoon season and the island's traffic." }
+        ]
+      },
+      "source": { "label": "MCB Camp Butler (official)", "url": "https://www.mcbbutler.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the installation, and overseas access rules differ from stateside bases. You will need status documents under the U.S.-Japan SOFA.",
+        "Confirm the current visitor and access requirements on the official MCB Camp Butler site before you arrive."
+      ],
+      "source": { "label": "MCB Camp Butler (official)", "url": "https://www.mcbbutler.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing, OHA & COLA",
+      "type": "prose",
+      "data": [
+        "Families choose between on-base housing (spread across the Okinawa camps, with Camp Lester near the Naval Hospital among the family areas) and renting on the Okinawan economy. On-base housing is convenient and in demand.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling, with an overseas cost-of-living allowance (COLA) on top. The Housing Office assigns on-base housing and helps with off-base rentals."
+      ],
+      "source": { "label": "MCB Camp Butler (official)", "url": "https://www.mcbbutler.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Pacific operates several elementary, middle, and high schools across the Okinawa installations.",
+        "Start DoDEA registration early and confirm the specific schools, boundaries, and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "U.S. Naval Hospital Okinawa (on Camp Foster)",
+        "Care": "Inpatient and outpatient care serving all services on the island, with branch clinics across the camps",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "U.S. Naval Hospital Okinawa (official)", "url": "https://okinawa.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Commissary (DeCA) at Camp Foster and other camps",
+        "Exchange": "Marine Corps Exchange (MCX) on the Okinawa camps"
+      },
+      "source": { "label": "MCB Camp Butler (official)", "url": "https://www.mcbbutler.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your command." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the U.S.-Japan SOFA documents that let you live in-country. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits. Many families buy a local vehicle rather than ship one; confirm the rules and inspections." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA Pacific schools; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at U.S. Naval Hospital Okinawa." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's on Okinawa?", "a": "It's the center of Marine Corps presence in the Indo-Pacific: III Marine Expeditionary Force, the 3rd Marine Division, the 1st Marine Aircraft Wing, and the 3rd Marine Logistics Group, across a network of camps under MCB Camp Butler." },
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive OHA instead of BAH for off-base rentals, plus an overseas cost-of-living allowance (COLA). On-base housing is government-provided." },
+        { "q": "On base or off base?", "a": "Both are common. On-base is convenient and in demand; off-base rentals on the Okinawan economy offer a fuller island experience, with OHA and COLA helping." },
+        { "q": "What's island life like?", "a": "Subtropical and beautiful, with beaches and diving close by, but the island is dense with heavy traffic and a real typhoon season. Match where you live to your camp." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "American Village (Mihama)", "category": "Food & shopping", "blurb": "A seaside entertainment and shopping district in Chatan, near Camp Foster.", "maps_query": "American Village, Chatan Okinawa" },
+        { "name": "Okinawa Churaumi Aquarium", "category": "Family", "blurb": "One of the world's great aquariums, on the island's north end.", "maps_query": "Okinawa Churaumi Aquarium, Japan" },
+        { "name": "Shurijo Castle Park", "category": "History", "blurb": "The historic Ryukyu Kingdom castle site in Naha.", "maps_query": "Shuri Castle, Naha Okinawa" },
+        { "name": "Cape Manzamo", "category": "Outdoors", "blurb": "A famous coastal cliff and viewpoint on Okinawa's west coast.", "maps_query": "Cape Manzamo, Okinawa Japan" }
+      ]
+    }
+  ]
+}

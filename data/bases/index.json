@@ -49,6 +49,16 @@
     { "slug": "naval-base-kitsap", "name": "Naval Base Kitsap", "branch": "U.S. Navy", "state": "WA", "ready": true },
     { "slug": "fleet-activities-sasebo", "name": "Fleet Activities Sasebo", "branch": "U.S. Navy", "state": "Japan", "region": "OCONUS", "ready": true },
     { "slug": "nas-sigonella", "name": "NAS Sigonella", "branch": "U.S. Navy", "state": "Italy", "region": "OCONUS", "ready": true },
-    { "slug": "osan-air-base", "name": "Osan Air Base", "branch": "U.S. Air Force", "state": "South Korea", "region": "OCONUS", "ready": true }
+    { "slug": "osan-air-base", "name": "Osan Air Base", "branch": "U.S. Air Force", "state": "South Korea", "region": "OCONUS", "ready": true },
+    { "slug": "fort-belvoir", "name": "Fort Belvoir", "branch": "U.S. Army", "state": "VA", "ready": true },
+    { "slug": "fort-meade", "name": "Fort Meade", "branch": "U.S. Army", "state": "MD", "ready": true },
+    { "slug": "macdill-afb", "name": "MacDill AFB", "branch": "U.S. Air Force", "state": "FL", "ready": true },
+    { "slug": "scott-afb", "name": "Scott AFB", "branch": "U.S. Air Force", "state": "IL", "ready": true },
+    { "slug": "peterson-sfb", "name": "Peterson SFB", "branch": "U.S. Space Force", "state": "CO", "ready": true },
+    { "slug": "nas-jacksonville", "name": "NAS Jacksonville", "branch": "U.S. Navy", "state": "FL", "ready": true },
+    { "slug": "mcas-cherry-point", "name": "MCAS Cherry Point", "branch": "U.S. Marine Corps", "state": "NC", "ready": true },
+    { "slug": "usag-stuttgart", "name": "USAG Stuttgart", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
+    { "slug": "camp-foster", "name": "Marine Corps Base Camp Butler (Camp Foster)", "branch": "U.S. Marine Corps", "state": "Japan", "region": "OCONUS", "ready": true },
+    { "slug": "andersen-afb", "name": "Andersen AFB", "branch": "U.S. Air Force", "state": "Guam", "region": "OCONUS", "ready": true }
   ]
 }

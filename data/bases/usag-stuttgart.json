@@ -1,0 +1,157 @@
+{
+  "slug": "usag-stuttgart",
+  "schema_version": "0.1",
+  "name": "USAG Stuttgart",
+  "short_name": "Stuttgart",
+  "branch": "U.S. Army",
+  "states": ["Germany"],
+  "region": "OCONUS",
+  "tagline": "Home of U.S. European Command and U.S. Africa Command, a joint headquarters community in southwest Germany.",
+  "coords": { "lat": 48.75, "lng": 9.1, "label": "Stuttgart, Germany" },
+  "tz": "Europe/Berlin",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Germany). US-only feeds omitted (overseas uses OHA, not BAH; no RentCast or SchoolDigger). Weather via Open-Meteo fallback. Facts verified from official sources (home.army.mil/stuttgart, dodea.edu/europe, TRICARE/Landstuhl, Wikipedia for corroborated headline facts). Multiple installations: Patch, Panzer, Kelley, Robinson Barracks + Stuttgart Army Airfield. An 'enduring community' in Germany. Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (joint headquarters community)",
+        "Location": "Stuttgart area, Germany",
+        "Signature tenants": "U.S. European Command (EUCOM) and U.S. Africa Command (AFRICOM)",
+        "Also hosts": "Special Operations Command Europe and Africa",
+        "Installations": "Patch, Panzer, Kelley, and Robinson Barracks, plus Stuttgart Army Airfield",
+        "Region": "OCONUS (overseas tour; OHA, not BAH)"
+      },
+      "source": { "label": "USAG Stuttgart (official)", "url": "https://home.army.mil/stuttgart/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "U.S. Army Garrison Stuttgart supports two major combatant commands: U.S. European Command at Patch Barracks and U.S. Africa Command at Kelley Barracks, along with Special Operations Command Europe and Africa.",
+        "Spread across several installations in the Stuttgart area of southwest Germany, it is a joint headquarters community and one of the 'enduring' U.S. communities in Germany, so much of the population is staff and joint personnel."
+      ],
+      "source": { "label": "USAG Stuttgart (official)", "url": "https://home.army.mil/stuttgart/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "stuttgart_decision",
+      "title": "A Headquarters Tour in Germany",
+      "type": "killer",
+      "data": {
+        "subtitle": "Stuttgart is a sought-after Germany tour for the quality of life and travel. The defining choice is on-base versus renting on the German economy, where OHA and generous space often make off-base appealing.",
+        "intro": [
+          "Command sponsorship is what brings your family at government expense and unlocks housing, DoDEA schools, and benefits, so confirm it early. Demand for on-base housing is high, so many families live off base in the surrounding German towns.",
+          "Renting on the economy is common and often spacious; OHA plus utility and move-in allowances offset the cost up to a ceiling. Off-base living immerses you in German life, with the trade-offs of a different rental system, the language, and a commute among the installations."
+        ],
+        "recommendations": [
+          { "who": "Simplicity and community", "advice": "On-base or American-managed housing keeps you close to schools and amenities; get on the list early, as demand is high." },
+          { "who": "Space and immersion", "advice": "Renting in the towns and villages around Stuttgart often gets you more space and a local experience; OHA offsets rent and utilities up to a ceiling." },
+          { "who": "Mind the multi-post commute", "advice": "EUCOM (Patch), AFRICOM (Kelley), and Panzer are a few kilometers apart; live with your specific installation in mind." },
+          { "who": "Travel the continent", "advice": "Stuttgart's location and airport make trips across Europe easy; many families say the travel is the best part of the tour." }
+        ]
+      },
+      "source": { "label": "USAG Stuttgart (official)", "url": "https://home.army.mil/stuttgart/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access and in-processing are handled through the garrison, and overseas access rules differ from stateside posts. You will need status documents under the NATO SOFA.",
+        "Confirm the current visitor and access requirements on the official USAG Stuttgart site before you arrive."
+      ],
+      "source": { "label": "USAG Stuttgart (official)", "url": "https://home.army.mil/stuttgart/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing & OHA",
+      "type": "prose",
+      "data": [
+        "Families choose between on-base housing (concentrated at Panzer and Kelley) and renting on the German economy. Demand for on-base housing is high, so many families live off base in the surrounding towns.",
+        "Overseas, the Overseas Housing Allowance (OHA) replaces stateside BAH for those off base, individualized by rank, dependents, and actual rent up to a ceiling, plus allowances for utilities and move-in costs. The Housing Office helps with both paths and the German rental process."
+      ],
+      "source": { "label": "USAG Stuttgart (official)", "url": "https://home.army.mil/stuttgart/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local districts. DoDEA Europe operates elementary, middle, and high school grades serving the Stuttgart community (including schools at Patch and Böblingen).",
+        "Start DoDEA registration early and confirm the specific schools, boundaries, and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Stuttgart Army Health Clinic (Patch Barracks)",
+        "Care": "Outpatient primary and specialty care; inpatient and major specialty care referred to Landstuhl Regional Medical Center or German host-nation hospitals",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "USAG Stuttgart (official)", "url": "https://home.army.mil/stuttgart/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Stuttgart Commissary (DeCA) at Panzer Kaserne",
+        "Exchange": "Exchange (AAFES) at Panzer and other installations"
+      },
+      "source": { "label": "USAG Stuttgart (official)", "url": "https://home.army.mil/stuttgart/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS has extra steps beyond a stateside move. Start these early, ideally before you leave."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your gaining command." },
+          { "title": "Get no-fee passports and SOFA documents", "text": "Apply for no-fee passports for family members and the NATO SOFA documents that let you live in Germany. Tourist passports are separate." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Plan household goods and your vehicle", "text": "Overseas shipments go by sea with weight limits, and a vehicle must meet German and U.S. requirements. Confirm what you can bring and the timelines." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA Europe schools; start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at the Stuttgart Army Health Clinic." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's at Stuttgart?", "a": "Two combatant-command headquarters: U.S. European Command at Patch Barracks and U.S. Africa Command at Kelley Barracks, plus special operations commands. It's a joint headquarters community across several installations." },
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive OHA instead of BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling, plus utility and move-in allowances." },
+        { "q": "On base or on the economy?", "a": "Both are common. On-base (Panzer/Kelley) is convenient but in high demand; renting on the German economy often gets you more space and a local experience, with OHA offsetting the cost." },
+        { "q": "Is the travel as good as people say?", "a": "For many families, yes. Stuttgart's location and airport make weekend trips across Europe easy, and it's often the highlight of the tour." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Stuttgart City Center", "category": "In town", "blurb": "Museums, the Mercedes-Benz and Porsche museums, markets, and the autumn Cannstatter Volksfest.", "maps_query": "Schlossplatz, Stuttgart Germany" },
+        { "name": "The Black Forest", "category": "Outdoors", "blurb": "Forested hills, lakes, and villages southwest of the city.", "maps_query": "Black Forest, Germany" },
+        { "name": "Lake Constance (Bodensee)", "category": "Outdoors", "blurb": "A large alpine lake on the Swiss/Austrian border, a popular day trip south.", "maps_query": "Lake Constance, Germany" },
+        { "name": "Ludwigsburg Palace", "category": "History", "blurb": "A grand baroque palace and gardens just north of Stuttgart.", "maps_query": "Ludwigsburg Residential Palace, Germany" }
+      ]
+    }
+  ]
+}

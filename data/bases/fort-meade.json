@@ -1,0 +1,201 @@
+{
+  "slug": "fort-meade",
+  "schema_version": "0.1",
+  "name": "Fort Meade",
+  "short_name": "Meade",
+  "branch": "U.S. Army",
+  "states": ["MD"],
+  "tagline": "The home of the NSA and U.S. Cyber Command, the nation's signals-intelligence and cyber hub, between Baltimore and D.C.",
+  "coords": { "lat": 39.11, "lng": -76.74, "label": "Odenton, MD (Anne Arundel County)" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Army intel/cyber post (Anne Arundel County, between Baltimore and DC). Facts verified from official sources (home.army.mil/meade, kimbrough.tricare.mil, Corvias, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA MD133 (Fort G. G. Meade) via the bah_rates single source of truth. Housing operated by Corvias. Maryland is TRICARE East. Medium-confidence flags: base coords (approx), representative off-base ZIP 21113 (Odenton).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (joint and intelligence community)",
+        "Location": "Anne Arundel County, MD (between Baltimore and D.C.)",
+        "Signature tenants": "National Security Agency (NSA) and U.S. Cyber Command",
+        "Also hosts": "Army Cyber Command, DISA, 780th Military Intelligence Brigade, Defense Media Activity",
+        "Workforce": "One of the largest concentrations of intelligence and cyber personnel in the DoD",
+        "Setting": "Suburban Maryland, in the Baltimore-Washington corridor"
+      },
+      "source": { "label": "Fort Meade (official)", "url": "https://home.army.mil/meade/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Meade is best known as the home of the National Security Agency and U.S. Cyber Command, making it the center of the nation's signals-intelligence and cyber missions. It also hosts Army Cyber Command, the Defense Information Systems Agency, and many other organizations.",
+        "It sits in Anne Arundel County, midway between Baltimore and Washington, D.C., so it functions as a sprawling intelligence and cyber campus rather than an operational post, with a large civilian and joint workforce."
+      ],
+      "source": { "label": "Fort Meade (official)", "url": "https://home.army.mil/meade/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "meade_decision",
+      "title": "Between Baltimore and D.C.: Where to Live",
+      "type": "killer",
+      "data": {
+        "subtitle": "Meade's location between two major cities gives you lots of options and a high cost of living. Where you live trades commute against price and schools across the Baltimore-Washington corridor.",
+        "intro": [
+          "The corridor is expensive and traffic-heavy, but BAH is set to match, and many people here are on multi-year or civilian tours, so families tend to settle in.",
+          "Close-in towns keep the commute short; pushing toward Baltimore or the D.C. side changes your price, schools, and drive. Many weigh access to two cities' jobs and amenities."
+        ],
+        "recommendations": [
+          { "who": "Shortest commute", "advice": "Odenton, Severn, and Hanover sit right by the post for quick access to the gates." },
+          { "who": "Schools and amenities", "advice": "Columbia and the Howard County area are popular with families for their highly rated schools, at a slightly longer drive." },
+          { "who": "On-post option", "advice": "On-post housing (Corvias) can have a long waitlist (often a year or more), so apply early if you want it." },
+          { "who": "Two-city access", "advice": "The MARC train and the corridor's highways put both Baltimore and D.C. within reach for jobs and weekends." }
+        ]
+      },
+      "source": { "label": "Fort Meade (official)", "url": "https://home.army.mil/meade/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Meade site before you go."
+      ],
+      "source": { "label": "Fort Meade (official)", "url": "https://home.army.mil/meade/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-post family housing is privatized, operated by Corvias, across several communities. Demand is high, with waitlists that can run a year or more.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner early for current options."
+      ],
+      "source": { "label": "Fort Meade (official)", "url": "https://home.army.mil/meade/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MD133",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MD133 (Fort G. G. Meade)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "21113", "label": "Odenton, MD" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, primarily Anne Arundel County Public Schools near the post, with highly regarded Howard County schools (Columbia) popular a bit farther out.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Anne Arundel County Public Schools (official)", "url": "https://www.aacps.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MD", "city": "Odenton" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Kimbrough Ambulatory Care Center",
+        "Care": "Outpatient primary and specialty care on post; inpatient care via Baltimore- and D.C.-area network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Kimbrough Ambulatory Care Center (official)", "url": "https://kimbrough.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Meade Commissary (DeCA)",
+        "Exchange": "Fort Meade Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Meade the long, often civilian-heavy tours lead many families to buy, despite the high cost of living."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You want time to learn the corridor before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing or carry a high payment.",
+          "On-base or off-base renting keeps your housing costs predictable."
+        ],
+        "buy": [
+          "You expect to be here three or more years, which is common at Meade.",
+          "You want to use your VA loan in a strong, stable corridor market.",
+          "You could rent the home out later given steady regional demand.",
+          "You've found a home and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The Baltimore-Washington corridor is expensive but stable, BAH is high, and tours run long, which favors buying for many. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability (waitlists can be long) and get the housing office's read on the corridor before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Maryland vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Anne Arundel County (or Howard County) schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Kimbrough Ambulatory Care Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's at Fort Meade?", "a": "It's the home of the National Security Agency and U.S. Cyber Command, plus Army Cyber Command, DISA, and many intelligence organizations, the nation's signals-intelligence and cyber hub." },
+        { "q": "Where do families live?", "a": "Odenton, Severn, and Hanover are closest; Columbia and Howard County are popular for highly rated schools. On-post housing (Corvias) can have a year-plus waitlist." },
+        { "q": "Is it expensive?", "a": "Yes, the Baltimore-Washington corridor is high-cost, but BAH (MHA MD133) is set to match, and tours often run long." },
+        { "q": "What is the BAH area?", "a": "Fort Meade is MHA MD133. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Baltimore Inner Harbor", "category": "Day trip", "blurb": "Baltimore's waterfront with the National Aquarium and museums, north of Meade.", "maps_query": "Inner Harbor, Baltimore MD" },
+        { "name": "Annapolis & the U.S. Naval Academy", "category": "History", "blurb": "Maryland's historic sailing capital and the Naval Academy, a short drive east.", "maps_query": "United States Naval Academy, Annapolis MD" },
+        { "name": "Washington, D.C.", "category": "Day trip", "blurb": "The capital's monuments and Smithsonian museums, to the south.", "maps_query": "National Mall, Washington DC" },
+        { "name": "National Cryptologic Museum", "category": "Museum", "blurb": "The NSA's public museum of codebreaking history, next to Fort Meade.", "maps_query": "National Cryptologic Museum, Annapolis Junction MD" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "nas-jacksonville",
+  "schema_version": "0.1",
+  "name": "NAS Jacksonville",
+  "short_name": "NAS Jax",
+  "branch": "U.S. Navy",
+  "states": ["FL"],
+  "tagline": "The East Coast hub of naval aviation patrol, flying the P-8 Poseidon, in a big, affordable Florida Navy town.",
+  "coords": { "lat": 30.23, "lng": -81.68, "label": "Jacksonville, FL" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy air station (Jacksonville, FL; part of a large Navy metro with NS Mayport). Facts verified from official sources (cnrse.cnic.navy.mil, jacksonville.tricare.mil, Balfour Beatty, DeCA/NEX, Wikipedia for corroborated headline facts). BAH MHA FL058 (Jacksonville) via the bah_rates single source of truth. Housing operated by Balfour Beatty. Florida is TRICARE East. Medium-confidence flags: base coords (approx), representative off-base ZIP 32244 (Jacksonville).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Jacksonville, FL",
+        "Mission": "East Coast hub of maritime patrol and reconnaissance aviation",
+        "Aircraft": "P-8A Poseidon and helicopter maritime squadrons",
+        "Nearby": "Part of a large Navy metro with NS Mayport",
+        "Setting": "Northeast Florida; no state income tax"
+      },
+      "source": { "label": "NAS Jacksonville (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Jacksonville/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Air Station Jacksonville is one of the Navy's largest air stations and the East Coast hub for maritime patrol and reconnaissance, flying the P-8A Poseidon, along with helicopter maritime strike and sea combat squadrons.",
+        "It anchors a large Navy presence in northeast Florida that also includes Naval Station Mayport, making 'Jax' one of the Navy's biggest concentrations on the East Coast."
+      ],
+      "source": { "label": "NAS Jacksonville (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Jacksonville/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "jax_decision",
+      "title": "An Affordable Florida Navy Town",
+      "type": "killer",
+      "data": {
+        "subtitle": "Jacksonville is a big, relatively affordable city with no state income tax and beaches close by. Where you live depends on which base you report to (NAS Jax or Mayport) and your commute.",
+        "intro": [
+          "Jacksonville sprawls, so the metro offers a wide range of prices and neighborhoods, and Florida's lack of a state income tax stretches your pay. The Atlantic beaches are a draw on the east side.",
+          "Your installation pulls you toward one side of the river: NAS Jax is on the Westside/Orange Park side, while Mayport sits out by the beaches. Pick your area around your daily commute."
+        ],
+        "recommendations": [
+          { "who": "Closest to NAS Jax", "advice": "Orange Park and the Westside (Clay and Duval County) are close to the air station and affordable." },
+          { "who": "Beach life / Mayport", "advice": "The beaches communities (Atlantic, Neptune, Jacksonville Beach) suit families at Mayport, at a higher price." },
+          { "who": "Schools and suburbs", "advice": "St. Johns County (south of the city) is highly rated for schools, at a longer commute." },
+          { "who": "On-base option", "advice": "On-base housing (Balfour Beatty) is available; weigh it against the affordable local market and your commute." }
+        ]
+      },
+      "source": { "label": "NAS Jacksonville (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Jacksonville/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official NAS Jacksonville site before you go."
+      ],
+      "source": { "label": "NAS Jacksonville (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Jacksonville/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base military family housing is privatized, operated by Balfour Beatty Communities, serving NAS Jacksonville and the area's other Navy installations.",
+        "Eligibility and availability vary by rank and family size, so start with the Navy housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "NAS Jacksonville (official)", "url": "https://cnrse.cnic.navy.mil/Installations/NAS-Jacksonville/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "FL058",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA FL058 (Jacksonville)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "32244", "label": "Jacksonville, FL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Duval County serves most of Jacksonville; Clay County (Orange Park) and the highly rated St. Johns County (to the south) are popular with families.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Duval County Public Schools (official)", "url": "https://dcps.duvalschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "FL", "city": "Jacksonville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Naval Hospital Jacksonville",
+        "Care": "Inpatient, outpatient, surgical, and intensive care, with branch clinics including one at Mayport",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Hospital Jacksonville (official)", "url": "https://jacksonville.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NAS Jacksonville Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Jacksonville"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or you expect to be at sea often.",
+          "You want time to learn the Jacksonville metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The relatively affordable market and no state income tax fit your plan.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Jacksonville is relatively affordable for a big coastal city, helped by no state income tax, though factor flood and hurricane insurance near the water. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the Jacksonville metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Florida vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Duval, Clay, or St. Johns) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Hospital Jacksonville or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at NAS Jax?", "a": "It's the East Coast hub for maritime patrol aviation, flying the P-8A Poseidon, plus helicopter maritime squadrons. The Jacksonville area also includes Naval Station Mayport." },
+        { "q": "Where do families live?", "a": "Orange Park and the Westside are closest to NAS Jax; the beaches suit Mayport families; St. Johns County is popular for schools. On-base housing is also available." },
+        { "q": "Is it affordable?", "a": "Relatively, for a big coastal city, and Florida has no state income tax. Factor flood and hurricane insurance for homes near the water." },
+        { "q": "What is the BAH area?", "a": "NAS Jacksonville is MHA FL058 (Jacksonville). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Jacksonville Beaches", "category": "Outdoors", "blurb": "Atlantic, Neptune, and Jacksonville Beach on the east side of the city.", "maps_query": "Jacksonville Beach, FL" },
+        { "name": "St. Augustine", "category": "History", "blurb": "The nation's oldest city, with a historic Spanish quarter, about an hour south.", "maps_query": "St. Augustine, FL" },
+        { "name": "Jacksonville Zoo and Gardens", "category": "Family", "blurb": "A large zoo and botanical gardens on the city's north side.", "maps_query": "Jacksonville Zoo and Gardens, Jacksonville FL" },
+        { "name": "Riverside / Avondale", "category": "Food & shopping", "blurb": "Historic Jacksonville neighborhoods known for dining and shops.", "maps_query": "Riverside Avondale, Jacksonville FL" }
+      ]
+    }
+  ]
+}

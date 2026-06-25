@@ -1,0 +1,201 @@
+{
+  "slug": "macdill-afb",
+  "schema_version": "0.1",
+  "name": "MacDill AFB",
+  "short_name": "MacDill",
+  "branch": "U.S. Air Force",
+  "states": ["FL"],
+  "tagline": "Home of U.S. Central Command and U.S. Special Operations Command, on a peninsula in Tampa Bay.",
+  "coords": { "lat": 27.85, "lng": -82.5, "label": "Tampa, FL" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force base (South Tampa peninsula). Facts verified from official sources (macdill.af.mil, macdill.tricare.mil, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA FL066 (Tampa) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the housing office). Florida is TRICARE East. Medium-confidence flags: base coords (approx), representative off-base ZIP 33611 (South Tampa).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Tampa, FL (South Tampa peninsula)",
+        "Signature tenants": "U.S. Central Command (CENTCOM) and U.S. Special Operations Command (SOCOM)",
+        "Host wing": "6th Air Refueling Wing (KC-135 Stratotanker)",
+        "Setting": "On Tampa Bay; no state income tax",
+        "Note": "Two major combatant-command headquarters"
+      },
+      "source": { "label": "MacDill Air Force Base (official)", "url": "https://www.macdill.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "MacDill is one of the most strategically important bases in the country, hosting the headquarters of U.S. Central Command and U.S. Special Operations Command, two of the Defense Department's most prominent combatant commands.",
+        "The host 6th Air Refueling Wing flies KC-135 Stratotankers. The base sits on a peninsula jutting into Tampa Bay in South Tampa, so much of the population is joint and headquarters staff."
+      ],
+      "source": { "label": "MacDill Air Force Base (official)", "url": "https://www.macdill.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "tampa_decision",
+      "title": "A Tampa Bay Tour: Peninsula Base, City Commute",
+      "type": "killer",
+      "data": {
+        "subtitle": "MacDill sits at the tip of a South Tampa peninsula, so on-base housing is limited and traffic in and out is the daily reality. Where you live is a balance of commute, schools, and Florida's no-income-tax cost of living.",
+        "intro": [
+          "Because the base is on a peninsula with limited gates, the commute funnels through South Tampa, and on-base housing is in high demand. Many families live across the Tampa Bay metro and plan around traffic.",
+          "Florida has no state income tax, which helps, and the metro offers beaches, sports, and a big-city feel. Where you settle trades a shorter commute in pricey South Tampa against more space in the suburbs."
+        ],
+        "recommendations": [
+          { "who": "Shortest commute", "advice": "South Tampa is closest to the gate but among the priciest parts of the metro." },
+          { "who": "More space and schools", "advice": "Brandon, Riverview, and Apollo Beach to the southeast, and the Westchase/Citrus Park area, are popular with families at a longer drive." },
+          { "who": "On-base option", "advice": "On-base housing is convenient given the peninsula commute, but in high demand; start with the housing office early." },
+          { "who": "Mind the basics", "advice": "Plan for summer heat and hurricane season, and remember Florida's lack of a state income tax stretches your pay." }
+        ]
+      },
+      "source": { "label": "MacDill Air Force Base (official)", "url": "https://www.macdill.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official MacDill AFB site before you go."
+      ],
+      "source": { "label": "MacDill Air Force Base (official)", "url": "https://www.macdill.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "MacDill has privatized on-base family housing, which is in high demand given the peninsula commute.",
+        "Eligibility and availability vary by rank and family size, so start with the base housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "MacDill Air Force Base (official)", "url": "https://www.macdill.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "FL066",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA FL066 (Tampa)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "33611", "label": "Tampa, FL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, all within Hillsborough County Public Schools, one of the largest districts in the country, covering Tampa and its suburbs.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering, and ask about magnet and choice options."
+      ],
+      "source": { "label": "Hillsborough County Public Schools (official)", "url": "https://www.hillsboroughschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "FL", "city": "Tampa" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "6th Medical Group (MacDill)",
+        "Care": "Outpatient primary and specialty care, with a satellite community clinic in Tampa; inpatient care via Tampa-area network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "6th Medical Group (official)", "url": "https://macdill.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "MacDill AFB Commissary (DeCA)",
+        "Exchange": "MacDill AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the Tampa metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years (many headquarters tours are long).",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The Tampa market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Tampa has grown and prices have risen, but Florida's lack of a state income tax helps. Factor flood and hurricane insurance into the math. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the Tampa metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Florida vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Register with Hillsborough County Public Schools early and bring records and immunizations; ask about magnet and choice programs." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 6th Medical Group or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's at MacDill?", "a": "It hosts U.S. Central Command and U.S. Special Operations Command, two major combatant-command headquarters, plus the 6th Air Refueling Wing flying KC-135s." },
+        { "q": "Where do families live?", "a": "South Tampa is closest (and priciest); Brandon, Riverview, Apollo Beach, and the Westchase area offer more space at a longer commute. On-base housing is convenient but in high demand." },
+        { "q": "Anything to plan for?", "a": "The peninsula commute and Tampa traffic, summer heat and hurricane season, and flood/hurricane insurance. The upside is no state income tax and a big-city, beachy metro." },
+        { "q": "What is the BAH area?", "a": "MacDill is MHA FL066 (Tampa). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Tampa Riverwalk & Sparkman Wharf", "category": "Food & shopping", "blurb": "Downtown Tampa's waterfront with dining, museums, and the aquarium.", "maps_query": "Tampa Riverwalk, Tampa FL" },
+        { "name": "Gulf Beaches (St. Pete / Clearwater)", "category": "Outdoors", "blurb": "Famous white-sand Gulf beaches across the bay.", "maps_query": "Clearwater Beach, FL" },
+        { "name": "Busch Gardens Tampa Bay", "category": "Family", "blurb": "A large theme park and zoo in Tampa.", "maps_query": "Busch Gardens Tampa Bay, FL" },
+        { "name": "Ybor City", "category": "History", "blurb": "Tampa's historic Latin quarter, known for cigars, food, and nightlife.", "maps_query": "Ybor City, Tampa FL" }
+      ]
+    }
+  ]
+}

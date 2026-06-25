@@ -1,0 +1,201 @@
+{
+  "slug": "peterson-sfb",
+  "schema_version": "0.1",
+  "name": "Peterson SFB",
+  "short_name": "Peterson",
+  "branch": "U.S. Space Force",
+  "states": ["CO"],
+  "tagline": "A Space Force hub at the foot of the Rockies: NORAD, U.S. Northern Command, and U.S. Space Command in Colorado Springs.",
+  "coords": { "lat": 38.82, "lng": -104.7, "label": "Colorado Springs, CO" },
+  "tz": "America/Denver",
+  "last_full_review": "2026-06-25",
+  "_note": "Space Force base (Colorado Springs Front Range). Facts verified from official sources (peterson.spaceforce.mil, peterson.tricare.mil, Tierra Vista Communities, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA CO046 (Colorado Springs) via the bah_rates single source of truth (shared with Fort Carson). Housing operated by Tierra Vista Communities. Colorado is TRICARE West. Medium-confidence flags: base coords (approx), representative off-base ZIP 80915 (Colorado Springs).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Space Force",
+        "Location": "Colorado Springs, CO (Front Range)",
+        "Host": "Space Base Delta 1",
+        "Major tenants": "NORAD, U.S. Northern Command, U.S. Space Command, Space Operations Command",
+        "Mission partners": "More than 100 organizations",
+        "Setting": "Foot of the Rocky Mountains; military-heavy region"
+      },
+      "source": { "label": "Peterson Space Force Base (official)", "url": "https://www.peterson.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Peterson Space Force Base, run by Space Base Delta 1, is a central node for homeland defense and space operations, hosting NORAD, U.S. Northern Command, U.S. Space Command, and Space Operations Command among more than 100 mission partners.",
+        "It sits in southeast Colorado Springs, part of a dense military region that also includes Fort Carson, Schriever Space Force Base, the Air Force Academy, and Cheyenne Mountain."
+      ],
+      "source": { "label": "Peterson Space Force Base (official)", "url": "https://www.peterson.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "frontrange_decision",
+      "title": "Front Range Living in a Military Town",
+      "type": "killer",
+      "data": {
+        "subtitle": "Colorado Springs is a big, established military community with a Rocky Mountain lifestyle. Where you live trades commute against schools and how close you want to be to the mountains, and the altitude is real.",
+        "intro": [
+          "The draw is the Front Range: hiking, skiing, and Pikes Peak nearby, plus a large, settled military community across several installations. Many families extend or return, so longer roots are common.",
+          "Peterson sits on the east side of Colorado Springs near the airport. Where you live usually comes down to commute and school district, from the close-in east side to the north-side suburbs near the other bases."
+        ],
+        "recommendations": [
+          { "who": "Closest to base", "advice": "East and central Colorado Springs (Falcon District 49 and District 11 areas) keep the commute short." },
+          { "who": "Top-rated schools", "advice": "North-side areas (Academy District 20) are popular for schools, at a longer drive across town." },
+          { "who": "On-base option", "advice": "On-base housing (Tierra Vista Communities) is convenient; with longer tours common, many families also buy." },
+          { "who": "Mind the altitude", "advice": "At around 6,000 feet, expect an adjustment period and strong sun; hydration and pacing help at first." }
+        ]
+      },
+      "source": { "label": "Peterson Space Force Base (official)", "url": "https://www.peterson.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Peterson SFB site before you go."
+      ],
+      "source": { "label": "Peterson Space Force Base (official)", "url": "https://www.peterson.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, operated by Tierra Vista Communities, with townhomes and single-family homes assigned by rank and family size.",
+        "Eligibility and availability vary, so start with the housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Peterson Space Force Base (official)", "url": "https://www.peterson.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CO046",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CO046 (Colorado Springs)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "80915", "label": "Colorado Springs, CO" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, and the district depends on where you live. Colorado Springs D11, Falcon D49, Harrison D2, and (north side) Academy D20 serve different parts of the city.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Colorado Springs School District 11 (official)", "url": "https://www.d11.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CO", "city": "Colorado Springs" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "21st Medical Group (Peterson Clinic)",
+        "Care": "Outpatient primary and specialty care; inpatient care via Colorado Springs-area network hospitals or Evans ACH at Fort Carson",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "21st Medical Group (official)", "url": "https://peterson.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Peterson SFB Commissary (DeCA)",
+        "Exchange": "Peterson SFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn Colorado Springs before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, which is common across the Springs' bases.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "You're comfortable with Colorado Springs prices, which have risen in recent years.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Colorado Springs is a desirable, growing market, and many families with longer tours buy. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Colorado Springs before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Colorado vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (D11, D49, D20, or D2) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 21st Medical Group or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's at Peterson?", "a": "Run by Space Base Delta 1, it hosts NORAD, U.S. Northern Command, U.S. Space Command, and Space Operations Command among 100-plus mission partners, a hub for homeland defense and space operations." },
+        { "q": "Where do families live?", "a": "East and central Colorado Springs are closest; the north side (Academy D20) is popular for schools. On-base housing (Tierra Vista) is also available." },
+        { "q": "Anything to know about the altitude?", "a": "Yes. At roughly 6,000 feet expect an adjustment period and strong sun; hydration helps at first." },
+        { "q": "What is the BAH area?", "a": "Peterson is MHA CO046 (Colorado Springs), the same as Fort Carson. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Garden of the Gods", "category": "Outdoors", "blurb": "A free, world-famous park of red rock formations against Pikes Peak.", "maps_query": "Garden of the Gods, Colorado Springs CO" },
+        { "name": "Pikes Peak", "category": "Outdoors", "blurb": "America's Mountain, by cog railway, highway, or trail, west of the city.", "maps_query": "Pikes Peak, CO" },
+        { "name": "U.S. Olympic & Paralympic Museum", "category": "Museum", "blurb": "An acclaimed museum in downtown Colorado Springs, the Olympic City USA.", "maps_query": "U.S. Olympic and Paralympic Museum, Colorado Springs CO" },
+        { "name": "Cheyenne Mountain Zoo", "category": "Family", "blurb": "The country's only mountainside zoo, famous for its giraffes.", "maps_query": "Cheyenne Mountain Zoo, Colorado Springs CO" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "slug": "andersen-afb",
+  "schema_version": "0.1",
+  "name": "Andersen AFB",
+  "short_name": "Andersen",
+  "branch": "U.S. Air Force",
+  "states": ["Guam"],
+  "region": "OCONUS",
+  "tagline": "America's strategic airpower hub in the western Pacific, on the island of Guam.",
+  "coords": { "lat": 13.58, "lng": 144.92, "label": "Yigo, Guam" },
+  "tz": "Pacific/Guam",
+  "last_full_review": "2026-06-25",
+  "_note": "OCONUS (Guam, U.S. territory). Guam uses OHA, not BAH, and is managed under Joint Region Marianas with Naval Base Guam. US-only feeds omitted (no RentCast/SchoolDigger). Weather via Open-Meteo fallback. Facts verified from official sources (andersen.af.mil, U.S. Naval Hospital Guam, dodea.edu/pacific, Wikipedia for corroborated headline facts). Housing is Navy-managed (lead service for Guam housing). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Yigo, Guam (U.S. territory, western Pacific)",
+        "Host wing": "36th Wing (Pacific Air Forces)",
+        "Role": "Strategic airpower hub for bomber, tanker, and ISR rotations in the Indo-Pacific",
+        "Joint region": "Joint Region Marianas (with Naval Base Guam)",
+        "Region": "OCONUS (overseas tour; OHA, not BAH)"
+      },
+      "source": { "label": "Andersen Air Force Base (official)", "url": "https://www.andersen.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Andersen Air Force Base, on the northern end of Guam, is America's forward airpower hub in the western Pacific. The host 36th Wing supports rotating bomber, tanker, and reconnaissance forces and is central to U.S. strategy in the Indo-Pacific.",
+        "Guam is a U.S. territory managed jointly with the Navy under Joint Region Marianas, and it is seeing significant military growth, so Andersen pairs a strategic mission with tropical island living."
+      ],
+      "source": { "label": "Andersen Air Force Base (official)", "url": "https://www.andersen.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "guam_decision",
+      "title": "Island Life on Guam",
+      "type": "killer",
+      "data": {
+        "subtitle": "Guam is a tropical U.S. territory and a true island tour: an overseas-style move with OHA, government housing, and everything that comes with living far out in the Pacific.",
+        "intro": [
+          "Even though Guam is U.S. soil, a PCS here works like an overseas move: household goods ship by sea, you typically bring one vehicle, and you receive OHA and island allowances rather than BAH. Command sponsorship brings your family and unlocks housing, DoDEA schools, and benefits.",
+          "Housing on Guam is Navy-managed (the lead service for the island), with areas at Andersen and Naval Base Guam, plus off-base rentals. The island is small and tropical, with great water activities, but everything imported costs more and typhoons are a fact of life."
+        ],
+        "recommendations": [
+          { "who": "On-base housing", "advice": "Government housing at Andersen and the Navy areas is the common choice; get on the list early, as on-base eases island logistics." },
+          { "who": "Off-base on the economy", "advice": "Off-base rentals are available across the island; OHA offsets rent and utilities up to a ceiling." },
+          { "who": "Plan the logistics", "advice": "Arrange your sea shipment and one vehicle early, and budget for a higher cost of living, since most goods are imported." },
+          { "who": "Embrace the Pacific", "advice": "Diving, beaches, and reef life are a highlight; plan around typhoon season and the remoteness." }
+        ]
+      },
+      "source": { "label": "Andersen Air Force Base (official)", "url": "https://www.andersen.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Andersen AFB site before you go."
+      ],
+      "source": { "label": "Andersen Air Force Base (official)", "url": "https://www.andersen.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing & OHA",
+      "type": "prose",
+      "data": [
+        "Housing on Guam is Navy-managed (the Navy is the lead service for island housing), with family areas at Andersen and Naval Base Guam, plus off-base rentals on the local economy.",
+        "Guam uses the Overseas Housing Allowance (OHA) rather than BAH for off-base rentals, individualized by rank, dependents, and actual rent up to a ceiling. Get on the housing list early; on-base eases the logistics of an island tour."
+      ],
+      "source": { "label": "Andersen AFB housing (official)", "url": "https://www.andersen.af.mil/About-Us/Newcomers/Andersen-AFB-Housing/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend Department of Defense Education Activity (DoDEA) schools rather than local schools. DoDEA Pacific operates Andersen Elementary and Middle Schools on base, and high-school students attend Guam High School in Agana Heights.",
+        "Start DoDEA registration early and confirm boundaries and required records on the DoDEA site as you plan your move."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "U.S. Naval Hospital Guam",
+        "Care": "The island's military hospital (inpatient and outpatient), serving all services, with a clinic at Andersen",
+        "Coverage": "TRICARE Overseas"
+      },
+      "source": { "label": "U.S. Naval Hospital Guam (official)", "url": "https://guam.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Andersen AFB Commissary (DeCA)",
+        "Exchange": "Andersen AFB Exchange (AAFES / BX); Navy Exchange also on Guam"
+      },
+      "source": { "label": "Andersen Air Force Base (official)", "url": "https://www.andersen.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An island PCS to Guam has extra logistics, even though it's U.S. soil. Start these early."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "An accompanied (command-sponsored) tour is what lets your family come at government expense and access housing, schools, and the commissary. Confirm it through your command." },
+          { "title": "Plan your vehicle and household goods", "text": "Shipments to Guam go by sea and take time; arrange your one vehicle and household-goods shipment early, with interim transportation until they arrive." },
+          { "title": "Line up lodging and a sponsor", "text": "Arrange on-base temporary lodging and connect with your unit sponsor before you fly. You can claim Temporary Lodging Allowance (TLA)." },
+          { "title": "Get on the housing list", "text": "Housing is Navy-managed for the island; contact the housing office right away, since on-base eases island logistics, while you consider off-base with OHA." },
+          { "title": "Register the kids with DoDEA", "text": "Children attend DoDEA Pacific schools (Andersen ES/MS, Guam High School); start registration early and bring records and immunizations." },
+          { "title": "Set up TRICARE Overseas", "text": "Enroll in TRICARE Overseas and get a primary care manager at U.S. Naval Hospital Guam." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is Guam a BAH or OHA location?", "a": "OHA. Guam is a U.S. territory, not a state, so off-base rentals are covered by the Overseas Housing Allowance rather than BAH, and the move works like an overseas PCS (sea shipment, one vehicle, island allowances)." },
+        { "q": "What's the mission at Andersen?", "a": "The 36th Wing hosts rotating bomber, tanker, and reconnaissance forces, making Andersen a central strategic airpower hub in the western Pacific." },
+        { "q": "Where do families live?", "a": "Navy-managed government housing at Andersen and the Naval Base areas is common; off-base rentals across the island are covered by OHA. Get on the list early." },
+        { "q": "What's island life like?", "a": "Tropical and water-focused (great diving and beaches), but remote, with a higher cost of living since most goods are imported, and a real typhoon season." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Tumon Bay", "category": "Outdoors", "blurb": "Guam's resort and beach district, with snorkeling and dining.", "maps_query": "Tumon Bay, Guam" },
+        { "name": "Two Lovers Point", "category": "Outdoors", "blurb": "A dramatic clifftop overlook above the Philippine Sea.", "maps_query": "Two Lovers Point, Guam" },
+        { "name": "War in the Pacific National Historical Park", "category": "History", "blurb": "WWII Pacific battle sites and memorials across the island.", "maps_query": "War in the Pacific National Historical Park, Guam" },
+        { "name": "Ritidian Point", "category": "Outdoors", "blurb": "A pristine beach and wildlife refuge at Guam's northern tip, near Andersen.", "maps_query": "Ritidian Point, Guam" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "mcas-cherry-point",
+  "schema_version": "0.1",
+  "name": "MCAS Cherry Point",
+  "short_name": "Cherry Point",
+  "branch": "U.S. Marine Corps",
+  "states": ["NC"],
+  "tagline": "Home of the 2nd Marine Aircraft Wing and the Marines' aviation depot, on North Carolina's Crystal Coast.",
+  "coords": { "lat": 34.9, "lng": -76.88, "label": "Havelock, NC" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Marine air station (eastern NC, Havelock/Craven County, near the Crystal Coast). Facts verified from official sources (cherrypoint.marines.mil, Naval Health Clinic Cherry Point, AMCC, DeCA/MCX, Wikipedia for corroborated headline facts). BAH MHA NC177 (Morehead/Cherry Pt MCAS) via the bah_rates single source of truth. Housing operated by Atlantic Marine Corps Communities. North Carolina is TRICARE East. Medium-confidence flags: base coords (approx), representative off-base ZIP 28532 (Havelock).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Havelock, NC (Craven County, eastern coast)",
+        "Signature unit": "2nd Marine Aircraft Wing (2nd MAW)",
+        "Also hosts": "Fleet Readiness Center East (the Marines' aviation depot)",
+        "Setting": "Coastal North Carolina near the Crystal Coast",
+        "Region": "Eastern NC, paired in the area with Camp Lejeune"
+      },
+      "source": { "label": "MCAS Cherry Point (official)", "url": "https://www.cherrypoint.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Marine Corps Air Station Cherry Point is home to the 2nd Marine Aircraft Wing, the air combat element of the East Coast Marine force, and to Fleet Readiness Center East, the Marines' major aviation maintenance and overhaul depot.",
+        "It sits in Havelock in eastern North Carolina, near the Neuse River and the Crystal Coast beaches, and works closely with nearby Camp Lejeune as part of the region's Marine presence."
+      ],
+      "source": { "label": "MCAS Cherry Point (official)", "url": "https://www.cherrypoint.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "coast_decision",
+      "title": "Coastal Carolina Marine Air",
+      "type": "killer",
+      "data": {
+        "subtitle": "Cherry Point is an affordable, small-town coastal assignment near the Crystal Coast. Where you live mostly comes down to commute and whether you want to be closest to base, near the water, or in a bigger town.",
+        "intro": [
+          "Eastern North Carolina is inexpensive and laid-back, so BAH stretches well, and the community is heavily Marine and Navy. Aviation units and the depot make for a busy installation.",
+          "Havelock sits right outside the gates; Newport and Morehead City reach toward the beaches, and historic New Bern offers more amenities a bit inland."
+        ],
+        "recommendations": [
+          { "who": "Closest and most affordable", "advice": "Havelock borders the air station with the shortest commute and lowest costs." },
+          { "who": "Beach access", "advice": "Newport and the Morehead City / Atlantic Beach area put you near the Crystal Coast at a slightly longer drive." },
+          { "who": "More amenities", "advice": "Historic New Bern, about 25 minutes inland, offers a charming downtown and more shopping." },
+          { "who": "On-base option", "advice": "On-base housing (Atlantic Marine Corps Communities) is convenient to the unit; start with the housing office." }
+        ]
+      },
+      "source": { "label": "MCAS Cherry Point (official)", "url": "https://www.cherrypoint.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official MCAS Cherry Point site before you go."
+      ],
+      "source": { "label": "MCAS Cherry Point (official)", "url": "https://www.cherrypoint.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, operated by Atlantic Marine Corps Communities, across neighborhoods aboard the air station.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "MCAS Cherry Point (official)", "url": "https://www.cherrypoint.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NC177",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NC177 (Morehead/Cherry Pt MCAS)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "28532", "label": "Havelock, NC" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Craven County Schools serves Havelock and New Bern; Carteret County Schools serves Newport and the Morehead City / Crystal Coast area.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Craven County Schools (official)", "url": "https://www.cravenk12.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NC", "city": "Havelock" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Naval Health Clinic Cherry Point",
+        "Care": "Primary and specialty outpatient care on base; inpatient care via eastern NC network hospitals (New Bern) or Naval Medical Center Camp Lejeune",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Health Clinic Cherry Point (official)", "url": "https://cherrypoint.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "MCAS Cherry Point Commissary (DeCA)",
+        "Exchange": "Marine Corps Exchange (MCX) Cherry Point"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the answer is mostly about how long you'll be here and how steady the local market is."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing to a neighborhood.",
+          "You'd rather not gamble on resale timing in a small coastal market.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable eastern-NC market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Eastern NC is affordable, so BAH stretches well, but the market is small and military-driven, and waterfront homes carry flood insurance. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Havelock, Newport, and New Bern before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and North Carolina vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Craven County (or Carteret County) schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Health Clinic Cherry Point or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's based at Cherry Point?", "a": "The 2nd Marine Aircraft Wing (the East Coast Marine air combat element) and Fleet Readiness Center East, the Marines' major aviation maintenance depot." },
+        { "q": "Where do families live?", "a": "Havelock is closest and most affordable; Newport and Morehead City reach toward the Crystal Coast beaches; New Bern offers more amenities inland. On-base housing is also available." },
+        { "q": "What's the area like?", "a": "Small-town coastal North Carolina, affordable and laid-back, with the Crystal Coast beaches close by. It's heavily Marine and Navy." },
+        { "q": "What is the BAH area?", "a": "Cherry Point is MHA NC177 (Morehead/Cherry Pt MCAS). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Crystal Coast (Atlantic Beach)", "category": "Outdoors", "blurb": "The Bogue Banks beaches near Morehead City, a short drive from base.", "maps_query": "Atlantic Beach, NC" },
+        { "name": "Historic New Bern", "category": "History", "blurb": "A charming colonial town, birthplace of Pepsi, about 25 minutes inland.", "maps_query": "Downtown New Bern, NC" },
+        { "name": "Cape Lookout National Seashore", "category": "Outdoors", "blurb": "Wild barrier-island beaches and a historic lighthouse on the Outer Banks.", "maps_query": "Cape Lookout National Seashore, NC" },
+        { "name": "Croatan National Forest", "category": "Outdoors", "blurb": "Coastal forest with trails, lakes, and paddling between Havelock and the coast.", "maps_query": "Croatan National Forest, NC" }
+      ]
+    }
+  ]
+}

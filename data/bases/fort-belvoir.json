@@ -1,0 +1,201 @@
+{
+  "slug": "fort-belvoir",
+  "schema_version": "0.1",
+  "name": "Fort Belvoir",
+  "short_name": "Belvoir",
+  "branch": "U.S. Army",
+  "states": ["VA"],
+  "tagline": "A major Army support and intelligence hub just south of Washington, D.C., home to DLA, NGA, and INSCOM.",
+  "coords": { "lat": 38.71, "lng": -77.14, "label": "Fairfax County, VA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Army support/intel post (Fairfax County, ~20 mi S of DC). Facts verified from official sources (home.army.mil/belvoir, Alexander T. Augusta MMC, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA DC053 (Washington, DC metro) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the housing office). Virginia is TRICARE East. Medium-confidence flags: base coords (approx), representative off-base ZIP 22150 (Springfield).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Fairfax County, VA (~20 mi south of D.C.)",
+        "Major tenants": "Defense Logistics Agency, National Geospatial-Intelligence Agency (NGA), INSCOM, DTRA",
+        "Scale": "145+ DoD organizations; the largest employer in Fairfax County",
+        "Areas": "Main Post, Davison Army Airfield, and the North Area",
+        "Setting": "Northern Virginia, in the D.C. metro"
+      },
+      "source": { "label": "Fort Belvoir (official)", "url": "https://home.army.mil/belvoir/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Belvoir is a major Army support and intelligence installation in the National Capital Region, hosting more than 145 organizations including the Defense Logistics Agency, the National Geospatial-Intelligence Agency, the Army Intelligence and Security Command (INSCOM), and the Defense Threat Reduction Agency.",
+        "It is the largest employer in Fairfax County, and unlike an operational post it functions as a headquarters, logistics, and intelligence campus about 20 miles south of Washington, D.C."
+      ],
+      "source": { "label": "Fort Belvoir (official)", "url": "https://home.army.mil/belvoir/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "dc_decision",
+      "title": "The National Capital Region: Cost and Commute",
+      "type": "killer",
+      "data": {
+        "subtitle": "Belvoir sits in the high-cost, high-traffic D.C. metro. Where you live is mostly a trade between commute and price, and BAH here is among the highest in the country to match.",
+        "intro": [
+          "The D.C. area is expensive and congested, but BAH is set accordingly. Many families weigh how far they're willing to drive (and sit in traffic) against how much house they want.",
+          "Close-in Northern Virginia areas keep the commute short; areas farther south or out toward the Beltway give more space for the money. Public transit (VRE, Metro) factors in for some."
+        ],
+        "recommendations": [
+          { "who": "Shortest commute", "advice": "Springfield, Kingstowne, and Newington sit close to Belvoir with quick access to the gates." },
+          { "who": "More space for the money", "advice": "Woodbridge and the Prince William County area to the south offer larger homes at a longer drive up I-95." },
+          { "who": "On-post option", "advice": "On-post housing avoids the worst of the commute; start with the housing office, as demand is high." },
+          { "who": "Use transit", "advice": "The VRE commuter rail and Metro reach parts of the region; some families pick a home around transit to beat traffic." }
+        ]
+      },
+      "source": { "label": "Fort Belvoir (official)", "url": "https://home.army.mil/belvoir/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Belvoir site before you go."
+      ],
+      "source": { "label": "Fort Belvoir (official)", "url": "https://home.army.mil/belvoir/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Belvoir has privatized on-post family housing across several neighborhoods, a strong value against high Northern Virginia rents.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Belvoir (official)", "url": "https://home.army.mil/belvoir/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "DC053",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA DC053 (Washington, DC metro)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "22150", "label": "Springfield, VA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools, primarily Fairfax County Public Schools, one of the largest and most highly regarded districts in the country. Families farther south fall in Prince William County schools.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Fairfax County Public Schools (official)", "url": "https://www.fcps.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "VA", "city": "Springfield" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Alexander T. Augusta Military Medical Center (formerly Fort Belvoir Community Hospital)",
+        "Care": "A large hospital with inpatient, emergency, and dozens of specialty clinics; one of the premier military hospitals on the East Coast",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Alexander T. Augusta Military Medical Center (official)", "url": "https://belvoirhospital.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Belvoir Commissary (DeCA)",
+        "Exchange": "Fort Belvoir Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In the pricey D.C. metro it leans toward renting for shorter tours, though strong NoVA home values reward longer stays."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You want time to learn the D.C. metro before committing.",
+          "You'd rather not gamble on resale timing or carry a high payment.",
+          "On-base or off-base renting keeps your housing costs predictable."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan in a historically strong NoVA market.",
+          "You're open to areas farther south for an attainable price.",
+          "You've found a home and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The D.C. area is expensive but BAH is high, and NoVA home values have held up well. Run your BAH against the rent and home prices above, weigh your tour length and the commute, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the D.C. metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Virginia vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Fairfax County (or Prince William County) schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Alexander T. Augusta Military Medical Center or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's at Fort Belvoir?", "a": "It's a major Army support and intelligence hub with the Defense Logistics Agency, the National Geospatial-Intelligence Agency, INSCOM, DTRA, and 145-plus organizations, the largest employer in Fairfax County." },
+        { "q": "Where do families live?", "a": "Springfield, Kingstowne, and Newington are closest; Woodbridge and Prince William County offer more space farther south. On-post housing is a strong value given NoVA rents." },
+        { "q": "Is it expensive?", "a": "Yes, the D.C. metro is high-cost, but BAH (MHA DC053) is among the highest in the country to match." },
+        { "q": "What is the BAH area?", "a": "Fort Belvoir is MHA DC053 (Washington, DC metro). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Washington, D.C.", "category": "Day trip", "blurb": "The nation's capital, its monuments and Smithsonian museums, about 20 miles north.", "maps_query": "National Mall, Washington DC" },
+        { "name": "Mount Vernon", "category": "History", "blurb": "George Washington's estate on the Potomac, just up the road from Belvoir.", "maps_query": "Mount Vernon, VA" },
+        { "name": "Old Town Alexandria", "category": "Food & shopping", "blurb": "A historic waterfront district of shops and restaurants nearby.", "maps_query": "Old Town Alexandria, VA" },
+        { "name": "National Museum of the U.S. Army", "category": "Museum", "blurb": "The Army's flagship museum, located at Fort Belvoir and free to visit.", "maps_query": "National Museum of the United States Army, Fort Belvoir VA" }
+      ]
+    }
+  ]
+}

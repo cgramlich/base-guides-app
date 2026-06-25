@@ -1,0 +1,201 @@
+{
+  "slug": "scott-afb",
+  "schema_version": "0.1",
+  "name": "Scott AFB",
+  "short_name": "Scott",
+  "branch": "U.S. Air Force",
+  "states": ["IL"],
+  "tagline": "Headquarters of U.S. Transportation Command and Air Mobility Command, in the affordable metro-east of St. Louis.",
+  "coords": { "lat": 38.54, "lng": -89.85, "label": "Belleville / O'Fallon, IL" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force base (metro-east St. Louis, IL). Facts verified from official sources (scott.af.mil, 375th Medical Group, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA IL093 (Scott AFB) via the bah_rates single source of truth. Housing operated by Hunt Military Communities. Illinois is TRICARE West (moved from East in 2024). Medium-confidence flags: base coords (approx), representative off-base ZIP 62269 (O'Fallon).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Near Belleville, IL (across the river from St. Louis)",
+        "Signature tenants": "U.S. Transportation Command and Air Mobility Command HQ",
+        "Host wing": "375th Air Mobility Wing",
+        "Identity": "One of the Air Force's most joint, logistics-focused installations",
+        "Setting": "Illinois 'metro-east' of St. Louis"
+      },
+      "source": { "label": "Scott Air Force Base (official)", "url": "https://www.scott.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Scott Air Force Base is home to the headquarters of U.S. Transportation Command and Air Mobility Command, making it the nerve center of how the U.S. military moves people and cargo around the world.",
+        "The host 375th Air Mobility Wing supports the mission, and the base is one of the Air Force's most joint and logistics-focused installations, in the Illinois metro-east just across the river from St. Louis."
+      ],
+      "source": { "label": "Scott Air Force Base (official)", "url": "https://www.scott.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "scott_decision",
+      "title": "Affordable Metro-East: A Strong VA-Loan Market",
+      "type": "killer",
+      "data": {
+        "subtitle": "Scott pairs a major joint mission with an affordable, family-friendly metro-east, where BAH often more than covers a comfortable home, making it one of the Air Force's better markets for buying.",
+        "intro": [
+          "The cost of living in the Illinois suburbs east of St. Louis is low, so BAH tends to stretch well, and many families buy. The St. Louis metro is right across the river for big-city amenities.",
+          "Most families settle in the nearby suburbs, weighing schools and commute. The base is easy to reach from several growing communities."
+        ],
+        "recommendations": [
+          { "who": "Schools and newer homes", "advice": "O'Fallon, Shiloh, and Mascoutah are popular with families for their schools and newer neighborhoods, all close to base." },
+          { "who": "Established and affordable", "advice": "Belleville offers a historic, affordable downtown and a short commute." },
+          { "who": "On-base option", "advice": "On-base housing (Hunt) is available; with low local costs, weigh it against buying off base." },
+          { "who": "Stretch your budget", "advice": "BAH frequently more than covers a comfortable home here, so Scott is one of the stronger VA-loan markets in the Air Force." }
+        ]
+      },
+      "source": { "label": "Scott Air Force Base (official)", "url": "https://www.scott.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Scott AFB site before you go."
+      ],
+      "source": { "label": "Scott Air Force Base (official)", "url": "https://www.scott.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "On-base family housing is privatized, operated by Hunt Military Communities, across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the base housing office and the partner for current options and waitlists."
+      ],
+      "source": { "label": "Scott Air Force Base (official)", "url": "https://www.scott.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "IL093",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA IL093 (Scott AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "62269", "label": "O'Fallon, IL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. O'Fallon, Shiloh, Mascoutah, and Belleville districts serve most military families, depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Mascoutah CUSD 19 (official)", "url": "https://www.mascoutah.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "IL", "city": "O'Fallon" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "375th Medical Group (Scott Clinic)",
+        "Care": "Outpatient primary, dental, pharmacy, and behavioral health; inpatient care via St. Louis-area network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "375th Medical Group (official)", "url": "https://scott.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Scott AFB Commissary (DeCA)",
+        "Exchange": "Scott AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Scott the affordable market and long joint tours lead many families to buy."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro-east before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, which is common at Scott.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "Low metro-east prices fit your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Scott's low cost of living makes it one of the Air Force's stronger markets for buying, where BAH often more than covers a comfortable home. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the metro-east suburbs before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Illinois vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (O'Fallon, Shiloh, Mascoutah, or Belleville) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 375th Medical Group or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What's at Scott AFB?", "a": "The headquarters of U.S. Transportation Command and Air Mobility Command, plus the 375th Air Mobility Wing, a major joint, logistics-focused installation." },
+        { "q": "Where do families live?", "a": "O'Fallon, Shiloh, and Mascoutah are popular for schools; Belleville is historic and affordable. St. Louis is right across the river." },
+        { "q": "Is it a good place to buy?", "a": "Often, yes. The metro-east is affordable, so BAH frequently more than covers a comfortable home, making Scott one of the stronger VA-loan markets in the Air Force." },
+        { "q": "What is the BAH area?", "a": "Scott AFB is MHA IL093. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Gateway Arch National Park", "category": "History", "blurb": "The iconic St. Louis arch and riverfront, across the Mississippi.", "maps_query": "Gateway Arch National Park, St. Louis MO" },
+        { "name": "Saint Louis Zoo (Forest Park)", "category": "Family", "blurb": "A world-class, free zoo in St. Louis's Forest Park.", "maps_query": "Saint Louis Zoo, St. Louis MO" },
+        { "name": "Eckert's Farm (Belleville)", "category": "Family", "blurb": "A popular pick-your-own farm and country store near base.", "maps_query": "Eckert's Belleville Farm, Belleville IL" },
+        { "name": "Downtown O'Fallon", "category": "Food & shopping", "blurb": "Shops, dining, and parks in the growing suburb next to base.", "maps_query": "Downtown O'Fallon, IL" }
+      ]
+    }
+  ]
+}
