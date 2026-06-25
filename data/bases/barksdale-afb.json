@@ -1,0 +1,201 @@
+{
+  "slug": "barksdale-afb",
+  "schema_version": "0.1",
+  "name": "Barksdale AFB",
+  "short_name": "Barksdale",
+  "branch": "U.S. Air Force",
+  "states": ["LA"],
+  "tagline": "Headquarters of Air Force Global Strike Command and home of the B-52, in northwest Louisiana.",
+  "coords": { "lat": 32.50, "lng": -93.66, "label": "Bossier City, LA" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force bomber base + major command HQ (Bossier City/Shreveport, NW LA; Central time). CONUS full template (BAH MHA LA117 Shreveport/Barksdale AFB; RentCast/SchoolDigger work). HQ Air Force Global Strike Command + 2nd Bomb Wing (B-52H Stratofortress). Medical: 2nd Medical Group clinic. Facts verified from official sources (barksdale.af.mil, 2 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Louisiana moved to TRICARE West in 2024. Medium-confidence flags: base coords (approx), off-base ZIP 71111 (Bossier City).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Bossier City, LA (Shreveport-Bossier metro, northwest Louisiana)",
+        "Major command": "Headquarters, Air Force Global Strike Command",
+        "Major unit": "2nd Bomb Wing",
+        "Aircraft": "B-52H Stratofortress",
+        "Setting": "Affordable northwest Louisiana metro"
+      },
+      "source": { "label": "Barksdale AFB (official)", "url": "https://www.barksdale.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Barksdale Air Force Base is the headquarters of Air Force Global Strike Command, which oversees the Air Force's bomber and intercontinental missile forces, and is home to the 2nd Bomb Wing flying the B-52H Stratofortress.",
+        "In the Shreveport-Bossier metro of northwest Louisiana, the base pairs a strategic mission with an affordable, family-friendly cost of living."
+      ],
+      "source": { "label": "Barksdale AFB (official)", "url": "https://www.barksdale.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "barksdale_decision",
+      "title": "Affordable Shreveport-Bossier Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Shreveport-Bossier metro is affordable and convenient. The main choice is which side of the river fits your commute and schools, with on-base housing also available.",
+        "intro": [
+          "Northwest Louisiana's cost of living is low, so BAH stretches well, and the metro has a full range of amenities. On-base housing is available; many also live off base nearby.",
+          "Where you live mostly comes down to commute and schools across Bossier City and Shreveport, with Bossier Parish closest to the gate."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Bossier City borders the base for the shortest commute, with Bossier Parish schools." },
+          { "who": "More options", "advice": "Shreveport, across the river, adds more housing and amenities a short drive away." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Stretch your budget", "advice": "The metro is affordable, so BAH tends to go far and many families buy." }
+        ]
+      },
+      "source": { "label": "Barksdale AFB (official)", "url": "https://www.barksdale.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Barksdale AFB site before you go."
+      ],
+      "source": { "label": "Barksdale AFB (official)", "url": "https://www.barksdale.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Barksdale AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Barksdale AFB (official)", "url": "https://www.barksdale.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "LA117",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA LA117 (Shreveport/Barksdale AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "71111", "label": "Bossier City, LA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Bossier Parish Schools serves the area nearest the base, with Caddo Parish (Shreveport) serving families across the river.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Bossier Parish Schools (official)", "url": "https://www.bossierschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "LA", "city": "Bossier City" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "2nd Medical Group (Barksdale AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the Shreveport-Bossier network",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Barksdale AFB / 2nd Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Barksdale" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Barksdale AFB Commissary (DeCA)",
+        "Exchange": "Barksdale AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the affordable Shreveport-Bossier market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable metro market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the affordable Shreveport-Bossier market makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Bossier City and Shreveport before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Louisiana vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Bossier or Caddo Parish) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 2nd Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Barksdale known for?", "a": "It's the headquarters of Air Force Global Strike Command (which oversees the bomber and ICBM forces) and home to the 2nd Bomb Wing flying the B-52H Stratofortress." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base. Bossier City is closest; Shreveport across the river adds more options." },
+        { "q": "Is it affordable?", "a": "Yes. The Shreveport-Bossier metro is affordable, so BAH stretches well and many families buy." },
+        { "q": "What is the BAH area?", "a": "Barksdale is MHA LA117 (Shreveport/Barksdale AFB). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Louisiana Boardwalk (Bossier City)", "category": "Food & shopping", "blurb": "A riverfront outlet, dining, and entertainment district.", "maps_query": "Louisiana Boardwalk, Bossier City LA" },
+        { "name": "Barksdale Global Power Museum", "category": "Museum", "blurb": "Bomber and air-power history at Barksdale (check current access).", "maps_query": "Barksdale Global Power Museum, LA" },
+        { "name": "Downtown Shreveport", "category": "In town", "blurb": "Riverfront casinos, dining, and the arts district across the river.", "maps_query": "Downtown Shreveport, LA" },
+        { "name": "Caddo Lake / Cypress swamps", "category": "Outdoors", "blurb": "Iconic cypress-and-Spanish-moss bayou scenery east of the metro.", "maps_query": "Caddo Lake, TX" }
+      ]
+    }
+  ]
+}

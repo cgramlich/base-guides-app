@@ -1,0 +1,157 @@
+{
+  "slug": "raf-mildenhall",
+  "schema_version": "0.1",
+  "name": "RAF Mildenhall",
+  "short_name": "Mildenhall",
+  "branch": "U.S. Air Force",
+  "states": ["England"],
+  "region": "OCONUS",
+  "tagline": "Home of the 100th Air Refueling Wing and U.S. special operations air power in the English countryside, near RAF Lakenheath.",
+  "coords": { "lat": 52.36, "lng": 0.49, "label": "Mildenhall, Suffolk, England" },
+  "tz": "Europe/London",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (England). OHA housing, DoDEA Europe schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy sections (US-only feeds). RAF station hosting USAF 100th Air Refueling Wing (KC-135 Stratotanker) + 352nd Special Operations Wing + reconnaissance. Sister base to nearby RAF Lakenheath (already in app); shares the Lakenheath-area DoDEA schools and the 48th MDG hospital at Lakenheath for higher-level care. Suffolk/East Anglia, ~70 mi NE of London. Facts verified from official sources (mildenhall.af.mil, 100 ARW, DoDEA Europe, DeCA/AAFES, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (on a Royal Air Force station)",
+        "Location": "Mildenhall, Suffolk, England (East Anglia, ~70 mi NE of London)",
+        "Major unit": "100th Air Refueling Wing",
+        "Aircraft": "KC-135 Stratotanker (air refueling)",
+        "Also hosts": "352nd Special Operations Wing and reconnaissance units",
+        "Nearby": "Sister base RAF Lakenheath, just a few miles away"
+      },
+      "source": { "label": "RAF Mildenhall (official)", "url": "https://www.mildenhall.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "RAF Mildenhall is a Royal Air Force station hosting the U.S. Air Force's 100th Air Refueling Wing, whose KC-135 tankers keep aircraft flying across Europe and beyond. It's also home to special operations air power (the 352nd Special Operations Wing) and reconnaissance units.",
+        "In the Suffolk countryside of East Anglia, just a few miles from sister base RAF Lakenheath, it gives families an English-village setting with the rest of Europe within easy reach."
+      ],
+      "source": { "label": "RAF Mildenhall (official)", "url": "https://www.mildenhall.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mildenhall_decision",
+      "title": "An England Tour: On-Base vs. an English Village",
+      "type": "killer",
+      "data": {
+        "subtitle": "A tour in the Suffolk countryside is a favorite. The main choice is on-base housing versus renting 'on the economy' in a local village, sharing the broader Lakenheath-Mildenhall community.",
+        "intro": [
+          "Most families come command-sponsored and choose between on-base housing and renting on the British economy with the Overseas Housing Allowance (OHA). Mildenhall and Lakenheath form one tight American community, sharing schools and the hospital.",
+          "On base is the simplest, most American option. Living on the economy means an authentic English-village experience, often with more space and character, balanced against a UK lease, driving on the left, and a commute."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-base housing keeps you close to work and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting in nearby villages and towns like Mildenhall, Brandon, Bury St Edmunds, or Newmarket offers the real English experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-base housing and must approve economy rentals, and helps with leases, utilities, and OHA, so start there before signing anything." },
+          { "who": "Embrace the location", "advice": "London, Cambridge, and the rest of Europe are within easy reach for travel by train, car, or the nearby airports." }
+        ]
+      },
+      "source": { "label": "RAF Mildenhall (official)", "url": "https://www.mildenhall.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas installations can be stricter and change with force-protection levels, so confirm the current details on the official RAF Mildenhall site before you go."
+      ],
+      "source": { "label": "RAF Mildenhall (official)", "url": "https://www.mildenhall.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base & OHA)",
+      "type": "prose",
+      "data": [
+        "Family housing is available across the Lakenheath-Mildenhall community, and many families instead live on the British economy in the surrounding villages, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-base housing and must approve economy rentals; it also helps with leases, utilities, and OHA paperwork. Start there as soon as you have orders."
+      ],
+      "source": { "label": "RAF Mildenhall (official)", "url": "https://www.mildenhall.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools in the Lakenheath-Mildenhall community, which serve students from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Europe and the base, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "RAF Mildenhall Clinic (with the 48th Medical Group hospital at RAF Lakenheath)",
+        "Care": "On-base clinic care at Mildenhall, with the 48th Medical Group hospital at nearby Lakenheath for higher-level and inpatient care; complex care via host-nation (NHS) facilities",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "48th Medical Group / RAF Lakenheath (TRICARE)", "url": "https://lakenheath.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "RAF Mildenhall Commissary (DeCA)",
+        "Exchange": "RAF Mildenhall Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to England has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-base housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle driving and your vehicle", "text": "Get set up to drive on the left, sort UK registration/insurance or ship a vehicle, and learn local road rules. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Lakenheath-Mildenhall schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Mildenhall clinic and the 48th Medical Group hospital at Lakenheath, with host-nation (NHS) providers as needed." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Mildenhall?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-base housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "How is it related to Lakenheath?", "a": "They're sister bases a few miles apart and form one American community, sharing DoDEA schools and the 48th Medical Group hospital at Lakenheath. Mildenhall flies KC-135 tankers and hosts special operations and reconnaissance units." },
+        { "q": "Where do families live?", "a": "Either in on-base housing or on the British economy in nearby villages and towns like Mildenhall, Brandon, Bury St Edmunds, and Newmarket, using OHA." },
+        { "q": "Is it a good tour for travel?", "a": "Excellent. London and Cambridge are close, and the rest of Europe is within easy reach by train, car, or the nearby airports." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Cambridge", "category": "Day trip", "blurb": "The historic university city with colleges, punting, and museums, a short drive away.", "maps_query": "Cambridge, England" },
+        { "name": "Newmarket (horse racing)", "category": "In town", "blurb": "The home of British horse racing, with the racecourse and National Horseracing Museum.", "maps_query": "Newmarket Racecourse, England" },
+        { "name": "Bury St Edmunds", "category": "In town", "blurb": "A charming Suffolk market town with abbey gardens and pubs.", "maps_query": "Bury St Edmunds, England" },
+        { "name": "London", "category": "Day trip", "blurb": "The capital is roughly 90 minutes away by train for world-class sights.", "maps_query": "London, England" }
+      ]
+    }
+  ]
+}

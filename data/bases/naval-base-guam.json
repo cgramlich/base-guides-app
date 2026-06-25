@@ -1,0 +1,157 @@
+{
+  "slug": "naval-base-guam",
+  "schema_version": "0.1",
+  "name": "Naval Base Guam",
+  "short_name": "Guam (Navy)",
+  "branch": "U.S. Navy",
+  "states": ["Guam"],
+  "region": "OCONUS",
+  "tagline": "The Navy's strategic submarine and logistics hub in the western Pacific, at Apra Harbor on Guam.",
+  "coords": { "lat": 13.43, "lng": 144.66, "label": "Santa Rita, Guam" },
+  "tz": "Pacific/Guam",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy base on Guam (U.S. territory in the western Pacific). Region flagged OCONUS. Guam is a US TERRITORY: uses OHA (not in the BAH file) + DoDEA Pacific schools, and is treated as an overseas tour for pay/logistics, so OCONUS template (OHA/DoDEA, no BAH/RentCast/SchoolDigger/rent-buy). Apra Harbor; homeports attack submarines + a major logistics/expeditionary hub. Andersen AFB (already in app) is also on Guam. Medical: U.S. Naval Hospital Guam. Facts verified from official sources (cnic.navy.mil Joint Region Marianas/NB Guam, USNH Guam, DeCA/NEX, DoDEA Pacific, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Santa Rita, Guam (Apra Harbor, western Pacific)",
+        "Role": "Strategic submarine, logistics, and expeditionary hub",
+        "Homeports": "Attack submarines and support ships",
+        "Status": "Guam is a U.S. territory; this is treated as an overseas tour",
+        "Also on Guam": "Andersen Air Force Base (Joint Region Marianas)"
+      },
+      "source": { "label": "Naval Base Guam (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/jrm/installations/navbase_guam.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Base Guam, at Apra Harbor, is a strategic U.S. Navy hub in the western Pacific. It homeports attack submarines and serves as a key logistics and expeditionary base, central to the U.S. posture across the Indo-Pacific.",
+        "Guam is a U.S. territory, so while it's American soil, a tour here is treated as overseas for pay and logistics. The island pairs a strategic mission with a tropical setting and a distinct CHamoru culture; Andersen Air Force Base shares the island under Joint Region Marianas."
+      ],
+      "source": { "label": "Naval Base Guam (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/jrm/installations/navbase_guam.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "guam_decision",
+      "title": "An Island Territory Tour: Tropical, Strategic, and Remote",
+      "type": "killer",
+      "data": {
+        "subtitle": "Guam is a beautiful tropical island, but it's remote and everything ships in. The main choice is on-base housing versus renting on the island with the Overseas Housing Allowance (OHA).",
+        "intro": [
+          "Because Guam is a U.S. territory treated as an overseas tour, you'll use the Overseas Housing Allowance (OHA) rather than the stateside BAH, or take government housing. On-base housing is popular given island logistics.",
+          "Off base, families rent around the island, balancing a richer local experience against island prices and the realities of a remote Pacific posting."
+        ],
+        "recommendations": [
+          { "who": "Easiest logistics", "advice": "Government/on-base housing keeps you close to work and services, popular on a remote island." },
+          { "who": "Island living", "advice": "Renting on the economy around the island offers more local immersion, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns government housing and approves economy rentals, and helps with leases and OHA, so start there." },
+          { "who": "Plan island realities", "advice": "Higher prices, shipping times, and typhoon season are part of a Guam tour; budget and prepare." }
+        ]
+      },
+      "source": { "label": "Naval Base Guam (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/jrm/installations/navbase_guam.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows standard installation rules. Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Requirements can change with force-protection levels, so confirm the current details on the official Naval Base Guam site before you go."
+      ],
+      "source": { "label": "Naval Base Guam (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/jrm/installations/navbase_guam.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (Government & OHA)",
+      "type": "prose",
+      "data": [
+        "Naval Base Guam (with Joint Region Marianas) has government family housing on the island, and many families instead rent on the economy and receive the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns government housing and approves economy rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "Naval Base Guam (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/jrm/installations/navbase_guam.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools on Guam, serving students from elementary through high school across the island's installations.",
+        "Confirm current schools, boundaries, and registration through DoDEA Pacific and the command, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "U.S. Naval Hospital Guam",
+        "Care": "A military hospital with primary and specialty outpatient care and inpatient services; complex care may require off-island referral",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "U.S. Naval Hospital Guam (official)", "url": "https://guam.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Naval Base Guam Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Guam"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["A Guam PCS is treated as an overseas move, with island-specific steps like vehicle shipping. Start early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose government housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Plan your vehicle and getting around", "text": "Arrange vehicle shipping early (it can take time to the island) and handle Guam registration on arrival." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Guam schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at U.S. Naval Hospital Guam; know that some complex care requires off-island referral." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is Guam overseas or stateside?", "a": "Guam is a U.S. territory, so it's American soil, but a tour here is treated as overseas for pay and logistics. You'll use OHA (not BAH) and DoDEA schools, which is why we group it under OCONUS." },
+        { "q": "Where do families live?", "a": "In government housing or on the economy around the island using OHA. On-base/government housing is popular given island logistics." },
+        { "q": "What's island life like?", "a": "Tropical and beautiful, with great diving and beaches, but remote: higher prices, shipping times, and typhoon season are realities to plan for." },
+        { "q": "What about the other Guam base?", "a": "Andersen Air Force Base is also on Guam, under Joint Region Marianas. Naval Base Guam is the Navy's submarine and logistics hub at Apra Harbor." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Tumon Bay", "category": "Beach", "blurb": "Guam's resort beach strip with snorkeling and dining.", "maps_query": "Tumon Bay, Guam" },
+        { "name": "Two Lovers Point", "category": "Outdoors", "blurb": "A famous clifftop overlook with sweeping ocean views.", "maps_query": "Two Lovers Point, Guam" },
+        { "name": "War in the Pacific National Historical Park", "category": "History", "blurb": "WWII sites and beaches preserved across the island.", "maps_query": "War in the Pacific National Historical Park, Guam" },
+        { "name": "Ritidian Point", "category": "Outdoors", "blurb": "A pristine beach and wildlife refuge at the island's north end.", "maps_query": "Ritidian Point, Guam" }
+      ]
+    }
+  ]
+}

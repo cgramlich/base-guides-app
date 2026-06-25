@@ -1,0 +1,201 @@
+{
+  "slug": "fort-detrick",
+  "schema_version": "0.1",
+  "name": "Fort Detrick",
+  "short_name": "Detrick",
+  "branch": "U.S. Army",
+  "states": ["MD"],
+  "tagline": "The Army's biomedical research and biodefense hub in Frederick, Maryland.",
+  "coords": { "lat": 39.44, "lng": -77.43, "label": "Frederick, MD" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Army biomedical research / biodefense hub (Frederick MD; Eastern time). CONUS full template (BAH MHA MD130 Fort Detrick; RentCast/SchoolDigger work). Home of USAMRIID and Army medical research/development (MRDC) + interagency biomedical campus. Heavily research/civilian/contractor workforce; most live off post in Frederick. Medical: Barquist Army Health Clinic. Facts verified from official sources (home.army.mil/detrick, Barquist AHC/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Maryland is TRICARE East. Near DC/Baltimore. Medium-confidence flags: base coords (approx), off-base ZIP 21702 (Frederick).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Frederick, MD (north-central Maryland)",
+        "Role": "Biomedical research, development, and biodefense",
+        "Major tenants": "USAMRIID and Army Medical Research & Development Command (MRDC), plus interagency partners",
+        "Workforce": "Heavily research, civilian, and contractor",
+        "Setting": "A historic Maryland city near DC and Baltimore"
+      },
+      "source": { "label": "Fort Detrick (official)", "url": "https://home.army.mil/detrick/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Detrick is the Army's center for biomedical research and biodefense, home to the U.S. Army Medical Research Institute of Infectious Diseases (USAMRIID) and the Army's medical research and development enterprise, alongside interagency partners on a major biomedical campus.",
+        "In the historic city of Frederick in north-central Maryland, it has a heavily research, civilian, and contractor workforce, giving it a settled, professional feel, with Washington, D.C., and Baltimore both within reach."
+      ],
+      "source": { "label": "Fort Detrick (official)", "url": "https://home.army.mil/detrick/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "detrick_decision",
+      "title": "Living in Frederick: Historic, Settled, and Commutable",
+      "type": "killer",
+      "data": {
+        "subtitle": "Detrick is a research hub with limited on-post housing, so the real question is which Frederick-area neighborhood fits your commute and schools, with many families choosing to buy.",
+        "intro": [
+          "Because the workforce is largely civilian and contractor with longer tenures, most people live off post in and around Frederick, a historic, growing city. The area is more affordable than the close-in DC suburbs.",
+          "Where you live mostly comes down to commute and schools across Frederick and Frederick County, with DC and Baltimore commutable for some."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "The city of Frederick surrounds the post for a short commute and lots of amenities." },
+          { "who": "Family suburbs", "advice": "Frederick County communities like Urbana and Walkersville are popular with families for schools." },
+          { "who": "On-post option", "advice": "On-post housing is limited; most live off post, so start your Frederick search early." },
+          { "who": "Value vs. DC", "advice": "Frederick is more affordable than the close-in DC suburbs, a draw for those who can commute or work locally." }
+        ]
+      },
+      "source": { "label": "Fort Detrick (official)", "url": "https://home.army.mil/detrick/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Detrick site before you go."
+      ],
+      "source": { "label": "Fort Detrick (official)", "url": "https://home.army.mil/detrick/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Detrick has a limited amount of on-post family housing, so the great majority of personnel live off post in and around Frederick.",
+        "Start with the housing office for the current on-post options and for help finding a place off post in the surrounding area."
+      ],
+      "source": { "label": "Fort Detrick (official)", "url": "https://home.army.mil/detrick/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MD130",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MD130 (Fort Detrick)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "21702", "label": "Frederick, MD" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Frederick County Public Schools serves the post and the surrounding area.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Frederick County Public Schools (official)", "url": "https://www.fcps.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MD", "city": "Frederick" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Barquist Army Health Clinic",
+        "Care": "Outpatient primary and some specialty care on post; inpatient, emergency, and complex care via Frederick-area and DC/Baltimore network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Barquist Army Health Clinic (TRICARE)", "url": "https://www.tricare.mil/mtf/Detrick" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Detrick Commissary (DeCA)",
+        "Exchange": "Fort Detrick Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Detrick the longer (often civilian) tenures and growing Frederick market lead many families to buy."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn Frederick County before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years, common at a research hub.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The growing Frederick market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Detrick's longer tenures and Frederick's growth make buying worth a serious look. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-post lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-post housing is limited; get the housing office's read on Frederick and the county before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Maryland vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Frederick County Public Schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Barquist Army Health Clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What happens at Fort Detrick?", "a": "It's the Army's biomedical research and biodefense hub, home to USAMRIID and the Army's medical research and development enterprise, along with interagency partners. The workforce is largely civilian." },
+        { "q": "Where do families live?", "a": "Mostly off post in and around Frederick, since on-post housing is limited. Frederick County communities like Urbana and Walkersville are popular with families." },
+        { "q": "Is it a good place to buy?", "a": "Often. Tenures are long (many civilian) and Frederick is growing, so buying is common, and it's more affordable than the close-in DC suburbs." },
+        { "q": "What is the BAH area?", "a": "Fort Detrick is MHA MD130. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Downtown Frederick", "category": "In town", "blurb": "A historic, walkable downtown with the Carroll Creek promenade, dining, and shops.", "maps_query": "Downtown Frederick, MD" },
+        { "name": "Catoctin Mountain Park", "category": "Outdoors", "blurb": "Mountain trails and waterfalls north of the city.", "maps_query": "Catoctin Mountain Park, MD" },
+        { "name": "Gettysburg", "category": "Day trip", "blurb": "The famous Civil War battlefield is a short drive north into Pennsylvania.", "maps_query": "Gettysburg National Military Park, PA" },
+        { "name": "Washington, D.C.", "category": "Day trip", "blurb": "The capital's museums and monuments are about an hour southeast.", "maps_query": "Washington, DC" }
+      ]
+    }
+  ]
+}

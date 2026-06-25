@@ -99,6 +99,16 @@
     { "slug": "sheppard-afb", "name": "Sheppard AFB", "branch": "U.S. Air Force", "state": "TX", "ready": true },
     { "slug": "nsa-naples", "name": "NSA Naples", "branch": "U.S. Navy", "state": "Italy", "region": "OCONUS", "ready": true },
     { "slug": "misawa-air-base", "name": "Misawa Air Base", "branch": "U.S. Air Force", "state": "Japan", "region": "OCONUS", "ready": true },
-    { "slug": "kunsan-air-base", "name": "Kunsan Air Base", "branch": "U.S. Air Force", "state": "South Korea", "region": "OCONUS", "ready": true }
+    { "slug": "kunsan-air-base", "name": "Kunsan Air Base", "branch": "U.S. Air Force", "state": "South Korea", "region": "OCONUS", "ready": true },
+    { "slug": "fort-polk", "name": "Fort Polk", "branch": "U.S. Army", "state": "LA", "ready": true },
+    { "slug": "barksdale-afb", "name": "Barksdale AFB", "branch": "U.S. Air Force", "state": "LA", "ready": true },
+    { "slug": "whiteman-afb", "name": "Whiteman AFB", "branch": "U.S. Air Force", "state": "MO", "ready": true },
+    { "slug": "minot-afb", "name": "Minot AFB", "branch": "U.S. Air Force", "state": "ND", "ready": true },
+    { "slug": "beale-afb", "name": "Beale AFB", "branch": "U.S. Air Force", "state": "CA", "ready": true },
+    { "slug": "mountain-home-afb", "name": "Mountain Home AFB", "branch": "U.S. Air Force", "state": "ID", "ready": true },
+    { "slug": "patrick-sfb", "name": "Patrick SFB", "branch": "U.S. Space Force", "state": "FL", "ready": true },
+    { "slug": "fort-detrick", "name": "Fort Detrick", "branch": "U.S. Army", "state": "MD", "ready": true },
+    { "slug": "naval-base-guam", "name": "Naval Base Guam", "branch": "U.S. Navy", "state": "Guam", "region": "OCONUS", "ready": true },
+    { "slug": "raf-mildenhall", "name": "RAF Mildenhall", "branch": "U.S. Air Force", "state": "England", "region": "OCONUS", "ready": true }
   ]
 }

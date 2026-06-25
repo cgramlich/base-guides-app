@@ -1,0 +1,201 @@
+{
+  "slug": "beale-afb",
+  "schema_version": "0.1",
+  "name": "Beale AFB",
+  "short_name": "Beale",
+  "branch": "U.S. Air Force",
+  "states": ["CA"],
+  "tagline": "The Air Force's high-altitude reconnaissance hub, flying the U-2 and Global Hawk in California's Sacramento Valley.",
+  "coords": { "lat": 39.12, "lng": -121.44, "label": "Marysville, CA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force reconnaissance/ISR base (Yuba County, Sacramento Valley CA). CONUS full template (BAH MHA CA033 Beale AFB; RentCast/SchoolDigger work). 9th Reconnaissance Wing flies the U-2 Dragon Lady and RQ-4 Global Hawk. Medical: 9th Medical Group clinic. Facts verified from official sources (beale.af.mil, 9 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). California is TRICARE West. More affordable than coastal CA. Medium-confidence flags: base coords (approx), off-base ZIP 95901 (Marysville).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Yuba County, CA (Sacramento Valley, near Marysville/Yuba City)",
+        "Major unit": "9th Reconnaissance Wing",
+        "Aircraft": "U-2 Dragon Lady and RQ-4 Global Hawk",
+        "Mission": "High-altitude intelligence, surveillance, and reconnaissance (ISR)",
+        "Setting": "Inland northern California (more affordable than the coast)"
+      },
+      "source": { "label": "Beale AFB (official)", "url": "https://www.beale.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Beale Air Force Base is a key Air Force reconnaissance hub, home to the 9th Reconnaissance Wing, which flies the high-altitude U-2 Dragon Lady and the RQ-4 Global Hawk to collect intelligence, surveillance, and reconnaissance.",
+        "In California's Sacramento Valley near Marysville and Yuba City, it offers a more affordable inland-California lifestyle, with Sacramento, Lake Tahoe, and the Sierra foothills all within reach."
+      ],
+      "source": { "label": "Beale AFB (official)", "url": "https://www.beale.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "beale_decision",
+      "title": "Affordable Inland California Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Beale is in the more affordable Sacramento Valley, not pricey coastal California. The main choice is which valley town fits your commute and schools, with on-base housing also available.",
+        "intro": [
+          "Compared with coastal California, the Yuba-Sutter area is much more affordable, so BAH stretches further. On-base housing is available; many also live off base in the nearby towns.",
+          "Where you live mostly comes down to commute and schools across Marysville, Yuba City, Wheatland, and toward the Sacramento suburbs."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Wheatland and Marysville sit near the base for a short commute." },
+          { "who": "More amenities", "advice": "Yuba City and the Yuba-Sutter area offer more shopping, dining, and schools nearby." },
+          { "who": "Toward Sacramento", "advice": "Lincoln, Roseville, and the north Sacramento suburbs have more options and good schools, a longer commute south." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." }
+        ]
+      },
+      "source": { "label": "Beale AFB (official)", "url": "https://www.beale.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Beale AFB site before you go."
+      ],
+      "source": { "label": "Beale AFB (official)", "url": "https://www.beale.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Beale AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Beale AFB (official)", "url": "https://www.beale.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA033",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA033 (Beale AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "95901", "label": "Marysville, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Wheatland, Marysville Joint Unified, and Yuba City area districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Marysville Joint Unified School District (official)", "url": "https://www.mjusd.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Marysville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "9th Medical Group (Beale AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the Yuba-Sutter and Sacramento-area network",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Beale AFB / 9th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Beale" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Beale AFB Commissary (DeCA)",
+        "Exchange": "Beale AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the affordable-for-California Yuba-Sutter market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the valley before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The relatively affordable valley market fits your budget for a home you like.",
+          "You've found a town and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the Yuba-Sutter area is affordable by California standards, so buying is worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the Yuba-Sutter area before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Wheatland, Marysville, or Yuba City area) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 9th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Beale known for?", "a": "It's the Air Force's high-altitude reconnaissance hub, home to the 9th Reconnaissance Wing flying the U-2 Dragon Lady and the RQ-4 Global Hawk." },
+        { "q": "Is it expensive like the rest of California?", "a": "No. The Yuba-Sutter area in the Sacramento Valley is much more affordable than coastal California, so BAH stretches further." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base. Wheatland and Marysville are closest; Yuba City has more amenities; the north Sacramento suburbs are an option farther south." },
+        { "q": "What is the BAH area?", "a": "Beale is MHA CA033. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Sacramento", "category": "Day trip", "blurb": "The state capital's dining, museums, and Old Sacramento, about an hour south.", "maps_query": "Sacramento, CA" },
+        { "name": "Lake Tahoe & the Sierra", "category": "Day trip", "blurb": "World-class lake and skiing in the mountains to the east.", "maps_query": "Lake Tahoe, CA" },
+        { "name": "Sutter Buttes", "category": "Outdoors", "blurb": "The 'world's smallest mountain range' rising from the valley near Yuba City.", "maps_query": "Sutter Buttes, CA" },
+        { "name": "Yuba River", "category": "Outdoors", "blurb": "Swimming holes and gold-country scenery in the foothills nearby.", "maps_query": "South Yuba River State Park, CA" }
+      ]
+    }
+  ]
+}

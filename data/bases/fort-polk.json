@@ -1,0 +1,201 @@
+{
+  "slug": "fort-polk",
+  "schema_version": "0.1",
+  "name": "Fort Polk",
+  "short_name": "Polk",
+  "branch": "U.S. Army",
+  "states": ["LA"],
+  "tagline": "Home of the Joint Readiness Training Center, where light infantry units prepare for combat, in the Louisiana piney woods.",
+  "coords": { "lat": 31.05, "lng": -93.20, "label": "Leesville, LA" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Army combat-training post (Vernon Parish, west-central LA, near Leesville; Central time). CONUS full template (BAH MHA LA115 Fort Polk; RentCast/SchoolDigger work). NAME HISTORY: Fort Polk -> Fort Johnson (June 2023) -> Fort Polk (2025; effective June 11, 2025, formal ceremony July 2025). Now honors Gen. James H. Polk (Silver Star; 4-star general), NOT the Confederate general Leonidas Polk (verified via KALB/NOLA/Army-press + Wikipedia, June 2026). Home of the Joint Readiness Training Center (JRTC). Medical: Bayne-Jones Army Community Hospital. Louisiana moved to TRICARE West in 2024. Medium-confidence flags: base coords (approx), off-base ZIP 71446 (Leesville).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Vernon Parish, LA (~10 mi east of Leesville, west-central Louisiana)",
+        "Role": "Home of the Joint Readiness Training Center (JRTC)",
+        "Mission": "Large-scale combat training rotations, focused on light infantry",
+        "Current name": "Fort Polk (now honoring Gen. James H. Polk, Silver Star recipient)",
+        "Name note": "Was Fort Johnson from 2023 to 2025 before reverting"
+      },
+      "source": { "label": "Fort Polk / JRTC (official)", "url": "https://home.army.mil/polk/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Fort Polk is home to the Joint Readiness Training Center, one of the Army's premier combat training centers, where brigades, especially light infantry, rotate through demanding, realistic exercises before deploying.",
+        "Set in the piney woods of west-central Louisiana near Leesville, the post carried the name Fort Johnson from 2023 to 2025 before reverting to Fort Polk, now honoring a Silver Star general rather than the Confederate general. It's a somewhat remote, training-focused community."
+      ],
+      "source": { "label": "Fort Polk / JRTC (official)", "url": "https://home.army.mil/polk/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "polk_decision",
+      "title": "Affordable, Somewhat Remote Piney-Woods Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Fort Polk is affordable and a bit isolated. The main choice is on-post housing versus the nearby town of Leesville, with the cost of living low either way.",
+        "intro": [
+          "West-central Louisiana is inexpensive, so BAH stretches well, but the post is somewhat remote, so amenities are more limited than at a big-city base. On-post housing is popular; many also live in Leesville and nearby.",
+          "Where you live mostly comes down to commute and schools across Leesville and the surrounding Vernon Parish communities."
+        ],
+        "recommendations": [
+          { "who": "On-post convenience", "advice": "On-post housing keeps you close to work and is a popular choice given the remote location." },
+          { "who": "Closest town", "advice": "Leesville borders the area and is the main off-post community for housing, shopping, and schools." },
+          { "who": "Stretch your budget", "advice": "The area is very affordable, so BAH tends to go a long way." },
+          { "who": "Plan for the setting", "advice": "It's a somewhat isolated, training-driven post; lean into the outdoors and the community, with bigger cities a drive away." }
+        ]
+      },
+      "source": { "label": "Fort Polk / JRTC (official)", "url": "https://home.army.mil/polk/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Polk site before you go."
+      ],
+      "source": { "label": "Fort Polk / JRTC (official)", "url": "https://home.army.mil/polk/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Fort Polk has privatized on-post family housing across several neighborhoods, popular given the post's somewhat remote location.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Fort Polk / JRTC (official)", "url": "https://home.army.mil/polk/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "LA115",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA LA115 (Fort Polk)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "71446", "label": "Leesville, LA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Vernon Parish schools serve the post and the Leesville area.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Vernon Parish Schools (official)", "url": "https://www.vpsb.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "LA", "city": "Leesville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Bayne-Jones Army Community Hospital",
+        "Care": "Primary and specialty outpatient care with some inpatient services on post; complex care via regional network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Bayne-Jones Army Community Hospital (official)", "url": "https://baynejones.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Fort Polk Commissary (DeCA)",
+        "Exchange": "Fort Polk Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. At Fort Polk many families take on-post housing, but here's the framework if you're weighing Leesville."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer on-post housing for the short commute and community.",
+          "You'd rather not own in a small, somewhat isolated market.",
+          "Your BAH comfortably covers rent if you go off post."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The very affordable Leesville market fits your budget for a home you like.",
+          "You're comfortable with a small resale market and have found a place you trust."
+        ],
+        "bottom_line": "There is no universal right answer. The area is inexpensive, so BAH stretches and buying can pencil out, but resale can be slow in a small, training-driven market, so many families take on-post housing. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and at a somewhat remote post, planning ahead helps."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-post lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-post housing is popular here; get on the list early and get the office's read on Leesville before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Louisiana vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Vernon Parish schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Bayne-Jones Army Community Hospital or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is it Fort Polk or Fort Johnson?", "a": "Fort Polk, as of 2025. It was Fort Johnson from 2023 to 2025; the name now honors General James H. Polk, a Silver Star recipient and four-star general, rather than the Confederate general Leonidas Polk." },
+        { "q": "What happens at Fort Polk?", "a": "It's home to the Joint Readiness Training Center (JRTC), where units, especially light infantry, run large combat-training rotations before deploying." },
+        { "q": "Where do families live?", "a": "On-post housing is popular given the remote location; off post, Leesville is the main nearby community." },
+        { "q": "What is the BAH area?", "a": "Fort Polk is MHA LA115. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Kisatchie National Forest", "category": "Outdoors", "blurb": "Louisiana's only national forest, with trails and piney-woods scenery nearby.", "maps_query": "Kisatchie National Forest, LA" },
+        { "name": "Toledo Bend Reservoir", "category": "Outdoors", "blurb": "A huge lake on the Texas line known for fishing and boating.", "maps_query": "Toledo Bend Reservoir, LA" },
+        { "name": "Leesville (downtown)", "category": "In town", "blurb": "The nearby town's shops, dining, and museum.", "maps_query": "Downtown Leesville, LA" },
+        { "name": "Alexandria & Lake Charles", "category": "Day trip", "blurb": "The nearest larger cities for shopping and dining, each a drive away.", "maps_query": "Alexandria, LA" }
+      ]
+    }
+  ]
+}

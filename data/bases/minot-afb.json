@@ -1,0 +1,201 @@
+{
+  "slug": "minot-afb",
+  "schema_version": "0.1",
+  "name": "Minot AFB",
+  "short_name": "Minot",
+  "branch": "U.S. Air Force",
+  "states": ["ND"],
+  "tagline": "The only base with two legs of the nuclear triad, flying B-52s and operating Minuteman III missiles in northern North Dakota.",
+  "coords": { "lat": 48.42, "lng": -101.36, "label": "Minot, ND" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force nuclear base (Minot, northern ND; Central time). CONUS full template (BAH MHA ND191 Minot AFB; RentCast/SchoolDigger work). 5th Bomb Wing (B-52H) + 91st Missile Wing (Minuteman III ICBMs); the only base hosting two legs of the nuclear triad. Extreme cold winters; remote northern plains. Medical: 5th Medical Group clinic. Facts verified from official sources (minot.af.mil, 5 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). North Dakota is TRICARE West. 'Why Not Minot' local saying. Medium-confidence flags: base coords (approx), off-base ZIP 58701 (Minot).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Minot, ND (north-central North Dakota)",
+        "Major units": "5th Bomb Wing (B-52H) and 91st Missile Wing (Minuteman III ICBMs)",
+        "Distinction": "The only base with two legs of the nuclear triad",
+        "Climate": "Northern plains: long, very cold, snowy winters",
+        "Setting": "Remote, tight-knit; locals say 'Why Not Minot'"
+      },
+      "source": { "label": "Minot AFB (official)", "url": "https://www.minot.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Minot Air Force Base is unique as the only base hosting two legs of the U.S. nuclear triad: the 5th Bomb Wing flies the B-52H Stratofortress, and the 91st Missile Wing operates Minuteman III intercontinental ballistic missiles across the surrounding region.",
+        "In north-central North Dakota, it's a remote, mission-serious posting known for extreme winters and a famously tight-knit community that rallies around the 'Why Not Minot' spirit."
+      ],
+      "source": { "label": "Minot AFB (official)", "url": "https://www.minot.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "minot_decision",
+      "title": "A Remote Northern-Plains Tour: Embrace the Cold",
+      "type": "killer",
+      "data": {
+        "subtitle": "Minot is remote and brutally cold in winter, which shapes the tour. On-base housing is popular; the real key is preparing for the climate and leaning into the community.",
+        "intro": [
+          "Northern North Dakota means long, deep-cold winters and a remote location, so engine block heaters and serious gear are part of life. Many families choose on-base housing for the short commute and easier winters.",
+          "Off base, the city of Minot offers housing, schools, and amenities a short drive away, with an affordable cost of living."
+        ],
+        "recommendations": [
+          { "who": "Easiest winters", "advice": "On-base housing keeps the commute short and life simpler through the deep cold; it's a popular choice." },
+          { "who": "Off-base option", "advice": "The city of Minot offers more housing, schools, and amenities a short drive from base." },
+          { "who": "Prepare for the cold", "advice": "Budget for cold-weather gear, plug-in vehicles (block heaters), and higher heating costs; this is the biggest adjustment." },
+          { "who": "Embrace the community", "advice": "The remote setting makes the base community close; lean into unit and family programs and the local 'Why Not Minot' spirit." }
+        ]
+      },
+      "source": { "label": "Minot AFB (official)", "url": "https://www.minot.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Minot AFB site before you go."
+      ],
+      "source": { "label": "Minot AFB (official)", "url": "https://www.minot.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Minot AFB has privatized on-base family housing across several neighborhoods, popular for the convenience through North Dakota's harsh winters.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Minot AFB (official)", "url": "https://www.minot.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "ND191",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA ND191 (Minot AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "58701", "label": "Minot, ND" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Minot Public Schools serves the base and the city, including campuses near the installation.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Minot Public Schools (official)", "url": "https://www.minot.k12.nd.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "ND", "city": "Minot" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "5th Medical Group (Minot AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the Minot-area network",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Minot AFB / 5th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Minot" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Minot AFB Commissary (DeCA)",
+        "Exchange": "Minot AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. At remote Minot many families take on-base housing to simplify winters, but here's the framework if you're weighing the city."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer on-base housing for the short commute through the deep cold.",
+          "You'd rather not own in a smaller, remote market.",
+          "Your BAH comfortably covers rent if you go off base."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "You're comfortable maintaining a home through extreme winters.",
+          "You've found a place and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, and many Minot families take on-base housing to ease the winters. If you buy, weigh heating costs, maintenance, and a smaller resale market. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and a northern-plains move adds winter prep. Start early."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is popular for easier winters; get on the list early and get the office's read on the city of Minot." },
+          { "title": "Winterize and register your vehicle", "text": "Handle North Dakota vehicle registration and base access, and prep for the cold: block heater, winter tires, and an emergency kit. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Minot Public Schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 5th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Minot AFB known for?", "a": "It's the only base hosting two legs of the nuclear triad: the 5th Bomb Wing (B-52H bombers) and the 91st Missile Wing (Minuteman III ICBMs)." },
+        { "q": "How cold does it get?", "a": "Very. Northern North Dakota has long, deep-cold, snowy winters. Cold-weather prep, including a vehicle block heater, is the biggest adjustment." },
+        { "q": "Where do families live?", "a": "Many take on-base housing for easier winters; the city of Minot offers more options a short drive away, with an affordable cost of living." },
+        { "q": "What is the BAH area?", "a": "Minot is MHA ND191. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Scandinavian Heritage Park", "category": "In town", "blurb": "A park celebrating Minot's Nordic roots, with a stave church replica.", "maps_query": "Scandinavian Heritage Park, Minot ND" },
+        { "name": "North Dakota State Fair", "category": "Annual event", "blurb": "A big summer fair held in Minot each year.", "maps_query": "North Dakota State Fair, Minot ND" },
+        { "name": "Lake Sakakawea", "category": "Outdoors", "blurb": "A huge reservoir for boating and fishing south of Minot.", "maps_query": "Lake Sakakawea, ND" },
+        { "name": "Roosevelt Park Zoo", "category": "Family", "blurb": "A family-friendly zoo in Minot.", "maps_query": "Roosevelt Park Zoo, Minot ND" }
+      ]
+    }
+  ]
+}

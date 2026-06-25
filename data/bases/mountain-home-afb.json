@@ -1,0 +1,201 @@
+{
+  "slug": "mountain-home-afb",
+  "schema_version": "0.1",
+  "name": "Mountain Home AFB",
+  "short_name": "Mountain Home",
+  "branch": "U.S. Air Force",
+  "states": ["ID"],
+  "tagline": "Home of the 'Gunfighters' and the F-15E Strike Eagle, in southwestern Idaho's high desert.",
+  "coords": { "lat": 43.05, "lng": -115.87, "label": "Mountain Home, ID" },
+  "tz": "America/Boise",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force fighter base (Elmore County, SW Idaho high desert; Mountain time -> America/Boise). CONUS full template (BAH MHA ID086 Mountain Home AFB; RentCast/SchoolDigger work). 366th Fighter Wing ('Gunfighters') flies the F-15E Strike Eagle. Somewhat remote; Boise ~50 mi NW. Medical: 366th Medical Group clinic. Facts verified from official sources (mountainhome.af.mil, 366 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Idaho is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 83647 (Mountain Home).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Mountain Home, ID (Elmore County, southwestern Idaho)",
+        "Major unit": "366th Fighter Wing, the 'Gunfighters'",
+        "Aircraft": "F-15E Strike Eagle",
+        "Setting": "High-desert southwestern Idaho; somewhat remote",
+        "Nearby city": "Boise, about 50 miles northwest"
+      },
+      "source": { "label": "Mountain Home AFB (official)", "url": "https://www.mountainhome.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Mountain Home Air Force Base is home to the 366th Fighter Wing, the 'Gunfighters,' flying the F-15E Strike Eagle. It's a capable, expeditionary-minded fighter wing in the wide-open spaces of southwestern Idaho.",
+        "The high-desert setting is somewhat remote, with the town of Mountain Home just outside the gate and Boise about 50 miles away, balancing a quieter pace with excellent outdoor recreation."
+      ],
+      "source": { "label": "Mountain Home AFB (official)", "url": "https://www.mountainhome.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mh_decision",
+      "title": "High-Desert Living With Boise Within Reach",
+      "type": "killer",
+      "data": {
+        "subtitle": "Mountain Home is affordable and a bit remote. The main choice is on-base housing or the town of Mountain Home, with Boise an option for those who want more and don't mind the commute.",
+        "intro": [
+          "Southwestern Idaho is affordable, so BAH stretches well. The base is somewhat remote, so on-base housing and the nearby town of Mountain Home are the common choices.",
+          "Where you live mostly comes down to commute and amenities: Mountain Home keeps it close, while Boise (about 50 miles away) offers a full metro for those willing to drive."
+        ],
+        "recommendations": [
+          { "who": "On-base convenience", "advice": "On-base housing keeps the commute short and is a popular choice given the remote location." },
+          { "who": "Closest town", "advice": "The town of Mountain Home is right outside the gate with schools, shopping, and an affordable cost of living." },
+          { "who": "Big-city option", "advice": "Boise and its suburbs offer a full metro about 50 miles away, for those who don't mind the commute." },
+          { "who": "Embrace the outdoors", "advice": "Rivers, mountains, and high-desert recreation are all around; great for outdoor families." }
+        ]
+      },
+      "source": { "label": "Mountain Home AFB (official)", "url": "https://www.mountainhome.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Mountain Home AFB site before you go."
+      ],
+      "source": { "label": "Mountain Home AFB (official)", "url": "https://www.mountainhome.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Mountain Home AFB has privatized on-base family housing across several neighborhoods, popular given the somewhat remote location.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Mountain Home AFB (official)", "url": "https://www.mountainhome.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "ID086",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA ID086 (Mountain Home AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "83647", "label": "Mountain Home, ID" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Mountain Home School District serves the base and the town.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Mountain Home School District (official)", "url": "https://www.mtnhomesd.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "ID", "city": "Mountain Home" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "366th Medical Group (Mountain Home AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via Boise-area network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Mountain Home AFB / 366th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/MountainHome" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Mountain Home AFB Commissary (DeCA)",
+        "Exchange": "Mountain Home AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. At somewhat remote Mountain Home many families take on-base housing, but the affordable market can make buying attractive."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer on-base housing for the short commute and community.",
+          "You'd rather not own in a smaller, somewhat remote market.",
+          "Your BAH comfortably covers rent if you go off base."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Mountain Home market fits your budget for a home you like.",
+          "You've found a place and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Southwestern Idaho is affordable, so BAH stretches and buying can pencil out, but the smaller market affects resale, and some weigh the Boise area instead. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is popular given the remote location; get on the list early and get the office's read on the town of Mountain Home." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Idaho vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the Mountain Home School District early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 366th Medical Group clinic or network providers (with Boise for specialty care)." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Mountain Home AFB known for?", "a": "It's home to the 366th Fighter Wing, the 'Gunfighters,' flying the F-15E Strike Eagle in southwestern Idaho." },
+        { "q": "Is it remote?", "a": "Somewhat. The high-desert setting is quiet, with the town of Mountain Home at the gate and Boise about 50 miles away for big-city needs." },
+        { "q": "Where do families live?", "a": "On-base housing is popular; the town of Mountain Home is closest, and some families choose the Boise area despite the longer commute." },
+        { "q": "What is the BAH area?", "a": "Mountain Home is MHA ID086. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Bruneau Dunes State Park", "category": "Outdoors", "blurb": "North America's tallest single-structure sand dune and an observatory, south of base.", "maps_query": "Bruneau Dunes State Park, ID" },
+        { "name": "Boise", "category": "Day trip", "blurb": "Idaho's capital, with dining, the greenbelt, and a vibrant downtown about 50 miles away.", "maps_query": "Boise, ID" },
+        { "name": "Snake River / Swan Falls", "category": "Outdoors", "blurb": "Canyon scenery, fishing, and birds of prey along the Snake River.", "maps_query": "Swan Falls Dam, ID" },
+        { "name": "Bogus Basin (skiing)", "category": "Day trip", "blurb": "A ski area in the mountains above Boise for winter recreation.", "maps_query": "Bogus Basin, ID" }
+      ]
+    }
+  ]
+}

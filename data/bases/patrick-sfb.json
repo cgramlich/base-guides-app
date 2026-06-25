@@ -1,0 +1,201 @@
+{
+  "slug": "patrick-sfb",
+  "schema_version": "0.1",
+  "name": "Patrick SFB",
+  "short_name": "Patrick",
+  "branch": "U.S. Space Force",
+  "states": ["FL"],
+  "tagline": "The Space Force's gateway to the Eastern Range on Florida's Space Coast, alongside Cape Canaveral.",
+  "coords": { "lat": 28.23, "lng": -80.60, "label": "Cocoa Beach, FL" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Space Force base on Florida's Space Coast (Brevard County, near Cocoa Beach). CONUS full template (BAH MHA FL059 Patrick SFB; RentCast/SchoolDigger work). Space Launch Delta 45 operates the Eastern Range and Cape Canaveral Space Force Station (launches); 920th Rescue Wing (AFRC) also based here. 3rd Space Force base in app (after Peterson + Vandenberg) -> Space Force filter chip. Medical: Patrick clinic (45th/SSC medical). Facts verified from official sources (patrick.spaceforce.mil, TRICARE clinic, DeCA/AAFES, Wikipedia for corroborated headline facts). Florida is TRICARE East. Beach/coastal market. Medium-confidence flags: base coords (approx), off-base ZIP 32931 (Cocoa Beach).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Space Force",
+        "Location": "Brevard County, FL (Space Coast, near Cocoa Beach)",
+        "Major unit": "Space Launch Delta 45 (operates the Eastern Range)",
+        "Adjacent": "Cape Canaveral Space Force Station, the East Coast launch site",
+        "Also home to": "920th Rescue Wing (Air Force Reserve)",
+        "Setting": "Atlantic beaches on Florida's Space Coast"
+      },
+      "source": { "label": "Patrick SFB (official)", "url": "https://www.patrick.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Patrick Space Force Base is the Space Force's hub on Florida's Space Coast, home to Space Launch Delta 45, which operates the Eastern Range and supports launches from the adjacent Cape Canaveral Space Force Station and the broader spaceport.",
+        "Right on the Atlantic near Cocoa Beach, it pairs a front-row seat to America's busiest launch site with a relaxed beach lifestyle, and it also hosts the Air Force Reserve's 920th Rescue Wing."
+      ],
+      "source": { "label": "Patrick SFB (official)", "url": "https://www.patrick.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "patrick_decision",
+      "title": "Beachside Living on the Space Coast",
+      "type": "killer",
+      "data": {
+        "subtitle": "Patrick sits right on the beach in Brevard County. The main choice is how close to the oceanfront you want to be versus commute, schools, and price.",
+        "intro": [
+          "The Space Coast is a desirable beach area with a moderate cost of living for coastal Florida, and the launch culture is a unique perk. On-base housing is available; many live off base across Brevard County.",
+          "Where you live mostly comes down to commute and schools, balancing the beachside towns near the base against more space inland and to the north and south."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Cocoa Beach, Satellite Beach, and Indialantic sit right by the base for a short, beachy commute." },
+          { "who": "Family suburbs", "advice": "Melbourne, Viera, and Suntree offer newer neighborhoods and good schools a short drive inland." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the coastal market." },
+          { "who": "Enjoy the launches", "advice": "Rocket launches are a regular, front-row perk of living on the Space Coast." }
+        ]
+      },
+      "source": { "label": "Patrick SFB (official)", "url": "https://www.patrick.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, especially around launch operations, so confirm the current details on the official Patrick SFB site before you go."
+      ],
+      "source": { "label": "Patrick SFB (official)", "url": "https://www.patrick.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Patrick SFB has privatized on-base family housing across several neighborhoods, a convenient and popular option in this beachside area.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Patrick SFB (official)", "url": "https://www.patrick.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "FL059",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA FL059 (Patrick SFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "32931", "label": "Cocoa Beach, FL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Brevard Public Schools serves the entire Space Coast, including the beachside and mainland communities.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Brevard Public Schools (official)", "url": "https://www.brevardschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "FL", "city": "Cocoa Beach" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Patrick SFB Clinic",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via Brevard-area network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Patrick SFB Clinic (TRICARE)", "url": "https://www.tricare.mil/mtf/Patrick" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Patrick SFB Commissary (DeCA)",
+        "Exchange": "Patrick SFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the Space Coast's moderate (for coastal Florida) market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area and pick beachside versus inland.",
+          "You'd rather not gamble on resale timing or coastal insurance costs.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years or anticipate repeat Space Coast tours.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The Space Coast market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the growing Space Coast makes buying worth a look for longer tours. Factor in coastal insurance and run your BAH against the rent and home prices above, then talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the beachside versus mainland areas before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Florida vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Brevard Public Schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Patrick clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Patrick SFB?", "a": "It's the Space Force's Space Coast base, home to Space Launch Delta 45, which operates the Eastern Range and supports launches from the adjacent Cape Canaveral Space Force Station. The 920th Rescue Wing is also based here." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base across Brevard County. Cocoa Beach, Satellite Beach, and Indialantic are closest; Melbourne and Viera are popular inland for schools." },
+        { "q": "Do you really see rocket launches?", "a": "Yes. Living on the Space Coast means regular front-row views of launches from Cape Canaveral and Kennedy Space Center." },
+        { "q": "What is the BAH area?", "a": "Patrick is MHA FL059. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Kennedy Space Center", "category": "Family", "blurb": "The visitor complex and launch viewing just north on the Space Coast.", "maps_query": "Kennedy Space Center Visitor Complex, FL" },
+        { "name": "Cocoa Beach Pier", "category": "Beach", "blurb": "The classic pier, surf, and beach scene minutes from base.", "maps_query": "Cocoa Beach Pier, FL" },
+        { "name": "Brevard Zoo (Viera)", "category": "Family", "blurb": "A well-regarded zoo with a kayaking experience inland.", "maps_query": "Brevard Zoo, Melbourne FL" },
+        { "name": "Orlando theme parks", "category": "Day trip", "blurb": "Disney, Universal, and more about an hour west.", "maps_query": "Walt Disney World, Orlando FL" }
+      ]
+    }
+  ]
+}

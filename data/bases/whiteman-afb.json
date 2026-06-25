@@ -1,0 +1,201 @@
+{
+  "slug": "whiteman-afb",
+  "schema_version": "0.1",
+  "name": "Whiteman AFB",
+  "short_name": "Whiteman",
+  "branch": "U.S. Air Force",
+  "states": ["MO"],
+  "tagline": "The only operational home of the B-2 Spirit stealth bomber, in rural west-central Missouri.",
+  "coords": { "lat": 38.73, "lng": -93.55, "label": "Knob Noster, MO" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force stealth-bomber base (Knob Noster, west-central MO; Central time). CONUS full template (BAH MHA MO162 Whiteman AFB; RentCast/SchoolDigger work). 509th Bomb Wing flies the B-2 Spirit; the only operational B-2 base. Medical: 509th Medical Group clinic. Facts verified from official sources (whiteman.af.mil, 509 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Missouri is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 65336 (Knob Noster).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Knob Noster, MO (west-central Missouri, near Warrensburg/Sedalia)",
+        "Major unit": "509th Bomb Wing",
+        "Aircraft": "B-2 Spirit stealth bomber",
+        "Distinction": "The only operational B-2 base in the world",
+        "Setting": "Rural west-central Missouri"
+      },
+      "source": { "label": "Whiteman AFB (official)", "url": "https://www.whiteman.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Whiteman Air Force Base is the only operational home of the B-2 Spirit stealth bomber, flown by the 509th Bomb Wing. It's a high-profile strategic mission carried out from a quiet, rural setting.",
+        "In west-central Missouri near Knob Noster and Warrensburg, the base offers a small-town, affordable lifestyle, with Kansas City and Columbia within driving distance for bigger-city needs."
+      ],
+      "source": { "label": "Whiteman AFB (official)", "url": "https://www.whiteman.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "whiteman_decision",
+      "title": "Quiet, Affordable Rural Missouri Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Whiteman is rural and inexpensive. The main choice is on-base housing versus the nearby small towns, with Kansas City a drive away for big-city extras.",
+        "intro": [
+          "West-central Missouri's cost of living is low, so BAH stretches well, but the area is rural with limited local amenities. On-base housing is popular; many also live in the nearby towns.",
+          "Where you live mostly comes down to commute and schools across Knob Noster, Warrensburg, and Sedalia."
+        ],
+        "recommendations": [
+          { "who": "On-base convenience", "advice": "On-base housing keeps the commute short and is a popular choice given the rural setting." },
+          { "who": "Closest town", "advice": "Knob Noster borders the base; Warrensburg (home of the university) is larger and family-friendly nearby." },
+          { "who": "More amenities", "advice": "Sedalia and, farther out, Kansas City and Columbia offer bigger shopping and dining." },
+          { "who": "Stretch your budget", "advice": "The area is very affordable, so BAH tends to go a long way and many families buy." }
+        ]
+      },
+      "source": { "label": "Whiteman AFB (official)", "url": "https://www.whiteman.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Whiteman AFB site before you go."
+      ],
+      "source": { "label": "Whiteman AFB (official)", "url": "https://www.whiteman.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Whiteman AFB has privatized on-base family housing across several neighborhoods, popular given the rural location.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Whiteman AFB (official)", "url": "https://www.whiteman.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MO162",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MO162 (Whiteman AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "65336", "label": "Knob Noster, MO" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Knob Noster School District serves the area nearest the base, with Warrensburg and other nearby districts depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Knob Noster School District (official)", "url": "https://www.knobnoster.k12.mo.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MO", "city": "Knob Noster" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "509th Medical Group (Whiteman AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via regional network hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Whiteman AFB / 509th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Whiteman" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Whiteman AFB Commissary (DeCA)",
+        "Exchange": "Whiteman AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. At rural Whiteman many families take on-base housing, but the very affordable local market can make buying attractive."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer on-base housing for the short commute and community.",
+          "You'd rather not own in a small, rural market.",
+          "Your BAH comfortably covers rent if you go off base."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The very affordable market fits your budget for a home you like.",
+          "You're comfortable with a small resale market and have found a place you trust."
+        ],
+        "bottom_line": "There is no universal right answer. The area is inexpensive, so BAH stretches and buying can pencil out, but the small, rural market affects resale. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is popular here; get on the list early and get the office's read on Knob Noster and Warrensburg before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Missouri vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Knob Noster or Warrensburg) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 509th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Whiteman known for?", "a": "It's the only operational home of the B-2 Spirit stealth bomber, flown by the 509th Bomb Wing." },
+        { "q": "Where do families live?", "a": "On-base housing is popular given the rural setting; off base, Knob Noster is closest and Warrensburg is a larger town nearby." },
+        { "q": "Is it remote?", "a": "It's rural, so local amenities are limited, but Sedalia, Kansas City, and Columbia are within driving distance. The cost of living is low." },
+        { "q": "What is the BAH area?", "a": "Whiteman is MHA MO162. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Knob Noster State Park", "category": "Outdoors", "blurb": "Trails, lakes, and camping right next to the base.", "maps_query": "Knob Noster State Park, MO" },
+        { "name": "Warrensburg (UCM)", "category": "In town", "blurb": "A college town with dining and events at the University of Central Missouri.", "maps_query": "Warrensburg, MO" },
+        { "name": "Missouri State Fair (Sedalia)", "category": "Annual event", "blurb": "The state fair each summer in nearby Sedalia.", "maps_query": "Missouri State Fairgrounds, Sedalia MO" },
+        { "name": "Kansas City", "category": "Day trip", "blurb": "Barbecue, sports, and big-city amenities about an hour-plus west.", "maps_query": "Kansas City, MO" }
+      ]
+    }
+  ]
+}
