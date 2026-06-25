@@ -86,30 +86,7 @@
       "data": {
         "mha": "VA298",
         "year": 2026,
-        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/",
-        "rates": {
-          "E-1": { "w": 2229, "wo": 1707 },
-          "E-2": { "w": 2229, "wo": 1707 },
-          "E-3": { "w": 2229, "wo": 1707 },
-          "E-4": { "w": 2229, "wo": 1707 },
-          "E-5": { "w": 2430, "wo": 1908 },
-          "E-6": { "w": 2559, "wo": 2043 },
-          "E-7": { "w": 2604, "wo": 2235 },
-          "E-8": { "w": 2661, "wo": 2463 },
-          "E-9": { "w": 2796, "wo": 2487 },
-          "W-1": { "w": 2574, "wo": 2166 },
-          "W-2": { "w": 2628, "wo": 2460 },
-          "W-3": { "w": 2697, "wo": 2496 },
-          "W-4": { "w": 2832, "wo": 2562 },
-          "W-5": { "w": 3000, "wo": 2616 },
-          "O-1": { "w": 2454, "wo": 2022 },
-          "O-2": { "w": 2556, "wo": 2367 },
-          "O-3": { "w": 2694, "wo": 2505 },
-          "O-4": { "w": 3054, "wo": 2601 },
-          "O-5": { "w": 3318, "wo": 2625 },
-          "O-6": { "w": 3342, "wo": 2673 },
-          "O-7": { "w": 3366, "wo": 2718 }
-        }
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
       },
       "source": { "label": "DoD 2026 BAH Rates, MHA VA298 (Norfolk/Portsmouth)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
       "verified": "2026-06-24"

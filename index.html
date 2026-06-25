@@ -257,7 +257,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.14.1";
+    const APP_VERSION = "0.15.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -582,12 +582,33 @@
       );
     }
 
-    // BAH calculator - verified DoD rates stored in the guide; official calculator linked.
+    // BAH calculator - rates come from the single source of truth (/api/bah, backed
+    // by the bah_rates table). Falls back to inline data.rates if the table is unreachable.
+    const BAH_FALLBACK_URL = "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/";
     function BAHCalc({ data }) {
-      const grades = Object.keys(data.rates || {});
-      const [grade, setGrade] = useState(grades[0] || "");
+      const [table, setTable] = useState(data.rates ? data : null);
+      const [state, setState] = useState(data.rates ? "ok" : (data.mha ? "loading" : "err"));
+      const [grade, setGrade] = useState("");
       const [deps, setDeps] = useState(true);
-      const r = data.rates && data.rates[grade] ? data.rates[grade][deps ? "w" : "wo"] : null;
+      useEffect(() => {
+        if (data.rates || !data.mha) return;
+        let live = true; setState("loading");
+        fetchJSON(apiUrl("/api/bah?mha=" + encodeURIComponent(data.mha) + "&year=" + (data.year || 2026)))
+          .then((d) => { if (live) { setTable(d); setState("ok"); } })
+          .catch(() => { if (live) setState("err"); });
+        return () => { live = false; };
+      }, [data.mha, data.year]);
+      useEffect(() => {
+        const gs = table ? Object.keys(table.rates || {}) : [];
+        if (gs.length && !gs.includes(grade)) setGrade(gs[0]);
+      }, [table]);
+      const calc = (table && table.calc_url) || data.calc_url || BAH_FALLBACK_URL;
+      if (state === "loading") return <div className="center" style={{ padding: "18px" }}><div className="spin" /></div>;
+      if (state === "err" || !table) return (
+        <div className="pending">BAH rates aren't available right now. <a className="srclink" href={calc} target="_blank" rel="noopener noreferrer">Check the official DoD calculator.</a></div>
+      );
+      const grades = Object.keys(table.rates || {});
+      const r = table.rates[grade] ? table.rates[grade][deps ? "w" : "wo"] : null;
       return (
         <div>
           <div className="bah-row">
@@ -603,9 +624,9 @@
             <span className="bah-amt">{r != null ? "$" + r.toLocaleString() : "-"}</span>
             <span className="bah-mo">/ month, tax-free</span>
           </div>
-          <div className="muted tiny">{grade}{deps ? ", with dependents" : ", without dependents"} &middot; MHA {data.mha} &middot; CY{data.year}</div>
+          <div className="muted tiny">{grade}{deps ? ", with dependents" : ", without dependents"} &middot; MHA {table.mha} &middot; CY{table.year}</div>
           <div className="bah-help">"With dependents" is the rate for a service member with a spouse or family; "without" is the single rate. The amount is set by your pay grade and the base's ZIP code, not by how many dependents you have.</div>
-          <a className="btn-quiet" style={{ marginTop: 12, display: "inline-flex" }} href={data.calc_url} target="_blank" rel="noopener noreferrer">Other ranks or verify on the official DoD calculator</a>
+          <a className="btn-quiet" style={{ marginTop: 12, display: "inline-flex" }} href={calc} target="_blank" rel="noopener noreferrer">Other ranks or verify on the official DoD calculator</a>
         </div>
       );
     }

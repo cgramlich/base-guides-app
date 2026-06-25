@@ -10,7 +10,7 @@
    - OSM map tiles -> cache-first, size-capped (passive offline maps).
    VERSION is kept in lockstep with APP_VERSION in index.html.
 */
-const VERSION = "0.14.1";                      // keep in lockstep with APP_VERSION
+const VERSION = "0.15.0";                      // keep in lockstep with APP_VERSION
 const SHELL_CACHE = "bg-shell-" + VERSION;
 const ASSET_CACHE = "bg-assets-" + VERSION;
 const DATA_CACHE  = "bg-data-v1";              // base guides; un-versioned so it
@@ -146,9 +146,10 @@ self.addEventListener("fetch", (event) => {
     return;
   }
 
-  // Per-base guide data (static files now, API later) -> keep last-good for offline.
+  // Per-base guide data + BAH rate tables -> keep last-good for offline.
   if (url.pathname.indexOf("/data/bases/") !== -1 ||
-      url.pathname.indexOf("/api/bases") !== -1) {
+      url.pathname.indexOf("/api/bases") !== -1 ||
+      url.pathname.indexOf("/api/bah") !== -1) {
     event.respondWith(dataNetworkFirst(req));
     return;
   }
