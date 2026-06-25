@@ -276,7 +276,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.17.1";
+    const APP_VERSION = "0.17.2";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -942,11 +942,14 @@
       if (!bases || !bases.length) return <div className="center">No bases yet.</div>;
 
       const ql = q.trim().toLowerCase();
+      const isJoint = (b) => {
+        const s = (b.branch || "").toLowerCase(), n = (b.name || "").toLowerCase();
+        return s.indexOf("/") !== -1 || n.indexOf("joint base") !== -1 || n.indexOf("jbsa") !== -1;
+      };
       const matchBranch = (b) => {
         if (branch === "all") return true;
-        const s = (b.branch || "").toLowerCase();
-        if (branch === "joint") return s.indexOf("/") !== -1;
-        return s.indexOf("/") === -1 && s.indexOf(branch) !== -1;
+        if (branch === "joint") return isJoint(b);
+        return (b.branch || "").toLowerCase().indexOf(branch) !== -1;  // a joint base shows under each of its services too
       };
       const matchLoc = (b) => loc === "all" || stateTokens(b.state).indexOf(loc) !== -1;
       const matchQ = (b) => {
