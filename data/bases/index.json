@@ -169,6 +169,16 @@
     { "slug": "coast-guard-sector-upper-mississippi", "name": "Coast Guard Sector Upper Mississippi River", "branch": "U.S. Coast Guard", "state": "MO", "ready": true },
     { "slug": "coast-guard-sector-jacksonville", "name": "Coast Guard Sector Jacksonville", "branch": "U.S. Coast Guard", "state": "FL", "ready": true },
     { "slug": "coast-guard-air-station-sitka", "name": "Coast Guard Air Station Sitka", "branch": "U.S. Coast Guard", "state": "AK", "region": "OCONUS", "ready": true },
-    { "slug": "coast-guard-sector-guam", "name": "Coast Guard Sector Guam", "branch": "U.S. Coast Guard", "state": "Guam", "region": "OCONUS", "ready": true }
+    { "slug": "coast-guard-sector-guam", "name": "Coast Guard Sector Guam", "branch": "U.S. Coast Guard", "state": "Guam", "region": "OCONUS", "ready": true },
+    { "slug": "usag-benelux-chievres", "name": "USAG Benelux (Chièvres / SHAPE)", "branch": "U.S. Army", "state": "Belgium", "region": "OCONUS", "ready": true },
+    { "slug": "nsa-souda-bay", "name": "NSA Souda Bay", "branch": "U.S. Navy", "state": "Greece", "region": "OCONUS", "ready": true },
+    { "slug": "naf-atsugi", "name": "Naval Air Facility Atsugi", "branch": "U.S. Navy", "state": "Japan", "region": "OCONUS", "ready": true },
+    { "slug": "torii-station", "name": "Torii Station (Okinawa)", "branch": "U.S. Army", "state": "Japan", "region": "OCONUS", "ready": true },
+    { "slug": "usag-ansbach", "name": "USAG Ansbach", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
+    { "slug": "usag-baumholder", "name": "USAG Baumholder", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
+    { "slug": "usag-garmisch", "name": "USAG Garmisch", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
+    { "slug": "usag-rheinland-pfalz", "name": "USAG Rheinland-Pfalz (Kaiserslautern)", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
+    { "slug": "lajes-field", "name": "Lajes Field (Azores)", "branch": "U.S. Air Force", "state": "Portugal", "region": "OCONUS", "ready": true },
+    { "slug": "naval-station-guantanamo-bay", "name": "Naval Station Guantanamo Bay", "branch": "U.S. Navy", "state": "Cuba", "region": "OCONUS", "ready": true }
   ]
 }

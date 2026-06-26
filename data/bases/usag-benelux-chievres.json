@@ -1,0 +1,157 @@
+{
+  "slug": "usag-benelux-chievres",
+  "schema_version": "0.1",
+  "name": "USAG Benelux (Chièvres / SHAPE)",
+  "short_name": "Chièvres / SHAPE",
+  "branch": "U.S. Army",
+  "states": ["Belgium"],
+  "region": "OCONUS",
+  "tagline": "The U.S. Army garrison supporting NATO's military headquarters (SHAPE) in southern Belgium.",
+  "coords": { "lat": 50.55, "lng": 3.83, "label": "Mons / Chièvres, Belgium" },
+  "tz": "Europe/Brussels",
+  "last_full_review": "2026-06-25",
+  "_note": "True OCONUS (Belgium). OHA housing, DoDEA Europe schools (SHAPE International / DoDEA SHAPE schools), command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy. USAG Benelux supports SHAPE (Supreme Headquarters Allied Powers Europe) near Mons + Chièvres Air Base; a joint/NATO multinational community. Medical: SHAPE Healthcare Facility / Brussels clinic + Landstuhl for higher care. Facts verified from official sources (home.army.mil/benelux, TRICARE, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx); exact school names (DoDEA SHAPE community).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (joint/NATO community)",
+        "Location": "Near Mons, Belgium (Chièvres Air Base + SHAPE)",
+        "Supports": "SHAPE — Supreme Headquarters Allied Powers Europe (NATO's military HQ)",
+        "Garrison": "U.S. Army Garrison Benelux",
+        "Tour type": "Accompanied (command-sponsored) for most",
+        "Setting": "Multinational NATO community in southern Belgium"
+      },
+      "source": { "label": "USAG Benelux (official)", "url": "https://home.army.mil/benelux/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "U.S. Army Garrison Benelux supports the American presence at SHAPE, the Supreme Headquarters Allied Powers Europe, NATO's strategic military headquarters near Mons, along with nearby Chièvres Air Base and sites in Brussels and the Netherlands.",
+        "It's a uniquely multinational, joint community in southern Belgium, central to the U.S.-NATO alliance, with the rest of Europe right at hand."
+      ],
+      "source": { "label": "USAG Benelux (official)", "url": "https://home.army.mil/benelux/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "benelux_decision",
+      "title": "A NATO Tour: On-Post vs. Living in a Belgian Village",
+      "type": "killer",
+      "data": {
+        "subtitle": "A SHAPE tour is a sought-after, international assignment. The main choice is on-post housing versus renting on the Belgian economy with the Overseas Housing Allowance (OHA).",
+        "intro": [
+          "Most families come command-sponsored and choose between on-post housing and renting on the economy with OHA. The SHAPE community is multinational, with American, NATO, and Belgian neighbors.",
+          "On post keeps you close to schools and services; living on the economy in the surrounding villages offers an authentic Belgian experience, balanced against a local lease and the languages (French/Dutch)."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-post housing at SHAPE keeps you near the DoDEA schools and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting in the villages around Mons/Chièvres offers the real Belgian experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-post housing and must approve economy rentals, and helps with leases and OHA, so start there." },
+          { "who": "Embrace the location", "advice": "Brussels, Paris, Amsterdam, and much of Europe are within easy reach by train or car." }
+        ]
+      },
+      "source": { "label": "USAG Benelux (official)", "url": "https://home.army.mil/benelux/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and NATO/host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements for overseas/NATO installations can be stricter and change with force-protection levels, so confirm the current details on the official USAG Benelux site before you go."
+      ],
+      "source": { "label": "USAG Benelux (official)", "url": "https://home.army.mil/benelux/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Post & OHA)",
+      "type": "prose",
+      "data": [
+        "The SHAPE community has on-post family housing, and many families instead live on the Belgian economy in the surrounding area, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-post housing and must approve economy rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "USAG Benelux (official)", "url": "https://home.army.mil/benelux/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools in the SHAPE community, serving students from elementary through high school. International and host-nation school options also exist.",
+        "Confirm current schools, boundaries, and registration through DoDEA Europe and the garrison, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "SHAPE Healthcare Facility / U.S. Army Health Clinic Benelux",
+        "Care": "Outpatient primary and specialty care in the community; inpatient and complex care via Landstuhl Regional Medical Center and host-nation hospitals",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "U.S. Army Health Clinic Benelux (TRICARE)", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "SHAPE Commissary (DeCA)",
+        "Exchange": "SHAPE Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Belgium has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-post housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your USAREUR/SOFA driver's license, register or ship your vehicle, and complete SOFA documentation. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA SHAPE schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the SHAPE clinic, with Landstuhl and host-nation providers for higher-level care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH here?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-post housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "What is SHAPE?", "a": "SHAPE is the Supreme Headquarters Allied Powers Europe, NATO's strategic military headquarters near Mons, Belgium. USAG Benelux supports the U.S. personnel there." },
+        { "q": "Where do families live?", "a": "Either in on-post SHAPE housing or on the Belgian economy in the surrounding area using OHA." },
+        { "q": "Is it a good tour for travel?", "a": "Excellent. Brussels, Paris, Amsterdam, and much of Europe are within easy reach by train or car." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Mons (Grand-Place)", "category": "In town", "blurb": "A historic Belgian city with a UNESCO-listed belfry and lively square.", "maps_query": "Grand-Place, Mons Belgium" },
+        { "name": "Brussels", "category": "Day trip", "blurb": "Belgium's capital, with the Grand-Place, museums, and EU institutions.", "maps_query": "Grand-Place, Brussels Belgium" },
+        { "name": "Bruges", "category": "Day trip", "blurb": "A storybook medieval city of canals and chocolate.", "maps_query": "Bruges, Belgium" },
+        { "name": "Paris", "category": "Day trip", "blurb": "Reachable by high-speed train for a weekend in France.", "maps_query": "Paris, France" }
+      ]
+    }
+  ]
+}

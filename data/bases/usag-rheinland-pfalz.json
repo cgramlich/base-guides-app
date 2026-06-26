@@ -1,0 +1,157 @@
+{
+  "slug": "usag-rheinland-pfalz",
+  "schema_version": "0.1",
+  "name": "USAG Rheinland-Pfalz (Kaiserslautern)",
+  "short_name": "Kaiserslautern (KMC)",
+  "branch": "U.S. Army",
+  "states": ["Germany"],
+  "region": "OCONUS",
+  "tagline": "The Army side of the Kaiserslautern Military Community, the largest U.S. military community outside the United States.",
+  "coords": { "lat": 49.44, "lng": 7.77, "label": "Kaiserslautern, Germany" },
+  "tz": "Europe/Berlin",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Germany). OHA housing, DoDEA Europe schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy. USAG Rheinland-Pfalz runs the Army side of the Kaiserslautern Military Community (KMC) — the largest US military community OUTSIDE the US — incl. Kleber, Panzer, Daenner, Pulaski barracks, Sembach, and Landstuhl Regional Medical Center (the biggest US hospital overseas). Pairs with Ramstein AB (AF side; already in app). Medical: Landstuhl Regional Medical Center. DoDEA Europe (Kaiserslautern district: Landstuhl, Ramstein, Kaiserslautern, Sembach, Vogelweh). Facts verified from official sources (home.army.mil/rheinland-pfalz, TRICARE/Landstuhl, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (Army side of a large joint community)",
+        "Location": "Kaiserslautern, Rhineland-Palatinate, Germany",
+        "Role": "Army garrison anchoring the Kaiserslautern Military Community (KMC)",
+        "Distinction": "The largest U.S. military community outside the United States",
+        "Includes": "Kleber, Panzer, Daenner, Pulaski barracks, Sembach, and Landstuhl Regional Medical Center",
+        "Note": "Pairs with Ramstein Air Base (the Air Force side)"
+      },
+      "source": { "label": "USAG Rheinland-Pfalz (official)", "url": "https://home.army.mil/rheinland-pfalz/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "U.S. Army Garrison Rheinland-Pfalz runs the Army side of the Kaiserslautern Military Community (KMC), the largest U.S. military community outside the United States. It spans several kasernes plus Sembach and is home to Landstuhl Regional Medical Center, the biggest American hospital overseas and the key evacuation hub for the region.",
+        "Together with neighboring Ramstein Air Base, it forms a massive, well-resourced American community in western Germany, with everything families need and the rest of Europe close by."
+      ],
+      "source": { "label": "USAG Rheinland-Pfalz (official)", "url": "https://home.army.mil/rheinland-pfalz/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "kmc_decision",
+      "title": "A Big German Community: On-Post vs. the Economy",
+      "type": "killer",
+      "data": {
+        "subtitle": "KMC is huge and well-resourced, so you have lots of options. The main choice is on-post housing versus renting 'on the economy' in a German town with OHA.",
+        "intro": [
+          "Because KMC is so large, there's a deep menu of housing, schools, and services. Most families come command-sponsored and choose between on-post housing and renting on the German economy with the Overseas Housing Allowance (OHA).",
+          "On post is the simplest, most American option; living on the economy in the surrounding towns and villages offers a richer German experience and often more space, balanced against a German lease and the language."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-post housing across the KMC kasernes keeps you near schools and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting in the Kaiserslautern-area towns and villages offers the real German experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-post housing and must approve economy rentals, and helps with leases and OHA, so start there." },
+          { "who": "Lean on KMC", "advice": "As the largest overseas community, KMC has extensive commissaries, exchanges, schools, and medical (Landstuhl); few overseas tours are this well-resourced." }
+        ]
+      },
+      "source": { "label": "USAG Rheinland-Pfalz (official)", "url": "https://home.army.mil/rheinland-pfalz/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements can be stricter and change with force-protection levels, so confirm the current details on the official USAG Rheinland-Pfalz site before you go."
+      ],
+      "source": { "label": "USAG Rheinland-Pfalz (official)", "url": "https://home.army.mil/rheinland-pfalz/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Post & OHA)",
+      "type": "prose",
+      "data": [
+        "KMC has on-post family housing across its kasernes, and many families rent on the German economy in the Kaiserslautern area, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-post housing and must approve economy rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "USAG Rheinland-Pfalz (official)", "url": "https://home.army.mil/rheinland-pfalz/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools across the Kaiserslautern district (including Landstuhl, Ramstein, Kaiserslautern, Sembach, and Vogelweh), serving students from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Europe and the garrison, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "Landstuhl Regional Medical Center",
+        "Care": "The largest U.S. military hospital overseas, with full inpatient, specialty, and emergency care, plus the region's medical-evacuation hub",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Landstuhl Regional Medical Center (official)", "url": "https://landstuhl.tricare.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Kaiserslautern-area commissaries (DeCA)",
+        "Exchange": "Kaiserslautern Military Community Center (KMCC) Exchange (AAFES) — one of the largest overseas"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Germany has extra steps beyond a stateside move. KMC is large and well-resourced, which helps. Get these sorted early."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-post housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your USAREUR driver's license, register or ship your vehicle, and complete SOFA documentation. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Kaiserslautern-district schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program; Landstuhl Regional Medical Center anchors care for the whole region." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Kaiserslautern?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-post housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "What is KMC?", "a": "The Kaiserslautern Military Community, the largest U.S. military community outside the United States. USAG Rheinland-Pfalz runs the Army side; Ramstein Air Base is the Air Force side." },
+        { "q": "Where do families live?", "a": "Either in on-post housing across the KMC kasernes or on the German economy in the Kaiserslautern area using OHA." },
+        { "q": "What about medical?", "a": "Landstuhl Regional Medical Center, the largest U.S. military hospital overseas, anchors care for the region." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Kaiserslautern old town", "category": "In town", "blurb": "A lively German city with markets, dining, and football (1. FC Kaiserslautern).", "maps_query": "Kaiserslautern, Germany" },
+        { "name": "Mosel & Rhine wine regions", "category": "Outdoors", "blurb": "Riverside vineyards, castles, and villages within driving distance.", "maps_query": "Mosel Valley, Germany" },
+        { "name": "Trier / Luxembourg / France", "category": "Day trip", "blurb": "Germany's oldest city, plus Luxembourg and France close to the west.", "maps_query": "Trier, Germany" },
+        { "name": "Heidelberg", "category": "Day trip", "blurb": "A famously beautiful castle-and-river city to the east.", "maps_query": "Heidelberg, Germany" }
+      ]
+    }
+  ]
+}

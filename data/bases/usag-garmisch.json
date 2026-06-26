@@ -1,0 +1,157 @@
+{
+  "slug": "usag-garmisch",
+  "schema_version": "0.1",
+  "name": "USAG Garmisch",
+  "short_name": "Garmisch",
+  "branch": "U.S. Army",
+  "states": ["Germany"],
+  "region": "OCONUS",
+  "tagline": "A small Army community in the Bavarian Alps, home of the Marshall Center and the military's alpine resort.",
+  "coords": { "lat": 47.49, "lng": 11.10, "label": "Garmisch-Partenkirchen, Germany" },
+  "tz": "Europe/Berlin",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Germany). OHA housing, DoDEA Europe schools (small Garmisch community), command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy. USAG Garmisch hosts the George C. Marshall European Center for Security Studies + the Edelweiss Lodge and Resort (AFRC). Small, scenic alpine community; a smaller staff tour. Medical: small Army clinic + Landstuhl/host-nation for higher care. Facts verified from official sources (home.army.mil/bavaria (Garmisch) / marshallcenter.org, TRICARE, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx); HS arrangement for older students.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Garmisch-Partenkirchen, Bavaria, Germany (the Alps)",
+        "Home of": "The George C. Marshall European Center for Security Studies",
+        "Also": "The Edelweiss Lodge and Resort (Armed Forces Recreation Center)",
+        "Tour type": "Accompanied (command-sponsored); a smaller staff community",
+        "Setting": "A storybook alpine town beneath Germany's highest peak"
+      },
+      "source": { "label": "George C. Marshall Center (official)", "url": "https://www.marshallcenter.org/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "U.S. Army Garrison Garmisch supports the George C. Marshall European Center for Security Studies, a renowned U.S.-German institution, and the Edelweiss Lodge and Resort, the military's alpine vacation destination.",
+        "It's a small community in Garmisch-Partenkirchen in the Bavarian Alps, beneath the Zugspitze (Germany's highest peak), one of the most scenic assignments in the Army."
+      ],
+      "source": { "label": "George C. Marshall Center (official)", "url": "https://www.marshallcenter.org/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "garmisch_decision",
+      "title": "A Small Alpine Tour: Scenic and Tight-Knit",
+      "type": "killer",
+      "data": {
+        "subtitle": "Garmisch is small and stunning. Because the community is little, most families rent on the German economy with OHA, and the setting is the whole point.",
+        "intro": [
+          "This is a small, command-sponsored staff tour. With limited on-post housing, most families rent on the German economy in and around Garmisch, receiving the Overseas Housing Allowance (OHA).",
+          "It's a tight-knit community in a resort alpine town, balanced against a small market and a smaller American footprint than the big hubs."
+        ],
+        "recommendations": [
+          { "who": "Living on the economy", "advice": "Most families rent in the Garmisch area with OHA; the housing office helps with the local market and leases." },
+          { "who": "Use the housing office", "advice": "Start there for any on-post options, economy approvals, and OHA." },
+          { "who": "Plan for a small community", "advice": "The American footprint is small; lean into the alpine lifestyle and the local town." },
+          { "who": "Embrace the Alps", "advice": "Skiing, hiking, and the Zugspitze are at your doorstep, with Munich, Austria, and Italy close." }
+        ]
+      },
+      "source": { "label": "George C. Marshall Center (official)", "url": "https://www.marshallcenter.org/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered.",
+        "Requirements can change with force-protection levels, so confirm the current details with the garrison/Marshall Center before you go."
+      ],
+      "source": { "label": "George C. Marshall Center (official)", "url": "https://www.marshallcenter.org/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (OHA)",
+      "type": "prose",
+      "data": [
+        "On-post housing is limited given the small community, so most families rent on the German economy in and around Garmisch and receive the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office helps with the local market, leases, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "George C. Marshall Center (official)", "url": "https://www.marshallcenter.org/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend the Department of Defense Education Activity (DoDEA) school in the Garmisch community (elementary/middle grades). Arrangements for older students and confirmation of current grades are handled through DoDEA Europe and the garrison.",
+        "Confirm current school details and registration through DoDEA Europe, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Garmisch Army Health Clinic (small community clinic)",
+        "Care": "Outpatient primary care in the community; specialty, inpatient, and complex care via host-nation hospitals and Landstuhl Regional Medical Center",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Small commissary/shoppette in the Garmisch community (DeCA/AAFES; confirm current options)",
+        "Exchange": "Garmisch Exchange (AAFES / PX)"
+      },
+      "source": { "label": "Coast Guard/AAFES — Exchange info", "url": "https://www.shopmyexchange.com/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Germany has extra steps, and a small alpine community adds its own logistics. Get these sorted early."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first; most families rent on the economy in Garmisch with OHA. Claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your USAREUR driver's license, register or ship your vehicle, and complete SOFA documentation. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Garmisch school early and confirm arrangements for older students; bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Garmisch clinic, with host-nation and Landstuhl care for specialty needs." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Garmisch?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or limited on-post housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "What is at Garmisch?", "a": "The George C. Marshall European Center for Security Studies and the Edelweiss Lodge and Resort (the military's alpine vacation center), in a small Army community in the Bavarian Alps." },
+        { "q": "Where do families live?", "a": "Mostly on the German economy in and around Garmisch using OHA, since on-post housing is limited." },
+        { "q": "What's the tour like?", "a": "Small, tight-knit, and spectacularly scenic, with skiing, hiking, and the Alps at your doorstep and Munich, Austria, and Italy close by." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Zugspitze", "category": "Outdoors", "blurb": "Germany's highest peak, reached by cog railway and cable car.", "maps_query": "Zugspitze, Germany" },
+        { "name": "Garmisch-Partenkirchen old town", "category": "In town", "blurb": "A classic Bavarian alpine town with painted houses and cafes.", "maps_query": "Garmisch-Partenkirchen, Germany" },
+        { "name": "Neuschwanstein Castle", "category": "Day trip", "blurb": "The fairy-tale castle, a drive west.", "maps_query": "Neuschwanstein Castle, Germany" },
+        { "name": "Munich & the Alps", "category": "Day trip", "blurb": "Munich is about an hour-plus north; Austria and Italy are close too.", "maps_query": "Munich, Germany" }
+      ]
+    }
+  ]
+}

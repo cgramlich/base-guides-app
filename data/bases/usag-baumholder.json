@@ -1,0 +1,157 @@
+{
+  "slug": "usag-baumholder",
+  "schema_version": "0.1",
+  "name": "USAG Baumholder",
+  "short_name": "Baumholder",
+  "branch": "U.S. Army",
+  "states": ["Germany"],
+  "region": "OCONUS",
+  "tagline": "A close-knit Army community in the hills of western Germany, near Kaiserslautern.",
+  "coords": { "lat": 49.62, "lng": 7.34, "label": "Baumholder, Germany" },
+  "tz": "Europe/Berlin",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Germany). OHA housing, DoDEA Europe schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy. USAG Baumholder (Smith Barracks) is an Army community in Rhineland-Palatinate (part of the USAG Rheinland-Pfalz footprint), ~30 mi from Kaiserslautern; sustainment + maneuver units and a major training area. Medical: Baumholder Army Health Clinic + Landstuhl. Facts verified from official sources (home.army.mil/rheinland-pfalz / Baumholder, TRICARE, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx); unit lineup shifts over time.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Baumholder, Rhineland-Palatinate, Germany (~30 mi from Kaiserslautern)",
+        "Role": "Army community with sustainment and maneuver units and a major training area",
+        "Part of": "The USAG Rheinland-Pfalz footprint",
+        "Tour type": "Accompanied (command-sponsored) for most",
+        "Setting": "Hilly western German countryside; close-knit community"
+      },
+      "source": { "label": "USAG Rheinland-Pfalz / Baumholder (official)", "url": "https://home.army.mil/rheinland-pfalz/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "U.S. Army Garrison Baumholder is a long-standing Army community in the hills of western Germany, supporting sustainment and maneuver units and a large training area. It's part of the broader USAG Rheinland-Pfalz footprint near Kaiserslautern.",
+        "Smaller and more rural than the big German hubs, Baumholder is known for a close-knit, family-focused community, with the rest of Germany and Europe within reach."
+      ],
+      "source": { "label": "USAG Rheinland-Pfalz / Baumholder (official)", "url": "https://home.army.mil/rheinland-pfalz/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "baumholder_decision",
+      "title": "A Close-Knit German Tour: On-Post vs. a Village",
+      "type": "killer",
+      "data": {
+        "subtitle": "Baumholder is smaller and more rural than the big hubs, with a tight community. The main choice is on-post housing versus renting in a nearby German village with OHA.",
+        "intro": [
+          "Most families come command-sponsored and choose between on-post housing and renting on the German economy with the Overseas Housing Allowance (OHA).",
+          "Because it's more rural, on-post housing is popular and the community is close-knit; living on the economy in the surrounding villages offers a deeper German experience."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-post housing at Baumholder keeps you close to schools and services, popular given the rural setting." },
+          { "who": "Full immersion", "advice": "Renting in the nearby villages offers the real German experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-post housing and must approve economy rentals, and helps with leases and OHA, so start there." },
+          { "who": "Plan for the setting", "advice": "It's smaller and more rural than Kaiserslautern; the bigger KMC amenities are about 30 miles away." }
+        ]
+      },
+      "source": { "label": "USAG Rheinland-Pfalz / Baumholder (official)", "url": "https://home.army.mil/rheinland-pfalz/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements can be stricter and change with force-protection levels, so confirm the current details on the official garrison site before you go."
+      ],
+      "source": { "label": "USAG Rheinland-Pfalz / Baumholder (official)", "url": "https://home.army.mil/rheinland-pfalz/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Post & OHA)",
+      "type": "prose",
+      "data": [
+        "Baumholder has on-post family housing, popular given the rural location, and families may also rent on the German economy in the surrounding villages with the Overseas Housing Allowance (OHA) instead of the stateside BAH.",
+        "The housing office assigns on-post housing and must approve economy rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "USAG Rheinland-Pfalz / Baumholder (official)", "url": "https://home.army.mil/rheinland-pfalz/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools in the Baumholder community, serving students from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Europe and the garrison, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Baumholder Army Health Clinic",
+        "Care": "Outpatient primary and some specialty care in the community; inpatient and complex care via Landstuhl Regional Medical Center and host-nation hospitals",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Baumholder Army Health Clinic (TRICARE)", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Baumholder Commissary (DeCA)",
+        "Exchange": "Baumholder Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Germany has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-post housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your USAREUR driver's license, register or ship your vehicle, and complete SOFA documentation. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Baumholder schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Baumholder clinic, with Landstuhl and host-nation providers for higher-level care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Baumholder?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-post housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "What is Baumholder like?", "a": "A smaller, more rural, close-knit Army community in western Germany, part of the USAG Rheinland-Pfalz footprint near Kaiserslautern." },
+        { "q": "Where do families live?", "a": "On-post housing is popular given the rural setting; families also rent in the surrounding villages with OHA." },
+        { "q": "What's nearby?", "a": "The larger Kaiserslautern community (KMC) is about 30 miles away, and the rest of Germany and Europe are within reach." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Kaiserslautern (KMC)", "category": "Day trip", "blurb": "The largest U.S. community overseas, with shopping and amenities ~30 miles away.", "maps_query": "Kaiserslautern, Germany" },
+        { "name": "Idar-Oberstein", "category": "In town", "blurb": "A nearby town famous for gemstones and a church built into a cliff.", "maps_query": "Idar-Oberstein, Germany" },
+        { "name": "Mosel & Rhine wine regions", "category": "Outdoors", "blurb": "Riverside vineyards and castles within driving distance.", "maps_query": "Mosel Valley, Germany" },
+        { "name": "Trier / Luxembourg", "category": "Day trip", "blurb": "Germany's oldest city and nearby Luxembourg to the west.", "maps_query": "Trier, Germany" }
+      ]
+    }
+  ]
+}

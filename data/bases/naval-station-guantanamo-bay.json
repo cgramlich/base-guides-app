@@ -1,0 +1,157 @@
+{
+  "slug": "naval-station-guantanamo-bay",
+  "schema_version": "0.1",
+  "name": "Naval Station Guantanamo Bay",
+  "short_name": "GTMO",
+  "branch": "U.S. Navy",
+  "states": ["Cuba"],
+  "region": "OCONUS",
+  "tagline": "The Navy's oldest overseas base, a self-contained island community on the southeastern tip of Cuba.",
+  "coords": { "lat": 19.91, "lng": -75.15, "label": "Guantanamo Bay, Cuba" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Cuba). Self-contained isolated overseas tour: you CANNOT live on the local economy (no access to Cuba), so ALL housing is on-base government housing -> OHA-economy choice does not apply here. No BAH/RentCast/SchoolDigger/rent-buy. DoDEA on base (W.T. Sampson Elementary/High School). Medical: U.S. Naval Hospital Guantanamo Bay; complex care via medevac (e.g., to Florida). Accompanied tour for many billets. Note: GTMO observes Eastern-equivalent time (no DST historically) - using America/New_York as approx. Facts verified from official sources (cnic.navy.mil NS Guantanamo Bay, Navy Medicine, DoDEA, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx); exact time-zone handling.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Guantanamo Bay, southeastern Cuba (Caribbean)",
+        "Distinction": "The Navy's oldest overseas base",
+        "Living": "A fully self-contained community; everyone lives in on-base government housing",
+        "Tour type": "Accompanied for many billets (a unique, isolated tour)",
+        "Note": "You cannot travel off base into Cuba; the base is reached by military flight"
+      },
+      "source": { "label": "NS Guantanamo Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnic_hq/installations/ns_guantanamo_bay.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Station Guantanamo Bay is the Navy's oldest overseas base, a strategically located, fully self-contained installation on the southeastern tip of Cuba. It supports Caribbean operations and a range of joint missions.",
+        "It's unlike any other tour: the base is isolated, reached by military flight, and you cannot travel off base into Cuba. Everything you need, housing, schools, medical, shopping, and recreation, is on the installation, which creates a famously tight-knit community."
+      ],
+      "source": { "label": "NS Guantanamo Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnic_hq/installations/ns_guantanamo_bay.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gtmo_decision",
+      "title": "A Self-Contained Island Tour: Everything Is On Base",
+      "type": "killer",
+      "data": {
+        "subtitle": "GTMO is one of a kind: there's no 'on base vs. off base' choice, because you live entirely on the installation. The adjustment is the isolation, which the community offsets.",
+        "intro": [
+          "Because you can't live on the local economy in Cuba, all families live in on-base government housing, and daily life happens entirely on the installation. There's no OHA-rental decision like other overseas tours.",
+          "The base has its own schools, hospital, commissary, exchange, and strong morale and recreation programs (beaches, boating, diving). The trade is real isolation: travel on and off is by military flight, and shopping is limited to what's on base."
+        ],
+        "recommendations": [
+          { "who": "Everyone: on-base housing", "advice": "All families live in government housing on the installation; the housing office assigns it on arrival." },
+          { "who": "Embrace the community", "advice": "The isolation makes GTMO tight-knit; lean into the schools, clubs, and recreation that anchor family life." },
+          { "who": "Plan for isolation", "advice": "Travel on/off base is by military flight; plan shipping, banking, and big purchases in advance." },
+          { "who": "Enjoy the Caribbean outdoors", "advice": "Beaches, boating, fishing, and diving are a highlight of the tour." }
+        ]
+      },
+      "source": { "label": "NS Guantanamo Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnic_hq/installations/ns_guantanamo_bay.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "GTMO is a secure, isolated installation reached by military flight; there is no public road access and no travel off base into Cuba. Visitors must be sponsored and cleared well in advance.",
+        "Access rules are strict and specific to GTMO, so coordinate everything through your command and confirm current requirements before you travel."
+      ],
+      "source": { "label": "NS Guantanamo Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnic_hq/installations/ns_guantanamo_bay.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "All families live in on-base government family housing, since living on the local economy is not possible at GTMO. Housing is assigned by the housing office based on rank and family size.",
+        "Because there is no economy-rental option, the usual OHA-versus-on-base decision doesn't apply here. Coordinate housing through your command and the housing office before you arrive."
+      ],
+      "source": { "label": "NS Guantanamo Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnic_hq/installations/ns_guantanamo_bay.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children attend the on-base Department of Defense Education Activity (DoDEA) school (W.T. Sampson Elementary and High School), serving the GTMO community from elementary through high school.",
+        "Confirm current details and registration through DoDEA and the command, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA (official)", "url": "https://www.dodea.edu/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Hospital": "U.S. Naval Hospital Guantanamo Bay",
+        "Care": "An on-base hospital with primary, specialty, and emergency care; complex cases are stabilized and medically evacuated off-island (typically to the U.S.)",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "U.S. Naval Hospital Guantanamo Bay (official)", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NS Guantanamo Bay Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Guantanamo Bay"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["A GTMO PCS is unlike any other: it's an isolated, fly-in-only tour where everything is on base. Coordinate closely with your command and plan ahead."],
+        "steps": [
+          { "title": "Confirm command sponsorship and travel", "text": "GTMO travel is by military flight and tightly coordinated; confirm command sponsorship, your flight, and entitlements well in advance." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, update DEERS, and get the required ID and logistics cards." },
+          { "title": "Get your housing assignment", "text": "All housing is on-base government housing; the housing office assigns it. There is no economy-rental option here." },
+          { "title": "Plan shipping and what to bring", "text": "Shopping is limited to what's on base; plan vehicle shipping and bring/order what your family needs early." },
+          { "title": "Enroll the kids in school", "text": "Register with the on-base DoDEA school (W.T. Sampson) and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program; the on-base Naval Hospital provides care, with medevac off-island for complex needs." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at GTMO?", "a": "No. GTMO is an overseas tour and everyone lives in on-base government housing, so the stateside BAH doesn't apply. Because you can't rent on the local economy in Cuba, the usual OHA-rental option doesn't apply here either; coordinate housing and allowances with finance and your command." },
+        { "q": "Can I leave the base into Cuba?", "a": "No. The base is self-contained and isolated; you cannot travel off base into Cuba, and travel on and off is by military flight." },
+        { "q": "Where do families live?", "a": "All families live in on-base government housing assigned by the housing office. Everything, schools, hospital, commissary, recreation, is on the installation." },
+        { "q": "What's the tour like?", "a": "Isolated but famously tight-knit, with Caribbean beaches, boating, and diving. The base provides everything; the adjustment is the isolation and limited shopping." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "On-Base & Around",
+      "type": "places_live",
+      "note": "GTMO is self-contained; these are on-base and area highlights. Live places via Google Places may be limited here.",
+      "picks": [
+        { "name": "GTMO beaches", "category": "Beach", "blurb": "On-base Caribbean beaches for swimming and snorkeling.", "maps_query": "Guantanamo Bay beaches" },
+        { "name": "Boating & diving", "category": "Outdoors", "blurb": "Marina, boating, and diving are popular morale activities on base.", "maps_query": "Guantanamo Bay marina" },
+        { "name": "Base recreation (MWR)", "category": "Family", "blurb": "Pools, clubs, a bowling alley, and family programs anchor community life.", "maps_query": "Guantanamo Bay MWR" },
+        { "name": "Caribbean scenery", "category": "Outdoors", "blurb": "Dry, cactus-dotted hills and turquoise water around the bay.", "maps_query": "Guantanamo Bay Cuba" }
+      ]
+    }
+  ]
+}

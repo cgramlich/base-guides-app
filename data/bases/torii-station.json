@@ -1,0 +1,157 @@
+{
+  "slug": "torii-station",
+  "schema_version": "0.1",
+  "name": "Torii Station (Okinawa)",
+  "short_name": "Torii Station",
+  "branch": "U.S. Army",
+  "states": ["Japan"],
+  "region": "OCONUS",
+  "tagline": "The U.S. Army's home on Okinawa, on the island's west coast.",
+  "coords": { "lat": 26.36, "lng": 127.74, "label": "Yomitan, Okinawa, Japan" },
+  "tz": "Asia/Tokyo",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Okinawa, Japan). OHA housing, DoDEA Pacific (Okinawa) schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy. Torii Station = US Army Okinawa (10th Support Group + Army special operations elements), Yomitan, west-central Okinawa. Joins the large Okinawa joint community (Kadena AF + Camp Foster/Butler Marines already in app). Medical: Army clinic + U.S. Naval Hospital Okinawa (Camp Foster). DoDEA Pacific Okinawa schools (Kadena/Kubasaki districts). Facts verified from official sources (home.army.mil/torii / army.mil, TRICARE, DoDEA Pacific, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Yomitan, Okinawa, Japan (west-central coast)",
+        "Role": "U.S. Army's installation on Okinawa",
+        "Major tenants": "10th Support Group and Army special operations elements",
+        "Tour type": "Accompanied (command-sponsored) for most",
+        "Setting": "Part of the large Okinawa joint military community"
+      },
+      "source": { "label": "Torii Station / U.S. Army Okinawa (official)", "url": "https://www.army.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Torii Station is the U.S. Army's home on Okinawa, hosting the 10th Support Group and Army special operations elements on the island's west-central coast at Yomitan.",
+        "It's part of Okinawa's large joint military community, alongside Kadena Air Base and the Marine Corps' Camp Butler installations, on a subtropical island known for beaches and reefs."
+      ],
+      "source": { "label": "Torii Station / U.S. Army Okinawa (official)", "url": "https://www.army.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "torii_decision",
+      "title": "An Okinawa Tour: On-Base vs. Living on the Economy",
+      "type": "killer",
+      "data": {
+        "subtitle": "Okinawa is a beloved island tour with a big U.S. community. The main choice is on-base housing versus renting on the Japanese economy with OHA.",
+        "intro": [
+          "Most families come command-sponsored and choose between on-base housing (across the island's installations) and renting on the Okinawan economy with the Overseas Housing Allowance (OHA).",
+          "On base is the simplest option; living on the economy means deeper immersion in Okinawan life, balanced against a Japanese lease, the language, and driving on the left."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-base housing (at Torii or across the Okinawa joint community) keeps you near schools and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting on the economy offers a deeper Okinawan experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-base housing and must approve economy rentals, and helps with leases and OHA, so start there." },
+          { "who": "Embrace the island", "advice": "Beaches, reefs, diving, and a rich culture are the upside; plan for occasional typhoons." }
+        ]
+      },
+      "source": { "label": "Torii Station / U.S. Army Okinawa (official)", "url": "https://www.army.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements can be stricter and change with force-protection levels, so confirm the current details on the official site before you go."
+      ],
+      "source": { "label": "Torii Station / U.S. Army Okinawa (official)", "url": "https://www.army.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base & OHA)",
+      "type": "prose",
+      "data": [
+        "On-base family housing is available across Okinawa's installations, and many families rent on the Japanese economy, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-base housing and must approve economy rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "Torii Station / U.S. Army Okinawa (official)", "url": "https://www.army.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools on Okinawa, serving the island's military community from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Pacific and the command, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Army clinic at Torii Station + U.S. Naval Hospital Okinawa (Camp Foster)",
+        "Care": "Outpatient care on the island plus the full U.S. Naval Hospital Okinawa; host-nation facilities for additional care",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "U.S. Naval Hospital Okinawa (TRICARE)", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Commissaries across the Okinawa joint community (DeCA)",
+        "Exchange": "AAFES / Army & Air Force Exchange and Marine/Navy exchanges on Okinawa"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Okinawa has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-base housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your SOFA driver's license, prepare to drive on the left, and buy or ship a vehicle. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Okinawa schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the island clinics and U.S. Naval Hospital Okinawa." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH on Okinawa?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-base housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "What is Torii Station?", "a": "It's the U.S. Army's installation on Okinawa (10th Support Group and Army special operations elements), part of the island's large joint military community." },
+        { "q": "Where do families live?", "a": "Either in on-base housing across the island or on the Okinawan economy using OHA." },
+        { "q": "What's the island like?", "a": "Subtropical with beaches, reefs, and a rich Okinawan culture, plus a big U.S. community; plan for occasional typhoons." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Okinawa beaches & reefs", "category": "Beach", "blurb": "Clear water, snorkeling, and diving around the island.", "maps_query": "Okinawa beaches, Japan" },
+        { "name": "Churaumi Aquarium", "category": "Family", "blurb": "One of the world's largest aquariums, in northern Okinawa.", "maps_query": "Okinawa Churaumi Aquarium, Japan" },
+        { "name": "Shurijo Castle (Naha)", "category": "History", "blurb": "A historic Ryukyu Kingdom castle site in the capital.", "maps_query": "Shuri Castle, Naha Okinawa" },
+        { "name": "American Village (Chatan)", "category": "Food & shopping", "blurb": "A popular seaside dining and shopping district.", "maps_query": "American Village, Chatan Okinawa" }
+      ]
+    }
+  ]
+}

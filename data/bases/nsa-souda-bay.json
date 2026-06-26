@@ -1,0 +1,157 @@
+{
+  "slug": "nsa-souda-bay",
+  "schema_version": "0.1",
+  "name": "NSA Souda Bay",
+  "short_name": "Souda Bay",
+  "branch": "U.S. Navy",
+  "states": ["Greece"],
+  "region": "OCONUS",
+  "tagline": "The Navy's strategic support base in the eastern Mediterranean, on the Greek island of Crete.",
+  "coords": { "lat": 35.53, "lng": 24.15, "label": "Souda Bay, Crete, Greece" },
+  "tz": "Europe/Athens",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Greece, Crete). OHA housing, DoDEA Europe schools (small Souda Bay community), command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy. Naval Support Activity Souda Bay supports US/NATO operations in the eastern Med (a Greek base hosting US forces). Small, sought-after island tour. Medical: branch clinic; complex care via Landstuhl/Naples or host-nation. Facts verified from official sources (cnic.navy.mil NSA Souda Bay, TRICARE, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx); exact school details (small DoDEA community).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy (on a Greek/NATO base)",
+        "Location": "Souda Bay, Crete, Greece (eastern Mediterranean)",
+        "Role": "Strategic support and logistics hub for U.S. and NATO forces in the Med",
+        "Tour type": "Accompanied (command-sponsored); a smaller, sought-after community",
+        "Setting": "A Greek island in the Mediterranean",
+        "Note": "A U.S. presence on a host-nation (Hellenic) base"
+      },
+      "source": { "label": "NSA Souda Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnreurafcent/installations/nsa_souda_bay.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Support Activity Souda Bay is the Navy's key support and logistics hub in the eastern Mediterranean, enabling U.S. and NATO operations from a deep-water port and airfield on the Greek island of Crete.",
+        "It's a smaller, tight-knit, and highly sought-after island tour, with Greek culture, beaches, and ancient history all around."
+      ],
+      "source": { "label": "NSA Souda Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnreurafcent/installations/nsa_souda_bay.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "souda_decision",
+      "title": "An Island Tour in Greece: Living on the Economy",
+      "type": "killer",
+      "data": {
+        "subtitle": "Souda Bay is a small community, so most families rent on the local Greek economy with OHA. The experience is about island living and immersion.",
+        "intro": [
+          "Most families come command-sponsored and, because on-base housing is limited, typically rent on the Greek economy near Chania, receiving the Overseas Housing Allowance (OHA).",
+          "It's a smaller community than the big European hubs, which means a close-knit feel and a deep dive into Greek island life, balanced against a local lease and the language."
+        ],
+        "recommendations": [
+          { "who": "Living on the economy", "advice": "Most families rent in the Chania area with OHA; the housing office helps with the local market and leases." },
+          { "who": "Lean on the base community", "advice": "The base provides schools, the commissary/exchange, the clinic, and a tight community that makes the small tour shine." },
+          { "who": "Use the housing office", "advice": "Start with the housing office for any on-base options, economy approvals, and OHA." },
+          { "who": "Embrace Crete", "advice": "Beaches, mountains, and ancient sites are at your doorstep, with the rest of Greece and Europe reachable by ferry and flights." }
+        ]
+      },
+      "source": { "label": "NSA Souda Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnreurafcent/installations/nsa_souda_bay.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Souda Bay is a Hellenic (Greek) base hosting U.S. forces; access follows host-nation and U.S. rules. Visitors without a DoD ID must be sponsored and registered.",
+        "Requirements can be stricter and change with force-protection levels, so confirm the current details on the official NSA Souda Bay site before you go."
+      ],
+      "source": { "label": "NSA Souda Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnreurafcent/installations/nsa_souda_bay.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (OHA)",
+      "type": "prose",
+      "data": [
+        "On-base housing is limited, so most families rent on the Greek economy in the Chania area and receive the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office helps with the local market, leases, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "NSA Souda Bay (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnreurafcent/installations/nsa_souda_bay.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend the Department of Defense Education Activity (DoDEA) school serving the Souda Bay community. International and host-nation options may also be considered.",
+        "Confirm current school details and registration through DoDEA Europe and the command, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "U.S. Naval Branch Health Clinic Souda Bay",
+        "Care": "Outpatient primary care on base; specialty, inpatient, and complex care via host-nation hospitals and referral (e.g., Naples or Landstuhl)",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Navy Medicine / TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NSA Souda Bay Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Souda Bay"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Greece has extra steps beyond a stateside move, and a small island community adds its own logistics. Get these sorted early."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first; most families rent on the economy near Chania with OHA. Claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your SOFA driver's license, arrange a vehicle (many ship or buy locally), and complete SOFA documentation. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Souda Bay school early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Souda Bay clinic, with host-nation and referral care for specialty needs." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Souda Bay?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or limited on-base housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "Where do families live?", "a": "Mostly on the Greek economy in the Chania area using OHA, since on-base housing is limited." },
+        { "q": "What's the tour like?", "a": "A smaller, close-knit, and highly sought-after island tour with Greek culture, beaches, and ancient history all around." },
+        { "q": "What about schools?", "a": "A DoDEA school serves the Souda Bay community; confirm current details with DoDEA Europe and the command." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Chania Old Town", "category": "In town", "blurb": "A beautiful Venetian harbor town with shops and tavernas.", "maps_query": "Chania Old Town, Crete Greece" },
+        { "name": "Crete beaches (Balos, Elafonisi)", "category": "Beach", "blurb": "Some of the most stunning beaches in the Mediterranean.", "maps_query": "Balos Lagoon, Crete Greece" },
+        { "name": "Samaria Gorge", "category": "Outdoors", "blurb": "A famous long gorge hike in the White Mountains.", "maps_query": "Samaria Gorge, Crete Greece" },
+        { "name": "Knossos (Heraklion)", "category": "History", "blurb": "The ancient Minoan palace, a drive east on Crete.", "maps_query": "Knossos Palace, Crete Greece" }
+      ]
+    }
+  ]
+}

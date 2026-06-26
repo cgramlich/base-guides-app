@@ -1,0 +1,157 @@
+{
+  "slug": "naf-atsugi",
+  "schema_version": "0.1",
+  "name": "Naval Air Facility Atsugi",
+  "short_name": "Atsugi",
+  "branch": "U.S. Navy",
+  "states": ["Japan"],
+  "region": "OCONUS",
+  "tagline": "A U.S. Navy and Japanese naval air base in the Tokyo metropolitan area.",
+  "coords": { "lat": 35.45, "lng": 139.45, "label": "Ayase / Yamato, Japan" },
+  "tz": "Asia/Tokyo",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Japan). OHA housing, DoDEA Pacific schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy. NAF Atsugi is a joint US Navy / Japan Maritime Self-Defense Force air base in greater Tokyo (Kanagawa Prefecture), near Yokosuka. DoDEA: Shirley Lanham Elementary (Atsugi); older students typically attend nearby DoDEA schools (Zama/Yokosuka area). Medical: branch clinic (under USNH Yokosuka). Facts verified from official sources (cnic.navy.mil NAF Atsugi, USNH Yokosuka, DoDEA Pacific, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx); HS arrangement.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy (joint with the Japan Maritime Self-Defense Force)",
+        "Location": "Greater Tokyo, Japan (Kanagawa Prefecture; Ayase/Yamato)",
+        "Role": "Naval aviation support in the Tokyo area",
+        "Nearby": "Fleet Activities Yokosuka and Camp Zama",
+        "Tour type": "Accompanied (command-sponsored) for most",
+        "Setting": "Dense, well-connected Tokyo metropolitan area"
+      },
+      "source": { "label": "NAF Atsugi (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrj/installations/naf_atsugi.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Air Facility Atsugi is a joint U.S. Navy and Japan Maritime Self-Defense Force air base in the Tokyo metropolitan area, supporting naval aviation and the Navy's presence in Japan, near Fleet Activities Yokosuka.",
+        "It puts families in the greater Tokyo area, with one of the world's great cities and Japan's superb rail network at hand."
+      ],
+      "source": { "label": "NAF Atsugi (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrj/installations/naf_atsugi.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "atsugi_decision",
+      "title": "A Tokyo-Area Tour: On-Base vs. Living on the Economy",
+      "type": "killer",
+      "data": {
+        "subtitle": "Atsugi is a Tokyo-metro tour. The main choice is on-base housing versus renting on the Japanese economy with OHA, in a dense urban area where many rely on trains.",
+        "intro": [
+          "Most families come command-sponsored and choose between on-base housing and renting on the Japanese economy with the Overseas Housing Allowance (OHA).",
+          "On base is the simplest option with schools and services; living on the economy means deeper immersion in Japanese and Tokyo-metro life, balanced against a Japanese lease, the language, and navigating a dense area (many rely on trains over a car)."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-base housing keeps you close to schools and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting on the economy in the surrounding communities offers a deeper Japanese experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-base housing and must approve economy rentals, and helps with leases and OHA, so start there." },
+          { "who": "Embrace the trains", "advice": "Japan's rail network makes Tokyo and the whole country accessible; many families rely on transit." }
+        ]
+      },
+      "source": { "label": "NAF Atsugi (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrj/installations/naf_atsugi.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements can be stricter and change with force-protection levels, so confirm the current details on the official NAF Atsugi site before you go."
+      ],
+      "source": { "label": "NAF Atsugi (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrj/installations/naf_atsugi.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base & OHA)",
+      "type": "prose",
+      "data": [
+        "NAF Atsugi has on-base family housing, and many families instead rent on the Japanese economy in the surrounding communities, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-base housing and must approve economy rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "NAF Atsugi (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrj/installations/naf_atsugi.html" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools in the Atsugi area (including an on-base elementary school), with older students attending nearby DoDEA schools in the Tokyo-area communities.",
+        "Confirm current schools, boundaries, and registration through DoDEA Pacific and the command, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Branch Health Clinic Atsugi (under U.S. Naval Hospital Yokosuka)",
+        "Care": "Outpatient primary care on base; inpatient and specialty care via U.S. Naval Hospital Yokosuka and host-nation facilities",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "U.S. Naval Hospital Yokosuka (official)", "url": "https://yokosuka.tricare.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NAF Atsugi Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Atsugi"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Japan has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-base housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and transport", "text": "Get your SOFA driver's license and complete SOFA documentation. In the Tokyo metro many families rely on excellent trains; decide whether you need a car." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Atsugi-area schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Atsugi clinic, with U.S. Naval Hospital Yokosuka for specialty and inpatient care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Atsugi?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-base housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "Where do families live?", "a": "Either in on-base housing or on the Japanese economy in the surrounding Tokyo-area communities using OHA." },
+        { "q": "What about schools?", "a": "Kids attend DoDEA schools in the Atsugi area, with older students at nearby DoDEA schools in the Tokyo-area communities." },
+        { "q": "What's it like near Tokyo?", "a": "Excellent for families: Japan's rail network puts Tokyo and the whole country within reach, and many rely on trains rather than driving." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Tokyo", "category": "Day trip", "blurb": "One of the world's great cities, reachable by train.", "maps_query": "Tokyo, Japan" },
+        { "name": "Yokohama", "category": "Day trip", "blurb": "A big waterfront city with Chinatown and a famous harbor nearby.", "maps_query": "Yokohama, Japan" },
+        { "name": "Kamakura", "category": "History", "blurb": "Temples, shrines, and the Great Buddha on the nearby coast.", "maps_query": "Kamakura, Japan" },
+        { "name": "Hakone & Mount Fuji", "category": "Outdoors", "blurb": "Hot springs, lake views, and Mount Fuji to the west.", "maps_query": "Hakone, Japan" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "slug": "usag-ansbach",
+  "schema_version": "0.1",
+  "name": "USAG Ansbach",
+  "short_name": "Ansbach",
+  "branch": "U.S. Army",
+  "states": ["Germany"],
+  "region": "OCONUS",
+  "tagline": "The Army's combat-aviation community in Bavaria, near Nuremberg.",
+  "coords": { "lat": 49.30, "lng": 10.65, "label": "Ansbach, Germany" },
+  "tz": "Europe/Berlin",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Germany). OHA housing, DoDEA Europe schools, command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy. USAG Ansbach (Katterbach, Bismarck, Storck, Urlas barracks) is the Army's aviation community in Bavaria (12th Combat Aviation Brigade), near Nuremberg. Medical: Ansbach Army Health Clinic + Landstuhl for higher care. Facts verified from official sources (home.army.mil/ansbach, TRICARE, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Ansbach, Bavaria, Germany (near Nuremberg)",
+        "Major unit": "12th Combat Aviation Brigade",
+        "Made up of": "Katterbach, Bismarck, Storck, and Urlas barracks/airfields",
+        "Tour type": "Accompanied (command-sponsored) for most",
+        "Setting": "Bavarian countryside near Nuremberg"
+      },
+      "source": { "label": "USAG Ansbach (official)", "url": "https://home.army.mil/ansbach/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "U.S. Army Garrison Ansbach is the Army's combat-aviation community in Bavaria, home to the 12th Combat Aviation Brigade, spread across several kasernes and airfields near the historic city of Ansbach.",
+        "It's in the rolling countryside of Bavaria near Nuremberg, giving families an authentic German experience with the Alps, Prague, and the rest of Europe within reach."
+      ],
+      "source": { "label": "USAG Ansbach (official)", "url": "https://home.army.mil/ansbach/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "ansbach_decision",
+      "title": "A Bavaria Tour: On-Post vs. a German Village",
+      "type": "killer",
+      "data": {
+        "subtitle": "A Bavaria tour is a favorite. The main choice is on-post housing versus renting 'on the economy' in a German village with OHA.",
+        "intro": [
+          "Most families come command-sponsored and choose between on-post housing and renting on the German economy with the Overseas Housing Allowance (OHA).",
+          "On post is the simplest option with schools and services; living on the economy means a richer Bavarian experience and often more space, balanced against a German lease, the language, and a commute."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-post housing keeps you close to work, schools, and services, ideal for a first overseas tour." },
+          { "who": "Full immersion", "advice": "Renting in the villages around Ansbach offers the real German experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-post housing and must approve economy rentals, and helps with leases and OHA, so start there before signing anything." },
+          { "who": "Embrace the location", "advice": "Nuremberg, the Alps, and the rest of Europe are within easy reach for travel." }
+        ]
+      },
+      "source": { "label": "USAG Ansbach (official)", "url": "https://home.army.mil/ansbach/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows U.S. and host-nation (SOFA) rules. Visitors without a DoD ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements can be stricter and change with force-protection levels, so confirm the current details on the official USAG Ansbach site before you go."
+      ],
+      "source": { "label": "USAG Ansbach (official)", "url": "https://home.army.mil/ansbach/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Post & OHA)",
+      "type": "prose",
+      "data": [
+        "USAG Ansbach has on-post family housing across its kasernes, and many families rent on the German economy in the surrounding villages, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-post housing and must approve economy rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "USAG Ansbach (official)", "url": "https://home.army.mil/ansbach/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend Department of Defense Education Activity (DoDEA) schools in the Ansbach community, serving students from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Europe and the garrison, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Ansbach Army Health Clinic",
+        "Care": "Outpatient primary and some specialty care in the community; inpatient and complex care via Landstuhl Regional Medical Center and host-nation hospitals",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Ansbach Army Health Clinic (TRICARE)", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Ansbach (Katterbach) Commissary (DeCA)",
+        "Exchange": "Ansbach Exchange (AAFES / PX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to Germany has extra steps beyond a stateside move. Get these sorted early to settle in smoothly."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-post housing or get approval and help to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Handle SOFA, license, and vehicle", "text": "Get your USAREUR driver's license, register or ship your vehicle, and complete SOFA documentation. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Ansbach schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the Ansbach clinic, with Landstuhl and host-nation providers for higher-level care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Ansbach?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-post housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "What is USAG Ansbach?", "a": "It's the Army's combat-aviation community in Bavaria, home to the 12th Combat Aviation Brigade, across several kasernes near Nuremberg." },
+        { "q": "Where do families live?", "a": "Either in on-post housing or on the German economy in the surrounding Bavarian villages using OHA." },
+        { "q": "Is it a good tour for travel?", "a": "Excellent. Nuremberg, the Alps, Prague, and the rest of Europe are within easy reach." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Ansbach (Residenz & old town)", "category": "In town", "blurb": "A historic margravial city with a palace and gardens.", "maps_query": "Ansbach Residence, Germany" },
+        { "name": "Nuremberg", "category": "Day trip", "blurb": "A historic Bavarian city with a castle, old town, and Christmas market.", "maps_query": "Nuremberg, Germany" },
+        { "name": "Rothenburg ob der Tauber", "category": "Day trip", "blurb": "A famously preserved medieval walled town nearby.", "maps_query": "Rothenburg ob der Tauber, Germany" },
+        { "name": "Bavarian Alps", "category": "Outdoors", "blurb": "Mountains, lakes, and castles to the south for weekend trips.", "maps_query": "Bavarian Alps, Germany" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "slug": "lajes-field",
+  "schema_version": "0.1",
+  "name": "Lajes Field (Azores)",
+  "short_name": "Lajes",
+  "branch": "U.S. Air Force",
+  "states": ["Portugal"],
+  "region": "OCONUS",
+  "tagline": "A mid-Atlantic Air Force stopover base on a Portuguese island in the Azores.",
+  "coords": { "lat": 38.76, "lng": -27.09, "label": "Terceira Island, Azores, Portugal" },
+  "tz": "Atlantic/Azores",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Azores, Portugal). OHA housing, DoDEA Europe schools (Lajes), command-sponsorship/SOFA notes, no BAH/RentCast/SchoolDigger/rent-buy. Lajes Field (65th Air Base Group) is a strategic mid-Atlantic stopover/refueling base on Terceira Island; drawn down in recent years but active, with a smaller accompanied community. Medical: 65th Medical clinic; complex care via medevac/host-nation. DoDEA Europe (Lajes Elementary/High School). Facts verified from official sources (lajes.af.mil, TRICARE, DoDEA Europe, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx); community size has fluctuated with drawdowns.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (on a Portuguese base)",
+        "Location": "Terceira Island, Azores, Portugal (mid-Atlantic)",
+        "Major unit": "65th Air Base Group",
+        "Role": "Strategic mid-Atlantic stopover, refueling, and support",
+        "Tour type": "Accompanied (command-sponsored); a smaller, remote island community",
+        "Setting": "A green Atlantic island, isolated but scenic"
+      },
+      "source": { "label": "Lajes Field (official)", "url": "https://www.lajes.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Lajes Field is a strategic U.S. Air Force stopover and support base on Terceira Island in the Azores, a Portuguese island chain in the middle of the Atlantic, long valued as a refueling and transit point between North America and Europe.",
+        "It's a smaller, remote, and scenic island tour. The base drew down in recent years, so the American community is modest, but the green-island setting and Portuguese culture are a draw."
+      ],
+      "source": { "label": "Lajes Field (official)", "url": "https://www.lajes.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "lajes_decision",
+      "title": "A Remote Atlantic Island Tour",
+      "type": "killer",
+      "data": {
+        "subtitle": "Lajes is small and isolated in the mid-Atlantic. The main choice is on-base housing versus renting on the Portuguese economy with OHA, with island logistics the big factor.",
+        "intro": [
+          "Most families come command-sponsored and choose between on-base housing and renting on the Portuguese economy with the Overseas Housing Allowance (OHA).",
+          "The big adjustments are the isolation (everything arrives by ship or plane), a smaller community, and the weather, balanced against a beautiful green island and an authentic Azorean experience."
+        ],
+        "recommendations": [
+          { "who": "Easiest transition", "advice": "On-base housing keeps you close to the small community's schools and services." },
+          { "who": "Island immersion", "advice": "Renting on the economy on Terceira offers a deeper Azorean experience, with OHA to offset rent." },
+          { "who": "Use the housing office", "advice": "The housing office assigns on-base housing and approves economy rentals, and helps with leases and OHA, so start there." },
+          { "who": "Plan island logistics", "advice": "Budget for shipping, limited shopping, and travel that means a flight; lean into the outdoors." }
+        ]
+      },
+      "source": { "label": "Lajes Field (official)", "url": "https://www.lajes.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Lajes is a Portuguese base hosting U.S. forces; access follows host-nation and U.S. rules. Visitors without a DoD ID must be sponsored and registered.",
+        "Requirements can change, so confirm the current details on the official Lajes Field site before you go."
+      ],
+      "source": { "label": "Lajes Field (official)", "url": "https://www.lajes.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base & OHA)",
+      "type": "prose",
+      "data": [
+        "Lajes has on-base family housing, and families may also rent on the Portuguese economy on Terceira, receiving the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns on-base housing and approves economy rentals; it also helps with leases, utilities, and OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "Lajes Field (official)", "url": "https://www.lajes.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of U.S. personnel attend the Department of Defense Education Activity (DoDEA) school at Lajes, serving the community from elementary through high school.",
+        "Confirm current school details and registration through DoDEA Europe and the base, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Europe (official)", "url": "https://www.dodea.edu/europe" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "65th Medical Group (Lajes clinic)",
+        "Care": "Outpatient primary care on base; specialty, inpatient, and complex care via host-nation hospitals and medical evacuation off-island",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Lajes Field / 65th Medical Group (TRICARE)", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Lajes Commissary (DeCA)",
+        "Exchange": "Lajes Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An overseas PCS to a remote Atlantic island has extra steps, including shipping and travel planning. Get these sorted early."],
+        "steps": [
+          { "title": "Confirm command sponsorship", "text": "Make sure your family is command-sponsored before or upon arrival; it drives your OHA, DoDEA enrollment, and travel entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get overseas ID and logistics cards as required." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose on-base housing or get approval to rent on the economy with OHA; claim Temporary Lodging Allowance (TLA) while you look." },
+          { "title": "Plan your vehicle and travel", "text": "Arrange vehicle shipping early (island logistics take time), handle local registration, and plan for flights to leave the island. Confirm whether family members need a no-fee (official) passport." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Lajes school early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program; know that complex care can mean medevac off-island, so understand the referral process." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH at Lajes?", "a": "No. Overseas you receive the Overseas Housing Allowance (OHA) for economy rentals, or you live in on-base housing. OHA is based on your actual rent up to a cap, not the stateside BAH tables." },
+        { "q": "Where is Lajes?", "a": "On Terceira Island in the Azores, a Portuguese island chain in the mid-Atlantic, long used as a strategic refueling and transit base." },
+        { "q": "Where do families live?", "a": "Either in on-base housing or on the Portuguese economy on Terceira using OHA." },
+        { "q": "What's the tour like?", "a": "Small, remote, and scenic. Island logistics (shipping, limited shopping, flights to leave) are real, balanced against a beautiful green island and Azorean culture." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Angra do Heroísmo", "category": "In town", "blurb": "Terceira's UNESCO-listed historic town and harbor.", "maps_query": "Angra do Heroismo, Terceira Azores" },
+        { "name": "Algar do Carvão", "category": "Outdoors", "blurb": "A dramatic volcanic cave you can descend into on Terceira.", "maps_query": "Algar do Carvao, Terceira Azores" },
+        { "name": "Terceira coast & tide pools", "category": "Outdoors", "blurb": "Natural swimming pools and rugged Atlantic coastline.", "maps_query": "Biscoitos natural pools, Terceira Azores" },
+        { "name": "Azores islands", "category": "Day trip", "blurb": "Other Azorean islands (São Miguel, Pico) reachable by short flights.", "maps_query": "Azores islands, Portugal" }
+      ]
+    }
+  ]
+}
