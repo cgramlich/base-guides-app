@@ -1,0 +1,201 @@
+{
+  "slug": "schriever-sfb",
+  "schema_version": "0.1",
+  "name": "Schriever SFB",
+  "short_name": "Schriever",
+  "branch": "U.S. Space Force",
+  "states": ["CO"],
+  "tagline": "A Space Force operations hub east of Colorado Springs, running GPS, missile warning, and satellite control.",
+  "coords": { "lat": 38.80, "lng": -104.53, "label": "Colorado Springs, CO" },
+  "tz": "America/Denver",
+  "last_full_review": "2026-06-25",
+  "_note": "Space Force operations base (~10 mi E of Colorado Springs, CO; Mountain time). CONUS full template (BAH MHA CO046 Colorado Springs, same as Peterson; RentCast/SchoolDigger work). Space Delta units; GPS operations (2 SOPS), satellite control, missile warning/defense. 5th Space Force base in app (Peterson, Vandenberg, Patrick, Buckley, Schriever) -> Space Force filter chip. Medical: uses Peterson SFB clinic + TRICARE network. Facts verified from official sources (schriever.spaceforce.mil, TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Colorado is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 80831 (Falcon/Peyton).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Space Force",
+        "Location": "East of Colorado Springs, CO",
+        "Role": "Space operations hub (Space Delta units)",
+        "Missions": "GPS operations, satellite command and control, and missile warning/defense",
+        "Setting": "Colorado Front Range, near Colorado Springs",
+        "Note": "Shares the Colorado Springs area with Peterson SFB"
+      },
+      "source": { "label": "Schriever SFB (official)", "url": "https://www.schriever.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Schriever Space Force Base, just east of Colorado Springs, is a key Space Force operations hub. Its units run GPS for the world, command and control satellites, and support missile warning and defense.",
+        "It sits on the Colorado Front Range near Colorado Springs, sharing the area (and the same housing market) with Peterson SFB, with the Rocky Mountains right there."
+      ],
+      "source": { "label": "Schriever SFB (official)", "url": "https://www.schriever.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schriever_decision",
+      "title": "Front Range Living Near Colorado Springs",
+      "type": "killer",
+      "data": {
+        "subtitle": "Schriever sits east of Colorado Springs, so the choice is which part of the metro fits your commute (the base is on the east side) and schools, with the Rockies as the backdrop.",
+        "intro": [
+          "Colorado Springs is a desirable, growing Front Range city; housing costs have risen but it's more affordable than Denver. On-base housing at Schriever is limited, so most families live off base.",
+          "Where you live mostly comes down to commute and schools, with east-side communities (Falcon, Peyton) closest to Schriever and the wider Colorado Springs area in reach."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "East-side areas like Falcon and Peyton keep the commute to Schriever shortest." },
+          { "who": "Family suburbs", "advice": "The east side and broader Colorado Springs offer good schools and newer neighborhoods." },
+          { "who": "Use Peterson services", "advice": "Peterson SFB nearby provides the commissary, exchange, and clinic." },
+          { "who": "Enjoy Colorado", "advice": "Pikes Peak, Garden of the Gods, and the Rockies are right there; plan for snowy winters." }
+        ]
+      },
+      "source": { "label": "Schriever SFB (official)", "url": "https://www.schriever.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Schriever is a secure operations base with strict access control. Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Schriever SFB site before you go."
+      ],
+      "source": { "label": "Schriever SFB (official)", "url": "https://www.schriever.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Schriever has limited on-base family housing, so most families live off base around Colorado Springs (with Peterson SFB housing also in the area).",
+        "Eligibility and availability vary, so start with the housing office for current options and waitlists."
+      ],
+      "source": { "label": "Schriever SFB (official)", "url": "https://www.schriever.spaceforce.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CO046",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CO046 (Colorado Springs)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "80831", "label": "Falcon / Peyton, CO" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Falcon District 49 serves the east side near Schriever, with other Colorado Springs-area districts depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Falcon School District 49 (official)", "url": "https://www.d49.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CO", "city": "Colorado Springs" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Peterson SFB clinic (serving the Schriever community) + TRICARE network",
+        "Care": "Outpatient care via the Peterson clinic; inpatient, emergency, and complex care via Colorado Springs network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Use the Peterson SFB Commissary (DeCA) nearby",
+        "Exchange": "Schriever SFB Exchange (AAFES / BX); larger exchange at Peterson SFB"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the Colorado Springs market is desirable; many space-mission families do repeat Front Range tours, which makes buying worth a look."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing.",
+          "Prices have risen and you want flexibility.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat Colorado Springs/Front Range assignments (common in the space community).",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The Colorado Springs market fits your budget for a home you like.",
+          "You've found a community and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but repeat Front Range space tours make buying worth a look. Colorado Springs has gotten pricier but stays more affordable than Denver. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Plan around commute", "text": "Schriever is on the east side; get the housing office's read on Falcon/Peyton and the metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Colorado vehicle registration (and emissions where required), and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Falcon D49 or another Colorado Springs district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment; the Peterson SFB clinic and the network serve the Schriever community." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Schriever SFB?", "a": "It's a Space Force operations base east of Colorado Springs running GPS, satellite command and control, and missile warning/defense missions." },
+        { "q": "How is it different from Peterson?", "a": "Both are Colorado Springs-area Space Force bases sharing the same housing market (MHA CO046). Schriever is the secure operations base on the east side; Peterson has the commissary, exchange, and clinic the Schriever community uses." },
+        { "q": "Where do families live?", "a": "Mostly off base across Colorado Springs; east-side areas like Falcon and Peyton are closest to Schriever." },
+        { "q": "What is the BAH area?", "a": "Schriever is MHA CO046 (Colorado Springs). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Garden of the Gods", "category": "Outdoors", "blurb": "Iconic red-rock formations in Colorado Springs.", "maps_query": "Garden of the Gods, Colorado Springs CO" },
+        { "name": "Pikes Peak", "category": "Outdoors", "blurb": "The famous 14er by cog railway, highway, or trail.", "maps_query": "Pikes Peak, CO" },
+        { "name": "Downtown Colorado Springs", "category": "Food & shopping", "blurb": "Dining, breweries, and shops at the foot of the mountains.", "maps_query": "Downtown Colorado Springs, CO" },
+        { "name": "Denver & the Rockies", "category": "Day trip", "blurb": "Denver and ski country are a drive north and west.", "maps_query": "Denver, CO" }
+      ]
+    }
+  ]
+}

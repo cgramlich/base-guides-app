@@ -1,0 +1,201 @@
+{
+  "slug": "nas-whiting-field",
+  "schema_version": "0.1",
+  "name": "NAS Whiting Field",
+  "short_name": "Whiting Field",
+  "branch": "U.S. Navy",
+  "states": ["FL"],
+  "tagline": "One of the Navy's busiest air fields, where naval aviators earn their wings in primary and helicopter training.",
+  "coords": { "lat": 30.72, "lng": -87.02, "label": "Milton, FL" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Navy flight-training air station (Milton, Santa Rosa County, FL panhandle; Central time). CONUS full template (BAH MHA FL064 Pensacola, which covers Santa Rosa County/Milton; RentCast/SchoolDigger work). Primary fixed-wing (T-6) and helicopter (TH-73) training; one of the Navy's busiest airfields. Medical: branch clinic under Naval Hospital Pensacola. Facts verified from official sources (cnic.navy.mil NAS Whiting Field, NH Pensacola, DeCA/NEX, Wikipedia for corroborated headline facts). Florida is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 32570 (Milton).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Milton, FL (Santa Rosa County, near Pensacola)",
+        "Role": "Naval flight training (primary fixed-wing and helicopter)",
+        "Aircraft": "T-6 Texan II and TH-73 helicopters",
+        "Distinction": "One of the Navy's busiest airfields",
+        "Setting": "Affordable western Florida panhandle"
+      },
+      "source": { "label": "NAS Whiting Field (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/nas_whiting_field.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Naval Air Station Whiting Field is where many naval aviators earn their wings, running primary fixed-wing training in the T-6 and helicopter training in the TH-73. It's one of the busiest airfields in the Navy, with a constant rhythm of training flights.",
+        "It's near Milton in Florida's western panhandle, a short drive from Pensacola, in an affordable area with Gulf beaches close by."
+      ],
+      "source": { "label": "NAS Whiting Field (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/nas_whiting_field.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "whiting_decision",
+      "title": "Affordable Panhandle Living Near Pensacola",
+      "type": "killer",
+      "data": {
+        "subtitle": "Santa Rosa County is affordable and family-friendly, with the Gulf nearby. The main choice is which community fits your commute and schools.",
+        "intro": [
+          "The Milton and greater Pensacola area is one of the more affordable Gulf-Coast markets, so BAH stretches. On-base housing is limited at Whiting; most families live off base nearby.",
+          "Where you live mostly comes down to commute and schools across Milton, Pace, and the Pensacola area, with the beaches a manageable drive."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Milton and Pace sit right by Whiting Field with affordable family housing and well-regarded Santa Rosa County schools." },
+          { "who": "More amenities", "advice": "The greater Pensacola area adds shopping, dining, and Navy services a short drive west." },
+          { "who": "Beach access", "advice": "Pensacola Beach and Navarre are a manageable drive for weekends." },
+          { "who": "Stretch your budget", "advice": "The area is affordable, so BAH tends to go far and many families buy." }
+        ]
+      },
+      "source": { "label": "NAS Whiting Field (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/nas_whiting_field.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official NAS Whiting Field site before you go."
+      ],
+      "source": { "label": "NAS Whiting Field (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/nas_whiting_field.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "NAS Whiting Field has limited on-base family housing, so most families live off base in Santa Rosa County and the Pensacola area (where additional Navy housing is available).",
+        "Eligibility and availability vary, so start with the housing office for current options and waitlists."
+      ],
+      "source": { "label": "NAS Whiting Field (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/nas_whiting_field.html" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "FL064",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA FL064 (Pensacola, covers Santa Rosa/Milton)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "32570", "label": "Milton, FL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Santa Rosa County District Schools (Milton, Pace) is well regarded and serves most families, with Escambia County (Pensacola) nearby.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Santa Rosa County District Schools (official)", "url": "https://www.santarosa.k12.fl.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "FL", "city": "Milton" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Branch Health Clinic NAS Whiting Field",
+        "Care": "Outpatient primary care on base; inpatient and specialty care via Naval Hospital Pensacola and the network",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Naval Hospital Pensacola (official)", "url": "https://pensacola.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "NAS Whiting Field Commissary (DeCA)",
+        "Exchange": "Navy Exchange (NEX) Whiting Field"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Santa Rosa County's affordability makes buying a real option, though flight-training tours can be short."],
+        "rent": [
+          "Your tour is a short training pipeline or your orders feel uncertain.",
+          "You want time to learn the area before committing.",
+          "You'd rather not gamble on resale timing or coastal insurance.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years (instructor or follow-on tours).",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Santa Rosa County market fits your budget for a home you like.",
+          "You've found a community and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The area is affordable, so buying can pencil out for longer tours, while short training tours often favor renting. Factor in coastal insurance, run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is limited; get the office's read on Santa Rosa County and Pensacola before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Florida vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Santa Rosa County District Schools (or Escambia) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Whiting Field clinic or Naval Hospital Pensacola." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What happens at NAS Whiting Field?", "a": "It's a primary naval flight-training base, one of the Navy's busiest airfields, training aviators in the T-6 (fixed-wing) and TH-73 (helicopter)." },
+        { "q": "Where do families live?", "a": "Mostly off base in Santa Rosa County (Milton, Pace), which has well-regarded schools, or the greater Pensacola area. On-base housing is limited." },
+        { "q": "Is it affordable?", "a": "Yes. The western panhandle is one of the more affordable Gulf-Coast markets, so BAH stretches well." },
+        { "q": "What is the BAH area?", "a": "Whiting Field is in MHA FL064 (Pensacola). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Blackwater River State Park", "category": "Outdoors", "blurb": "Paddling on one of the purest sand-bottom rivers, near Milton.", "maps_query": "Blackwater River State Park, FL" },
+        { "name": "Pensacola Beach", "category": "Beach", "blurb": "White-sand Gulf beaches a manageable drive southwest.", "maps_query": "Pensacola Beach, FL" },
+        { "name": "National Naval Aviation Museum", "category": "Museum", "blurb": "A world-class aviation museum at NAS Pensacola (check current access).", "maps_query": "National Naval Aviation Museum, Pensacola FL" },
+        { "name": "Navarre Beach", "category": "Beach", "blurb": "A quieter Gulf beach and the longest fishing pier in Florida.", "maps_query": "Navarre Beach, FL" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-upper-mississippi",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Upper Mississippi River",
+  "short_name": "Upper Mississippi",
+  "branch": "U.S. Coast Guard",
+  "states": ["MO"],
+  "tagline": "The Coast Guard keeping the upper Mississippi and Missouri river system moving, based in St. Louis.",
+  "coords": { "lat": 38.63, "lng": -90.20, "label": "St. Louis, MO" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Upper Mississippi River (St. Louis, MO). CONUS full template (BAH MHA MO161 St. Louis; RentCast/SchoolDigger work). CG uses same BAH tables. Inland-rivers sector covering a huge stretch of the upper Mississippi and Missouri rivers (commercial traffic, SAR, aids to navigation, pollution response). Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Missouri is TRICARE East. Affordable metro. Medium-confidence flags: base coords (approx), off-base ZIP 63129 (south St. Louis County).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "St. Louis, MO (Mississippi River)",
+        "Role": "Coast Guard inland-rivers hub for the upper Mississippi and Missouri rivers",
+        "Mission": "Commercial river traffic, search and rescue, aids to navigation, and pollution response",
+        "Setting": "Affordable Midwest metro on the river",
+        "Note": "An 'inland' Coast Guard tour, far from the ocean"
+      },
+      "source": { "label": "Coast Guard Sector Upper Mississippi River (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Upper Mississippi River, based in St. Louis, keeps a vast inland river system moving, the upper Mississippi and Missouri rivers, handling commercial barge traffic, aids to navigation, search and rescue, and pollution response.",
+        "It's in the St. Louis metro, an affordable Midwest city on the river with four real seasons."
+      ],
+      "source": { "label": "Coast Guard Sector Upper Mississippi River (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "ums_decision",
+      "title": "Affordable St. Louis Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "St. Louis is an affordable metro with a wide range of suburbs. The main choice is which area fits your commute and schools, with Illinois suburbs across the river too.",
+        "intro": [
+          "St. Louis's cost of living is low, so BAH stretches well. Coast Guard housing is limited, so most families rent or buy across the metro.",
+          "Where you live mostly comes down to commute and schools across St. Louis County, St. Charles County, and the Metro East (Illinois) across the river."
+        ],
+        "recommendations": [
+          { "who": "Suburbs and schools", "advice": "St. Louis County and St. Charles County offer a wide range of homes and well-regarded schools." },
+          { "who": "Across the river", "advice": "The Illinois Metro East is an affordable option a short drive over the river." },
+          { "who": "Stretch your budget", "advice": "St. Louis is affordable, so BAH tends to go far and many families buy." },
+          { "who": "Enjoy the city", "advice": "Forest Park, the Arch, and a strong food scene are part of the appeal." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Upper Mississippi River (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Upper Mississippi River (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the area is limited, so most families rent or buy across the St. Louis metro.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Upper Mississippi River (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MO161",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MO161 (St. Louis) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "63129", "label": "South St. Louis County, MO" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. St. Louis County and St. Charles County districts (and Illinois Metro East districts) serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Missouri DESE (official)", "url": "https://dese.mo.gov/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MO", "city": "St. Louis" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector Upper Mississippi River",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and St. Louis-area hospitals (a major medical region)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / online",
+        "Commissary": "Limited locally; nearest DoD commissaries are at Scott AFB (Illinois) and Fort Leonard Wood (south-central MO)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and St. Louis's affordable market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable St. Louis market fits your budget for a home you like.",
+          "You've found a suburb and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but St. Louis's affordability makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on St. Louis County, St. Charles, and the Metro East before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Missouri (or Illinois) vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (St. Louis County, St. Charles, or Metro East) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; St. Louis is a major medical region." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector Upper Mississippi River?", "a": "It's a Coast Guard inland-rivers hub, based in St. Louis, covering the upper Mississippi and Missouri rivers: barge traffic, aids to navigation, search and rescue, and pollution response." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. St. Louis is MHA MO161." },
+        { "q": "Where do families live?", "a": "Across the St. Louis metro, including St. Charles County and the Illinois Metro East. CG housing is limited, so most rent or buy." },
+        { "q": "Is it really a Coast Guard base?", "a": "Yes. The Coast Guard's inland-rivers mission keeps the nation's river-barge system safe, far from any coast." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Gateway Arch National Park", "category": "Family", "blurb": "The iconic Arch and riverfront downtown.", "maps_query": "Gateway Arch National Park, St. Louis MO" },
+        { "name": "Forest Park", "category": "Outdoors", "blurb": "A huge park with the free zoo, art museum, and science center.", "maps_query": "Forest Park, St. Louis MO" },
+        { "name": "City Museum", "category": "Family", "blurb": "A famously inventive playground-museum downtown.", "maps_query": "City Museum, St. Louis MO" },
+        { "name": "Missouri wine country", "category": "Day trip", "blurb": "Vineyards and river towns west along the Missouri River.", "maps_query": "Augusta, MO wine country" }
+      ]
+    }
+  ]
+}

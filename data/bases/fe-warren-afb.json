@@ -1,0 +1,201 @@
+{
+  "slug": "fe-warren-afb",
+  "schema_version": "0.1",
+  "name": "F.E. Warren AFB",
+  "short_name": "F.E. Warren",
+  "branch": "U.S. Air Force",
+  "states": ["WY"],
+  "tagline": "A historic ICBM base guarding part of the nation's nuclear deterrent, in Cheyenne, Wyoming.",
+  "coords": { "lat": 41.15, "lng": -104.86, "label": "Cheyenne, WY" },
+  "tz": "America/Denver",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force ICBM base (Cheyenne, WY; Mountain time). CONUS full template (BAH MHA WY324 Cheyenne; RentCast/SchoolDigger work). 90th Missile Wing (Minuteman III ICBMs), Air Force Global Strike Command; one of the oldest continuously active military installations. Medical: 90th Medical Group clinic. Facts verified from official sources (warren.af.mil, 90 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Wyoming is TRICARE West; no state income tax. Medium-confidence flags: base coords (approx), off-base ZIP 82001 (Cheyenne).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Cheyenne, WY (southeastern Wyoming)",
+        "Major unit": "90th Missile Wing",
+        "Mission": "Operates Minuteman III intercontinental ballistic missiles (the land leg of the nuclear triad)",
+        "History": "One of the oldest continuously active military installations",
+        "Setting": "Affordable Wyoming capital; no state income tax"
+      },
+      "source": { "label": "F.E. Warren AFB (official)", "url": "https://www.warren.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "F.E. Warren Air Force Base is home to the 90th Missile Wing, which operates Minuteman III intercontinental ballistic missiles across the surrounding region, part of the land leg of the nuclear triad under Air Force Global Strike Command.",
+        "It's in Cheyenne, Wyoming's capital, a historic post (one of the oldest in continuous use) in an affordable high-plains city with no state income tax, just up the road from Colorado's Front Range."
+      ],
+      "source": { "label": "F.E. Warren AFB (official)", "url": "https://www.warren.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "warren_decision",
+      "title": "Affordable High-Plains Living in Cheyenne",
+      "type": "killer",
+      "data": {
+        "subtitle": "Cheyenne is affordable with no state income tax and easy access to Colorado's Front Range. The main choice is in-town versus on base, with cold, windy winters to plan for.",
+        "intro": [
+          "Cheyenne's cost of living is reasonable and there's no state income tax, so BAH stretches. On-base housing is available; many also live off base in town.",
+          "Where you live mostly comes down to commute and schools in Cheyenne, with Fort Collins and the Colorado Front Range about 45 minutes to an hour south for more amenities."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Cheyenne surrounds the base with affordable housing and a short commute." },
+          { "who": "On-base option", "advice": "On-base housing (including historic homes) is available and convenient; weigh it against the local market." },
+          { "who": "Front Range access", "advice": "Fort Collins and northern Colorado are a manageable drive south for big-city extras." },
+          { "who": "Plan for winter", "advice": "Expect cold, windy high-plains winters; budget for heating and winter driving." }
+        ]
+      },
+      "source": { "label": "F.E. Warren AFB (official)", "url": "https://www.warren.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official F.E. Warren AFB site before you go."
+      ],
+      "source": { "label": "F.E. Warren AFB (official)", "url": "https://www.warren.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "F.E. Warren AFB has privatized on-base family housing, including some historic homes on the old post.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "F.E. Warren AFB (official)", "url": "https://www.warren.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "WY324",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA WY324 (Cheyenne)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "82001", "label": "Cheyenne, WY" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Laramie County School District 1 serves Cheyenne and the base.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Laramie County School District 1 (official)", "url": "https://www.laramie1.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "WY", "city": "Cheyenne" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "90th Medical Group (F.E. Warren AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via Cheyenne and northern Colorado network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "F.E. Warren AFB / 90th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/FEWarren" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "F.E. Warren AFB Commissary (DeCA)",
+        "Exchange": "F.E. Warren AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Cheyenne's affordable market (no state income tax) makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area and the winters before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Cheyenne market fits your budget for a home you like.",
+          "You're comfortable maintaining a home through high-plains winters."
+        ],
+        "bottom_line": "There is no universal right answer, but Cheyenne's affordability and no income tax make buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length and winters, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and a high-plains move adds winter prep. Start early."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability (including historic homes) and get the office's read on Cheyenne before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Wyoming vehicle registration, prep for winter driving, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Laramie County School District 1 early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 90th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is F.E. Warren known for?", "a": "It's home to the 90th Missile Wing, which operates Minuteman III ICBMs (the land leg of the nuclear triad), and it's one of the oldest continuously active military installations." },
+        { "q": "Where do families live?", "a": "On-base housing (including historic homes) is available; many live off base in Cheyenne. Northern Colorado is a drive south for more amenities." },
+        { "q": "Is it affordable?", "a": "Yes. Cheyenne is reasonably priced and Wyoming has no state income tax, so BAH stretches well." },
+        { "q": "What is the BAH area?", "a": "F.E. Warren is MHA WY324 (Cheyenne). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Cheyenne Frontier Days", "category": "Annual event", "blurb": "The 'Daddy of 'em All' rodeo and festival each July.", "maps_query": "Cheyenne Frontier Days, WY" },
+        { "name": "Curt Gowdy State Park", "category": "Outdoors", "blurb": "Reservoirs, trails, and rock formations between Cheyenne and Laramie.", "maps_query": "Curt Gowdy State Park, WY" },
+        { "name": "Fort Collins, CO", "category": "Day trip", "blurb": "A lively college town and Front Range amenities about 45 minutes south.", "maps_query": "Fort Collins, CO" },
+        { "name": "Rocky Mountains / Denver", "category": "Day trip", "blurb": "Denver and the Rockies are roughly an hour-plus south.", "maps_query": "Denver, CO" }
+      ]
+    }
+  ]
+}

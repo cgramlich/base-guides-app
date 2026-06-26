@@ -1,0 +1,201 @@
+{
+  "slug": "laughlin-afb",
+  "schema_version": "0.1",
+  "name": "Laughlin AFB",
+  "short_name": "Laughlin",
+  "branch": "U.S. Air Force",
+  "states": ["TX"],
+  "tagline": "The Air Force's busiest pilot-training base, on the Texas-Mexico border at Del Rio.",
+  "coords": { "lat": 29.36, "lng": -100.78, "label": "Del Rio, TX" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force pilot-training base (Del Rio, TX, on the border; Central time). CONUS full template (BAH MHA TX278 Laughlin AFB/Del Rio; RentCast/SchoolDigger work). 47th Flying Training Wing; one of the AF's busiest Undergraduate Pilot Training (UPT) bases. Remote small border town. Medical: 47th Medical Group clinic. Facts verified from official sources (laughlin.af.mil, 47 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Texas moved to TRICARE West in 2024; no state income tax. Medium-confidence flags: base coords (approx), off-base ZIP 78840 (Del Rio).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Del Rio, TX (Texas-Mexico border)",
+        "Major unit": "47th Flying Training Wing",
+        "Mission": "Undergraduate Pilot Training (UPT); one of the AF's busiest pilot-training bases",
+        "Setting": "Small, remote border town (affordable, no state income tax)",
+        "Note": "Lake Amistad is right next door"
+      },
+      "source": { "label": "Laughlin AFB (official)", "url": "https://www.laughlin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Laughlin Air Force Base is the home of the 47th Flying Training Wing and one of the Air Force's busiest pilot-training bases, where new aviators go through Undergraduate Pilot Training. The flight line runs hard year-round.",
+        "It's at Del Rio on the Texas-Mexico border, a small, remote, affordable town next to Lake Amistad, far from a big city but with a tight base community."
+      ],
+      "source": { "label": "Laughlin AFB (official)", "url": "https://www.laughlin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "laughlin_decision",
+      "title": "A Small, Remote Border Town: Lean Into the Community",
+      "type": "killer",
+      "data": {
+        "subtitle": "Del Rio is small and remote, so the housing choice is simple (on base or in town), and the bigger adjustment is the isolation, which the base community helps offset.",
+        "intro": [
+          "Del Rio is affordable but far from a major city, so most families live on base or in town. The cost of living is low and there's no state income tax.",
+          "The real adjustment is the remoteness; the base community is close-knit, and Lake Amistad and the outdoors are the local draw."
+        ],
+        "recommendations": [
+          { "who": "On-base convenience", "advice": "On-base housing keeps the commute short and the community close, a popular choice given the remote location." },
+          { "who": "In town", "advice": "Del Rio offers affordable housing a short drive from the gate." },
+          { "who": "Embrace the lake", "advice": "Lake Amistad (boating, fishing) is the local highlight; lean into the outdoors." },
+          { "who": "Plan for distance", "advice": "San Antonio is about 2.5 hours east for big-city needs; plan trips and stock up." }
+        ]
+      },
+      "source": { "label": "Laughlin AFB (official)", "url": "https://www.laughlin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Laughlin AFB site before you go."
+      ],
+      "source": { "label": "Laughlin AFB (official)", "url": "https://www.laughlin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Laughlin AFB has privatized on-base family housing, popular given the small, remote town.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Laughlin AFB (official)", "url": "https://www.laughlin.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "TX278",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA TX278 (Laughlin AFB/Del Rio)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "78840", "label": "Del Rio, TX" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. San Felipe Del Rio CISD serves Del Rio and the base.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "San Felipe Del Rio CISD (official)", "url": "https://www.sfdr-cisd.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "TX", "city": "Del Rio" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "47th Medical Group (Laughlin AFB Clinic)",
+        "Care": "Outpatient primary care on base; inpatient, emergency, and specialty care via local providers and (for complex needs) San Antonio",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Laughlin AFB / 47th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Laughlin" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Laughlin AFB Commissary (DeCA)",
+        "Exchange": "Laughlin AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. At small, remote Laughlin many families take on-base housing, and pilot-training tours are often short."],
+        "rent": [
+          "Your tour is a UPT pipeline or your orders feel uncertain.",
+          "You prefer on-base housing for the short commute and community.",
+          "You'd rather not own in a small, isolated market.",
+          "Your BAH comfortably covers rent if you go off base."
+        ],
+        "buy": [
+          "You expect a longer instructor tour and want to settle in.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The very affordable Del Rio market fits your budget for a home you like.",
+          "You're comfortable with a small resale market."
+        ],
+        "bottom_line": "There is no universal right answer. Del Rio is inexpensive, so BAH stretches, but the small, isolated market affects resale, so many take on-base housing. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and at a remote base, planning ahead helps."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "On-base housing is popular here; get on the list early and get the office's read on Del Rio." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Texas vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact San Felipe Del Rio CISD early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 47th Medical Group clinic; San Antonio is the option for complex care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Laughlin AFB known for?", "a": "It's one of the Air Force's busiest pilot-training bases, home to the 47th Flying Training Wing running Undergraduate Pilot Training." },
+        { "q": "Where do families live?", "a": "On-base housing is popular given the remote location; Del Rio also offers affordable housing in town." },
+        { "q": "Is it remote?", "a": "Yes. Del Rio is a small border town next to Lake Amistad; San Antonio is about 2.5 hours away for big-city needs." },
+        { "q": "What is the BAH area?", "a": "Laughlin is MHA TX278 (Laughlin AFB/Del Rio). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Lake Amistad", "category": "Outdoors", "blurb": "A huge reservoir for boating, fishing, and swimming right by Del Rio.", "maps_query": "Amistad National Recreation Area, TX" },
+        { "name": "Seminole Canyon State Park", "category": "Outdoors", "blurb": "Ancient rock-art canyons west of Del Rio.", "maps_query": "Seminole Canyon State Park, TX" },
+        { "name": "San Felipe Springs", "category": "In town", "blurb": "Spring-fed swimming and parks in Del Rio.", "maps_query": "San Felipe Springs, Del Rio TX" },
+        { "name": "San Antonio", "category": "Day trip", "blurb": "The Alamo, River Walk, and big-city amenities about 2.5 hours east.", "maps_query": "San Antonio River Walk, TX" }
+      ]
+    }
+  ]
+}

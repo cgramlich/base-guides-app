@@ -1,0 +1,201 @@
+{
+  "slug": "shaw-afb",
+  "schema_version": "0.1",
+  "name": "Shaw AFB",
+  "short_name": "Shaw",
+  "branch": "U.S. Air Force",
+  "states": ["SC"],
+  "tagline": "Home of the F-16 'Swamp Fox' wing and U.S. Army Central, in central South Carolina.",
+  "coords": { "lat": 33.97, "lng": -80.47, "label": "Sumter, SC" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force fighter base + joint HQ (Sumter, central SC). CONUS full template (BAH MHA SC263 Sumter/Shaw AFB; RentCast/SchoolDigger work). 20th Fighter Wing (F-16); also hosts HQ U.S. Army Central (USARCENT) and Ninth Air Force elements. Medical: 20th Medical Group clinic. Facts verified from official sources (shaw.af.mil, 20 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). South Carolina is TRICARE East. Affordable. Medium-confidence flags: base coords (approx), off-base ZIP 29150 (Sumter).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Sumter, SC (central South Carolina)",
+        "Major unit": "20th Fighter Wing (the 'Swamp Foxes')",
+        "Aircraft": "F-16 Fighting Falcon",
+        "Also hosts": "Headquarters U.S. Army Central (USARCENT)",
+        "Setting": "Affordable central SC; near Columbia"
+      },
+      "source": { "label": "Shaw AFB (official)", "url": "https://www.shaw.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Shaw Air Force Base is home to the 20th Fighter Wing, the 'Swamp Foxes,' flying F-16s, and it also hosts the headquarters of U.S. Army Central (USARCENT), making it a joint hub despite being an Air Force base.",
+        "It's in Sumter in central South Carolina, an affordable area near Columbia, the state capital."
+      ],
+      "source": { "label": "Shaw AFB (official)", "url": "https://www.shaw.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shaw_decision",
+      "title": "Affordable Central South Carolina Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Sumter area is affordable and family-friendly, with Columbia nearby. The main choice is in-town versus the suburbs, with on-base housing also available.",
+        "intro": [
+          "Central SC is inexpensive, so BAH stretches well. On-base housing is available; many also live off base in Sumter and the surrounding area.",
+          "Where you live mostly comes down to commute and schools across Sumter and (for some) the Columbia metro to the west."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Sumter surrounds the base with affordable housing and the shortest commute." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "More amenities", "advice": "The Columbia metro is about 45 minutes west for big-city shopping, dining, and an airport." },
+          { "who": "Stretch your budget", "advice": "The area is affordable, so BAH tends to go far and many families buy." }
+        ]
+      },
+      "source": { "label": "Shaw AFB (official)", "url": "https://www.shaw.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Shaw AFB site before you go."
+      ],
+      "source": { "label": "Shaw AFB (official)", "url": "https://www.shaw.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Shaw AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Shaw AFB (official)", "url": "https://www.shaw.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "SC263",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA SC263 (Sumter/Shaw AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "29150", "label": "Sumter, SC" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Sumter School District serves the area around the base.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Sumter School District (official)", "url": "https://www.sumterschools.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "SC", "city": "Sumter" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "20th Medical Group (Shaw AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via area network hospitals (and Columbia)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Shaw AFB / 20th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Shaw" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Shaw AFB Commissary (DeCA)",
+        "Exchange": "Shaw AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Sumter's affordable market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable central SC market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Sumter's affordability makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the office's read on Sumter and the Columbia area before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and South Carolina vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Sumter School District early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 20th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Shaw AFB known for?", "a": "It's home to the 20th Fighter Wing (F-16 'Swamp Foxes') and also hosts the headquarters of U.S. Army Central, making it a joint hub." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base in Sumter. The Columbia metro is about 45 minutes west for more amenities." },
+        { "q": "Is it affordable?", "a": "Yes. Central South Carolina is inexpensive, so BAH stretches well." },
+        { "q": "What is the BAH area?", "a": "Shaw is MHA SC263 (Sumter/Shaw AFB). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Swan Lake Iris Gardens", "category": "Outdoors", "blurb": "A famous garden with swans and iris blooms in Sumter.", "maps_query": "Swan Lake Iris Gardens, Sumter SC" },
+        { "name": "Poinsett State Park", "category": "Outdoors", "blurb": "Trails and a lake in the unique 'mountains of the Midlands' nearby.", "maps_query": "Poinsett State Park, SC" },
+        { "name": "Columbia (Riverbanks Zoo)", "category": "Day trip", "blurb": "The capital's zoo, dining, and museums about 45 minutes west.", "maps_query": "Riverbanks Zoo and Garden, Columbia SC" },
+        { "name": "Lake Marion / Santee", "category": "Outdoors", "blurb": "A huge lake for boating and fishing south of Sumter.", "maps_query": "Lake Marion, SC" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-maryland-ncr",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Maryland-NCR",
+  "short_name": "Maryland-NCR",
+  "branch": "U.S. Coast Guard",
+  "states": ["MD"],
+  "tagline": "The Coast Guard guarding the upper Chesapeake Bay and the waters of the National Capital Region, based in Baltimore.",
+  "coords": { "lat": 39.27, "lng": -76.58, "label": "Baltimore, MD" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Maryland-National Capital Region (Baltimore, MD). CONUS full template (BAH MHA MD129 Baltimore; RentCast/SchoolDigger work). CG uses same BAH tables. Port security for Baltimore + the upper Chesapeake and the DC-area waters; SAR/law enforcement. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Maryland is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 21222 (Dundalk).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Baltimore, MD (upper Chesapeake Bay)",
+        "Role": "Coast Guard hub for the upper Chesapeake and the National Capital Region waters",
+        "Mission": "Port security for the Port of Baltimore, search and rescue, and law enforcement",
+        "Setting": "Baltimore metro, with DC and the Chesapeake nearby",
+        "Region": "Mid-Atlantic / Chesapeake"
+      },
+      "source": { "label": "Coast Guard Sector Maryland-NCR (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Maryland-NCR, based in Baltimore, guards the upper Chesapeake Bay and the waters of the National Capital Region, running port security for the busy Port of Baltimore plus search and rescue and law enforcement.",
+        "It's in the Baltimore metro, with Washington, D.C., and the Chesapeake Bay both close by, offering a mix of city, suburb, and waterfront living."
+      ],
+      "source": { "label": "Coast Guard Sector Maryland-NCR (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mdncr_decision",
+      "title": "Baltimore-Area Living, Between the Bay and DC",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Baltimore metro offers city, suburb, and bayfront options, more affordable than close-in DC. The main choice is which area fits your commute and schools.",
+        "intro": [
+          "The Baltimore area is more affordable than the close-in DC suburbs and offers a wide range of neighborhoods. Coast Guard housing is limited, so most families rent or buy.",
+          "Where you live mostly comes down to commute and schools across Baltimore County, Anne Arundel (toward Annapolis/the bay), and Harford County, with DC reachable to the south."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Southeast Baltimore and Baltimore County (Dundalk, Essex) keep the commute short." },
+          { "who": "Family suburbs", "advice": "Anne Arundel and Harford County offer good schools and more space." },
+          { "who": "Bay living", "advice": "Toward Annapolis and the Chesapeake for waterfront life, a bit farther out." },
+          { "who": "DC access", "advice": "Washington is reachable to the south if your needs (or spouse's job) point that way." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Maryland-NCR (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Maryland-NCR (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the area is limited, so most families rent or buy across the Baltimore metro.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Maryland-NCR (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MD129",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MD129 (Baltimore) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "21222", "label": "Dundalk (Baltimore), MD" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Baltimore County, Anne Arundel County, and Harford County districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Anne Arundel County Public Schools (official)", "url": "https://www.aacps.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MD", "city": "Baltimore" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector Maryland-NCR",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and the region's hospitals (and DC-area military facilities)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / online",
+        "Commissary": "Access to area DoD commissaries (Fort Meade and others)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the Baltimore area is more affordable than close-in DC, so buying is a real option for longer tours."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat mid-Atlantic assignments.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "A Baltimore-area suburb fits your budget for a home you like.",
+          "You've found a community and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the Baltimore area's relative affordability (vs DC) makes buying worth a look for longer tours. Weigh Maryland property taxes, run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In a big metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Plan around commute", "text": "Pick your area (Baltimore County, Anne Arundel, Harford) around commute and schools, and get the housing office's read before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Maryland vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Baltimore, Anne Arundel, or Harford County) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; area military facilities are available for some care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector Maryland-NCR?", "a": "It's the Coast Guard's hub for the upper Chesapeake Bay and the National Capital Region waters, based in Baltimore, handling port security, search and rescue, and law enforcement." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Baltimore is MHA MD129." },
+        { "q": "Where do families live?", "a": "Across the Baltimore metro: Baltimore County, Anne Arundel (toward the bay/Annapolis), and Harford County. It's more affordable than close-in DC." },
+        { "q": "What's nearby?", "a": "Washington, D.C., the Chesapeake Bay, and Annapolis are all within reach." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Baltimore Inner Harbor", "category": "Family", "blurb": "The National Aquarium, museums, and waterfront dining.", "maps_query": "Baltimore Inner Harbor, MD" },
+        { "name": "Annapolis & the Chesapeake", "category": "Day trip", "blurb": "Maryland's sailing capital and historic waterfront south of the city.", "maps_query": "Annapolis, MD" },
+        { "name": "Fort McHenry", "category": "History", "blurb": "Birthplace of the national anthem, on the Baltimore waterfront.", "maps_query": "Fort McHenry National Monument, Baltimore MD" },
+        { "name": "Washington, D.C.", "category": "Day trip", "blurb": "The capital's museums and monuments about an hour south.", "maps_query": "Washington, DC" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-delaware-bay",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Delaware Bay",
+  "short_name": "Delaware Bay",
+  "branch": "U.S. Coast Guard",
+  "states": ["PA"],
+  "tagline": "The Coast Guard guarding the Delaware River and Bay, headquartered in Philadelphia.",
+  "coords": { "lat": 39.89, "lng": -75.17, "label": "Philadelphia, PA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Delaware Bay (Philadelphia, PA). CONUS full template (BAH MHA PA248 Philadelphia/Camden NJ; RentCast/SchoolDigger work). CG uses same BAH tables. Port security for the Delaware River ports + SAR/law enforcement. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Pennsylvania is TRICARE East. Big-metro market; NJ/DE nearby. Medium-confidence flags: base coords (approx), off-base ZIP 19147 (South Philadelphia).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Philadelphia, PA (Delaware River)",
+        "Role": "Coast Guard hub for the Delaware River and Bay",
+        "Mission": "Port security for the Delaware ports, search and rescue, and law enforcement",
+        "Setting": "The Philadelphia metro (with New Jersey and Delaware nearby)",
+        "Region": "Mid-Atlantic"
+      },
+      "source": { "label": "Coast Guard Sector Delaware Bay (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Delaware Bay, based in Philadelphia, guards the busy Delaware River and Bay, running port security for the region's ports plus search and rescue and law enforcement.",
+        "It's in the Philadelphia metro, a large mid-Atlantic market where families also live across the river in New Jersey and down into Delaware."
+      ],
+      "source": { "label": "Coast Guard Sector Delaware Bay (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "delbay_decision",
+      "title": "Philly-Metro Living: Commute and State Lines",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Philadelphia metro spans three states. The main choice is which side (PA, NJ, or DE) fits your commute, schools, taxes, and budget.",
+        "intro": [
+          "The metro offers a wide range of neighborhoods and prices. Coast Guard housing is limited, so most families rent or buy across the area.",
+          "Where you live mostly comes down to commute and schools across South Philly, the PA suburbs, South Jersey, and northern Delaware (which has no sales tax)."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "South Philadelphia and nearby neighborhoods keep the commute short." },
+          { "who": "Family suburbs", "advice": "The PA suburbs and South Jersey offer good schools and more space." },
+          { "who": "Tax consideration", "advice": "Northern Delaware (no sales tax) is an option for some; weigh the commute." },
+          { "who": "Use transit", "advice": "SEPTA and PATCO help with Philly-area commuting; factor transit into where you live." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Delaware Bay (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Delaware Bay (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the Philadelphia area is limited, so most families rent or buy across the metro.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Delaware Bay (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "PA248",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA PA248 (Philadelphia/Camden) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "19147", "label": "South Philadelphia, PA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Philadelphia, the PA suburban districts, South Jersey, and northern Delaware districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Pennsylvania Department of Education (official)", "url": "https://www.education.pa.gov/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "PA", "city": "Philadelphia" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector Delaware Bay",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and the metro's many hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / online",
+        "Commissary": "Nearest DoD commissaries are in the region (e.g., Joint Base MDL, NJ; Dover AFB, DE)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the Philly metro offers everything from city rowhomes to suburban homes across three states."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro and pick a state/side before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "A suburb or neighborhood fits your budget for a home you like.",
+          "You've found a community and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The metro spans PA, NJ, and DE with different taxes and prices, so weigh state lines and commute. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In a big metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Plan around commute and state", "text": "Decide PA, NJ, or DE based on commute, schools, and taxes, and get the housing office's read before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration in your chosen state, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (PA, NJ, or DE) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector Delaware Bay?", "a": "It's the Coast Guard's hub for the Delaware River and Bay, based in Philadelphia, handling port security, search and rescue, and law enforcement." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA PA248 (Philadelphia/Camden)." },
+        { "q": "Where do families live?", "a": "Across the tri-state metro: South Philly and the PA suburbs, South Jersey, and northern Delaware (no sales tax). CG housing is limited." },
+        { "q": "Is it expensive?", "a": "It varies a lot by area and state. The metro has options from city rowhomes to suburban homes; commute and taxes drive the decision." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Independence Hall & Old City", "category": "History", "blurb": "The Liberty Bell and the birthplace of the nation downtown.", "maps_query": "Independence Hall, Philadelphia PA" },
+        { "name": "Reading Terminal Market", "category": "Food & shopping", "blurb": "A famous indoor food market in Center City.", "maps_query": "Reading Terminal Market, Philadelphia PA" },
+        { "name": "Jersey Shore", "category": "Day trip", "blurb": "Atlantic beaches an hour-plus east in New Jersey.", "maps_query": "Ocean City, NJ" },
+        { "name": "Valley Forge", "category": "Outdoors", "blurb": "Historic park and trails in the western suburbs.", "maps_query": "Valley Forge National Historical Park, PA" }
+      ]
+    }
+  ]
+}

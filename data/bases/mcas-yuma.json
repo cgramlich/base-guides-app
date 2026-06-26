@@ -1,0 +1,201 @@
+{
+  "slug": "mcas-yuma",
+  "schema_version": "0.1",
+  "name": "MCAS Yuma",
+  "short_name": "MCAS Yuma",
+  "branch": "U.S. Marine Corps",
+  "states": ["AZ"],
+  "tagline": "A Marine Corps F-35 air station and the home of Marine aviation weapons and tactics training, in the Arizona desert.",
+  "coords": { "lat": 32.66, "lng": -114.61, "label": "Yuma, AZ" },
+  "tz": "America/Phoenix",
+  "last_full_review": "2026-06-25",
+  "_note": "Marine Corps Air Station Yuma (Yuma, AZ; Sonoran Desert; Arizona does not observe DST -> America/Phoenix). CONUS full template (BAH MHA AZ016 Yuma; RentCast/SchoolDigger work). F-35B operations + MAWTS-1 (Marine Aviation Weapons and Tactics Squadron, runs the WTI course). Distinct from Army's Yuma Proving Ground (already in app), same city. Medical: branch clinic. Facts verified from official sources (yuma.marines.mil, TRICARE, DeCA/MCX, Wikipedia for corroborated headline facts). Arizona is TRICARE West. Affordable; very hot summers. Medium-confidence flags: base coords (approx), off-base ZIP 85365 (Yuma).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Yuma, AZ (southwestern Arizona, Sonoran Desert)",
+        "Aircraft": "F-35B Lightning II",
+        "Home of": "MAWTS-1, which runs the Weapons and Tactics Instructor (WTI) course",
+        "Climate": "Hot, dry desert with abundant flying weather",
+        "Note": "Arizona does not observe daylight saving time"
+      },
+      "source": { "label": "MCAS Yuma (official)", "url": "https://www.yuma.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Marine Corps Air Station Yuma is a key Marine aviation base, operating the F-35B and home to MAWTS-1, which runs the elite Weapons and Tactics Instructor (WTI) course. Its clear desert skies make it ideal for flight operations year-round.",
+        "It's in Yuma in southwestern Arizona's Sonoran Desert, an affordable area known for sunshine and heat, with the Colorado River and California's coast within driving distance."
+      ],
+      "source": { "label": "MCAS Yuma (official)", "url": "https://www.yuma.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "yuma_decision",
+      "title": "Affordable Desert Living in Yuma",
+      "type": "killer",
+      "data": {
+        "subtitle": "Yuma is affordable and sunny, with extreme summer heat. The main choice is which part of town fits your commute and schools, with on-base housing also available.",
+        "intro": [
+          "Yuma's cost of living is low, so BAH stretches well. On-base housing is available; many also live off base around the city.",
+          "Where you live mostly comes down to commute and schools across Yuma and the Foothills, with the desert heat the main lifestyle factor."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Central and south Yuma keep the commute short." },
+          { "who": "Family areas", "advice": "The Foothills and newer east-side neighborhoods are popular with families." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Plan for the heat", "advice": "Summers are extreme; budget for cooling and enjoy the great fall, winter, and spring." }
+        ]
+      },
+      "source": { "label": "MCAS Yuma (official)", "url": "https://www.yuma.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official MCAS Yuma site before you go."
+      ],
+      "source": { "label": "MCAS Yuma (official)", "url": "https://www.yuma.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "MCAS Yuma has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "MCAS Yuma (official)", "url": "https://www.yuma.marines.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AZ016",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AZ016 (Yuma)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "85365", "label": "Yuma, AZ" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Yuma's elementary districts and the Yuma Union High School District serve the area; confirm the right district for your address.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Yuma Union High School District (official)", "url": "https://www.yumaunion.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AZ", "city": "Yuma" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Branch Health Clinic MCAS Yuma",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the Yuma network (and, for some needs, San Diego or Phoenix)",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Branch Health Clinic MCAS Yuma (TRICARE)", "url": "https://www.tricare.mil/mtf/Yuma" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "MCAS Yuma Commissary (DeCA)",
+        "Exchange": "Marine Corps Exchange (MCX) Yuma"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Yuma's affordable market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Yuma market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Yuma's affordability makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the office's read on Yuma and the Foothills before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Arizona vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (your Yuma elementary district and Yuma Union HSD) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Yuma clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is MCAS Yuma known for?", "a": "It's a Marine F-35B air station and the home of MAWTS-1, which runs the Marine Corps' elite Weapons and Tactics Instructor (WTI) course." },
+        { "q": "Is this the same as Yuma Proving Ground?", "a": "No. Yuma Proving Ground is a separate Army test installation in the same area. MCAS Yuma is the Marine Corps air station in the city of Yuma." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base around Yuma and the Foothills." },
+        { "q": "What's the weather like?", "a": "Hot, dry Sonoran Desert with extreme summers and excellent flying weather. Note Arizona doesn't observe daylight saving time." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Historic Yuma (Colorado River State Historic Park)", "category": "History", "blurb": "The old territorial prison and riverfront history downtown.", "maps_query": "Yuma Territorial Prison State Historic Park, AZ" },
+        { "name": "Colorado River", "category": "Outdoors", "blurb": "Boating, fishing, and river recreation right by the city.", "maps_query": "Colorado River, Yuma AZ" },
+        { "name": "Imperial Sand Dunes", "category": "Outdoors", "blurb": "Vast dunes for off-roading just across the California line.", "maps_query": "Imperial Sand Dunes Recreation Area, CA" },
+        { "name": "San Diego / California coast", "category": "Day trip", "blurb": "The Pacific coast is roughly a few hours west.", "maps_query": "San Diego, CA" }
+      ]
+    }
+  ]
+}

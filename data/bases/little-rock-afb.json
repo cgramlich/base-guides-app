@@ -1,0 +1,201 @@
+{
+  "slug": "little-rock-afb",
+  "schema_version": "0.1",
+  "name": "Little Rock AFB",
+  "short_name": "Little Rock",
+  "branch": "U.S. Air Force",
+  "states": ["AR"],
+  "tagline": "The 'Home of C-130 Combat Airlift,' the world's largest C-130 base, near Little Rock, Arkansas.",
+  "coords": { "lat": 34.92, "lng": -92.15, "label": "Jacksonville, AR" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force airlift base (Jacksonville, AR, Little Rock metro; Central time). CONUS full template (BAH MHA AR010 Little Rock; RentCast/SchoolDigger work). 19th Airlift Wing + 314th Airlift Wing (C-130 training); the world's largest C-130 base and the hub for C-130 aircrew training. Medical: 19th Medical Group clinic. Facts verified from official sources (littlerock.af.mil, 19 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Arkansas moved to TRICARE West in 2024. Affordable. Medium-confidence flags: base coords (approx), off-base ZIP 72076 (Jacksonville).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Jacksonville, AR (Little Rock metro)",
+        "Major units": "19th Airlift Wing and 314th Airlift Wing",
+        "Aircraft": "C-130 Hercules (combat airlift and aircrew training)",
+        "Distinction": "The world's largest C-130 base and the C-130 training hub",
+        "Setting": "Affordable central Arkansas"
+      },
+      "source": { "label": "Little Rock AFB (official)", "url": "https://www.littlerock.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Little Rock Air Force Base is the 'Home of C-130 Combat Airlift,' the world's largest C-130 base. The 19th Airlift Wing flies operational missions while the 314th Airlift Wing trains C-130 aircrews from across the U.S. and partner nations.",
+        "It's in Jacksonville, in the Little Rock metro of central Arkansas, an affordable area with a settled, family-friendly feel."
+      ],
+      "source": { "label": "Little Rock AFB (official)", "url": "https://www.littlerock.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "lrafb_decision",
+      "title": "Affordable Central Arkansas Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Little Rock area is affordable and family-friendly. The main choice is which nearby community fits your commute and schools, with on-base housing also available.",
+        "intro": [
+          "Central Arkansas is inexpensive, so BAH stretches well. On-base housing is available; many also live off base around Jacksonville, Cabot, and the metro.",
+          "Where you live mostly comes down to commute and schools, with Cabot a favorite of families and Little Rock proper offering big-city amenities."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Jacksonville borders the base for the shortest commute." },
+          { "who": "Family favorite", "advice": "Cabot is popular with families for its schools, a short drive northeast." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Big-city access", "advice": "Little Rock and North Little Rock offer dining, shopping, and an airport a short drive south." }
+        ]
+      },
+      "source": { "label": "Little Rock AFB (official)", "url": "https://www.littlerock.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Little Rock AFB site before you go."
+      ],
+      "source": { "label": "Little Rock AFB (official)", "url": "https://www.littlerock.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Little Rock AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Little Rock AFB (official)", "url": "https://www.littlerock.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AR010",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AR010 (Little Rock)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "72076", "label": "Jacksonville, AR" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Jacksonville/North Pulaski, Cabot (well regarded), and Pulaski County districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Cabot Public Schools (official)", "url": "https://www.cabotschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AR", "city": "Jacksonville" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "19th Medical Group (Little Rock AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via Little Rock-area network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Little Rock AFB / 19th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/LittleRock" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Little Rock AFB Commissary (DeCA)",
+        "Exchange": "Little Rock AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the affordable Little Rock market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or you're here for a C-130 training pipeline.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable central Arkansas market fits your budget for a home you like.",
+          "You've found a community and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the affordable Little Rock market makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the office's read on Jacksonville, Cabot, and the metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Arkansas vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Jacksonville/North Pulaski, Cabot, or Pulaski County) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 19th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Little Rock AFB known for?", "a": "It's the 'Home of C-130 Combat Airlift,' the world's largest C-130 base, with the 19th Airlift Wing (operational) and the 314th Airlift Wing (C-130 aircrew training)." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base. Jacksonville is closest; Cabot is popular for schools; Little Rock offers big-city amenities." },
+        { "q": "Is it affordable?", "a": "Yes. Central Arkansas is inexpensive, so BAH stretches well." },
+        { "q": "What is the BAH area?", "a": "Little Rock AFB is MHA AR010 (Little Rock). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Downtown Little Rock / River Market", "category": "Food & shopping", "blurb": "Riverfront dining, the Clinton Library, and the River Market district.", "maps_query": "River Market District, Little Rock AR" },
+        { "name": "Pinnacle Mountain State Park", "category": "Outdoors", "blurb": "Hiking and river access just west of Little Rock.", "maps_query": "Pinnacle Mountain State Park, AR" },
+        { "name": "Hot Springs National Park", "category": "Day trip", "blurb": "Historic bathhouses and trails about an hour southwest.", "maps_query": "Hot Springs National Park, AR" },
+        { "name": "Greers Ferry Lake", "category": "Outdoors", "blurb": "A clear Ozark-foothills lake for boating north of Cabot.", "maps_query": "Greers Ferry Lake, AR" }
+      ]
+    }
+  ]
+}

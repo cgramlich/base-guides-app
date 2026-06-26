@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-air-station-traverse-city",
+  "schema_version": "0.1",
+  "name": "Coast Guard Air Station Traverse City",
+  "short_name": "Traverse City",
+  "branch": "U.S. Coast Guard",
+  "states": ["MI"],
+  "tagline": "The Coast Guard's Great Lakes air station, flying rescue missions over the inland seas from northern Michigan.",
+  "coords": { "lat": 44.74, "lng": -85.58, "label": "Traverse City, MI" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Air Station Traverse City (northern Michigan). CONUS full template (BAH MHA MI146 Traverse City; RentCast/SchoolDigger work). CG uses same BAH tables. The Coast Guard's Great Lakes air station; SAR across the lakes. Scenic, seasonal northern Michigan; cold/snowy winters. Medical: CG clinic + TRICARE network/local. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Michigan is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 49686 (Traverse City).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Traverse City, MI (northern Lower Michigan)",
+        "Role": "The Coast Guard's Great Lakes air station",
+        "Mission": "Search and rescue and patrol across the Great Lakes",
+        "Setting": "Scenic, seasonal northern Michigan (cold winters)",
+        "Region": "Grand Traverse Bay / Lake Michigan"
+      },
+      "source": { "label": "Coast Guard Air Station Traverse City (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Air Station Traverse City is the service's Great Lakes air station, flying search-and-rescue and patrol missions over the inland seas, often in tough weather.",
+        "It's in Traverse City in scenic northern Michigan on Grand Traverse Bay, a beautiful, seasonal area known for cherries, wineries, and water, with cold, snowy winters."
+      ],
+      "source": { "label": "Coast Guard Air Station Traverse City (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "tvc_decision",
+      "title": "Scenic Northern Michigan Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Traverse City is a beautiful resort-area town with a seasonal market. The main choice is in-town versus nearby communities, with summer popularity and winter snow both factors.",
+        "intro": [
+          "Traverse City is a desirable, somewhat seasonal market (tourism peaks in summer). Coast Guard housing is limited, so most families rent or buy in and around town.",
+          "Where you live mostly comes down to commute and schools across Traverse City and the surrounding Grand Traverse area, with the bay and outdoors as the draw."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Traverse City itself keeps the commute short and puts you near the bay." },
+          { "who": "Nearby communities", "advice": "Surrounding Grand Traverse and Leelanau areas offer a range of homes and schools." },
+          { "who": "Plan for seasons", "advice": "Summer is busy and pricier; winters are snowy. Budget for heating and enjoy four-season recreation." },
+          { "who": "Embrace the outdoors", "advice": "Beaches, dunes, wineries, and skiing are all close." }
+        ]
+      },
+      "source": { "label": "Coast Guard Air Station Traverse City (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Air Station Traverse City (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the area is limited, so most families rent or buy in and around Traverse City.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Air Station Traverse City (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MI146",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MI146 (Traverse City) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "49686", "label": "Traverse City, MI" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Traverse City Area Public Schools and nearby districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Traverse City Area Public Schools (official)", "url": "https://www.tcaps.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MI", "city": "Traverse City" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Air Station Traverse City",
+        "Care": "On-base clinic care for the assigned population; family care via the local hospital and the TRICARE network",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / online",
+        "Commissary": "Limited locally; most groceries via Traverse City stores"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Traverse City's desirable, somewhat seasonal market means tour length and timing matter."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing.",
+          "You'd rather not own in a seasonal, resort-driven market.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The local market fits your budget for a home you like.",
+          "You've found a community and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Traverse City is desirable and seasonal, so weigh tour length and timing. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive (book early in summer). You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on Traverse City and nearby communities before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Michigan vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Traverse City Area Public Schools (or a nearby district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Air Station Traverse City?", "a": "It's the Coast Guard's Great Lakes air station, flying search-and-rescue and patrol missions over the lakes from northern Michigan." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Traverse City is MHA MI146." },
+        { "q": "Where do families live?", "a": "In and around Traverse City. The market is somewhat seasonal (tourism peaks in summer), and CG housing is limited, so most rent or buy." },
+        { "q": "What's the area like?", "a": "Scenic northern Michigan on Grand Traverse Bay: beaches, wineries, and skiing, with cold, snowy winters." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Sleeping Bear Dunes National Lakeshore", "category": "Outdoors", "blurb": "Towering dunes and Lake Michigan beaches west of town.", "maps_query": "Sleeping Bear Dunes National Lakeshore, MI" },
+        { "name": "Downtown Traverse City", "category": "Food & shopping", "blurb": "A walkable downtown known for food, cherries, and wineries.", "maps_query": "Downtown Traverse City, MI" },
+        { "name": "Old Mission Peninsula wineries", "category": "Day trip", "blurb": "Vineyards and bay views on the peninsula north of town.", "maps_query": "Old Mission Peninsula, MI" },
+        { "name": "Grand Traverse Bay beaches", "category": "Beach", "blurb": "Clear-water beaches right in and around the city.", "maps_query": "Clinch Park Beach, Traverse City MI" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "ellsworth-afb",
+  "schema_version": "0.1",
+  "name": "Ellsworth AFB",
+  "short_name": "Ellsworth",
+  "branch": "U.S. Air Force",
+  "states": ["SD"],
+  "tagline": "Home of the B-1 Lancer and a future home of the B-21 Raider, in the Black Hills of South Dakota.",
+  "coords": { "lat": 44.15, "lng": -103.10, "label": "Rapid City, SD" },
+  "tz": "America/Denver",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force bomber base (Box Elder / Rapid City, western SD; Mountain time). CONUS full template (BAH MHA SD264 Rapid City/Ellsworth AFB; RentCast/SchoolDigger work). 28th Bomb Wing (B-1B Lancer); slated as a main operating base for the new B-21 Raider. Medical: 28th Medical Group clinic. Facts verified from official sources (ellsworth.af.mil, 28 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). South Dakota is TRICARE West; no state income tax. Black Hills location. Medium-confidence flags: base coords (approx), off-base ZIP 57719 (Box Elder).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Box Elder / Rapid City, SD (Black Hills)",
+        "Major unit": "28th Bomb Wing",
+        "Aircraft": "B-1B Lancer (and a planned main operating base for the B-21 Raider)",
+        "Setting": "Affordable Black Hills region; no state income tax",
+        "Nearby": "Mount Rushmore and the Black Hills"
+      },
+      "source": { "label": "Ellsworth AFB (official)", "url": "https://www.ellsworth.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Ellsworth Air Force Base is home to the 28th Bomb Wing, flying the B-1B Lancer, and it's slated to be one of the first main operating bases for the Air Force's new B-21 Raider stealth bomber.",
+        "It's near Rapid City in the Black Hills of western South Dakota, an affordable area with no state income tax and outstanding outdoor recreation, including Mount Rushmore nearby."
+      ],
+      "source": { "label": "Ellsworth AFB (official)", "url": "https://www.ellsworth.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "ellsworth_decision",
+      "title": "Affordable Black Hills Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Rapid City area is affordable with great outdoors and no state income tax. The main choice is which community fits your commute and schools, with cold, snowy winters to plan for.",
+        "intro": [
+          "Western SD is inexpensive, so BAH stretches well, and the Black Hills are a big draw for outdoorsy families. On-base housing is available; many also live off base.",
+          "Where you live mostly comes down to commute and schools across Box Elder (next to the base) and Rapid City, with real winters in the picture."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Box Elder borders the base for the shortest commute." },
+          { "who": "More amenities", "advice": "Rapid City offers more shopping, dining, and schools a short drive west." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Embrace the outdoors", "advice": "The Black Hills, Mount Rushmore, and skiing/hiking are right there; plan for snowy winters." }
+        ]
+      },
+      "source": { "label": "Ellsworth AFB (official)", "url": "https://www.ellsworth.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Ellsworth AFB site before you go."
+      ],
+      "source": { "label": "Ellsworth AFB (official)", "url": "https://www.ellsworth.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Ellsworth AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Ellsworth AFB (official)", "url": "https://www.ellsworth.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "SD264",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA SD264 (Rapid City/Ellsworth AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "57719", "label": "Box Elder, SD" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Douglas School District (Box Elder, next to the base) and Rapid City Area Schools serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Douglas School District (official)", "url": "https://www.douglas.k12.sd.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "SD", "city": "Rapid City" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "28th Medical Group (Ellsworth AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via Rapid City network hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "Ellsworth AFB / 28th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/Ellsworth" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Ellsworth AFB Commissary (DeCA)",
+        "Exchange": "Ellsworth AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the affordable Rapid City market (no state income tax) makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area and the winters before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years (the B-21 mission may mean longer or repeat tours).",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Black Hills market fits your budget for a home you like.",
+          "You're comfortable maintaining a home through snowy winters."
+        ],
+        "bottom_line": "There is no universal right answer, but the affordable market and the growing B-21 mission make buying worth a look. Weigh winter maintenance and run your BAH against the rent and home prices above, then talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and a Black Hills move adds winter prep. Start early."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the office's read on Box Elder and Rapid City before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and South Dakota vehicle registration, prep for winter driving, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Douglas or Rapid City Area Schools) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 28th Medical Group clinic or Rapid City network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Ellsworth known for?", "a": "It's home to the 28th Bomb Wing flying the B-1B Lancer, and it's slated to be one of the first main operating bases for the new B-21 Raider stealth bomber." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base in Box Elder (next to the base) or Rapid City." },
+        { "q": "Is it affordable?", "a": "Yes. The Rapid City area is inexpensive with no state income tax, so BAH stretches well." },
+        { "q": "What is the BAH area?", "a": "Ellsworth is MHA SD264 (Rapid City/Ellsworth AFB). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Mount Rushmore", "category": "Family", "blurb": "The iconic national memorial in the Black Hills.", "maps_query": "Mount Rushmore National Memorial, SD" },
+        { "name": "Black Hills & Custer State Park", "category": "Outdoors", "blurb": "Mountains, wildlife, and trails southwest of Rapid City.", "maps_query": "Custer State Park, SD" },
+        { "name": "Badlands National Park", "category": "Outdoors", "blurb": "Dramatic eroded canyons east of the base.", "maps_query": "Badlands National Park, SD" },
+        { "name": "Downtown Rapid City", "category": "In town", "blurb": "The 'City of Presidents' with shops, dining, and Main Street Square.", "maps_query": "Main Street Square, Rapid City SD" }
+      ]
+    }
+  ]
+}

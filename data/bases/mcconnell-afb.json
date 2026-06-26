@@ -1,0 +1,201 @@
+{
+  "slug": "mcconnell-afb",
+  "schema_version": "0.1",
+  "name": "McConnell AFB",
+  "short_name": "McConnell",
+  "branch": "U.S. Air Force",
+  "states": ["KS"],
+  "tagline": "A KC-46 tanker hub in Wichita, the 'Air Capital of the World.'",
+  "coords": { "lat": 37.62, "lng": -97.27, "label": "Wichita, KS" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force tanker base (Wichita, KS; Central time). CONUS full template (BAH MHA KS101 Wichita/McConnell AFB; RentCast/SchoolDigger work). 22nd Air Refueling Wing (KC-46A Pegasus); a primary KC-46 base. Medical: 22nd Medical Group clinic. Facts verified from official sources (mcconnell.af.mil, 22 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). Kansas is TRICARE West. Affordable. Medium-confidence flags: base coords (approx), off-base ZIP 67037 (Derby).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Wichita, KS (south-central Kansas)",
+        "Major unit": "22nd Air Refueling Wing",
+        "Aircraft": "KC-46A Pegasus tankers",
+        "Setting": "Affordable mid-size city, the 'Air Capital of the World'",
+        "Nearby": "Derby and the Wichita suburbs"
+      },
+      "source": { "label": "McConnell AFB (official)", "url": "https://www.mcconnell.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "McConnell Air Force Base is a primary home of the KC-46A Pegasus tanker, flown by the 22nd Air Refueling Wing, keeping aircraft fueled around the globe.",
+        "It's in Wichita, the 'Air Capital of the World' and a center of the aviation industry, an affordable mid-size Kansas city with a family-friendly feel."
+      ],
+      "source": { "label": "McConnell AFB (official)", "url": "https://www.mcconnell.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mcconnell_decision",
+      "title": "Affordable Wichita Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Wichita is an affordable mid-size city. The main choice is which suburb fits your commute and schools, with on-base housing also available.",
+        "intro": [
+          "Wichita's cost of living is low, so BAH stretches well, and the metro offers a range of suburbs and good schools. On-base housing is available; many also live off base nearby.",
+          "Where you live mostly comes down to commute and schools across Derby (closest to the base), Andover, Rose Hill, and the Wichita suburbs."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Derby and southeast Wichita sit near the base for a short commute." },
+          { "who": "Family suburbs", "advice": "Derby, Andover, and Rose Hill are popular with families for their schools." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "Stretch your budget", "advice": "Wichita is affordable, so BAH tends to go far and many families buy." }
+        ]
+      },
+      "source": { "label": "McConnell AFB (official)", "url": "https://www.mcconnell.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official McConnell AFB site before you go."
+      ],
+      "source": { "label": "McConnell AFB (official)", "url": "https://www.mcconnell.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "McConnell AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "McConnell AFB (official)", "url": "https://www.mcconnell.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "KS101",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA KS101 (Wichita/McConnell AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "67037", "label": "Derby, KS" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Derby, Andover, Rose Hill, and Wichita districts serve military families depending on where you live; Derby and Andover are well regarded.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Derby Public Schools (official)", "url": "https://www.derbyschools.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "KS", "city": "Wichita" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "22nd Medical Group (McConnell AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via the Wichita network",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "McConnell AFB / 22nd Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/McConnell" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "McConnell AFB Commissary (DeCA)",
+        "Exchange": "McConnell AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Wichita's affordable market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Wichita market fits your budget for a home you like.",
+          "You've found a suburb and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Wichita's affordability makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the office's read on Derby, Andover, and the Wichita suburbs before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Kansas vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Derby, Andover, Rose Hill, or Wichita) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 22nd Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is McConnell known for?", "a": "It's a primary KC-46A Pegasus tanker base, home to the 22nd Air Refueling Wing, in Wichita, the 'Air Capital of the World.'" },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base. Derby is closest; Derby, Andover, and Rose Hill are popular for schools; Wichita offers big-city amenities." },
+        { "q": "Is it affordable?", "a": "Yes. Wichita is an affordable mid-size city, so BAH stretches well." },
+        { "q": "What is the BAH area?", "a": "McConnell is MHA KS101 (Wichita/McConnell AFB). Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Old Town Wichita", "category": "Food & shopping", "blurb": "A revitalized brick district with dining, nightlife, and museums.", "maps_query": "Old Town Wichita, KS" },
+        { "name": "Sedgwick County Zoo", "category": "Family", "blurb": "One of the country's top zoos, in Wichita.", "maps_query": "Sedgwick County Zoo, Wichita KS" },
+        { "name": "Botanica / Riverwalk", "category": "Outdoors", "blurb": "Gardens and the Arkansas River path through the city.", "maps_query": "Botanica Wichita, KS" },
+        { "name": "Kansas Aviation Museum", "category": "Museum", "blurb": "Aviation history fitting the 'Air Capital.'", "maps_query": "Kansas Aviation Museum, Wichita KS" }
+      ]
+    }
+  ]
+}

@@ -149,6 +149,26 @@
     { "slug": "coast-guard-sector-charleston", "name": "Coast Guard Sector Charleston", "branch": "U.S. Coast Guard", "state": "SC", "ready": true },
     { "slug": "coast-guard-air-station-corpus-christi", "name": "Coast Guard Air Station Corpus Christi", "branch": "U.S. Coast Guard", "state": "TX", "ready": true },
     { "slug": "coast-guard-sector-anchorage", "name": "Coast Guard Sector Anchorage", "branch": "U.S. Coast Guard", "state": "AK", "region": "OCONUS", "ready": true },
-    { "slug": "coast-guard-sector-northern-new-england", "name": "Coast Guard Sector Northern New England", "branch": "U.S. Coast Guard", "state": "ME", "ready": true }
+    { "slug": "coast-guard-sector-northern-new-england", "name": "Coast Guard Sector Northern New England", "branch": "U.S. Coast Guard", "state": "ME", "ready": true },
+    { "slug": "nas-whiting-field", "name": "NAS Whiting Field", "branch": "U.S. Navy", "state": "FL", "ready": true },
+    { "slug": "laughlin-afb", "name": "Laughlin AFB", "branch": "U.S. Air Force", "state": "TX", "ready": true },
+    { "slug": "seymour-johnson-afb", "name": "Seymour Johnson AFB", "branch": "U.S. Air Force", "state": "NC", "ready": true },
+    { "slug": "shaw-afb", "name": "Shaw AFB", "branch": "U.S. Air Force", "state": "SC", "ready": true },
+    { "slug": "ellsworth-afb", "name": "Ellsworth AFB", "branch": "U.S. Air Force", "state": "SD", "ready": true },
+    { "slug": "fe-warren-afb", "name": "F.E. Warren AFB", "branch": "U.S. Air Force", "state": "WY", "ready": true },
+    { "slug": "little-rock-afb", "name": "Little Rock AFB", "branch": "U.S. Air Force", "state": "AR", "ready": true },
+    { "slug": "mcconnell-afb", "name": "McConnell AFB", "branch": "U.S. Air Force", "state": "KS", "ready": true },
+    { "slug": "schriever-sfb", "name": "Schriever SFB", "branch": "U.S. Space Force", "state": "CO", "ready": true },
+    { "slug": "mcas-yuma", "name": "MCAS Yuma", "branch": "U.S. Marine Corps", "state": "AZ", "ready": true },
+    { "slug": "coast-guard-sector-lake-michigan", "name": "Coast Guard Sector Lake Michigan", "branch": "U.S. Coast Guard", "state": "WI", "ready": true },
+    { "slug": "coast-guard-air-station-traverse-city", "name": "Coast Guard Air Station Traverse City", "branch": "U.S. Coast Guard", "state": "MI", "ready": true },
+    { "slug": "coast-guard-sector-delaware-bay", "name": "Coast Guard Sector Delaware Bay", "branch": "U.S. Coast Guard", "state": "PA", "ready": true },
+    { "slug": "coast-guard-sector-long-island-sound", "name": "Coast Guard Sector Long Island Sound", "branch": "U.S. Coast Guard", "state": "CT", "ready": true },
+    { "slug": "coast-guard-sector-maryland-ncr", "name": "Coast Guard Sector Maryland-NCR", "branch": "U.S. Coast Guard", "state": "MD", "ready": true },
+    { "slug": "coast-guard-sector-ohio-valley", "name": "Coast Guard Sector Ohio Valley", "branch": "U.S. Coast Guard", "state": "KY", "ready": true },
+    { "slug": "coast-guard-sector-upper-mississippi", "name": "Coast Guard Sector Upper Mississippi River", "branch": "U.S. Coast Guard", "state": "MO", "ready": true },
+    { "slug": "coast-guard-sector-jacksonville", "name": "Coast Guard Sector Jacksonville", "branch": "U.S. Coast Guard", "state": "FL", "ready": true },
+    { "slug": "coast-guard-air-station-sitka", "name": "Coast Guard Air Station Sitka", "branch": "U.S. Coast Guard", "state": "AK", "region": "OCONUS", "ready": true },
+    { "slug": "coast-guard-sector-guam", "name": "Coast Guard Sector Guam", "branch": "U.S. Coast Guard", "state": "Guam", "region": "OCONUS", "ready": true }
   ]
 }

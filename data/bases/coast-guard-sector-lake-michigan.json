@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-lake-michigan",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Lake Michigan",
+  "short_name": "Lake Michigan",
+  "branch": "U.S. Coast Guard",
+  "states": ["WI"],
+  "tagline": "The Coast Guard guarding Lake Michigan, headquartered in Milwaukee.",
+  "coords": { "lat": 43.02, "lng": -87.89, "label": "Milwaukee, WI" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Lake Michigan (Milwaukee, WI). CONUS full template (BAH MHA WI317 Milwaukee; RentCast/SchoolDigger work). CG uses same BAH tables. Oversees Lake Michigan SAR + law enforcement. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Wisconsin is TRICARE East. Affordable Great Lakes metro; cold winters. Medium-confidence flags: base coords (approx), off-base ZIP 53207 (Milwaukee).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Milwaukee, WI (Lake Michigan)",
+        "Role": "Coast Guard hub for Lake Michigan",
+        "Mission": "Search and rescue, ice operations, and law enforcement on the lake",
+        "Setting": "Affordable Great Lakes city",
+        "Region": "Western shore of Lake Michigan"
+      },
+      "source": { "label": "Coast Guard Sector Lake Michigan (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Lake Michigan, based in Milwaukee, coordinates search and rescue, ice operations, and law enforcement across Lake Michigan, a busy recreational and commercial waterway.",
+        "It's in Milwaukee on the lake's western shore, an affordable Great Lakes city with four real seasons and cold winters."
+      ],
+      "source": { "label": "Coast Guard Sector Lake Michigan (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mke_decision",
+      "title": "Affordable Milwaukee Living on the Lake",
+      "type": "killer",
+      "data": {
+        "subtitle": "Milwaukee is an affordable lakefront metro. The main choice is which neighborhood or suburb fits your commute and schools, with cold winters to plan for.",
+        "intro": [
+          "Milwaukee's cost of living is reasonable, so BAH stretches. Coast Guard housing is limited, so most families rent or buy across the metro.",
+          "Where you live mostly comes down to commute and schools across the city and the surrounding suburbs, with Lake Michigan and four seasons part of the picture."
+        ],
+        "recommendations": [
+          { "who": "Closest to downtown", "advice": "South-side and near-lakefront neighborhoods keep the commute short." },
+          { "who": "Family suburbs", "advice": "Suburbs ringing the metro offer good schools and more space." },
+          { "who": "Stretch your budget", "advice": "Milwaukee is affordable, so BAH tends to go far and many families buy." },
+          { "who": "Plan for winter", "advice": "Lake-effect snow and cold are real; budget for heating and winter driving." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Lake Michigan (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Lake Michigan (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in Milwaukee is limited, so most families rent or buy across the metro.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Lake Michigan (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "WI317",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA WI317 (Milwaukee) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "53207", "label": "Milwaukee, WI" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Milwaukee and the surrounding suburban districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Wisconsin DPI (official)", "url": "https://dpi.wi.gov/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "WI", "city": "Milwaukee" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector Lake Michigan",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and Milwaukee-area hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / online",
+        "Commissary": "No large DoD commissary in the immediate metro; most groceries via local stores"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Milwaukee's affordable market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Milwaukee market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Milwaukee's affordability makes buying worth a look for longer tours. Note Wisconsin property taxes vary; run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on the Milwaukee neighborhoods and suburbs before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle building/base access and Wisconsin vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact your area district early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector Lake Michigan?", "a": "It's the Coast Guard's hub for Lake Michigan, based in Milwaukee, handling search and rescue, ice operations, and law enforcement on the lake." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Milwaukee is MHA WI317." },
+        { "q": "Where do families live?", "a": "Across the Milwaukee metro, which is affordable with a range of suburbs. CG housing is limited, so most rent or buy." },
+        { "q": "What's the weather like?", "a": "Four seasons with cold, snowy winters off Lake Michigan; budget for heating and winter driving." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Milwaukee lakefront & Art Museum", "category": "Family", "blurb": "The iconic art museum and Lake Michigan shoreline downtown.", "maps_query": "Milwaukee Art Museum, WI" },
+        { "name": "Historic Third Ward", "category": "Food & shopping", "blurb": "A walkable district of dining, shops, and the public market.", "maps_query": "Historic Third Ward, Milwaukee WI" },
+        { "name": "Lake Michigan beaches", "category": "Beach", "blurb": "Bradford Beach and lakefront parks in the city.", "maps_query": "Bradford Beach, Milwaukee WI" },
+        { "name": "Chicago", "category": "Day trip", "blurb": "The big city about 90 minutes south by car or train.", "maps_query": "Chicago, IL" }
+      ]
+    }
+  ]
+}

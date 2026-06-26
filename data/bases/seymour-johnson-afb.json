@@ -1,0 +1,201 @@
+{
+  "slug": "seymour-johnson-afb",
+  "schema_version": "0.1",
+  "name": "Seymour Johnson AFB",
+  "short_name": "Seymour Johnson",
+  "branch": "U.S. Air Force",
+  "states": ["NC"],
+  "tagline": "Home of the F-15E Strike Eagle and KC-46 tankers in eastern North Carolina.",
+  "coords": { "lat": 35.34, "lng": -77.96, "label": "Goldsboro, NC" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Air Force fighter + tanker base (Goldsboro, eastern NC). CONUS full template (BAH MHA NC183 Seymour Johnson AFB; RentCast/SchoolDigger work). 4th Fighter Wing (F-15E Strike Eagle) + 916th Air Refueling Wing (KC-46, AF Reserve). Medical: 4th Medical Group clinic. Facts verified from official sources (seymourjohnson.af.mil, 4 MDG/TRICARE, DeCA/AAFES, Wikipedia for corroborated headline facts). North Carolina is TRICARE East. Affordable. Medium-confidence flags: base coords (approx), off-base ZIP 27534 (Goldsboro).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Goldsboro, NC (eastern North Carolina)",
+        "Major unit": "4th Fighter Wing",
+        "Aircraft": "F-15E Strike Eagle (plus KC-46 tankers, 916th ARW)",
+        "Setting": "Affordable small-city eastern NC",
+        "Nearby": "Raleigh is about an hour-plus west"
+      },
+      "source": { "label": "Seymour Johnson AFB (official)", "url": "https://www.seymourjohnson.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Seymour Johnson Air Force Base is home to the 4th Fighter Wing, flying the F-15E Strike Eagle, and the 916th Air Refueling Wing with KC-46 tankers. It's a busy combat-aviation base.",
+        "It's in Goldsboro in eastern North Carolina, an affordable small city, with the Raleigh metro about an hour-plus to the west for big-city needs."
+      ],
+      "source": { "label": "Seymour Johnson AFB (official)", "url": "https://www.seymourjohnson.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "sj_decision",
+      "title": "Affordable Eastern North Carolina Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Goldsboro is affordable and family-friendly. The main choice is in-town versus nearby communities, with Raleigh reachable for more.",
+        "intro": [
+          "Eastern NC is inexpensive, so BAH stretches well. On-base housing is available; many also live off base in and around Goldsboro.",
+          "Where you live mostly comes down to commute and schools across Goldsboro and Wayne County, with the Raleigh area an option for those who don't mind the drive."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Goldsboro surrounds the base with affordable housing and the shortest commute." },
+          { "who": "On-base option", "advice": "On-base housing is available and convenient; weigh it against the affordable local market." },
+          { "who": "More amenities", "advice": "The Raleigh metro is about an hour-plus west for big-city shopping, dining, and an airport." },
+          { "who": "Stretch your budget", "advice": "The area is affordable, so BAH tends to go far and many families buy." }
+        ]
+      },
+      "source": { "label": "Seymour Johnson AFB (official)", "url": "https://www.seymourjohnson.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Seymour Johnson AFB site before you go."
+      ],
+      "source": { "label": "Seymour Johnson AFB (official)", "url": "https://www.seymourjohnson.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Seymour Johnson AFB has privatized on-base family housing across several neighborhoods.",
+        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+      ],
+      "source": { "label": "Seymour Johnson AFB (official)", "url": "https://www.seymourjohnson.af.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NC183",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NC183 (Seymour Johnson AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "27534", "label": "Goldsboro, NC" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Wayne County Public Schools serves Goldsboro and the area around the base.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Wayne County Public Schools (official)", "url": "https://www.waynecountyschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NC", "city": "Goldsboro" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "4th Medical Group (Seymour Johnson AFB Clinic)",
+        "Care": "Outpatient primary and some specialty care on base; inpatient, emergency, and complex care via area network hospitals (and Raleigh)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "Seymour Johnson AFB / 4th Medical Group (TRICARE)", "url": "https://www.tricare.mil/mtf/SeymourJohnson" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Seymour Johnson AFB Commissary (DeCA)",
+        "Exchange": "Seymour Johnson AFB Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Goldsboro's affordable market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable eastern NC market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Goldsboro's affordability makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the office's read on Goldsboro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and North Carolina vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact Wayne County Public Schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the 4th Medical Group clinic or network providers." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Seymour Johnson known for?", "a": "It's home to the 4th Fighter Wing flying the F-15E Strike Eagle, plus the 916th Air Refueling Wing with KC-46 tankers." },
+        { "q": "Where do families live?", "a": "On-base housing is available; many live off base in and around Goldsboro. The Raleigh metro is an option about an hour-plus west." },
+        { "q": "Is it affordable?", "a": "Yes. Eastern North Carolina is inexpensive, so BAH stretches well." },
+        { "q": "What is the BAH area?", "a": "Seymour Johnson is MHA NC183. Use the calculator above for your grade." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Cliffs of the Neuse State Park", "category": "Outdoors", "blurb": "River bluffs, trails, and swimming near Goldsboro.", "maps_query": "Cliffs of the Neuse State Park, NC" },
+        { "name": "Downtown Goldsboro", "category": "In town", "blurb": "A revitalized small-city downtown with dining and events.", "maps_query": "Downtown Goldsboro, NC" },
+        { "name": "Raleigh", "category": "Day trip", "blurb": "The state capital's museums, dining, and airport about an hour-plus west.", "maps_query": "Raleigh, NC" },
+        { "name": "North Carolina beaches", "category": "Day trip", "blurb": "The Crystal Coast and Atlantic beaches are a drive southeast.", "maps_query": "Atlantic Beach, NC" }
+      ]
+    }
+  ]
+}

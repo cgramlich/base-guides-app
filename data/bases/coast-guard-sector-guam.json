@@ -1,0 +1,157 @@
+{
+  "slug": "coast-guard-sector-guam",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Guam",
+  "short_name": "Guam (CG)",
+  "branch": "U.S. Coast Guard",
+  "states": ["Guam"],
+  "region": "OCONUS",
+  "tagline": "The Coast Guard's hub in the western Pacific, guarding Guam and the Mariana Islands.",
+  "coords": { "lat": 13.44, "lng": 144.66, "label": "Santa Rita, Guam" },
+  "tz": "Pacific/Guam",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Guam (Guam, western Pacific). Region flagged OCONUS. Guam is a non-foreign OCONUS U.S. TERRITORY: NOT in the BAH file -> uses OHA (like NB Guam/Andersen already in app). So OHA/territory template (OHA housing, DoDEA Pacific Guam schools, no BAH/RentCast/SchoolDigger/rent-buy). Caribbean-equivalent in the Pacific: SAR + law enforcement across the Marianas. Medical: CG clinic + US Naval Hospital Guam + TRICARE. Facts verified from official sources (uscg.mil, TRICARE, DoDEA Pacific, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Guam (western Pacific / Mariana Islands)",
+        "Role": "Coast Guard hub for the western Pacific",
+        "Mission": "Search and rescue, law enforcement, and port security across Guam and the Marianas",
+        "Status": "Guam is a U.S. territory; treated as an overseas tour (OHA, not BAH)",
+        "Setting": "Tropical Pacific island"
+      },
+      "source": { "label": "Coast Guard Sector Guam (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Guam is the service's hub in the western Pacific, running search and rescue, law enforcement, and port security across Guam and the Mariana Islands, a vast and strategically important area.",
+        "Guam is a U.S. territory, so it's American soil, but a tour here is treated as a non-foreign overseas assignment for pay and logistics: you use the Overseas Housing Allowance (OHA) rather than BAH, in a tropical island setting with a distinct CHamoru culture."
+      ],
+      "source": { "label": "Coast Guard Sector Guam (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "guam_decision",
+      "title": "An Island Territory Tour: Tropical, Strategic, and Remote",
+      "type": "killer",
+      "data": {
+        "subtitle": "Guam is a beautiful tropical island, but remote, and everything ships in. The main choice is government/military housing versus renting on the island with OHA.",
+        "intro": [
+          "Because Guam is a U.S. territory treated as an overseas tour, you'll use the Overseas Housing Allowance (OHA), not the stateside BAH, or take government housing. Guam has a large military community (Navy and Air Force), so military services are well established.",
+          "Off base, families rent around the island; island realities like shipping a vehicle, higher prices, and typhoon season are part of the deal."
+        ],
+        "recommendations": [
+          { "who": "Easiest logistics", "advice": "Government/military housing keeps you close to services on a remote island; coordinate early." },
+          { "who": "Island living", "advice": "Renting around the island with OHA offers more local immersion." },
+          { "who": "Use the housing office", "advice": "The housing office assigns government housing, approves economy rentals, and helps with OHA, so start there." },
+          { "who": "Plan island realities", "advice": "Higher prices, shipping times, and typhoon season are part of a Guam tour; budget and prepare." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Guam (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Access follows standard installation rules. Visitors without a DoD/CG ID need to be sponsored and registered through the Visitor Control Center.",
+        "Requirements can change with the security environment, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Guam (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (Government & OHA)",
+      "type": "prose",
+      "data": [
+        "Guam has government/military family housing (the island hosts a large Navy and Air Force community), and many families rent on the economy with the Overseas Housing Allowance (OHA) to offset rent and utilities rather than the stateside BAH.",
+        "The housing office assigns government housing, approves economy rentals, and helps with OHA. Start there as soon as you have orders."
+      ],
+      "source": { "label": "Coast Guard Sector Guam (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools",
+      "title": "Schools (DoDEA)",
+      "type": "prose",
+      "data": [
+        "Children of eligible personnel attend Department of Defense Education Activity (DoDEA) schools on Guam, serving the island's large military community from elementary through high school.",
+        "Confirm current schools, boundaries, and registration through DoDEA Pacific and the command, and bring records and immunizations when you register."
+      ],
+      "source": { "label": "DoDEA Pacific (official)", "url": "https://www.dodea.edu/pacific" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector Guam",
+        "Care": "On-base clinic care plus access to U.S. Naval Hospital Guam; complex care may require off-island referral",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "U.S. Naval Hospital Guam (official)", "url": "https://guam.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Access to the commissary at Naval Base Guam (DeCA)",
+        "Exchange": "Coast Guard Exchange (CGX) / access to the Navy and Air Force exchanges on Guam"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (OCONUS)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["A Guam PCS is treated as an overseas move, with island-specific steps like vehicle shipping. Start early."],
+        "steps": [
+          { "title": "Confirm your entitlements", "text": "Verify OHA, COLA, DoDEA eligibility, and travel entitlements for a non-foreign OCONUS tour with finance early." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Sort housing and OHA", "text": "See the housing office first. Choose government housing or get approval and help to rent on the economy with OHA; claim temporary lodging allowances while you look." },
+          { "title": "Plan your vehicle and getting around", "text": "Arrange vehicle shipping early (it takes time to the island) and handle Guam registration on arrival." },
+          { "title": "Enroll the kids in school", "text": "Register with the DoDEA Guam schools early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program so you can be seen at the CG clinic and U.S. Naval Hospital Guam; some complex care requires off-island referral." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Do I get BAH on Guam?", "a": "No. Guam is non-foreign OCONUS, so you receive the Overseas Housing Allowance (OHA) for economy rentals (plus COLA), not the stateside BAH. That's why this guide shows OHA instead of a BAH calculator." },
+        { "q": "Is it overseas or stateside?", "a": "Guam is a U.S. territory, so it's American soil, but a tour here is treated as overseas for pay and logistics, which is why we group it under OCONUS." },
+        { "q": "Where do families live?", "a": "In government/military housing or on the economy around the island with OHA. Guam has a large military community, so services are well established." },
+        { "q": "What's island life like?", "a": "Tropical and beautiful, with great diving and beaches, but remote: higher prices, shipping times, and typhoon season to plan for." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Tumon Bay", "category": "Beach", "blurb": "Guam's resort beach strip with snorkeling and dining.", "maps_query": "Tumon Bay, Guam" },
+        { "name": "Two Lovers Point", "category": "Outdoors", "blurb": "A famous clifftop overlook with sweeping ocean views.", "maps_query": "Two Lovers Point, Guam" },
+        { "name": "War in the Pacific National Historical Park", "category": "History", "blurb": "WWII sites and beaches preserved across the island.", "maps_query": "War in the Pacific National Historical Park, Guam" },
+        { "name": "Ritidian Point", "category": "Outdoors", "blurb": "A pristine beach and wildlife refuge at the island's north end.", "maps_query": "Ritidian Point, Guam" }
+      ]
+    }
+  ]
+}

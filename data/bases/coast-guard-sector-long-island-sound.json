@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-long-island-sound",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Long Island Sound",
+  "short_name": "Long Island Sound",
+  "branch": "U.S. Coast Guard",
+  "states": ["CT"],
+  "tagline": "The Coast Guard guarding Long Island Sound and the Connecticut coast, based at New Haven.",
+  "coords": { "lat": 41.28, "lng": -72.91, "label": "New Haven, CT" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Long Island Sound (New Haven, CT). CONUS full template (BAH MHA CT051 New Haven/Fairfield; RentCast/SchoolDigger work). CG uses same BAH tables. SAR + law enforcement across Long Island Sound. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Connecticut is TRICARE East. Higher-cost SW Connecticut. Medium-confidence flags: base coords (approx), off-base ZIP 06512 (East Haven).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "New Haven, CT (Long Island Sound)",
+        "Role": "Coast Guard hub for Long Island Sound and the Connecticut coast",
+        "Mission": "Search and rescue, port security, and law enforcement on the Sound",
+        "Setting": "Southwestern Connecticut coast (higher cost of living)",
+        "Region": "Between New York City and southern New England"
+      },
+      "source": { "label": "Coast Guard Sector Long Island Sound (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Long Island Sound, based at New Haven, guards the busy waters of Long Island Sound and the Connecticut coast, running search and rescue, port security, and law enforcement.",
+        "It's in southwestern Connecticut between New York City and southern New England, a higher-cost coastal region with strong schools and lots of history."
+      ],
+      "source": { "label": "Coast Guard Sector Long Island Sound (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "lis_decision",
+      "title": "Connecticut Shoreline Living: Pricey but Strong Schools",
+      "type": "killer",
+      "data": {
+        "subtitle": "Southwestern Connecticut is desirable and expensive, with well-regarded schools. The main choice is which shoreline town fits your commute and budget.",
+        "intro": [
+          "This part of Connecticut carries higher housing costs and property taxes, but schools are strong. Coast Guard housing is limited, so most families rent or buy.",
+          "Where you live mostly comes down to commute and schools across New Haven and the shoreline towns east and west, with Metro-North rail shaping options."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "New Haven and East Haven keep the commute short." },
+          { "who": "Family shoreline towns", "advice": "Branford, Guilford, and Madison to the east are popular for schools and coastal charm." },
+          { "who": "Watch the taxes", "advice": "Connecticut property taxes run high; factor them into renting vs buying." },
+          { "who": "Use the train", "advice": "Metro-North along the shoreline opens up options; factor transit into where you live." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Long Island Sound (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Long Island Sound (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the area is limited, so most families rent or buy across the New Haven area and the shoreline.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Long Island Sound (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CT051",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CT051 (New Haven/Fairfield) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "06512", "label": "East Haven, CT" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. New Haven, East Haven, Branford, Guilford, and Madison districts serve military families depending on where you live; the shoreline towns are well regarded.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Connecticut State Department of Education (official)", "url": "https://portal.ct.gov/sde" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CT", "city": "New Haven" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector Long Island Sound",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and area hospitals (including Yale New Haven)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / online",
+        "Commissary": "Nearest DoD commissary is at Naval Submarine Base New London (Groton)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and southwestern Connecticut's high prices and property taxes make renting common."],
+        "rent": [
+          "Your tour is a standard length and you'll PCS out.",
+          "Connecticut prices and property taxes give you pause.",
+          "You want flexibility in an expensive market.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat New England assignments.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "A shoreline town fits your budget for a home you like.",
+          "You're comfortable with Connecticut property taxes."
+        ],
+        "bottom_line": "There is no universal right answer, but high prices and taxes make renting common in this area. If you buy, weigh property taxes carefully. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on New Haven and the shoreline towns (and the property-tax picture) before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Connecticut vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (New Haven, Branford, Guilford, or Madison) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector Long Island Sound?", "a": "It's the Coast Guard's hub for Long Island Sound and the Connecticut coast, based at New Haven, handling search and rescue, port security, and law enforcement." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA CT051 (New Haven/Fairfield)." },
+        { "q": "Where do families live?", "a": "Across the New Haven area and the shoreline towns (Branford, Guilford, Madison), which have strong schools. CG housing is limited." },
+        { "q": "Is it expensive?", "a": "Yes. Southwestern Connecticut has higher housing costs and property taxes, so renting is common." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Yale University & downtown New Haven", "category": "In town", "blurb": "Historic campus, museums, and the city's famous pizza.", "maps_query": "Yale University, New Haven CT" },
+        { "name": "Hammonasset Beach State Park", "category": "Beach", "blurb": "Connecticut's largest shoreline park, in Madison.", "maps_query": "Hammonasset Beach State Park, CT" },
+        { "name": "Shoreline towns (Branford/Guilford)", "category": "In town", "blurb": "Charming New England coastal towns east of New Haven.", "maps_query": "Guilford, CT" },
+        { "name": "New York City", "category": "Day trip", "blurb": "The city is reachable by Metro-North along the shoreline.", "maps_query": "New York, NY" }
+      ]
+    }
+  ]
+}
