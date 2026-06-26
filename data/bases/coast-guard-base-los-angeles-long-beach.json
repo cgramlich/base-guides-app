@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-base-los-angeles-long-beach",
+  "schema_version": "0.1",
+  "name": "Coast Guard Base Los Angeles-Long Beach",
+  "short_name": "LA-Long Beach",
+  "branch": "U.S. Coast Guard",
+  "states": ["CA"],
+  "tagline": "The Coast Guard's hub for the nation's busiest port complex, at San Pedro in greater Los Angeles.",
+  "coords": { "lat": 33.71, "lng": -118.27, "label": "San Pedro, CA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Base Los Angeles-Long Beach (San Pedro, LA Harbor). CONUS full template (BAH MHA CA037 Los Angeles; RentCast/SchoolDigger work). CG uses same BAH tables. Cutters + Sector LA-Long Beach guarding the busiest US port complex. Medical: CG clinic + TRICARE network (expensive LA). Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). California is TRICARE West. High-cost LA metro. Medium-confidence flags: base coords (approx), off-base ZIP 90731 (San Pedro).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "San Pedro, CA (Los Angeles Harbor)",
+        "Role": "Coast Guard hub for the Los Angeles-Long Beach port complex",
+        "Mission": "Port security, search and rescue, and law enforcement at the nation's busiest port",
+        "Also hosts": "Cutters and Sector Los Angeles-Long Beach",
+        "Setting": "Greater Los Angeles (high cost of living)"
+      },
+      "source": { "label": "Coast Guard Base Los Angeles-Long Beach (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Base Los Angeles-Long Beach, at San Pedro in the LA Harbor, anchors Coast Guard operations at the nation's busiest port complex: port security, search and rescue, and law enforcement, supported by homeported cutters.",
+        "It's in greater Los Angeles, with the beaches, opportunities, and high cost of living that come with Southern California's biggest metro."
+      ],
+      "source": { "label": "Coast Guard Base Los Angeles-Long Beach (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "lalb_decision",
+      "title": "LA Living: Expensive, So Commute vs. Price Rules",
+      "type": "killer",
+      "data": {
+        "subtitle": "Greater LA is expensive and sprawling. The main choice is how far from the harbor you'll go to make your BAH stretch, balanced against famously heavy traffic.",
+        "intro": [
+          "Housing costs are high across the metro, so where you live is mostly about commute versus price. Coast Guard housing is limited, so most families rent.",
+          "Where you live mostly comes down to commute and schools across the South Bay (San Pedro, Torrance, Long Beach) and farther-out areas, with traffic a major factor."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "San Pedro and the South Bay keep you near the harbor, but costs are high." },
+          { "who": "More for your money", "advice": "Long Beach and areas farther south/inland trade a longer commute for lower prices." },
+          { "who": "Family suburbs", "advice": "South Bay and Orange County communities have good schools; weigh the traffic." },
+          { "who": "Limited CG housing", "advice": "Some military housing exists in the region; check early, but plan to rent." }
+        ]
+      },
+      "source": { "label": "Coast Guard Base Los Angeles-Long Beach (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Base Los Angeles-Long Beach (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the LA area is limited, so most families rent across the metro.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office early for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Base Los Angeles-Long Beach (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA037",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA037 (Los Angeles) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "90731", "label": "San Pedro, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Los Angeles Unified (San Pedro), Long Beach Unified, and South Bay districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Long Beach Unified School District (official)", "url": "https://www.lbschools.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "San Pedro" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Base Los Angeles-Long Beach",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and LA-area hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Los Angeles-Long Beach",
+        "Commissary": "Access to area DoD commissaries (e.g., Los Alamitos, Naval Weapons Station Seal Beach)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in pricey greater LA buying is out of reach for most on a single tour."],
+        "rent": [
+          "Your tour is a standard length and you'll PCS out.",
+          "LA prices put a purchase well out of comfortable reach.",
+          "You prefer renting for flexibility in an expensive market.",
+          "You want to keep your commute and budget manageable."
+        ],
+        "buy": [
+          "You expect repeat Southern California tours and can afford the very high entry price.",
+          "You want to use your VA loan and build equity in a high-cost market.",
+          "You've found a community and commute you're confident about.",
+          "You're comfortable being a long-distance landlord later."
+        ],
+        "bottom_line": "There is no universal right answer, but LA prices make buying impractical for most single tours, so renting is the norm. Run your BAH against the rent and home prices above, weigh your commute, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In a big, expensive metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Plan around commute", "text": "CG housing is limited; pick your area around commute and traffic, and get the housing office's read before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (LAUSD, Long Beach Unified, or a South Bay district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Base LA-Long Beach?", "a": "It's the Coast Guard's hub at San Pedro for the nation's busiest port complex, handling port security, search and rescue, and law enforcement, with homeported cutters." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA CA037 (Los Angeles)." },
+        { "q": "Where do families live?", "a": "Across greater LA. San Pedro and the South Bay are closest; farther out is more affordable. CG housing is limited, so most rent." },
+        { "q": "Is it expensive?", "a": "Yes. Greater LA is a high-cost, traffic-heavy metro, so commute versus price drives where you live." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Cabrillo Beach & Marine Aquarium", "category": "Family", "blurb": "A beach and aquarium right in San Pedro.", "maps_query": "Cabrillo Beach, San Pedro CA" },
+        { "name": "Queen Mary (Long Beach)", "category": "History", "blurb": "The historic ocean liner and Long Beach waterfront nearby.", "maps_query": "The Queen Mary, Long Beach CA" },
+        { "name": "Catalina Island ferry", "category": "Day trip", "blurb": "Ferries to Catalina from San Pedro and Long Beach.", "maps_query": "Catalina Express, San Pedro CA" },
+        { "name": "Downtown LA & beaches", "category": "Day trip", "blurb": "The city's sights and the South Bay beaches across the metro.", "maps_query": "Downtown Los Angeles, CA" }
+      ]
+    }
+  ]
+}

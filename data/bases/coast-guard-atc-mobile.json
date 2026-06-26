@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-atc-mobile",
+  "schema_version": "0.1",
+  "name": "Coast Guard Aviation Training Center Mobile",
+  "short_name": "ATC Mobile",
+  "branch": "U.S. Coast Guard",
+  "states": ["AL"],
+  "tagline": "Where every Coast Guard aviator trains, on Alabama's Gulf Coast.",
+  "coords": { "lat": 30.63, "lng": -88.07, "label": "Mobile, AL" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Aviation Training Center Mobile (Mobile, AL Gulf Coast; Central time). CONUS full template (BAH MHA AL004 Mobile; RentCast/SchoolDigger work). CG uses same BAH tables. ATC Mobile is where all CG aviators train; also operational. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Alabama is TRICARE East. Affordable Gulf Coast. Medium-confidence flags: base coords (approx), off-base ZIP 36608 (west Mobile).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Mobile, AL (Gulf Coast)",
+        "Role": "Aviation Training Center — trains every Coast Guard aviator",
+        "Also": "Operational air missions over the Gulf",
+        "Setting": "Affordable Gulf Coast city",
+        "Nearby": "Mobile Bay and the Alabama/Mississippi/Florida coast"
+      },
+      "source": { "label": "Coast Guard ATC Mobile (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Aviation Training Center Mobile is where every Coast Guard aviator is trained, the heart of Coast Guard aviation, and it also flies operational missions over the Gulf of Mexico.",
+        "It's on Alabama's Gulf Coast in Mobile, a historic port city with an affordable cost of living and easy access to Gulf beaches."
+      ],
+      "source": { "label": "Coast Guard ATC Mobile (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mobile_decision",
+      "title": "Affordable Gulf Coast Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Mobile area is affordable and on the Gulf. The main choice is which community fits your commute and schools, with the beaches an easy drive.",
+        "intro": [
+          "Mobile's cost of living is low, so BAH stretches well. Coast Guard housing is limited, so most families live off base around the metro.",
+          "Where you live mostly comes down to commute and schools across west Mobile, Mobile County, and across the bay in Baldwin County (Daphne, Fairhope), which is popular with families."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "West Mobile keeps the commute short with lots of housing." },
+          { "who": "Family favorite", "advice": "The Eastern Shore (Daphne, Fairhope, Spanish Fort) in Baldwin County is popular for schools, across the bay." },
+          { "who": "Stretch your budget", "advice": "The area is affordable, so BAH tends to go far and many families buy." },
+          { "who": "Plan for hurricane season", "advice": "It's the Gulf Coast; budget for coastal insurance and know your evacuation plan." }
+        ]
+      },
+      "source": { "label": "Coast Guard ATC Mobile (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard ATC Mobile (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the Mobile area is limited, so most families live off base around the metro and across the bay.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard ATC Mobile (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AL004",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AL004 (Mobile) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "36608", "label": "Mobile, AL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Mobile County Public Schools serves the city, and Baldwin County (Daphne, Fairhope, Spanish Fort) across the bay is popular with families.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Baldwin County Public Schools (official)", "url": "https://www.bcbe.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AL", "city": "Mobile" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, ATC Mobile",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and Mobile-area hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Mobile",
+        "Commissary": "Nearest DoD commissary is at Keesler AFB (Biloxi, MS) or NAS Pensacola (FL)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Mobile's affordable Gulf Coast market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing.",
+          "You'd rather not take on coastal insurance and storm risk as an owner.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Mobile/Eastern Shore market fits your budget for a home you like.",
+          "You're comfortable with coastal insurance and have found a place you trust."
+        ],
+        "bottom_line": "There is no universal right answer. The Mobile area is affordable, so BAH stretches and buying can pencil out, but factor in Gulf Coast insurance and hurricane risk. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on west Mobile and the Eastern Shore before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Alabama vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Mobile County or Baldwin County) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is ATC Mobile?", "a": "It's the Coast Guard's Aviation Training Center, where every Coast Guard aviator trains, and it also flies operational missions over the Gulf." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Mobile is MHA AL004." },
+        { "q": "Where do families live?", "a": "Mostly off base. West Mobile is closest; the Eastern Shore (Daphne, Fairhope) across the bay is popular with families for schools." },
+        { "q": "Is it affordable?", "a": "Yes. Mobile is an affordable Gulf Coast market; just factor in coastal insurance if you buy." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "USS Alabama Battleship Memorial Park", "category": "Family", "blurb": "A battleship, submarine, and aircraft park on Mobile Bay.", "maps_query": "USS Alabama Battleship Memorial Park, Mobile AL" },
+        { "name": "Dauphin Island & Gulf beaches", "category": "Beach", "blurb": "Barrier-island beaches and the Gulf Coast nearby.", "maps_query": "Dauphin Island, AL" },
+        { "name": "Fairhope (Eastern Shore)", "category": "In town", "blurb": "A charming bayfront town across Mobile Bay.", "maps_query": "Fairhope, AL" },
+        { "name": "Gulf Shores / Orange Beach", "category": "Day trip", "blurb": "Popular white-sand beach resorts about an hour south.", "maps_query": "Gulf Shores, AL" }
+      ]
+    }
+  ]
+}

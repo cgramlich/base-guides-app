@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-columbia-river",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Columbia River",
+  "short_name": "Columbia River",
+  "branch": "U.S. Coast Guard",
+  "states": ["OR"],
+  "tagline": "The Coast Guard at the mouth of the Columbia, home of Air Station Astoria and the National Motor Lifeboat School.",
+  "coords": { "lat": 46.16, "lng": -123.88, "label": "Astoria, OR" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Columbia River + Air Station Astoria (Warrenton/Astoria, OR; mouth of the Columbia). CONUS full template (BAH MHA OR241 Astoria; RentCast/SchoolDigger work). CG uses same BAH tables. Treacherous Columbia River Bar; National Motor Lifeboat School is nearby at Cape Disappointment (WA). Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Oregon is TRICARE West. No Oregon state sales tax. Medium-confidence flags: base coords (approx), off-base ZIP 97103 (Astoria).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Warrenton/Astoria, OR (mouth of the Columbia River)",
+        "Role": "Coast Guard hub for the Columbia River and the Pacific Northwest coast",
+        "Includes": "Air Station Astoria; the National Motor Lifeboat School is nearby at Cape Disappointment",
+        "Known for": "Operating the treacherous Columbia River Bar (the 'Graveyard of the Pacific')",
+        "Setting": "Scenic Oregon coast (no state sales tax)"
+      },
+      "source": { "label": "Coast Guard Sector Columbia River (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Columbia River, with Air Station Astoria, guards the mouth of the Columbia and the Pacific Northwest coast, working some of the most dangerous water in the country at the Columbia River Bar. The elite National Motor Lifeboat School is nearby at Cape Disappointment.",
+        "It's on the scenic Oregon coast around Astoria and Warrenton, a small-town setting with a maritime heart, mild but rainy weather, and no Oregon state sales tax."
+      ],
+      "source": { "label": "Coast Guard Sector Columbia River (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "columbia_decision",
+      "title": "Oregon Coast Living: Small-Town and Scenic",
+      "type": "killer",
+      "data": {
+        "subtitle": "The lower Columbia is a small, scenic coastal area with a modest housing market. The main choice is which nearby town fits your commute and schools.",
+        "intro": [
+          "Astoria and the surrounding towns make up a small market, mild and rainy, with a strong sense of community. Coast Guard housing is limited, so most families rent locally.",
+          "Where you live mostly comes down to commute and schools across Astoria, Warrenton, and the nearby coast, with Portland a drive east for big-city needs."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Warrenton and Astoria sit right by the base for a short commute." },
+          { "who": "Coast towns", "advice": "Seaside and Gearhart offer beach-town living a short drive south." },
+          { "who": "Big-city option", "advice": "Portland is roughly a couple of hours east for major shopping, an airport, and amenities." },
+          { "who": "Plan for rain", "advice": "It's a wet maritime climate; good rain gear and an outdoors mindset help." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Columbia River (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Columbia River (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the area is limited, so most families rent in and around Astoria and Warrenton.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Columbia River (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "OR241",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA OR241 (Astoria) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "97103", "label": "Astoria, OR" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Astoria and Warrenton-Hammond school districts serve the area around the base.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Astoria School District (official)", "url": "https://www.astoria.k12.or.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "OR", "city": "Astoria" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Astoria",
+        "Care": "On-base clinic care for the assigned population; family care via the local hospital and the TRICARE network, with Portland for complex care",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Astoria / online",
+        "Commissary": "Limited; most groceries via local Astoria/Warrenton stores"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In the small lower-Columbia market, tour length and the limited inventory both matter."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer flexibility in a small coastal market.",
+          "You'd rather not own where inventory and resale are limited.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour and want to settle on the coast.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The local market fits your budget for a home you like.",
+          "You've found a town and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The lower-Columbia market is small, so many families rent. If you buy, weigh limited inventory and resale. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "The local market is small; start early and get the housing office's read on Astoria and Warrenton." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Oregon vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Astoria or Warrenton-Hammond) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; Portland is the option for complex care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector Columbia River?", "a": "It's the Coast Guard's hub at the mouth of the Columbia, including Air Station Astoria. The elite National Motor Lifeboat School is nearby at Cape Disappointment; crews work the dangerous Columbia River Bar." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Astoria is MHA OR241. Oregon also has no state sales tax." },
+        { "q": "Where do families live?", "a": "Mostly renting in and around Astoria and Warrenton, with beach towns like Seaside nearby. CG housing is limited." },
+        { "q": "What's the weather like?", "a": "Mild but wet maritime climate. Good rain gear and an outdoors mindset go a long way." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Cape Disappointment State Park", "category": "Outdoors", "blurb": "Lighthouses, cliffs, and the mouth of the Columbia, just across in Washington.", "maps_query": "Cape Disappointment State Park, WA" },
+        { "name": "Astoria Column & Riverwalk", "category": "In town", "blurb": "A landmark tower with views and a riverfront trail in historic Astoria.", "maps_query": "Astoria Column, OR" },
+        { "name": "Seaside & Cannon Beach", "category": "Beach", "blurb": "Classic Oregon coast towns and Haystack Rock a short drive south.", "maps_query": "Cannon Beach, OR" },
+        { "name": "Portland", "category": "Day trip", "blurb": "Big-city dining and amenities a couple of hours east.", "maps_query": "Portland, OR" }
+      ]
+    }
+  ]
+}

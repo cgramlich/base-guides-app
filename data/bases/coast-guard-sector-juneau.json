@@ -1,0 +1,202 @@
+{
+  "slug": "coast-guard-sector-juneau",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Juneau",
+  "short_name": "Juneau",
+  "branch": "U.S. Coast Guard",
+  "states": ["AK"],
+  "region": "OCONUS",
+  "tagline": "The Coast Guard's Alaska district hub in the capital, guarding the rugged Southeast Alaska coast.",
+  "coords": { "lat": 58.30, "lng": -134.42, "label": "Juneau, AK" },
+  "tz": "America/Juneau",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Juneau / District 17 (Juneau, AK). Region flagged OCONUS for browse UX, but Alaska is a BAH/RentCast/SchoolDigger state -> KEEPS full template (BAH MHA AK402 Juneau; realestate + schools_live work). CG uses same BAH tables. D17 oversees all Alaska CG ops; Juneau is the capital, reachable only by air/ferry (no roads in). Medical: CG clinic + TRICARE network/local + medevac. Schools: Juneau SD. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Alaska is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 99801 (Juneau).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Juneau, AK (Southeast Alaska; the state capital)",
+        "Role": "Coast Guard District 17 hub overseeing all Alaska operations",
+        "Mission": "Search and rescue, fisheries, and patrol across Alaska's vast coast",
+        "Access": "Reachable only by air or ferry (no roads connect Juneau)",
+        "Setting": "Rugged, scenic Southeast Alaska"
+      },
+      "source": { "label": "Coast Guard Sector Juneau / D17 (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Juneau anchors District 17, which oversees Coast Guard operations across all of Alaska, from search and rescue to fisheries enforcement along one of the longest, harshest coastlines in the country.",
+        "It's in Juneau, Alaska's capital, a stunning Southeast Alaska city wedged between mountains and the sea, and notably reachable only by air or ferry, with no roads connecting it to the rest of the state."
+      ],
+      "source": { "label": "Coast Guard Sector Juneau / D17 (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "juneau_decision",
+      "title": "A Remote Capital Tour: Embrace Southeast Alaska",
+      "type": "killer",
+      "data": {
+        "subtitle": "Juneau is beautiful and isolated (no road out). Housing is a small local market, so planning for island-style logistics and the climate matters most.",
+        "intro": [
+          "Juneau is a small, scenic city with a limited housing market and a wet, mild-but-cool maritime climate. Coast Guard housing is limited, so most families rent in town.",
+          "The big adjustments are the isolation (fly or ferry to leave), higher prices for goods shipped in, and lots of rain, balanced against incredible outdoors at your doorstep."
+        ],
+        "recommendations": [
+          { "who": "Live in Juneau", "advice": "Most families rent in and around Juneau given the small market; start the search early." },
+          { "who": "Plan island-style logistics", "advice": "No roads out: budget for air/ferry travel and higher prices on shipped goods." },
+          { "who": "Prepare for the climate", "advice": "It's a wet maritime climate; good rain gear and an outdoors mindset go a long way." },
+          { "who": "Embrace the outdoors", "advice": "Glaciers, whales, fishing, and trails are right there; leaning in makes the tour." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Juneau / D17 (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Juneau / D17 (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in Juneau is limited, so most families rent in the local market.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office early for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Juneau / D17 (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AK402",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AK402 (Juneau) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "99801", "label": "Juneau, AK" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. The Juneau School District serves the city.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Juneau School District (official)", "url": "https://www.juneauschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AK", "city": "Juneau" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Juneau",
+        "Care": "On-base clinic care plus local Juneau hospital and providers; complex care may require medevac to Anchorage, Seattle, or beyond",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Juneau / online",
+        "Commissary": "Limited; most groceries via local Juneau stores (no large DoD commissary in town)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In small, isolated Juneau most families rent, but here's the framework if you're weighing the local market."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer flexibility in a small, isolated market.",
+          "You'd rather not own where resale can be slow.",
+          "Your BAH comfortably covers rent in town."
+        ],
+        "buy": [
+          "You expect a longer tour and want to settle in Juneau.",
+          "You want to use your VA loan and build equity.",
+          "You're comfortable with island-style logistics, weather, and a small resale market.",
+          "You've found a home you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, and Juneau's small, isolated market leads most families to rent. If you buy, weigh resale, maintenance, and shipping costs. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and a remote Alaska capital adds shipping and travel planning. Start early."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging before you arrive; options are limited. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Start the housing search", "text": "The local market is small; start early and get the housing office's read on Juneau." },
+          { "title": "Plan your vehicle and travel", "text": "Arrange vehicle shipping/ferry early (no roads into Juneau), and prep for a wet maritime climate. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the Juneau School District early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment; know that complex care can mean medevac off the Southeast, so understand the referral process." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is Juneau an overseas tour?", "a": "It's in Alaska, a U.S. state, so it uses stateside pay tools like BAH (not OHA). But it's a remote, fly-or-ferry-only capital, so we group it under the OCONUS/Alaska section for browsing." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Juneau is MHA AK402." },
+        { "q": "Why no roads?", "a": "Juneau is hemmed in by mountains and water; you reach it only by air or ferry, which shapes travel and the cost of shipped goods." },
+        { "q": "Where do families live?", "a": "Mostly renting in and around Juneau, since the local market is small and CG housing is limited." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Mendenhall Glacier", "category": "Outdoors", "blurb": "A famous, accessible glacier with trails just outside Juneau.", "maps_query": "Mendenhall Glacier, Juneau AK" },
+        { "name": "Mount Roberts Tramway", "category": "Outdoors", "blurb": "A tram to alpine views and trails above downtown.", "maps_query": "Goldbelt Tram, Juneau AK" },
+        { "name": "Downtown Juneau / waterfront", "category": "In town", "blurb": "The capital's historic downtown and harbor.", "maps_query": "Downtown Juneau, AK" },
+        { "name": "Whale watching & fishing", "category": "Outdoors", "blurb": "World-class whale watching and salmon/halibut fishing in the Inside Passage.", "maps_query": "Juneau whale watching, AK" }
+      ]
+    }
+  ]
+}

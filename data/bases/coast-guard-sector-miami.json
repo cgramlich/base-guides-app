@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-miami",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Miami",
+  "short_name": "Miami",
+  "branch": "U.S. Coast Guard",
+  "states": ["FL"],
+  "tagline": "The Coast Guard's South Florida hub for Caribbean operations, migrant and drug interdiction, and rescue.",
+  "coords": { "lat": 25.90, "lng": -80.28, "label": "Miami, FL" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Miami + Air Station Miami (Opa-locka) (South Florida). CONUS full template (BAH MHA FL061 Miami/Fort Lauderdale; RentCast/SchoolDigger work). CG uses same BAH tables. Caribbean/SE ops: interdiction, SAR, port security. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Florida is TRICARE East (no state income tax). Higher-cost South Florida. Medium-confidence flags: base coords (approx), off-base ZIP 33054 (Opa-locka).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Miami, FL (Air Station at Opa-locka)",
+        "Role": "South Florida hub for Caribbean operations",
+        "Mission": "Migrant and drug interdiction, search and rescue, and port security",
+        "Setting": "The South Florida metro",
+        "Note": "Florida has no state income tax"
+      },
+      "source": { "label": "Coast Guard Sector Miami (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Miami, with Air Station Miami at Opa-locka, is the service's South Florida hub, central to Caribbean operations: migrant and drug interdiction, search and rescue, and port security across busy, high-stakes waters.",
+        "It's in the vibrant, diverse South Florida metro, which brings beaches and culture along with a higher cost of living (offset somewhat by no state income tax)."
+      ],
+      "source": { "label": "Coast Guard Sector Miami (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "miami_decision",
+      "title": "South Florida Living: Vibrant, With Commute and Cost Trade-offs",
+      "type": "killer",
+      "data": {
+        "subtitle": "South Florida is lively but pricey and traffic-heavy. The main choice is which part of the metro fits your commute, schools, and budget.",
+        "intro": [
+          "Housing costs have risen across South Florida, so where you live is mostly about commute versus price. Coast Guard housing is limited, so most families rent.",
+          "Where you live mostly comes down to commute and schools across Miami-Dade and into Broward, with traffic a major factor."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Areas near Opa-locka and north-central Miami-Dade keep the commute to the air station shorter." },
+          { "who": "Family suburbs", "advice": "Broward County (Pembroke Pines, Miramar, Cooper City) and suburban Miami-Dade are popular with families for schools." },
+          { "who": "Watch the commute", "advice": "South Florida traffic is heavy; weigh it carefully against price." },
+          { "who": "Limited CG housing", "advice": "Some military housing exists in the region; check early, but plan to rent." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Miami (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Miami (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in South Florida is limited, so most families rent across Miami-Dade and Broward.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Miami (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "FL061",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA FL061 (Miami/Fort Lauderdale) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "33054", "label": "Opa-locka / Miami, FL" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Miami-Dade County and Broward County public schools serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Miami-Dade County Public Schools (official)", "url": "https://www.dadeschools.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "FL", "city": "Miami" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector/Air Station Miami",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and South Florida hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Miami / online",
+        "Commissary": "Nearest DoD commissary is at Homestead ARB (south of Miami)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in pricey, fast-moving South Florida the call depends heavily on tour length and budget."],
+        "rent": [
+          "Your tour is a standard length and you'll PCS out.",
+          "South Florida prices put a purchase out of comfortable reach for your budget.",
+          "You want flexibility in an expensive, fast-moving market.",
+          "You'd rather not take on rising coastal insurance as an owner."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat South Florida assignments.",
+          "You can afford the entry price and want to build equity with your VA loan.",
+          "You've found a community and commute you're confident about.",
+          "You're comfortable with Florida coastal insurance costs."
+        ],
+        "bottom_line": "There is no universal right answer. South Florida's high prices and rising insurance make buying a bigger commitment, so many families rent. Run your BAH against the rent and home prices above, factor in insurance, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In a big, busy metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Plan around commute", "text": "CG housing is limited; pick your area around commute and traffic, and get the housing office's read before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Florida vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Miami-Dade or Broward) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector Miami?", "a": "It's the Coast Guard's South Florida hub (with Air Station Miami at Opa-locka) for Caribbean operations: migrant and drug interdiction, search and rescue, and port security." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA FL061 (Miami/Fort Lauderdale)." },
+        { "q": "Where do families live?", "a": "Across Miami-Dade and Broward. North-central Miami-Dade is closer to Opa-locka; Broward suburbs are popular for schools. CG housing is limited." },
+        { "q": "Is it expensive?", "a": "South Florida has gotten pricey and insurance is rising, though there's no state income tax. Commute versus cost drives where you live." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Miami Beach / South Beach", "category": "Beach", "blurb": "Iconic beaches, Art Deco, and nightlife.", "maps_query": "South Beach, Miami Beach FL" },
+        { "name": "Everglades National Park", "category": "Outdoors", "blurb": "The famous wetlands and wildlife west of the metro.", "maps_query": "Everglades National Park, FL" },
+        { "name": "Wynwood / Little Havana", "category": "Food & culture", "blurb": "Murals, Cuban food, and Miami's vibrant culture.", "maps_query": "Wynwood Walls, Miami FL" },
+        { "name": "Florida Keys", "category": "Day trip", "blurb": "Island-hopping down the Overseas Highway south of Miami.", "maps_query": "Key Largo, FL" }
+      ]
+    }
+  ]
+}

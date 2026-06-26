@@ -129,6 +129,16 @@
     { "slug": "coast-guard-base-seattle", "name": "Coast Guard Base Seattle", "branch": "U.S. Coast Guard", "state": "WA", "ready": true },
     { "slug": "coast-guard-base-honolulu", "name": "Coast Guard Base Honolulu", "branch": "U.S. Coast Guard", "state": "HI", "region": "OCONUS", "ready": true },
     { "slug": "coast-guard-air-station-clearwater", "name": "Coast Guard Air Station Clearwater", "branch": "U.S. Coast Guard", "state": "FL", "ready": true },
-    { "slug": "uscg-headquarters", "name": "U.S. Coast Guard Headquarters", "branch": "U.S. Coast Guard", "state": "DC", "ready": true }
+    { "slug": "uscg-headquarters", "name": "U.S. Coast Guard Headquarters", "branch": "U.S. Coast Guard", "state": "DC", "ready": true },
+    { "slug": "coast-guard-air-station-cape-cod", "name": "Coast Guard Air Station Cape Cod", "branch": "U.S. Coast Guard", "state": "MA", "ready": true },
+    { "slug": "coast-guard-base-boston", "name": "Coast Guard Base Boston", "branch": "U.S. Coast Guard", "state": "MA", "ready": true },
+    { "slug": "tracen-yorktown", "name": "Coast Guard TRACEN Yorktown", "branch": "U.S. Coast Guard", "state": "VA", "ready": true },
+    { "slug": "coast-guard-base-los-angeles-long-beach", "name": "Coast Guard Base Los Angeles-Long Beach", "branch": "U.S. Coast Guard", "state": "CA", "ready": true },
+    { "slug": "coast-guard-atc-mobile", "name": "Coast Guard Aviation Training Center Mobile", "branch": "U.S. Coast Guard", "state": "AL", "ready": true },
+    { "slug": "coast-guard-air-station-elizabeth-city", "name": "Coast Guard Air Station Elizabeth City", "branch": "U.S. Coast Guard", "state": "NC", "ready": true },
+    { "slug": "coast-guard-sector-miami", "name": "Coast Guard Sector Miami", "branch": "U.S. Coast Guard", "state": "FL", "ready": true },
+    { "slug": "coast-guard-sector-san-juan", "name": "Coast Guard Sector San Juan", "branch": "U.S. Coast Guard", "state": "Puerto Rico", "region": "OCONUS", "ready": true },
+    { "slug": "coast-guard-sector-juneau", "name": "Coast Guard Sector Juneau", "branch": "U.S. Coast Guard", "state": "AK", "region": "OCONUS", "ready": true },
+    { "slug": "coast-guard-sector-columbia-river", "name": "Coast Guard Sector Columbia River", "branch": "U.S. Coast Guard", "state": "OR", "ready": true }
   ]
 }

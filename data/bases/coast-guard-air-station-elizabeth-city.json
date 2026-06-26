@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-air-station-elizabeth-city",
+  "schema_version": "0.1",
+  "name": "Coast Guard Air Station Elizabeth City",
+  "short_name": "Elizabeth City",
+  "branch": "U.S. Coast Guard",
+  "states": ["NC"],
+  "tagline": "A major Coast Guard air station and the service's aircraft depot, in northeastern North Carolina.",
+  "coords": { "lat": 36.26, "lng": -76.17, "label": "Elizabeth City, NC" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Air Station Elizabeth City + Aviation Logistics Center (ALC) + Base (Elizabeth City, NE NC). CONUS full template (BAH MHA NC181 Elizabeth City; RentCast/SchoolDigger work). CG uses same BAH tables. The ALC is the depot maintenance hub for all CG aircraft -> a big, stable CG employer. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). North Carolina is TRICARE East. Affordable; near the Outer Banks. Medium-confidence flags: base coords (approx), off-base ZIP 27909 (Elizabeth City).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Elizabeth City, NC (northeastern North Carolina)",
+        "Role": "Major air station plus the Aviation Logistics Center (ALC)",
+        "ALC": "The depot maintenance hub for all Coast Guard aircraft",
+        "Setting": "Affordable small city near the Outer Banks",
+        "Employer": "One of the Coast Guard's larger, more stable communities"
+      },
+      "source": { "label": "Coast Guard Air Station Elizabeth City (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Air Station Elizabeth City flies search-and-rescue and patrol missions, and it shares the field with the Aviation Logistics Center, the depot that maintains and overhauls the entire Coast Guard aircraft fleet. That makes Elizabeth City a large, stable Coast Guard community.",
+        "It's in northeastern North Carolina near the Albemarle Sound, an affordable small-city area within reach of the Outer Banks and the Hampton Roads region."
+      ],
+      "source": { "label": "Coast Guard Air Station Elizabeth City (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "ecity_decision",
+      "title": "Affordable Small-City Living Near the Coast",
+      "type": "killer",
+      "data": {
+        "subtitle": "Elizabeth City is affordable and stable, with longer tours common at the ALC. The main choice is in-town versus the surrounding area, and many families buy.",
+        "intro": [
+          "Because the ALC anchors a large, longer-tenured workforce, the community is settled and many families buy. The cost of living is low, so BAH stretches well.",
+          "Where you live mostly comes down to commute and schools in and around Elizabeth City and Pasquotank/Camden counties, with the Outer Banks and Hampton Roads a drive away."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Elizabeth City and Camden County keep the commute short and the costs low." },
+          { "who": "Settle in", "advice": "Longer ALC tours make buying common; the affordable market helps." },
+          { "who": "Coast access", "advice": "The Outer Banks are about an hour-plus southeast for weekends." },
+          { "who": "Limited CG housing", "advice": "Some military housing exists; check early, but plan to live off base." }
+        ]
+      },
+      "source": { "label": "Coast Guard Air Station Elizabeth City (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Air Station Elizabeth City (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Some Coast Guard family housing is available; given the affordable local market and longer ALC tours, many families live off base in and around Elizabeth City.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Air Station Elizabeth City (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NC181",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NC181 (Elizabeth City) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "27909", "label": "Elizabeth City, NC" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Elizabeth City-Pasquotank and Camden County schools serve the area around the base.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Elizabeth City-Pasquotank Public Schools (official)", "url": "https://www.ecpps.k12.nc.us/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NC", "city": "Elizabeth City" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Air Station Elizabeth City",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and area hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Elizabeth City",
+        "Commissary": "On-base commissary / CGX grocery (confirm current hours)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Elizabeth City's affordable market plus longer ALC tours make buying a real, common choice."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing.",
+          "You'd rather not gamble on resale timing in a smaller market.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour (common at the ALC).",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable local market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the affordable market and longer ALC tours make buying common here. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on Elizabeth City and Camden County before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and North Carolina vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Elizabeth City-Pasquotank or Camden County) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Air Station Elizabeth City?", "a": "It's a major Coast Guard air station that shares the field with the Aviation Logistics Center, the depot that maintains all CG aircraft, making it a large, stable CG community." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA NC181 (Elizabeth City)." },
+        { "q": "Where do families live?", "a": "Mostly in and around Elizabeth City and Camden County; longer ALC tours and an affordable market mean many families buy." },
+        { "q": "What's nearby?", "a": "The Outer Banks are about an hour-plus southeast, and the Hampton Roads region is a drive north." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Outer Banks (Kitty Hawk/Nags Head)", "category": "Beach", "blurb": "Famous barrier-island beaches and Wright Brothers history, about an hour-plus southeast.", "maps_query": "Nags Head, NC" },
+        { "name": "Historic downtown Elizabeth City", "category": "In town", "blurb": "A waterfront downtown on the Pasquotank River.", "maps_query": "Downtown Elizabeth City, NC" },
+        { "name": "Great Dismal Swamp", "category": "Outdoors", "blurb": "A vast wildlife refuge with trails on the NC-VA line.", "maps_query": "Great Dismal Swamp National Wildlife Refuge, NC" },
+        { "name": "Hampton Roads (Norfolk)", "category": "Day trip", "blurb": "Big-city amenities a drive north in Virginia.", "maps_query": "Norfolk, VA" }
+      ]
+    }
+  ]
+}

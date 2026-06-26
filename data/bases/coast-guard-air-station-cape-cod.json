@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-air-station-cape-cod",
+  "schema_version": "0.1",
+  "name": "Coast Guard Air Station Cape Cod",
+  "short_name": "Cape Cod",
+  "branch": "U.S. Coast Guard",
+  "states": ["MA"],
+  "tagline": "The Coast Guard's only air station in the Northeast, flying rescue missions over the busy waters off New England.",
+  "coords": { "lat": 41.66, "lng": -70.52, "label": "Bourne, MA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Air Station Cape Cod (on Joint Base Cape Cod / former Otis ANGB, Bourne MA). CONUS full template (BAH MHA MA124 Cape Cod-Plymouth; RentCast/SchoolDigger work). CG uses same BAH tables. Only CG air station in the Northeast; HH-60 + HC-144 SAR. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Massachusetts is TRICARE East. Seasonal Cape market. Medium-confidence flags: base coords (approx), off-base ZIP 02532 (Buzzards Bay/Bourne).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Bourne, MA (Joint Base Cape Cod, upper Cape)",
+        "Distinction": "The Coast Guard's only air station in the Northeast",
+        "Aircraft": "HH-60 Jayhawk helicopters and HC-144 fixed-wing",
+        "Mission": "Search and rescue across New England waters",
+        "Setting": "Cape Cod (seasonal, scenic)"
+      },
+      "source": { "label": "Coast Guard Air Station Cape Cod (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Air Station Cape Cod is the service's only air station in the Northeast, flying HH-60 helicopters and HC-144 aircraft on search-and-rescue and patrol missions over the busy, cold waters off New England.",
+        "It sits on Joint Base Cape Cod on the upper Cape near Bourne, pairing a demanding rescue mission with the seasonal beauty (and seasonal prices) of Cape Cod."
+      ],
+      "source": { "label": "Coast Guard Air Station Cape Cod (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "capecod_decision",
+      "title": "Cape Cod Living: Beautiful, With a Seasonal Market",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Cape is gorgeous but seasonal and pricey near the water. The main choice is which upper-Cape or mainland town fits your commute, schools, and budget.",
+        "intro": [
+          "Housing on the Cape swings with tourism: lovely and calmer off-season, busy and expensive in summer. Coast Guard housing is limited, so most families live off base.",
+          "Where you live mostly comes down to commute and schools across the upper Cape (Bourne, Sandwich, Falmouth) and the mainland just over the bridges, which is often more affordable and year-round."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Bourne and Sandwich on the upper Cape keep the commute short." },
+          { "who": "Year-round value", "advice": "Towns over the bridges (Wareham, Plymouth area) are more affordable and less seasonal." },
+          { "who": "On-base option", "advice": "Some military housing is available on Joint Base Cape Cod; check early." },
+          { "who": "Enjoy the Cape", "advice": "Beaches, the Cape Cod National Seashore, and the islands are the upside, especially off-season." }
+        ]
+      },
+      "source": { "label": "Coast Guard Air Station Cape Cod (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Air Station Cape Cod is on Joint Base Cape Cod. Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Air Station Cape Cod (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Some military family housing is available on Joint Base Cape Cod; Coast Guard housing is limited, so many families live off base across the upper Cape and the mainland.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Air Station Cape Cod (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MA124",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA MA124 (Cape Cod-Plymouth) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "02532", "label": "Buzzards Bay / Bourne, MA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Bourne, Sandwich, Falmouth, and mainland districts (Wareham, Plymouth area) serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Bourne Public Schools (official)", "url": "https://www.bourneps.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "MA", "city": "Bourne" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Air Station Cape Cod",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and area hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Cape Cod",
+        "Commissary": "Commissary on Joint Base Cape Cod (confirm current hours)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the Cape's seasonal, tourism-driven market makes tour length and location especially important."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the Cape and the mainland before committing.",
+          "You'd rather not own in a seasonal, tourism-driven market.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "A year-round mainland or upper-Cape town fits your budget for a home you like.",
+          "You've found a place and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The Cape's seasonal market and higher near-water prices lead many to rent or look to the mainland. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive (book early in summer). You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on the upper Cape and mainland before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Massachusetts vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Bourne, Sandwich, or a mainland district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Air Station Cape Cod?", "a": "It's the Coast Guard's only air station in the Northeast, flying HH-60 helicopters and HC-144 aircraft on search-and-rescue missions, located on Joint Base Cape Cod." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA MA124 (Cape Cod-Plymouth)." },
+        { "q": "Where do families live?", "a": "Some on Joint Base Cape Cod; many off base on the upper Cape (Bourne, Sandwich) or the more affordable mainland over the bridges." },
+        { "q": "Is it expensive?", "a": "Near the water and in summer, yes. The mainland and off-season are more affordable." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Cape Cod National Seashore", "category": "Outdoors", "blurb": "Miles of protected Atlantic beaches and dunes down the Cape.", "maps_query": "Cape Cod National Seashore, MA" },
+        { "name": "Woods Hole & the islands ferry", "category": "Day trip", "blurb": "Ferries to Martha's Vineyard and Nantucket from Falmouth.", "maps_query": "Woods Hole Ferry Terminal, MA" },
+        { "name": "Sandwich (historic village)", "category": "In town", "blurb": "The Cape's oldest town, with a boardwalk and museums.", "maps_query": "Sandwich, MA" },
+        { "name": "Boston", "category": "Day trip", "blurb": "The big city about an hour-plus northwest over the bridges.", "maps_query": "Boston, MA" }
+      ]
+    }
+  ]
+}

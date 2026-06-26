@@ -1,0 +1,201 @@
+{
+  "slug": "tracen-yorktown",
+  "schema_version": "0.1",
+  "name": "Coast Guard TRACEN Yorktown",
+  "short_name": "Yorktown",
+  "branch": "U.S. Coast Guard",
+  "states": ["VA"],
+  "tagline": "A major Coast Guard training center and officer candidate school on Virginia's historic peninsula.",
+  "coords": { "lat": 37.22, "lng": -76.53, "label": "Yorktown, VA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Training Center Yorktown (York County, VA Peninsula, near Williamsburg/Newport News). CONUS full template (BAH MHA VA297 Hampton/Newport News; RentCast/SchoolDigger work). CG uses same BAH tables. Major training center: Officer Candidate School (OCS), 'C' schools, maritime law enforcement. Staff + students. Medical: CG clinic + TRICARE network + nearby DoD MTFs. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Virginia is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 23692 (Yorktown).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Yorktown, VA (York County, Virginia Peninsula)",
+        "Role": "Major Coast Guard training center",
+        "Trains": "Officer Candidate School (OCS), advanced 'C' schools, and maritime law enforcement",
+        "Population": "Staff and students",
+        "Nearby": "Williamsburg, Newport News, and the Hampton Roads area"
+      },
+      "source": { "label": "Coast Guard TRACEN Yorktown (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Training Center Yorktown is a major Coast Guard schoolhouse, home to Officer Candidate School and a range of advanced ('C') schools and maritime law enforcement training. It runs on a steady flow of students and the staff who train them.",
+        "It's on Virginia's historic peninsula near Yorktown and Williamsburg, at the edge of the Hampton Roads region, with an affordable-for-the-coast cost of living and lots of history."
+      ],
+      "source": { "label": "Coast Guard TRACEN Yorktown (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "yorktown_decision",
+      "title": "Historic Peninsula Living, Affordable and Family-Friendly",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Virginia Peninsula is affordable and very military-friendly. The main choice is which town fits your commute and schools, with York County well regarded.",
+        "intro": [
+          "The area is reasonably priced and used to military families. Coast Guard housing is limited, so most families live off base across the peninsula.",
+          "Where you live mostly comes down to commute and schools across Yorktown, Williamsburg, and Newport News, with the wider Hampton Roads area nearby."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "York County (Yorktown, Tabb, Grafton) sits right by the base with well-regarded schools." },
+          { "who": "Historic charm", "advice": "Williamsburg offers history and family-friendly neighborhoods a short drive away." },
+          { "who": "More options", "advice": "Newport News and the wider peninsula add housing and amenities." },
+          { "who": "Limited CG housing", "advice": "Some military housing exists; check early, but plan to live off base." }
+        ]
+      },
+      "source": { "label": "Coast Guard TRACEN Yorktown (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard TRACEN Yorktown (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "TRACEN Yorktown has some military family housing for staff; Coast Guard housing is limited, so many families live off base across the peninsula.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard TRACEN Yorktown (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "VA297",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA VA297 (Hampton/Newport News) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "23692", "label": "Yorktown, VA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. York County School Division (well regarded), Williamsburg-James City County, and Newport News serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "York County School Division (official)", "url": "https://yorkcountyschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "VA", "city": "Yorktown" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, TRACEN Yorktown",
+        "Care": "On-base clinic care for the assigned population; family care via the TRICARE network and nearby DoD facilities in Hampton Roads",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Yorktown",
+        "Commissary": "Access to Hampton Roads DoD commissaries (Langley-Eustis and others)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the affordable, military-friendly peninsula makes buying a real option, especially with repeat tours."],
+        "rent": [
+          "Your tour is short or you're here for a training pipeline.",
+          "You want time to learn the peninsula before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer staff tour or repeat Hampton Roads assignments.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable peninsula market fits your budget for a home you like.",
+          "You've found a town and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the affordable, military-heavy peninsula makes buying worth a look for longer tours. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on York County, Williamsburg, and Newport News before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Virginia vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (York County, WJCC, or Newport News) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; nearby Hampton Roads DoD facilities are available for some care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is TRACEN Yorktown?", "a": "It's a major Coast Guard training center, home to Officer Candidate School and many advanced ('C') schools plus maritime law enforcement training." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Yorktown is MHA VA297 (Hampton/Newport News)." },
+        { "q": "Where do families live?", "a": "Mostly off base across the peninsula. York County is closest with strong schools; Williamsburg and Newport News are popular too." },
+        { "q": "Is it affordable?", "a": "Yes, for a coastal area, and it's very military-friendly, so many families buy." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Colonial Williamsburg", "category": "History", "blurb": "A famous living-history town just up the road.", "maps_query": "Colonial Williamsburg, VA" },
+        { "name": "Yorktown Battlefield & waterfront", "category": "History", "blurb": "Revolutionary War battlefield and a riverside beach and shops.", "maps_query": "Yorktown Battlefield, VA" },
+        { "name": "Busch Gardens Williamsburg", "category": "Family", "blurb": "A major theme park nearby.", "maps_query": "Busch Gardens Williamsburg, VA" },
+        { "name": "Virginia Beach", "category": "Day trip", "blurb": "Atlantic beaches a drive east through Hampton Roads.", "maps_query": "Virginia Beach Oceanfront, VA" }
+      ]
+    }
+  ]
+}
