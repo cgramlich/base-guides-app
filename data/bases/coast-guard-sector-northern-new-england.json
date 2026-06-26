@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-northern-new-england",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Northern New England",
+  "short_name": "Northern New England",
+  "branch": "U.S. Coast Guard",
+  "states": ["ME"],
+  "tagline": "The Coast Guard guarding the rugged coast of Maine and northern New England, based in South Portland.",
+  "coords": { "lat": 43.64, "lng": -70.25, "label": "South Portland, ME" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Northern New England (South Portland, ME). CONUS full template (BAH MHA ME139 Portland; RentCast/SchoolDigger work). CG uses same BAH tables. Oversees the Maine/New Hampshire coast and waters; SAR + law enforcement. Medical: CG clinic + TRICARE network/local. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Maine is TRICARE East. Cold winters; scenic coast. Medium-confidence flags: base coords (approx), off-base ZIP 04106 (South Portland).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "South Portland, ME (Casco Bay)",
+        "Role": "Coast Guard hub for Maine and northern New England",
+        "Mission": "Search and rescue and law enforcement along the rugged northern New England coast",
+        "Setting": "Scenic coastal Maine (four real seasons, cold winters)",
+        "Region": "Greater Portland, Maine"
+      },
+      "source": { "label": "Coast Guard Sector Northern New England (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Northern New England oversees the waters off Maine and New Hampshire, coordinating search and rescue and law enforcement along a rugged, often cold and foggy coast. It's headquartered in South Portland on Casco Bay.",
+        "It's in the greater Portland, Maine area, a scenic, increasingly popular coastal region with a strong quality of life, four real seasons, and cold winters."
+      ],
+      "source": { "label": "Coast Guard Sector Northern New England (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "nne_decision",
+      "title": "Coastal Maine Living: Scenic and Increasingly Popular",
+      "type": "killer",
+      "data": {
+        "subtitle": "Greater Portland is a desirable, growing coastal area, which has lifted housing costs. The main choice is which nearby town fits your commute and schools.",
+        "intro": [
+          "Portland's popularity has pushed up prices in recent years, but the broader area still offers options. Coast Guard housing is limited, so most families rent or buy nearby.",
+          "Where you live mostly comes down to commute and schools across South Portland, Scarborough, and the surrounding towns, with winters and the coast as part of the picture."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "South Portland and Cape Elizabeth keep the commute short and put you near the water." },
+          { "who": "Family suburbs", "advice": "Scarborough, Falmouth, and Gorham are popular with families for schools." },
+          { "who": "More value", "advice": "Towns a bit farther from Portland trade a longer commute for lower prices." },
+          { "who": "Plan for winter", "advice": "Real New England winters; budget for heating and winter driving, and enjoy the coast in summer." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Northern New England (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Northern New England (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the area is limited, so most families rent or buy across greater Portland.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Northern New England (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "ME139",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA ME139 (Portland) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "04106", "label": "South Portland, ME" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. South Portland, Scarborough, Cape Elizabeth, and Falmouth districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "South Portland Schools (official)", "url": "https://www.spsd.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "ME", "city": "South Portland" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector Northern New England",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and greater Portland hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / online",
+        "Commissary": "Limited locally; most groceries via greater Portland stores"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and greater Portland's popularity has raised prices, so tour length matters."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "Portland prices have risen and you want flexibility.",
+          "You want time to learn the area before committing.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour and want to settle on the coast.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "A town fits your budget for a home you like.",
+          "You've found a community and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Greater Portland has gotten pricier as it's grown, so weigh your tour length; towns farther out offer more value. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on South Portland, Scarborough, and the area before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Maine vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (South Portland, Scarborough, Cape Elizabeth, or Falmouth) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector Northern New England?", "a": "It's the Coast Guard's hub for Maine and northern New England, coordinating search and rescue and law enforcement along the coast, based in South Portland." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Portland is MHA ME139." },
+        { "q": "Where do families live?", "a": "Across greater Portland. South Portland and Cape Elizabeth are closest; Scarborough, Falmouth, and Gorham are popular for schools. CG housing is limited." },
+        { "q": "What's the weather like?", "a": "Four real seasons with cold, snowy winters and beautiful summers on the coast. Budget for heating and winter driving." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Old Port (Portland)", "category": "Food & shopping", "blurb": "Cobblestone streets, renowned restaurants, and the working waterfront.", "maps_query": "Old Port, Portland ME" },
+        { "name": "Portland Head Light", "category": "Outdoors", "blurb": "Maine's famous lighthouse at Fort Williams Park in Cape Elizabeth.", "maps_query": "Portland Head Light, Cape Elizabeth ME" },
+        { "name": "Casco Bay islands ferry", "category": "Day trip", "blurb": "Ferries to the Casco Bay islands from Portland.", "maps_query": "Casco Bay Lines, Portland ME" },
+        { "name": "Acadia National Park", "category": "Day trip", "blurb": "Maine's stunning national park up the coast.", "maps_query": "Acadia National Park, ME" }
+      ]
+    }
+  ]
+}

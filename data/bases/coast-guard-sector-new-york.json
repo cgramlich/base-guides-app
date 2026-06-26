@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-new-york",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector New York",
+  "short_name": "New York (CG)",
+  "branch": "U.S. Coast Guard",
+  "states": ["NY"],
+  "tagline": "The Coast Guard guarding New York Harbor, headquartered at Fort Wadsworth on Staten Island.",
+  "coords": { "lat": 40.60, "lng": -74.06, "label": "Staten Island, NY" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector New York (Fort Wadsworth, Staten Island, NY). CONUS full template (BAH MHA NY413 Staten Island; RentCast/SchoolDigger work). CG uses same BAH tables. Guards NY Harbor; port security, SAR, law enforcement. Medical: CG clinic + TRICARE network (very expensive NYC). Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). New York is TRICARE East. Very high-cost NYC metro. Medium-confidence flags: base coords (approx), off-base ZIP 10305 (Staten Island).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Fort Wadsworth, Staten Island, NY",
+        "Role": "Coast Guard hub for New York Harbor",
+        "Mission": "Port security, search and rescue, and law enforcement in one of the world's busiest harbors",
+        "Setting": "New York City (very high cost of living)",
+        "Landmark": "Under the Verrazzano-Narrows Bridge at the harbor entrance"
+      },
+      "source": { "label": "Coast Guard Sector New York (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector New York guards one of the world's busiest harbors, running port security, search and rescue, and law enforcement across New York Harbor. It's headquartered at historic Fort Wadsworth on Staten Island, beneath the Verrazzano-Narrows Bridge.",
+        "It's a New York City posting, which means unmatched access to the city, along with one of the highest costs of living in the country."
+      ],
+      "source": { "label": "Coast Guard Sector New York (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "ny_decision",
+      "title": "NYC Living: Expensive, So Commute and Borough Matter",
+      "type": "killer",
+      "data": {
+        "subtitle": "New York is among the priciest markets anywhere. The main choice is which borough or suburb fits your commute (and transit) against the high cost.",
+        "intro": [
+          "Housing is the defining challenge. Coast Guard housing at Fort Wadsworth is limited and a real money-saver; off base, families spread across Staten Island, New Jersey, and the other boroughs.",
+          "Where you live mostly comes down to commute and schools, with Staten Island closest to the base and New Jersey (via the bridges) a common, sometimes more affordable option."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Staten Island keeps you nearest Fort Wadsworth and is the most suburban of the boroughs." },
+          { "who": "On-base value", "advice": "Fort Wadsworth military housing is a big money-saver in this market; get on the list early." },
+          { "who": "New Jersey option", "advice": "Parts of New Jersey across the bridges can offer more space; weigh tolls and commute." },
+          { "who": "Use transit", "advice": "The ferry, buses, and trains shape NYC life; factor transit into where you live." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector New York (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Fort Wadsworth is access-controlled. Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector New York (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "There is military family housing at Fort Wadsworth, a valuable option given New York's costs and in high demand; many families also live off base across Staten Island and New Jersey.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office as early as possible for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector New York (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NY413",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NY413 (Staten Island) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "10305", "label": "Staten Island, NY" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. New York City public schools (Staten Island) and New Jersey districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "NYC Public Schools (official)", "url": "https://www.schools.nyc.gov/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NY", "city": "Staten Island" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector New York",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and NYC-area hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) at Fort Wadsworth / online",
+        "Commissary": "Limited locally; most groceries via NYC-area stores"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in the very expensive NYC market buying is out of reach for most on a single tour."],
+        "rent": [
+          "Your tour is a standard length and you'll PCS out.",
+          "NYC-area prices put a purchase well out of comfortable reach.",
+          "You prefer on-base housing or renting for cost and flexibility.",
+          "You want to keep your commute and budget manageable."
+        ],
+        "buy": [
+          "You expect a long tour or repeat NYC-area assignments and can afford the high entry price.",
+          "You want to use your VA loan and build equity.",
+          "You've found a Staten Island or New Jersey community and commute you're confident about.",
+          "You're comfortable being a long-distance landlord later."
+        ],
+        "bottom_line": "There is no universal right answer, but NYC prices make buying impractical for most single tours, so on-base housing or renting is the norm. Run your BAH against the rent and home prices above, weigh your commute, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In an expensive metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check Fort Wadsworth housing", "text": "On-base housing is a big money-saver here; get on the list early, and get the office's read on Staten Island and New Jersey." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration (NY or NJ depending where you land), and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (NYC/Staten Island or a New Jersey district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector New York?", "a": "It's the Coast Guard's hub for New York Harbor, handling port security, search and rescue, and law enforcement, headquartered at Fort Wadsworth on Staten Island." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA NY413 (Staten Island)." },
+        { "q": "Where do families live?", "a": "On-base housing at Fort Wadsworth (a big money-saver, in high demand) or off base across Staten Island and New Jersey." },
+        { "q": "Is it expensive?", "a": "Very. The NYC metro is one of the priciest markets in the country, so on-base housing or renting is the norm." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Manhattan (via Staten Island Ferry)", "category": "Day trip", "blurb": "The free ferry to Manhattan with Statue of Liberty views.", "maps_query": "Staten Island Ferry, NY" },
+        { "name": "Fort Wadsworth overlook", "category": "History", "blurb": "Historic fortifications and harbor views under the Verrazzano Bridge.", "maps_query": "Fort Wadsworth, Staten Island NY" },
+        { "name": "Statue of Liberty & Ellis Island", "category": "Family", "blurb": "Iconic harbor landmarks reachable from Lower Manhattan.", "maps_query": "Statue of Liberty, NY" },
+        { "name": "Jersey Shore", "category": "Day trip", "blurb": "Atlantic beaches down the New Jersey coast.", "maps_query": "Sandy Hook, NJ" }
+      ]
+    }
+  ]
+}

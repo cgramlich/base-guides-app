@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-new-orleans",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector New Orleans",
+  "short_name": "New Orleans (CG)",
+  "branch": "U.S. Coast Guard",
+  "states": ["LA"],
+  "tagline": "The Coast Guard guarding the lower Mississippi and the Louisiana Gulf Coast.",
+  "coords": { "lat": 29.83, "lng": -90.02, "label": "New Orleans, LA" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector New Orleans + Air Station New Orleans (Belle Chasse, LA; Central time). CONUS full template (BAH MHA LA116 New Orleans; RentCast/SchoolDigger work). CG uses same BAH tables. Guards the lower Mississippi River + Gulf SAR/interdiction/port security. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Louisiana moved to TRICARE West in 2024. Medium-confidence flags: base coords (approx), off-base ZIP 70056 (Gretna) / Westbank.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "New Orleans, LA (Air Station at Belle Chasse)",
+        "Role": "Coast Guard hub for the lower Mississippi and Louisiana Gulf Coast",
+        "Mission": "Port security, search and rescue, and interdiction on the river and the Gulf",
+        "Setting": "Greater New Orleans",
+        "Region": "Affordable, culturally rich Gulf Coast city"
+      },
+      "source": { "label": "Coast Guard Sector New Orleans (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector New Orleans, with Air Station New Orleans at Belle Chasse, guards the lower Mississippi River and the Louisiana Gulf Coast: port security for one of the nation's biggest river-port systems, plus search and rescue and interdiction.",
+        "It's in greater New Orleans, an affordable, culturally rich city, with hurricane season a real planning factor on this stretch of coast."
+      ],
+      "source": { "label": "Coast Guard Sector New Orleans (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "nola_decision",
+      "title": "Greater New Orleans Living: Affordable, With Storm Awareness",
+      "type": "killer",
+      "data": {
+        "subtitle": "The New Orleans area is affordable and full of character. The main choice is which side of the river or suburb fits your commute and schools, with hurricane planning a real factor.",
+        "intro": [
+          "The metro is reasonably priced, so BAH stretches, and the culture and food are a big draw. Coast Guard housing is limited, so most families rent.",
+          "Where you live mostly comes down to commute and schools across the Westbank (near Belle Chasse), the Northshore (across Lake Pontchartrain), and the suburbs."
+        ],
+        "recommendations": [
+          { "who": "Closest to the air station", "advice": "Westbank communities (Belle Chasse, Gretna, Algiers) are nearest Air Station New Orleans." },
+          { "who": "Family suburbs", "advice": "The Northshore (Mandeville, Covington) and Jefferson Parish are popular with families for schools." },
+          { "who": "City living", "advice": "New Orleans proper offers unmatched culture and food, with a range of neighborhoods." },
+          { "who": "Plan for storms", "advice": "It's hurricane country; budget for insurance, check flood zones, and know your evacuation plan." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector New Orleans (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector New Orleans (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the area is limited, so most families rent across greater New Orleans.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector New Orleans (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "LA116",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA LA116 (New Orleans) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "70056", "label": "Gretna (Westbank), LA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Jefferson Parish, St. Tammany Parish (Northshore, well regarded), Plaquemines Parish, and other area districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "St. Tammany Parish Public Schools (official)", "url": "https://www.stpsb.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "LA", "city": "New Orleans" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector/Air Station New Orleans",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and New Orleans-area hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / online",
+        "Commissary": "Access to the commissary at NAS JRB New Orleans (Belle Chasse)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the affordable New Orleans market makes buying a real option, with flood/insurance the key wrinkle."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro and check flood zones before committing.",
+          "You'd rather not take on flood/coastal insurance and storm risk as an owner.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable market fits your budget for a home you like (in a sensible flood zone).",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The metro is affordable, so BAH stretches, but flood zones and insurance are critical here. Run your BAH against the rent and home prices above, check the flood map for any home, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing (and flood zones)", "text": "Get the housing office's read on the Westbank, Northshore, and suburbs, and check flood maps before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Louisiana vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Jefferson, St. Tammany, or Plaquemines Parish) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector New Orleans?", "a": "It's the Coast Guard's hub for the lower Mississippi and the Louisiana Gulf Coast, with Air Station New Orleans at Belle Chasse, handling port security, search and rescue, and interdiction." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA LA116 (New Orleans)." },
+        { "q": "Where do families live?", "a": "Across the metro. The Westbank is nearest Belle Chasse; the Northshore (Mandeville, Covington) is popular for schools; the city offers unmatched culture." },
+        { "q": "What about flooding and hurricanes?", "a": "It's hurricane country and flood zones vary block to block, so check the flood map for any home and budget for insurance." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "French Quarter", "category": "Food & culture", "blurb": "The historic heart of New Orleans, with food, music, and history.", "maps_query": "French Quarter, New Orleans LA" },
+        { "name": "Audubon Park & Zoo", "category": "Family", "blurb": "A large park and zoo uptown.", "maps_query": "Audubon Park, New Orleans LA" },
+        { "name": "Lake Pontchartrain / Northshore", "category": "Outdoors", "blurb": "The causeway, lakefront, and the family-friendly Northshore towns.", "maps_query": "Mandeville Lakefront, LA" },
+        { "name": "Barataria Preserve", "category": "Outdoors", "blurb": "Bayou and swamp trails just south near Belle Chasse.", "maps_query": "Barataria Preserve, Marrero LA" }
+      ]
+    }
+  ]
+}

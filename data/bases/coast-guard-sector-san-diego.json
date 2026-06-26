@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-san-diego",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector San Diego",
+  "short_name": "San Diego (CG)",
+  "branch": "U.S. Coast Guard",
+  "states": ["CA"],
+  "tagline": "The Coast Guard's Southern California hub, guarding the San Diego coast and the maritime border.",
+  "coords": { "lat": 32.71, "lng": -117.18, "label": "San Diego, CA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector San Diego (San Diego, CA). CONUS full template (BAH MHA CA038 San Diego; RentCast/SchoolDigger work). CG uses same BAH tables. Cutters + SAR + maritime border/law enforcement. Medical: CG clinic + TRICARE network (expensive San Diego; NMC San Diego nearby). Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). California is TRICARE West. High-cost San Diego. Medium-confidence flags: base coords (approx), off-base ZIP 92118 (Coronado) / metro.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "San Diego, CA",
+        "Role": "Southern California Coast Guard hub",
+        "Mission": "Search and rescue, law enforcement, and maritime border security",
+        "Also hosts": "Cutters and San Diego-area Coast Guard units",
+        "Setting": "Coastal Southern California (high cost of living)"
+      },
+      "source": { "label": "Coast Guard Sector San Diego (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector San Diego is the service's Southern California hub, running search and rescue, law enforcement, and maritime border security along a busy stretch of coast near the U.S.-Mexico maritime boundary, supported by homeported cutters.",
+        "It's in San Diego, one of the most desirable and most expensive markets the military sends families to, which shapes the housing decision."
+      ],
+      "source": { "label": "Coast Guard Sector San Diego (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "sd_decision",
+      "title": "San Diego: Beautiful, Desirable, and Expensive",
+      "type": "killer",
+      "data": {
+        "subtitle": "San Diego is a top destination but pricey. The central question is balancing commute against how far out you'll go to make your BAH stretch.",
+        "intro": [
+          "Housing costs are high across the metro, so where you live is mostly about commute versus price. Coast Guard housing is limited, so most families rent.",
+          "Where you live mostly comes down to commute and schools across the central city, the South Bay, and inland, with the area's beaches and weather as the upside."
+        ],
+        "recommendations": [
+          { "who": "Shorter commute", "advice": "Central San Diego and Coronado-area neighborhoods are closest but expensive." },
+          { "who": "Value in the South Bay", "advice": "Chula Vista and the South Bay offer newer homes and more space for the money." },
+          { "who": "Family suburbs", "advice": "Inland and North County areas have good schools; weigh the longer commute and traffic." },
+          { "who": "Limited CG housing", "advice": "Some military housing exists in the San Diego complex; check early, but plan to rent." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector San Diego (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector San Diego (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in San Diego is limited, so most families rent across the metro.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office early for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector San Diego (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA038",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA038 (San Diego) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "91910", "label": "Chula Vista (San Diego), CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. San Diego Unified, Chula Vista/Sweetwater, and other metro districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "San Diego Unified School District (official)", "url": "https://www.sandiegounified.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "San Diego" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector San Diego",
+        "Care": "On-base clinic care for the assigned population; family care via the TRICARE network and access to Naval Medical Center San Diego (Balboa)",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / access to area Navy exchanges",
+        "Commissary": "Access to San Diego DoD commissaries (NAS North Island and others)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in pricey San Diego the math is tougher than at most duty stations."],
+        "rent": [
+          "Your tour is a standard length and you'll PCS out.",
+          "Home prices put a purchase out of comfortable reach for your budget.",
+          "You want flexibility in an expensive, fast-moving market.",
+          "Renting keeps you closer in without overextending."
+        ],
+        "buy": [
+          "You expect a long tour or repeat San Diego assignments.",
+          "You can afford the entry price and want to build equity with your VA loan.",
+          "You've found a neighborhood and commute that work and plan to hold the home.",
+          "You're comfortable being a long-distance landlord if you PCS before selling."
+        ],
+        "bottom_line": "There is no universal right answer, and San Diego's high prices make buying a bigger commitment, so many families rent. Run your BAH against the rent and home prices above, weigh your commute, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In a big, expensive metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Plan around commute", "text": "CG housing is limited; pick your area around commute and price, and get the housing office's read before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (San Diego Unified, Chula Vista, etc.) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment; the CG clinic plus NMC San Diego (Balboa) and the network serve families." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector San Diego?", "a": "It's the Coast Guard's Southern California hub for search and rescue, law enforcement, and maritime border security, with homeported cutters." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA CA038 (San Diego)." },
+        { "q": "Where do families live?", "a": "Across the metro. Central areas are closest but pricey; the South Bay and inland offer more value. CG housing is limited." },
+        { "q": "Is it expensive?", "a": "Yes. San Diego is one of the costlier markets in the country, so commute versus price drives where you live." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Balboa Park & San Diego Zoo", "category": "Family", "blurb": "Museums, gardens, and the world-famous zoo.", "maps_query": "Balboa Park, San Diego CA" },
+        { "name": "Coronado Beach", "category": "Beach", "blurb": "A top-rated beach and the historic Hotel del Coronado.", "maps_query": "Coronado Beach, CA" },
+        { "name": "Cabrillo National Monument", "category": "Outdoors", "blurb": "Tide pools and harbor views at the tip of Point Loma.", "maps_query": "Cabrillo National Monument, San Diego CA" },
+        { "name": "Gaslamp Quarter", "category": "Food & nightlife", "blurb": "Downtown San Diego's dining and entertainment district.", "maps_query": "Gaslamp Quarter, San Diego CA" }
+      ]
+    }
+  ]
+}

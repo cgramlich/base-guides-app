@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-air-station-port-angeles",
+  "schema_version": "0.1",
+  "name": "Coast Guard Air Station Port Angeles",
+  "short_name": "Port Angeles",
+  "branch": "U.S. Coast Guard",
+  "states": ["WA"],
+  "tagline": "The Coast Guard's air station on the Olympic Peninsula, guarding the Strait of Juan de Fuca.",
+  "coords": { "lat": 48.14, "lng": -123.41, "label": "Port Angeles, WA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Air Station / Sector Field Office Port Angeles (Olympic Peninsula, WA). CONUS full template (BAH MHA WA308 Port Angeles; RentCast/SchoolDigger work). CG uses same BAH tables. Guards the Strait of Juan de Fuca + outer WA coast; SAR. Small, scenic, somewhat remote peninsula. Medical: CG clinic + TRICARE network/local. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Washington is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 98362 (Port Angeles).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Port Angeles, WA (Olympic Peninsula)",
+        "Role": "Air station and Coast Guard hub for the Strait of Juan de Fuca",
+        "Mission": "Search and rescue and patrol on the strait and outer Washington coast",
+        "Setting": "Small, scenic peninsula town below the Olympic Mountains",
+        "Region": "Pacific Northwest, gateway to Olympic National Park"
+      },
+      "source": { "label": "Coast Guard Air Station Port Angeles (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Air Station Port Angeles flies search-and-rescue and patrol missions over the Strait of Juan de Fuca and the outer Washington coast, a busy and often rough maritime gateway to Puget Sound.",
+        "It's in Port Angeles on the Olympic Peninsula, a small, scenic town beneath the Olympic Mountains, with a relaxed pace and Olympic National Park at the doorstep, balanced against a somewhat remote location."
+      ],
+      "source": { "label": "Coast Guard Air Station Port Angeles (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "pa_decision",
+      "title": "Small-Town Peninsula Living, Scenic and a Bit Remote",
+      "type": "killer",
+      "data": {
+        "subtitle": "Port Angeles is a small, beautiful peninsula town with a modest housing market. The main choice is in-town versus nearby communities, with the rest of Puget Sound a ferry or drive away.",
+        "intro": [
+          "Port Angeles is a small market with a mild, wet maritime climate. Coast Guard housing is limited, so most families rent in and around town.",
+          "Where you live mostly comes down to commute and schools across Port Angeles and Sequim nearby, with Seattle reachable by ferry/drive for big-city needs."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Port Angeles itself keeps the commute short." },
+          { "who": "Nearby option", "advice": "Sequim (a bit drier, popular with families and retirees) is a short drive east." },
+          { "who": "Plan for remoteness", "advice": "It's a smaller market; reaching Seattle means a ferry or the long drive around the Sound." },
+          { "who": "Embrace the outdoors", "advice": "Olympic National Park, beaches, and mountains are right there." }
+        ]
+      },
+      "source": { "label": "Coast Guard Air Station Port Angeles (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Air Station Port Angeles (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Some Coast Guard family housing is available; the local market is small, so many families rent in and around Port Angeles.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office early for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Air Station Port Angeles (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "WA308",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA WA308 (Port Angeles) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "98362", "label": "Port Angeles, WA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Port Angeles and Sequim school districts serve the area.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Port Angeles School District (official)", "url": "https://www.portangelesschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "WA", "city": "Port Angeles" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Port Angeles",
+        "Care": "On-base clinic care for the assigned population; family care via the local hospital and the TRICARE network, with Seattle for complex care",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / online",
+        "Commissary": "Limited locally; nearest larger DoD commissaries are across Puget Sound (Naval Base Kitsap / JBLM)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In the small Port Angeles market, tour length and limited inventory both matter."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer flexibility in a small market.",
+          "You'd rather not own where inventory and resale are limited.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour and want to settle on the peninsula.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The local market fits your budget for a home you like.",
+          "You've found a town and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The peninsula market is small, so many families rent. If you buy, weigh limited inventory and resale. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive; options are limited. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "The local market is small; start early and get the housing office's read on Port Angeles and Sequim." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Washington vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Port Angeles or Sequim) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; Seattle is the option for complex care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Air Station Port Angeles?", "a": "It's the Coast Guard's air station on the Olympic Peninsula, flying search-and-rescue and patrol missions over the Strait of Juan de Fuca and the outer Washington coast." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA WA308 (Port Angeles)." },
+        { "q": "Where do families live?", "a": "Mostly in and around Port Angeles, with nearby Sequim a popular option. CG housing is limited." },
+        { "q": "Is it remote?", "a": "Somewhat. It's a small, scenic peninsula town; reaching Seattle means a ferry or a long drive around Puget Sound." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Olympic National Park (Hurricane Ridge)", "category": "Outdoors", "blurb": "Mountains, rainforest, and coast right above Port Angeles.", "maps_query": "Hurricane Ridge, Olympic National Park WA" },
+        { "name": "Sequim & Dungeness Spit", "category": "Outdoors", "blurb": "Lavender fields and the longest natural sand spit in the U.S. nearby.", "maps_query": "Dungeness Spit, Sequim WA" },
+        { "name": "Victoria, BC (ferry)", "category": "Day trip", "blurb": "A ferry from Port Angeles to Victoria, Canada (passport required).", "maps_query": "Black Ball Ferry Line, Port Angeles WA" },
+        { "name": "Lake Crescent", "category": "Outdoors", "blurb": "A stunning glacial lake west of town in the national park.", "maps_query": "Lake Crescent, WA" }
+      ]
+    }
+  ]
+}

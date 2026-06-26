@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-houston-galveston",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Houston-Galveston",
+  "short_name": "Houston-Galveston",
+  "branch": "U.S. Coast Guard",
+  "states": ["TX"],
+  "tagline": "The Coast Guard guarding the Houston Ship Channel and the upper Texas coast.",
+  "coords": { "lat": 29.31, "lng": -94.79, "label": "Galveston, TX" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Houston-Galveston (Galveston Island + Houston metro, TX; Central time). CONUS full template (BAH MHA TX282 Houston, which covers the Galveston/Houston area; RentCast/SchoolDigger work). CG uses same BAH tables. Guards the busy Houston Ship Channel + Gulf SAR/interdiction. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Texas moved to TRICARE West in 2024. No state income tax. Medium-confidence flags: base coords (approx), off-base ZIP 77554 (Galveston).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Galveston Island / Houston metro, TX",
+        "Role": "Coast Guard hub for the upper Texas coast",
+        "Mission": "Port security for the Houston Ship Channel, search and rescue, and interdiction",
+        "Setting": "Gulf Coast (Galveston Island + the big Houston metro)",
+        "Note": "Texas has no state income tax"
+      },
+      "source": { "label": "Coast Guard Sector Houston-Galveston (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Houston-Galveston guards one of the nation's most important energy and shipping corridors, the Houston Ship Channel, along with search and rescue and law enforcement across the upper Texas coast.",
+        "Units span Galveston Island and the greater Houston metro, pairing Gulf-Coast beach access with the amenities (and growth) of one of the country's largest cities, and no state income tax."
+      ],
+      "source": { "label": "Coast Guard Sector Houston-Galveston (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "hg_decision",
+      "title": "Island or Metro? Galveston vs. Greater Houston",
+      "type": "killer",
+      "data": {
+        "subtitle": "The main choice is beachside Galveston versus the big, affordable-for-its-size Houston metro, depending on which units you're tied to and what lifestyle you want.",
+        "intro": [
+          "Galveston Island offers beach-town living; the Houston metro offers big-city amenities and a wide range of affordable suburbs. Coast Guard housing is limited, so most families rent.",
+          "Where you live mostly comes down to commute and schools, with Galveston for the coast and the mainland (League City, Clear Lake, the Bay Area) for value and schools."
+        ],
+        "recommendations": [
+          { "who": "Beach life", "advice": "Galveston Island puts you on the Gulf; weigh coastal insurance and hurricane risk." },
+          { "who": "Family value", "advice": "Mainland suburbs like League City, Friendswood, and the Clear Lake area offer good schools and more space." },
+          { "who": "Big-city access", "advice": "The greater Houston metro adds amenities and an international airport a drive inland." },
+          { "who": "Plan for storms", "advice": "It's the Gulf Coast; budget for coastal insurance and know your evacuation plan." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Houston-Galveston (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Houston-Galveston (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the area is limited, so most families rent on Galveston Island or across the Houston metro.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Houston-Galveston (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "TX282",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA TX282 (Houston, covers Galveston) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "77554", "label": "Galveston, TX" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Galveston ISD, Clear Creek ISD (League City/Clear Lake), and other Houston-area districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Clear Creek ISD (official)", "url": "https://www.ccisd.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "TX", "city": "Galveston" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector Houston-Galveston",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and Houston-area hospitals (a major medical region)",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / online",
+        "Commissary": "Nearest DoD commissary is at Ellington Field (Houston area)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and the affordable-for-its-size Houston metro (no state income tax) makes buying a real option, especially on the mainland."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the island versus the metro before committing.",
+          "You'd rather not take on coastal insurance and storm risk on the island.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat Houston-area assignments.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable mainland market fits your budget for a home you like.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. The mainland Houston metro is affordable with no income tax, so buying can pencil out; the island carries higher coastal-insurance and storm risk. Run your BAH against the rent and home prices above, factor in insurance, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on Galveston versus the mainland (League City/Clear Lake) before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Texas vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Galveston ISD or Clear Creek ISD) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; Houston is a major medical region." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector Houston-Galveston?", "a": "It's the Coast Guard's hub for the upper Texas coast, guarding the busy Houston Ship Channel plus search and rescue and interdiction across the Gulf." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA TX282 (Houston, which covers Galveston). Texas also has no state income tax." },
+        { "q": "Where do families live?", "a": "On Galveston Island for the beach, or across the mainland Houston metro (League City, Clear Lake) for value and schools. CG housing is limited." },
+        { "q": "What about hurricanes?", "a": "It's the Gulf Coast, so budget for coastal insurance and know your evacuation plan, especially on the island." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Galveston Island & Pleasure Pier", "category": "Beach", "blurb": "Gulf beaches, the historic Strand, and a beachfront amusement pier.", "maps_query": "Galveston Island, TX" },
+        { "name": "Space Center Houston", "category": "Family", "blurb": "NASA's visitor center near Clear Lake.", "maps_query": "Space Center Houston, TX" },
+        { "name": "Kemah Boardwalk", "category": "Family", "blurb": "A waterfront boardwalk with rides and dining on Galveston Bay.", "maps_query": "Kemah Boardwalk, TX" },
+        { "name": "Downtown Houston", "category": "Day trip", "blurb": "Big-city dining, museums, and sports a drive inland.", "maps_query": "Downtown Houston, TX" }
+      ]
+    }
+  ]
+}

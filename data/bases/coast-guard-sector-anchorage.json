@@ -1,0 +1,202 @@
+{
+  "slug": "coast-guard-sector-anchorage",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Anchorage",
+  "short_name": "Anchorage (CG)",
+  "branch": "U.S. Coast Guard",
+  "states": ["AK"],
+  "region": "OCONUS",
+  "tagline": "The Coast Guard guarding south-central Alaska, from Cook Inlet to the Gulf of Alaska.",
+  "coords": { "lat": 61.22, "lng": -149.90, "label": "Anchorage, AK" },
+  "tz": "America/Anchorage",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Anchorage (Anchorage, AK; south-central). Region flagged OCONUS for browse UX, but Alaska is a BAH/RentCast/SchoolDigger state -> KEEPS full template (BAH MHA AK404 Anchorage; realestate + schools_live work). CG uses same BAH tables. Oversees south-central Alaska waters (Cook Inlet, Prince William Sound). Anchorage is Alaska's largest city (road/air access; not as remote as Kodiak/Juneau). Medical: CG clinic + TRICARE network + access to JBER. Schools: Anchorage SD. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Alaska is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 99504 (Anchorage).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Anchorage, AK (south-central Alaska)",
+        "Role": "Coast Guard hub for south-central Alaska",
+        "Mission": "Search and rescue and patrol across Cook Inlet, Prince William Sound, and the Gulf of Alaska",
+        "Setting": "Alaska's largest city (road and air access)",
+        "Note": "More connected than remote Alaska posts like Kodiak or Juneau"
+      },
+      "source": { "label": "Coast Guard Sector Anchorage (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Anchorage guards the waters of south-central Alaska, from Cook Inlet and Prince William Sound to the Gulf of Alaska, coordinating search and rescue and law enforcement across a vast, demanding area.",
+        "It's in Anchorage, Alaska's largest city, which offers more amenities and road/air access than the state's remote outposts, with mountains, water, and wilderness right at the edge of town."
+      ],
+      "source": { "label": "Coast Guard Sector Anchorage (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "anc_decision",
+      "title": "Alaska's Big City: Amenities Plus the Outdoors",
+      "type": "killer",
+      "data": {
+        "subtitle": "Anchorage is the most connected Alaska tour, with real city amenities. The main choice is which part of the metro fits your commute and schools, with winter the main adjustment.",
+        "intro": [
+          "Unlike Kodiak or Juneau, Anchorage has roads, a major airport, and big-city amenities, so it's a more conventional housing market. Coast Guard housing is limited, so most families rent or buy.",
+          "Where you live mostly comes down to commute and schools across Anchorage and the Eagle River area, with long, cold winters and short, beautiful summers to plan for."
+        ],
+        "recommendations": [
+          { "who": "In Anchorage", "advice": "Most families live in Anchorage proper, close to work, schools, and services." },
+          { "who": "Eagle River", "advice": "Eagle River (toward JBER) is popular with military families a short drive north." },
+          { "who": "Prepare for winter", "advice": "Budget for cold-weather gear, a vehicle block heater, and winter driving; embrace the outdoors year-round." },
+          { "who": "Use JBER", "advice": "Joint Base Elmendorf-Richardson nearby offers the commissary, exchange, and other military services." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Anchorage (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Anchorage (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in Anchorage is limited, so most families rent or buy across the metro; nearby Joint Base Elmendorf-Richardson also provides military services.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Anchorage (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AK404",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AK404 (Anchorage) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "99504", "label": "Anchorage, AK" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. The Anchorage School District serves the city, with the Eagle River area also under it.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Anchorage School District (official)", "url": "https://www.asdk12.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AK", "city": "Anchorage" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Anchorage",
+        "Care": "On-base clinic care plus Anchorage hospitals and the TRICARE network; access to JBER's hospital nearby",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / access to the exchange at JBER",
+        "Commissary": "Access to the commissary at Joint Base Elmendorf-Richardson"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Anchorage is a more conventional market than remote Alaska, so buying is a real option."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro and the winters before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The Anchorage market fits your budget for a home you like.",
+          "You're comfortable maintaining a home through Alaska winters."
+        ],
+        "bottom_line": "There is no universal right answer, but Anchorage's real housing market makes buying more feasible than at remote Alaska posts. Weigh winter maintenance and your tour length. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and an Alaska move adds winter prep and vehicle shipping. Start early."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on Anchorage and Eagle River before you sign anything." },
+          { "title": "Winterize and ship/register your vehicle", "text": "Arrange vehicle shipping if needed, handle Alaska registration, and prep for the cold: block heater, winter tires, and an emergency kit. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the Anchorage School District early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment; Anchorage hospitals, the network, and JBER's hospital serve families." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is Anchorage an overseas tour?", "a": "It's in Alaska, a U.S. state, so it uses stateside pay tools like BAH (not OHA). We group it under the OCONUS/Alaska section for browsing, but it's Alaska's big city with road and air access." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Anchorage is MHA AK404." },
+        { "q": "How is it different from Kodiak or Juneau?", "a": "Anchorage is far more connected, Alaska's largest city, with a real housing market, big-city amenities, and road access, versus the remote, fly-or-ferry-only Kodiak and Juneau." },
+        { "q": "Where do families live?", "a": "Across Anchorage and nearby Eagle River; many use JBER for the commissary, exchange, and other military services." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Chugach State Park", "category": "Outdoors", "blurb": "A massive mountain park right at Anchorage's edge.", "maps_query": "Chugach State Park, AK" },
+        { "name": "Tony Knowles Coastal Trail", "category": "Outdoors", "blurb": "A scenic bike/walk trail along Cook Inlet in the city.", "maps_query": "Tony Knowles Coastal Trail, Anchorage AK" },
+        { "name": "Kenai Peninsula", "category": "Day trip", "blurb": "World-class fishing, glaciers, and Seward south of the city.", "maps_query": "Kenai Peninsula, AK" },
+        { "name": "Alyeska Resort (Girdwood)", "category": "Outdoors", "blurb": "Alaska's premier ski resort, a drive south.", "maps_query": "Alyeska Resort, Girdwood AK" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-sector-charleston",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Charleston",
+  "short_name": "Charleston (CG)",
+  "branch": "U.S. Coast Guard",
+  "states": ["SC"],
+  "tagline": "The Coast Guard guarding the South Carolina coast and the busy Port of Charleston.",
+  "coords": { "lat": 32.78, "lng": -79.93, "label": "Charleston, SC" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Sector Charleston (Charleston, SC Lowcountry). CONUS full template (BAH MHA SC259 Charleston; RentCast/SchoolDigger work). CG uses same BAH tables. Port security for the Port of Charleston + SAR + law enforcement across the SC coast. Medical: CG clinic + TRICARE network + nearby Naval Health Clinic Charleston (JB Charleston). Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). South Carolina is TRICARE East. Growing/popular Charleston market. Medium-confidence flags: base coords (approx), off-base ZIP 29412 (James Island).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Charleston, SC (Lowcountry)",
+        "Role": "Coast Guard hub for the South Carolina coast",
+        "Mission": "Port security for the Port of Charleston, search and rescue, and law enforcement",
+        "Setting": "Historic, fast-growing Lowcountry city",
+        "Nearby": "Joint Base Charleston and the SC beaches"
+      },
+      "source": { "label": "Coast Guard Sector Charleston (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Sector Charleston guards the South Carolina coast and the busy Port of Charleston, running port security, search and rescue, and law enforcement across the Lowcountry's waters.",
+        "It's in historic, fast-growing Charleston, a popular, scenic city; growth has pushed up housing costs in recent years, though the broader area still offers options."
+      ],
+      "source": { "label": "Coast Guard Sector Charleston (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "chs_decision",
+      "title": "Lowcountry Living: Historic, Coastal, and Growing",
+      "type": "killer",
+      "data": {
+        "subtitle": "Charleston is beautiful and increasingly popular, which has raised prices. The main choice is which part of the metro fits your commute, schools, and budget.",
+        "intro": [
+          "Charleston's charm has driven growth and rising housing costs, but the metro is large enough to offer a range of areas. Coast Guard housing is limited, so most families rent.",
+          "Where you live mostly comes down to commute and schools across the peninsula, West Ashley, James/Johns Island, Mount Pleasant, and the suburbs (Summerville, Goose Creek)."
+        ],
+        "recommendations": [
+          { "who": "Closest to the coast", "advice": "James Island, West Ashley, and Mount Pleasant put you near the water and downtown." },
+          { "who": "Family value", "advice": "Summerville, Goose Creek, and the suburbs offer more affordable homes and good schools." },
+          { "who": "Near JB Charleston", "advice": "North Charleston/Goose Creek are handy to Joint Base Charleston's services and commissary." },
+          { "who": "Plan for storms", "advice": "It's a Lowcountry coast; budget for coastal insurance, check flood zones, and know your evacuation plan." }
+        ]
+      },
+      "source": { "label": "Coast Guard Sector Charleston (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Sector Charleston (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the Charleston area is limited; some families also use Joint Base Charleston-area military housing, but most rent across the metro.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Sector Charleston (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "SC259",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA SC259 (Charleston) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "29412", "label": "James Island (Charleston), SC" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Charleston County, Berkeley County (Goose Creek/Summerville area), and Dorchester District Two serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Charleston County School District (official)", "url": "https://www.ccsdschools.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "SC", "city": "Charleston" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Sector Charleston",
+        "Care": "On-base clinic care for the assigned population; family care via the TRICARE network and access to Naval Health Clinic Charleston (Joint Base Charleston)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / access to the exchange at Joint Base Charleston",
+        "Commissary": "Access to the commissary at Joint Base Charleston"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Charleston's popularity has raised prices, though the suburbs still offer value."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro and check flood zones before committing.",
+          "You'd rather not take on coastal insurance and storm risk as an owner.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat Charleston-area assignments.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "A suburb fits your budget for a home you like (in a sensible flood zone).",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Charleston has gotten pricier near the water, but suburbs like Summerville and Goose Creek still offer value. Factor in coastal insurance and flood zones, run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing (and flood zones)", "text": "Get the housing office's read on the Charleston areas, check flood maps, and consider proximity to Joint Base Charleston services before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and South Carolina vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Charleston, Berkeley, or Dorchester) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment; the CG clinic plus Naval Health Clinic Charleston and the network serve families." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Sector Charleston?", "a": "It's the Coast Guard's hub for the South Carolina coast, guarding the busy Port of Charleston plus search and rescue and law enforcement across the Lowcountry." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Charleston is MHA SC259." },
+        { "q": "Where do families live?", "a": "Across the metro. James Island, West Ashley, and Mount Pleasant are near the coast; Summerville and Goose Creek offer value and are handy to Joint Base Charleston." },
+        { "q": "Is it expensive?", "a": "Charleston has gotten pricier near the water as it's grown, but the suburbs still offer affordable options. Factor in coastal insurance." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Historic downtown Charleston", "category": "In town", "blurb": "Cobblestone streets, the Battery, and renowned Lowcountry dining.", "maps_query": "Downtown Charleston, SC" },
+        { "name": "Folly Beach", "category": "Beach", "blurb": "A laid-back surf-town beach near the city.", "maps_query": "Folly Beach, SC" },
+        { "name": "Patriots Point (USS Yorktown)", "category": "Museum", "blurb": "A naval and maritime museum with a carrier in Mount Pleasant.", "maps_query": "Patriots Point, Mount Pleasant SC" },
+        { "name": "Magnolia Plantation & gardens", "category": "Outdoors", "blurb": "Historic Lowcountry gardens along the Ashley River.", "maps_query": "Magnolia Plantation and Gardens, Charleston SC" }
+      ]
+    }
+  ]
+}

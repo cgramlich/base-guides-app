@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-air-station-corpus-christi",
+  "schema_version": "0.1",
+  "name": "Coast Guard Air Station Corpus Christi",
+  "short_name": "Corpus Christi",
+  "branch": "U.S. Coast Guard",
+  "states": ["TX"],
+  "tagline": "The Coast Guard's South Texas air station, flying rescue and patrol missions over the western Gulf.",
+  "coords": { "lat": 27.69, "lng": -97.29, "label": "Corpus Christi, TX" },
+  "tz": "America/Chicago",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Air Station Corpus Christi (on NAS Corpus Christi, South TX Gulf coast; Central time). CONUS full template (BAH MHA TX275 Corpus Christi; RentCast/SchoolDigger work). CG uses same BAH tables. SAR + patrol over the western Gulf. Medical: CG clinic + TRICARE network + access to the Navy clinic at NAS Corpus Christi. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Texas moved to TRICARE West in 2024; no state income tax. Medium-confidence flags: base coords (approx), off-base ZIP 78418 (Flour Bluff/Corpus Christi).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Corpus Christi, TX (on NAS Corpus Christi)",
+        "Role": "South Texas Coast Guard air station",
+        "Mission": "Search and rescue and patrol over the western Gulf of Mexico",
+        "Setting": "Affordable South Texas Gulf coast",
+        "Note": "Texas has no state income tax"
+      },
+      "source": { "label": "Coast Guard Air Station Corpus Christi (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Air Station Corpus Christi flies search-and-rescue and patrol missions over the western Gulf of Mexico, operating from NAS Corpus Christi on the South Texas coast.",
+        "It's in the Corpus Christi area, an affordable Gulf-Coast city with beaches and warm weather, and no Texas state income tax."
+      ],
+      "source": { "label": "Coast Guard Air Station Corpus Christi (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "cc_decision",
+      "title": "Affordable South Texas Coast Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Corpus Christi area is affordable and on the Gulf. The main choice is which part of the metro fits your commute and schools, with the beach close by.",
+        "intro": [
+          "Corpus Christi's cost of living is low, so BAH stretches well. Coast Guard housing is limited, so most families live off base, with some access to Navy housing at NAS Corpus Christi.",
+          "Where you live mostly comes down to commute and schools across Flour Bluff (near the base), the city, and the suburbs, with hurricane season a planning factor."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Flour Bluff sits right by NAS Corpus Christi for the shortest commute." },
+          { "who": "Family areas", "advice": "Calallen, the Southside, and Portland (across the bay) are popular with families for schools." },
+          { "who": "Beach access", "advice": "Padre Island and Mustang Island beaches are close for weekends." },
+          { "who": "Plan for storms", "advice": "It's the Gulf Coast; budget for coastal insurance and know your evacuation plan." }
+        ]
+      },
+      "source": { "label": "Coast Guard Air Station Corpus Christi (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "The air station is on NAS Corpus Christi. Visitors without a DoD/CG ID need a visitor pass from the Visitor Control Center.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official site before you go."
+      ],
+      "source": { "label": "Coast Guard Air Station Corpus Christi (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing is limited; some families access Navy military housing at NAS Corpus Christi, and many live off base in the affordable local market.",
+        "Eligibility and availability vary, so start with the housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Air Station Corpus Christi (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "TX275",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA TX275 (Corpus Christi) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "78418", "label": "Flour Bluff (Corpus Christi), TX" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Corpus Christi ISD, Flour Bluff ISD, and nearby districts (including Gregory-Portland across the bay) serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Flour Bluff ISD (official)", "url": "https://www.flourbluffschools.net/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "TX", "city": "Corpus Christi" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic / Navy clinic at NAS Corpus Christi",
+        "Care": "On-base clinic care for the assigned population, with access to the Navy clinic; family care also via the TRICARE network and area hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) / Navy Exchange at NAS Corpus Christi",
+        "Commissary": "Access to the commissary at NAS Corpus Christi"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Corpus Christi's affordable market (no state income tax) makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the area before committing.",
+          "You'd rather not take on coastal insurance and storm risk as an owner.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Corpus Christi market fits your budget for a home you like.",
+          "You're comfortable with coastal insurance and have found a place you trust."
+        ],
+        "bottom_line": "There is no universal right answer. The area is affordable with no income tax, so buying can pencil out, but factor in Gulf Coast insurance and hurricane risk. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on Flour Bluff, the city, and Portland before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Texas vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Corpus Christi ISD, Flour Bluff ISD, or Gregory-Portland) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the NAS Corpus Christi clinic is available for some care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Air Station Corpus Christi?", "a": "It's the Coast Guard's South Texas air station, flying search-and-rescue and patrol missions over the western Gulf from NAS Corpus Christi." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA TX275 (Corpus Christi). Texas also has no state income tax." },
+        { "q": "Where do families live?", "a": "Mostly off base. Flour Bluff is closest; Calallen, the Southside, and Portland across the bay are popular for schools. Some access Navy housing at NAS Corpus Christi." },
+        { "q": "What about hurricanes?", "a": "It's the Gulf Coast, so budget for coastal insurance and know your evacuation plan." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Padre Island National Seashore", "category": "Outdoors", "blurb": "The longest stretch of undeveloped barrier island in the world.", "maps_query": "Padre Island National Seashore, TX" },
+        { "name": "USS Lexington Museum", "category": "Museum", "blurb": "A WWII aircraft carrier museum on Corpus Christi Bay.", "maps_query": "USS Lexington Museum, Corpus Christi TX" },
+        { "name": "Texas State Aquarium", "category": "Family", "blurb": "A popular aquarium on the bayfront.", "maps_query": "Texas State Aquarium, Corpus Christi TX" },
+        { "name": "Mustang Island / Port Aransas", "category": "Beach", "blurb": "Beaches and a laid-back island town nearby.", "maps_query": "Port Aransas, TX" }
+      ]
+    }
+  ]
+}

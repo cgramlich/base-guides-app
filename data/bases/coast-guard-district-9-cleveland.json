@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-district-9-cleveland",
+  "schema_version": "0.1",
+  "name": "Coast Guard District 9 (Cleveland)",
+  "short_name": "Cleveland (CG)",
+  "branch": "U.S. Coast Guard",
+  "states": ["OH"],
+  "tagline": "The Coast Guard's Great Lakes headquarters, overseeing the inland seas from Cleveland.",
+  "coords": { "lat": 41.50, "lng": -81.69, "label": "Cleveland, OH" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Ninth District HQ (Cleveland, OH; Lake Erie). CONUS full template (BAH MHA OH229 Cleveland; RentCast/SchoolDigger work). CG uses same BAH tables. D9 oversees all Great Lakes CG operations. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Ohio is TRICARE East. Affordable Midwest metro. Medium-confidence flags: base coords (approx), off-base ZIP 44116 (Rocky River) / metro.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Cleveland, OH (Lake Erie)",
+        "Role": "Coast Guard Ninth District headquarters",
+        "Oversees": "All Coast Guard operations across the five Great Lakes",
+        "For families": "A headquarters/staff tour",
+        "Setting": "Affordable Great Lakes metro"
+      },
+      "source": { "label": "Coast Guard District 9 (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard District 9, headquartered in Cleveland, oversees all Coast Guard operations across the Great Lakes, from search and rescue and ice operations to commerce and security on the inland seas.",
+        "It's a headquarters and staff posting in Cleveland on Lake Erie, an affordable Midwest metro with four real seasons and lake-effect winters."
+      ],
+      "source": { "label": "Coast Guard District 9 (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "cle_decision",
+      "title": "Affordable Great Lakes Metro Living",
+      "type": "killer",
+      "data": {
+        "subtitle": "Cleveland is an affordable big metro on Lake Erie. The main choice is which suburb fits your commute and schools, with the lake and four seasons part of the deal.",
+        "intro": [
+          "Cleveland's cost of living is low for a metro this size, so BAH stretches well. Coast Guard housing is limited, so most families rent or buy in the suburbs.",
+          "Where you live mostly comes down to commute and schools across the west-side, east-side, and southern suburbs, with lake-effect winters to plan for."
+        ],
+        "recommendations": [
+          { "who": "Closest to downtown", "advice": "West-side suburbs (Lakewood, Rocky River) and near-east neighborhoods keep the commute short." },
+          { "who": "Family suburbs", "advice": "Suburbs with strong schools ring the metro; many are very affordable." },
+          { "who": "Stretch your budget", "advice": "Cleveland is affordable, so BAH tends to go far and many families buy." },
+          { "who": "Plan for winter", "advice": "Lake-effect snow is real; budget for heating and winter driving." }
+        ]
+      },
+      "source": { "label": "Coast Guard District 9 (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point or building security.",
+        "Requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard District 9 (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the Cleveland area is limited, so most families rent or buy across the metro.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard District 9 (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "OH229",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA OH229 (Cleveland) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "44116", "label": "Rocky River (Cleveland), OH" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Cleveland-area suburban districts (Rocky River, Westlake, Bay Village, and many others) serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Ohio Department of Education (official)", "url": "https://education.ohio.gov/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "OH", "city": "Cleveland" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic / TRICARE network",
+        "Care": "Family care via the TRICARE network and Cleveland-area hospitals (a major medical region, including the Cleveland Clinic)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) online",
+        "Commissary": "No large DoD commissary in the immediate metro; most groceries via local stores"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Cleveland's affordable market makes buying a real option for many families."],
+        "rent": [
+          "Your tour is short (about two years or less) or your orders feel uncertain.",
+          "You want time to learn the metro before committing.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable Cleveland market fits your budget for a home you like.",
+          "You've found a suburb and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Cleveland's affordability makes buying worth a look for longer tours. Note Ohio property taxes vary by district. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on the Cleveland suburbs before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle building access and Ohio vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact your suburb's district early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; Cleveland is a major medical region." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is District 9?", "a": "It's the Coast Guard's Ninth District, headquartered in Cleveland, overseeing all Coast Guard operations across the five Great Lakes. For families, it's a headquarters/staff tour." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Cleveland is MHA OH229." },
+        { "q": "Where do families live?", "a": "Across the Cleveland suburbs, which are affordable with a range of school options. CG housing is limited, so most rent or buy." },
+        { "q": "What's the weather like?", "a": "Four seasons with lake-effect winters off Lake Erie; budget for heating and winter driving." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Rock & Roll Hall of Fame", "category": "Family", "blurb": "The famous museum on the Cleveland lakefront.", "maps_query": "Rock and Roll Hall of Fame, Cleveland OH" },
+        { "name": "Cleveland Metroparks", "category": "Outdoors", "blurb": "An extensive 'Emerald Necklace' of parks and trails ringing the metro.", "maps_query": "Cleveland Metroparks, OH" },
+        { "name": "West Side Market", "category": "Food & shopping", "blurb": "A historic public market in Ohio City.", "maps_query": "West Side Market, Cleveland OH" },
+        { "name": "Lake Erie islands (Put-in-Bay)", "category": "Day trip", "blurb": "Island getaways by ferry on Lake Erie.", "maps_query": "Put-in-Bay, OH" }
+      ]
+    }
+  ]
+}

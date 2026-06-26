@@ -139,6 +139,16 @@
     { "slug": "coast-guard-sector-miami", "name": "Coast Guard Sector Miami", "branch": "U.S. Coast Guard", "state": "FL", "ready": true },
     { "slug": "coast-guard-sector-san-juan", "name": "Coast Guard Sector San Juan", "branch": "U.S. Coast Guard", "state": "Puerto Rico", "region": "OCONUS", "ready": true },
     { "slug": "coast-guard-sector-juneau", "name": "Coast Guard Sector Juneau", "branch": "U.S. Coast Guard", "state": "AK", "region": "OCONUS", "ready": true },
-    { "slug": "coast-guard-sector-columbia-river", "name": "Coast Guard Sector Columbia River", "branch": "U.S. Coast Guard", "state": "OR", "ready": true }
+    { "slug": "coast-guard-sector-columbia-river", "name": "Coast Guard Sector Columbia River", "branch": "U.S. Coast Guard", "state": "OR", "ready": true },
+    { "slug": "coast-guard-sector-san-diego", "name": "Coast Guard Sector San Diego", "branch": "U.S. Coast Guard", "state": "CA", "ready": true },
+    { "slug": "coast-guard-sector-new-york", "name": "Coast Guard Sector New York", "branch": "U.S. Coast Guard", "state": "NY", "ready": true },
+    { "slug": "coast-guard-sector-houston-galveston", "name": "Coast Guard Sector Houston-Galveston", "branch": "U.S. Coast Guard", "state": "TX", "ready": true },
+    { "slug": "coast-guard-sector-new-orleans", "name": "Coast Guard Sector New Orleans", "branch": "U.S. Coast Guard", "state": "LA", "ready": true },
+    { "slug": "coast-guard-district-9-cleveland", "name": "Coast Guard District 9 (Cleveland)", "branch": "U.S. Coast Guard", "state": "OH", "ready": true },
+    { "slug": "coast-guard-air-station-port-angeles", "name": "Coast Guard Air Station Port Angeles", "branch": "U.S. Coast Guard", "state": "WA", "ready": true },
+    { "slug": "coast-guard-sector-charleston", "name": "Coast Guard Sector Charleston", "branch": "U.S. Coast Guard", "state": "SC", "ready": true },
+    { "slug": "coast-guard-air-station-corpus-christi", "name": "Coast Guard Air Station Corpus Christi", "branch": "U.S. Coast Guard", "state": "TX", "ready": true },
+    { "slug": "coast-guard-sector-anchorage", "name": "Coast Guard Sector Anchorage", "branch": "U.S. Coast Guard", "state": "AK", "region": "OCONUS", "ready": true },
+    { "slug": "coast-guard-sector-northern-new-england", "name": "Coast Guard Sector Northern New England", "branch": "U.S. Coast Guard", "state": "ME", "ready": true }
   ]
 }
