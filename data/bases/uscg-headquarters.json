@@ -1,0 +1,201 @@
+{
+  "slug": "uscg-headquarters",
+  "schema_version": "0.1",
+  "name": "U.S. Coast Guard Headquarters",
+  "short_name": "CG HQ (DC)",
+  "branch": "U.S. Coast Guard",
+  "states": ["DC"],
+  "tagline": "Coast Guard Headquarters at St. Elizabeths in Washington, D.C., where the service is led and shaped.",
+  "coords": { "lat": 38.85, "lng": -76.99, "label": "Washington, DC" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Headquarters (Douglas A. Munro CGHQ Building, St. Elizabeths campus, SE Washington DC). CONUS full template (BAH MHA DC053 Washington DC Metro; RentCast/SchoolDigger work). CG uses same BAH tables. HQ staff tour. Medical: TRICARE network + nearby DoD MTFs (Walter Reed/Bethesda, Belvoir). Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). DC is TRICARE East. High-cost DC metro. Medium-confidence flags: base coords (approx), off-base ZIP 20593 (CGHQ).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "St. Elizabeths campus, Southeast Washington, D.C.",
+        "Role": "Coast Guard Headquarters (service leadership and staff)",
+        "Building": "Douglas A. Munro Coast Guard Headquarters Building",
+        "For families": "A headquarters/staff tour in the national capital region",
+        "Setting": "Washington, D.C. metro (high cost of living)"
+      },
+      "source": { "label": "U.S. Coast Guard (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Headquarters, in the Douglas A. Munro building on the St. Elizabeths campus in Southeast Washington, is where the service is led, resourced, and shaped. Assignments here are headquarters and staff roles.",
+        "It sits in the Washington, D.C. metro, with all that brings: career and policy opportunities, heavy traffic, and a high cost of living."
+      ],
+      "source": { "label": "U.S. Coast Guard (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "hq_decision",
+      "title": "Living in the D.C. Metro: Commute Is Everything",
+      "type": "killer",
+      "data": {
+        "subtitle": "Headquarters sits in the expensive, traffic-heavy D.C. metro. The defining choice is balancing commute (and the Beltway) against price across DC, Maryland, and Virginia.",
+        "intro": [
+          "The national capital region is costly and congested, so where you live is mostly about commute. Coast Guard housing is limited, so most families rent or buy across the metro.",
+          "Closer-in areas cost more; heading farther out in Maryland or Virginia trades a longer commute for more space and lower prices. Metro/transit access matters a lot here."
+        ],
+        "recommendations": [
+          { "who": "Shortest commute", "advice": "Southeast/Southern Maryland (Camp Springs, Waldorf area) and nearby DC neighborhoods sit close to St. Elizabeths." },
+          { "who": "Northern Virginia", "advice": "Alexandria and the NoVA suburbs are popular but pricey; weigh the river crossings and traffic." },
+          { "who": "More space for the money", "advice": "Farther out in Maryland (and parts of Virginia) trades a longer commute for value." },
+          { "who": "Use transit", "advice": "Metro access can make a longer-distance home far more livable; factor it in." }
+        ]
+      },
+      "source": { "label": "U.S. Coast Guard (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "The St. Elizabeths campus is a secure federal facility. Visitors without proper credentials need to be sponsored and cleared in advance.",
+        "Access requirements are strict and change, so confirm the current details through your sponsor or the official Coast Guard site before you go."
+      ],
+      "source": { "label": "U.S. Coast Guard (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "There is no family housing at Headquarters itself; Coast Guard housing in the D.C. metro is limited, so most families rent or buy across DC, Maryland, and Virginia.",
+        "Start with the Coast Guard housing office for any available options and for help navigating the expensive local market."
+      ],
+      "source": { "label": "U.S. Coast Guard (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "DC053",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA DC053 (Washington, DC Metro) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "20032", "label": "Washington, DC (Southeast)" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. DC Public Schools, Prince George's and Charles County (MD), and Northern Virginia districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Prince George's County Public Schools (official)", "url": "https://www.pgcps.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "DC", "city": "Washington" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "TRICARE network + DoD military treatment facilities in the region",
+        "Care": "Family care via the TRICARE network and nearby military hospitals (Walter Reed/Bethesda, Fort Belvoir)",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) online; AAFES/NEX exchanges at area DoD bases",
+        "Commissary": "DoD commissaries at Joint Base Andrews, Fort Belvoir, and other area installations"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in the expensive D.C. metro the math is tougher than at most duty stations."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "Home prices closer in are out of comfortable reach for your budget.",
+          "You want flexibility in a costly, fast-moving market.",
+          "Renting keeps you closer in without overextending."
+        ],
+        "buy": [
+          "You expect a long tour or repeat assignments in the capital region (common for HQ staff).",
+          "You can afford the entry price and want to build equity with your VA loan.",
+          "You've found a community and commute that work and plan to hold the home.",
+          "You're comfortable being a long-distance landlord if you PCS before selling."
+        ],
+        "bottom_line": "There is no universal right answer, and the D.C. metro's high prices make buying a bigger commitment. Many families rent, especially on shorter tours, while those expecting repeat DC assignments often buy. Run your BAH against the rent and home prices above, weigh your commute, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In a big, expensive metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Plan around commute", "text": "There's no HQ housing; pick your area around commute and Metro access, and get the housing office's read before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle vehicle registration in your chosen jurisdiction (DC, MD, or VA), and sort your HQ credentials/access. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (DCPS, Prince George's/Charles County, or Northern Virginia) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; area military hospitals are available for some care." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Coast Guard Headquarters?", "a": "It's where the Coast Guard is led and resourced, in the Douglas A. Munro building on the St. Elizabeths campus in Southeast Washington, D.C. Assignments here are headquarters/staff roles." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. HQ is MHA DC053 (Washington, DC Metro)." },
+        { "q": "Where do families live?", "a": "Across DC, Maryland, and Virginia. There's no HQ housing, so commute and Metro access drive the decision; farther out is more affordable." },
+        { "q": "Is it expensive?", "a": "Yes. It's the D.C. metro, one of the costliest and most congested regions, so plan around commute and budget." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "National Mall & Smithsonian", "category": "Family", "blurb": "World-class free museums and monuments in the city.", "maps_query": "National Mall, Washington DC" },
+        { "name": "The Wharf", "category": "Food & shopping", "blurb": "A lively waterfront dining and entertainment district on the Potomac.", "maps_query": "The Wharf, Washington DC" },
+        { "name": "National Harbor", "category": "Family", "blurb": "Waterfront shops, dining, and the Capital Wheel across the river in MD.", "maps_query": "National Harbor, MD" },
+        { "name": "Old Town Alexandria", "category": "In town", "blurb": "Historic cobblestone streets and waterfront dining in Virginia.", "maps_query": "Old Town Alexandria, VA" }
+      ]
+    }
+  ]
+}

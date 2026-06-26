@@ -1,0 +1,201 @@
+{
+  "slug": "tracen-petaluma",
+  "schema_version": "0.1",
+  "name": "Coast Guard TRACEN Petaluma",
+  "short_name": "Petaluma",
+  "branch": "U.S. Coast Guard",
+  "states": ["CA"],
+  "tagline": "The Coast Guard's West Coast training center for enlisted 'A' schools, in California's North Bay.",
+  "coords": { "lat": 38.31, "lng": -122.71, "label": "Petaluma, CA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Training Center Petaluma (Sonoma County, CA North Bay). CONUS full template (BAH MHA CA027 Marin/Sonoma; RentCast/SchoolDigger work). CG uses same BAH tables. West Coast enlisted 'A' school training center; staff + students. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil / FORCECOM, TRICARE, CGX, Wikipedia for corroborated headline facts). California is TRICARE West. Higher-cost North Bay area. Medium-confidence flags: base coords (approx), off-base ZIP 94952 (Petaluma).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Petaluma, CA (Sonoma County, North Bay)",
+        "Role": "West Coast training center for enlisted 'A' schools",
+        "Population": "Staff and students",
+        "Region": "Wine country north of San Francisco",
+        "Cost of living": "Higher (Bay Area / North Bay)"
+      },
+      "source": { "label": "Coast Guard TRACEN Petaluma (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Training Center Petaluma is the Coast Guard's West Coast schoolhouse, delivering enlisted 'A' school technical training across several ratings. It's a campus-style base with a steady flow of students and the staff who train them.",
+        "It sits in the rolling hills of Sonoma County north of San Francisco, in California's wine country. The setting is beautiful, with a North Bay cost of living to match."
+      ],
+      "source": { "label": "Coast Guard TRACEN Petaluma (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "petaluma_decision",
+      "title": "North Bay Living: Scenic but Pricey",
+      "type": "killer",
+      "data": {
+        "subtitle": "The North Bay is desirable and expensive. On-base housing helps a lot here; off base, the choice is which Sonoma/Marin town fits your commute and budget.",
+        "intro": [
+          "Sonoma County is a higher-cost area, so on-base housing (when available) is a real money-saver. Off base, families spread across the North Bay, balancing commute against price.",
+          "Where you live mostly comes down to commute and schools across Petaluma, Rohnert Park, Santa Rosa, and the surrounding towns."
+        ],
+        "recommendations": [
+          { "who": "Best value", "advice": "On-base housing is cost-effective in this pricey area; get on the list early." },
+          { "who": "Closest to the gate", "advice": "Petaluma sits right by the base for a short commute." },
+          { "who": "More options", "advice": "Rohnert Park and Santa Rosa to the north offer more housing, often a bit more affordable." },
+          { "who": "Enjoy the area", "advice": "Wine country, the coast, and San Francisco are all within reach." }
+        ]
+      },
+      "source": { "label": "Coast Guard TRACEN Petaluma (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard TRACEN Petaluma (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "TRACEN Petaluma has military family housing on or near the base, a cost-effective option in the pricey North Bay.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard TRACEN Petaluma (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA027",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA027 (Marin/Sonoma) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "94952", "label": "Petaluma, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Petaluma, Old Adobe, and other Sonoma County districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Petaluma City Schools (official)", "url": "https://www.petalumacityschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Petaluma" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, TRACEN Petaluma",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and area hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) at Petaluma",
+        "Commissary": "On-base commissary / CGX grocery (confirm current hours)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in the higher-cost North Bay many families lean on on-base housing or renting."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "North Bay prices put a purchase out of comfortable reach.",
+          "You prefer on-base housing for the cost and short commute.",
+          "You want flexibility in an expensive market."
+        ],
+        "buy": [
+          "You expect a longer tour and can afford the entry price.",
+          "You want to use your VA loan and build equity.",
+          "You've found a town and commute you're confident about.",
+          "You're comfortable owning (and possibly renting out) in a costly market."
+        ],
+        "bottom_line": "There is no universal right answer, and North Bay prices make buying a big commitment. On-base housing or renting is common. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "On-base housing is cost-effective here; get on the list early and get the office's read on the North Bay." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Petaluma or another Sonoma County district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is TRACEN Petaluma?", "a": "It's the Coast Guard's West Coast training center, delivering enlisted 'A' school technical training. The population is staff and students." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Petaluma falls in MHA CA027 (Marin/Sonoma)." },
+        { "q": "Where do families live?", "a": "On-base housing is a cost-effective option; off base, Petaluma, Rohnert Park, and Santa Rosa are common." },
+        { "q": "Is it expensive?", "a": "Yes, it's the North Bay. On-base housing or renting helps BAH stretch." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Downtown Petaluma", "category": "In town", "blurb": "A historic, walkable downtown with dining and riverfront.", "maps_query": "Downtown Petaluma, CA" },
+        { "name": "Sonoma & Napa wine country", "category": "Day trip", "blurb": "World-famous vineyards and tasting towns nearby.", "maps_query": "Sonoma Plaza, CA" },
+        { "name": "Point Reyes National Seashore", "category": "Outdoors", "blurb": "Dramatic coast, trails, and a lighthouse on the Marin shore.", "maps_query": "Point Reyes National Seashore, CA" },
+        { "name": "San Francisco", "category": "Day trip", "blurb": "The city is about an hour south across the Golden Gate.", "maps_query": "San Francisco, CA" }
+      ]
+    }
+  ]
+}

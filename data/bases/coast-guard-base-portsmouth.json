@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-base-portsmouth",
+  "schema_version": "0.1",
+  "name": "Coast Guard Base Portsmouth",
+  "short_name": "Portsmouth",
+  "branch": "U.S. Coast Guard",
+  "states": ["VA"],
+  "tagline": "The Coast Guard's Atlantic Area headquarters in Virginia's Hampton Roads.",
+  "coords": { "lat": 36.82, "lng": -76.30, "label": "Portsmouth, VA" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Base Portsmouth (Portsmouth, VIRGINIA - Hampton Roads; NOT Portsmouth NH). CONUS full template (BAH MHA VA298 Norfolk/Portsmouth; RentCast/SchoolDigger work). CG uses same BAH tables. Atlantic Area HQ + LANT commands; cutters. Medical: CG clinic + TRICARE network + nearby DoD MTFs (Naval Medical Center Portsmouth). Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Virginia is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 23704 (Portsmouth).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Portsmouth, VA (Hampton Roads)",
+        "Role": "Coast Guard Atlantic Area headquarters",
+        "Also hosts": "Atlantic-area commands and cutters",
+        "Region": "The dense Hampton Roads military area",
+        "Note": "This is Portsmouth, Virginia, not Portsmouth, New Hampshire"
+      },
+      "source": { "label": "Coast Guard Base Portsmouth (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Base Portsmouth is the headquarters of the Coast Guard's Atlantic Area, overseeing operations across the eastern half of the country and beyond, and it homeports cutters.",
+        "It's in Portsmouth, Virginia, part of the heavily military Hampton Roads region. The area is used to military families, offers lots of neighborhoods and prices, and has an affordable-for-the-coast cost of living."
+      ],
+      "source": { "label": "Coast Guard Base Portsmouth (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "portsmouth_decision",
+      "title": "Hampton Roads Living: Lots of Options",
+      "type": "killer",
+      "data": {
+        "subtitle": "Hampton Roads is one of the biggest military regions in the country, so you have plenty of choices. The main question is which city fits your commute, schools, and budget.",
+        "intro": [
+          "The region is affordable for a coastal metro and very military-friendly. Coast Guard housing is limited, so most families live off base across the cities.",
+          "Where you live mostly comes down to commute and schools across Portsmouth, Chesapeake, Suffolk, and the wider Hampton Roads area, with the beaches and history of the region nearby."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Portsmouth itself keeps the commute short and has the most affordable housing in the area." },
+          { "who": "Family suburbs", "advice": "Chesapeake and Suffolk are popular with families for newer homes and good schools." },
+          { "who": "Beach option", "advice": "Virginia Beach is a drive east if you want the oceanfront lifestyle." },
+          { "who": "Limited CG housing", "advice": "Some military housing exists; check early, but plan to live off base." }
+        ]
+      },
+      "source": { "label": "Coast Guard Base Portsmouth (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Base Portsmouth (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in Hampton Roads is limited, so most families live off base across the region's cities.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Base Portsmouth (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "VA298",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA VA298 (Norfolk/Portsmouth) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "23704", "label": "Portsmouth, VA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Portsmouth, Chesapeake, and Suffolk districts serve military families depending on where you live; Chesapeake is well regarded.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Chesapeake Public Schools (official)", "url": "https://www.cpschools.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "VA", "city": "Portsmouth" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Base Portsmouth",
+        "Care": "On-base clinic care plus access to the large Naval Medical Center Portsmouth and the TRICARE network",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Portsmouth",
+        "Commissary": "Access to Hampton Roads DoD commissaries (Norfolk and others)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in military-heavy, affordable Hampton Roads buying is a real option, especially with repeat tours."],
+        "rent": [
+          "Your tour is short (about two years or less) or your rotation feels uncertain.",
+          "You want time to learn the region and pick the right city.",
+          "You'd rather not gamble on resale timing when you PCS out.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat Hampton Roads assignments.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "The affordable-for-the-coast market fits your budget for a home you like.",
+          "You've found a city and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but the large military presence and affordable market make Hampton Roads a common place to buy. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "CG housing is limited; get the office's read on the Hampton Roads cities before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Virginia vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Portsmouth, Chesapeake, or Suffolk) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment; the base clinic plus Naval Medical Center Portsmouth and the network serve families." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Which Portsmouth is this?", "a": "Portsmouth, Virginia, in Hampton Roads, not Portsmouth, New Hampshire. It's the Coast Guard's Atlantic Area headquarters." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. It's MHA VA298 (Norfolk/Portsmouth)." },
+        { "q": "Where do families live?", "a": "Mostly off base across Hampton Roads. Portsmouth is closest and most affordable; Chesapeake and Suffolk are popular for schools; Virginia Beach for the oceanfront." },
+        { "q": "Is it affordable?", "a": "Yes, for a coastal metro, and it's very military-friendly, so many families buy." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Olde Towne Portsmouth", "category": "In town", "blurb": "A historic waterfront district with dining and the ferry to Norfolk.", "maps_query": "Olde Towne Portsmouth, VA" },
+        { "name": "Norfolk waterfront (Nauticus)", "category": "Family", "blurb": "The battleship Wisconsin and maritime museum across the river.", "maps_query": "Nauticus, Norfolk VA" },
+        { "name": "Virginia Beach Oceanfront", "category": "Beach", "blurb": "Boardwalk and Atlantic beaches a drive east.", "maps_query": "Virginia Beach Oceanfront, VA" },
+        { "name": "Great Dismal Swamp", "category": "Outdoors", "blurb": "A vast wildlife refuge with trails on the Virginia-NC line.", "maps_query": "Great Dismal Swamp National Wildlife Refuge, VA" }
+      ]
+    }
+  ]
+}

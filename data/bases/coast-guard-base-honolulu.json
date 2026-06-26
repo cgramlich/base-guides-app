@@ -1,0 +1,202 @@
+{
+  "slug": "coast-guard-base-honolulu",
+  "schema_version": "0.1",
+  "name": "Coast Guard Base Honolulu",
+  "short_name": "Honolulu (CG)",
+  "branch": "U.S. Coast Guard",
+  "states": ["HI"],
+  "region": "OCONUS",
+  "tagline": "The Coast Guard's central Pacific hub, homeporting cutters that patrol millions of square miles of ocean from Oahu.",
+  "coords": { "lat": 21.31, "lng": -157.89, "label": "Honolulu, HI" },
+  "tz": "Pacific/Honolulu",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Base Honolulu (Sand Island, Oahu) + District 14. Region flagged OCONUS for browse UX, but Hawaii is a BAH/RentCast/SchoolDigger state -> KEEPS full template (BAH MHA HI408 Honolulu County; realestate + schools_live work). CG uses same BAH tables. Cutter homeport for the vast central/western Pacific. Medical: CG clinic + Tripler/TRICARE network. Schools: Hawaii statewide DOE. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Hawaii is TRICARE West. High cost of living. Medium-confidence flags: base coords (approx), off-base ZIP 96819 (Honolulu).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Sand Island, Honolulu, HI (Oahu)",
+        "Role": "Central Pacific Coast Guard hub (District 14)",
+        "Homeports": "Cutters patrolling millions of square miles of ocean",
+        "Setting": "Oahu (beautiful and expensive)",
+        "Cost of living": "High (island/Oahu market)"
+      },
+      "source": { "label": "Coast Guard Base Honolulu (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Base Honolulu, on Sand Island, anchors the service's central Pacific presence (District 14), homeporting cutters that patrol an enormous expanse of ocean across the Pacific.",
+        "On Oahu, it's a sought-after but expensive posting: the lifestyle is spectacular, but housing is tight and the cost of living is among the highest the military sends families to."
+      ],
+      "source": { "label": "Coast Guard Base Honolulu (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "honolulu_decision",
+      "title": "Paradise, With Island-Sized Costs",
+      "type": "killer",
+      "data": {
+        "subtitle": "Oahu is beautiful but among the most expensive places the military assigns families. Military housing is the easiest path; off base means navigating a tight, pricey market.",
+        "intro": [
+          "Almost everyone wants this tour, and it delivers, but housing is limited and costs are steep. Coast Guard and joint military housing is the most cost-effective route and is in high demand.",
+          "Off base, families live across Oahu, balancing commute to Sand Island against price, with shipping a vehicle and higher prices part of the deal."
+        ],
+        "recommendations": [
+          { "who": "Best value: military housing", "advice": "Military/CG housing is the most cost-effective option here; get on the list as early as your orders allow." },
+          { "who": "Shorter commute", "advice": "Honolulu and nearby areas keep you closest to Sand Island, but rents are high." },
+          { "who": "More for your money", "advice": "Central and west Oahu can be cheaper, at the cost of a longer, traffic-heavy commute." },
+          { "who": "Plan island logistics", "advice": "Shipping a vehicle, higher prices, and limited inventory are all part of a Hawaii PCS; budget and plan ahead." }
+        ]
+      },
+      "source": { "label": "Coast Guard Base Honolulu (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Base Honolulu (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard and joint military family housing on Oahu is in high demand and is the most cost-effective option given the island's costs.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office as soon as you have orders for current options and timelines."
+      ],
+      "source": { "label": "Coast Guard Base Honolulu (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "HI408",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA HI408 (Honolulu County) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "96819", "label": "Honolulu, HI" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend Hawaii's statewide public school system (the Hawaii State Department of Education). Private and charter options exist across Oahu.",
+        "Your assigned school depends on your address within the statewide system, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Hawaii State Department of Education (official)", "url": "https://www.hawaiipublicschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "HI", "city": "Honolulu" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Base Honolulu",
+        "Care": "On-base clinic care plus access to Tripler Army Medical Center and the TRICARE network",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Honolulu",
+        "Commissary": "Access to Oahu DoD commissaries (Pearl Harbor and others)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in Hawaii's pricey island market most families rent or take military housing rather than buy."],
+        "rent": [
+          "Your tour is a standard length and you'll PCS off the island.",
+          "Oahu home prices are out of comfortable reach for your budget.",
+          "Military housing covers you without overextending.",
+          "You want flexibility in an expensive, competitive market."
+        ],
+        "buy": [
+          "You expect a long tour or plan to keep a home in Hawaii long term.",
+          "You can afford Oahu's high entry price and want to build equity.",
+          "You're comfortable being a long-distance landlord after you PCS.",
+          "You've found a property and location you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, but Oahu's high prices lead most military families to rent or use military housing. Buying makes sense mainly for long or repeat tours and bigger budgets. Run your BAH against the rent and home prices above, and talk to a lender and an agent who know the island and military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and a Hawaii PCS adds island-specific steps like shipping a vehicle. Start early."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Allowance (TLA) for Hawaii while you house-hunt; know the rules before you travel." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Get on the housing list", "text": "Military housing is the most cost-effective choice here; get on the list as soon as you have orders." },
+          { "title": "Sort your vehicle and access", "text": "Plan vehicle shipping early, handle Hawaii registration and safety inspection on arrival, and learn the visitor process for guests." },
+          { "title": "Enroll the kids in school", "text": "Contact the Hawaii State DOE early and bring records and immunizations; Hawaii has specific entry health requirements." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment; the CG clinic plus Tripler and the network serve families." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is Base Honolulu an overseas tour?", "a": "It's in Hawaii, a U.S. state, so it uses stateside pay tools like BAH (not OHA). But it's a true island posting with shipping and high costs, which is why we group it under the OCONUS/island section." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Honolulu is MHA HI408." },
+        { "q": "Where do families live?", "a": "Most use military housing given the island's high costs; off base, families spread across Oahu balancing commute against price." },
+        { "q": "How expensive is it?", "a": "Oahu is one of the most expensive markets in the country. Military housing is the most cost-effective option for many families." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Waikiki Beach", "category": "Beach", "blurb": "The iconic beach and resort district in Honolulu.", "maps_query": "Waikiki Beach, Honolulu HI" },
+        { "name": "Diamond Head", "category": "Outdoors", "blurb": "A famous crater hike with sweeping views over Honolulu.", "maps_query": "Diamond Head State Monument, HI" },
+        { "name": "Pearl Harbor National Memorial", "category": "History", "blurb": "The USS Arizona Memorial and WWII sites nearby.", "maps_query": "Pearl Harbor National Memorial, HI" },
+        { "name": "North Shore", "category": "Day trip", "blurb": "Big-wave beaches, food trucks, and surf culture across the island.", "maps_query": "North Shore, Oahu HI" }
+      ]
+    }
+  ]
+}

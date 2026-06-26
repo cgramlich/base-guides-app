@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-base-alameda",
+  "schema_version": "0.1",
+  "name": "Coast Guard Base Alameda",
+  "short_name": "Alameda",
+  "branch": "U.S. Coast Guard",
+  "states": ["CA"],
+  "tagline": "The Coast Guard's Pacific Area headquarters and a major cutter homeport, on Coast Guard Island in the San Francisco Bay.",
+  "coords": { "lat": 37.78, "lng": -122.24, "label": "Alameda, CA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Base Alameda / Coast Guard Island (Oakland Estuary, SF Bay). CONUS full template (BAH MHA CA018 Oakland; RentCast/SchoolDigger work). CG uses same BAH tables. Pacific Area HQ + major cutter homeport. Medical: CG clinic + TRICARE network (expensive Bay Area). Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). California is TRICARE West. High-cost Bay Area. Medium-confidence flags: base coords (approx), off-base ZIP 94501 (Alameda).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Coast Guard Island, Alameda, CA (San Francisco Bay)",
+        "Role": "Coast Guard Pacific Area headquarters",
+        "Also hosts": "Major cutters and Bay Area Coast Guard commands",
+        "Setting": "Urban San Francisco Bay (high cost of living)",
+        "Nearby": "Oakland, San Francisco, and the wider Bay Area"
+      },
+      "source": { "label": "Coast Guard Base Alameda (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Base Alameda, on Coast Guard Island in the Oakland Estuary, is the headquarters of the Coast Guard's Pacific Area and a major homeport for cutters. It's a hub for Coast Guard operations across the Pacific.",
+        "It sits in the heart of the San Francisco Bay Area, one of the most expensive regions in the country, which shapes nearly every housing decision here."
+      ],
+      "source": { "label": "Coast Guard Base Alameda (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "alameda_decision",
+      "title": "The Bay Area: Expensive, So Commute vs. Price Rules",
+      "type": "killer",
+      "data": {
+        "subtitle": "The Bay Area is among the priciest markets anywhere. The central question is how far from the island you'll go to make your BAH stretch.",
+        "intro": [
+          "Housing is the defining challenge here. On-base/military housing is in high demand and a real money-saver; off base, families spread across the East Bay trading commute for price.",
+          "Where you live mostly comes down to commute and budget across Alameda, Oakland, and the East Bay suburbs, with BART and bridges shaping the daily drive."
+        ],
+        "recommendations": [
+          { "who": "Shortest commute", "advice": "Alameda and nearby Oakland keep you closest to the island, but costs are high." },
+          { "who": "More for your money", "advice": "Further east (San Leandro, Hayward, and beyond) trades a longer commute for lower prices." },
+          { "who": "Military housing", "advice": "In-demand and cost-effective in this market; get on the list as early as possible." },
+          { "who": "Use transit", "advice": "BART and ferries help with Bay Area traffic; factor them into where you live." }
+        ]
+      },
+      "source": { "label": "Coast Guard Base Alameda (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Coast Guard Island is access-controlled. Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Base Alameda (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard military family housing in the Bay Area is limited and in high demand, a valuable option given the region's costs.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office as early as possible for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Base Alameda (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA018",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CA018 (Oakland) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "94501", "label": "Alameda, CA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Alameda Unified, Oakland Unified, and other East Bay districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Alameda Unified School District (official)", "url": "https://www.alamedaunified.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CA", "city": "Alameda" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Base Alameda",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and Bay Area hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Alameda",
+        "Commissary": "Nearest DoD commissary is in the Bay Area (e.g., Travis AFB); confirm current options"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in the very expensive Bay Area buying is out of reach for most on a single tour."],
+        "rent": [
+          "Your tour is a standard length and you'll PCS out.",
+          "Bay Area prices put a purchase well out of comfortable reach.",
+          "You prefer military housing or renting for cost and flexibility.",
+          "You want to keep your commute and budget manageable."
+        ],
+        "buy": [
+          "You expect repeat Bay Area tours and can afford the very high entry price.",
+          "You want to use your VA loan and build equity in a high-cost market.",
+          "You've found a community and commute you're confident about.",
+          "You're comfortable being a long-distance landlord later."
+        ],
+        "bottom_line": "There is no universal right answer, but Bay Area prices make buying impractical for most single tours, so military housing or renting is the norm. Run your BAH against the rent and home prices above, weigh your commute, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In an expensive metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Military housing is in high demand here; get on the list early and get the office's read on the East Bay." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Alameda, Oakland, or another East Bay district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Base Alameda?", "a": "It's the Coast Guard's Pacific Area headquarters and a major cutter homeport, on Coast Guard Island in the San Francisco Bay." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Alameda is MHA CA018 (Oakland)." },
+        { "q": "Where do families live?", "a": "Across the East Bay. Alameda and Oakland are closest; further east is more affordable. Military housing is limited and in high demand." },
+        { "q": "Is it expensive?", "a": "Very. The Bay Area is one of the costliest markets in the country, so commute and budget drive where you live." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "San Francisco", "category": "Day trip", "blurb": "World-class dining, sights, and culture across the bay.", "maps_query": "San Francisco, CA" },
+        { "name": "USS Hornet Museum (Alameda)", "category": "Museum", "blurb": "A historic aircraft carrier museum on the Alameda waterfront.", "maps_query": "USS Hornet Museum, Alameda CA" },
+        { "name": "Oakland waterfront / Jack London Square", "category": "Food & shopping", "blurb": "Dining and the estuary just across from Coast Guard Island.", "maps_query": "Jack London Square, Oakland CA" },
+        { "name": "Wine country (Napa/Sonoma)", "category": "Day trip", "blurb": "Famous vineyards about an hour or two north.", "maps_query": "Napa Valley, CA" }
+      ]
+    }
+  ]
+}

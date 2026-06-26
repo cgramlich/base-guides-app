@@ -1,0 +1,202 @@
+{
+  "slug": "coast-guard-base-kodiak",
+  "schema_version": "0.1",
+  "name": "Coast Guard Base Kodiak",
+  "short_name": "Kodiak",
+  "branch": "U.S. Coast Guard",
+  "states": ["AK"],
+  "region": "OCONUS",
+  "tagline": "The Coast Guard's largest base, on a remote Alaskan island guarding the North Pacific.",
+  "coords": { "lat": 57.75, "lng": -152.50, "label": "Kodiak, AK" },
+  "tz": "America/Anchorage",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard's largest base (Kodiak Island, AK). Region flagged OCONUS for browse UX, but Alaska is a BAH/RentCast/SchoolDigger state -> KEEPS full template (BAH MHA AK403 Kodiak Island; realestate + schools_live work). CG uses same BAH tables. Air Station Kodiak + cutters; remote island, ferry/air access only. Medical: CG clinic (Rockmore-King) + TRICARE network/medevac. Schools: Kodiak Island Borough SD. Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Alaska is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 99615 (Kodiak).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Kodiak Island, AK (North Pacific / Gulf of Alaska)",
+        "Distinction": "The Coast Guard's largest base",
+        "Hosts": "Air Station Kodiak and major cutters",
+        "Access": "Island only, reached by ferry or air",
+        "Setting": "Remote, rugged, wildlife-rich (the Kodiak bear)"
+      },
+      "source": { "label": "Coast Guard Base Kodiak (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Base Kodiak is the service's largest base, home to Air Station Kodiak and major cutters that patrol the vast, stormy North Pacific and Gulf of Alaska. It's a demanding, mission-serious posting.",
+        "On rugged Kodiak Island, reachable only by ferry or air, it's remote and self-contained, but stunning, with world-class fishing, wildlife, and a tight-knit community."
+      ],
+      "source": { "label": "Coast Guard Base Kodiak (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "kodiak_decision",
+      "title": "A Remote Island Tour: Embrace It and Plan Ahead",
+      "type": "killer",
+      "data": {
+        "subtitle": "Kodiak is genuinely remote, so on-base housing is the norm and planning for island life matters more than picking a neighborhood.",
+        "intro": [
+          "Because the island is isolated, the great majority of Coast Guard families live in base housing, close to work, the clinic, and schools. The base community is large and active to offset the remoteness.",
+          "Off base, the city of Kodiak is the main option. Either way, plan for island logistics: shipping costs, limited shopping, weather, and travel that means a flight."
+        ],
+        "recommendations": [
+          { "who": "Most families: on base", "advice": "Given the isolation, most families take base housing; get on the list early." },
+          { "who": "Off base: city of Kodiak", "advice": "The town offers housing and services a short drive from base." },
+          { "who": "Plan island logistics", "advice": "Budget for shipping, higher prices, and weather; flights are how you reach the mainland." },
+          { "who": "Embrace the outdoors", "advice": "Fishing, hunting, and wildlife are incredible; leaning into them makes the tour." }
+        ]
+      },
+      "source": { "label": "Coast Guard Base Kodiak (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Base Kodiak (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Base Kodiak has extensive military family housing, and because the island is remote, most families live on base.",
+        "Eligibility and availability vary by rank and family size, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Base Kodiak (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AK403",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA AK403 (Kodiak Island) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "99615", "label": "Kodiak, AK" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. The Kodiak Island Borough School District serves the base and the city.",
+        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Kodiak Island Borough School District (official)", "url": "https://www.kibsd.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "AK", "city": "Kodiak" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic (Rockmore-King Clinic), Base Kodiak",
+        "Care": "On-base clinic care plus the local hospital; complex care requires medevac to Anchorage or beyond",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Base Kodiak Commissary (DeCA)",
+        "Exchange": "Coast Guard Exchange (CGX) Kodiak"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. On remote Kodiak most families take base housing, but here's the framework if you're weighing the local market."],
+        "rent": [
+          "Your tour is short or your orders feel uncertain.",
+          "You prefer base housing for the short commute and community.",
+          "You'd rather not own in a small, isolated island market.",
+          "Your BAH comfortably covers rent if you go off base."
+        ],
+        "buy": [
+          "You expect a longer tour and want to settle in town.",
+          "You want to use your VA loan and build equity.",
+          "You're comfortable with island maintenance, weather, and a small resale market.",
+          "You've found a home you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer, and the remoteness leads most Kodiak families to base housing. If you buy, weigh the small, isolated market and shipping/maintenance costs. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics, and an island move adds shipping and travel planning. Start early."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book base lodging before you arrive; options are limited. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Get on the housing list", "text": "Most families live on base here; get on the list as early as possible." },
+          { "title": "Plan your vehicle and travel", "text": "Arrange vehicle shipping/ferry early, handle Alaska registration, and prep for island weather. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the Kodiak Island Borough School District early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment; know that complex care means medevac off-island, so understand the referral process." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Is Kodiak an overseas tour?", "a": "It's in Alaska, a U.S. state, so it uses stateside pay tools like BAH (not OHA). But it's a remote island, so we group it under the OCONUS/Alaska section for browsing." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Kodiak is MHA AK403." },
+        { "q": "Where do families live?", "a": "Mostly in base housing given the island's isolation; the city of Kodiak is the main off-base option." },
+        { "q": "What's island life like?", "a": "Remote and rugged but beautiful: world-class fishing and wildlife, with higher prices, shipping times, and weather to plan for." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. The island is remote, so tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Kodiak National Wildlife Refuge", "category": "Outdoors", "blurb": "Home of the giant Kodiak brown bear and vast wilderness.", "maps_query": "Kodiak National Wildlife Refuge, AK" },
+        { "name": "Fort Abercrombie State Historical Park", "category": "Outdoors", "blurb": "WWII ruins, cliffs, and tide pools near town.", "maps_query": "Fort Abercrombie State Historical Park, Kodiak AK" },
+        { "name": "Downtown Kodiak / harbor", "category": "In town", "blurb": "A working fishing town with seafood, shops, and the Alutiiq Museum.", "maps_query": "Downtown Kodiak, AK" },
+        { "name": "Salmon & halibut fishing", "category": "Outdoors", "blurb": "Some of the best sport fishing anywhere, all around the island.", "maps_query": "Kodiak fishing charters, AK" }
+      ]
+    }
+  ]
+}

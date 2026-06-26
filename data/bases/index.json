@@ -119,6 +119,16 @@
     { "slug": "nas-fallon", "name": "NAS Fallon", "branch": "U.S. Navy", "state": "NV", "ready": true },
     { "slug": "usag-bavaria", "name": "USAG Bavaria", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
     { "slug": "camp-zama", "name": "Camp Zama", "branch": "U.S. Army", "state": "Japan", "region": "OCONUS", "ready": true },
-    { "slug": "nsa-bahrain", "name": "NSA Bahrain", "branch": "U.S. Navy", "state": "Bahrain", "region": "OCONUS", "ready": true }
+    { "slug": "nsa-bahrain", "name": "NSA Bahrain", "branch": "U.S. Navy", "state": "Bahrain", "region": "OCONUS", "ready": true },
+    { "slug": "uscg-academy", "name": "U.S. Coast Guard Academy", "branch": "U.S. Coast Guard", "state": "CT", "ready": true },
+    { "slug": "tracen-cape-may", "name": "Coast Guard TRACEN Cape May", "branch": "U.S. Coast Guard", "state": "NJ", "ready": true },
+    { "slug": "tracen-petaluma", "name": "Coast Guard TRACEN Petaluma", "branch": "U.S. Coast Guard", "state": "CA", "ready": true },
+    { "slug": "coast-guard-base-kodiak", "name": "Coast Guard Base Kodiak", "branch": "U.S. Coast Guard", "state": "AK", "region": "OCONUS", "ready": true },
+    { "slug": "coast-guard-base-alameda", "name": "Coast Guard Base Alameda", "branch": "U.S. Coast Guard", "state": "CA", "ready": true },
+    { "slug": "coast-guard-base-portsmouth", "name": "Coast Guard Base Portsmouth", "branch": "U.S. Coast Guard", "state": "VA", "ready": true },
+    { "slug": "coast-guard-base-seattle", "name": "Coast Guard Base Seattle", "branch": "U.S. Coast Guard", "state": "WA", "ready": true },
+    { "slug": "coast-guard-base-honolulu", "name": "Coast Guard Base Honolulu", "branch": "U.S. Coast Guard", "state": "HI", "region": "OCONUS", "ready": true },
+    { "slug": "coast-guard-air-station-clearwater", "name": "Coast Guard Air Station Clearwater", "branch": "U.S. Coast Guard", "state": "FL", "ready": true },
+    { "slug": "uscg-headquarters", "name": "U.S. Coast Guard Headquarters", "branch": "U.S. Coast Guard", "state": "DC", "ready": true }
   ]
 }

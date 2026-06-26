@@ -1,0 +1,201 @@
+{
+  "slug": "tracen-cape-may",
+  "schema_version": "0.1",
+  "name": "Coast Guard TRACEN Cape May",
+  "short_name": "Cape May",
+  "branch": "U.S. Coast Guard",
+  "states": ["NJ"],
+  "tagline": "The Coast Guard's only enlisted boot camp, at the southern tip of the New Jersey shore.",
+  "coords": { "lat": 38.97, "lng": -74.91, "label": "Cape May, NJ" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Training Center Cape May (NJ; the CG's only enlisted basic training). CONUS full template (BAH MHA NJ198 Cape May; RentCast/SchoolDigger work). CG uses same BAH tables. Population = recruits + company commanders (CG's drill instructors) + staff. Medical: CG clinic + TRICARE network. Facts verified from official sources (uscg.mil / FORCECOM, TRICARE, CGX, Wikipedia for corroborated headline facts). New Jersey is TRICARE East. Beach/shore town. Medium-confidence flags: base coords (approx), off-base ZIP 08204 (Cape May).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Cape May, NJ (southern tip of the Jersey shore)",
+        "Role": "The Coast Guard's only enlisted boot camp (basic training)",
+        "Population": "Recruits, company commanders, and staff",
+        "For families": "Typically a company-commander or staff tour",
+        "Setting": "Historic Victorian beach town"
+      },
+      "source": { "label": "Coast Guard TRACEN Cape May (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Training Center Cape May is where every enlisted Coast Guardsman begins, the service's only recruit basic training center. The base runs on the rhythm of recruit companies coming and going.",
+        "It's at the southern tip of New Jersey in the historic beach town of Cape May. For families, this is usually a tour as a company commander (the Coast Guard's equivalent of a drill instructor) or support staff."
+      ],
+      "source": { "label": "Coast Guard TRACEN Cape May (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "capemay_decision",
+      "title": "Shore-Town Living, With a Demanding Schedule",
+      "type": "killer",
+      "data": {
+        "subtitle": "This is often a company-commander or staff tour, which can be time-intensive. The main choice is which Cape May County town fits your commute and family, since recruits live on base.",
+        "intro": [
+          "Family housing decisions here are for staff and company commanders (recruits are berthed on base). Cape May is a seasonal beach town: lovely and quieter off-season, busy and pricier in summer.",
+          "Where you live mostly comes down to commute and schools across Cape May, Cape May Court House, and the surrounding county, with year-round communities a bit inland."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "Cape May and Lower Township sit nearest the base for a short commute, important on a demanding schedule." },
+          { "who": "Year-round value", "advice": "Cape May Court House and inland county towns are more affordable and less seasonal." },
+          { "who": "On-base option", "advice": "Some military housing is available; check with the housing office early." },
+          { "who": "Enjoy the shore", "advice": "Beaches, lighthouses, and Victorian charm are the upside; off-season is calm and cheaper." }
+        ]
+      },
+      "source": { "label": "Coast Guard TRACEN Cape May (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point; access is busier around recruit graduations.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard TRACEN Cape May (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Cape May has some military family housing for staff and company commanders (recruits are berthed separately on base); many families also live off base in the county.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard TRACEN Cape May (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NJ198",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA NJ198 (Cape May) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "08204", "label": "Cape May, NJ" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Lower Cape May Regional and other Cape May County districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Lower Cape May Regional School District (official)", "url": "https://www.lcmrschools.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "NJ", "city": "Cape May" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, TRACEN Cape May",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and area hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) at Cape May",
+        "Commissary": "On-base commissary / CGX grocery (confirm current hours)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in a seasonal shore market like Cape May tour length and the summer/off-season swing both matter."],
+        "rent": [
+          "Your tour is short or your schedule is demanding (company commander).",
+          "You want time to learn the county before committing.",
+          "You'd rather not own in a seasonal, tourism-driven market.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect to be here three or more years.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "A year-round inland town fits your budget for a home you like.",
+          "You've found a place and commute you're confident about."
+        ],
+        "bottom_line": "There is no universal right answer. Cape May's seasonal market and demanding staff schedules lead many to rent. If you buy, lean toward year-round inland towns. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive (book early in summer). You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Get the housing office's read on Cape May County and on-base options before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and New Jersey vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Lower Cape May Regional or another county district) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is TRACEN Cape May?", "a": "It's the Coast Guard's only enlisted boot camp, where every new Coast Guardsman does basic training. For families, it's usually a company-commander or staff tour." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Cape May is MHA NJ198." },
+        { "q": "Where do families live?", "a": "Staff and company commanders live in military housing or around Cape May County (recruits are berthed on base). Inland towns are more year-round and affordable." },
+        { "q": "What's it like living there?", "a": "A historic Victorian beach town: quiet and cheaper off-season, busy and pricier in summer." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Cape May Beaches & Promenade", "category": "Beach", "blurb": "Wide beaches and a classic boardwalk promenade.", "maps_query": "Cape May Promenade, NJ" },
+        { "name": "Cape May Lighthouse", "category": "Outdoors", "blurb": "A climbable historic lighthouse and state park at the point.", "maps_query": "Cape May Lighthouse, NJ" },
+        { "name": "Historic Victorian district", "category": "In town", "blurb": "Colorful Victorian homes, shops, and dining downtown.", "maps_query": "Washington Street Mall, Cape May NJ" },
+        { "name": "Wildwood Boardwalk", "category": "Family", "blurb": "Amusement piers and a lively boardwalk just up the shore.", "maps_query": "Wildwood Boardwalk, NJ" }
+      ]
+    }
+  ]
+}

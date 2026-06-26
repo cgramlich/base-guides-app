@@ -1,0 +1,201 @@
+{
+  "slug": "uscg-academy",
+  "schema_version": "0.1",
+  "name": "U.S. Coast Guard Academy",
+  "short_name": "CG Academy",
+  "branch": "U.S. Coast Guard",
+  "states": ["CT"],
+  "tagline": "The Coast Guard's service academy on the Thames River in New London, Connecticut.",
+  "coords": { "lat": 41.37, "lng": -72.10, "label": "New London, CT" },
+  "tz": "America/New_York",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard service academy (New London, CT, on the Thames River across from Groton). CONUS full template (BAH MHA CT049 New London; RentCast/SchoolDigger work). Coast Guard uses the same BAH tables as DoD. Population = cadets + faculty/staff/coaches; for families this is a staff/faculty tour. Medical: CG clinic on campus + TRICARE network. Facts verified from official sources (uscga.edu, TRICARE, CG Exchange, Wikipedia for corroborated headline facts). Connecticut is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 06320 (New London).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "New London, CT (Thames River, southeastern Connecticut)",
+        "Role": "The Coast Guard's four-year service academy",
+        "Population": "Cadets plus faculty, staff, and coaches",
+        "Nearby": "Across the river from Naval Submarine Base New London (Groton)",
+        "Setting": "Historic New England coast"
+      },
+      "source": { "label": "U.S. Coast Guard Academy (official)", "url": "https://www.uscga.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "The U.S. Coast Guard Academy is the Coast Guard's four-year college, educating and commissioning new officers. Like the other service academies, the cadet population defines daily life, supported by a faculty and staff.",
+        "It sits on the Thames River in New London, Connecticut, across from the Navy's submarine base in Groton. For families, assignments here are typically as faculty, staff, or coaches rather than an operational unit."
+      ],
+      "source": { "label": "U.S. Coast Guard Academy (official)", "url": "https://www.uscga.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "academy_decision",
+      "title": "A Faculty/Staff Tour on the Connecticut Coast",
+      "type": "killer",
+      "data": {
+        "subtitle": "This is a staff-and-faculty posting, not operational. The main choice is which southeastern Connecticut town fits your commute and schools, with limited housing options on campus.",
+        "intro": [
+          "Most families here are assigned as faculty, staff, or coaches. The area is historic, coastal New England with a moderate cost of living for the Northeast, and many of the same communities that serve the Navy's nearby sub base apply here too.",
+          "Where you live mostly comes down to commute and schools across New London, Waterford, Groton, and the surrounding shoreline."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "New London and Waterford sit right by the Academy for a short commute." },
+          { "who": "Shoreline charm", "advice": "Mystic, Stonington, and the shoreline towns offer New England character a short drive away." },
+          { "who": "More value inland", "advice": "Heading inland trades a slightly longer commute for more space." },
+          { "who": "On-campus housing", "advice": "Limited military housing is available; check with the Academy housing office early." }
+        ]
+      },
+      "source": { "label": "U.S. Coast Guard Academy (official)", "url": "https://www.uscga.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "The Academy is a controlled-access campus. Visitors without a DoD/CG ID typically need to check in; the visitor center and museum have their own access rules.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Academy site before you go."
+      ],
+      "source": { "label": "U.S. Coast Guard Academy (official)", "url": "https://www.uscga.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "The Academy has a limited amount of military family housing for assigned staff and faculty; most families live off campus in the surrounding area.",
+        "Eligibility and availability vary, so start with the Academy/Coast Guard housing office for current options and waitlists."
+      ],
+      "source": { "label": "U.S. Coast Guard Academy (official)", "url": "https://www.uscga.edu/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CT049",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA CT049 (New London) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "06320", "label": "New London, CT" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. New London, Waterford, Groton, and other southeastern Connecticut districts serve families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Waterford Public Schools (official)", "url": "https://www.waterfordschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "CT", "city": "New London" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard Academy clinic",
+        "Care": "On-campus clinic care for the assigned population; most family care is via the TRICARE network and area hospitals",
+        "TRICARE region": "East (Humana Military)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) at the Academy",
+        "Commissary": "Nearest commissary is at Naval Submarine Base New London (Groton)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at the Academy many staff and faculty rent given typical tour lengths and the New England market."],
+        "rent": [
+          "Your tour is a standard length and you'll PCS out.",
+          "You want time to learn the shoreline before committing.",
+          "You'd rather not navigate Connecticut property taxes on a fixed timeline.",
+          "Your BAH comfortably covers rent in the areas you'd consider."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat assignments in the area.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "You've found a shoreline town and commute you're confident about.",
+          "You're comfortable owning and possibly renting it out later."
+        ],
+        "bottom_line": "There is no universal right answer. Weigh your tour length and Connecticut taxes against owning. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "Limited on-campus housing exists; get the housing office's read on the shoreline towns before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Connecticut vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (New London, Waterford, or Groton) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the Academy clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What kind of assignment is the Academy?", "a": "It's the Coast Guard's service academy. Tours here are typically as faculty, staff, or coaches supporting cadet education, not operational units." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes. The Coast Guard uses the same BAH tables as the rest of the military. The Academy is in MHA CT049 (New London)." },
+        { "q": "Where do families live?", "a": "Mostly off campus in New London, Waterford, Groton, and the shoreline towns, with limited military housing on campus." },
+        { "q": "What's nearby?", "a": "Mystic, Stonington, the casinos (Foxwoods, Mohegan Sun), and the Navy's submarine base across the river." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Mystic Seaport & Aquarium", "category": "Family", "blurb": "A maritime museum village and aquarium in nearby Mystic.", "maps_query": "Mystic Seaport Museum, CT" },
+        { "name": "Coast Guard Museum (New London)", "category": "Museum", "blurb": "Coast Guard history near the Academy and downtown waterfront.", "maps_query": "Coast Guard Museum, New London CT" },
+        { "name": "Ocean Beach Park", "category": "Beach", "blurb": "A classic New London boardwalk and beach.", "maps_query": "Ocean Beach Park, New London CT" },
+        { "name": "Stonington Borough", "category": "In town", "blurb": "A picturesque coastal village with dining and a lighthouse.", "maps_query": "Stonington Borough, CT" }
+      ]
+    }
+  ]
+}

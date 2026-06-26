@@ -1,0 +1,201 @@
+{
+  "slug": "coast-guard-base-seattle",
+  "schema_version": "0.1",
+  "name": "Coast Guard Base Seattle",
+  "short_name": "Seattle",
+  "branch": "U.S. Coast Guard",
+  "states": ["WA"],
+  "tagline": "The Coast Guard's Pacific Northwest hub and a polar-icebreaker homeport on the Seattle waterfront.",
+  "coords": { "lat": 47.58, "lng": -122.34, "label": "Seattle, WA" },
+  "tz": "America/Los_Angeles",
+  "last_full_review": "2026-06-25",
+  "_note": "Coast Guard Base Seattle (Seattle waterfront, WA). CONUS full template (BAH MHA WA309 Seattle; RentCast/SchoolDigger work). CG uses same BAH tables. District 13 hub + cutter homeport (incl. polar icebreakers). Medical: CG clinic + TRICARE network (expensive Seattle). Facts verified from official sources (uscg.mil, TRICARE, CGX, Wikipedia for corroborated headline facts). Washington is TRICARE West. High-cost Seattle metro. Medium-confidence flags: base coords (approx), off-base ZIP 98168 (Tukwila/South Seattle).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Seattle waterfront, WA (Puget Sound)",
+        "Role": "Pacific Northwest Coast Guard hub (District 13)",
+        "Homeports": "Cutters, including polar icebreakers",
+        "Setting": "Major Pacific Northwest city (high cost of living)",
+        "Region": "Puget Sound, mountains and water all around"
+      },
+      "source": { "label": "Coast Guard Base Seattle (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Coast Guard Base Seattle is the service's Pacific Northwest hub, supporting District 13 and homeporting cutters, including the nation's polar icebreakers that operate in the Arctic and Antarctic.",
+        "On the Seattle waterfront along Puget Sound, it pairs a busy maritime mission with one of the country's most scenic, and most expensive, big cities."
+      ],
+      "source": { "label": "Coast Guard Base Seattle (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "seattle_decision",
+      "title": "Big-City Puget Sound Living: Commute vs. Price",
+      "type": "killer",
+      "data": {
+        "subtitle": "Seattle is desirable and pricey. The main choice is how far south or out you'll go to make your BAH stretch, balanced against the commute and traffic.",
+        "intro": [
+          "Housing costs are high across the metro, so where you live is mostly about commute versus price. Coast Guard housing is limited, so most families live off base.",
+          "Where you live mostly comes down to commute and schools across South Seattle, the south-end suburbs, and the Eastside, with the water and mountains as the upside."
+        ],
+        "recommendations": [
+          { "who": "Closest to the gate", "advice": "South Seattle and nearby neighborhoods keep the commute to the waterfront short, but costs are high." },
+          { "who": "More for your money", "advice": "South-end suburbs (Burien, Tukwila, Kent, Federal Way) trade a longer commute for lower prices." },
+          { "who": "Family suburbs", "advice": "Areas with well-regarded schools sit a bit farther out; weigh the traffic." },
+          { "who": "Use transit", "advice": "Light rail and ferries help with Seattle traffic; factor them into where you live." }
+        ]
+      },
+      "source": { "label": "Coast Guard Base Seattle (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Coast Guard site before you go."
+      ],
+      "source": { "label": "Coast Guard Base Seattle (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing in the Seattle area is limited, so most families live off base across the metro.",
+        "Eligibility and availability vary, so start with the Coast Guard housing office early for current options and waitlists."
+      ],
+      "source": { "label": "Coast Guard Base Seattle (official)", "url": "https://www.uscg.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "WA309",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": { "label": "DoD 2026 BAH Rates, MHA WA309 (Seattle) — Coast Guard uses the same BAH tables", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": { "zip": "98168", "label": "Tukwila / South Seattle, WA" }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA district here; children attend the local civilian public schools. Seattle, Highline, Kent, and other metro districts serve military families depending on where you live.",
+        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+      ],
+      "source": { "label": "Highline Public Schools (official)", "url": "https://www.highlineschools.org/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": { "state": "WA", "city": "Seattle" }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "Coast Guard clinic, Base Seattle",
+        "Care": "On-base clinic care for the assigned population; most family care is via the TRICARE network and Seattle-area hospitals",
+        "TRICARE region": "West (TriWest)"
+      },
+      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "Coast Guard Exchange (CGX) Seattle",
+        "Commissary": "Nearest DoD commissary is at Joint Base Lewis-McChord (south of the metro)"
+      },
+      "source": { "label": "Coast Guard Exchange", "url": "https://www.shopcgx.com/" },
+      "verified": "2026-06-25"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in the pricey Seattle metro the call depends heavily on tour length and budget."],
+        "rent": [
+          "Your tour is a standard length and you'll PCS out.",
+          "Seattle prices put a purchase out of comfortable reach for your budget.",
+          "You prefer renting for flexibility in an expensive market.",
+          "You want to keep your commute and budget manageable."
+        ],
+        "buy": [
+          "You expect a longer tour or repeat Puget Sound assignments.",
+          "You can afford the high entry price and want to build equity with your VA loan.",
+          "You've found a suburb and commute you're confident about.",
+          "You're comfortable owning (and possibly renting out) in a high-cost, appreciating market."
+        ],
+        "bottom_line": "There is no universal right answer. Seattle's high prices make buying a big commitment, so many families rent. Longer or repeat tours can justify buying farther out. Run your BAH against the rent and home prices above, weigh your commute, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["The first month at a new duty station is mostly logistics. In a big, expensive metro, starting early pays off."],
+        "steps": [
+          { "title": "Line up temporary lodging", "text": "Book lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
+          { "title": "Check housing", "text": "CG housing is limited; get the office's read on the south-end suburbs and the metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and Washington vehicle registration, and learn the visitor process for guests. Bring your registration and insurance." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Seattle, Highline, Kent, or another) early and bring records and immunizations." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment and pick a network provider; the base clinic serves the assigned population." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "What is Base Seattle?", "a": "It's the Coast Guard's Pacific Northwest hub (District 13) and a cutter homeport, including the nation's polar icebreakers, on the Seattle waterfront." },
+        { "q": "Do Coast Guard families get BAH?", "a": "Yes, the same BAH tables as the rest of the military. Seattle is MHA WA309." },
+        { "q": "Where do families live?", "a": "Mostly off base across the metro. South Seattle is closest; the south-end suburbs offer more value. CG housing is limited." },
+        { "q": "Is it expensive?", "a": "Yes. Seattle is a high-cost metro, so commute versus price drives where you live." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        { "name": "Pike Place Market", "category": "In town", "blurb": "Seattle's iconic public market on the downtown waterfront.", "maps_query": "Pike Place Market, Seattle WA" },
+        { "name": "Mount Rainier National Park", "category": "Outdoors", "blurb": "An iconic peak and alpine trails southeast of the city.", "maps_query": "Mount Rainier National Park, WA" },
+        { "name": "Puget Sound ferries", "category": "Day trip", "blurb": "Island and peninsula trips by ferry across the Sound.", "maps_query": "Washington State Ferries, Seattle WA" },
+        { "name": "Museum of Flight", "category": "Family", "blurb": "A huge aviation and space museum in South Seattle.", "maps_query": "Museum of Flight, Seattle WA" }
+      ]
+    }
+  ]
+}
