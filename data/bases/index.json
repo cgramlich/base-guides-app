@@ -179,6 +179,12 @@
     { "slug": "usag-garmisch", "name": "USAG Garmisch", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
     { "slug": "usag-rheinland-pfalz", "name": "USAG Rheinland-Pfalz (Kaiserslautern)", "branch": "U.S. Army", "state": "Germany", "region": "OCONUS", "ready": true },
     { "slug": "lajes-field", "name": "Lajes Field (Azores)", "branch": "U.S. Air Force", "state": "Portugal", "region": "OCONUS", "ready": true },
-    { "slug": "naval-station-guantanamo-bay", "name": "Naval Station Guantanamo Bay", "branch": "U.S. Navy", "state": "Cuba", "region": "OCONUS", "ready": true }
+    { "slug": "naval-station-guantanamo-bay", "name": "Naval Station Guantanamo Bay", "branch": "U.S. Navy", "state": "Cuba", "region": "OCONUS", "ready": true },
+    { "slug": "pituffik-space-base", "name": "Pituffik Space Base", "branch": "U.S. Space Force", "state": "Greenland", "region": "OCONUS", "ready": true },
+    { "slug": "nsf-diego-garcia", "name": "Naval Support Facility Diego Garcia", "branch": "U.S. Navy", "state": "British Indian Ocean Territory", "region": "OCONUS", "ready": true },
+    { "slug": "camp-lemonnier", "name": "Camp Lemonnier", "branch": "U.S. Navy", "state": "Djibouti", "region": "OCONUS", "ready": true },
+    { "slug": "incirlik-ab", "name": "Incirlik Air Base", "branch": "U.S. Air Force", "state": "Turkey", "region": "OCONUS", "ready": true },
+    { "slug": "al-udeid-ab", "name": "Al Udeid Air Base", "branch": "U.S. Air Force", "state": "Qatar", "region": "OCONUS", "ready": true },
+    { "slug": "al-dhafra-ab", "name": "Al Dhafra Air Base", "branch": "U.S. Air Force", "state": "UAE", "region": "OCONUS", "ready": true }
   ]
 }

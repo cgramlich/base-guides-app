@@ -1,0 +1,157 @@
+{
+  "slug": "camp-lemonnier",
+  "schema_version": "0.1",
+  "name": "Camp Lemonnier",
+  "short_name": "Lemonnier",
+  "branch": "U.S. Navy",
+  "states": ["Djibouti"],
+  "region": "OCONUS",
+  "tagline": "The only enduring U.S. military base in Africa, on the Horn of Africa in Djibouti.",
+  "coords": { "lat": 11.55, "lng": 43.15, "label": "Djibouti City, Djibouti" },
+  "tz": "Africa/Djibouti",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Djibouti). REMOTE/UNACCOMPANIED expeditionary tour. Camp Lemonnier is the only enduring US base in Africa, HQ of Combined Joint Task Force-Horn of Africa (CJTF-HOA). Dependents do NOT relocate here -> unaccompanied/expeditionary pattern: no family housing/OHA/DoDEA/BAH/RentCast/SchoolDigger/rent-buy. Personnel live in on-base contingency quarters. Facts verified from official sources (cnic.navy.mil Camp Lemonnier, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx).",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy (joint expeditionary base)",
+        "Location": "Djibouti, Horn of Africa",
+        "Distinction": "The only enduring U.S. military base in Africa",
+        "Hosts": "Combined Joint Task Force-Horn of Africa (CJTF-HOA)",
+        "Tour type": "Remote, unaccompanied / expeditionary",
+        "Setting": "Hot, arid Horn of Africa"
+      },
+      "source": { "label": "Camp Lemonnier (official, CNIC)", "url": "https://www.cnic.navy.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Camp Lemonnier is the only enduring U.S. military base in Africa and the headquarters of Combined Joint Task Force-Horn of Africa (CJTF-HOA), supporting operations and partnerships across East Africa and the region.",
+        "It's a hot, arid, expeditionary posting in Djibouti, an unaccompanied tour focused on the mission, with a transient, mission-driven community."
+      ],
+      "source": { "label": "Camp Lemonnier (official, CNIC)", "url": "https://www.cnic.navy.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "lemonnier_decision",
+      "title": "A Remote, Unaccompanied Expeditionary Tour",
+      "type": "killer",
+      "data": {
+        "subtitle": "Camp Lemonnier is an expeditionary base, not a family-relocation assignment. Personnel live in on-base contingency quarters, so planning is about the separation and the environment.",
+        "intro": [
+          "It's an unaccompanied tour: dependents do not relocate here, so there's no family housing, OHA, BAH, or DoDEA school in the usual sense.",
+          "The planning is for the family back home and adapting to a hot, austere, mission-focused environment with on-base contingency living."
+        ],
+        "recommendations": [
+          { "who": "Expect contingency quarters", "advice": "Personnel live in on-base quarters (containerized/barracks-style); there's no family housing." },
+          { "who": "Plan the family separation", "advice": "Since it's unaccompanied, sort out where your family lives during the tour and your finances and communication plan early." },
+          { "who": "Prepare for the climate", "advice": "Expect extreme heat and an austere, expeditionary setting; lean on the base community and morale programs." },
+          { "who": "Confirm your allowances", "advice": "Expeditionary/unaccompanied tours have their own pay and allowance rules; verify everything with finance." }
+        ]
+      },
+      "source": { "label": "Camp Lemonnier (official, CNIC)", "url": "https://www.cnic.navy.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Access",
+      "type": "prose",
+      "data": [
+        "Camp Lemonnier is a secure expeditionary base with strict access control and a heightened security environment. Access is coordinated through your command.",
+        "Requirements are specific; coordinate everything through your command before you travel."
+      ],
+      "source": { "label": "Camp Lemonnier (official, CNIC)", "url": "https://www.cnic.navy.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base Quarters)",
+      "type": "prose",
+      "data": [
+        "Because this is an unaccompanied expeditionary tour, personnel live in on-base contingency quarters; there is no family housing.",
+        "Your unit handles your quarters assignment on arrival; confirm current arrangements through your sponsor and the base."
+      ],
+      "source": { "label": "Camp Lemonnier (official, CNIC)", "url": "https://www.cnic.navy.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Because Camp Lemonnier is an unaccompanied tour, dependents do not relocate here, and there is no DoDEA school.",
+        "If you have school-age children, they remain at your designated location during the tour; coordinate schooling there and confirm your specific situation with your command."
+      ],
+      "source": { "label": "Camp Lemonnier (official, CNIC)", "url": "https://www.cnic.navy.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "On-base expeditionary medical facility",
+        "Care": "Primary and urgent care for the assigned population; complex cases are evacuated (e.g., to Landstuhl)",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Camp Lemonnier (official, CNIC)", "url": "https://www.cnic.navy.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "On-base exchange (NEX) for the assigned population",
+        "Note": "Shopping and services are on base; off-base access is limited by security posture"
+      },
+      "source": { "label": "Camp Lemonnier (official, CNIC)", "url": "https://www.cnic.navy.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (Remote Tour)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["An unaccompanied expeditionary tour has its own checklist. The focus is on-base in-processing and squaring away your family's situation back home."],
+        "steps": [
+          { "title": "Coordinate travel with your command", "text": "Travel and reporting are tightly coordinated; confirm your itinerary, gear, and entitlements in advance." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get the required ID and logistics cards." },
+          { "title": "Get your quarters set up", "text": "Coordinate your on-base contingency quarters with your unit; this is your home for the tour." },
+          { "title": "Square away the home front", "text": "Confirm where your family lives during the tour, sort finances, allotments, powers of attorney, and a communication plan for the time apart." },
+          { "title": "Learn the security posture", "text": "Understand force-protection rules and any limits on off-base movement in the region." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program; complex care means evacuation, so understand the process." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Can my family come to Camp Lemonnier?", "a": "No. It's a remote, unaccompanied expeditionary tour, so dependents don't relocate here, and there's no family housing or DoDEA school." },
+        { "q": "Do I get BAH or OHA?", "a": "This is an unaccompanied tour, so the usual family housing allowances don't apply the same way. Confirm your specific pay and allowances (and any continued BAH for family back home) with finance." },
+        { "q": "Where do I live?", "a": "In on-base contingency quarters. The unit handles your assignment when you arrive." },
+        { "q": "What is CJTF-HOA?", "a": "Combined Joint Task Force-Horn of Africa, the headquarters hosted at Camp Lemonnier that supports U.S. operations and partnerships across East Africa." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "On-Base & Around",
+      "type": "places_live",
+      "note": "Off-base access is limited by the security posture; this is area context, not travel guidance.",
+      "picks": [
+        { "name": "Base MWR & community", "category": "Morale", "blurb": "On-base recreation and morale programs anchor the tour.", "maps_query": "Camp Lemonnier" },
+        { "name": "Gulf of Tadjoura", "category": "Nature", "blurb": "Djibouti's dramatic coastline and marine life along the Gulf.", "maps_query": "Gulf of Tadjoura, Djibouti" },
+        { "name": "Lake Assal", "category": "Nature", "blurb": "One of the lowest, saltiest points on Earth, in Djibouti's interior.", "maps_query": "Lake Assal, Djibouti" },
+        { "name": "Djibouti City", "category": "In town", "blurb": "The capital nearby (access subject to force-protection rules).", "maps_query": "Djibouti City, Djibouti" }
+      ]
+    }
+  ]
+}

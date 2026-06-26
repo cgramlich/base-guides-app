@@ -1,0 +1,157 @@
+{
+  "slug": "pituffik-space-base",
+  "schema_version": "0.1",
+  "name": "Pituffik Space Base",
+  "short_name": "Pituffik (Thule)",
+  "branch": "U.S. Space Force",
+  "states": ["Greenland"],
+  "region": "OCONUS",
+  "tagline": "The U.S. military's northernmost installation, a remote Arctic missile-warning and space-surveillance base in Greenland.",
+  "coords": { "lat": 76.53, "lng": -68.70, "label": "Pituffik, Greenland" },
+  "tz": "America/Thule",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Greenland), REMOTE/UNACCOMPANIED Arctic tour. Renamed from Thule Air Base to Pituffik Space Base (April 2023); now a Space Force installation (missile warning/BMEWS + space surveillance + satellite control). Northernmost US base. Families do NOT relocate here -> built on the unaccompanied/remote pattern: no family housing/OHA/DoDEA/BAH/RentCast/SchoolDigger/rent-buy. 6th Space Force base in app -> Space Force chip. Personnel live in on-base quarters; extreme cold/dark winters; access by military air only. Facts verified from official sources (spaceforce.mil/Pituffik, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx); exact org/delta designation.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Space Force",
+        "Location": "Pituffik, northwest Greenland (above the Arctic Circle)",
+        "Distinction": "The U.S. military's northernmost installation",
+        "Mission": "Missile warning, space surveillance, and satellite control",
+        "Tour type": "Remote, unaccompanied (typically a one-year tour)",
+        "Name note": "Renamed from Thule Air Base to Pituffik Space Base in 2023"
+      },
+      "source": { "label": "Pituffik Space Base (official)", "url": "https://www.spaceforce.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Pituffik Space Base (formerly Thule Air Base) is the U.S. military's northernmost installation, deep above the Arctic Circle in Greenland. It performs missile warning, space surveillance, and satellite control, watching the northern approaches to North America.",
+        "It's one of the most remote and extreme assignments in the U.S. military: isolated, with months of polar darkness and brutal cold, reached only by military aircraft."
+      ],
+      "source": { "label": "Pituffik Space Base (official)", "url": "https://www.spaceforce.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pituffik_decision",
+      "title": "A Remote, Unaccompanied Arctic Tour",
+      "type": "killer",
+      "data": {
+        "subtitle": "This is not a family-relocation assignment. Pituffik is a remote, unaccompanied tour where personnel live in on-base quarters, so the planning is about the separation and the extreme environment, not housing or schools.",
+        "intro": [
+          "Because of the extreme isolation and Arctic conditions, Pituffik is an unaccompanied tour, typically one year. Dependents do not relocate here, so there's no family housing, OHA, BAH, or DoDEA school in the usual sense.",
+          "The real planning is for the family back home, the separation, and adapting to months of polar night, extreme cold, and a small, tight-knit base community."
+        ],
+        "recommendations": [
+          { "who": "Expect on-base quarters", "advice": "Personnel live in on-base housing/dormitory quarters; there's no off-base community in this remote part of Greenland." },
+          { "who": "Plan the family separation", "advice": "Since it's unaccompanied, sort out where your family will live during the tour and your finances and communication plan early." },
+          { "who": "Prepare for the Arctic", "advice": "Months of darkness, extreme cold, and isolation are the defining challenge; lean on the base community and morale programs." },
+          { "who": "Confirm your allowances", "advice": "Remote/unaccompanied tours have their own pay and allowance rules; verify everything (including any continued BAH for family back home) with finance." }
+        ]
+      },
+      "source": { "label": "Pituffik Space Base (official)", "url": "https://www.spaceforce.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Access",
+      "type": "prose",
+      "data": [
+        "Pituffik is an extremely remote, access-controlled installation reached only by military air. Travel is tightly coordinated through your command.",
+        "Requirements are specific and change with conditions, so coordinate everything through your command before you travel."
+      ],
+      "source": { "label": "Pituffik Space Base (official)", "url": "https://www.spaceforce.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base Quarters)",
+      "type": "prose",
+      "data": [
+        "Because this is a remote, unaccompanied tour, personnel live in on-base quarters; there is no family housing or off-base community in this isolated part of Greenland.",
+        "Your unit handles your quarters assignment on arrival; confirm current arrangements through your sponsor and the base."
+      ],
+      "source": { "label": "Pituffik Space Base (official)", "url": "https://www.spaceforce.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Because Pituffik is a remote, unaccompanied tour, dependents do not relocate here, and there is no DoDEA school.",
+        "If you have school-age children, they remain at your designated location during the tour; coordinate schooling there and confirm your specific situation with your command."
+      ],
+      "source": { "label": "Pituffik Space Base (official)", "url": "https://www.spaceforce.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "On-base medical clinic",
+        "Care": "Basic primary and urgent care for the assigned population; anything beyond requires medical evacuation off-island given the remoteness",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Pituffik Space Base (official)", "url": "https://www.spaceforce.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Exchange": "On-base exchange (BX) for the assigned population",
+        "Note": "Shopping is limited to what's on base; there's no local town to shop in"
+      },
+      "source": { "label": "Pituffik Space Base (official)", "url": "https://www.spaceforce.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (Remote Tour)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["A remote, unaccompanied Arctic tour has its own checklist. The focus is on-base in-processing and squaring away your family's situation back home, not setting up a household here."],
+        "steps": [
+          { "title": "Coordinate travel with your command", "text": "Travel to Pituffik is by military air and tightly coordinated; confirm your flight, gear, and entitlements well in advance." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get the required ID and logistics cards." },
+          { "title": "Get your quarters set up", "text": "Coordinate your on-base quarters with your unit; this is your home for the tour." },
+          { "title": "Square away the home front", "text": "Confirm where your family lives during the tour, sort finances, allotments, powers of attorney, and a communication plan for the year apart." },
+          { "title": "Prepare for the Arctic", "text": "Get issued/learn the extreme cold-weather gear and routines; understand the polar-night schedule and morale resources." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program; know that anything beyond basic care means medical evacuation off-island." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Can my family come to Pituffik?", "a": "No. It's a remote, unaccompanied tour (typically one year) in extreme Arctic conditions, so dependents don't relocate here, and there's no family housing or DoDEA school." },
+        { "q": "Is it Thule or Pituffik?", "a": "Pituffik Space Base, as of 2023. It was Thule Air Base, and became a Space Force installation under its Greenlandic name." },
+        { "q": "Do I get BAH or OHA?", "a": "This is an unaccompanied remote tour, so the usual family housing allowances don't apply the same way. Confirm your specific pay and allowances (and any continued BAH for family back home) with finance." },
+        { "q": "What's the environment like?", "a": "Extreme: months of polar darkness, brutal cold, and deep isolation, with a small, tight-knit base community and strong morale programs." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "On-Base & Around",
+      "type": "places_live",
+      "note": "Pituffik is extremely remote; there is no local town. These are the realities of the area, not destinations to visit.",
+      "picks": [
+        { "name": "Arctic landscape", "category": "Outdoors", "blurb": "Glaciers, sea ice, and tundra surround the base; the northern lights are a highlight.", "maps_query": "Pituffik, Greenland" },
+        { "name": "Base MWR / community", "category": "Morale", "blurb": "On-base recreation and community programs anchor life during the tour.", "maps_query": "Pituffik Space Base" },
+        { "name": "North Star Bay", "category": "Outdoors", "blurb": "The bay and Mount Dundas near the base, frozen much of the year.", "maps_query": "North Star Bay, Greenland" },
+        { "name": "Polar night & midnight sun", "category": "Nature", "blurb": "Months of continuous darkness in winter and continuous daylight in summer.", "maps_query": "Thule Greenland polar night" }
+      ]
+    }
+  ]
+}

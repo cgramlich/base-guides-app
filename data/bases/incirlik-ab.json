@@ -1,0 +1,157 @@
+{
+  "slug": "incirlik-ab",
+  "schema_version": "0.1",
+  "name": "Incirlik Air Base",
+  "short_name": "Incirlik",
+  "branch": "U.S. Air Force",
+  "states": ["Turkey"],
+  "region": "OCONUS",
+  "tagline": "A strategic U.S. and NATO air base in southern Turkey, currently a restricted, unaccompanied tour.",
+  "coords": { "lat": 37.00, "lng": 35.43, "label": "Adana, Turkey" },
+  "tz": "Europe/Istanbul",
+  "last_full_review": "2026-06-26",
+  "_note": "True OCONUS (Turkey). 39th Air Base Wing; strategic US/NATO base near Adana. RESTRICTED/UNACCOMPANIED: command-sponsored dependents were ordered to depart in 2016 and the tour has been unaccompanied/restricted since -> unaccompanied pattern: no family housing/OHA/DoDEA/BAH/RentCast/SchoolDigger/rent-buy framed as normal. ACCURACY NOTE: accompanied status could change; guide tells users to confirm current status with the gaining command. Personnel live in on-base quarters. Facts verified from official sources (incirlik.af.mil, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx); current accompanied-status is policy-dependent and may change.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (on a Turkish/NATO base)",
+        "Location": "Near Adana, southern Turkey",
+        "Major unit": "39th Air Base Wing",
+        "Role": "Strategic U.S. and NATO air operations and logistics",
+        "Tour type": "Currently restricted / unaccompanied (confirm current status)",
+        "Note": "Command-sponsored dependents were ordered to depart in 2016"
+      },
+      "source": { "label": "Incirlik AB (official)", "url": "https://www.incirlik.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Incirlik Air Base, home of the 39th Air Base Wing, is a strategic U.S. and NATO air base in southern Turkey near Adana, long important for regional operations and logistics.",
+        "Since 2016, command-sponsored dependents have not been authorized, making it a restricted, unaccompanied tour. Policy can change, so confirm the current accompanied status with your gaining command before you plan."
+      ],
+      "source": { "label": "Incirlik AB (official)", "url": "https://www.incirlik.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "incirlik_decision",
+      "title": "A Restricted, Unaccompanied Tour",
+      "type": "killer",
+      "data": {
+        "subtitle": "As of now, Incirlik is a restricted, unaccompanied tour: families do not relocate here, and personnel live on base. The most important step is confirming the current status, which is policy-dependent.",
+        "intro": [
+          "Command-sponsored dependents were ordered to depart in 2016, and the tour has been unaccompanied/restricted since. So there's no family housing, OHA, BAH, or DoDEA school in the usual sense.",
+          "Because this status is policy-dependent and could change, the first thing to do is confirm the current accompanied status and any movement restrictions with your gaining command."
+        ],
+        "recommendations": [
+          { "who": "Confirm current status first", "advice": "Accompanied status at Incirlik is policy-driven; verify with your gaining command before making any family plans." },
+          { "who": "Expect on-base quarters", "advice": "Personnel live in on-base quarters; plan for an unaccompanied tour." },
+          { "who": "Plan the family separation", "advice": "Sort out where your family lives during the tour and your finances and communication plan early." },
+          { "who": "Confirm your allowances", "advice": "Unaccompanied/restricted tours have their own pay and allowance rules; verify everything with finance." }
+        ]
+      },
+      "source": { "label": "Incirlik AB (official)", "url": "https://www.incirlik.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "gates",
+      "title": "Access",
+      "type": "prose",
+      "data": [
+        "Incirlik is a Turkish/NATO base hosting U.S. forces, with a heightened security posture and access controlled by both U.S. and host-nation rules.",
+        "Requirements and any movement restrictions change with conditions, so coordinate everything through your command before you travel."
+      ],
+      "source": { "label": "Incirlik AB (official)", "url": "https://www.incirlik.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "housing",
+      "title": "Housing (On-Base Quarters)",
+      "type": "prose",
+      "data": [
+        "As an unaccompanied/restricted tour, personnel live in on-base quarters; there is no command-sponsored family housing.",
+        "Your unit handles your quarters assignment on arrival; confirm current arrangements and any policy changes through your sponsor and the base."
+      ],
+      "source": { "label": "Incirlik AB (official)", "url": "https://www.incirlik.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Because Incirlik is currently a restricted, unaccompanied tour, dependents do not relocate here. (A DoDEA school operated here when the base was accompanied; confirm the current status with your command.)",
+        "If you have school-age children, they remain at your designated location during the tour; coordinate schooling there."
+      ],
+      "source": { "label": "Incirlik AB (official)", "url": "https://www.incirlik.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "On-base medical clinic (39th Medical Group)",
+        "Care": "Primary and urgent care for the assigned population; complex cases are referred/evacuated (e.g., to Landstuhl)",
+        "TRICARE": "TRICARE Overseas Program (TOP)"
+      },
+      "source": { "label": "Incirlik AB (official)", "url": "https://www.incirlik.af.mil/" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "Incirlik Commissary (DeCA)",
+        "Exchange": "Incirlik Exchange (AAFES / BX)"
+      },
+      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
+      "verified": "2026-06-26"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days (Remote/Restricted Tour)",
+      "type": "pcs_first30",
+      "data": {
+        "intro": ["A restricted, unaccompanied tour has its own checklist. Confirm the current status first, then focus on on-base in-processing and the home front."],
+        "steps": [
+          { "title": "Confirm current accompanied status", "text": "Incirlik's status is policy-dependent; verify with your gaining command before making any family plans." },
+          { "title": "Coordinate travel with your command", "text": "Travel and reporting are tightly coordinated under a heightened security posture; confirm your itinerary and entitlements." },
+          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, update DEERS, and get the required ID and logistics cards." },
+          { "title": "Get your quarters set up", "text": "Coordinate your on-base quarters with your unit; this is your home for the tour." },
+          { "title": "Square away the home front", "text": "Confirm where your family lives during the tour, sort finances, allotments, powers of attorney, and a communication plan." },
+          { "title": "Set up healthcare", "text": "Enroll in the TRICARE Overseas Program; complex care is referred or evacuated, so understand the process." }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        { "q": "Can my family come to Incirlik?", "a": "Currently no. Command-sponsored dependents were ordered to depart in 2016 and the tour has been unaccompanied/restricted since. This is policy-dependent, so confirm the current status with your gaining command." },
+        { "q": "Do I get BAH or OHA?", "a": "As an unaccompanied/restricted tour, the usual family housing allowances don't apply the same way. Confirm your specific pay and allowances (and any continued BAH for family back home) with finance." },
+        { "q": "Where do I live?", "a": "In on-base quarters. The unit handles your assignment when you arrive." },
+        { "q": "Could the status change?", "a": "Yes. Accompanied status is policy-driven and has changed before, so always verify the current situation with your command." }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "On-Base & Around",
+      "type": "places_live",
+      "note": "Off-base movement may be restricted by the security posture; this is area context, not travel guidance.",
+      "picks": [
+        { "name": "Base MWR & community", "category": "Morale", "blurb": "On-base recreation and morale programs anchor the tour.", "maps_query": "Incirlik Air Base" },
+        { "name": "Adana", "category": "In town", "blurb": "The nearby southern Turkish city (access subject to force-protection rules).", "maps_query": "Adana, Turkey" },
+        { "name": "Mediterranean coast", "category": "Nature", "blurb": "Turkey's southern Mediterranean shoreline lies to the south.", "maps_query": "Mediterranean coast, Adana Turkey" },
+        { "name": "Regional history", "category": "History", "blurb": "Southern Turkey is rich in ancient sites (access permitting).", "maps_query": "Adana region historic sites, Turkey" }
+      ]
+    }
+  ]
+}
