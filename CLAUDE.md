@@ -2,6 +2,11 @@
 
 Auto-read by Claude Code at session start. Keep it current.
 
+**Doc currency (see starter spec §5):** keep this file + the architecture doc in step
+with the code in the SAME session you change code. Don't hardcode the version here
+(point to `APP_VERSION` + `/health`); update the doc body when the architecture changes;
+log dated changes in the app's Log folder. Rule: `CG Apps\Forever Apps\forever-apps-starter-spec.md`.
+
 ## What this is
 Base Guides frontend: a SINGLE-FILE HTML PWA (React via CDN + Babel standalone),
 no build step. Part of the **MilSpo Living** brand (rebrand of MilHousing Network),
