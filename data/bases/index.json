@@ -1,5 +1,5 @@
 {
-  "updated": "2026-06-24",
+  "updated": "2026-11-04",
   "bases": [
     { "slug": "fort-campbell", "name": "Fort Campbell", "branch": "U.S. Army", "state": "KY / TN", "ready": true },
     { "slug": "jbsa-lackland", "name": "JBSA Lackland", "branch": "U.S. Air Force", "state": "TX", "ready": true },
@@ -168,6 +168,7 @@
     { "slug": "coast-guard-sector-ohio-valley", "name": "Coast Guard Sector Ohio Valley", "branch": "U.S. Coast Guard", "state": "KY", "ready": true },
     { "slug": "coast-guard-sector-upper-mississippi", "name": "Coast Guard Sector Upper Mississippi River", "branch": "U.S. Coast Guard", "state": "MO", "ready": true },
     { "slug": "coast-guard-sector-jacksonville", "name": "Coast Guard Sector Jacksonville", "branch": "U.S. Coast Guard", "state": "FL", "ready": true },
+    { "slug": "rivanna-station", "name": "Rivanna Station", "branch": "U.S. Army", "state": "VA", "ready": true },
     { "slug": "coast-guard-air-station-sitka", "name": "Coast Guard Air Station Sitka", "branch": "U.S. Coast Guard", "state": "AK", "region": "OCONUS", "ready": true },
     { "slug": "coast-guard-sector-guam", "name": "Coast Guard Sector Guam", "branch": "U.S. Coast Guard", "state": "Guam", "region": "OCONUS", "ready": true },
     { "slug": "usag-benelux-chievres", "name": "USAG Benelux (Chièvres / SHAPE)", "branch": "U.S. Army", "state": "Belgium", "region": "OCONUS", "ready": true },

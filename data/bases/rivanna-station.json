@@ -1,0 +1,330 @@
+{
+  "slug": "rivanna-station",
+  "schema_version": "0.1",
+  "name": "Rivanna Station",
+  "short_name": "Rivanna",
+  "branch": "U.S. Army",
+  "states": [
+    "VA"
+  ],
+  "tagline": "The Army's ground intelligence hub, in the hills just north of Charlottesville, Virginia.",
+  "coords": {
+    "lat": 38.155,
+    "lng": -78.414,
+    "label": "Charlottesville, VA"
+  },
+  "tz": "America/New_York",
+  "last_full_review": "2026-11-04",
+  "_note": "Army intelligence site (NGIC, plus DIA and NGA in the Joint-Use Intelligence Analysis Facility), a sub-installation of Fort Belvoir in Albemarle County VA (Eastern time). Built 2026-11-04 at Chris's request. CONUS full template: BAH MHA VA295 Charlottesville (duty ZIP 22911; rates read from the official DoD 2026 table, not typed). No on-post housing, barracks, commissary, exchange or military clinic; CDC on site (Belvoir MWR page updated 2026-02-24). Sources: army.mil (2010 JUIAF opening, 2019 NGIC workforce ~2,500), Belvoir HSO, TRICARE Prime Remote, CAAR Q1 2026 market report, Albemarle/Lakeside MS fact sheet, ACPS 2024-25 accountability release. Medium-confidence flags: coords approximate (OpenStreetMap NGIC building); drive times are routing estimates; JAG School exchange shop comes from a 2021 Defense Affairs Committee welcome packet; Prime Remote eligibility depends on the home ZIP; Albemarle school feeder pattern from an undated fact sheet.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (a sub-installation of Fort Belvoir)",
+        "Location": "Albemarle County, Virginia, on US-29 about 12 miles north of downtown Charlottesville",
+        "Role": "Military intelligence analysis",
+        "Major tenants": "National Ground Intelligence Center (NGIC), with Defense Intelligence Agency and National Geospatial-Intelligence Agency offices",
+        "Workforce": "About 2,500 at NGIC: soldiers, Army civilians and contractors",
+        "Setting": "A university town in the Blue Ridge foothills"
+      },
+      "source": {
+        "label": "Army.mil: DIA opens new facility at Rivanna Station (2010)",
+        "url": "https://www.army.mil/article/43796/defense_intelligence_agency_opens_new_facility_at_rivanna_station"
+      },
+      "verified": "2026-11-04"
+    },
+    {
+      "id": "mission",
+      "title": "Mission & Identity",
+      "type": "prose",
+      "data": [
+        "Rivanna Station is home to the National Ground Intelligence Center (NGIC), part of the Army's Intelligence and Security Command. NGIC produces the Army's intelligence on foreign ground forces and their equipment. The Defense Intelligence Agency and the National Geospatial-Intelligence Agency also work here, in the Joint-Use Intelligence Analysis Facility that opened in 2010.",
+        "It is a small, secure site run as a sub-installation of Fort Belvoir, about two hours north. There is no big garrison around it, so daily life happens in Charlottesville and the surrounding counties."
+      ],
+      "source": {
+        "label": "Army.mil: DIA opens new facility at Rivanna Station (2010)",
+        "url": "https://www.army.mil/article/43796/defense_intelligence_agency_opens_new_facility_at_rivanna_station"
+      },
+      "verified": "2026-11-04"
+    },
+    {
+      "id": "rivanna_decision",
+      "title": "Where to Live: City, County or North of the Gate",
+      "type": "killer",
+      "data": {
+        "subtitle": "Rivanna has no on-post housing and no big base around it, so where you live is the big decision. The closest and least expensive homes are often north of the gate, not in Charlottesville itself.",
+        "intro": [
+          "Charlottesville is a pricey market for a military town. In early 2026 the median home sold for about $550,000 in Albemarle County, $477,500 in the City of Charlottesville and $397,000 in Greene County, according to the Charlottesville Area Association of Realtors.",
+          "Rivanna Station sits on US-29 about 12 miles north of downtown. Northern Albemarle neighborhoods are 5 to 15 minutes from the gate, and Greene County's Ruckersville is about 15 minutes north, so the lower-cost county is also one of the closest."
+        ],
+        "recommendations": [
+          {
+            "who": "Shortest commute",
+            "advice": "Northern Albemarle neighborhoods like Hollymead and Forest Lakes are minutes from the gate, with Albemarle County schools."
+          },
+          {
+            "who": "Most house for the money",
+            "advice": "Greene County (Ruckersville) has the lowest home prices and property tax of the three, and is still about 15 minutes away."
+          },
+          {
+            "who": "City life",
+            "advice": "Living in Charlottesville puts you near UVA and the Downtown Mall, about 25 minutes from the gate."
+          },
+          {
+            "who": "Schools first",
+            "advice": "Albemarle County had a third of its schools rated Distinguished in 2024-25, well above the state average. Check the exact school for any address."
+          }
+        ]
+      },
+      "source": {
+        "label": "CAAR Q1 2026 Housing Market Report",
+        "url": "https://www.realcentralva.com/wp-content/uploads/2026/05/CAAR-Q1-2026-Housing-Market-Report.pdf"
+      },
+      "verified": "2026-11-04"
+    },
+    {
+      "id": "gates",
+      "title": "Gates & Access",
+      "type": "prose",
+      "data": [
+        "Rivanna Station is a secure intelligence site, not an open post, and its buildings are not open to the public. Your sponsor or unit will explain how access works for you.",
+        "Don't plan on bringing family or guests onto the site. Most of the services a family uses are off post anyway."
+      ],
+      "source": {
+        "label": "Army.mil: DIA opens new facility at Rivanna Station (2010)",
+        "url": "https://www.army.mil/article/43796/defense_intelligence_agency_opens_new_facility_at_rivanna_station"
+      },
+      "verified": "2026-11-04"
+    },
+    {
+      "id": "housing",
+      "title": "On-Base Housing",
+      "type": "prose",
+      "data": [
+        "Rivanna Station has no family housing or barracks. The site is a few office buildings and parking, so everyone lives off post and rents or buys in the local market.",
+        "Fort Belvoir, Rivanna's parent installation, runs a Housing Services Office that offers off-post housing counseling and rental referrals by phone (703-805-3019)."
+      ],
+      "source": {
+        "label": "Fort Belvoir Housing Services Office (official)",
+        "url": "https://home.army.mil/belvoir/about/Garrison/housing-services-office"
+      },
+      "verified": "2026-11-04"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "VA295",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA VA295 (Charlottesville, VA)",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "verified": "2026-11-04"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "22911",
+        "label": "Northern Albemarle County, VA (22911)"
+      }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There are no DoDEA schools here; children attend the local public schools. Your address decides the district: Albemarle County Public Schools around the station, Charlottesville City Schools inside the city, or Greene County Public Schools to the north.",
+        "Closest to the gate, northern Albemarle is served by Baker-Butler, Hollymead and Stony Point elementary schools, Lakeside Middle and Albemarle High. Boundaries change, so check the county's school lookup for any address you're considering.",
+        "Virginia rates every school each fall. Look up the latest rating for the specific schools that serve a neighborhood before you sign."
+      ],
+      "source": {
+        "label": "Albemarle County Public Schools: attendance zones (official)",
+        "url": "https://www.k12albemarle.org/for-families/student-registration/attendance"
+      },
+      "verified": "2026-11-04"
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "VA",
+        "city": "Charlottesville"
+      }
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic": "None on post. The nearest military hospital is Fort Belvoir Community Hospital, about 2 hours north.",
+        "Care": "Most families use civilian doctors. UVA Health and Sentara Martha Jefferson Hospital are the main local hospitals.",
+        "TRICARE": "East region (Humana Military). Because military clinics are about 2 hours away, many families qualify for TRICARE Prime Remote. Check your home ZIP with TRICARE before you choose a plan."
+      },
+      "source": {
+        "label": "TRICARE Prime Remote (official)",
+        "url": "https://tricare.mil/Plans/Enroll/TPR"
+      },
+      "verified": "2026-11-04"
+    },
+    {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Commissary": "None at Rivanna. The nearest are at MCB Quantico, Fort Belvoir and Fort Gregg-Adams, each about 2 to 2.5 hours away.",
+        "Exchange": "The JAG School in Charlottesville has a small exchange shop for basics and uniform items. Full exchanges are at the same bases as the commissaries."
+      },
+      "source": {
+        "label": "DeCA store locations",
+        "url": "https://corp.commissaries.com/shopping/store-locations"
+      },
+      "verified": "2026-11-04"
+    },
+    {
+      "id": "child_care",
+      "title": "Child Care",
+      "type": "facts",
+      "data": {
+        "On site": "Rivanna Station Child Development Center, 2425 Defense Way",
+        "Hours": "Monday to Friday, 6:30 a.m. to 5:30 p.m.",
+        "Tip": "Request care early on MilitaryChildCare.com, and call the center to confirm openings."
+      },
+      "source": {
+        "label": "Fort Belvoir MWR: Child Development Centers (official)",
+        "url": "https://belvoir.armymwr.com/programs/child-development-center-cdc/contact"
+      },
+      "verified": "2026-11-04"
+    },
+    {
+      "id": "rent_buy",
+      "title": "Rent or Buy?",
+      "type": "rentbuy",
+      "data": {
+        "intro": [
+          "Whether to rent or buy is the biggest money decision of most PCS moves. In Charlottesville, home prices are well above most military markets, so the stakes are higher than usual."
+        ],
+        "rent": [
+          "Your tour is about three years or less, or your orders feel uncertain.",
+          "You want time to learn the city, the county and Greene County before committing.",
+          "You'd rather not gamble on resale timing in a high-priced market when you PCS out.",
+          "Your BAH covers rent in the area you'd choose."
+        ],
+        "buy": [
+          "You expect to stay four years or more.",
+          "You want to use your VA loan and build equity instead of paying rent.",
+          "A home in Greene County or northern Albemarle fits your budget.",
+          "You've found a neighborhood and commute you're confident about."
+        ],
+        "bottom_line": "Charlottesville's prices make buying a bigger commitment than at most bases. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+      }
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your First 30 Days",
+      "type": "pcs_first30",
+      "data": {
+        "intro": [
+          "The first month at a small site with no big base nearby is mostly about setting up off post. Knocking these out early makes everything else easier."
+        ],
+        "steps": [
+          {
+            "title": "Line up temporary lodging",
+            "text": "There's no lodging on Rivanna Station, so book a hotel or short-term rental near US-29 before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt."
+          },
+          {
+            "title": "In-process and update DEERS",
+            "text": "Report to your unit, and make sure DEERS and ID cards are current for every family member. ID card appointments are limited locally, so book one early."
+          },
+          {
+            "title": "Start your home search",
+            "text": "Call Fort Belvoir's Housing Services Office for off-post counseling, and decide early between the city, northern Albemarle County and Greene County."
+          },
+          {
+            "title": "Sort out vehicle taxes",
+            "text": "Virginia counties and cities tax vehicles every year. If your legal residence is outside Virginia, file for the military exemption with your county or city. Albemarle County asks for a current LES every year."
+          },
+          {
+            "title": "Enroll the kids in school",
+            "text": "Your address decides the district: Albemarle County, Charlottesville City or Greene County. Contact the district early and bring records and immunizations."
+          },
+          {
+            "title": "Set up healthcare",
+            "text": "Check whether your home ZIP qualifies for TRICARE Prime Remote, then pick a civilian primary care doctor in the TRICARE East network."
+          }
+        ]
+      }
+    },
+    {
+      "id": "faq",
+      "title": "FAQ",
+      "type": "faq",
+      "data": [
+        {
+          "q": "What happens at Rivanna Station?",
+          "a": "It's home to the National Ground Intelligence Center (NGIC), the Army's center for intelligence on foreign ground forces. The Defense Intelligence Agency and the National Geospatial-Intelligence Agency also work there."
+        },
+        {
+          "q": "Is there housing on post?",
+          "a": "No. Rivanna Station has no family housing or barracks, so everyone lives off post. Fort Belvoir's Housing Services Office offers off-post counseling by phone."
+        },
+        {
+          "q": "Where do families live?",
+          "a": "Mostly in northern Albemarle County (Hollymead, Forest Lakes), Greene County (Ruckersville) or the City of Charlottesville. Greene is the least expensive of the three and about 15 minutes from the gate."
+        },
+        {
+          "q": "Is there a commissary or military hospital?",
+          "a": "No. The nearest commissaries and the nearest military hospital, at Fort Belvoir, are about 2 hours away. Families use civilian doctors through TRICARE, and many qualify for TRICARE Prime Remote."
+        },
+        {
+          "q": "What is the BAH area?",
+          "a": "Rivanna Station is MHA VA295 (Charlottesville). Use the calculator above for your grade."
+        },
+        {
+          "q": "Is the JAG School the same place?",
+          "a": "No. The Army's Judge Advocate General's Legal Center and School is a separate site next to UVA's law school, about 11 miles south of Rivanna Station."
+        }
+      ]
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": [
+        {
+          "name": "Downtown Mall",
+          "category": "In town",
+          "blurb": "Charlottesville's pedestrian main street, with restaurants, shops and an outdoor amphitheater.",
+          "maps_query": "Downtown Mall, Charlottesville, VA"
+        },
+        {
+          "name": "Monticello",
+          "category": "History",
+          "blurb": "Thomas Jefferson's home and gardens, on a mountaintop just southeast of town.",
+          "maps_query": "Monticello, Charlottesville, VA"
+        },
+        {
+          "name": "Shenandoah National Park",
+          "category": "Outdoors",
+          "blurb": "Skyline Drive and Blue Ridge hiking, reached through Ruckersville on US-33.",
+          "maps_query": "Swift Run Gap Entrance, Shenandoah National Park, VA"
+        },
+        {
+          "name": "University of Virginia",
+          "category": "In town",
+          "blurb": "Jefferson's historic Lawn and Rotunda, plus college sports and concerts.",
+          "maps_query": "The Rotunda, University of Virginia, Charlottesville, VA"
+        }
+      ]
+    }
+  ]
+}
