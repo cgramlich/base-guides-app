@@ -9,7 +9,7 @@
   "coords": { "lat": 31.87, "lng": -81.61, "label": "Hinesville, GA" },
   "tz": "America/New_York",
   "last_full_review": "2026-06-25",
-  "_note": "Army post (coastal GA, Hinesville/Savannah). Paired with Hunter Army Airfield in Savannah. Facts verified from official sources (home.army.mil/stewart, winn.tricare.mil, fortstewartfamilyhomes.com/Balfour Beatty, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA GA080 (Fort Stewart) via the bah_rates single source of truth. Housing operated by Balfour Beatty. Medium-confidence flags: base coords (approx), representative off-base ZIP 31313 (Hinesville).",
+  "_note": "Army post (coastal GA, Hinesville/Savannah). Paired with Hunter Army Airfield in Savannah. Facts verified from official sources (home.army.mil/stewart, winn.tricare.mil, DeCA/AAFES). BAH MHA GA080 (Fort Stewart) via the bah_rates single source of truth. Housing operated by Balfour Beatty. Corrected 2026-11-10 from the website-page research (Base Guides/page-builder/research/stewart-facts.md): DoWEA runs three PK-6 schools on post (the guide said no DoDEA); Richmond Hill is the most expensive town, not low cost; Hinesville rent is slightly above Savannah's; gates, housing offices and inventory from the official pages; 'largest Army installation east of the Mississippi' now sourced to army.mil (Oct 2024, nearly 280,000 acres) and AJC. Removed the unsupported REAL ID line and the 'different MHA' claim for Hunter (third-party only). fortstewartfamilyhomes.com blocks automated reads. Medium-confidence flags: base coords (approx), representative off-base ZIP 31313 (Hinesville).",
   "sections": [
     {
       "id": "quick_facts",
@@ -20,64 +20,64 @@
         "Location": "Hinesville, GA (near Savannah)",
         "Signature unit": "3rd Infantry Division (Dog Face Soldiers)",
         "Paired with": "Hunter Army Airfield (Savannah)",
-        "Distinction": "Largest Army installation east of the Mississippi (by acreage)",
+        "Distinction": "Largest Army installation east of the Mississippi, nearly 280,000 acres",
         "Setting": "Coastal Georgia Lowcountry"
       },
-      "source": { "label": "Fort Stewart-Hunter (official)", "url": "https://home.army.mil/stewart/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Stewart-Hunter (official); army.mil (Oct 2024, nearly 280,000 acres)", "url": "https://www.army.mil/article/280226" },
+      "verified": "2026-11-10"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Fort Stewart is home to the 3rd Infantry Division and is the largest Army installation east of the Mississippi River by acreage. Its wide ranges in coastal Georgia support heavy armor and combined-arms training.",
-        "It is paired with Hunter Army Airfield in Savannah, about 40 miles northeast, which hosts aviation and rapid-deployment units. Together they form the Fort Stewart-Hunter community."
+        "Fort Stewart is home to the 3rd Infantry Division (\"Rock of the Marne\"), with the 1st and 2nd Armored Brigade Combat Teams, the 3rd Combat Aviation Brigade, Division Artillery and the Division Sustainment Brigade. At nearly 280,000 acres it is the largest Army installation east of the Mississippi River.",
+        "It is paired with Hunter Army Airfield in Savannah, home of the 3rd Combat Aviation Brigade, about an hour's drive from Hinesville. Tenant units across the two posts include the 1st Battalion, 75th Ranger Regiment and the 3rd Battalion, 160th Special Operations Aviation Regiment. Together they form the Fort Stewart-Hunter community."
       ],
-      "source": { "label": "Fort Stewart-Hunter (official)", "url": "https://home.army.mil/stewart/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Stewart-Hunter (official) units pages; army.mil (Oct 2024)", "url": "https://home.army.mil/stewart/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "stewart_decision",
-      "title": "Hinesville or Savannah? Coastal Georgia Living",
+      "title": "Hinesville, Richmond Hill or Savannah? The County Decision",
       "type": "killer",
       "data": {
-        "subtitle": "Fort Stewart sits in small-town Hinesville, with Savannah and Hunter Army Airfield about 40 minutes northeast. Where you live trades a short, affordable commute against the bigger-city pull of Savannah.",
+        "subtitle": "Home prices, school results and the drive change sharply by county. Hinesville at the front gate has the lowest typical home value of the towns we compared; Richmond Hill costs about 75% more, but its district reports the highest 2026 graduation rate we could confirm; Savannah puts you near Hunter Army Airfield.",
         "intro": [
-          "Hinesville grew up around the post and is an affordable, convenient military town right outside the gates. Savannah, to the northeast, offers a historic city, beaches, and more to do, but a longer commute to Fort Stewart (it's close, though, if you work at Hunter).",
-          "Which installation you report to (Stewart or Hunter) naturally pulls you toward one end. On-post housing is available at both."
+          "Zillow's typical home value for September 2026 is $239,104 in Hinesville, $418,261 in Richmond Hill, $318,893 in Savannah and $290,159 in Ludowici. Renting is different: Hinesville's typical rent ($1,748, including apartments) is slightly above Savannah's ($1,712).",
+          "DoWEA runs three elementary schools on Fort Stewart for families in post housing; grades 7 to 12 attend Liberty County schools (class of 2025 graduation rate 91.6%). Bryan County Schools (Richmond Hill) reports a class of 2026 rate of 94.4% and Savannah-Chatham 87.8%, against 88.5% statewide. Sales tax is 9% in Liberty, Bryan and Long counties and 7% in Chatham."
         ],
         "recommendations": [
-          { "who": "Shortest commute to Stewart", "advice": "Hinesville and nearby Richmond Hill keep you close to the gates with a low cost of living." },
-          { "who": "Assigned to Hunter", "advice": "Savannah and Richmond Hill put you near Hunter Army Airfield and the city's amenities." },
-          { "who": "City and coast", "advice": "Savannah offers history, dining, and Tybee Island beaches at a longer drive from Stewart." },
-          { "who": "On-post option", "advice": "On-post housing (Balfour Beatty) is available at both Stewart and Hunter and is worth considering for proximity." }
+          { "who": "Shortest commute to Stewart", "advice": "Hinesville is about 7 minutes from Winn Army Community Hospital with no traffic and has the lowest typical home value of the towns we compared." },
+          { "who": "Assigned to Hunter", "advice": "Savannah is about 22 minutes from Hunter with no traffic, Richmond Hill about 31 and Pooler about 35. Chatham County (Savannah, Pooler) has the lowest sales tax here, 7%." },
+          { "who": "City and coast", "advice": "Richmond Hill (Bryan County Schools, class of 2026 graduation rate 94.4%) is about 38 minutes from Winn, but costs about 75% more than Hinesville to buy, and a week after Tropical Storm Debby in 2024 many homes and businesses there were still cut off by floodwater." },
+          { "who": "On-post option", "advice": "On-post housing (Balfour Beatty) is available at both posts, and living on Fort Stewart is the only way to use the three on-post DoD elementary schools." }
         ]
       },
-      "source": { "label": "Fort Stewart-Hunter (official)", "url": "https://home.army.mil/stewart/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Zillow Research (Sept 2026); district graduation reports; Georgia DOR sales tax chart (Oct 2026)", "url": "https://www.zillow.com/research/data/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Stewart-Hunter site before you go."
+        "Open 24 hours at Fort Stewart: Gates 1, 4, 5 and 9. Gate 2 is closed indefinitely, and Gates 3 and 7 are weekday gates (5 a.m. to 9 p.m., outbound only after 5 p.m.). At Hunter Army Airfield the Rio and Wilson gates are open 24 hours and Montgomery Gate 5:30 a.m. to 5:30 p.m.",
+        "After 9 p.m. every occupant's ID card is checked at all gates. Visitors 18 and older need a government-issued ID such as a driver's license or passport. Visitor Control Centers: Fort Stewart Building 101 (571-801-0273) and Hunter Building 1400 (571-801-6993), weekdays 6 a.m. to 4 p.m., closed on training and federal holidays. Passes can be requested up to 30 days ahead, and guards can vet visitors in-lane for a 24-hour pass. Hours change, so confirm before you go."
       ],
-      "source": { "label": "Fort Stewart-Hunter (official)", "url": "https://home.army.mil/stewart/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Stewart-Hunter gates and visitors (official)", "url": "https://home.army.mil/stewart/about/Garrison/DES/visitor-information" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-post family housing is privatized, operated by Balfour Beatty Communities as Fort Stewart Family Homes, with neighborhoods at both Fort Stewart and Hunter Army Airfield.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+        "On-post family housing is privatized and run by Balfour Beatty Communities (FSGA-HAAF Family Homes). Military OneSource lists 3,268 homes in 10 neighborhoods at Fort Stewart, two to five bedrooms; Hunter Army Airfield has five neighborhoods, two to four bedrooms. Pet fees have been cancelled for families moving in.",
+        "Army Housing Services is in Building 707 on Fort Stewart: Housing Services Office 571-801-3470. Hunter's office is Building 1201, 571-801-7956. Balfour Beatty management: Stewart 912-408-2467, Hunter 912-459-2133. A completed application puts you on the wait list; no wait times are posted, so ask for yours."
       ],
-      "source": { "label": "Fort Stewart Family Homes (partner)", "url": "https://www.fortstewartfamilyhomes.com/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Stewart Army Housing (official)", "url": "https://home.army.mil/stewart/my-fort/newcomers-1/housing" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -102,11 +102,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools. Liberty County Schools serves Hinesville and the Stewart side; Bryan County (Richmond Hill) and the Savannah-Chatham County system serve families toward Hunter.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "DoWEA (formerly DoDEA) runs three elementary schools on Fort Stewart, Diamond, Kessler and Murray, for pre-K through grade 6, about 1,330 students; only families living in on-post housing can attend. Grades 7 to 12 attend Liberty County public schools (class of 2025 graduation rate 91.6%).",
+        "Off post, Bryan County Schools (Richmond Hill) reports a class of 2026 graduation rate of 94.4% and Savannah-Chatham 87.8%, against 88.5% statewide; Long County serves Ludowici. School Support Services: 571-801-0896, by appointment. Confirm the district and campus for any address."
       ],
-      "source": { "label": "Liberty County School System (official)", "url": "https://www.liberty.k12.ga.us/" },
-      "verified": "2026-06-25"
+      "source": { "label": "DoWEA Fort Stewart Schools (official)", "url": "https://www.dodea.edu/americas/southeast/fort-stewart-schools" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -120,11 +120,11 @@
       "type": "facts",
       "data": {
         "Hospital": "Winn Army Community Hospital",
-        "Care": "Full-service hospital on Fort Stewart with inpatient, emergency, and specialty clinics; a clinic serves Hunter",
+        "Care": "Hospital on Fort Stewart with a 24/7 emergency room; Tuttle Army Health Clinic serves Hunter, and the Richmond Hill Medical Home is an Army primary care clinic in Richmond Hill",
         "TRICARE region": "East (Humana Military)"
       },
       "source": { "label": "Winn Army Community Hospital (official)", "url": "https://winn.tricare.mil/" },
-      "verified": "2026-06-25"
+      "verified": "2026-11-10"
     },
     {
       "id": "shopping",
@@ -155,7 +155,7 @@
           "The market is steady and you could rent the home out later if needed.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer. Hinesville is affordable, so BAH often stretches well, while Savannah-area prices run higher. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. Hinesville has the lowest typical home value of the towns we compared, but its typical rent is slightly above Savannah's, so compare rent and price town by town. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -168,8 +168,8 @@
           { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
           { "title": "Start with the Housing Office", "text": "Check on-base availability at Stewart or Hunter and get the housing office's read on off-base neighborhoods before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Liberty, Bryan, or Savannah-Chatham) early and bring records and immunizations." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and the visitor-pass process for guests. Georgia charges a one-time title tax on vehicles titled here (3% for new residents); nonresident service members are exempt with form PT-472NS, so ask the county tag office." },
+          { "title": "Enroll the kids in school", "text": "Families in on-post housing with children in pre-K to grade 6 use the DoWEA schools on Fort Stewart; otherwise contact the gaining district (Liberty, Bryan, Long or Savannah-Chatham) early and bring records and immunizations. School Support Services: 571-801-0896." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Winn Army Community Hospital or network providers." }
         ]
       }
@@ -179,10 +179,11 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What's based at Fort Stewart?", "a": "The 3rd Infantry Division. It's the largest Army installation east of the Mississippi by acreage, and it's paired with Hunter Army Airfield in Savannah for aviation and rapid-deployment units." },
-        { "q": "Where do families live?", "a": "Hinesville and Richmond Hill are closest and most affordable for Stewart; Savannah suits those at Hunter or wanting city life and beaches. On-post housing is available at both." },
-        { "q": "Is Hunter Army Airfield part of this?", "a": "Yes. Hunter, in Savannah about 40 miles northeast, is part of the Fort Stewart-Hunter community and has its own housing, clinic, and shopping." },
-        { "q": "What is the BAH area?", "a": "Fort Stewart is MHA GA080. Use the calculator above for your grade. (Hunter, in Savannah, falls in a different MHA.)" }
+        { "q": "What's based at Fort Stewart?", "a": "The 3rd Infantry Division, with its armored, aviation, artillery and sustainment brigades. At nearly 280,000 acres it's the largest Army installation east of the Mississippi, and it's paired with Hunter Army Airfield in Savannah, home of the 3rd Combat Aviation Brigade." },
+        { "q": "Where do families live?", "a": "Hinesville is closest to Stewart and has the lowest typical home value of the towns we compared. Richmond Hill costs about 75% more to buy, but its district reports the highest 2026 graduation rate we could confirm (94.4%). Savannah and Pooler suit families at Hunter. On-post housing is available at both posts." },
+        { "q": "Are there DoD schools on post?", "a": "Yes, for younger children: DoWEA runs three elementary schools on Fort Stewart (pre-K to grade 6) for families living in on-post housing. Grades 7 to 12 go to Liberty County schools." },
+        { "q": "Is Hunter Army Airfield part of this?", "a": "Yes. Hunter Army Airfield in Savannah is part of the Fort Stewart-Hunter community and has its own housing, Tuttle Army Health Clinic and gates. It is about an hour's drive from Hinesville with no traffic." },
+        { "q": "What is the BAH area?", "a": "Fort Stewart is MHA GA080. Use the calculator above for your grade. BAH follows your duty station's ZIP code, so if you report to Hunter Army Airfield, look up your own rate." }
       ]
     },
     {
@@ -191,7 +192,7 @@
       "type": "places_live",
       "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
       "picks": [
-        { "name": "Historic Savannah", "category": "Day trip", "blurb": "One of the South's most beautiful historic cities, about 40 minutes northeast.", "maps_query": "Historic District, Savannah GA" },
+        { "name": "Historic Savannah", "category": "Day trip", "blurb": "One of the South's best-known historic cities, about an hour from Hinesville.", "maps_query": "Historic District, Savannah GA" },
         { "name": "Tybee Island", "category": "Outdoors", "blurb": "Savannah's beach island, with a pier, lighthouse, and Atlantic shore.", "maps_query": "Tybee Island, GA" },
         { "name": "Fort Stewart Museum", "category": "History", "blurb": "The 3rd Infantry Division's museum on post.", "maps_query": "Fort Stewart Museum, GA" },
         { "name": "Richmond Hill / Ogeechee River", "category": "Outdoors", "blurb": "Parks and river access in the growing community between Stewart and Savannah.", "maps_query": "J.F. Gregory Park, Richmond Hill GA" }

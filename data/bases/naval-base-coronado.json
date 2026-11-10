@@ -5,11 +5,11 @@
   "short_name": "Coronado",
   "branch": "U.S. Navy",
   "states": ["CA"],
-  "tagline": "The West Coast hub for naval aviation and Navy SEALs, spanning eight sites around San Diego.",
+  "tagline": "The West Coast hub for naval aviation and Navy SEALs, with installations across the San Diego area.",
   "coords": { "lat": 32.70, "lng": -117.20, "label": "Coronado / San Diego, CA" },
   "tz": "America/Los_Angeles",
   "last_full_review": "2026-06-25",
-  "_note": "Navy 'metro base' of eight installations across San Diego (NAS North Island, NAB Coronado/home of West Coast SEALs & BUD/S, Naval Outlying Landing Field Imperial Beach, etc.). Facts verified from official sources (cnic.navy.mil Naval Base Coronado, Naval Medical Center San Diego, DeCA/NEX, Wikipedia for corroborated headline facts). BAH MHA CA038 (San Diego) via the bah_rates single source of truth. California is TRICARE West. San Diego is a high-cost market. Medium-confidence flags: base coords (approx, North Island), off-base ZIP 92118 (Coronado).",
+  "_note": "Navy base made up of nine installations across San Diego per Navy Region Southwest (Military OneSource still says eight): NAS North Island, NAB Coronado (home of the Navy SEALs), Naval Outlying Landing Field Imperial Beach and others. Facts verified from official sources (cnrsw.cnic.navy.mil Naval Base Coronado, Naval Medical Center San Diego, DeCA/NEX). BAH MHA CA038 (San Diego) via the bah_rates single source of truth. California is TRICARE West. Corrected 2026-11-10 from the website-page research (Base Guides/page-builder/research/coronado-facts.md): installation count (nine, not eight), three carriers, Liberty Military Housing with November 2026 waits, gates and SWIFT lanes, island vs mainland prices (Zillow Sept 2026), school districts including South Bay Union and the School Liaison, exchange and commissary locations, vehicle license fee exemption. Removed unsupported claims (few junior families on the island, newer homes and more space in Chula Vista/Eastlake, North County schools, repeat assignments common, REAL ID line). Old CNIC URL replaced. Medium-confidence flags: base coords (approx, North Island), off-base ZIP 92118 (Coronado).",
   "sections": [
     {
       "id": "quick_facts",
@@ -18,66 +18,66 @@
       "data": {
         "Branch": "U.S. Navy",
         "Location": "Coronado and around San Diego, CA",
-        "Made up of": "Eight installations, including NAS North Island and Naval Amphibious Base Coronado",
-        "Known for": "West Coast naval aviation and the home of the Navy SEALs (BUD/S)",
-        "Carriers": "Homeport for Pacific Fleet aircraft carriers at North Island",
+        "Made up of": "Nine installations per Navy Region Southwest, including NAS North Island and Naval Amphibious Base Coronado",
+        "Known for": "Naval aviation at North Island and the home of the Navy SEALs at the Amphibious Base",
+        "Carriers": "Home port to three aircraft carriers at North Island",
         "Setting": "Coastal Southern California (high cost of living)"
       },
-      "source": { "label": "Naval Base Coronado (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/navbase_coronado.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Naval Base Coronado (official, Navy Region Southwest)", "url": "https://cnrsw.cnic.navy.mil/Installations/NAVBASE-Coronado/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Naval Base Coronado is a 'metro base' of eight installations across the San Diego area. Its anchors are Naval Air Station North Island, a major West Coast naval aviation hub and carrier homeport, and Naval Amphibious Base Coronado, the home of West Coast Navy SEALs and BUD/S training.",
-        "Together the sites support carriers, helicopter squadrons, special warfare, and amphibious forces, all in a prime Southern California coastal setting that is as expensive as it is desirable."
+        "Naval Base Coronado is a group of nine Navy installations across the San Diego area, according to Navy Region Southwest. Its anchors are Naval Air Station North Island, home port to three aircraft carriers, and Naval Amphibious Base Coronado, home of the Navy SEALs, with over 30 tenant commands and about 5,000 personnel.",
+        "Navy Region Southwest says the base supports 17 squadrons, three aircraft carriers, four SEAL Teams and Navy Expeditionary Combat Command squadrons. Military OneSource counts more than 36,000 military and civilian personnel, making it the largest command in the Southwest Region."
       ],
-      "source": { "label": "Naval Base Coronado (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/navbase_coronado.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Naval Base Coronado (official, Navy Region Southwest); Military OneSource", "url": "https://cnrsw.cnic.navy.mil/Installations/NAVBASE-Coronado/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "coronado_decision",
-      "title": "San Diego: Beautiful, Desirable, and Expensive",
+      "title": "Island or Mainland? The Coronado Commute Decision",
       "type": "killer",
       "data": {
-        "subtitle": "San Diego is one of the most desirable, and most expensive, places the Navy sends families. The central question is balancing commute against how far out you'll go to make your BAH stretch.",
+        "subtitle": "Coronado's island prices are far above BAH: Zillow's typical home value there is about $2.57 million and typical rent $5,122. The mainland trades a lower price for a longer drive over the bridge or up the Silver Strand; island or mainland, everyone waits at the same gate.",
         "intro": [
-          "Coronado itself is gorgeous and pricey, so few junior families live on the island off base. Most spread across the wider San Diego metro and trade a longer commute for more affordable housing. On-base housing is in high demand.",
-          "Where you live is a balance of commute to your specific site (North Island, the Amphib Base, or elsewhere) against price, with the South Bay and inland suburbs offering more room for the money."
+          "Typical home values (Zillow, September 2026): Coronado $2,566,591, Imperial Beach $830,276, Chula Vista $845,328, National City $685,179 and San Diego citywide $980,490. Typical rents, including apartments: Coronado $5,122, Imperial Beach $2,822, Chula Vista $2,935 and El Cajon $2,259. E-5 BAH with dependents is $3,975 (2026).",
+          "The San Diego-Coronado Bay Bridge is the primary route onto the island, at about 70,000 vehicles a day (Caltrans), and about 24,000 vehicles pass the North Island main gate on a typical day, with backups on Third Street and Alameda Boulevard. From the south, the Silver Strand (State Route 75) runs from Imperial Beach to the Amphibious Base without the bridge."
         ],
         "recommendations": [
-          { "who": "Shortest commute", "advice": "Coronado and nearby Imperial Beach put you closest to North Island and the Amphib Base, but Coronado is expensive." },
-          { "who": "Value in the South Bay", "advice": "Chula Vista, Eastlake, and the South Bay offer newer homes and more space for the money, a reasonable drive south." },
-          { "who": "Family suburbs", "advice": "Inland and North County areas have well-regarded schools; weigh the longer commute and traffic." },
-          { "who": "On-base option", "advice": "On-base housing across the Coronado complex is in high demand; get on the list as early as possible." }
+          { "who": "Shortest commute", "advice": "Coronado is about 10 minutes to North Island and 6 to the Amphibious Base with no traffic, but its typical home value is about $2.57 million. Imperial Beach is about 12 minutes to the Amphibious Base up the Strand; check its beach closures and helicopter traffic first." },
+          { "who": "Value in the South Bay", "advice": "National City ($685,179) has the lowest typical home value we found, and Chula Vista ($845,328) costs about the same as Imperial Beach. Both are about 19 to 23 minutes from North Island with no traffic; some subdivisions add Mello-Roos taxes, shown on the bill as a CFD." },
+          { "who": "Schools first", "advice": "Coronado Unified posted a 99.6% Dashboard graduation rate in 2026; San Diego Unified 94.1%, Sweetwater Union High 91% and Grossmont Union High (East County) 87.4%." },
+          { "who": "On-base option", "advice": "Navy family housing is run by Liberty Military Housing. Estimated waits in November 2026 ran from 1 to 2 months (Silver Strand II, two bedrooms) to 30 to 36 months (Silver Strand I, four bedrooms) and 44 to 46 months (Amphibious Base, four-bedroom officer homes)." }
         ]
       },
-      "source": { "label": "Naval Base Coronado (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/navbase_coronado.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Zillow (Sept 2026); Caltrans (Dec 2024); Coronado Times (Sept 2026); Liberty Military Housing wait times (Nov 2026)", "url": "https://www.zillow.com/research/data/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center. Each of the Coronado complex's sites has its own gates.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Naval Base Coronado site before you go."
+        "The North Island main gate is at Third Street and Alameda Boulevard. Four of its five lanes are SWIFT biometric lanes, and everyone in the car must be enrolled to use one (children in rear-facing car seats excepted). The Navy says unenrolled drivers in the older lanes are the top cause of gate delays.",
+        "Visitors to North Island must enter by the main gate. Visitor Control Center: Gate 1, 4th Avenue, Building 680, weekdays 7 a.m. to 3:30 p.m., and 11 a.m. to 4 p.m. on the first and third weekends. No official gate hours are published, so confirm before you go."
       ],
-      "source": { "label": "Naval Base Coronado (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/navbase_coronado.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Naval Base Coronado visitor control (official)", "url": "https://cnrsw.cnic.navy.mil/Installations/NAVBASE-Coronado/Operations-and-Management/Force-Protection/Visitor-Control/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "The Coronado complex has privatized on-base family housing across several neighborhoods, including communities on and near Coronado.",
-        "Demand is high in this expensive market, so eligibility and waitlists matter. Start with the housing office for the current manager, options, and timelines."
+        "Navy family housing is privatized and run by Liberty Military Housing (619-556-7667). On the island: NAS North Island, the Amphibious Base (O-4 and O-5), Silver Strand I (E-6 to E-9) and Silver Strand II (E-1 to E-6). Off the island, for E-1 to E-6: Holly Square (Imperial Beach), Lofgren Terrace (Chula Vista) and Bonita Bluffs (Spring Valley).",
+        "Start with the Navy Housing Service Center at Naval Base San Diego, Building 3544, 2625 LeHardy St., 619-556-8443 (weekdays 8 a.m. to 5 p.m.). Estimated November 2026 waits ran from 1 to 2 months (Silver Strand II, two bedrooms) to 44 to 46 months (Amphibious Base, four-bedroom officer homes); NAS North Island two-bedroom homes ran 6 to 8 months."
       ],
-      "source": { "label": "Naval Base Coronado (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrsw/installations/navbase_coronado.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Navy Housing, Naval Base Coronado (official)", "url": "https://ffr.cnic.navy.mil/Navy-Housing/Housing-By-Region/Southwest/NAVBASE-Coronado/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -102,11 +102,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools. Coronado Unified serves the island, while families across the metro attend districts like Chula Vista, Sweetwater Union, and San Diego Unified depending on where they live.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "DoWEA (formerly DoDEA) runs no schools in California; children attend local public schools. Coronado Unified serves Coronado and posted a 99.6% Dashboard graduation rate in 2026. Off the island, South Bay Union (based in Imperial Beach), Chula Vista Elementary, National Elementary, Sweetwater Union High and San Diego Unified serve much of the area, depending on your address.",
+        "2026 Dashboard graduation rates: San Diego Unified 94.1%, Sweetwater Union High 91%, Grossmont Union High 87.4% (state 88.1%). School Liaison: 619-991-2509, Silver Strand Youth Center, 1302 Leyte Road. Confirm the district and campus for any address."
       ],
-      "source": { "label": "Coronado Unified School District (official)", "url": "https://www.coronadousd.net/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Navy Life Southwest School Liaison; California School Dashboard 2026", "url": "https://coronado.navylifesw.com/child-youth/school-liaison" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -131,11 +131,11 @@
       "title": "On-Base Shopping",
       "type": "facts",
       "data": {
-        "Commissary": "NAS North Island Commissary (DeCA)",
-        "Exchange": "Navy Exchange (NEX) San Diego / North Island"
+        "Commissary": "Commissaries at NAS North Island and OLF Imperial Beach (DeCA)",
+        "Exchange": "Navy Exchange at NAS North Island, the Amphibious Base and OLF Imperial Beach"
       },
-      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
-      "verified": "2026-06-25"
+      "source": { "label": "Naval Base Coronado facilities (official, Navy Region Southwest)", "url": "https://cnrsw.cnic.navy.mil/Installations/NAVBASE-Coronado/Operations-and-Management/Facilities-and-Resources/Commissary/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "rent_buy",
@@ -150,12 +150,12 @@
           "On-base housing or renting keeps you closer to your site without overextending."
         ],
         "buy": [
-          "You expect a long tour or repeat San Diego assignments, common in the fleet.",
+          "You expect a long tour or more San Diego assignments.",
           "You can afford the entry price and want to build equity with your VA loan.",
           "You've found a neighborhood and commute that work and plan to hold the home.",
           "You're comfortable being a long-distance landlord if you PCS before selling."
         ],
-        "bottom_line": "There is no universal right answer, and San Diego's high prices make buying a bigger commitment than usual. Many families rent or take on-base housing, especially on shorter tours. Run your BAH against the rent and home prices above, weigh your tour length and commute, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer, and San Diego's high prices make buying a bigger commitment than usual. On the island the typical rent is above even O-3 BAH, while Zillow's rent index for Imperial Beach, Chula Vista and National City, which includes apartments, is well under E-5 BAH. Run your BAH against the rent and home prices above, weigh your tour length and commute, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -167,9 +167,9 @@
         "steps": [
           { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Start with the Housing Office", "text": "On-base housing is in high demand; get on the list early and get the housing office's read on the metro before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Coronado, Chula Vista, San Diego Unified, etc.) early and bring records and immunizations." },
+          { "title": "Start with the Housing Office", "text": "Contact the Navy Housing Service Center at Naval Base San Diego (619-556-8443) for current wait times (estimated at 1 month to almost 4 years in November 2026), and get its read on the metro before you sign anything." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access, and ask about enrolling your household in SWIFT for the North Island gate. If you register a vehicle in California, nonresident service members (and a spouse who lives with them) can claim the vehicle license fee exemption with DMV form REG 5045." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Coronado Unified, South Bay Union, Chula Vista Elementary, Sweetwater Union High or San Diego Unified) early and bring records and immunizations. School Liaison: 619-991-2509." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Medical Center San Diego (Balboa) or network providers." }
         ]
       }
@@ -179,9 +179,11 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What is Naval Base Coronado?", "a": "A Navy 'metro base' of eight San Diego-area installations, anchored by NAS North Island (carrier aviation) and Naval Amphibious Base Coronado (home of West Coast SEALs and BUD/S)." },
-        { "q": "Where do families live?", "a": "Across the San Diego metro. Coronado and Imperial Beach are closest but pricey; the South Bay (Chula Vista, Eastlake) and inland suburbs offer more space for the money. On-base housing is in high demand." },
-        { "q": "Is it expensive?", "a": "Yes. San Diego is one of the costlier markets in the country, so plan on a longer commute or on-base housing to make BAH stretch." },
+        { "q": "What is Naval Base Coronado?", "a": "A group of nine San Diego-area Navy installations (Navy Region Southwest), anchored by NAS North Island, home port to three aircraft carriers, and Naval Amphibious Base Coronado, home of the Navy SEALs." },
+        { "q": "Where do families live?", "a": "Across the San Diego metro. Coronado is closest but its typical home value is about $2.57 million; Imperial Beach ($830,276) is about 12 minutes up the Strand to the Amphibious Base; National City ($685,179) and Chula Vista ($845,328) are 19 to 23 minutes to North Island with no traffic. Estimated Navy housing waits ran from 1 month to almost 4 years in November 2026." },
+        { "q": "Is it expensive?", "a": "Yes. The San Diego metro's typical home value was $926,961 in September 2026 (Zillow). California doesn't tax the military pay of nonresidents here on PCS orders, but sales tax runs 7.75% to 8.75% depending on the city." },
+        { "q": "How long is the gate line at North Island?", "a": "The Navy doesn't publish a wait time. The Coronado Times reported in September 2026 that about 24,000 vehicles pass through the main gate on a typical day and that traffic still backs up on Third Street and Alameda Boulevard. Four of the five lanes are SWIFT biometric lanes; enroll everyone who rides with you." },
+        { "q": "What should I know about Imperial Beach?", "a": "It is the closest mainland town to the Amphibious Base and far cheaper than the island. On November 9, 2026 the county listed 6 beach closures, all around Imperial Beach, and the federal boundary-water commissioner says work on the plant that treats Tijuana sewage may not be finished until the end of 2027 or a few months into 2028 (Coronado Times, November 9, 2026). An undated Navy page also says North Island's helicopter squadrons fly 95 percent of their operations at the Imperial Beach landing field." },
         { "q": "What is the BAH area?", "a": "Naval Base Coronado is MHA CA038 (San Diego). Use the calculator above for your grade." }
       ]
     },
@@ -191,7 +193,7 @@
       "type": "places_live",
       "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
       "picks": [
-        { "name": "Coronado Beach & Hotel del Coronado", "category": "Beach", "blurb": "A top-rated beach and the iconic historic hotel on Coronado.", "maps_query": "Hotel del Coronado, CA" },
+        { "name": "Coronado Beach & Hotel del Coronado", "category": "Beach", "blurb": "Coronado's wide beach and the historic Hotel del Coronado.", "maps_query": "Hotel del Coronado, CA" },
         { "name": "Balboa Park", "category": "Family", "blurb": "Museums, gardens, and the San Diego Zoo in one huge urban park.", "maps_query": "Balboa Park, San Diego CA" },
         { "name": "USS Midway Museum", "category": "Museum", "blurb": "A retired aircraft carrier turned museum on the San Diego waterfront.", "maps_query": "USS Midway Museum, San Diego CA" },
         { "name": "Gaslamp Quarter", "category": "Food & nightlife", "blurb": "Downtown San Diego's dining and entertainment district.", "maps_query": "Gaslamp Quarter, San Diego CA" }

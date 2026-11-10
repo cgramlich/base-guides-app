@@ -9,7 +9,7 @@
   "coords": { "lat": 32.35, "lng": -84.97, "label": "Columbus, GA" },
   "tz": "America/New_York",
   "last_full_review": "2026-06-25",
-  "_note": "Army training post (Columbus GA, on the Alabama line). Name history: Fort Benning -> Fort Moore (2023) -> Fort Benning (March 2025, now honoring WWI Cpl. Fred G. Benning, not the Confederate general). Facts verified from official sources (home.army.mil/benning, martin.tricare.mil, fortbenninghousing.com, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA GA075 (Fort Benning) via the bah_rates single source of truth. Housing operated by Balfour Beatty. Medium-confidence flags: base coords (approx), representative off-base ZIP 31909 (Columbus).",
+  "_note": "Army training post (Columbus GA, on the Alabama line). Name history: Fort Benning -> Fort Moore (2023) -> Fort Benning (March 2025, now honoring WWI Cpl. Fred G. Benning, not the Confederate general). Facts verified from official sources (home.army.mil/benning, martin.tricare.mil, DeCA/AAFES). BAH MHA GA075 (Fort Benning) via the bah_rates single source of truth. Housing operated by The Michaels' Organization (Heritage Landing - Fort Benning). Corrected 2026-11-10 from the website-page research (Base Guides/page-builder/research/benning-facts.md): housing operator was wrongly Balfour Beatty and the source was a third-party site (fortbenninghousing.com, 'not an official military website'); DoWEA runs five PK-8 schools on post (the guide said no DoDEA); Midland is mostly Columbus/Muscogee, not Harris County; Georgia vs Alabama tax decision added (2026 GA and 2025 AL millage, our estimates); gates from the official card; pending FY2027 NDAA name amendment noted. Removed the REAL ID line (the official visitor page says no states are under REAL ID enforcement) and the unverified 'longest urban whitewater course' claim. Medium-confidence flags: base coords (approx), representative off-base ZIP 31909 (Columbus).",
   "sections": [
     {
       "id": "quick_facts",
@@ -20,64 +20,64 @@
         "Location": "Columbus, GA (Georgia-Alabama line)",
         "Known as": "Maneuver Center of Excellence",
         "Schools": "U.S. Army Infantry School and Armor School",
-        "Also hosts": "Elements of the 75th Ranger Regiment, 1st SFAB",
-        "Note": "Reverted from 'Fort Moore' to 'Fort Benning' in 2025 (new namesake)"
+        "Also hosts": "75th Ranger Regiment, 1st Security Force Assistance Brigade, WHINSEC, Army Marksmanship Unit",
+        "Note": "Renamed from Fort Moore back to Fort Benning on March 3, 2025 (new namesake); a June 2026 House committee amendment would restore Fort Moore (no final action found as of Nov 10, 2026)"
       },
-      "source": { "label": "Fort Benning (official)", "url": "https://home.army.mil/benning/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Benning Garrison About (official)", "url": "https://home.army.mil/benning/About" },
+      "verified": "2026-11-10"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Fort Benning is the Army's Maneuver Center of Excellence, home of the Infantry School and the Armor School, where much of the Army's close-combat force is trained. It also hosts elements of the 75th Ranger Regiment and the 1st Security Force Assistance Brigade.",
-        "It sits on the Georgia-Alabama line next to Columbus. The post carried the name Fort Moore from 2023 to 2025 before reverting to Fort Benning, now honoring a World War I corporal."
+        "Fort Benning is home to the Maneuver Center of Excellence and the Armor and Infantry schools, with the Airborne and Ranger Training Brigade (Airborne School), Officer Candidate School and the 198th Infantry, 194th Armored and 316th Cavalry brigades. It also hosts the 75th Ranger Regiment, the 1st Security Force Assistance Brigade, the Western Hemisphere Institute for Security Cooperation and the Army Marksmanship Unit.",
+        "It sits on the Georgia-Alabama line next to Columbus. The post carried the name Fort Moore from 2023 to 2025 before reverting to Fort Benning on March 3, 2025, now honoring Cpl. Fred G. Benning, a World War I Distinguished Service Cross recipient. In June 2026 the House Armed Services Committee voted 29-27 to restore the Fort Moore name in the FY2027 defense bill; as of November 10, 2026 we found no final action."
       ],
-      "source": { "label": "Fort Benning (official)", "url": "https://home.army.mil/benning/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Benning Garrison About (official); army.mil (Mar 3, 2025); Military Times (Jun 5, 2026)", "url": "https://home.army.mil/benning/About" },
+      "verified": "2026-11-10"
     },
     {
       "id": "benning_decision",
-      "title": "A Training Post on the Chattahoochee",
+      "title": "Georgia or Alabama? The Fort Benning Decision",
       "type": "killer",
       "data": {
-        "subtitle": "Benning is a high-throughput training post, so a lot of the population is in school or instructing. Columbus is affordable, and the main choice is the Georgia or Alabama side of the river.",
+        "subtitle": "The Chattahoochee River is also the state line, and property tax, vehicle tax, sales tax and the school system all change across it. On our estimates a home with a $100,000 market value carries about $590 a year in property tax in Phenix City against about $1,566 in Columbus, before exemptions.",
         "intro": [
-          "As the Maneuver Center, Benning runs constant courses (Infantry, Armor, Ranger, Airborne), so many people are here for training or as cadre. The community is large and the cost of living is low.",
-          "Columbus, Georgia sits on one side of the Chattahoochee River and Phenix City, Alabama on the other, so where you live can even mean which state. Both are close to the gates, with on-post housing also available."
+          "Alabama assesses a home you live in at 10% of value, Georgia at 40%. On our estimates the combined rates are about 39 mills in Columbus Urban Service District 1 (2026), about 28.6 in unincorporated Harris County (2026), about 59 in Phenix City and about 46 in Smiths Station (2025, the latest Alabama posted; Smiths Station assumes a Lee County school tax district we could not confirm). Columbus's homestead exemption cuts $13,500 of assessed value and freezes the assessment.",
+          "Alabama exempts military retirement pay from income tax and taxes vehicles every year, though military members stationed there may keep their home-state registration. Georgia charges a one-time vehicle title tax instead, which nonresident service members don't pay (form PT-472NS). Sales tax: Columbus 9%, Harris County 8%, Phenix City 9.75%, Smiths Station about 9% (confirm locally)."
         ],
         "recommendations": [
-          { "who": "Closest and most affordable", "advice": "Columbus neighborhoods near the post and Phenix City, Alabama (just across the river) offer short commutes and low costs." },
-          { "who": "Schools and newer homes", "advice": "North Columbus and the Harris County area (Midland) are popular with families for schools, at a slightly longer drive." },
-          { "who": "On-post option", "advice": "On-post housing (Balfour Beatty) is extensive; note arrival waitlists can run a few months during renovations." },
-          { "who": "Stretch your budget", "advice": "The Columbus area is inexpensive, so BAH tends to go a long way here." }
+          { "who": "Closest and most affordable", "advice": "Columbus (about 16 minutes to Martin Army Community Hospital with no traffic, typical home value $175,906) and Phenix City, Alabama (about 18 minutes, $212,365) have the shortest drives and lowest typical home values (Zillow, Sept 2026)." },
+          { "who": "Schools first", "advice": "Harris County posted the higher 2025 Georgia School Grades single score here (84.1, against 69.3 for Muscogee), with typical homes of about $383,000 to $385,000 in Cataula and Hamilton and a 34 to 46 minute drive. Most of Midland is in Columbus and Muscogee County, so confirm by address. In Alabama, Lee County Schools (Smiths Station) earned a B (87), the highest score of the three Alabama districts here." },
+          { "who": "On-post option", "advice": "On-post housing is run by The Michaels' Organization (Heritage Landing - Fort Benning): 4,001 homes in ten communities, with waits of up to three months. Living on post is the only way to use the five on-post DoD schools." },
+          { "who": "Stretch your budget", "advice": "Columbus has the lowest typical home value of the towns we compared, but Georgia's property tax on it is higher than Alabama's, so compare the full monthly cost before you choose a side." }
         ]
       },
-      "source": { "label": "Fort Benning (official)", "url": "https://home.army.mil/benning/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Georgia DOR; Alabama DOR; Columbus, Muscogee and Harris County 2026 millage; Zillow (Sept 2026)", "url": "https://www.revenue.alabama.gov/property-tax/property-tax-assessment/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Benning site before you go."
+        "Open 24 hours: I-185/Lindsey Creek Parkway, 8th Division Road (Harmony Church) and Eddy Bridge (Lawson Army Airfield). Legacy Boulevard is open 6 a.m. to 9 p.m. daily, Custer Road (Sand Hill and Patton Village) weekdays 5 a.m. to 5 p.m. (closed weekends and federal holidays), and Buena Vista Road is outbound only.",
+        "The Visitor Control Center on Lindsey Creek Parkway is open 24 hours. A visitor pass requires a background check for everyone 18 or older in the vehicle. Military Police desk: 706-545-5223. Hours change, so confirm before you go."
       ],
-      "source": { "label": "Fort Benning (official)", "url": "https://home.army.mil/benning/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Benning gates (official)", "url": "https://home.army.mil/benning/About/gates-visitors/gates" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-post family housing is privatized, operated by Balfour Beatty Communities, across about ten neighborhoods. Because of high occupancy and ongoing renovations, arriving families should plan for possible waitlists.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner early for current options."
+        "On-post family housing is run by The Michaels' Organization as Heritage Landing - Fort Benning: 4,001 family homes in ten communities. Norton Court is being rebuilt (work began in May 2026, replacing 112 homes built in 1949). The Housing Office warns of waits of up to three months; you join the list by rank, bedroom need and the communities you choose.",
+        "Heritage Landing: (706) 685-3939; Welcome Center: 601 Lumpkin Street. Army Housing Division: (706) 545-3921. Emergency housing hotline: (706) 626-2002. Inspect for mold, leaks and pests before you sign: a July 2026 report from Sen. Jon Ossoff's office included Fort Benning families' accounts of mold, lead and cockroaches."
       ],
-      "source": { "label": "Fort Benning housing (partner)", "url": "https://www.fortbenninghousing.com/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Benning Military Housing Office (official)", "url": "https://home.army.mil/benning/About/garrison/housing" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -102,11 +102,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools. Muscogee County (Columbus) serves much of the area, with Harris County (Midland) popular for schools and Russell County / Phenix City on the Alabama side.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "DoWEA (formerly DoDEA) lists five schools on post for pre-K through grade 8, and only families living on Fort Benning can attend. There is no on-post high school: on-post students may attend Spencer High (Muscogee County), Chattahoochee County High or Russell County High, with transportation provided.",
+        "Off post: Muscogee County (Columbus) scored 69.3 on Georgia's 2025 School Grades single score and Harris County 84.1 (Georgia 78.0), with class of 2025 graduation rates of 96.09% and 94.87%. In Alabama, Phenix City Schools earned a B (85), Russell County B (84) and Lee County (Smiths Station) B (87) for 2024-25. School Support Services: (706) 545-2034. Confirm the district for any address."
       ],
-      "source": { "label": "Muscogee County School District (official)", "url": "https://www.muscogee.k12.ga.us/" },
-      "verified": "2026-06-25"
+      "source": { "label": "DoWEA Fort Benning Schools (official)", "url": "https://www.dodea.edu/americas/southeast/fort-benning-schools" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -120,11 +120,11 @@
       "type": "facts",
       "data": {
         "Hospital": "Martin Army Community Hospital",
-        "Care": "A modern hospital on post with inpatient, emergency, and specialty care",
+        "Care": "Hospital on post with inpatient and outpatient care and an emergency room",
         "TRICARE region": "East (Humana Military)"
       },
       "source": { "label": "Martin Army Community Hospital (official)", "url": "https://martin.tricare.mil/" },
-      "verified": "2026-06-25"
+      "verified": "2026-11-10"
     },
     {
       "id": "shopping",
@@ -155,7 +155,7 @@
           "The affordable Columbus market fits your budget for a home you like.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer. The Columbus area is inexpensive, so BAH often stretches well and many longer-tour families buy. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. Home prices around Columbus are low, but property tax differs a lot between Georgia and Alabama, so compare the full monthly cost. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -168,8 +168,8 @@
           { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
           { "title": "Start with the Housing Office", "text": "Check on-base availability (and waitlist) and get the housing office's read on off-base neighborhoods before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Muscogee, Harris, or Phenix City) early and bring records and immunizations." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and the visitor-pass process for guests. In Georgia, nonresident service members don't pay the vehicle title tax (form PT-472NS); in Alabama, military members stationed there may keep their home-state registration." },
+          { "title": "Enroll the kids in school", "text": "Families living on post use the five DoWEA schools (pre-K to grade 8); otherwise contact the gaining district (Muscogee, Harris, Phenix City, Russell or Lee County) early and bring records and immunizations. School Support Services: (706) 545-2034." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Martin Army Community Hospital or network providers." }
         ]
       }
@@ -179,9 +179,10 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "Is it Fort Benning or Fort Moore?", "a": "Fort Benning, as of March 2025. It was Fort Moore from 2023 to 2025; the name now honors a World War I corporal, Fred G. Benning, rather than the Confederate general." },
-        { "q": "What happens at Benning?", "a": "It's the Maneuver Center of Excellence, home of the Infantry and Armor Schools, plus Ranger training and elements of the 75th Ranger Regiment. Many people are here for training or as cadre." },
-        { "q": "Where do families live?", "a": "Columbus and Phenix City (Alabama, across the river) are closest and most affordable; North Columbus and Harris County are popular for schools. On-post housing is extensive but can have waitlists." },
+        { "q": "Is it Fort Benning or Fort Moore?", "a": "Fort Benning, as of March 3, 2025. It was Fort Moore from 2023 to 2025; the name now honors a World War I corporal, Fred G. Benning, rather than the Confederate general. In June 2026 the House Armed Services Committee voted 29-27 to restore the Fort Moore name in the FY2027 defense bill; as of November 10, 2026 we found no final action." },
+        { "q": "What happens at Benning?", "a": "It's home to the Maneuver Center of Excellence and the Armor and Infantry schools, with Airborne and Ranger training, Officer Candidate School, the 75th Ranger Regiment and the 1st Security Force Assistance Brigade." },
+        { "q": "Where do families live?", "a": "Columbus and Phenix City (Alabama, across the river) are closest, with the lowest typical home values. Harris County posted the higher Georgia school score, and Lee County (Smiths Station) the highest Alabama score here. On-post housing has 4,001 homes, with waits of up to three months." },
+        { "q": "Are there DoD schools on post?", "a": "Yes. DoWEA lists five schools on Fort Benning for pre-K through grade 8, for families living on post. On-post high schoolers may attend Spencer, Chattahoochee County or Russell County High, with transportation provided." },
         { "q": "What is the BAH area?", "a": "Fort Benning is MHA GA075. Use the calculator above for your grade." }
       ]
     },
@@ -192,7 +193,7 @@
       "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
       "picks": [
         { "name": "National Infantry Museum", "category": "Museum", "blurb": "An acclaimed museum honoring the Army infantry, just outside Fort Benning.", "maps_query": "National Infantry Museum, Columbus GA" },
-        { "name": "Columbus Riverwalk & Whitewater", "category": "Outdoors", "blurb": "A scenic Chattahoochee riverwalk and the longest urban whitewater rafting course in the world.", "maps_query": "Columbus Riverwalk, Columbus GA" },
+        { "name": "Columbus Riverwalk & Whitewater", "category": "Outdoors", "blurb": "A scenic Chattahoochee riverwalk with urban whitewater rafting.", "maps_query": "Columbus Riverwalk, Columbus GA" },
         { "name": "Providence Canyon State Park", "category": "Outdoors", "blurb": "Georgia's 'Little Grand Canyon,' colorful gullies a short drive south.", "maps_query": "Providence Canyon State Park, GA" },
         { "name": "Callaway Gardens", "category": "Outdoors", "blurb": "A large gardens and resort destination at Pine Mountain, north of Columbus.", "maps_query": "Callaway Gardens, Pine Mountain GA" }
       ]

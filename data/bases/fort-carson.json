@@ -9,7 +9,7 @@
   "coords": { "lat": 38.74, "lng": -104.79, "label": "Colorado Springs, CO" },
   "tz": "America/Denver",
   "last_full_review": "2026-06-25",
-  "_note": "Army post on the Colorado Front Range (Colorado Springs). Facts verified from official sources (home.army.mil/carson, evans.tricare.mil, fortcarsonhousing/Balfour Beatty, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA CO046 (Colorado Springs) via the bah_rates single source of truth. Housing operated by Balfour Beatty Communities. High altitude (~5,800-6,000 ft). Medium-confidence flags: base coords (approx), representative off-base ZIP 80911 (Security-Widefield, Colorado Springs).",
+  "_note": "Army post on the Colorado Front Range (Colorado Springs). Facts verified from official sources (home.army.mil/carson, evans.tricare.mil, DeCA/AAFES). BAH MHA CO046 (Colorado Springs) via the bah_rates single source of truth. Housing operated by Balfour Beatty Communities (Fort Carson Family Homes). High altitude (Colorado Springs 6,035 ft). Corrected 2026-11-10 from the website-page research (Base Guides/page-builder/research/carson-facts.md): housing source was a third-party site (fortcarsonhousing.com, 'not an official military website'), now the Army housing page; Security-Widefield is mostly Widefield D3, not D8; Cheyenne Mountain D12 added as a top-rated district and Falcon D49's status corrected; gates from the official page; 3rd Brigade is now Stryker; prices flat to slightly down, not rising. Removed unsourced tenure claims ('many families extend or return', 'three or more years is common') and the REAL ID line. Medium-confidence flags: base coords (approx), representative off-base ZIP 80911 (Security-Widefield, Colorado Springs).",
   "sections": [
     {
       "id": "quick_facts",
@@ -20,64 +20,64 @@
         "Location": "Colorado Springs, CO (Front Range)",
         "Signature units": "4th Infantry Division and 10th Special Forces Group (Airborne)",
         "Also hosts": "4th Combat Aviation Brigade, 1st Space Brigade",
-        "Setting": "Foot of the Rocky Mountains, around 5,800-6,000 ft",
+        "Setting": "Foot of the Rocky Mountains, about 6,000 ft (Colorado Springs: 6,035 ft)",
         "Nearby": "Part of a major military region (with Peterson and Schriever SFBs, USAFA)"
       },
-      "source": { "label": "Fort Carson (official)", "url": "https://home.army.mil/carson/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Carson (official); Fort Carson MWR Newcomers (altitude)", "url": "https://home.army.mil/carson/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Fort Carson, the 'Mountain Post,' is home to the 4th Infantry Division and the 10th Special Forces Group (Airborne), along with the 4th Combat Aviation Brigade and the 1st Space Brigade.",
+        "Fort Carson, the 'Mountain Post,' is home to the 4th Infantry Division, with the 1st, 2nd and 3rd Stryker Brigades and the 4th Combat Aviation Brigade, and to the 10th Special Forces Group (Airborne) and the 1st Space Brigade.",
         "It sits at the foot of the Rocky Mountains just south of Colorado Springs, a region thick with military presence that also includes Peterson and Schriever Space Force Bases and the Air Force Academy."
       ],
-      "source": { "label": "Fort Carson (official)", "url": "https://home.army.mil/carson/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Carson 4th Infantry Division units and tenants (official)", "url": "https://home.army.mil/carson/units-tenants/4th-infantry-division/4id/4id-units" },
+      "verified": "2026-11-10"
     },
     {
       "id": "frontrange_decision",
-      "title": "The Mountain Post: Front Range Living",
+      "title": "Which School District? The Fort Carson Decision",
       "type": "killer",
       "data": {
-        "subtitle": "Colorado Springs pairs an outdoor, mountain lifestyle with a big, established military community. Where you live trades commute against schools and how close you want to be to the foothills, and the altitude is real.",
+        "subtitle": "Around Colorado Springs the school district changes from one neighborhood to the next, and so can the tax bill. The on-post schools belong to Fountain-Fort Carson D8; Cheyenne Mountain D12 and Academy D20 earned the state's top rating in 2025.",
         "intro": [
-          "The draw here is the Front Range: hiking, skiing, and Pikes Peak out the window, plus a large, settled military community. Many families extend or return, so longer roots are common.",
-          "Fort Carson sits on the south side of Colorado Springs. Where you live usually comes down to commute and school district, from the close-in south side to the north-side suburbs near the other installations. Note the high altitude takes some adjustment."
+          "In the state's 2025 district ratings, Cheyenne Mountain D12 (84.3% of points) and Academy D20 earned Accredited with Distinction, Fountain-Fort Carson D8 (57.1%) and Widefield D3 (58%) were Accredited, and Colorado Springs D11 (48.9%) and Harrison D2 (53%) were on Improvement Plans. Colorado has open enrollment, so you can apply to a district outside your zone.",
+          "Metro districts, typically found in newer neighborhoods, add their own property tax (one, Lorson Ranch, allows up to 50 mills for debt, subject to adjustment), and 2026 tax bills rose sharply as temporary discounts ended. Home values were flat to slightly down over the year: Zillow's typical home value in Colorado Springs was $439,542 in September 2026, down 1.5%. The altitude (Colorado Springs is 6,035 ft) takes some adjustment."
         ],
         "recommendations": [
-          { "who": "Closest to the gates", "advice": "Fountain and the Security-Widefield area sit just south of post (Fountain-Fort Carson School District 8) with the shortest commute." },
-          { "who": "Top-rated schools", "advice": "North-side and east-side areas (Academy District 20, parts of Falcon) are popular for schools, at a longer commute." },
-          { "who": "Outdoor lifestyle", "advice": "West-side and foothills neighborhoods put you closest to the mountains and trails, generally at a higher price." },
-          { "who": "On-post option", "advice": "On-post housing (Balfour Beatty) is large and convenient to the unit; with longer tours common, many families also buy." }
+          { "who": "Closest to the gates", "advice": "Fountain (mainly Fountain-Fort Carson D8, about 16 minutes to Evans Army Community Hospital with no traffic, typical home $385,215) and Security-Widefield (much of it Widefield D3, so confirm by address; about 22 minutes, $370,913). Gates 4 and 19, nearest those towns on the Army's access map, are weekday gates; Gate 20 by I-25 is open 24 hours." },
+          { "who": "Top-rated schools", "advice": "Cheyenne Mountain D12 and Academy D20 earned Accredited with Distinction in 2025 and keep it in the preliminary 2026 ratings. Falcon D49 is rated Improvement in the preliminary 2026 ratings (pending one school's results), so confirm the district for any address." },
+          { "who": "Outdoor lifestyle", "advice": "West-side and foothills neighborhoods put you closest to the mountains; a February 2026 Gazette report on county values said values were still going up closer to the mountains on the west side." },
+          { "who": "On-post option", "advice": "On-post housing is Fort Carson Family Homes (Balfour Beatty Communities), about 3,200 homes, with 477 new homes planned. Visit the Housing Services Office (719-238-6458) before you sign anything off post." }
         ]
       },
-      "source": { "label": "Fort Carson (official)", "url": "https://home.army.mil/carson/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Colorado Department of Education 2025 ratings; The Gazette (Feb and Aug 2026); Zillow (Sept 2026)", "url": "https://www.cde.state.co.us/schoolview/frameworks" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Carson site before you go."
+        "Open 24 hours: Gate 1 (Freedom Gate, Nelson Boulevard), Gate 3 (commercial gate, Chiles Avenue) and Gate 20 (Roosevelt Gate, Magrath Avenue by I-25). Gates 4 (Bellrichard) and 19 (Essayons Road) are open weekdays 5 a.m. to 1 p.m. both ways, then outbound only until 9 p.m., and closed weekends and holidays; Gates 5 and 6 weekdays 5 a.m. to 6 p.m.; Gate 2 is closed.",
+        "Visitor Control Center: Building 1203 off Nelson Boulevard, 5 a.m. to 1 p.m. every day. Visitors can apply for a pass online at pass.aie.army.mil. Hours change, so confirm before you go."
       ],
-      "source": { "label": "Fort Carson (official)", "url": "https://home.army.mil/carson/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Carson visitor access information (official)", "url": "https://home.army.mil/carson/about/visitor-information" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-post family housing is privatized, operated by Balfour Beatty Communities, across many villages ranging from older homes to modern new builds.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+        "On-post family housing is Fort Carson Family Homes, run by Balfour Beatty Communities: about 3,200 homes in villages across the post, with occupancy around the mid-90s percent in 2025. Of 477 new homes planned, 80 were occupied and 152 under construction in September 2026, and 300 older homes are being torn down to make room for 245 new homes for junior enlisted families.",
+        "Housing Services Office (off-post help), Building 1225, 1649 Evans Street: 719-238-6458. Army rules require you to visit it before making permanent off-post arrangements, and volunteer realtors are on site (719-526-7578). We found no official wait times, so ask for yours."
       ],
-      "source": { "label": "Fort Carson housing (partner)", "url": "https://www.fortcarsonhousing.com/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Carson housing (official)", "url": "https://home.army.mil/carson/allservices/housing" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -102,11 +102,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools, and the district depends on where you live. Fountain-Fort Carson School District 8 serves the close-in south side; Colorado Springs D11, Academy D20, Widefield D3, and Falcon D49 cover other popular areas.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "There are no DoD schools here. The five schools on post (Abrams, Mountainside, Patriot and Weikel elementary and Carson Middle) belong to Fountain-Fort Carson School District 8, and high schoolers living on post ride a bus to Fountain-Fort Carson High. Off post the district depends on your address: Widefield D3, Colorado Springs D11, Cheyenne Mountain D12, Harrison D2, Academy D20 and Falcon D49 cover other popular areas.",
+        "Colorado has open enrollment, so you can apply to a district outside your zone. School Liaison Office: 6371 Specker Ave, Building 1532, 719-526-6470 or 719-526-2463. Confirm the district and campus for any address."
       ],
-      "source": { "label": "Fountain-Fort Carson School District 8 (official)", "url": "https://www.ffc8.org/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Fort Carson education", "url": "https://installations.militaryonesource.mil/military-installation/fort-carson/education/education" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -151,12 +151,12 @@
           "Your BAH comfortably covers rent in the areas you'd consider."
         ],
         "buy": [
-          "You expect to be here three or more years, which is common at Carson.",
+          "You expect to be here three or more years.",
           "You want to use your VA loan and build equity instead of paying rent.",
-          "You're comfortable with Colorado Springs prices, which have risen in recent years.",
+          "You're comfortable with Colorado Springs prices, which were flat to slightly down over the past year (Zillow, September 2026).",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer. Colorado Springs is a desirable, growing market, and many families with longer tours buy. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. Check the full tax bill, including any metro district, and price home insurance, which hail drives up along the Front Range. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -169,8 +169,8 @@
           { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
           { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and Colorado vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact the gaining district early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Register your vehicle and sort access", "text": "Handle base access and the visitor-pass process for guests. If you register a vehicle in Colorado, nonresident service members can be exempt from the ownership tax (only) with form DR 2667, renewed every year; bring orders, military ID and a recent LES showing a non-Colorado withholding state." },
+          { "title": "Enroll the kids in school", "text": "On-post families attend Fountain-Fort Carson D8 schools; otherwise contact the gaining district early and bring records and immunizations. The School Liaison Office (719-526-6470) can help with the transfer." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Evans Army Community Hospital or network providers." }
         ]
       }
@@ -180,9 +180,10 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What's based at Fort Carson?", "a": "The 4th Infantry Division and the 10th Special Forces Group (Airborne), plus the 4th Combat Aviation Brigade and 1st Space Brigade. It's known as the 'Mountain Post.'" },
-        { "q": "Where do families live?", "a": "Fountain and Security-Widefield are closest (Fountain-Fort Carson D8); north and east areas (Academy D20) are popular for schools; the west side is closest to the mountains. On-post housing is extensive." },
-        { "q": "Anything to know about the altitude?", "a": "Yes. At roughly 5,800 to 6,000 feet, expect an adjustment period and stronger sun; hydration and pacing help at first." },
+        { "q": "What's based at Fort Carson?", "a": "The 4th Infantry Division, with three Stryker brigades and the 4th Combat Aviation Brigade, plus the 10th Special Forces Group (Airborne) and the 1st Space Brigade. It's known as the 'Mountain Post.'" },
+        { "q": "Where do families live?", "a": "Fountain (mainly Fountain-Fort Carson D8) and Security-Widefield (much of it Widefield D3) are closest; Cheyenne Mountain D12 and Academy D20 earned the state's top rating in 2025; the west side is closest to the mountains. On-post housing has about 3,200 homes." },
+        { "q": "Are there DoD schools?", "a": "No. The five on-post schools belong to Fountain-Fort Carson School District 8, and high schoolers living on post are bused to Fountain-Fort Carson High." },
+        { "q": "Anything to know about the altitude?", "a": "Yes. Colorado Springs sits at 6,035 feet, and new soldiers get 30 days to adjust before meeting Fort Carson fitness standards. Expect stronger sun, and snow anywhere from mid-October to late May." },
         { "q": "What is the BAH area?", "a": "Fort Carson is MHA CO046 (Colorado Springs). Use the calculator above for your grade." }
       ]
     },
@@ -194,8 +195,8 @@
       "picks": [
         { "name": "Garden of the Gods", "category": "Outdoors", "blurb": "A free, world-famous park of red rock formations against Pikes Peak.", "maps_query": "Garden of the Gods, Colorado Springs CO" },
         { "name": "Pikes Peak", "category": "Outdoors", "blurb": "America's Mountain, by cog railway, highway, or trail, just west of the city.", "maps_query": "Pikes Peak, CO" },
-        { "name": "Cheyenne Mountain Zoo", "category": "Family", "blurb": "The country's only mountainside zoo, famous for its giraffes.", "maps_query": "Cheyenne Mountain Zoo, Colorado Springs CO" },
-        { "name": "Royal Gorge Bridge & Park", "category": "Outdoors", "blurb": "One of the highest suspension bridges in the U.S., over the Arkansas River near Canon City.", "maps_query": "Royal Gorge Bridge and Park, CO" }
+        { "name": "Cheyenne Mountain Zoo", "category": "Family", "blurb": "A mountainside zoo above Colorado Springs, famous for its giraffes.", "maps_query": "Cheyenne Mountain Zoo, Colorado Springs CO" },
+        { "name": "Royal Gorge Bridge & Park", "category": "Outdoors", "blurb": "A suspension bridge high over the Arkansas River near Canon City.", "maps_query": "Royal Gorge Bridge and Park, CO" }
       ]
     }
   ]
