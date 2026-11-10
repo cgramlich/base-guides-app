@@ -5,11 +5,11 @@
   "short_name": "Randolph",
   "branch": "U.S. Air Force",
   "states": ["TX"],
-  "tagline": "The 'Showplace of the Air Force': flying training and AETC headquarters, northeast of San Antonio.",
+  "tagline": "Flying training, AETC headquarters and the Air Force Personnel Center, northeast of San Antonio.",
   "coords": { "lat": 29.529, "lng": -98.279, "label": "Universal City, TX" },
   "tz": "America/Chicago",
-  "last_full_review": "2026-06-24",
-  "_note": "JBSA base (San Antonio NE / Universal City). Verified from official sources (jbsa.mil, wilfordhall.tricare.mil, rfisd.net, scucisd.org, randolphfamilyhousing.com, DeCA/AAFES, DoD BAH tool). MHA TX285 (same San Antonio MHA - BAH identical to the other JBSA bases; E-4 directly confirmed at ZIP 78150). Medium-confidence flags: base coords (approx), off-base ZIP 78148 (Universal City; Schertz/Converse also valid).",
+  "last_full_review": "2026-11-10",
+  "_note": "Re-verified 2026-11-10: mission (no CSO training here; AFRS added), Taj Mahal facts from JBSA 2016 article, gates, housing brand Randolph Family Housing, RFISD transfer rules, district split (SCUC/Judson/Comal). No official source uses Showplace of the Air Force. JBSA base (San Antonio NE / Universal City). Verified from official sources (jbsa.mil, wilfordhall.tricare.mil, rfisd.net, scucisd.org, randolphfamilyhousing.com, DeCA/AAFES, DoD BAH tool). MHA TX285 (same San Antonio MHA - BAH identical to the other JBSA bases; E-4 directly confirmed at ZIP 78150). Medium-confidence flags: base coords (approx), off-base ZIP 78148 (Universal City; Schertz/Converse also valid).",
   "sections": [
     {
       "id": "quick_facts",
@@ -18,64 +18,64 @@
       "data": {
         "Branch": "U.S. Air Force (Joint Base San Antonio)",
         "Location": "Universal City / NE San Antonio, TX",
-        "Known as": "Showplace of the Air Force",
+        "Landmark": "Building 100, the 'Taj Mahal' (1931)",
         "Host wing": "12th Flying Training Wing (AETC)",
-        "Also hosts": "HQ Air Education & Training Command + Air Force Personnel Center"
+        "Also hosts": "HQ Air Education & Training Command, Air Force Personnel Center and Air Force Recruiting Service"
       },
-      "source": { "label": "JBSA-Randolph fact sheet (official)", "url": "https://www.jbsa.mil/Information/JBSA-History-Fact-Sheets/Article-View/Article/2664767/jbsa-randolph/" },
-      "verified": "2026-06-24"
+      "source": { "label": "JBSA-Randolph fact sheet; AFRS fact sheet (official)", "url": "https://www.jbsa.mil/Information/JBSA-History-Fact-Sheets/Article-View/Article/2664767/jbsa-randolph/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "JBSA-Randolph is home to the 12th Flying Training Wing, which conducts pilot instructor training, combat systems officer training, and other specialized flying training.",
-        "It also hosts the headquarters of Air Education and Training Command (AETC), the Air Force's 'First Command' for recruiting, training, and education, plus the Air Force Personnel Center (AFPC)."
+        "JBSA-Randolph is home to the 12th Flying Training Wing, whose training includes pilot instructor training (its combat systems officer training is at NAS Pensacola, Florida). The T-7A Red Hawk, which will replace the T-38C, is arriving: the third was delivered to Randolph on Aug. 25, 2026.",
+        "It also hosts the headquarters of Air Education and Training Command (AETC), the Air Force Personnel Center (AFPC) and the Air Force Recruiting Service."
       ],
-      "source": { "label": "JBSA-Randolph fact sheet (official)", "url": "https://www.jbsa.mil/Information/JBSA-History-Fact-Sheets/Article-View/Article/2664767/jbsa-randolph/" },
-      "verified": "2026-06-24"
+      "source": { "label": "12th Flying Training Wing fact sheet; AETC (official)", "url": "https://www.aetc.af.mil/News/Article-Display/Article/4583951/third-t-7a-red-hawk-arrives-at-jbsa-randolph-to-accelerate-pilot-training/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "showplace",
-      "title": "The Showplace of the Air Force",
+      "title": "The Taj Mahal and a Historic Base",
       "type": "killer",
       "data": {
-        "subtitle": "Randolph is a flying-training base built around one of the military's most iconic landmarks, and a quieter, family-friendly corner of the JBSA cluster.",
+        "subtitle": "Randolph is a flying-training base with a historic core, in the fast-growing suburbs northeast of San Antonio.",
         "intro": [
-          "Its signature is Building 100, the 1931 blue-and-gold-domed administration tower nicknamed the 'Taj Mahal,' now the 12th Flying Training Wing headquarters and the reason Randolph is called the 'Showplace of the Air Force.'",
-          "The base sits in the Universal City / Schertz area northeast of San Antonio, so the surrounding communities feel more suburban than the central-city posts."
+          "Its best-known building is Building 100, the 'Taj Mahal': completed in 1931, 170 feet high and the tallest structure on base, with a working 500,000-gallon water tank in its tower. It houses the 12th Flying Training Wing's offices, at the heart of a 410-acre historic district of 398 structures built between 1929 and 1950.",
+          "The base sits in the Universal City and Schertz area northeast of San Antonio, among fast-growing suburbs: Census estimates show Cibolo up 20.9% and New Braunfels up 35.5% from 2020 to 2025."
         ],
         "recommendations": [
-          { "who": "Where families live", "advice": "Universal City, Schertz, and Cibolo are the close-in communities, served by Schertz-Cibolo-Universal City ISD." },
-          { "who": "On-base schooling", "advice": "Randolph Field ISD runs PK-12 on base for military families." },
-          { "who": "Commute", "advice": "Northeast San Antonio, an easy drive to the rest of JBSA and into the city." }
+          { "who": "Where families live", "advice": "Universal City, Schertz, Converse and Cibolo are 5 to 11 minutes from the base with no traffic. Town and school district lines don't match: Schertz-Cibolo-Universal City ISD and Judson ISD both list parts of Universal City, Schertz and Converse, so confirm the district for any address." },
+          { "who": "On-base schooling", "advice": "Randolph Field ISD (A, 94 in 2026) is on base. Children living on base attend automatically; others need an approved transfer, given by priority, limited by staffing and screened on grades, attendance and discipline." },
+          { "who": "Commute", "advice": "Brooke Army Medical Center on Fort Sam Houston is about 25 minutes away and Wilford Hall on Lackland about 42 with no traffic, and JBSA's free base shuttles run on Lackland and Fort Sam Houston, not Randolph. TxDOT's I-35 work runs to 2027 on the central stretch and is planned for 2028 to 2032 farther north." }
         ]
       },
-      "source": { "label": "JBSA-Randolph fact sheet (official)", "url": "https://www.jbsa.mil/Information/JBSA-History-Fact-Sheets/Article-View/Article/2664767/jbsa-randolph/" },
-      "verified": "2026-06-24"
+      "source": { "label": "JBSA news: tour of JBSA-Randolph history (official)", "url": "https://www.jbsa.mil/News/News/Article/910645/tour-of-jbsa-randolph-uncovers-unique-history/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official JBSA-Randolph visitor information page before you go."
+        "Only the Lindsey (Main) Gate is open 24 hours. The East Gate opens weekdays 6 to 8 a.m. inbound and 3 to 5 p.m. outbound, the West Gate weekdays (6 a.m. to 2 p.m. inbound, to 6 p.m. outbound), and the South Gate, also the commercial gate, weekdays 6 a.m. to 6 p.m. at Lower Seguin Road and Golf Road in Schertz.",
+        "Visitors need a valid ID and a sponsor with a DoD ID card; the Lindsey Visitor Center (Bldg. 1032, 1 Harmon Drive, 210-652-2838) is open weekdays 7 a.m. to 4 p.m. Holiday hours can change (JBSA's Veterans Day 2026 notice listed the East and West gates as closed, though the standing rule lists normal hours), so confirm on the official gate page before you go."
       ],
-      "source": { "label": "JBSA-Randolph visitor info (official)", "url": "https://www.jbsa.mil/Information/Gate-Hours-Visitor-Information/JBSA-Randolph-Visitor-Info/" },
-      "verified": "2026-06-24"
+      "source": { "label": "JBSA gate hours (official)", "url": "https://www.jbsa.mil/Gate-Hours/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-base family housing is privatized, operated by Hunt Military Communities (branded locally as Randolph Family Homes).",
-        "Eligibility and availability vary by rank and family size, so check the housing office and the partner for current options."
+        "On-base family housing is Randolph Family Housing, owned and managed by Hunt Military Communities: four-bedroom duplexes and three- and four-bedroom single-family homes, more than 300 homes by Hunt's count. Rent equals your BAH at the with-dependents rate.",
+        "Waits change with the season, your rank and your bedroom entitlement, and EFMP status doesn't move you up. Military Housing Office: 610 Harmon Drive, (210) 652-1840."
       ],
-      "source": { "label": "Randolph Family Housing (partner)", "url": "https://www.randolphfamilyhousing.com/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Air Force Housing, JBSA (official)", "url": "https://www.housing.af.mil/Home/Installations/Joint-Base-San-Antonio/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -100,11 +100,12 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "On base, schooling is Randolph Field Independent School District (RFISD), a Texas public district located on JBSA-Randolph serving PK-12 (primarily on-base military families). It is not a DoDEA district.",
-        "Off base, the surrounding communities are served largely by Schertz-Cibolo-Universal City ISD (SCUCISD)."
+        "On base, schooling is Randolph Field Independent School District (RFISD), a Texas public district on JBSA-Randolph with an elementary, middle and high school. It earned an A (94) in Texas's 2026 ratings. It is not a DoDEA district.",
+        "New students must live on base or hold an approved transfer. Transfers go by priority (military children living on other federal property first, then military children living off base, then children of civilians working on federal property, then of military retirees with 20 years of service), are limited by staffing, and are screened on grades, attendance and discipline. Questions: transfers@rfisd.net.",
+        "Off base, district lines don't follow town lines: Schertz-Cibolo-Universal City ISD (B, 81) and Judson ISD (C, 71) both list parts of Universal City, Schertz and Converse, and Comal ISD (B, 88) lists Garden Ridge and New Braunfels. Confirm the district for any address. School Liaison: 210-219-8025, jbsa.slo@us.af.mil."
       ],
-      "source": { "label": "Randolph Field ISD (official)", "url": "https://www.rfisd.net/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Randolph Field ISD transfers (official)", "url": "https://www.rfisd.net/apps/pages/index.jsp?uREC_ID=766937&type=d&pREC_ID=1170354" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -118,11 +119,11 @@
       "type": "facts",
       "data": {
         "Clinic": "Randolph Clinic (559th Medical Squadron, 59th Medical Wing)",
-        "Care": "Outpatient (inpatient/hospital care at BAMC, Fort Sam Houston)",
+        "Care": "Outpatient (primary military ER: Brooke Army Medical Center, Fort Sam Houston)",
         "TRICARE region": "West"
       },
-      "source": { "label": "Randolph Clinic (official)", "url": "https://wilfordhall.tricare.mil/Clinics/Randolph-Clinic" },
-      "verified": "2026-06-24"
+      "source": { "label": "Randolph Clinic; Wilford Hall urgent care (official)", "url": "https://wilfordhall.tricare.mil/Clinics/Randolph-Clinic" },
+      "verified": "2026-11-10"
     },
     {
       "id": "shopping",
@@ -177,9 +178,9 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-          {"q": "What is Randolph known for?", "a": "It is the 'Showplace of the Air Force,' a flying-training base with the iconic Taj Mahal tower, home to the 12th Flying Training Wing, HQ AETC, and the Air Force Personnel Center."},
-          {"q": "Where do families live?", "a": "Universal City, Schertz, and Cibolo are the close-in communities, served by Schertz-Cibolo-Universal City ISD. On-base housing is run by Hunt (Randolph Family Homes)."},
-          {"q": "Is it far from the rest of San Antonio?", "a": "It sits northeast of the city, a suburban area with an easy drive to the rest of JBSA and into San Antonio."},
+          {"q": "What is Randolph known for?", "a": "A flying-training base with a historic core around Building 100, the 'Taj Mahal', home to the 12th Flying Training Wing, HQ Air Education and Training Command, the Air Force Personnel Center and the Air Force Recruiting Service."},
+          {"q": "Where do families live?", "a": "Universal City, Schertz, Converse and Cibolo are the close-in communities, split between Schertz-Cibolo-Universal City ISD and Judson ISD, so confirm the district for any address. On-base housing is Randolph Family Housing, run by Hunt Military Communities."},
+          {"q": "Is it far from the rest of San Antonio?", "a": "It sits northeast of the city. Brooke Army Medical Center on Fort Sam Houston is about 25 minutes away and Wilford Hall on Lackland about 42 with no traffic, JBSA's free base shuttles don't run at Randolph, and I-35 construction runs into the 2030s."},
           {"q": "What is the BAH area?", "a": "MHA TX285 (San Antonio), shared across JBSA. Use the calculator above."}
       ]
     },
