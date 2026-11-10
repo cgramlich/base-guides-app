@@ -120,7 +120,7 @@
       "data": {
         "Facility": "Wilford Hall Ambulatory Surgical Center",
         "Operated by": "59th Medical Wing",
-        "Care": "Outpatient, ambulatory surgery and urgent care (6 a.m. to 9 p.m. daily)", "Emergency room": "None on base since April 4, 2026; Brooke Army Medical Center at Fort Sam Houston is the primary military ER",
+        "Care": "Outpatient, ambulatory surgery and urgent care (listed as 6 a.m. to 9 p.m. daily)", "Emergency room": "None on base since April 4, 2026; Brooke Army Medical Center at Fort Sam Houston is the primary military ER",
         "TRICARE region": "West"
       },
       "source": { "label": "Wilford Hall Urgent Care Center (official)", "url": "https://wilfordhall.tricare.mil/Health-Services/Urgent-Care-Center" },
@@ -180,7 +180,7 @@
       "type": "faq",
       "data": [
           {"q": "Why am I coming to Lackland?", "a": "Lackland runs Air Force and Space Force Basic Military Training, so for many families the visit is graduation week. It is also home to the 37th Training Wing and a great deal of technical training."},
-          {"q": "How do I attend a BMT graduation?", "a": "Graduation is every week: the Airman's Run and Coin Ceremony on Wednesday morning and the parade at 9 a.m. on Thursday. Each trainee can invite six guests aged 18 or older, who need a REAL ID (or an alternative such as a passport) with their guest pass. Check the official BMT graduation site for the current schedule and rules before you travel."},
+          {"q": "How do I attend a BMT graduation?", "a": "Graduation events run on Wednesday and Thursday: the Airman's Run and Coin Ceremony on Wednesday morning and the parade at 9 a.m. on Thursday. Each trainee can invite six guests aged 18 or older, who need a REAL ID (or an alternative such as a passport) with their guest pass. Check the official BMT graduation site for the current schedule and rules before you travel."},
           {"q": "On base or off base in San Antonio?", "a": "On-base family housing is Lackland Family Homes, run by Balfour Beatty Communities, in six neighborhoods set by rank. Off base, the school district changes from one address to the next, so confirm the district and campus before you sign."},
           {"q": "What is the BAH area?", "a": "All of the JBSA bases share MHA TX285 (San Antonio). Use the calculator above for your grade."}
       ]
