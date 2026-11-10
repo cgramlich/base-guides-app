@@ -50,7 +50,7 @@
         "recommendations": [
           { "who": "Shortest commute to Stewart", "advice": "Hinesville is about 7 minutes from Winn Army Community Hospital with no traffic and has the lowest typical home value of the towns we compared." },
           { "who": "Assigned to Hunter", "advice": "Savannah is about 22 minutes from Hunter with no traffic, Richmond Hill about 31 and Pooler about 35. Chatham County (Savannah, Pooler) has the lowest sales tax here, 7%." },
-          { "who": "City and coast", "advice": "Richmond Hill (Bryan County Schools, class of 2026 graduation rate 94.4%) is about 38 minutes from Winn, but costs about 75% more than Hinesville to buy, and a week after Tropical Storm Debby in 2024 many homes and businesses there were still cut off by floodwater." },
+          { "who": "Schools first", "advice": "Richmond Hill (Bryan County Schools, class of 2026 graduation rate 94.4%) is about 38 minutes from Winn, but costs about 75% more than Hinesville to buy, and a week after Tropical Storm Debby in 2024 many homes and businesses there were still cut off by floodwater." },
           { "who": "On-post option", "advice": "On-post housing (Balfour Beatty) is available at both posts, and living on Fort Stewart is the only way to use the three on-post DoD elementary schools." }
         ]
       },
@@ -152,7 +152,7 @@
         "buy": [
           "You expect to be here three or more years.",
           "You want to use your VA loan and build equity instead of paying rent.",
-          "The market is steady and you could rent the home out later if needed.",
+          "You could rent the home out later if needed.",
           "You've found a neighborhood and commute you're confident about."
         ],
         "bottom_line": "There is no universal right answer. Hinesville has the lowest typical home value of the towns we compared, but its typical rent is slightly above Savannah's, so compare rent and price town by town. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
