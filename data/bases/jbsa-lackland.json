@@ -8,8 +8,8 @@
   "tagline": "Gateway to the Air Force: home of Air Force & Space Force Basic Military Training.",
   "coords": { "lat": 29.3877, "lng": -98.6064, "label": "San Antonio, TX" },
   "tz": "America/Chicago",
-  "last_full_review": "2026-06-24",
-  "_note": "Base #2 (schema-portability proof). Facts verified from official sources (jbsa.mil, 37trw.af.mil, basictraining.af.mil, wilfordhall.tricare.mil, lacklandisd.net, nisd.net, DeCA/AAFES, DoD BAH tool). BMT-graduation killer content is general + links the official site; detailed week-of logistics + curated local listings to come from the Touch Stay content. Housing partner (Balfour Beatty), base coords, and off-base ZIP are medium-confidence (confirm before heavy reliance).",
+  "last_full_review": "2026-11-10",
+  "_note": "Re-verified 2026-11-10: gates, BMT, housing, schools (TEA 2026) and healthcare (Wilford Hall ER became urgent care 2026-04-04). Off-base ZIP 78227 is a nearby off-base ZIP; on-base addresses are 78236. Base #2 (schema-portability proof). Facts verified from official sources (jbsa.mil, 37trw.af.mil, basictraining.af.mil, wilfordhall.tricare.mil, lacklandisd.net, nisd.net, DeCA/AAFES, DoD BAH tool). BMT-graduation killer content is general + links the official site; detailed week-of logistics + curated local listings to come from the Touch Stay content. Housing partner (Balfour Beatty), base coords, and off-base ZIP are medium-confidence (confirm before heavy reliance).",
   "sections": [
     {
       "id": "quick_facts",
@@ -19,22 +19,22 @@
         "Branch": "U.S. Air Force (Joint Base San Antonio)",
         "Location": "San Antonio, TX",
         "Known as": "Gateway to the Air Force",
-        "Host wing": "37th Training Wing (AETC)",
+        "Main wing": "37th Training Wing (AETC)", "Installation support": "502d Air Base Wing (all of JBSA)",
         "Mission": "Air Force & Space Force Basic Military Training (BMT)"
       },
-      "source": { "label": "37th Training Wing (official)", "url": "https://www.37trw.af.mil/About/" },
-      "verified": "2026-06-24"
+      "source": { "label": "37th Training Wing; JBSA newcomers (official)", "url": "https://www.37trw.af.mil/About/Fact-Sheets/Display/Article/633018/37th-training-wing/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "JBSA-Lackland is home to the 37th Training Wing, the largest training wing in the Department of the Air Force and known as the 'Gateway to the Air Force.'",
-        "Its 737th Training Group runs all enlisted Basic Military Training (BMT) for both the Air Force and Space Force, tens of thousands of recruits a year, alongside a wide range of technical and professional training. JBSA itself is the Department of Defense's largest joint base."
+        "JBSA-Lackland is home to the 37th Training Wing, the largest training wing in the U.S. Air Force and known as the 'Gateway to the Air Force.'",
+        "Its 737th Training Group runs Basic Military Training (BMT), the Department of the Air Force's only enlisted basic training location, for more than 36,000 Air Force and Space Force recruits a year, alongside a wide range of technical and professional training. Installation support across all of JBSA comes from the 502d Air Base Wing, and JBSA is the Department of Defense's largest joint base."
       ],
-      "source": { "label": "37th Training Wing (official)", "url": "https://www.37trw.af.mil/About/" },
-      "verified": "2026-06-24"
+      "source": { "label": "37th Training Wing fact sheet; 737th Training Group (official)", "url": "https://www.37trw.af.mil/About/Fact-Sheets/Display/Article/633018/37th-training-wing/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bmt_graduation",
@@ -44,38 +44,38 @@
         "subtitle": "Lackland is the only Basic Military Training site for the Air Force and Space Force, so for most families the reason you're here is graduation week.",
         "intro": [
           "Graduation week is when you'll see your Airman or Guardian for the first time since they shipped out. Families travel to San Antonio from across the country for it, and a little planning makes the trip far less stressful.",
-          "Graduation is held weekly (typically Thursdays) and includes the Airman's Run. Schedules, locations, dress expectations, and base-access rules change week to week, so always confirm the current details on the official BMT graduation site before you travel."
+          "Graduation week centers on two mornings: the Airman's Run (7:30 a.m.) and the Coin Ceremony (9:30 a.m.) on Wednesday at the Pfingston Reception Center, and the graduation parade at 9 a.m. on Thursday. Schedules, locations, dress expectations, and base-access rules can change, so always confirm the current details on the official BMT graduation site before you travel."
         ],
         "recommendations": [
-          { "who": "Sort base access early", "advice": "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID. Check the JBSA-Lackland visitor info page for current gate and pass requirements." },
+          { "who": "Sort base access early", "advice": "Each trainee can invite six guests aged 18 or older; children under 18 don't need a separate pass. Adult guests need a REAL ID-compliant ID (or an alternative such as a passport) with their guest pass. The Air Force sends guests who drive to the Selfridge West or Valley Hi gate; on Thursday Selfridge West is open only until 8 a.m., so later arrivals should use Valley Hi, which is open 24 hours. Plan ahead for traffic at the Lackland gates." },
           { "who": "Book lodging early", "advice": "Graduation weeks fill up fast. On-base lodging is limited, but there are plenty of hotels near the base and across San Antonio." },
           { "who": "Make a long weekend of it", "advice": "Most families do. The River Walk, the Alamo, and San Antonio's food scene are all close by." }
         ]
       },
       "source": { "label": "Air Force BMT Graduation (official)", "url": "https://www.basictraining.af.mil/Home/BMT-Graduation-Information/" },
-      "verified": "2026-06-24"
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "JBSA-Lackland controls access at its gates; visitors without a DoD ID need a visitor pass plus a REAL ID-compliant ID.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official JBSA-Lackland visitor information page before you go."
+        "Four gates are open 24 hours: Luke East, Valley Hi, McMullen and the Chapman Training Annex gate. Selfridge West, Selfridge East, Tinker and Security Hill keep weekday or part-day hours, the Growdon commercial gate runs 5 a.m. to 5 p.m. (closed on federal holidays), and Luke West is closed.",
+        "Visitors without a DoD ID enter through a visitor center. The Luke East Visitor Center (Bldg. 1196, 2602 Luke Blvd, 210-671-6174) reopened around the clock on October 16, 2026; the Valley Hi and McMullen visitor centers are closed. Hours change, so confirm on the official gate page before you go."
       ],
-      "source": { "label": "JBSA-Lackland visitor info (official)", "url": "https://www.jbsa.mil/Information/Gate-Hours-Visitor-Information/JBSA-Lackland-Visitor-Info/" },
-      "verified": "2026-06-24"
+      "source": { "label": "JBSA-Lackland gate hours (official)", "url": "https://www.jbsa.mil/Information/Gate-Hours-Visitor-Information/Gate-Hours/JBSA-LAK-Gates/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-base family housing at JBSA-Lackland is privatized, operated by Balfour Beatty Communities.",
-        "Eligibility and availability vary by rank and family size, so check the Air Force Housing office and the housing partner for current options and waitlists."
+        "On-base family housing is Lackland Family Homes, owned and run by Balfour Beatty Communities, in six neighborhoods set by rank: Airman Scott Village, Frank Tejeda East and West and North Wherry for E-1 to E-6, North Skeet for E-7 to E-9 and O-1 to O-6, and Lemay Estates for O-6 to O-9. Frank Tejeda West is also open to retirees, DoD civilians and the public.",
+        "The Air Force Housing page says homes aren't metered and rent covers utilities up to your full BAH; confirm with the operator. No wait times are posted, so contact the Military Housing Office (2525 Fairchild St, Bldg. 1524, (210) 671-1840) or the Lackland Family Homes leasing office ((210) 674-9366)."
       ],
-      "source": { "label": "Air Force Housing - JBSA (official)", "url": "https://www.housing.af.mil/Home/Installations/Joint-Base-San-Antonio/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Lackland Family Homes neighborhoods (Balfour Beatty)", "url": "https://www.lacklandfamilyhomes.com/neighborhoods" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -100,11 +100,12 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "On base, schooling is the civilian Lackland Independent School District (Lackland Elementary and Virginia Allred Stacey Jr/Sr High School). There is no DoDEA district here.",
-        "Off base, the area northwest of the installation is served largely by Northside Independent School District, one of the largest districts in Texas."
+        "On base, schooling is the civilian Lackland Independent School District: Lackland Elementary (pre-K to 5) and Virginia Allred Stacey Jr/Sr High School (6 to 12). It earned a B (87) in Texas's 2026 ratings, with a 100% graduation rate for the class of 2025. There is no DoDEA district here.",
+        "Children living on base attend automatically. Lackland ISD also takes a limited number of off-base transfer students each year, first come, first served, from families of active-duty members assigned to JBSA, military retirees, and JBSA or district civilians, after current transfer students who renew on time.",
+        "Off base, the district depends on the address. Districts on the west and southwest side include Northside ISD (C, 78 in 2026), Southwest ISD (B, 80) and Medina Valley ISD (B, 82), and campus ratings vary within a district, so confirm the district and campus for any address. School Liaison: 210-671-8388, jbsa.slo@us.af.mil."
       ],
-      "source": { "label": "Lackland ISD (official)", "url": "https://www.lacklandisd.net/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Texas Education Agency 2026 ratings (TXSchools.gov)", "url": "https://txschools.gov/?view=district&id=015913&tab=accountability&lng=en" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -119,11 +120,11 @@
       "data": {
         "Facility": "Wilford Hall Ambulatory Surgical Center",
         "Operated by": "59th Medical Wing",
-        "Care": "Outpatient & ambulatory surgery",
+        "Care": "Outpatient, ambulatory surgery and urgent care (6 a.m. to 9 p.m. daily)", "Emergency room": "None on base since April 4, 2026; Brooke Army Medical Center at Fort Sam Houston is the primary military ER",
         "TRICARE region": "West"
       },
-      "source": { "label": "Wilford Hall ASC (official)", "url": "https://wilfordhall.tricare.mil/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Wilford Hall Urgent Care Center (official)", "url": "https://wilfordhall.tricare.mil/Health-Services/Urgent-Care-Center" },
+      "verified": "2026-11-10"
     },
     {
       "id": "shopping",
@@ -179,8 +180,8 @@
       "type": "faq",
       "data": [
           {"q": "Why am I coming to Lackland?", "a": "Lackland runs Air Force and Space Force Basic Military Training, so for many families the visit is graduation week. It is also home to the 37th Training Wing and a great deal of technical training."},
-          {"q": "How do I attend a BMT graduation?", "a": "Graduation is typically held weekly. Bring a REAL ID and arrange base access in advance, and check the official BMT graduation site for the current schedule and rules before you travel."},
-          {"q": "On base or off base in San Antonio?", "a": "On-base family housing is run by Balfour Beatty. Off base, families spread across San Antonio, so your commute and schools depend on where you land."},
+          {"q": "How do I attend a BMT graduation?", "a": "Graduation is every week: the Airman's Run and Coin Ceremony on Wednesday morning and the parade at 9 a.m. on Thursday. Each trainee can invite six guests aged 18 or older, who need a REAL ID (or an alternative such as a passport) with their guest pass. Check the official BMT graduation site for the current schedule and rules before you travel."},
+          {"q": "On base or off base in San Antonio?", "a": "On-base family housing is Lackland Family Homes, run by Balfour Beatty Communities, in six neighborhoods set by rank. Off base, the school district changes from one address to the next, so confirm the district and campus before you sign."},
           {"q": "What is the BAH area?", "a": "All of the JBSA bases share MHA TX285 (San Antonio). Use the calculator above for your grade."}
       ]
     },
