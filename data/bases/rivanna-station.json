@@ -14,8 +14,8 @@
     "label": "Charlottesville, VA"
   },
   "tz": "America/New_York",
-  "last_full_review": "2026-11-04",
-  "_note": "Army intelligence site (NGIC, plus DIA and NGA in the Joint-Use Intelligence Analysis Facility), a sub-installation of Fort Belvoir in Albemarle County VA (Eastern time). Built 2026-11-04 at Chris's request. CONUS full template: BAH MHA VA295 Charlottesville (duty ZIP 22911; rates read from the official DoD 2026 table, not typed). No on-post housing, barracks, commissary, exchange or military clinic; CDC on site (Belvoir MWR page updated 2026-02-24). Sources: army.mil (2010 JUIAF opening, 2019 NGIC workforce ~2,500), Belvoir HSO, TRICARE Prime Remote, CAAR Q1 2026 market report, Albemarle/Lakeside MS fact sheet, ACPS 2024-25 accountability release. Medium-confidence flags: coords approximate (OpenStreetMap NGIC building); drive times are routing estimates; JAG School exchange shop comes from a 2021 Defense Affairs Committee welcome packet; Prime Remote eligibility depends on the home ZIP; Albemarle school feeder pattern from an undated fact sheet.",
+  "last_full_review": "2026-11-10",
+  "_note": "Army intelligence site (NGIC, plus DIA and NGA in the Joint-Use Intelligence Analysis Facility), a sub-installation of Fort Belvoir in Albemarle County VA (Eastern time). Built 2026-11-04 at Chris's request. CONUS full template: BAH MHA VA295 Charlottesville (duty ZIP 22911; rates read from the official DoD 2026 table, not typed). No on-post housing, barracks, commissary, exchange or military clinic; CDC on site (Belvoir MWR page updated 2026-11-10). Sources: army.mil (2010 JUIAF opening, 2019 NGIC workforce ~2,500), Belvoir HSO, TRICARE Prime Remote, CAAR Q3 2026 market report (rechecked 2026-11-10), Virginia School Quality Profiles 2025-26 (rechecked 2026-11-10), Albemarle/Lakeside MS fact sheet. Medium-confidence flags: coords approximate (OpenStreetMap NGIC building); drive times are routing estimates; JAG School exchange shop comes from a 2021 Defense Affairs Committee welcome packet and is now worded as unconfirmed; hospital renamed Alexander T. Augusta Military Medical Center; Prime Remote claim removed (depends on ZIP); sales tax vote added (unofficial results); Prime Remote eligibility depends on the home ZIP; Albemarle school feeder pattern from an undated fact sheet.",
   "sections": [
     {
       "id": "quick_facts",
@@ -56,8 +56,9 @@
       "data": {
         "subtitle": "Rivanna has no on-post housing and no big base around it, so where you live is the big decision. The closest and least expensive homes are often north of the gate, not in Charlottesville itself.",
         "intro": [
-          "Charlottesville is a pricey market for a military town. In early 2026 the median home sold for about $550,000 in Albemarle County, $477,500 in the City of Charlottesville and $397,000 in Greene County, according to the Charlottesville Area Association of Realtors.",
-          "Rivanna Station sits on US-29 about 12 miles north of downtown. Northern Albemarle neighborhoods are 5 to 15 minutes from the gate, and Greene County's Ruckersville is about 15 minutes north, so the lower-cost county is also one of the closest."
+          "Charlottesville is a pricey market for a military town. In the third quarter of 2026 the median home sold for $550,000 in Albemarle County, $495,000 in the City of Charlottesville and $400,000 in Greene County, according to the Charlottesville Area Association of Realtors. Greene's median fell 3% from a year earlier while its listings rose 38%, so buyers there have more room to negotiate.",
+          "Rivanna Station sits on US-29 about 12 miles north of downtown. Northern Albemarle neighborhoods are 5 to 15 minutes from the gate, and Greene County's Ruckersville is about 13 minutes north, so the lower-cost county is also one of the closest.",
+          "On November 3, 2026, Albemarle and Charlottesville voters approved a 1% school sales tax (unofficial results), raising the rate from 5.3% to 6.3%. Neither start date is set; in Albemarle the earliest likely start is May 1, 2027. Greene and Fluvanna voters rejected it."
         ],
         "recommendations": [
           {
@@ -66,23 +67,20 @@
           },
           {
             "who": "Most house for the money",
-            "advice": "Greene County (Ruckersville) has the lowest home prices and property tax of the three, and is still about 15 minutes away."
+            "advice": "Greene County (Ruckersville) has the lowest home prices and real estate tax rate ($0.70 per $100) of the three, keeps 5.3% sales tax after voters rejected the increase, and is about 13 minutes away."
           },
           {
             "who": "City life",
-            "advice": "Living in Charlottesville puts you near UVA and the Downtown Mall, about 25 minutes from the gate."
+            "advice": "Living in Charlottesville puts you near UVA and the Downtown Mall, about 23 minutes from the gate."
           },
           {
             "who": "Schools first",
-            "advice": "Albemarle County had a third of its schools rated Distinguished in 2024-25, well above the state average. Check the exact school for any address."
+            "advice": "Check the exact schools for any address. In Virginia's 2025-26 ratings, 8 of Albemarle's 24 schools (33%) and 1 of Greene's 5 (20%) were Distinguished, both below the 44% statewide. Near the gate, Lakeside Middle is Distinguished and Albemarle High Approaching Expectations; in Greene, William Monroe Middle is Approaching Expectations and William Monroe High Distinguished."
           }
         ]
       },
-      "source": {
-        "label": "CAAR Q1 2026 Housing Market Report",
-        "url": "https://www.realcentralva.com/wp-content/uploads/2026/05/CAAR-Q1-2026-Housing-Market-Report.pdf"
-      },
-      "verified": "2026-11-04"
+      "source": { "label": "CAAR Q3 2026 Housing Market Report; Virginia School Quality Profiles (2025-26)", "url": "https://caar.com/wp-content/uploads/2026/11/CAAR-Q3-2026-Housing-Market-Report.pdf" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
@@ -142,14 +140,11 @@
       "type": "prose",
       "data": [
         "There are no DoDEA schools here; children attend the local public schools. Your address decides the district: Albemarle County Public Schools around the station, Charlottesville City Schools inside the city, or Greene County Public Schools to the north.",
-        "Closest to the gate, northern Albemarle is served by Baker-Butler, Hollymead and Stony Point elementary schools, Lakeside Middle and Albemarle High. Boundaries change, so check the county's school lookup for any address you're considering.",
-        "Virginia rates every school each fall. Look up the latest rating for the specific schools that serve a neighborhood before you sign."
+        "Closest to the gate, northern Albemarle is served by Baker-Butler, Hollymead and Stony Point elementary schools, Lakeside Middle and Albemarle High (Stony Point has two pathways, and only one goes through Lakeside). Boundaries change, so confirm the zone for any address with ACPS Transportation, (434) 973-5716.",
+        "Virginia rates every school each fall. In the 2025-26 ratings, released in October 2026, 44% of schools statewide were Distinguished; Lakeside Middle was Distinguished and Albemarle High Approaching Expectations; Greene's William Monroe Middle was Approaching Expectations and William Monroe High Distinguished. Look up the rating for the specific schools that serve a neighborhood before you sign."
       ],
-      "source": {
-        "label": "Albemarle County Public Schools: attendance zones (official)",
-        "url": "https://www.k12albemarle.org/for-families/student-registration/attendance"
-      },
-      "verified": "2026-11-04"
+      "source": { "label": "Virginia School Quality Profiles (2025-26); ACPS attendance zones", "url": "https://schoolquality.virginia.gov/divisions/albemarle-county-public-schools" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -165,15 +160,12 @@
       "title": "Healthcare",
       "type": "facts",
       "data": {
-        "Clinic": "None on post. The nearest military hospital is Fort Belvoir Community Hospital, about 2 hours north.",
+        "Clinic": "None on post. The nearest military hospital is Alexander T. Augusta Military Medical Center (formerly Fort Belvoir Community Hospital) at Fort Belvoir, about 2 hours north.",
         "Care": "Most families use civilian doctors. UVA Health and Sentara Martha Jefferson Hospital are the main local hospitals.",
-        "TRICARE": "East region (Humana Military). Because military clinics are about 2 hours away, many families qualify for TRICARE Prime Remote. Check your home ZIP with TRICARE before you choose a plan."
+        "TRICARE": "East region (Humana Military). TRICARE Prime Remote is available in designated ZIP codes far from a military hospital or clinic; check your home ZIP with the TRICARE Plan Finder before you choose a plan."
       },
-      "source": {
-        "label": "TRICARE Prime Remote (official)",
-        "url": "https://tricare.mil/Plans/Enroll/TPR"
-      },
-      "verified": "2026-11-04"
+      "source": { "label": "TRICARE Prime Remote and East Region (official); Alexander T. Augusta Military Medical Center", "url": "https://tricare.mil/Plans/Enroll/TPR" },
+      "verified": "2026-11-10"
     },
     {
       "id": "shopping",
@@ -181,7 +173,7 @@
       "type": "facts",
       "data": {
         "Commissary": "None at Rivanna. The nearest are at MCB Quantico, Fort Belvoir and Fort Gregg-Adams, each about 2 to 2.5 hours away.",
-        "Exchange": "The JAG School in Charlottesville has a small exchange shop for basics and uniform items. Full exchanges are at the same bases as the commissaries."
+        "Exchange": "None at Rivanna. A small exchange outlet at the JAG School in Charlottesville has been reported, but we could not confirm it is open. Full exchanges are at the same bases as the commissaries."
       },
       "source": {
         "label": "DeCA store locations",
@@ -250,7 +242,7 @@
           },
           {
             "title": "Sort out vehicle taxes",
-            "text": "Virginia counties and cities tax vehicles every year. If your legal residence is outside Virginia, file for the military exemption with your county or city. Albemarle County asks for a current LES every year."
+            "text": "Virginia counties and cities tax vehicles every year. If your legal residence is outside Virginia, file for the military exemption with your county or city: Albemarle asks for an LES or commanding officer's statement every year, Charlottesville your most recent LES and Fluvanna a January LES. Greene publishes no steps, so call its Commissioner of the Revenue at 434-985-5211."
           },
           {
             "title": "Enroll the kids in school",
@@ -278,15 +270,19 @@
         },
         {
           "q": "Where do families live?",
-          "a": "Mostly in northern Albemarle County (Hollymead, Forest Lakes), Greene County (Ruckersville) or the City of Charlottesville. Greene is the least expensive of the three and about 15 minutes from the gate."
+          "a": "Mostly in northern Albemarle County (Hollymead, Forest Lakes), Greene County (Ruckersville) or the City of Charlottesville. Greene is the least expensive of the three and about 13 minutes from the gate."
         },
         {
           "q": "Is there a commissary or military hospital?",
-          "a": "No. The nearest commissaries and the nearest military hospital, at Fort Belvoir, are about 2 hours away. Families use civilian doctors through TRICARE, and many qualify for TRICARE Prime Remote."
+          "a": "No. The nearest military hospital, Alexander T. Augusta Military Medical Center at Fort Belvoir, is about 2 hours away, and the nearest commissaries are at bases a similar drive away. Families use civilian doctors through TRICARE; check whether your ZIP qualifies for TRICARE Prime Remote."
         },
         {
           "q": "What is the BAH area?",
           "a": "Rivanna Station is MHA VA295 (Charlottesville). Use the calculator above for your grade."
+        },
+        {
+          "q": "Is the sales tax going up?",
+          "a": "In Albemarle and Charlottesville, yes. Voters approved a 1% sales tax for school construction on November 3, 2026 (unofficial results), taking the rate from 5.3% to 6.3%. Neither start date is set. In Albemarle the earliest likely start is May 1, 2027, if supervisors adopt the ordinance in December, and the tax ends June 30, 2046; Charlottesville had not set a date when we checked. Greene and Fluvanna voters rejected it, so their rate stays 5.3%."
         },
         {
           "q": "Is the JAG School the same place?",

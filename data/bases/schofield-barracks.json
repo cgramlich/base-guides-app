@@ -9,8 +9,8 @@
   "tagline": "Home of the 25th Infantry Division, the 'Tropic Lightning' division, in the heart of Oahu.",
   "coords": { "lat": 21.49, "lng": -158.06, "label": "Wahiawa, HI (central Oahu)" },
   "tz": "Pacific/Honolulu",
-  "last_full_review": "2026-06-25",
-  "_note": "Army Hawaii (USAG Hawaii), central Oahu. Marked OCONUS (Hawaii PCS is an overseas-style move) but BAH-rated: MHA HI408 (Honolulu County). Facts verified from official sources (home.army.mil/hawaii, islandpalmcommunities.com, tripler.tricare.mil, DeCA/AAFES, Wikipedia for corroborated headline facts). Housing via Island Palm Communities (Lendlease). No DoDEA in Hawaii (Hawaii State DOE). Medium-confidence flags: base coords (approx), representative off-base ZIP 96789 (Mililani).",
+  "last_full_review": "2026-11-10",
+  "_note": "Army Hawaii (USAG Hawaii), central Oahu. Marked OCONUS (Hawaii PCS is an overseas-style move) but BAH-rated: MHA HI408 (Honolulu County). Facts verified from official sources (home.army.mil/hawaii, islandpalmcommunities.com, tripler.tricare.mil, DeCA/AAFES, Wikipedia for corroborated headline facts). Housing via Island Palm Communities (a Centinel community since Lendlease sold its military housing business; re-verified 2026-11-10). No DoDEA in Hawaii (Hawaii State DOE). Medium-confidence flags: base coords (approx), representative off-base ZIP 96789 (Mililani).",
   "sections": [
     {
       "id": "quick_facts",
@@ -32,11 +32,11 @@
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Schofield Barracks is the largest Army installation in Hawaii and has been the home of the 25th Infantry Division, the 'Tropic Lightning' division, since 1941. It sits on the central plateau of Oahu near Wahiawa.",
-        "It anchors U.S. Army Garrison Hawaii, which also includes Wheeler Army Airfield, Fort Shafter (the Army's Pacific headquarters), and several smaller posts across the island."
+        "Schofield Barracks, established in 1908 next to Wahiawa, is the largest Army post in Hawaii and the place where the 25th Infantry Division, the 'Tropic Lightning' division, was formed in 1941. It sits on the central plateau of Oahu.",
+        "It is part of U.S. Army Garrison Hawaii, headquartered at neighboring Wheeler Army Airfield, which also includes Fort Shafter (the Army's Pacific headquarters) and several smaller posts across the island."
       ],
-      "source": { "label": "U.S. Army Garrison Hawaii (official)", "url": "https://home.army.mil/hawaii/" },
-      "verified": "2026-06-25"
+      "source": { "label": "National Archives (2021); army.mil 25th ID history; Move With Aloha (Feb 2026)", "url": "https://home.army.mil/hawaii/about" },
+      "verified": "2026-11-10"
     },
     {
       "id": "island_decision",
@@ -46,39 +46,39 @@
         "subtitle": "Hawaii is paradise and a logistical puzzle. BAH is high but the cost of living is higher, and from Schofield's central-Oahu perch the commute and climate trade-offs differ from the town-side bases.",
         "intro": [
           "A Hawaii tour is a true OCONUS-style move even though it's a U.S. state: household goods ship by sea, you usually bring one vehicle at government expense, and imported goods cost more. On-base housing is often the best value against high island rents.",
-          "Schofield sits on the cooler, greener central plateau. Nearby Mililani and Wahiawa are convenient, while commuting to Honolulu means the famously congested H-1 and H-2 freeways, so many families prioritize living close to post."
+          "Schofield sits on the cooler, wetter central plateau: Wheeler averages 42.5 inches of rain a year, against 24.7 at the Honolulu airport. Wahiawa is about 9 minutes from the middle of the post and Mililani about 11 to 12 with no traffic, while Pearl Harbor's Nimitz Gate is about 28 and Tripler about 31. In Hawaii your street address also sets your children's school, with no school choice, so pick the neighborhood with the school in mind."
         ],
         "recommendations": [
-          { "who": "Best value: on base", "advice": "Island Palm Communities (Lendlease) runs the Army's Oahu housing; get on the list early, since on-base often beats high island rents and includes utilities." },
-          { "who": "Close and family-friendly", "advice": "Mililani and Wahiawa sit near Schofield with shorter commutes and are popular with Army families." },
+          { "who": "Best value: on base", "advice": "Island Palm Communities, a Centinel community formed in partnership with the Army, runs the Army's Oahu housing. Rent is set from your BAH (some homes carry a special rate) with utilities included. Report to the Army housing office soon after you arrive, even if you plan to live off post: the Army's guide allows 7 workdays, and Military OneSource says five days." },
+          { "who": "Close and family-friendly", "advice": "Wahiawa (about 9 minutes) and Mililani (about 11 to 12) are the closest towns. Mililani addresses are in the Mililani school complex; for a Wahiawa address, confirm the assigned school." },
           { "who": "Plan the logistics early", "advice": "Arrange your one-vehicle shipment, expect a sea shipment for household goods, and budget for a higher cost of living than the BAH suggests." },
-          { "who": "Mind the freeways", "advice": "H-1 and H-2 traffic into Honolulu is heavy; living near post saves real time day to day." }
+          { "who": "Know your gate", "advice": "Lyman, McNair, Wheeler's Kunia Gate and Helemano's main gate are open 24 hours; Foote, Macomb and Wheeler's Kawamura Gate keep shorter hours, and Funston is closed." }
         ]
       },
-      "source": { "label": "U.S. Army Garrison Hawaii (official)", "url": "https://home.army.mil/hawaii/" },
-      "verified": "2026-06-25"
+      "source": { "label": "USAG Hawaii School Information Handbook (Jan 27, 2026); State of Hawaii Data Book 2024", "url": "https://home.army.mil/hawaii/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official USAG Hawaii site before you go."
+        "Open 24 hours: Lyman (the visitor gate), McNair, Wheeler's Kunia Gate and Helemano's main gate. Foote opens weekdays 5 a.m. to 9 p.m. and weekends 9 a.m. to 5 p.m.; Wheeler's Kawamura Gate weekdays 5 a.m. to 9 p.m.; Macomb weekdays 5 a.m. to 1 p.m. plus outbound only 4 to 6 p.m.; Funston is closed. McNair is inbound only from 5 to 6:30 a.m. on weekdays.",
+        "Visitors need a REAL ID-compliant ID and a sponsor with a DoD ID. The Lyman Gate Visitor Control Center ((808) 787-0941) is open 24 hours for extended passes; one-day passes come from any Vehicle Processing Center, and visitors can get a pass online at pass.aie.army.mil. Hours change, so confirm on the official site before you go."
       ],
-      "source": { "label": "U.S. Army Garrison Hawaii (official)", "url": "https://home.army.mil/hawaii/" },
-      "verified": "2026-06-25"
+      "source": { "label": "USAG Hawaii visitor information (official)", "url": "https://home.army.mil/hawaii/about/visitor-information" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-post family housing across the Army's Oahu installations is privatized, operated by Island Palm Communities (Lendlease), with neighborhoods at Schofield, Wheeler, Helemano, Fort Shafter, and more.",
-        "Given high island rents, on-base is often the best value, so get on the list early. Eligibility and availability vary by rank and family size."
+        "On-post family housing across the Army's Oahu installations is Island Palm Communities, a Centinel community formed in partnership with the Army; Island Palm says it has more than 7,800 homes at Schofield, Wheeler, Fort Shafter, Tripler, Helemano, Aliamanu and Red Hill. Rent is set from your BAH (some homes carry a special rate), utilities are included, and each family may have up to two pets (some breeds are restricted).",
+        "Report to the Army Housing Division (Bldg. 556, 344 Heard Ave, (808) 787-7700) soon after you arrive, even if you plan to live off post (the Army's guide allows 7 workdays; Military OneSource says five days). An undated Military OneSource page says enlisted waits run from immediate to one month and officers' up to 60 days; off post, expect to pay the first month's rent plus a deposit of one month's rent, and to pay utilities yourself."
       ],
-      "source": { "label": "Island Palm Communities (partner)", "url": "https://www.islandpalmcommunities.com/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Island Palm Communities; USAG Hawaii housing (official)", "url": "https://www.islandpalmcommunities.com/about-us" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -103,11 +103,12 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "Hawaii runs a single statewide public school system (the Hawaii State Department of Education), so there is no separate local district and no DoDEA here; your school is assigned by your home address.",
-        "Confirm the specific school for any neighborhood you are considering, and ask the School Liaison Office about geographic exceptions if needed."
+        "Hawaii runs a single statewide public school system (the Hawaii State Department of Education), and there are no DoD schools anywhere in Hawaii. Your school is set by your street address: there is no school choice, and geographic exceptions are rarely granted.",
+        "On Schofield and Wheeler, children attend Daniel K. Inouye, Solomon or Wheeler Elementary (by address) and Wheeler Middle; at Helemano, Helemano or Wahiawa Elementary and Wahiawa Middle. All go on to Leilehua High. In 2025-26 Leilehua High's students were 58% proficient in language arts and 24% in math, with an 89% graduation rate (class of 2025); Mililani High's were 66% and 48%, with 96%.",
+        "School Liaison Office: Bldg. 1283, 241 Hewitt St, (808) 787-5644, USAGHI_SchoolLiaison@army.mil. The school bus costs $72 a quarter, round trip."
       ],
-      "source": { "label": "Hawaii State Department of Education (official)", "url": "https://www.hawaiipublicschools.org/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Hawaii DOE military families; 2025-26 Strive HI reports (official)", "url": "https://hawaiipublicschools.org/enrolling-in-school/military-families/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -121,12 +122,12 @@
       "type": "facts",
       "data": {
         "Hospital": "Tripler Army Medical Center (serves all services in Hawaii)",
-        "On base": "Schofield Barracks Health Clinic",
+        "On base": "Desmond T. Doss Health Clinic (urgent care; no emergency room)",
         "Care": "Tripler is the major inpatient and specialty hospital for the Pacific region",
         "TRICARE region": "West (TriWest)"
       },
-      "source": { "label": "Tripler Army Medical Center (official)", "url": "https://tripler.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Desmond T. Doss Health Clinic (official)", "url": "https://desmond-doss.tricare.mil/Health-Services/Urgent-Emergency-Care" },
+      "verified": "2026-11-10"
     },
     {
       "id": "shopping",
@@ -169,10 +170,10 @@
         "steps": [
           { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Allowance (TLA) for OCONUS-style moves; confirm the current rules." },
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Get on the housing list early", "text": "On-base is often the best value against island rents, so contact Island Palm Communities right away while you look off base." },
+          { "title": "Get on the housing list early", "text": "Report to the Army housing office (808-787-7700) soon after you arrive, even if you will live off post (the Army's guide allows 7 workdays; Military OneSource says five days), and apply with Island Palm Communities." },
           { "title": "Sort your vehicle and shipment", "text": "Track your sea shipment of household goods and your one shipped vehicle; arrange interim transportation and Hawaii registration." },
           { "title": "Enroll the kids in school", "text": "Hawaii uses one statewide system; confirm your assigned school by address and bring records and immunizations." },
-          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Tripler Army Medical Center or the Schofield clinic." }
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Tripler Army Medical Center or the Desmond T. Doss Health Clinic." }
         ]
       }
     },
@@ -181,9 +182,9 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What's based at Schofield?", "a": "The 25th Infantry Division (Tropic Lightning). Schofield is the largest Army installation in Hawaii and the core of U.S. Army Garrison Hawaii, which also includes Wheeler and Fort Shafter." },
+        { "q": "What's based at Schofield?", "a": "The 25th Infantry Division (Tropic Lightning), formed at Schofield in 1941. Schofield is the largest Army post in Hawaii and part of U.S. Army Garrison Hawaii, headquartered at Wheeler Army Airfield, which also includes Fort Shafter." },
         { "q": "Is Hawaii an OCONUS move?", "a": "Yes. A PCS here works like an overseas move (sea shipment, one vehicle, island allowances), though you still receive BAH set by Honolulu County rather than OHA." },
-        { "q": "Where do families live?", "a": "On-base via Island Palm Communities is often the best value; off base, Mililani and Wahiawa are close and popular. Expect H-1/H-2 traffic toward Honolulu." },
+        { "q": "Where do families live?", "a": "On post with Island Palm Communities (rent set from your BAH, utilities included), or off post in Wahiawa (about 9 minutes) or Mililani (about 11 to 12). Your address sets your children's school, and geographic exceptions are rarely granted." },
         { "q": "What is the BAH area?", "a": "Schofield is MHA HI408 (Honolulu County). Use the calculator above for your grade." }
       ]
     },

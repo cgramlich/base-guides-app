@@ -8,8 +8,8 @@
   "tagline": "Home of the 101st Airborne Division (Air Assault), 5th Special Forces Group, and 160th SOAR.",
   "coords": { "lat": 36.5298, "lng": -87.3595, "label": "Clarksville, TN (off-post hub)" },
   "tz": "America/Chicago",
-  "last_full_review": "2026-06-23",
-  "_note": "Killer-content (two-state decision) is drafted/real. Other sections populated from authoritative sources with per-section source + verified date; volatile data (gate hours) links to the official page instead of stating values. Active-duty population left out (not found on an official fact sheet).",
+  "last_full_review": "2026-11-10",
+  "_note": "Killer-content (two-state decision) is drafted/real. Other sections populated from authoritative sources with per-section source + verified date; volatile data (gate hours) links to the official page instead of stating values. Rechecked 2026-11-10: housing is a Centinel community managed by WinnResidential (phone (931) 431-2693); gate hours as of March 16, 2026; two-state table says Kentucky exempts active-duty pay; Zillow September 2026 values; school ratings 2024-25 (TN) and 2025-26 (KY); TRICARE East label not re-verified. Active-duty population left out (not found on an official fact sheet).",
   "sections": [
     {
       "id": "quick_facts",
@@ -40,29 +40,29 @@
       "title": "Tennessee or Kentucky? The Two-State Decision",
       "type": "killer",
       "data": {
-        "subtitle": "For buyers and renters PCSing to Campbell, the side of the line you choose is a several-thousand-dollar decision over a typical tour.",
+        "subtitle": "Neither state taxes active-duty pay, so the side of the line you choose matters for a spouse's paycheck, property, sales and car taxes, schools and home prices.",
         "intro": [
-          "Fort Campbell sits on the Kentucky-Tennessee state line. The post office address is in Kentucky, but most of the housing, most of the gates, and the largest off-post community (Clarksville) sit on the Tennessee side. That geography forces a decision other military families never have to make: which state to live in.",
-          "The two states tax differently, school children differently, and value homes differently. Over a typical three-to-four-year tour the cumulative difference between Clarksville and Hopkinsville or Oak Grove adds up to thousands of dollars, plus a meaningfully different schooling and real estate experience."
+          "Fort Campbell sits on the Kentucky-Tennessee state line. The post office address is in Kentucky, while the largest off-post community, Clarksville, is in Tennessee. That geography forces a decision other military families never have to make: which state to live in.",
+          "Kentucky does not tax active-duty military pay, even for Kentucky residents, and Tennessee has no tax on earned income, so the income tax question is only about a spouse's wages and other non-military income. Kentucky's 2026 rate is 3.5%, but a spouse who is in Kentucky only to be with the service member and keeps a legal residence in another state isn't taxed by Kentucky either. The bigger differences are property, sales and car taxes, schools and home prices."
         ],
         "table": {
           "cols": ["Factor", "Tennessee (Clarksville)", "Kentucky (Hopkinsville / Oak Grove)", "Edge"],
           "rows": [
-            ["State income tax", "None", "3.5% flat (2026)", "TN"],
-            ["Sales tax", "~9.5% combined", "6% flat", "KY"],
-            ["Grocery tax", "Reduced rate", "Most groceries exempt", "KY"],
-            ["Annual vehicle tax", "$74 wheel tax (flat)", "$300-$800 (value-based)", "TN"],
-            ["Median home price", "~$293K", "~$210K Hopkinsville", "KY"],
-            ["Resale velocity", "Faster", "Slower", "TN"],
-            ["Public schools", "CMCSS - 'Advancing'", "Christian Co. - bottom 1/3 KY", "TN"],
-            ["Commute to nearest gate", "15-25 min (Clarksville)", "5-15 min Oak Grove; 20-35 Hopkinsville", "Mixed"]
+            ["Tax on active-duty pay", "None", "None (Kentucky exempts it)", "Even"],
+            ["Sales tax", "9.5%; groceries 6.5%", "6%, no local tax", "KY"],
+            ["Property tax (share of value)", "About 0.78% in Clarksville (2026)", "About 0.92% Hopkinsville, 0.95% Oak Grove (2025)", "TN"],
+            ["Annual vehicle tax", "$74 wheel tax; one vehicle a year exempt for nonresident active duty", "About $1.18 to $1.58 per $100 of value (2026); exempt if your LES shows another state, but not a civilian spouse's vehicles", "Depends"],
+            ["Typical home value (Zillow, Sep 2026)", "$317,914", "$193,328 Hopkinsville; $208,501 Oak Grove", "KY"],
+            ["Tax on a spouse's wages", "None", "3.5% unless the spouse is there only on the member's orders and keeps a legal residence elsewhere", "TN"],
+            ["Public schools", "CMCSS: 'Advancing' district; over 70% of schools A or B (2024-25)", "Christian County: 'Yellow', the middle of five levels (2025-26)", "Compare"],
+            ["Drive to Blanchfield hospital (no traffic)", "About 20 min from Clarksville", "About 6 min from Oak Grove; 26 from Hopkinsville", "KY"]
           ]
         },
         "recommendations": [
-          { "who": "Buyers with school-age kids, 3-4 yr tour", "advice": "Default to Clarksville (Sango or Rossview): stronger schools, faster resale, tax math roughly a wash." },
-          { "who": "Buyers prioritizing dollar-for-dollar home value", "advice": "Look hard at Hopkinsville. You get noticeably more house per budget, but plan for a slower sale at your next PCS." },
-          { "who": "Shortest commute / small-town feel", "advice": "Oak Grove. Base proximity is unmatched." },
-          { "who": "Renters with kids in school", "advice": "Tennessee (Clarksville) for the schools; the tax advantage compounds less over a short lease." }
+          { "who": "Buyers with school-age kids", "advice": "Look up the zoned schools for each address. In Clarksville, Sango Elementary and Rossview High earned an A in Tennessee's 2024-25 grades; Christian County's schools rated Yellow, the middle of Kentucky's five levels, in 2025-26." },
+          { "who": "Buyers prioritizing dollar-for-dollar home value", "advice": "Look hard at Hopkinsville: its typical home value ($193,328) is about $125,000 below Clarksville's ($317,914), though property tax is a higher share of value (about 0.92% inside the city)." },
+          { "who": "Shortest commute / small-town feel", "advice": "Oak Grove: about 6 minutes from Blanchfield with no traffic." },
+          { "who": "Renters with kids in school", "advice": "Choose by the zoned school and your spouse's job. Renters skip property tax, so what remains is sales tax (9.5% in Montgomery County, 6% in Kentucky) and Kentucky's 3.5% tax on a spouse's wages unless the spouse keeps a legal residence elsewhere." }
         ]
       }
     },
@@ -71,24 +71,24 @@
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Fort Campbell has multiple access gates, including Gate 4 (TC Freeman) and Gate 7, the main 24/7 visitor and commercial gate. Gate openings, hours, and lanes change frequently.",
-        "Visitors without a DoD ID need a pass from the Visitor Control Center (Gate 7, Building 7199, 7199 Glider Road; 270-956-4488). Bring a REAL ID-compliant ID plus your vehicle registration and insurance.",
+        "Open 24 hours: Gate 4 (TC Freeman Gate), Gate 7, Gate 10, Sabre I and Sabre II. Gate 1 is open 5 a.m. to 9 p.m. daily; Gates 3 and 6 and Mabry Gate weekdays 5 a.m. to 9 p.m.; Angels Gate weekdays 5 a.m. to 5 p.m.; Gates 2 and 5 are closed. Gate 7's commercial lane runs 5 a.m. to 9 p.m. (Fort Campbell gate hours, March 16, 2026).",
+        "Visitors without a DoD ID need a pass from the Visitor Control Center at Gate 7 (Building 7199, 7199 Glider Road; open 24 hours; 270-956-4488); Fort Campbell's visitor page (last updated October 2025) lists the Gate 4 visitor center as temporarily closed. Everyone needs a REAL ID or another approved federal ID, and drivers need their license, registration and proof of insurance. Passes can be requested up to 10 days ahead at pass.aie.army.mil and last up to 90 days.",
         "IMPORTANT: gate hours change often. Always confirm which gates are open and their current hours on the official garrison page before you travel."
       ],
-      "source": { "label": "Fort Campbell gate hours (official)", "url": "https://home.army.mil/campbell/gate-hours" },
-      "verified": "2026-06-23"
+      "source": { "label": "Fort Campbell gate hours (official, March 16, 2026)", "url": "https://home.army.mil/campbell/gate-hours" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-post housing is operated by Campbell Crossing LLC, a Lendlease privatized military housing community.",
-        "Homes are available to military families, unaccompanied service members, reservists, DoD employees, retirees, and qualified civilians. Active-duty service members pay no application fees or security deposits, and you apply through the partner's online application.",
-        "Main office: (931) 431-9003. Confirm current numbers and availability on the partner site."
+        "On-post housing is Campbell Crossing, a Centinel Public Partnerships community developed with the Army and managed by WinnResidential Military Housing Services, with more than 4,450 homes.",
+        "Homes are available to military families, unaccompanied service members, reservists, DoD employees, retirees, and qualified civilians. Active-duty applicants need orders, an end-of-month LES, DA Form 31 and FC Form 1906; non-active-duty applicants pay a $75 application fee for each adult. Apply through the partner's online application.",
+        "Office: 2702 Michigan Avenue, (931) 431-2693, welcomehome@campbellcrossingllc.com; Monday to Thursday 8 a.m. to 5 p.m., Friday 8 a.m. to 4 p.m. We found no posted wait times, so ask when you apply."
       ],
-      "source": { "label": "Campbell Crossing (Lendlease)", "url": "https://www.campbellcrossingllc.com/" },
-      "verified": "2026-06-23"
+      "source": { "label": "Campbell Crossing (about us, apply now)", "url": "https://www.campbellcrossingllc.com/about-us" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -193,10 +193,11 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-          {"q": "Should I live in Tennessee or Kentucky?", "a": "It depends on your priorities. Tennessee (Clarksville) has no state income tax, stronger schools, and faster resale; Kentucky (Hopkinsville or Oak Grove) gets you more house for the money and a shorter drive to some gates. See the two-state section above."},
+          {"q": "Should I live in Tennessee or Kentucky?", "a": "Neither state taxes active-duty pay, so it depends on your spouse's job, the schools and your budget. Tennessee has no tax on wages; Kentucky (Hopkinsville or Oak Grove) has lower home values, 6% sales tax and, from Oak Grove, the shortest drive. See the two-state section above."},
           {"q": "Is there a DoDEA school on post?", "a": "Yes. Families in on-post housing are eligible for the DoDEA schools on Fort Campbell (PK through grade 12). Off post, the Tennessee side is mainly CMCSS and the Kentucky side mainly Christian County."},
-          {"q": "Who runs on-post housing?", "a": "Campbell Crossing LLC, a Lendlease community. Active-duty families pay no application fee or security deposit."},
-          {"q": "What is the BAH area?", "a": "Fort Campbell is MHA KY106. Use the BAH calculator above for your grade and dependency status."}
+          {"q": "Who runs on-post housing?", "a": "Campbell Crossing, a Centinel Public Partnerships community managed by WinnResidential, with more than 4,450 homes. Office: (931) 431-2693."},
+          {"q": "What is the BAH area?", "a": "Fort Campbell is MHA KY106. Use the BAH calculator above for your grade and dependency status."},
+          {"q": "Does Kentucky tax my military pay?", "a": "No. Kentucky does not tax active-duty military pay, even for Kentucky residents, and Tennessee has no tax on wages. A spouse's Kentucky wages are taxed at 3.5% (2026) unless the spouse is in Kentucky only to be with the service member and keeps a legal residence in another state; local occupational license tax may apply where the spouse works."}
       ]
     },
     {

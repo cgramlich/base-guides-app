@@ -6,11 +6,11 @@
   "branch": "U.S. Navy / U.S. Air Force",
   "states": ["HI"],
   "region": "OCONUS",
-  "tagline": "The Navy and Air Force heart of the Indo-Pacific, on Oahu, where Pearl Harbor and Hickam come together.",
+  "tagline": "Navy and Air Force on Oahu's south shore, where Pearl Harbor and Hickam joined in 2010.",
   "coords": { "lat": 21.34, "lng": -157.95, "label": "Honolulu, HI (Oahu)" },
   "tz": "Pacific/Honolulu",
-  "last_full_review": "2026-06-25",
-  "_note": "Hawaii joint base (Naval Station Pearl Harbor + Hickam AFB, merged 2010), Oahu. Marked OCONUS (a Hawaii PCS is an overseas-style move) but BAH-rated: MHA HI408 (Honolulu County) via the bah_rates single source of truth, so the full live template stays. Facts verified from official sources (cnic.navy.mil, housing.af.mil, jbpearlharborhickamhousing.com, tripler.tricare.mil, DeCA/NEX, Wikipedia for corroborated headline facts). Housing via Ohana/Hickam Communities (Hunt). No DoDEA in Hawaii (Hawaii State DOE). Medium-confidence flags: base coords (approx), representative off-base ZIP 96818 (Honolulu).",
+  "last_full_review": "2026-11-10",
+  "_note": "Hawaii joint base (Naval Station Pearl Harbor + Hickam AFB, merged 2010), Oahu. Marked OCONUS (a Hawaii PCS is an overseas-style move) but BAH-rated: MHA HI408 (Honolulu County) via the bah_rates single source of truth, so the full live template stays. Facts verified from official sources (cnic.navy.mil, housing.af.mil, tripler.tricare.mil, DeCA/NEX, Wikipedia for corroborated headline facts). Housing via Ohana Military Communities (Navy, Hunt) and Hickam Communities (Air Force, Centinel); re-verified 2026-11-10, including Red Hill (EPA final assessment, March 2026). No DoDEA in Hawaii (Hawaii State DOE). Medium-confidence flags: base coords (approx), representative off-base ZIP 96818 (Honolulu).",
   "sections": [
     {
       "id": "quick_facts",
@@ -21,22 +21,23 @@
         "Location": "Oahu, HI (Honolulu area)",
         "Navy": "Commander Pacific Fleet; Submarine Force Pacific; Pearl Harbor Naval Shipyard",
         "Air Force": "Pacific Air Forces HQ; 15th Wing",
-        "Formed": "Pearl Harbor + Hickam merged in 2010",
+        "Formed": "Pearl Harbor + Hickam merged Oct. 1, 2010",
+        "Parent command": "Commander, Navy Region Hawaii",
         "Region": "Hawaii (OCONUS PCS, BAH-rated)"
       },
-      "source": { "label": "Joint Base Pearl Harbor-Hickam (official)", "url": "https://www.cnic.navy.mil/regions/cnrh/installations/jb_pearl_harbor_hickam.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Commander, Navy Region Hawaii: JBPHH (official)", "url": "https://cnrh.cnic.navy.mil/Installations/JB-Pearl-Harbor-Hickam/About/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Joint Base Pearl Harbor-Hickam is the center of gravity for U.S. forces in the Indo-Pacific, combining the Navy's historic Naval Station Pearl Harbor and the Air Force's Hickam Field, merged in 2010.",
-        "It hosts the headquarters of the Pacific Fleet and the Pacific submarine force, Pearl Harbor Naval Shipyard, Pacific Air Forces headquarters, and the 15th Wing. For the Navy and Air Force, it is one of the most sought-after, and most strategic, places to serve."
+        "Joint Base Pearl Harbor-Hickam was formed on Oct. 1, 2010, when Naval Station Pearl Harbor integrated with Hickam Air Force Base. It is the larger of Navy Region Hawaii's two installations, with more than 270 tenant commands (2022).",
+        "It hosts Commander, U.S. Pacific Fleet, the Pacific submarine force, Pearl Harbor Naval Shipyard, Pacific Air Forces headquarters, the 15th Wing and the Hawaii Air National Guard's 154th Wing."
       ],
-      "source": { "label": "Joint Base Pearl Harbor-Hickam (official)", "url": "https://www.cnic.navy.mil/regions/cnrh/installations/jb_pearl_harbor_hickam.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Commander, Navy Region Hawaii: JBPHH (official)", "url": "https://cnrh.cnic.navy.mil/Installations/JB-Pearl-Harbor-Hickam/About/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "island_decision",
@@ -45,40 +46,41 @@
       "data": {
         "subtitle": "Hawaii is paradise and a logistical puzzle. BAH is high but the cost of living is higher, housing is tight, and an island PCS comes with quirks (shipping a car, limited space) that reward planning early.",
         "intro": [
-          "A Hawaii tour is a true OCONUS-style move even though it's a U.S. state: you ship household goods by sea, can usually bring only one vehicle at government expense, and everything imported costs more. Many families lean on on-base housing because it's a strong value against high island rents.",
-          "Where you live trades commute against cost and climate. The leeward (Ewa, Kapolei) side is drier and newer; town and windward areas are greener but pricier or farther; and Oahu's H-1 traffic is a daily reality wherever you are."
+          "A Hawaii tour is a true OCONUS-style move even though it's a U.S. state: you ship household goods by sea, can usually bring only one vehicle at government expense, and everything imported costs more. Hawaii also pays a cost-of-living allowance on top of BAH.",
+          "Where you live trades commute against cost: Aiea is about 7 minutes from Nimitz Gate with no traffic, Kapolei about 23 and Ewa Beach about 29, and Skyline rail now runs from East Kapolei to the base's Makalapa station. In Hawaii your address also sets your children's school.",
+          "Red Hill: in November 2021 a fuel release from the Red Hill Bulk Fuel Storage Facility contaminated the Red Hill Shaft, a Navy drinking water well, affecting about 93,000 people. Unrestricted drinking water use returned in March 2022, and as of September 2026 the Red Hill Shaft remained disconnected. A Defense Department task force finished draining the facility's bulk fuel (about 104.7 million gallons) in March 2024; cleanup continues, and the Navy plans to close the facility in 2028."
         ],
         "recommendations": [
-          { "who": "Best value: on base", "advice": "Get on the housing list early (Ohana on the Navy side, Hickam Communities on the Air Force side, both Hunt). On-base often beats high island rents and includes utilities." },
-          { "who": "Newer and more space", "advice": "The leeward side (Ewa Beach, Kapolei) has newer homes and is popular with families, at a longer commute into town." },
+          { "who": "Best value: on base", "advice": "Apply before you leave with HEAT. Ohana Military Communities (Navy, managed by Hunt) and Hickam Communities (Air Force, a Centinel community) each give their own service priority, and many neighborhoods are near full on arrival. Navy housing bills utilities under the Resident Energy Conservation Program." },
+          { "who": "The west side", "advice": "Kapolei and Ewa Beach had typical home values of about $841,000 and $832,000 in September 2026 (Zillow) and are about 23 to 29 minutes from Nimitz Gate with no traffic; Skyline rail links East Kapolei to the base." },
           { "who": "Plan the logistics early", "advice": "Arrange your one-vehicle shipment, expect a sea shipment for household goods, and budget for a higher cost of living than the BAH suggests." },
-          { "who": "Embrace island time", "advice": "Traffic on H-1 is real and island life is slower; build it into your commute and expectations." }
+          { "who": "Red Hill water", "advice": "EPA concluded in March 2026 that the water affected by the 2021 Red Hill fuel release has been free of fuel contamination and in compliance since 2022, and the Hawaii Department of Health agreed. The Navy posts test results at jbphh-safewaters.org." }
         ]
       },
-      "source": { "label": "Joint Base Pearl Harbor-Hickam (official)", "url": "https://www.cnic.navy.mil/regions/cnrh/installations/jb_pearl_harbor_hickam.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "U.S. EPA, 2021 JBPHH drinking water incident (official)", "url": "https://www.epa.gov/red-hill/2021-jbphh-drinking-water" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official JBPHH site before you go."
+        "Gates include Nimitz Gate, Makalapa Gate and Kuntz Gate. We found no official list of gate hours, so ask your sponsor or command which gate suits your shift.",
+        "The Pass and ID Office is in Bldg. 3455 by Nimitz Gate, weekdays 6 a.m. to 3:30 p.m. (noon every third Thursday), (808) 449-0865. Since May 6, 2025 only REAL ID-compliant licenses and ID cards are accepted, and sponsors must submit the request in person and stay with their guests in the Pass and ID Office until the pass is issued; no phone requests."
       ],
-      "source": { "label": "Joint Base Pearl Harbor-Hickam (official)", "url": "https://www.cnic.navy.mil/regions/cnrh/installations/jb_pearl_harbor_hickam.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Nimitz Visitor Control Center, Pass and ID (official)", "url": "https://cnrh.cnic.navy.mil/Installations/JB-Pearl-Harbor-Hickam/Operations-and-Management/Nimitz-Visitor-Control-Center-Pass-ID/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-base family housing is privatized and managed by Hunt Military Communities, branded Ohana on the Navy side and Hickam Communities on the Air Force side, across many neighborhoods on and around the installation.",
-        "Given high island rents, on-base is often the best value, so get on the list early. Eligibility and availability vary by rank and family size."
+        "Base housing is two separate privatized projects. Navy housing is Ohana Military Communities, managed by Hunt Military Communities (4,435 homes, per Military OneSource); Air Force housing is Hickam Communities, a Centinel Public Partnerships community (2,484 homes on Hickam). Each gives its own service first priority.",
+        "Many neighborhoods are near full on arrival, and some families rent off base while they wait. Apply before you leave with HEAT, and report within 72 hours of arrival: Navy Housing Service Center, 4825 Bougainville Dr, 808-474-1820; Air Force Housing Management Office, 200 Kokomalei St, 808-312-0199. Navy housing bills utilities under the Resident Energy Conservation Program."
       ],
-      "source": { "label": "JBPHH housing (partner)", "url": "https://www.jbpearlharborhickamhousing.com/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Navy Housing, JBPHH (official)", "url": "https://ffr.cnic.navy.mil/Navy-Housing/Housing-By-Region/Hawaii/JB-Pearl-Harbor-Hickam/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -103,11 +105,12 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "Hawaii runs a single statewide public school system (the Hawaii State Department of Education), so there is no separate local district and no DoDEA here; your school is assigned by your home address.",
-        "Confirm the specific school for any neighborhood you are considering, and ask the School Liaison Office about geographic exceptions if needed."
+        "Hawaii runs a single statewide public school system (the Hawaii State Department of Education), and there are no DoD schools in Hawaii; your school is assigned by your home address, and you can't enroll before you have one.",
+        "Base housing is served by Mokulele, Hickam, Aliamanu, Pearl Harbor Kai, Pearl Harbor and Nimitz elementary schools, and Aliamanu Middle feeds Radford High; confirm the schools for your neighborhood. In 2025-26 Radford's students were 63% proficient in language arts and 34% in math, with a 94% graduation rate (class of 2025).",
+        "Requests to attend a different school (geographic exceptions) are due January 1 to March 1 for the next school year, and approval depends on space. School Liaison Office: 530 Peltier Ave, Bldg. 1925, 808-306-9247, JBPHHSLO@us.navy.mil."
       ],
-      "source": { "label": "Hawaii State Department of Education (official)", "url": "https://www.hawaiipublicschools.org/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Hawaii DOE military families; 2025-26 Strive HI reports (official)", "url": "https://hawaiipublicschools.org/enrolling-in-school/military-families/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -121,20 +124,21 @@
       "type": "facts",
       "data": {
         "Hospital": "Tripler Army Medical Center (serves all services in Hawaii)",
-        "On base": "Branch clinics at Pearl Harbor and Hickam",
+        "On base": "Naval Health Clinic Hawaii (BHC Makalapa, Shipyard Clinic) and the 15th Medical Group at Hickam",
+        "Emergency room": "Tripler is the only military emergency room on Oahu",
         "Care": "Tripler is the major inpatient and specialty hospital for the Pacific region",
         "TRICARE region": "West (TriWest)"
       },
-      "source": { "label": "Tripler Army Medical Center (official)", "url": "https://tripler.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, JBPHH health care", "url": "https://installations.militaryonesource.mil/military-installation/joint-base-pearl-harbor-hickam/health/health-care" },
+      "verified": "2026-11-10"
     },
     {
       "id": "shopping",
       "title": "On-Base Shopping",
       "type": "facts",
       "data": {
-        "Commissary": "Commissary (DeCA) at Pearl Harbor and Hickam",
-        "Exchange": "Navy Exchange (NEX) and Exchange (AAFES) on base"
+        "Commissary": "Pearl Harbor (4725 Bougainville Dr) and Hickam (20 Hickam Ct)",
+        "Exchange": "NEX Mall at Pearl Harbor and the Hickam Exchange"
       },
       "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
       "verified": "2026-06-25"
@@ -169,7 +173,7 @@
         "steps": [
           { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Allowance (TLA) for OCONUS-style moves; confirm the current rules." },
           { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Get on the housing list early", "text": "On-base is often the best value against island rents, so contact Ohana/Hickam Communities right away while you look off base." },
+          { "title": "Get on the housing list early", "text": "Apply before you leave with HEAT, then report within 72 hours of arrival: Navy members to the Navy Housing Service Center (808-474-1820), Air Force members to an in-person Housing Management Office appointment (808-312-0199)." },
           { "title": "Sort your vehicle and shipment", "text": "Track your sea shipment of household goods and your one shipped vehicle; arrange interim transportation and Hawaii registration." },
           { "title": "Enroll the kids in school", "text": "Hawaii uses one statewide system; confirm your assigned school by address and bring records and immunizations." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Tripler Army Medical Center or a base clinic." }
@@ -182,8 +186,8 @@
       "type": "faq",
       "data": [
         { "q": "Is Hawaii an OCONUS move?", "a": "Yes. Even though Hawaii is a U.S. state, a PCS here works like an overseas move: you ship household goods by sea, usually ship one vehicle, and receive island allowances. You still get BAH (not OHA), set by Honolulu County." },
-        { "q": "Should I live on base?", "a": "Often yes. Island rents are high, so on-base housing (Ohana on the Navy side, Hickam Communities on the Air Force side) is frequently the best value. Get on the list early." },
-        { "q": "Where is healthcare?", "a": "Tripler Army Medical Center serves all the services in Hawaii, with branch clinics at Pearl Harbor and Hickam." },
+        { "q": "Should I live on base?", "a": "It depends on availability: many neighborhoods are near full on arrival, so some families rent off base while they wait. Apply before you leave with HEAT. Ohana Military Communities (Navy, managed by Hunt) and Hickam Communities (Air Force, a Centinel community) each give their own service priority." },
+        { "q": "Where is healthcare?", "a": "Tripler Army Medical Center is the only military treatment facility on Oahu with an emergency room. On base are Naval Health Clinic Hawaii's clinics (including BHC Makalapa) and the 15th Medical Group at Hickam, which has no emergency room." },
         { "q": "What is the BAH area?", "a": "JBPHH is MHA HI408 (Honolulu County). Use the calculator above for your grade." }
       ]
     },
