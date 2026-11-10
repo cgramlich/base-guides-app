@@ -17,7 +17,7 @@
       "type": "facts",
       "data": {
         "Branch": "U.S. Army",
-        "Location": "Columbus, GA (Georgia-Alabama line)",
+        "Location": "Columbus, GA (the Tri-Community with Phenix City, AL)",
         "Known as": "Maneuver Center of Excellence",
         "Schools": "U.S. Army Infantry School and Armor School",
         "Also hosts": "75th Ranger Regiment, 1st Security Force Assistance Brigade, WHINSEC, Army Marksmanship Unit",
@@ -32,7 +32,7 @@
       "type": "prose",
       "data": [
         "Fort Benning is home to the Maneuver Center of Excellence and the Armor and Infantry schools, with the Airborne and Ranger Training Brigade (Airborne School), Officer Candidate School and the 198th Infantry, 194th Armored and 316th Cavalry brigades. It also hosts the 75th Ranger Regiment, the 1st Security Force Assistance Brigade, the Western Hemisphere Institute for Security Cooperation and the Army Marksmanship Unit.",
-        "It sits on the Georgia-Alabama line next to Columbus. The post carried the name Fort Moore from 2023 to 2025 before reverting to Fort Benning on March 3, 2025, now honoring Cpl. Fred G. Benning, a World War I Distinguished Service Cross recipient. In June 2026 the House Armed Services Committee voted 29-27 to restore the Fort Moore name in the FY2027 defense bill; as of November 10, 2026 we found no final action."
+        "It is part of what the Army calls the Tri-Community of Columbus, Georgia and Phenix City, Alabama. The post carried the name Fort Moore from 2023 to 2025 before reverting to Fort Benning on March 3, 2025, now honoring Cpl. Fred G. Benning, a World War I Distinguished Service Cross recipient. In June 2026 the House Armed Services Committee voted 29-27 to restore the Fort Moore name in the FY2027 defense bill; as of November 10, 2026 we found no final action."
       ],
       "source": { "label": "Fort Benning Garrison About (official); army.mil (Mar 3, 2025); Military Times (Jun 5, 2026)", "url": "https://home.army.mil/benning/About" },
       "verified": "2026-11-10"
