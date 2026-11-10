@@ -5,7 +5,7 @@
   "short_name": "Fort Sam Houston",
   "branch": "U.S. Army",
   "states": ["TX"],
-  "tagline": "Brooke Army Medical Center and the military's enlisted medical training campus, in north-central San Antonio.",
+  "tagline": "Brooke Army Medical Center and the military's enlisted medical training campus, just northeast of downtown San Antonio.",
   "coords": { "lat": 29.457, "lng": -98.4458, "label": "San Antonio, TX" },
   "tz": "America/Chicago",
   "last_full_review": "2026-11-10",
@@ -60,7 +60,7 @@
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Open 24 hours: Walters Gate, the BAMC/I-35 gate and Harry Wurzbach East, plus the Camp Bullis gate. New Braunfels, BAMC Beach and Winans open only at weekday rush hours, Schofield is open weekdays 6 a.m. to 6 p.m., and Harry Wurzbach West and Wilson are closed.",
+        "Open 24 hours: Walters Gate, the BAMC/I-35 gate and Harry Wurzbach East, plus the Camp Bullis gate. New Braunfels, BAMC Beach and Winans open only at weekday rush hours (afternoons are outbound only at New Braunfels and BAMC Beach), Schofield is open weekdays 6 a.m. to 6 p.m., and Harry Wurzbach West and Wilson are closed.",
         "Visitors without a DoD ID need a visitor pass and, since May 7, 2025, a REAL ID. The BAMC/I-35 Visitor Center (Bldg. 4299, George Beach Ave, 210-539-9826) is open 24 hours; the Walters Visitor Center (Bldg. 892, Hood St, 210-221-2650) is open weekdays 7:30 a.m. to 3 p.m. Hours change, so confirm on the official gate page before you go."
       ],
       "source": { "label": "JBSA gate hours (official)", "url": "https://www.jbsa.mil/Gate-Hours/" },
