@@ -5,11 +5,11 @@
   "short_name": "Fort Sam Houston",
   "branch": "U.S. Army",
   "states": ["TX"],
-  "tagline": "The home of military medicine: Brooke Army Medical Center and the military's medical training hub.",
+  "tagline": "Brooke Army Medical Center and the military's enlisted medical training campus, in north-central San Antonio.",
   "coords": { "lat": 29.457, "lng": -98.4458, "label": "San Antonio, TX" },
   "tz": "America/Chicago",
-  "last_full_review": "2026-06-24",
-  "_note": "JBSA base (San Antonio). Verified from official sources (jbsa.mil, home.army.mil/samhouston, bamc.tricare.mil, METC/MEDCoE, fshisd.net, DeCA/AAFES, DoD BAH tool). MHA TX285 (same as the other JBSA bases). Medium/low-confidence flags: base coords (approx), off-base ZIP 78209, surrounding off-post school districts (do not publish specific assignment).",
+  "last_full_review": "2026-11-10",
+  "_note": "Re-verified 2026-11-10: gates, housing (925 homes, 8 neighborhoods), schools (TEA 2026, FSHISD transfer rules), BAMC wording, METC (Army, Navy, Air Force only). U.S. Army North and Army South inactivated in 2026; do not list them. JBSA base (San Antonio). Verified from official sources (jbsa.mil, home.army.mil/samhouston, bamc.tricare.mil, METC/MEDCoE, fshisd.net, DeCA/AAFES, DoD BAH tool). MHA TX285 (same as the other JBSA bases). Medium/low-confidence flags: base coords (approx), off-base ZIP 78209, surrounding off-post school districts (do not publish specific assignment).",
   "sections": [
     {
       "id": "quick_facts",
@@ -18,64 +18,64 @@
       "data": {
         "Branch": "U.S. Army (Joint Base San Antonio)",
         "Location": "San Antonio, TX",
-        "Known as": "Home of Military Medicine",
+        "Historic": "Fort Sam Houston National Historic Landmark",
         "Signature tenant": "Brooke Army Medical Center (BAMC)",
         "Also hosts": "METC + Army Medical Center of Excellence (MEDCoE)"
       },
       "source": { "label": "JBSA-Fort Sam Houston (official)", "url": "https://home.army.mil/samhouston/" },
-      "verified": "2026-06-24"
+      "verified": "2026-11-10"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "JBSA-Fort Sam Houston is the center of U.S. military medicine. Its signature tenant is Brooke Army Medical Center (BAMC), the Army's flagship medical institution and the Defense Department's only Level I Trauma Center.",
-        "The post also hosts the Medical Education & Training Campus (METC), which trains enlisted medics for the Army, Navy, Air Force, and Coast Guard, plus the U.S. Army Medical Center of Excellence (MEDCoE). Installation support is provided by the Air Force's 502d Air Base Wing."
+        "JBSA-Fort Sam Houston is a center of U.S. military medicine. Its signature tenant is Brooke Army Medical Center (BAMC), the largest military healthcare organization in the Department of Defense and the sole Level I Trauma Center within the Military Health System.",
+        "The post also hosts the Medical Education & Training Campus (METC), which trains Army, Navy and Air Force enlisted medical personnel in 49 courses (more than 16,500 graduates a year projected at peak capacity), plus the U.S. Army Medical Center of Excellence (MEDCoE). Installation support is provided by the Air Force's 502d Air Base Wing."
       ],
-      "source": { "label": "Brooke Army Medical Center (official)", "url": "https://bamc.tricare.mil/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Brooke Army Medical Center; METC (official)", "url": "https://bamc.tricare.mil/About-Us" },
+      "verified": "2026-11-10"
     },
     {
       "id": "military_medicine",
-      "title": "The Home of Military Medicine",
+      "title": "A Center of Military Medicine",
       "type": "killer",
       "data": {
-        "subtitle": "Fort Sam Houston is the center of military medicine, which makes it one of the best-resourced bases in the country for a family's healthcare.",
+        "subtitle": "Fort Sam Houston is home to Brooke Army Medical Center, the primary military emergency department in San Antonio, and to the military's enlisted medical training campus.",
         "intro": [
-          "Brooke Army Medical Center anchors the entire San Antonio military health system. It's the DoD's flagship medical center and its only Level I Trauma Center, which means deep healthcare access for families on and around the post.",
+          "Brooke Army Medical Center serves more than 240,000 military beneficiaries across the San Antonio area. It is the sole Level I Trauma Center within the Military Health System and the primary emergency department for the San Antonio military health system, a role that grew when Wilford Hall's emergency department on Lackland became an urgent care center on April 4, 2026.",
           "For many service members, an assignment here is tied to medical training or care, given METC and MEDCoE. It has a different feel from an operational post, more campus and care than flight line or motor pool."
         ],
         "recommendations": [
           { "who": "Healthcare access", "advice": "BAMC serves the whole San Antonio military community; confirm enrollment and referrals through TRICARE West." },
-          { "who": "Living near post", "advice": "Established neighborhoods like Alamo Heights / Terrell Hills sit just off post, with a short commute to central San Antonio." },
+          { "who": "Living near post", "advice": "Alamo Heights and Terrell Hills are about 16 to 18 minutes from BAMC with no traffic. Alamo Heights ISD takes no transfer students, and Terrell Hills lists both Alamo Heights ISD and North East ISD, so confirm the district for any address." },
           { "who": "City life", "advice": "You're minutes from downtown: the River Walk, the Pearl, and the rest of San Antonio." }
         ]
       },
-      "source": { "label": "Brooke Army Medical Center (official)", "url": "https://bamc.tricare.mil/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Brooke Army Medical Center (official)", "url": "https://bamc.tricare.mil/About-Us" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official JBSA-Fort Sam Houston visitor information page before you go."
+        "Open 24 hours: Walters Gate, the BAMC/I-35 gate and Harry Wurzbach East, plus the Camp Bullis gate. New Braunfels, BAMC Beach and Winans open only at weekday rush hours, Schofield is open weekdays 6 a.m. to 6 p.m., and Harry Wurzbach West and Wilson are closed.",
+        "Visitors without a DoD ID need a visitor pass and, since May 7, 2025, a REAL ID. The BAMC/I-35 Visitor Center (Bldg. 4299, George Beach Ave, 210-539-9826) is open 24 hours; the Walters Visitor Center (Bldg. 892, Hood St, 210-221-2650) is open weekdays 7:30 a.m. to 3 p.m. Hours change, so confirm on the official gate page before you go."
       ],
-      "source": { "label": "JBSA-Fort Sam Houston visitor info (official)", "url": "https://www.jbsa.mil/Information/Gate-Hours-Visitor-Information/JBSA-Fort-Sam-Houston-Visitor-Info/" },
-      "verified": "2026-06-24"
+      "source": { "label": "JBSA gate hours (official)", "url": "https://www.jbsa.mil/Gate-Hours/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-post family housing is privatized, managed by Hunt Military Communities (which took over management in 2021).",
-        "Eligibility and availability vary by rank and family size, so check the garrison housing office and the partner for current options and waitlists."
+        "On-post family housing is Fort Sam Houston Family Housing, managed by Hunt Military Communities since June 2021: 925 homes in eight neighborhoods, five of them wholly or partly historic, from 2-bedroom homes at Patch Chaffee to 5-bedroom homes at Gorgas Circle.",
+        "No wait list is posted, and Hunt advertised immediate availability for active-duty members in November 2026. Military Housing Office: 3171 Zinn Road, Bldg. 1161, (210) 221-0881."
       ],
-      "source": { "label": "JBSA-Fort Sam Houston housing (official)", "url": "https://home.army.mil/samhouston/directorates-1/privatized-army-housing" },
-      "verified": "2026-06-24"
+      "source": { "label": "Army privatized housing, Fort Sam Houston (official)", "url": "https://home.army.mil/samhouston/directorates-1/privatized-army-housing" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -100,11 +100,12 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "On post, schooling is the Fort Sam Houston Independent School District (FSHISD), a Texas public district physically on the installation (Fort Sam Houston Elementary; Robert G. Cole Middle/High). It is not a DoDEA district.",
-        "Off post, school assignment depends on your San Antonio address, so confirm the specific district and campus for any neighborhood you're considering."
+        "On post, schooling is the Fort Sam Houston Independent School District (FSHISD), a Texas public district physically on the installation (Fort Sam Houston Elementary; Robert G. Cole Middle/High). It earned an A (95) in Texas's 2026 ratings, with a 98.3% graduation rate for the class of 2025. It is not a DoDEA district.",
+        "Children living on post attend automatically and come first. Children living off post need a Non-Resident Transfer, approved one year at a time and limited by space, and the district says it can't accept off-post elementary students who need resource-classroom instruction or speech therapy. District office: 210-368-8707.",
+        "Off post, school assignment depends on your address. Alamo Heights ISD (B, 88 in 2026) takes no transfer students, North East ISD earned a B (81), San Antonio ISD a C (75) and Judson ISD a C (71), so confirm the specific district and campus for any address."
       ],
-      "source": { "label": "Fort Sam Houston ISD (official)", "url": "https://www.fshisd.net/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Fort Sam Houston ISD non-resident transfers (official)", "url": "https://fshisd.net/non-resident-transfer-nrt-student-p" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -118,12 +119,12 @@
       "type": "facts",
       "data": {
         "Hospital": "Brooke Army Medical Center (BAMC)",
-        "Distinction": "DoD's only Level I Trauma Center",
+        "Distinction": "Sole Level I Trauma Center in the Military Health System",
         "Care": "Full inpatient + emergency + specialty care",
         "TRICARE region": "West"
       },
-      "source": { "label": "Brooke Army Medical Center (official)", "url": "https://bamc.tricare.mil/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Brooke Army Medical Center (official)", "url": "https://bamc.tricare.mil/About-Us" },
+      "verified": "2026-11-10"
     },
     {
       "id": "shopping",
@@ -178,9 +179,9 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-          {"q": "What makes Fort Sam Houston unique?", "a": "It is the center of military medicine, home to Brooke Army Medical Center (the DoD's only Level I Trauma Center) and the medical training campuses, METC and MEDCoE."},
-          {"q": "Where do families live?", "a": "Established neighborhoods like Alamo Heights and Terrell Hills sit just off post, with quick access to central San Antonio. On-post housing is run by Hunt Military Communities."},
-          {"q": "Is healthcare good here?", "a": "Yes. BAMC anchors the San Antonio military health system, so healthcare access is among the deepest of any base. Confirm enrollment through TRICARE West."},
+          {"q": "What makes Fort Sam Houston unique?", "a": "It is a center of military medicine, home to Brooke Army Medical Center (the sole Level I Trauma Center within the Military Health System) and the medical training campuses, METC and MEDCoE."},
+          {"q": "Where do families live?", "a": "Close-in choices include Alamo Heights and Terrell Hills (about 16 to 18 minutes to BAMC with no traffic), Windcrest and the northeast side (about 14 to 20 minutes) and Stone Oak on the north side (about 32 minutes). On-post housing is run by Hunt Military Communities: 925 homes in eight neighborhoods."},
+          {"q": "Is healthcare good here?", "a": "BAMC is the sole Level I Trauma Center within the Military Health System and serves more than 240,000 beneficiaries in the San Antonio area. Confirm enrollment through TRICARE West."},
           {"q": "What is the BAH area?", "a": "MHA TX285 (San Antonio), shared with the other JBSA bases. Use the calculator above."}
       ]
     },
