@@ -5,11 +5,11 @@
   "short_name": "Hood",
   "branch": "U.S. Army",
   "states": ["TX"],
-  "tagline": "One of the largest military installations in the world, a major armored-forces post in Central Texas.",
+  "tagline": "The largest active-duty armored post in the U.S., home of III Armored Corps and the 1st Cavalry Division, in Central Texas.",
   "coords": { "lat": 31.138, "lng": -97.78, "label": "Killeen, TX" },
   "tz": "America/Chicago",
   "last_full_review": "2026-06-25",
-  "_note": "Large Army post (Central Texas, Killeen). Name history: Fort Hood -> Fort Cavazos (May 2023) -> Fort Hood (July 2025, now honoring WWI Col. Robert B. Hood). A 2026 congressional proposal could change it back to Cavazos; verify the current name on future updates. Facts verified from official sources (home.army.mil/hood, Army.mil, Lendlease/Cavalry Family Housing, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA TX286 (Fort Hood) via the bah_rates single source of truth. Housing operated by Lendlease (Cavalry Family Housing). Medium-confidence flags: base coords (approx), representative off-base ZIP 76542 (Killeen).",
+  "_note": "Large Army post (Central Texas, Killeen). Name history: Fort Hood -> Fort Cavazos (May 2023) -> Fort Hood (July 2025, now honoring WWI Col. Robert B. Hood). A June 2026 House Armed Services amendment to restore the 2023 names was not law as of Sept 1, 2026 (CRS); verify the current name on future updates. Facts verified from official sources (home.army.mil/hood, Army.mil, Lendlease/Cavalry Family Housing, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA TX286 (Fort Hood) via the bah_rates single source of truth. Corrected 2026-11-09 from the website-page research (Base Guides/page-builder/research/hood-facts.md): housing is Cavalry Family Housing in partnership with Centinel, managed by WinnCompanies (no longer Lendlease), plus Liberty Village (~300 homes); Killeen ISD runs ALL on-post schools; official identity 'largest active-duty armored post in the U.S.'; 2026 Bell/Coryell CAD tax rates; TEA 2026 preliminary ratings. Removed unsourced claims (one of the largest installations in the world, longer tours common, being modernized, largest Exchange). Medium-confidence flags: base coords (approx), representative off-base ZIP 76542 (Killeen).",
   "sections": [
     {
       "id": "quick_facts",
@@ -20,64 +20,65 @@
         "Location": "Killeen, TX (Central Texas)",
         "Major commands": "III Armored Corps and the 1st Cavalry Division",
         "Also hosts": "3rd Cavalry Regiment and supporting units",
-        "Footprint": "One of the largest installations in the world by area",
+        "Footprint": "Largest active-duty armored post in the U.S.; about 340 square miles",
         "Identity": "Heavy armored and cavalry forces"
       },
-      "source": { "label": "Fort Hood (official)", "url": "https://home.army.mil/hood/" },
-      "verified": "2026-06-25"
+      "source": { "label": "U.S. Army Fort Hood (official)", "url": "https://home.army.mil/hood/about" },
+      "verified": "2026-11-09"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Fort Hood is one of the largest military installations in the world by area and a major armored-forces post. It is home to III Armored Corps and the 1st Cavalry Division, with the 3rd Cavalry Regiment and many supporting units.",
-        "The post carried the name Fort Cavazos from 2023 to 2025 before reverting to Fort Hood, now honoring a World War I soldier. Its wide-open Central Texas ranges make it a premier place to train armored and aviation units."
+        "Fort Hood is the largest active-duty armored post in the U.S. and the only post able to station and train two armored divisions. It is home to III Armored Corps, the 1st Cavalry Division and the 3d Cavalry Regiment, with many supporting units, including 1st Army Division West and the 13th Sustainment Command.",
+        "The post carried the name Fort Cavazos from 2023 to 2025. It was renamed Fort Hood on July 28, 2025, this time honoring Col. Robert B. Hood, who received the Distinguished Service Cross in World War I."
       ],
-      "source": { "label": "Fort Hood (official)", "url": "https://home.army.mil/hood/" },
-      "verified": "2026-06-25"
+      "source": { "label": "U.S. Army Fort Hood; army.mil (July 29, 2025)", "url": "https://www.army.mil/article/287396" },
+      "verified": "2026-11-09"
     },
     {
       "id": "centraltx_decision",
-      "title": "Affordable Central Texas: Lots of Room to Choose",
+      "title": "Which Town? The Fort Hood Tax and Schools Decision",
       "type": "killer",
       "data": {
-        "subtitle": "Fort Hood is huge and Central Texas is affordable, so BAH stretches and families have plenty of options around Killeen. The main call is commute and schools across the surrounding towns.",
+        "subtitle": "Texas has no state income tax, so property tax and the school district do most of the work in your budget. Combined rates around Fort Hood run about 1.8% to 2.4% of taxable value before exemptions (our estimate from the 2026 appraisal district tables), and they change from town to town.",
         "intro": [
-          "This is a big armored post with a large, settled community. The cost of living is low, so your BAH tends to go far, and there is a lot of both on-post and off-post housing to choose from.",
-          "The surrounding towns each have their own feel and schools. Killeen and Harker Heights sit right outside the gates, while Belton, Temple, and Copperas Cove offer alternatives a bit farther out, and Austin is roughly an hour south for a big-city day trip."
+          "Killeen ISD runs every school on post and was rated C (79) for 2026, preliminary; Harker Heights High, rated A, serves part of the district. Nearby districts were rated B: Copperas Cove (85), Salado (82), Temple (81) and Belton (80).",
+          "Copperas Cove ISD's tax rate rose from 0.7575 to 1.0549 per $100 after a 2025 bond, and US 190 through Copperas Cove is being widened until early 2029. On a home you live in, a $140,000 homestead exemption trims the school portion of the tax."
         ],
         "recommendations": [
-          { "who": "Closest to the gates", "advice": "Killeen and Harker Heights are right next to the base with the shortest commute; Harker Heights is popular for its schools." },
-          { "who": "A bit more space", "advice": "Belton and Temple, to the east, and Copperas Cove, to the west, offer alternatives with their own school districts." },
-          { "who": "Stretch your budget", "advice": "Central Texas is inexpensive, so BAH often covers a comfortable home; with longer tours common, many families buy." },
-          { "who": "On-post option", "advice": "On-post housing (Cavalry Family Housing) is extensive and being modernized, worth considering for proximity and community." }
+          { "who": "Shortest drive", "advice": "Killeen is about 11 minutes from Carl R. Darnall Army Medical Center with no traffic, Copperas Cove 15, Harker Heights 16. Typical home in Killeen: $217,130 (Zillow, September 2026)." },
+          { "who": "Graduation rates", "advice": "Belton and Salado, about 30 to 37 minutes away, had Class of 2025 graduation rates of 94.4% and 97.8%, at higher prices." },
+          { "who": "Check the tax rate", "advice": "Combined rates run from about 1.84 per $100 in Harker Heights to about 2.41 in Temple (our estimates). Look up the exact address on the appraisal district record." },
+          { "who": "On-post option", "advice": "Cavalry Family Housing (more than 5,540 homes) and Liberty Village (about 300). Military OneSource says waits run from two weeks to 12 months depending on occupancy." }
         ]
       },
-      "source": { "label": "Fort Hood (official)", "url": "https://home.army.mil/hood/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Bell CAD and Coryell CAD 2026 rates; TEA 2026 ratings; Zillow", "url": "https://bellcad.org/wp-content/uploads/2026/10/2026_TAX_RATE_CHART-1.pdf" },
+      "verified": "2026-11-09"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Hood site before you go."
+        "The Marvin Leath Visitors Welcome Center is off I-14 on T.J. Mills Blvd next to the main gate, open 5 a.m. to 9 p.m. daily, (254) 287-9909.",
+        "All gates use the Army's automated entry system. Visitors 18 and over need a REAL ID or an accepted alternative such as a U.S. passport or military ID, and can apply for a pass online.",
+        "Gate hours change, so call the Visitors Welcome Center before you rely on a gate."
       ],
-      "source": { "label": "Fort Hood (official)", "url": "https://home.army.mil/hood/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Hood visitor information (official)", "url": "https://home.army.mil/hood/my-fort/visitor-information" },
+      "verified": "2026-11-09"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-post family housing is privatized, operated by Lendlease as Cavalry Family Housing, across many neighborhoods, with a multi-year construction and renovation program underway.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+        "On-post family housing is privatized. Cavalry Family Housing, in partnership with Centinel and managed by WinnCompanies, oversees more than 5,540 homes, and Liberty Village has about 300. The Army said in September 2025 that more than 5,000 families live on post in 12 housing areas.",
+        "Call (254) 285-2313, listed for both Cavalry Family Housing and the Army Housing Services Office; Liberty Village is 254-526-3788. Military OneSource says waits run from two weeks to 12 months depending on occupancy."
       ],
-      "source": { "label": "Fort Hood housing (official)", "url": "https://home.army.mil/hood/" },
-      "verified": "2026-06-25"
+      "source": { "label": "army.mil (September 2025); Military OneSource Fort Hood housing", "url": "https://www.army.mil/article/288576" },
+      "verified": "2026-11-09"
     },
     {
       "id": "bah",
@@ -102,11 +103,12 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools. Killeen ISD is the largest and covers much of the area including parts of post; Harker Heights falls in Killeen ISD, while Belton, Temple, Copperas Cove, and Lampasas have their own districts.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "There are no DoD schools at Fort Hood. Killeen ISD runs every school on post: six elementary schools, a middle school and an early college high school that admits by application.",
+        "For 2026 (preliminary), Killeen ISD was rated C (79); Copperas Cove ISD B (85), Salado B (82), Temple B (81), Belton B (80) and Lampasas B (84). Class of 2025 graduation rates ranged from 88.4% (Killeen) to 97.8% (Salado).",
+        "Your assigned schools depend on your address, so confirm the district and high school with the School Liaison Office at (254) 288-7946."
       ],
-      "source": { "label": "Killeen ISD (official)", "url": "https://www.killeenisd.org/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource Fort Hood education; TEA 2026 ratings", "url": "https://installations.militaryonesource.mil/military-installation/fort-hood/education/education" },
+      "verified": "2026-11-09"
     },
     {
       "id": "schools_live",
@@ -131,18 +133,18 @@
       "title": "On-Base Shopping",
       "type": "facts",
       "data": {
-        "Commissary": "Fort Hood Commissary (DeCA)",
-        "Exchange": "Fort Hood Exchange (AAFES / PX), one of the largest in the system"
+        "Commissary": "Fort Hood commissaries (DeCA), including Clear Creek",
+        "Exchange": "Fort Hood Exchange (AAFES / PX)"
       },
       "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
-      "verified": "2026-06-25"
+      "verified": "2026-11-09"
     },
     {
       "id": "rent_buy",
       "title": "Rent or Buy?",
       "type": "rentbuy",
       "data": {
-        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Fort Hood the affordable market and longer tours lead many families to buy."],
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. Around Fort Hood, property tax and insurance are a big part of the monthly cost of owning, so compare them by address."],
         "rent": [
           "Your tour is short (about two years or less) or your orders feel uncertain.",
           "You want time to learn the area before committing to a neighborhood.",
@@ -150,12 +152,12 @@
           "Your BAH comfortably covers rent in the areas you'd consider."
         ],
         "buy": [
-          "You expect to be here three or more years, which is common at Fort Hood.",
+          "You expect to be here three or more years.",
           "You want to use your VA loan and build equity instead of paying rent.",
-          "Affordable Central Texas prices fit your budget for a home you like.",
+          "You have budgeted property tax and insurance for that exact address.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer, but the low cost of living and longer tours make buying worth a serious look here. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. Home values around Fort Hood were flat to slightly down over the past year. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -169,7 +171,7 @@
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
           { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
           { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact Killeen ISD or the relevant district early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Enroll the kids in school", "text": "Contact Killeen ISD (on post) or your district early and bring records and immunizations. The School Liaison Office, (254) 288-7946, can tell you which high school serves your housing area." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Carl R. Darnall Army Medical Center or network providers." }
         ]
       }
@@ -179,9 +181,9 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "Is it Fort Hood or Fort Cavazos?", "a": "Fort Hood, as of July 2025. It was Fort Cavazos from 2023 to 2025; the name now honors a World War I soldier. A 2026 proposal could change it back, so it may be worth double-checking." },
-        { "q": "What's based here?", "a": "III Armored Corps and the 1st Cavalry Division, with the 3rd Cavalry Regiment, on one of the largest installations in the world by area." },
-        { "q": "Where do families live?", "a": "Killeen and Harker Heights are closest; Belton, Temple, and Copperas Cove are popular nearby; Austin is about an hour south. On-post housing is extensive." },
+        { "q": "Is it Fort Hood or Fort Cavazos?", "a": "Fort Hood, since July 28, 2025, honoring Col. Robert B. Hood (World War I). It was Fort Cavazos from 2023 to 2025. A June 2026 House committee amendment to restore the 2023 names had not become law as of September 1, 2026." },
+        { "q": "What's based here?", "a": "III Armored Corps, the 1st Cavalry Division and the 3d Cavalry Regiment, on the largest active-duty armored post in the U.S." },
+        { "q": "Where do families live?", "a": "Killeen, Copperas Cove and Harker Heights are closest, about 11 to 16 minutes with no traffic; Belton, Salado and Temple are 30 to 38 minutes away. Each town has its own tax rate and school district." },
         { "q": "What is the BAH area?", "a": "Fort Hood is MHA TX286. Use the calculator above for your grade." }
       ]
     },

@@ -9,7 +9,7 @@
   "coords": { "lat": 31.81, "lng": -106.42, "label": "El Paso, TX" },
   "tz": "America/Denver",
   "last_full_review": "2026-06-25",
-  "_note": "Large Army post (El Paso, far West Texas; straddles into New Mexico). Facts verified from official sources (home.army.mil/bliss, William Beaumont AMC, fortblisshousing/Balfour Beatty, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA TX279 (El Paso) via the bah_rates single source of truth. El Paso is in the Mountain time zone (America/Denver). Housing operated by Balfour Beatty Communities. Medium-confidence flags: base coords (approx), representative off-base ZIP 79936 (El Paso east side).",
+  "_note": "Large Army post (El Paso, far West Texas; straddles into New Mexico). Facts verified from official sources (home.army.mil/bliss, William Beaumont AMC, fortblisshousing/Balfour Beatty, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA TX279 (El Paso) via the bah_rates single source of truth. El Paso is in the Mountain time zone (America/Denver). Corrected 2026-11-09 from the website-page research (Base Guides/page-builder/research/bliss-facts.md): housing brand is Fort Bliss Family Homes (managed by Balfour Beatty Communities), 4,227 homes; El Paso ISD runs all six on-post schools and ten districts support Bliss; gates from the official gate page; 2026 El Paso tax rates (Ysleta and Socorro ISD rates pending after failed Nov 3 rate elections). Removed unsourced claims (safer large city, over a million acres of training land, largest Exchange, newer homes in Far East). Medium-confidence flags: base coords (approx), representative off-base ZIP 79936 (El Paso east side).",
   "sections": [
     {
       "id": "quick_facts",
@@ -20,64 +20,65 @@
         "Location": "El Paso, TX (Texas-New Mexico border)",
         "Signature unit": "1st Armored Division (Old Ironsides)",
         "Scale": "One of the largest Army installations by land area",
-        "Training land": "Over a million acres",
+        "Training land": "About 1.3 million acres owned, used or leased (DoD)",
         "Setting": "High desert; Mountain time zone"
       },
-      "source": { "label": "Fort Bliss (official)", "url": "https://home.army.mil/bliss/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Bliss (official); DoD Base Structure Report via El Paso Matters", "url": "https://home.army.mil/bliss/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Fort Bliss is home of the 1st Armored Division (Old Ironsides) and one of the Army's largest installations, with more than a million acres of training land spanning West Texas and southern New Mexico.",
-        "Its vast maneuver area and clear desert weather make it a premier site for armored and air-defense training. The 1st Armored Division relocated here from Germany in 2011, making Bliss a major power-projection platform."
+        "Fort Bliss is home of the 1st Armored Division (Old Ironsides) and one of the Army's largest installations, with about 1.3 million acres owned, used or leased across West Texas and southern New Mexico.",
+        "The 1st Armored Division officially uncased its colors at Fort Bliss on May 13, 2011, after moving from Germany. The post also hosts the 32d Army Air and Missile Defense Command, the Joint Modernization Command, William Beaumont Army Medical Center and the NCO Leadership Center of Excellence."
       ],
-      "source": { "label": "Fort Bliss (official)", "url": "https://home.army.mil/bliss/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Bliss 1st Armored Division (official)", "url": "https://home.army.mil/bliss/units-tenants/1st-armored-division" },
+      "verified": "2026-11-09"
     },
     {
       "id": "elpaso_decision",
-      "title": "Affordable El Paso on the Border",
+      "title": "Which School District and Tax Area? The El Paso Decision",
       "type": "killer",
       "data": {
-        "subtitle": "El Paso is an affordable, safe, deeply bicultural border city, so BAH stretches and most families find plenty of options. The main call is which side of the metro fits your commute and schools.",
+        "subtitle": "Texas has no state income tax, so the choice that shapes your budget is the school district and tax area your home sits in. Inside El Paso the 2026 property tax rates we could confirm add up to about 2.7 per $100 of value before exemptions, and more where a utility district applies.",
         "intro": [
-          "El Paso is consistently ranked among the safer large U.S. cities and has a low cost of living, so your BAH tends to go a long way. The culture is richly bilingual and tied to neighboring Ciudad Juarez across the border.",
-          "Fort Bliss is large and mostly on the city's northeast and east sides. Where you live usually comes down to commute and schools, with extensive on-post housing also available."
+          "El Paso ISD runs all six schools on post, and ten school districts in all support Fort Bliss families, including Gadsden ISD in New Mexico. El Paso ISD was rated B (82) for 2025-26; Ysleta ISD B (88), Socorro ISD B (87) and Clint ISD B (86). Confirm the district for any address.",
+          "Voters rejected Ysleta and Socorro ISD's proposed 2026 tax rates on November 3, 2026 (unofficial results), so those districts' final rates will be lower than first set. Some subdivisions, including parts of Horizon City, also pay a utility district rate of 0.20 to 0.80 per $100, which can push the total above 3."
         ],
         "recommendations": [
-          { "who": "Closest to the gates", "advice": "Northeast El Paso sits nearest much of the post for a short commute." },
-          { "who": "Newer suburbs and schools", "advice": "Far East El Paso (Socorro and Ysleta ISD areas) has newer homes and is popular with families." },
-          { "who": "Stretch your budget", "advice": "El Paso's low cost of living means BAH covers a comfortable home; with larger tours common, many families buy." },
-          { "who": "On-post option", "advice": "On-post housing (Balfour Beatty) is extensive and modern, worth considering for proximity and community." }
+          { "who": "Northeast El Paso", "advice": "About 21 minutes from ZIP 79924 to William Beaumont Army Medical Center with no traffic; typical home $194,573 (Zillow, September 2026)." },
+          { "who": "East and Far East El Paso", "advice": "About 20 to 24 minutes from ZIPs 79936 and 79938 with no traffic, on routes that use Montana Avenue and Loop 375, both under construction. Check for a utility district." },
+          { "who": "Horizon City, Socorro and New Mexico", "advice": "Horizon City and Socorro are about 32 minutes away; Chaparral, NM, about 34. New Mexico exempts active-duty pay from its income tax, but a spouse's job income may be taxed there." },
+          { "who": "On-post option", "advice": "Fort Bliss Family Homes, managed by Balfour Beatty Communities, has 4,227 homes and more under construction. Leasing: (915) 564-0795." }
         ]
       },
-      "source": { "label": "Fort Bliss (official)", "url": "https://home.army.mil/bliss/" },
-      "verified": "2026-06-25"
+      "source": { "label": "City of El Paso tax office 2026 rates; TEA ratings; El Paso County election results", "url": "https://www.elpasotexas.gov/tax-office" },
+      "verified": "2026-11-09"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Bliss site before you go."
+        "Open 24 hours: Buffalo Soldier (with a 24-hour visitor center, 915-568-3215), Cassidy, MSG Espinoza, MSG Peña and Silvestre Reyes (formerly Constitution).",
+        "Weekdays 5 a.m. to 9 p.m., closed weekends: Chaffee, Old Ironsides (also closed federal holidays) and SGT Duran. CSM Barreras Gate is closed until further notice.",
+        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Bliss gate page before you go."
       ],
-      "source": { "label": "Fort Bliss (official)", "url": "https://home.army.mil/bliss/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Bliss gate information (official)", "url": "https://home.army.mil/bliss/about/Garrison/DES/gate-information" },
+      "verified": "2026-11-09"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-post family housing is privatized, operated by Balfour Beatty Communities, with several thousand homes across many neighborhoods on the sprawling installation.",
-        "Eligibility and availability vary by rank and family size, so start with the Housing Division and the partner for current options and waitlists."
+        "On-post housing is Fort Bliss Family Homes, professionally managed by Balfour Beatty Communities. The Housing Division lists 4,227 homes and says more are under construction; select homes are also open to retirees, DoD civilians and the public.",
+        "Leasing: (915) 564-0795, 1991 Marshall Road. Report to the Housing Services Office (915-568-2898) before you rent, lease or buy off post."
       ],
-      "source": { "label": "Fort Bliss housing (official)", "url": "https://home.army.mil/bliss/about/Garrison/directorate-public-works/housing-division" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Bliss Housing Division (official); Fort Bliss Family Homes", "url": "https://home.army.mil/bliss/about/Garrison/directorate-public-works/housing-division" },
+      "verified": "2026-11-09"
     },
     {
       "id": "bah",
@@ -102,11 +103,12 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools. The main districts are El Paso ISD, Ysleta ISD, and Socorro ISD (far East), with Canutillo and others on the city's edges.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "There are no DoD schools at Fort Bliss. The post sits inside El Paso ISD, which runs all six on-post schools: four elementary, one middle and one high school.",
+        "Ten districts support Fort Bliss families: El Paso, Socorro, Ysleta, Clint, Canutillo, Tornillo, Fabens, Anthony and San Elizario ISDs in Texas and Gadsden ISD in New Mexico. For 2025-26, El Paso ISD was rated B (82), Ysleta B (88), Socorro B (87), Clint B (86) and Canutillo C (78).",
+        "Your assigned schools depend on your address, so confirm the district with the School Liaison at (915) 569-5064."
       ],
-      "source": { "label": "Socorro ISD (official)", "url": "https://www.sisd.net/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource Fort Bliss education; TEA 2025-26 ratings", "url": "https://installations.militaryonesource.mil/military-installation/fort-bliss/education/education" },
+      "verified": "2026-11-09"
     },
     {
       "id": "schools_live",
@@ -132,7 +134,7 @@
       "type": "facts",
       "data": {
         "Commissary": "Fort Bliss Commissary (DeCA)",
-        "Exchange": "Fort Bliss Exchange (AAFES / PX), one of the largest in the system"
+        "Exchange": "Fort Bliss Exchange (AAFES / PX)"
       },
       "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
       "verified": "2026-06-25"
@@ -142,7 +144,7 @@
       "title": "Rent or Buy?",
       "type": "rentbuy",
       "data": {
-        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and at Fort Bliss the affordable El Paso market and larger tours lead many families to buy."],
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. In El Paso, property tax is a big part of the monthly cost of owning, so compare it by address."],
         "rent": [
           "Your tour is short (about two years or less) or your orders feel uncertain.",
           "You want time to learn the area before committing to a neighborhood.",
@@ -152,10 +154,10 @@
         "buy": [
           "You expect to be here three or more years.",
           "You want to use your VA loan and build equity instead of paying rent.",
-          "Affordable El Paso prices fit your budget for a home you like.",
+          "You have checked the tax rate and any utility district for that exact address.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer, but El Paso's low cost of living makes buying worth a serious look. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. On a home you live in, a $140,000 homestead exemption trims the school portion of the tax. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -169,7 +171,7 @@
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
           { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
           { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact the gaining district (El Paso, Ysleta, or Socorro ISD) early and bring records and immunizations. The School Liaison Office can help." },
+          { "title": "Enroll the kids in school", "text": "Contact the gaining district early (El Paso ISD on post; El Paso, Ysleta, Socorro, Clint, Canutillo or others off post) and bring records and immunizations. Socorro ISD starts its year earlier. School Liaison: (915) 569-5064." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at William Beaumont Army Medical Center or network providers." }
         ]
       }
@@ -179,9 +181,9 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What's based at Fort Bliss?", "a": "The 1st Armored Division (Old Ironsides) and a large air-defense and training community, on one of the Army's largest installations by land area." },
-        { "q": "Is El Paso a good place to live?", "a": "Many families like it: it's affordable, consistently ranks among safer large U.S. cities, and has a rich bicultural, bilingual culture on the border." },
-        { "q": "Where do families live?", "a": "Northeast El Paso is closest to much of the post; far East El Paso (Socorro/Ysleta areas) has newer homes and schools. On-post housing is extensive." },
+        { "q": "What's based at Fort Bliss?", "a": "The 1st Armored Division (Old Ironsides), the 32d Army Air and Missile Defense Command, the Joint Modernization Command and William Beaumont Army Medical Center, on one of the Army's largest installations by land area." },
+        { "q": "Which gates are open 24 hours?", "a": "Buffalo Soldier, Cassidy, MSG Espinoza, MSG Peña and Silvestre Reyes (formerly Constitution). The Buffalo Soldier visitor center is open 24 hours." },
+        { "q": "Which school district serves families on post?", "a": "El Paso ISD runs all six on-post schools. Off post, the district depends on your address, so confirm it before you sign." },
         { "q": "What is the BAH area?", "a": "Fort Bliss is MHA TX279 (El Paso). Use the calculator above for your grade." }
       ]
     },

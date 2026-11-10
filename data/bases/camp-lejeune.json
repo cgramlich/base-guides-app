@@ -9,7 +9,7 @@
   "coords": { "lat": 34.6, "lng": -77.34, "label": "Jacksonville, NC" },
   "tz": "America/New_York",
   "last_full_review": "2026-06-25",
-  "_note": "First Marine Corps base in the app. Coastal NC (Jacksonville, Onslow County). Facts verified from official sources (lejeune.marines.mil, MilitaryINSTALLATIONS, camplejeunefamilyhousing.com, DeCA/MCX, Wikipedia for corroborated headline facts). BAH MHA NC178 (Camp Lejeune) via the bah_rates single source of truth. Housing operated by Atlantic Marine Corps Communities (Lendlease). Medium-confidence flags: base coords (approx), representative off-base ZIP 28546 (Jacksonville).",
+  "_note": "First Marine Corps base in the app. Coastal NC (Jacksonville, Onslow County). Facts verified from official sources (lejeune.marines.mil, MilitaryINSTALLATIONS, camplejeunefamilyhousing.com, DeCA/MCX, Wikipedia for corroborated headline facts). BAH MHA NC178 (Camp Lejeune) via the bah_rates single source of truth. Corrected 2026-11-09 from the website-page research (Base Guides/page-builder/research/lejeune-facts.md): there ARE DoD schools (7, pre-K to 12, Lejeune High School); housing is Hunt Military Communities (bought AMCC from Lendlease, Oct 2024) and Liberty Military Housing (Heroes Manor), 5,204 units; 156,000 acres; gate hours from the Provost Marshal page; Onslow reappraisal delayed to tax year 2027. Removed unverified claims (plentiful housing, lowest cost of living, School of Infantry/MARSOC/Combat Service Support Schools wording). Medium-confidence flags: base coords (approx), representative off-base ZIP 28546 (Jacksonville).",
   "sections": [
     {
       "id": "quick_facts",
@@ -20,11 +20,11 @@
         "Location": "Jacksonville, NC (Onslow County coast)",
         "Known as": "Home of Expeditionary Forces in Readiness",
         "Major commands": "II Marine Expeditionary Force (II MEF), 2nd Marine Division",
-        "Also hosts": "2nd Marine Logistics Group, School of Infantry, MARSOC",
-        "Footprint": "About 246 square miles with miles of coastline"
+        "Also hosts": "2nd Marine Logistics Group and other combat and support commands",
+        "Footprint": "156,000 acres with 11 miles of beach"
       },
-      "source": { "label": "MCB Camp Lejeune (official)", "url": "https://www.lejeune.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "MCB Camp Lejeune, About (official)", "url": "https://www.lejeune.marines.mil/About/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "mission",
@@ -32,52 +32,53 @@
       "type": "prose",
       "data": [
         "Camp Lejeune is the East Coast's home of Marine expeditionary forces. It is home to the II Marine Expeditionary Force (II MEF), the 2nd Marine Division, and the 2nd Marine Logistics Group, the ground, logistics, and command backbone of the Atlantic Marine force.",
-        "It also hosts the School of Infantry, the Marine Corps Combat Service Support Schools, and Marine special operations units. The base runs along the New River and the Atlantic in coastal North Carolina."
+        "The base covers 156,000 acres along the New River and the Atlantic, with 11 miles of beach used for amphibious training."
       ],
-      "source": { "label": "MCB Camp Lejeune (official)", "url": "https://www.lejeune.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "MCB Camp Lejeune, About (official)", "url": "https://www.lejeune.marines.mil/About/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "coast_decision",
-      "title": "A Coastal Marine Town: Where to Live",
+      "title": "On Base or Off? The Camp Lejeune School and Tax Decision",
       "type": "killer",
       "data": {
-        "subtitle": "Jacksonville grew up around Camp Lejeune, so this is a true Marine town on the coast. It's affordable and deployment-paced, and where you live mostly comes down to commute and which beaches and schools you want nearby.",
+        "subtitle": "The first choice here is on base or off. On base, active-duty families' children attend DoD schools from pre-K through high school; off base, your address sets the school system, the county tax and the gate you use.",
         "intro": [
-          "Expeditionary units deploy often, so a strong support network and a manageable commute matter. The community is overwhelmingly Marine and Navy, and Jacksonville's economy revolves around the base.",
-          "On-base housing is plentiful, and off-base options run from Jacksonville right outside the gates to the coastal towns of Sneads Ferry, Swansboro, and Hubert, with Wilmington's beaches about an hour south."
+          "Camp Lejeune runs seven DoD schools, ending at Lejeune High School, for families who live on base. Off base, most towns are served by Onslow County Schools, where 9 of 40 graded schools were rated low-performing in 2025-26 and the Class of 2026 graduated at 91.6%. Cape Carteret is in Carteret County and Hampstead in Pender County, each with its own schools.",
+          "Property tax is changing too. Onslow's 2026 reappraisal raised residential values about 40% on average, and state law delays using the new values until the 2027 tax year, so check what a home will be assessed at, not just this year's bill."
         ],
         "recommendations": [
-          { "who": "Closest and most affordable", "advice": "Jacksonville borders the base with the shortest commute and the lowest cost of living." },
-          { "who": "Coastal living", "advice": "Sneads Ferry, Swansboro, and Hubert put you near the water and the Intracoastal at a slightly longer drive." },
-          { "who": "On-base option", "advice": "On-base housing (Atlantic Marine Corps Communities) is extensive and keeps you close to the unit." },
-          { "who": "Weekend getaways", "advice": "Wilmington and Wrightsville Beach are about an hour south for a bigger-city and beach scene." }
+          { "who": "On base", "advice": "DoD schools pre-K to 12. Waits posted in October 2026 ran from 0 to 1 month in some E-1 to E-5 neighborhoods to 12 to 14 months for some E-6 to E-9 homes." },
+          { "who": "Shortest drive off base", "advice": "Jacksonville is about 13 minutes from Naval Medical Center Camp Lejeune with no traffic; Hubert about 15." },
+          { "who": "The coast", "advice": "Swansboro (Onslow) and Cape Carteret (Carteret) are about 26 to 35 minutes away; Sneads Ferry and Holly Ridge about 42 to 43 via US 17. Check which gate you would use and when it is open." },
+          { "who": "Off-base DoD school seat", "advice": "Active-duty families off base can apply for a DoD school seat if space allows (applications April 1 to October 31), with no bus." }
         ]
       },
-      "source": { "label": "MCB Camp Lejeune (official)", "url": "https://www.lejeune.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Camp Lejeune DoD schools; NC DPI 2025-26; Onslow County revaluation", "url": "https://www.dodea.edu/americas/mid-atlantic/camp-lejeune-schools" },
+      "verified": "2026-11-09"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Camp Lejeune site before you go."
+        "Open 24 hours: Holcomb (the Main Gate), Wilson, Sneads Ferry, Stone Bay, Camp Johnson and Midway Park. Piney Green is open weekdays only, and the Triangle Outpost Gate on NC 172 in Hubert opens only at weekday rush hours; both close on weekends and federal holidays.",
+        "Under current heightened security every adult in the car is checked, and guests 18 and over need a REAL ID or a U.S. passport. The Visitor Center at Wilson Gate (Building TT-13) is open weekdays 5 a.m. to 9 p.m.",
+        "Gate hours and visitor requirements change, so confirm the current details on the Provost Marshal's page before you go."
       ],
-      "source": { "label": "MCB Camp Lejeune (official)", "url": "https://www.lejeune.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "MCB Camp Lejeune Provost Marshal's Office (official)", "url": "https://www.lejeune.marines.mil/Sections/Provost-Marshals-Office/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-base family housing is privatized, operated by Atlantic Marine Corps Communities (a Lendlease community), across many neighborhoods aboard the installation.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+        "On-base family housing is privatized. Hunt Military Communities bought Atlantic Marine Corps Communities in 2024 and runs most neighborhoods, and Liberty Military Housing runs Heroes Manor. Military OneSource counts 5,204 homes across both partners.",
+        "Military Housing Office: (910) 450-1628, toll-free 1-866-360-3775, TT-43 Inchon Street, Tarawa Terrace. Waits posted in October 2026 ran from 0 to 1 month to 12 to 14 months depending on rank, neighborhood and bedrooms."
       ],
-      "source": { "label": "Camp Lejeune Family Housing (partner)", "url": "https://www.camplejeunefamilyhousing.com/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Camp Lejeune Military Housing Office (official); Hunt Companies", "url": "https://www.lejeune.marines.mil/Sections/Military-Housing-Office-MHO/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "bah",
@@ -102,11 +103,12 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools, primarily Onslow County Schools, which serves Jacksonville and the surrounding coastal towns.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "Camp Lejeune has seven DoD schools (DoDEA, which now also calls itself DoWEA) for families who live on base, from pre-K through grade 12 at Lejeune High School.",
+        "Off base, the county sets the school system: Onslow County Schools in most towns (9 of 40 graded schools low-performing in 2025-26; Class of 2026 graduation 91.6%), Carteret County Schools in Cape Carteret, and Pender County Schools in Hampstead. Active-duty families off base can apply for a DoD seat if space allows, with no bus.",
+        "Confirm the school for any address with the School Liaison at 910-449-9915."
       ],
-      "source": { "label": "Onslow County Schools (official)", "url": "https://www.onslow.k12.nc.us/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Camp Lejeune Schools (DoDEA); NC DPI 2025-26 results", "url": "https://www.dodea.edu/americas/mid-atlantic/camp-lejeune-schools" },
+      "verified": "2026-11-09"
     },
     {
       "id": "schools_live",
@@ -155,7 +157,7 @@
           "The market is steady and you could rent the home out later if needed.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer. The Jacksonville area is affordable, so BAH often stretches well, but the market is heavily military and turns over with deployments and PCS season. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. Buyers in Onslow and Pender should plan for higher assessed values from the 2027 tax year, and coastal buyers should check flood zone and flood history on the seller's disclosure. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -169,7 +171,7 @@
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
           { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
           { "title": "Register your vehicle and sort access", "text": "Handle base access and vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact Onslow County Schools early and bring records and immunizations. The School Liaison Office can help with the transfer." },
+          { "title": "Enroll the kids in school", "text": "Contact the base DoD schools if you will live on base, or your county's school system if not, and bring records and immunizations. The School Liaison (910-449-9915) can help." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Medical Center Camp Lejeune or network providers." }
         ]
       }
@@ -179,9 +181,10 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What's based at Camp Lejeune?", "a": "It's the East Coast home of Marine expeditionary forces: II Marine Expeditionary Force, the 2nd Marine Division, and the 2nd Marine Logistics Group, plus the School of Infantry and Marine special operations units." },
-        { "q": "Where do families live?", "a": "Jacksonville borders the base and is the most affordable; coastal towns like Sneads Ferry, Swansboro, and Hubert are popular; Wilmington's beaches are about an hour south. On-base housing is extensive." },
-        { "q": "Who runs on-base housing?", "a": "Atlantic Marine Corps Communities, a Lendlease community. Start with the base housing office for availability." },
+        { "q": "What's based at Camp Lejeune?", "a": "It's the home base of II Marine Expeditionary Force, the 2nd Marine Division and the 2nd Marine Logistics Group, plus other combat units and support commands." },
+        { "q": "Are there DoD schools?", "a": "Yes. Seven DoD schools serve families who live on base, from pre-K through grade 12 at Lejeune High School. Off base, your county sets the school system." },
+        { "q": "Which gates are open 24 hours?", "a": "Holcomb (the Main Gate), Wilson, Sneads Ferry, Stone Bay, Camp Johnson and Midway Park. Piney Green and the Triangle Outpost Gate keep weekday hours only." },
+        { "q": "Who runs on-base housing?", "a": "Hunt Military Communities, which bought Atlantic Marine Corps Communities in 2024, and Liberty Military Housing at Heroes Manor. Call the Military Housing Office at (910) 450-1628." },
         { "q": "What is the BAH area?", "a": "Camp Lejeune is MHA NC178. Use the calculator above for your grade." }
       ]
     },
