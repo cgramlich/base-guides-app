@@ -5,11 +5,11 @@
   "short_name": "Norfolk",
   "branch": "U.S. Navy",
   "states": ["VA"],
-  "tagline": "The world's largest naval station and the heart of the Atlantic Fleet, on Hampton Roads.",
+  "tagline": "The largest naval complex in the world and the heart of the Atlantic Fleet, on Hampton Roads.",
   "coords": { "lat": 36.9467, "lng": -76.33, "label": "Norfolk, VA (Sewells Point)" },
   "tz": "America/New_York",
   "last_full_review": "2026-06-24",
-  "_note": "First Navy base. Facts verified from official + well-corroborated sources (cnrma.cnic.navy.mil, norfolknavalhousing.com, portsmouth.tricare.mil, DeCA/NEX, Wikipedia for the headline figures it cites to the Navy). BAH: full VA298 (Norfolk/Portsmouth) 2026 table, verified value-for-value against the official DoD 2026 BAH rate table (all locations, all pay grades, effective 2026-01-01) on 2026-06-24. Killer content (the Hampton Roads commute/tunnel decision) is drawn from cited commute figures. Medium-confidence flags: base coords (approx Sewells Point), representative off-base ZIP 23505, housing partner branding (Lincoln Military Housing per the official Norfolk site; nationally transitioning to Liberty Military Housing in some markets).",
+  "_note": "First Navy base. Facts verified from official + well-corroborated sources (cnrma.cnic.navy.mil, portsmouth.tricare.mil, DeCA/NEX). BAH: full VA298 (Norfolk/Portsmouth) 2026 table, verified value-for-value against the official DoD 2026 BAH rate table (all locations, all pay grades, effective 2026-01-01) on 2026-06-24. Corrected 2026-11-09 from the website-page research (Base Guides/page-builder/research/norfolk-facts.md): housing is Liberty Military Housing (Lincoln renamed itself in 2021; norfolknavalhousing.com is an unofficial site still saying Lincoln), Navy Housing Service Center 757-445-2832; waterfront per NAVFAC is 13 piers and about 3,100 ship movements a year (ship counts conflict between sources, so none is given); HRBT expansion contract completion 2027; Downtown/Midtown tunnel tolls 2026; NOAA high-tide flood outlook; drive times are OSRM routing estimates with no traffic. Medium-confidence flags: base coords (approx Sewells Point), representative off-base ZIP 23505.",
   "sections": [
     {
       "id": "quick_facts",
@@ -18,24 +18,24 @@
       "data": {
         "Branch": "U.S. Navy",
         "Location": "Sewells Point, Norfolk, VA (Hampton Roads)",
-        "Known as": "World's largest naval station",
-        "Waterfront": "14 piers, 75+ home-ported ships",
+        "Known as": "Largest naval complex in the world",
+        "Waterfront": "13 piers, about 3,100 ship movements a year (NAVFAC)",
         "Airfield": "Chambers Field (about 134 aircraft, 11 hangars)",
         "Fleet": "Homeport for Atlantic Fleet carrier strike groups"
       },
-      "source": { "label": "Naval Station Norfolk (official)", "url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/About/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Naval Station Norfolk (official); NAVFAC for the waterfront", "url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Naval Station Norfolk is the world's largest naval station, occupying Sewells Point where the Elizabeth River and the James meet the Chesapeake Bay. It is the center of gravity for the U.S. Atlantic Fleet.",
-        "The station supports more than 75 ships across 14 piers, from aircraft carriers and submarines to surface combatants and Military Sealift Command vessels, plus the air operations at the adjacent Chambers Field. For a huge share of the Navy, a Norfolk tour is simply part of the career."
+        "Naval Station Norfolk is the largest naval complex in the world, occupying Sewells Point where the Elizabeth River and the James meet the Chesapeake Bay. It is the center of gravity for the U.S. Atlantic Fleet.",
+        "Its 13 piers handle about 3,100 ship movements a year, from aircraft carriers and submarines to surface combatants and Military Sealift Command vessels, plus the air operations at the adjacent Chambers Field. For a huge share of the Navy, a Norfolk tour is simply part of the career."
       ],
-      "source": { "label": "Naval Station Norfolk (official)", "url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/About/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Naval Station Norfolk (official); NAVFAC Norfolk NS", "url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "commute_decision",
@@ -45,39 +45,41 @@
         "subtitle": "Hampton Roads is a cluster of cities wrapped around the water. For a sailor at Norfolk, where you live decides whether your daily commute includes a tunnel, and the tunnels here are famous for traffic.",
         "intro": [
           "The base sits at Sewells Point in north Norfolk, on the 'Southside' of Hampton Roads. The region is really several cities knit together by bridges and tunnels, so the neighborhood you pick sets your commute for the entire tour.",
-          "The single biggest factor is the Hampton Roads Bridge-Tunnel (HRBT) on Interstate 64. It carries roughly 100,000 vehicles a day and can add anywhere from 30 to 90 minutes when traffic, weather, or an incident backs it up. Sailors stationed at Norfolk overwhelmingly live on the Southside to avoid crossing it daily. Living on the Peninsula, in Hampton or Newport News, makes the HRBT part of your routine."
+          "The single biggest factor is the Hampton Roads Bridge-Tunnel (HRBT) on Interstate 64, the link to the Peninsula. It is being widened, with contract completion set for 2027, and a backup there can stall the whole drive. Living on the Peninsula, in Hampton or Newport News, makes the HRBT part of your routine. Portsmouth and Suffolk usually mean a tolled tunnel instead."
         ],
         "recommendations": [
-          { "who": "Shortest commute", "advice": "Live in Norfolk itself. Neighborhoods like Ghent and Larchmont run about 5 to 15 minutes to the base with no tunnel." },
-          { "who": "Suburban feel, still no tunnel", "advice": "Virginia Beach (Kings Grant, Great Neck) or Chesapeake (Western Branch) are roughly 20 to 30 minutes via I-64 and I-564, no tunnel crossing." },
-          { "who": "Think hard before the Peninsula", "advice": "Hampton and Newport News can be more affordable, but a daily HRBT crossing is the longest and least predictable commute in the region. Many Norfolk sailors avoid it." },
-          { "who": "Renting or buying", "advice": "Hampton Roads is a deep, military-heavy housing market that turns over with every PCS season. A local agent who actually knows the tunnels is worth a lot here." }
+          { "who": "Shortest commute", "advice": "Live in Norfolk itself. From Ghent the drive is about 17 minutes with no traffic, with no tunnel." },
+          { "who": "Suburban feel, still no tunnel", "advice": "Virginia Beach (Kempsville) and Chesapeake (Greenbrier, Great Bridge) are about 25 to 35 minutes with no traffic, with no tunnel crossing." },
+          { "who": "Portsmouth and Suffolk", "advice": "The Downtown and Midtown tunnels are tolled: in 2026, $3.40 each way at peak times and $2.42 off-peak with E-ZPass, more without it. There is no military discount." },
+          { "who": "Think hard before the Peninsula", "advice": "Hampton and Newport News can be more affordable, but a daily HRBT crossing through a work zone is the least predictable commute in the region." },
+          { "who": "Check flood risk", "advice": "NOAA expects 23 to 27 high-tide flood days at Sewells Point between May 2026 and April 2027. Look up any address in Virginia's VFRIS flood map and price flood insurance before you offer." }
         ]
       },
-      "source": { "label": "Hampton Roads Bridge-Tunnel (background)", "url": "https://en.wikipedia.org/wiki/Hampton_Roads_Bridge%E2%80%93Tunnel" },
-      "verified": "2026-06-24"
+      "source": { "label": "VDOT HRBT Expansion; Elizabeth River Crossings 2026 tolls; NOAA high tide flooding outlook", "url": "https://www.vdot.virginia.gov/projects/major-projects/64expresslanes/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
+        "Gate 2 on Hampton Boulevard is open 24 hours. Other gates include 3A (from I-564), 4 (Bellinger Avenue), 5, 6, 10 and 22 (Granby Street), and their hours vary.",
         "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID, arranged through the installation's Visitor Control Center.",
         "Gate hours and visitor requirements change, so confirm the current details on the official Naval Station Norfolk site before you go."
       ],
-      "source": { "label": "Naval Station Norfolk (official)", "url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Naval Station Norfolk gate hours (official)", "url": "https://cnrma.cnic.navy.mil/Installations/NAVSTA-Norfolk/About/Gate-Hours/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-base family housing at Naval Station Norfolk is privatized, operated by Lincoln Military Housing across about 10 neighborhoods sized to rank and family needs.",
-        "You start with the Navy Housing Service Center, which processes applications and refers you to the property manager. Reach the housing office at (757) 447-9025."
+        "On-base family housing at Naval Station Norfolk is privatized and run by Liberty Military Housing, which was called Lincoln Military Housing until 2021. Liberty lists more than 1,600 family homes for Naval Station Norfolk.",
+        "Ask the Navy Housing Service Center how to apply and what the current wait is: 757-445-2832 (toll-free 1-800-628-7510), 7924 14th Street, Norfolk, 7:30 a.m. to 4 p.m. on weekdays."
       ],
-      "source": { "label": "NS Norfolk Navy Housing (partner)", "url": "https://www.norfolknavalhousing.com/" },
-      "verified": "2026-06-24"
+      "source": { "label": "Liberty Military Housing, Naval Station Norfolk; Military OneSource housing", "url": "https://livelmh.com/installations/naval-station-norfolk/overview/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "bah",
@@ -181,9 +183,9 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-          {"q": "Which side of the water should I live on?", "a": "Most sailors stationed at Norfolk live on the Southside (Norfolk, Virginia Beach, Chesapeake) to avoid crossing the Hampton Roads Bridge-Tunnel daily. See the commute section above."},
-          {"q": "How bad is the tunnel traffic?", "a": "The HRBT can add anywhere from about 30 to 90 minutes when it backs up, which is why where you live matters so much here."},
-          {"q": "Who runs on-base housing?", "a": "Lincoln Military Housing, across about 10 neighborhoods. Start with the Navy Housing Service Center."},
+          {"q": "Which side of the water should I live on?", "a": "Families who want a predictable drive usually live on the Southside without a tunnel: Norfolk, Virginia Beach or Chesapeake. See the commute section above."},
+          {"q": "Do the tunnels charge tolls?", "a": "The Downtown and Midtown tunnels between Portsmouth and Norfolk do: $3.40 at peak and $2.42 off-peak with E-ZPass in 2026, with no military discount. The HRBT's general lanes are free; it is being widened until 2027."},
+          {"q": "Who runs on-base housing?", "a": "Liberty Military Housing (formerly Lincoln Military Housing). Call the Navy Housing Service Center at 757-445-2832."},
           {"q": "What is the BAH area?", "a": "Naval Station Norfolk is MHA VA298 (Norfolk/Portsmouth). Use the calculator above for your grade."}
       ]
     },

@@ -5,11 +5,11 @@
   "short_name": "Bragg",
   "branch": "U.S. Army",
   "states": ["NC"],
-  "tagline": "The largest Army installation in the country, home of the airborne and special operations forces, near Fayetteville.",
+  "tagline": "Home of the airborne and special operations forces, near Fayetteville in the North Carolina Sandhills.",
   "coords": { "lat": 35.139, "lng": -79.006, "label": "Fayetteville, NC" },
   "tz": "America/New_York",
   "last_full_review": "2026-06-25",
-  "_note": "Marquee Army post (Sandhills, NC). Name history: Fort Bragg -> Fort Liberty (June 2023) -> Fort Bragg (Feb 2025, now honoring WWII Pfc. Roland L. Bragg, not the Confederate general). Facts verified from official sources (home.army.mil/bragg, womack.tricare.mil, fortbragghousing.com, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA NC182 (Fort Bragg/Pope) via the bah_rates single source of truth. Housing operated by Corvias. Medium-confidence flags: base coords (approx), representative off-base ZIP 28314 (Fayetteville).",
+  "_note": "Marquee Army post (Sandhills, NC). Name history: Fort Bragg -> Fort Liberty (June 2023) -> Fort Bragg (Feb 2025, now honoring WWII Pfc. Roland L. Bragg, not the Confederate general). Facts verified from official sources (home.army.mil/bragg, womack.tricare.mil, fortbragghousing.com, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA NC182 (Fort Bragg/Pope) via the bah_rates single source of truth. Housing operated by Corvias. Corrected 2026-11-09 from the website-page research (Base Guides/page-builder/research/bragg-facts.md): FORSCOM became U.S. Army Western Hemisphere Command at Fort Bragg on 2025-12-05; the All American Gate closed 2026-07-27 for up to 24 months; Housing Services Office (910) 396-1022; DoDEA on post is pre-K to grade 8 (high school E.E. Smith, Overhills for Linden Oaks); NC DPI 2025-26 school results; Longleaf Pine REALTORS prices; drive times are OSRM routing estimates with no traffic to Womack. Removed unverified superlatives (\"largest\"/\"most populous\" installation, \"one of the biggest\" housing inventories). Medium-confidence flags: base coords (approx), representative off-base ZIP 28314 (Fayetteville).",
   "sections": [
     {
       "id": "quick_facts",
@@ -20,22 +20,22 @@
         "Location": "Fayetteville, NC (Sandhills)",
         "Known as": "Home of the Airborne and Special Operations Forces",
         "Major units": "XVIII Airborne Corps, 82nd Airborne Division, USASOC",
-        "Also hosts": "FORSCOM and Army Reserve Command HQ",
-        "Scale": "Most populous Army installation in the U.S."
+        "Also hosts": "Army Western Hemisphere Command (formerly FORSCOM), Army Reserve Command",
+        "Main gate": "All American Gate closed for road work, July 2026 for up to 2 years"
       },
-      "source": { "label": "Fort Bragg (official)", "url": "https://home.army.mil/bragg/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Bragg (official); army.mil; Garrison PAO via DVIDS", "url": "https://home.army.mil/bragg/" },
+      "verified": "2026-11-09"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Fort Bragg is the largest Army installation in the country by population and the home of the airborne and special operations forces. It hosts the XVIII Airborne Corps, the 82nd Airborne Division, and U.S. Army Special Operations Command (USASOC).",
-        "It is also home to Forces Command (FORSCOM) and the Army Reserve Command. The post briefly carried the name Fort Liberty (2023 to 2025) before reverting to Fort Bragg, now honoring a World War II soldier."
+        "Fort Bragg is the home of the airborne and special operations forces. It hosts the XVIII Airborne Corps, the 82nd Airborne Division, and U.S. Army Special Operations Command (USASOC).",
+        "It is also home to U.S. Army Western Hemisphere Command, formed at Fort Bragg in December 2025 from Forces Command (FORSCOM), Army North and Army South, and to the Army Reserve Command. The post carried the name Fort Liberty from 2023 to 2025 before being renamed Fort Bragg, now honoring Pfc. Roland L. Bragg, a World War II paratrooper who received the Silver Star."
       ],
-      "source": { "label": "Fort Bragg (official)", "url": "https://home.army.mil/bragg/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Bragg (official); army.mil", "url": "https://www.army.mil/article/282972" },
+      "verified": "2026-11-09"
     },
     {
       "id": "bragg_decision",
@@ -45,39 +45,42 @@
         "subtitle": "Fort Bragg is huge and deployment-heavy, especially the rapid-response 82nd Airborne. Where you live around Fayetteville is the main decision, and proximity and a strong support network matter more here than at a quiet post.",
         "intro": [
           "This is a fast-paced, deeply military community. The 82nd keeps a brigade on short-notice readiness, so deployments and field time are a way of life, and many families prioritize living close to the unit and to other military families.",
-          "The base sprawls across the Sandhills near Fayetteville. On-post housing is extensive, and off-post options range from close-in Fayetteville and Spring Lake to the golf-town schools of the Southern Pines and Pinehurst area a bit farther out."
+          "The post touches Cumberland, Hoke, Harnett and Moore counties, and the county you live in sets your schools, your property tax and your commute. Since July 2026 the main All American Gate has been closed for road work, so drives from Fayetteville and Hope Mills take longer than they used to."
         ],
         "recommendations": [
-          { "who": "Closest to the unit", "advice": "Fayetteville and Spring Lake put you nearest the gates and are the most affordable, which matters during a deployment-heavy tour." },
-          { "who": "Schools and a quieter feel", "advice": "Southern Pines, Pinehurst, and the Sandhills offer well-regarded schools and a calmer pace at a longer commute." },
-          { "who": "On-post option", "advice": "Fort Bragg has one of the Army's largest on-post housing inventories (Corvias), worth considering for proximity and built-in community." },
-          { "who": "Stretch your budget", "advice": "Fayetteville's cost of living is low, so BAH tends to go a long way here." }
+          { "who": "Closest to the unit", "advice": "Spring Lake is about 13 minutes from main post with no traffic. Fayetteville and Hope Mills were 22 and 27 minutes through the All American Gate, so allow more while it is closed." },
+          { "who": "Most house for the money", "advice": "Median sale prices, January to September 2026: Fayetteville $247,000, Hope Mills $263,250, Raeford $295,000 (Longleaf Pine REALTORS)." },
+          { "who": "Schools and a quieter feel", "advice": "Moore County (Southern Pines, Pinehurst) had 13 of 23 schools rated A or B in 2025-26, with the highest prices and a 43 to 53 minute drive with no traffic." },
+          { "who": "Check the tax rate", "advice": "Combined property tax in Cumberland County runs from 0.699 per $100 of value outside towns to 1.29 in Spring Lake. Check it for the exact address." },
+          { "who": "On-post option", "advice": "Corvias runs on-post family housing, and living on post opens the DoDEA schools for pre-K through grade 8." }
         ]
       },
-      "source": { "label": "Fort Bragg (official)", "url": "https://home.army.mil/bragg/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Garrison PAO (DVIDS); Longleaf Pine REALTORS; NC DPI; Cumberland County Tax", "url": "https://www.dvidshub.net/news/570949" },
+      "verified": "2026-11-09"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
+        "The All American Gate closed on July 27, 2026, for up to 24 months while the All American Freeway is repaired and the Gruber Road bridge is replaced. Its visitor center stays open.",
+        "Open 24 hours: Canopy Lane, Long Street, Chicken Road, Yadkin, Honeycutt and R. Miller gates. Butner, Manchester and Rock Merritt keep limited hours, so check them before you rely on them.",
         "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
         "Gate hours and visitor requirements change, so confirm the current details on the official Fort Bragg site before you go."
       ],
-      "source": { "label": "Fort Bragg (official)", "url": "https://home.army.mil/bragg/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Bragg Garrison PAO via DVIDS, July 28, 2026", "url": "https://www.dvidshub.net/news/570949" },
+      "verified": "2026-11-09"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-post family housing is privatized, operated by Corvias, across a large number of neighborhoods, one of the biggest on-post inventories in the Army.",
-        "Eligibility and availability vary by rank and family size, so start with the Housing Services Office and Corvias for current options and waitlists."
+        "On-post family housing is privatized and run by Corvias, with neighborhood centers at Corregidor, Casablanca, Ste. Mere Eglise, Nijmegen, Hammond Hills, Ardennes/Pope/Bataan, Normandy/Bastogne Gables, Linden Oaks and Randolph Pointe.",
+        "Ask Corvias or the Housing Services Office how to apply and what the current wait is: (910) 396-1022, Soldier Support Center, Building 4-2843 (basement), 7:30 a.m. to 4 p.m. on weekdays. Corvias work orders: (866) 206-1365."
       ],
-      "source": { "label": "Fort Bragg housing (partner)", "url": "https://www.fortbragghousing.com/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Bragg Housing Services Office (official)", "url": "https://home.army.mil/bragg/about/garrison/directorate-public-works/dpw-ho/HSO" },
+      "verified": "2026-11-09"
     },
     {
       "id": "bah",
@@ -102,11 +105,12 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "On-post families are served by DoDEA schools at Fort Bragg, plus the surrounding civilian districts. Off post, Cumberland County Schools covers Fayetteville and Spring Lake; Harnett, Hoke, and Moore County (Southern Pines/Pinehurst) cover other popular areas.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "Families who live on post can use the DoDEA schools there, which run from pre-K through grade 8. There is no DoDEA high school: on-post students are zoned for E.E. Smith High School, and Linden Oaks families for Overhills High School in Harnett County. From 2026-27, on-post students may choose another Cumberland County high school if it has space, but buses run only to E.E. Smith.",
+        "Off post, the county sets the district. In the 2025-26 state results, Cumberland County had 20 of 79 schools rated low-performing (down from 27), Hoke 5 of 13, Harnett 6 of 25, and Moore 2 of 23, with 13 Moore schools rated A or B.",
+        "Your assigned schools depend on your address, so confirm the district and campus with the School Liaison Office at (910) 432-1023."
       ],
-      "source": { "label": "Cumberland County Schools (official)", "url": "https://www.ccs.k12.nc.us/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource Fort Bragg education; Fort Bragg School Liaison; NC DPI 2025-26 results", "url": "https://installations.militaryonesource.mil/military-installation/fort-bragg/education/education" },
+      "verified": "2026-11-09"
     },
     {
       "id": "schools_live",
@@ -156,7 +160,7 @@
           "The market is steady and you could rent the home out later if needed.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer. Fayetteville's low cost of living means BAH often stretches well here. Run your BAH against the rent and home prices above, weigh your tour length and the deployment tempo, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. BAH is the same whichever town you live in, so lower prices and property tax leave more of it in your pocket. Run your BAH against the rent and home prices above, weigh your tour length and the deployment tempo, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -180,9 +184,10 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "Is it Fort Bragg or Fort Liberty?", "a": "Fort Bragg. It was renamed Fort Liberty in 2023, then changed back to Fort Bragg in 2025, this time honoring a World War II soldier rather than the Confederate general." },
-        { "q": "What's the mission here?", "a": "It's the home of the airborne and special operations forces: the XVIII Airborne Corps, the 82nd Airborne Division, and Army Special Operations Command, plus FORSCOM. It's the most populous Army installation in the country." },
-        { "q": "Where do families live?", "a": "Fayetteville and Spring Lake are closest and most affordable; Southern Pines and Pinehurst offer strong schools at a longer commute. On-post housing (Corvias) is extensive." },
+        { "q": "Is it Fort Bragg or Fort Liberty?", "a": "Fort Bragg. It was renamed Fort Liberty in 2023, then renamed Fort Bragg in 2025, this time honoring Pfc. Roland L. Bragg, a World War II paratrooper, rather than the Confederate general." },
+        { "q": "Is the main gate closed?", "a": "Yes. The All American Gate closed on July 27, 2026, for up to 24 months. Canopy Lane, Long Street, Chicken Road, Yadkin, Honeycutt and R. Miller gates are open 24 hours." },
+        { "q": "What's the mission here?", "a": "It's the home of the airborne and special operations forces: the XVIII Airborne Corps, the 82nd Airborne Division, and Army Special Operations Command, plus Army Western Hemisphere Command (formerly FORSCOM) and the Army Reserve Command." },
+        { "q": "Where do families live?", "a": "Spring Lake is closest, Fayetteville and Hope Mills have the most homes at the lowest prices, Raeford and Harnett County are in between, and Southern Pines and Pinehurst have strong schools at a longer commute and higher prices. On-post housing is run by Corvias." },
         { "q": "What is the BAH area?", "a": "Fort Bragg is MHA NC182 (Fort Bragg/Pope). Use the calculator above for your grade." }
       ]
     },
@@ -194,7 +199,7 @@
       "picks": [
         { "name": "Airborne & Special Operations Museum", "category": "Museum", "blurb": "A free downtown Fayetteville museum honoring airborne and special operations history.", "maps_query": "Airborne and Special Operations Museum, Fayetteville NC" },
         { "name": "Cape Fear Botanical Garden", "category": "Outdoors", "blurb": "An 80-acre garden along the Cape Fear River in Fayetteville.", "maps_query": "Cape Fear Botanical Garden, Fayetteville NC" },
-        { "name": "Pinehurst Resort", "category": "Golf", "blurb": "The famous golf resort in the Sandhills, about 40 minutes from base.", "maps_query": "Pinehurst Resort, NC" },
+        { "name": "Pinehurst Resort", "category": "Golf", "blurb": "The famous golf resort in the Sandhills, about 50 minutes from main post with no traffic.", "maps_query": "Pinehurst Resort, NC" },
         { "name": "Carvers Creek State Park", "category": "Outdoors", "blurb": "Trails and a historic millpond just north of the base.", "maps_query": "Carvers Creek State Park, NC" }
       ]
     }
