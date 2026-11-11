@@ -8,8 +8,8 @@
   "tagline": "The Army's cyber and signal headquarters near Augusta, Georgia, home of Army Cyber Command.",
   "coords": { "lat": 33.42, "lng": -82.14, "label": "Augusta, GA" },
   "tz": "America/New_York",
-  "last_full_review": "2026-06-25",
-  "_note": "Army cyber/signal hub (Augusta GA; Eastern time). CONUS full template (BAH MHA GA073 Fort Gordon; RentCast/SchoolDigger work). NAME HISTORY: Fort Gordon -> Fort Eisenhower (Oct 2023) -> Fort Gordon (2025; effective June 11, 2025, formally Sept 26, 2025). Now honors MSG Gary I. Gordon (Medal of Honor, Battle of Mogadishu/Black Hawk Down), NOT the Confederate general (verified via Army.mil + WRDW + Wikipedia, June 2026). Home of Army Cyber Center of Excellence, ARCYBER HQ, NSA Georgia, Signal Corps. Medical: Dwight D. Eisenhower Army Medical Center (DDEAMC; hospital named for Eisenhower since 1974, predates base rename). Georgia is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 30809 (Evans).",
+  "last_full_review": "2026-11-10",
+  "_note": "Army cyber/signal hub (Augusta GA; Eastern time). CONUS full template (BAH MHA GA073 Fort Gordon; RentCast/SchoolDigger work). NAME HISTORY: Fort Gordon -> Fort Eisenhower (Oct 2023) -> Fort Gordon (2025; effective June 11, 2025, formally Sept 26, 2025). Now honors MSG Gary I. Gordon (Medal of Honor, Battle of Mogadishu/Black Hawk Down), NOT the Confederate general (verified via Army.mil + WRDW + Wikipedia, June 2026). Home of Army Cyber Center of Excellence, ARCYBER HQ, NSA Georgia, Signal Corps. Medical: Dwight D. Eisenhower Army Medical Center (DDEAMC; hospital named for Eisenhower since 1974, predates base rename). Georgia is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 30809 (Evans). Rechecked 2026-11-10 (research/gordon-facts.md): Balfour Beatty / Providence Family Homes, about 1,000 homes; gate hours September 2026; EAMC downgrade plan (May 2026, no timeline); on-post children zoned to Richmond County; SC 4% vs 6% reading; Georgia 4.99% for 2026.",
   "sections": [
     {
       "id": "quick_facts",
@@ -31,53 +31,54 @@
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Fort Gordon is the Army's center for cyber and signal operations, home to the Cyber Center of Excellence, the headquarters of Army Cyber Command, and a major National Security Agency presence (NSA Georgia). It's a high-tech, fast-growing hub for the Army's information and cyber forces.",
-        "Near Augusta, Georgia, in the Central Savannah River Area, the post carried the name Fort Eisenhower from 2023 to 2025 before reverting to Fort Gordon, now honoring a Medal of Honor recipient rather than the Confederate general."
+        "Fort Gordon is the Army's center for cyber and signal operations, home to the Cyber Center of Excellence, the headquarters of Army Cyber Command (since 2020) and NSA Georgia, a National Security Agency mission partner.",
+        "Near Augusta, Georgia, in the Central Savannah River Area, the post carried the name Fort Eisenhower from 2023 to 2025 and became Fort Gordon again on June 11, 2025, now honoring Master Sgt. Gary I. Gordon, a Medal of Honor recipient, rather than the Confederate general."
       ],
-      "source": { "label": "Fort Gordon (official)", "url": "https://home.army.mil/gordon/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Army.mil (September 3, 2020 and September 30, 2025); WRDW (June 11, 2025)", "url": "https://www.army.mil/article/238784/headquarters_dedication_heralds_arrival_of_army_cyber_operations_at_fort_gordon" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gordon_decision",
       "title": "Augusta Living: Affordable, With Strong School Options",
       "type": "killer",
       "data": {
-        "subtitle": "The Augusta area is affordable, and the key choice for many families is Columbia County (popular schools) versus closer-in options, balanced against your commute.",
+        "subtitle": "The choice is Columbia County, Richmond County (Augusta) or South Carolina across the river: schools, property and vehicle tax rules, prices and the drive.",
         "intro": [
-          "Augusta's cost of living is reasonable, so BAH stretches, and the cyber mission draws a lot of families and a growing tech community. On-post housing is available; many live off post.",
-          "Where you live mostly comes down to commute and schools, with Columbia County a favorite of families for its schools, and closer-in options trading a shorter drive for a different school mix."
+          "A service member's state income tax follows legal residence, not address: neither Georgia nor South Carolina taxes the military pay of a member domiciled elsewhere. Georgia residents pay 4.99% for 2026; South Carolina residents pay 1.99% if taxable income is under $30,000, and at $30,000 or more 5.21% of taxable income minus $966. A working spouse should check how both states treat their pay.",
+          "Children on post attend Richmond County schools (Freedom Park School for PK to 8, then the Academy of Richmond County); many military families live in Columbia County or in Aiken County, South Carolina. Graduation rates: Columbia County 93.4% (class of 2024, the latest found), Richmond County 84.2% and Georgia 88.5% (class of 2026).",
+          "Property tax rules differ. Georgia's homestead exemption requires the home to be your legal residence (Columbia County's takes $10,000 off the assessed value for county tax in 2026), so ask the county tax office if you keep another state's residency. In South Carolina a legal residence is taxed on 4% of value and other homes on 6%; for a Georgia duty station our reading is 6% unless you make South Carolina your legal residence, so confirm with the Aiken County Assessor."
         ],
         "recommendations": [
-          { "who": "Top schools", "advice": "Columbia County (Evans, Grovetown, Martinez) is the favorite for families, with well-regarded schools a manageable drive out." },
-          { "who": "Closest to the gate", "advice": "Areas near the post and into Augusta (Richmond County) keep the commute short." },
-          { "who": "On-post option", "advice": "On-post housing is available and convenient; weigh it against the affordable local market." },
-          { "who": "Stretch your budget", "advice": "Augusta is affordable, so BAH tends to go far and many families buy." }
+          { "who": "Columbia County", "advice": "Grovetown is about 11 minutes from Eisenhower Army Medical Center and Evans about 24 with no traffic; typical home values are $305,052 in Grovetown and $408,435 in Evans (Zillow, September 2026)." },
+          { "who": "Augusta and Richmond County", "advice": "Augusta is about 20 minutes from the hospital with no traffic, with the lowest typical home value nearby ($187,663); children on post are zoned to Richmond County schools." },
+          { "who": "On-post option", "advice": "Balfour Beatty Communities runs about 1,000 homes (Providence Family Homes); 76 new homes opened at Pine Tree Terrace in May 2026. No wait times are posted." },
+          { "who": "South Carolina", "advice": "North Augusta (about 23 minutes) and Aiken (about 45) have typical home values of $282,277 and $274,289; check the 4% vs 6% property tax rule with the Aiken County Assessor before buying." }
         ]
       },
-      "source": { "label": "Fort Gordon (official)", "url": "https://home.army.mil/gordon/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Georgia DOR (homestead, income tax); SC DOR (H. 4216); SC Code 12-43-220; Military OneSource; Zillow (September 2026)", "url": "https://dor.georgia.gov/property-tax-homestead-exemptions" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Gordon site before you go."
+        "Gate 1 (McKenna Gate), at Gordon Highway and Jimmie Dyess Parkway, is open 24 hours; on weekdays from 5 to 9 a.m. it takes DoD ID holders only. Gate 6, the main gate on Gordon Highway, and Gate 5 on Tobacco Road are open 4:45 a.m. to 7 p.m. every day (Fort Gordon gate information, September 2026).",
+        "The Visitor Control Center at Gate 6 is open weekdays 6 a.m. to 5 p.m. ((706) 791-3071). Adults need a REAL ID, or two other IDs such as a passport, Social Security card or birth certificate, and passes need a favorable background check. Hours change, so confirm on the official site before you go."
       ],
-      "source": { "label": "Fort Gordon (official)", "url": "https://home.army.mil/gordon/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Gordon gate information (official, September 2026)", "url": "https://home.army.mil/gordon/index.php/about/gate-information" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "Fort Gordon has privatized on-post family housing across several neighborhoods.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+        "All family housing on post is privatized and run by Balfour Beatty Communities under the name Providence Family Homes, about 1,000 homes; 76 new homes opened at Pine Tree Terrace in May 2026.",
+        "The Army Housing Services Office is in Darling Hall, 307 Chamberlain Avenue, Room 129 (706-791-5116), open Monday to Wednesday and Friday 7:30 a.m. to 4 p.m. and Thursday 7:30 a.m. to 2 p.m. No wait times are posted, so ask Balfour Beatty when you have orders."
       ],
-      "source": { "label": "Fort Gordon (official)", "url": "https://home.army.mil/gordon/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Fort Gordon housing; AugustaCEO (May 26, 2026)", "url": "https://installations.militaryonesource.mil/military-installation/fort-gordon/housing/housing" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -102,11 +103,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools. Columbia County (Evans, Grovetown, Martinez) is highly regarded and popular with families; Richmond County serves Augusta and the area closest to the post.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "We found no DoD schools at Fort Gordon. Richmond County runs Freedom Park School on post for grades PK to 8, and high school students who live on post are zoned to the Academy of Richmond County, off post. Many military children attend Columbia County schools or Aiken County schools in South Carolina.",
+        "Graduation rates: Columbia County 93.4% (class of 2024, the latest found), Richmond County 84.2% and Georgia 88.5% (class of 2026). Your address sets the school, so confirm it. School Liaison Office: Building 44401, 44th Street, 706-791-7270."
       ],
-      "source": { "label": "Columbia County School District (official)", "url": "https://www.ccboe.net/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Fort Gordon education; WRDW (September 28, 2026)", "url": "https://installations.militaryonesource.mil/military-installation/fort-gordon/education/education" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -120,11 +121,11 @@
       "type": "facts",
       "data": {
         "Hospital": "Dwight D. Eisenhower Army Medical Center (DDEAMC)",
-        "Care": "A full Army medical center with primary, specialty, inpatient, and emergency care, plus graduate medical education",
+        "Care": "The medical center's own page lists a 24-hour Emergency Department. In May 2026 the Defense Health Agency said it plans to close the 60 inpatient beds and turn the emergency room into urgent care, with no timeline set; check before you rely on it.",
         "TRICARE region": "East (Humana Military)"
       },
-      "source": { "label": "Eisenhower Army Medical Center (official)", "url": "https://eisenhower.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Eisenhower Army Medical Center, emergency medicine (official); GPB (May 7, 2026)", "url": "https://eisenhower.tricare.mil/Health-Services/Urgent-Emergency-Care/Emergency-Medicine" },
+      "verified": "2026-11-10"
     },
     {
       "id": "shopping",
@@ -167,9 +168,9 @@
         "steps": [
           { "title": "Line up temporary lodging", "text": "Book on-post lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Start with the Housing Office", "text": "Get the housing office's read on Columbia County (schools) versus closer-in options before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and Georgia vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Columbia or Richmond County) early and bring records and immunizations." },
+          { "title": "Start with the Housing Office", "text": "Get the housing office's read on Columbia County, Richmond County and South Carolina before you sign anything." },
+          { "title": "Check vehicle taxes and base access", "text": "If your legal residence is another state, ask the county tag office about Georgia's nonresident military exemptions from the title tax (form PT-472NS) and the yearly vehicle tax (form PT-471). Georgia's title tax is 7%, or 3% for new residents." },
+          { "title": "Enroll the kids in school", "text": "Contact the district for your address early (on post: Richmond County; off post: Columbia County, Richmond County or Aiken County, South Carolina) and bring records and immunizations." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Eisenhower Army Medical Center or network providers." }
         ]
       }
@@ -179,10 +180,12 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "Is it Fort Gordon or Fort Eisenhower?", "a": "Fort Gordon, as of 2025. It was Fort Eisenhower from 2023 to 2025; the name now honors Master Sergeant Gary I. Gordon, a Medal of Honor recipient from the 1993 Battle of Mogadishu, rather than the Confederate general." },
+        { "q": "Is it Fort Gordon or Fort Eisenhower?", "a": "Fort Gordon, again since June 11, 2025. It was Fort Eisenhower from 2023 to 2025; the name now honors Master Sergeant Gary I. Gordon, a Medal of Honor recipient from the 1993 Battle of Mogadishu, rather than the Confederate general." },
         { "q": "What does the Army do at Fort Gordon?", "a": "It's the Army's cyber and signal headquarters, home to the Cyber Center of Excellence, Army Cyber Command, and a major NSA presence." },
-        { "q": "Where do families live?", "a": "On-post housing is available; many live off post. Columbia County (Evans, Grovetown, Martinez) is the favorite for schools; Richmond County is closest to the post." },
-        { "q": "What is the BAH area?", "a": "Fort Gordon is MHA GA073. Use the calculator above for your grade." }
+        { "q": "Where do families live?", "a": "On post with Balfour Beatty (about 1,000 homes), or off post in Columbia County (Grovetown about 11 minutes, Evans about 24), Augusta (about 20) or South Carolina (North Augusta about 23). Children on post attend Richmond County schools." },
+        { "q": "What is the BAH area?", "a": "Fort Gordon is MHA GA073. Use the calculator above for your grade." },
+        { "q": "Is the hospital changing?", "a": "Possibly. In May 2026 the Defense Health Agency said it plans to close Eisenhower Army Medical Center's 60 inpatient beds and turn its emergency room into urgent care, with no timeline set. Its own page still lists a 24-hour Emergency Department. In an emergency, call 911." },
+        { "q": "Does Georgia or South Carolina tax my military pay?", "a": "Only your state of legal residence taxes your active-duty pay; neither state taxes the military pay of a member who is there on orders and domiciled elsewhere. Georgia residents pay 4.99% for 2026; South Carolina residents pay 1.99% if taxable income is under $30,000, and at $30,000 or more 5.21% of taxable income minus $966." }
       ]
     },
     {

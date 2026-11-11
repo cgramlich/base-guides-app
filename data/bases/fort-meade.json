@@ -8,8 +8,8 @@
   "tagline": "The home of the NSA and U.S. Cyber Command, the nation's signals-intelligence and cyber hub, between Baltimore and D.C.",
   "coords": { "lat": 39.11, "lng": -76.74, "label": "Odenton, MD (Anne Arundel County)" },
   "tz": "America/New_York",
-  "last_full_review": "2026-06-25",
-  "_note": "Army intel/cyber post (Anne Arundel County, between Baltimore and DC). Facts verified from official sources (home.army.mil/meade, kimbrough.tricare.mil, Corvias, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA MD133 (Fort G. G. Meade) via the bah_rates single source of truth. Housing operated by Corvias. Maryland is TRICARE East. Medium-confidence flags: base coords (approx), representative off-base ZIP 21113 (Odenton).",
+  "last_full_review": "2026-11-10",
+  "_note": "Army intel/cyber post (Anne Arundel County, between Baltimore and DC). Facts verified from official sources (home.army.mil/meade, kimbrough.tricare.mil, Corvias, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA MD133 (Fort G. G. Meade) via the bah_rates single source of truth. Housing operated by Corvias. Maryland is TRICARE East. Medium-confidence flags: base coords (approx), representative off-base ZIP 21113 (Odenton). Rechecked 2026-11-10 (research/meade-facts.md): Army Cyber Command HQ left for Fort Gordon in 2020 (780th MI Brigade stays); no posted on-post wait; only Reece Road open 24/7 since July 2025; FY2027 county tax rates; Maryland plate law October 1, 2026; Kimbrough has no ER.",
   "sections": [
     {
       "id": "quick_facts",
@@ -19,23 +19,23 @@
         "Branch": "U.S. Army (joint and intelligence community)",
         "Location": "Anne Arundel County, MD (between Baltimore and D.C.)",
         "Signature tenants": "National Security Agency (NSA) and U.S. Cyber Command",
-        "Also hosts": "Army Cyber Command, DISA, 780th Military Intelligence Brigade, Defense Media Activity",
-        "Workforce": "One of the largest concentrations of intelligence and cyber personnel in the DoD",
+        "Also hosts": "Defense Information Systems Agency, 780th Military Intelligence Brigade (Cyber), Defense Media Activity, Defense Information School and more than 120 partner agencies",
+        "Workforce": "More than 64,000 employees; the Army's second largest installation by population (garrison figures)",
         "Setting": "Suburban Maryland, in the Baltimore-Washington corridor"
       },
-      "source": { "label": "Fort Meade (official)", "url": "https://home.army.mil/meade/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Meade home page (official, November 2026); Army.mil (July 1, 2020)", "url": "https://home.army.mil/meade/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Fort Meade is best known as the home of the National Security Agency and U.S. Cyber Command, making it the center of the nation's signals-intelligence and cyber missions. It also hosts Army Cyber Command, the Defense Information Systems Agency, and many other organizations.",
+        "Fort Meade is best known as the home of the National Security Agency and U.S. Cyber Command, making it the center of the nation's signals-intelligence and cyber missions. It also hosts the Defense Information Systems Agency, the 780th Military Intelligence Brigade (Cyber), the Defense Information School and more than 120 partner agencies in all; Army Cyber Command's headquarters moved to Fort Gordon in 2020.",
         "It sits in Anne Arundel County, midway between Baltimore and Washington, D.C., so it functions as a sprawling intelligence and cyber campus rather than an operational post, with a large civilian and joint workforce."
       ],
-      "source": { "label": "Fort Meade (official)", "url": "https://home.army.mil/meade/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Meade home page (official, November 2026); Army.mil (July 1, 2020)", "url": "https://home.army.mil/meade/" },
+      "verified": "2026-11-10"
     },
     {
       "id": "meade_decision",
@@ -44,40 +44,40 @@
       "data": {
         "subtitle": "Meade's location between two major cities gives you lots of options and a high cost of living. Where you live trades commute against price and schools across the Baltimore-Washington corridor.",
         "intro": [
-          "The corridor is expensive and traffic-heavy, but BAH is set to match, and many people here are on multi-year or civilian tours, so families tend to settle in.",
-          "Close-in towns keep the commute short; pushing toward Baltimore or the D.C. side changes your price, schools, and drive. Many weigh access to two cities' jobs and amenities."
+          "Maryland doesn't tax the military pay of a member whose legal residence is another state, so for those families the county choice comes down to property tax, schools, prices and the drive. Fiscal 2027 property tax, county plus state, is $1.080 per $100 of assessed value in Anne Arundel outside incorporated cities, $1.112 in Prince George's outside its cities ($1.570 in Bowie, $1.689 in Laurel) and $1.362 in Howard. Through the Homestead Tax Credit, Anne Arundel caps yearly increases in the taxable assessment of a principal residence at 2%, against 3% in Prince George's and 5% in Howard.",
+          "Median sale prices from April to June 2026 were $520,000 in Anne Arundel, $650,000 in Howard and $471,388 in Prince George's (Maryland SDAT). Laurel and Jessup addresses cross county lines, so check the county on Maryland's property search before you compare."
         ],
         "recommendations": [
-          { "who": "Shortest commute", "advice": "Odenton, Severn, and Hanover sit right by the post for quick access to the gates." },
-          { "who": "Schools and amenities", "advice": "Columbia and the Howard County area are popular with families for their highly rated schools, at a slightly longer drive." },
-          { "who": "On-post option", "advice": "On-post housing (Corvias) can have a long waitlist (often a year or more), so apply early if you want it." },
-          { "who": "Two-city access", "advice": "The MARC train and the corridor's highways put both Baltimore and D.C. within reach for jobs and weekends." }
+          { "who": "Shortest commute", "advice": "Severn is about 10 minutes from the Kimbrough clinic on post and Odenton about 16 with no traffic. Only the Reece Road Gate is open around the clock." },
+          { "who": "Schools and amenities", "advice": "Howard County (Columbia, about 25 minutes) had a 91.3% graduation rate for the class of 2025, against 88.9% in Anne Arundel and 86.4% statewide, but its median sale price is about $130,000 higher." },
+          { "who": "On-post option", "advice": "Corvias runs 2,628 homes in six communities. No official wait time is posted, so ask Corvias when you have orders." },
+          { "who": "Two-city access", "advice": "MARC's Penn Line stops at Odenton and the Camden Line at Jessup, Savage and Laurel, for jobs and weekends in Baltimore and Washington." }
         ]
       },
-      "source": { "label": "Fort Meade (official)", "url": "https://home.army.mil/meade/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Maryland SDAT (FY2027 tax rates and Homestead caps; April to June 2026 sales); HCPSS and AACPS (January 2026)", "url": "https://dat.maryland.gov/SiteAssets/Pages/Tax-Rates/Tax%20Rates%202026-2027%20-%20Tax%20Table%20&%20Homestead%20Credit%20Caps_July%202026_0726-A.pdf" },
+      "verified": "2026-11-10"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Fort Meade site before you go."
+        "After gate hours were cut in July 2025, only the Reece Road Gate is open 24 hours, every day. The Mapes/32 and Rockenbach Road gates open weekdays 5:30 a.m. to 6 p.m., and Mapes/175 weekdays 6 to 9 a.m. (both ways) and 3 to 6 p.m. (outbound only); all three close on weekends.",
+        "Visitors use the Visitor Control Center, weekdays 7 a.m. to noon and 1 to 4 p.m. (301-677-1389), or the Reece Road visitor lane when it is closed. Unescorted visitors need a REAL ID or an acceptable alternative ID; digital licenses aren't accepted. Hours change, so confirm on the official site before you go."
       ],
-      "source": { "label": "Fort Meade (official)", "url": "https://home.army.mil/meade/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Meade installation access and visitor information (official, September 2026)", "url": "https://home.army.mil/meade/index.php/about/visitor-information" },
+      "verified": "2026-11-10"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-post family housing is privatized, operated by Corvias, across several communities. Demand is high, with waitlists that can run a year or more.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner early for current options."
+        "On-post family housing is privatized and operated by Corvias: 2,628 homes in six communities (Midway Common, Meuse Forest, Patriot Ridge, Potomac Place, Heritage Park and Normandy Bluffs), plus Reece Crossings apartments on post for single service members.",
+        "No official wait time is posted; Military OneSource says waits vary and to ask Corvias directly. Members assigned to Fort Meade get priority. Army Housing Services Office: 3081 Ernie Pyle Street, 301-677-7748, weekdays 8 a.m. to 4 p.m."
       ],
-      "source": { "label": "Fort Meade (official)", "url": "https://home.army.mil/meade/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Fort Meade government housing", "url": "https://installations.militaryonesource.mil/military-installation/fort-george-g-meade/housing/government-housing" },
+      "verified": "2026-11-10"
     },
     {
       "id": "bah",
@@ -102,11 +102,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools, primarily Anne Arundel County Public Schools near the post, with highly regarded Howard County schools (Columbia) popular a bit farther out.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "There are no DoD schools at Fort Meade; children attend local public schools. On post, Anne Arundel County Public Schools runs three elementary schools, two middle schools, Meade High School and an early education center.",
+        "In the 2026 Maryland Report Card, Manor View and Pershing Hill elementary earned 4 of 5 stars, and Meade Heights elementary, MacArthur and Meade middle schools and Meade High 3 stars. Class of 2025 graduation: Howard County 91.3%, Anne Arundel 88.9%, Meade High 82.5%, state 86.4%. Your address sets the school, so confirm it. School Liaison: 301-677-1227."
       ],
-      "source": { "label": "Anne Arundel County Public Schools (official)", "url": "https://www.aacps.org/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fort Meade schools page (official); Maryland Report Card (2026)", "url": "https://home.army.mil/meade/about/fort-meade-schools" },
+      "verified": "2026-11-10"
     },
     {
       "id": "schools_live",
@@ -120,11 +120,11 @@
       "type": "facts",
       "data": {
         "Clinic": "Kimbrough Ambulatory Care Center",
-        "Care": "Outpatient primary and specialty care on post; inpatient care via Baltimore- and D.C.-area network hospitals",
+        "Care": "Outpatient care on post; no emergency room (dial 911). Kimbrough's list of nearby emergency rooms includes University of Maryland Baltimore Washington Medical Center (Glen Burnie) and Johns Hopkins Howard County Medical Center (Columbia); its military options include Walter Reed (Bethesda) and A.T. Augusta (Fort Belvoir).",
         "TRICARE region": "East (Humana Military)"
       },
-      "source": { "label": "Kimbrough Ambulatory Care Center (official)", "url": "https://kimbrough.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Kimbrough Ambulatory Care Center, emergency medicine (official)", "url": "https://kimbrough.tricare.mil/Health-Services/Urgent-Emergency-Care/Emergency-Medicine" },
+      "verified": "2026-11-10"
     },
     {
       "id": "shopping",
@@ -167,8 +167,8 @@
         "steps": [
           { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Start with the Housing Office", "text": "Check on-base availability (waitlists can be long) and get the housing office's read on the corridor before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and Maryland vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Start with the Housing Office", "text": "Check on-base availability with Corvias and get the housing office's read on the counties before you sign anything." },
+          { "title": "Sort your vehicle and base access", "text": "Maryland has no yearly car tax. If your legal residence is another state, you can keep your home-state registration and apply for the MVA's free military nonresident permit; since October 1, 2026 the MVA can notify residents with out-of-state plates and fine them if they don't act within 60 days. Active-duty members don't pay the 6.5% titling tax on a car already titled in their name." },
           { "title": "Enroll the kids in school", "text": "Contact Anne Arundel County (or Howard County) schools early and bring records and immunizations." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Kimbrough Ambulatory Care Center or network providers." }
         ]
@@ -179,10 +179,11 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What's at Fort Meade?", "a": "It's the home of the National Security Agency and U.S. Cyber Command, plus Army Cyber Command, DISA, and many intelligence organizations, the nation's signals-intelligence and cyber hub." },
-        { "q": "Where do families live?", "a": "Odenton, Severn, and Hanover are closest; Columbia and Howard County are popular for highly rated schools. On-post housing (Corvias) can have a year-plus waitlist." },
-        { "q": "Is it expensive?", "a": "Yes, the Baltimore-Washington corridor is high-cost, but BAH (MHA MD133) is set to match, and tours often run long." },
-        { "q": "What is the BAH area?", "a": "Fort Meade is MHA MD133. Use the calculator above for your grade." }
+        { "q": "What's at Fort Meade?", "a": "It's the home of the National Security Agency and U.S. Cyber Command, plus the Defense Information Systems Agency, the 780th Military Intelligence Brigade (Cyber) and more than 120 partner agencies, with more than 64,000 employees." },
+        { "q": "Where do families live?", "a": "Severn (about 10 minutes from the Kimbrough clinic) and Odenton (about 16) are close; Howard County (Columbia, about 25) has the highest graduation rate but higher prices. On-post housing is Corvias, with no official wait time posted." },
+        { "q": "Is it expensive?", "a": "Yes. Median sale prices from April to June 2026 were $520,000 in Anne Arundel and $650,000 in Howard (Maryland SDAT), and property tax differs by county: $1.080 per $100 in Anne Arundel against $1.362 in Howard (FY2027)." },
+        { "q": "What is the BAH area?", "a": "Fort Meade is MHA MD133. Use the calculator above for your grade." },
+        { "q": "Does Maryland tax my military pay?", "a": "Not if your legal residence is another state. If Maryland is your legal residence, your military pay is taxed, plus a county rate (2026: 2.70% to 3.20% in Anne Arundel, 3.20% in Howard and Prince George's)." }
       ]
     },
     {
