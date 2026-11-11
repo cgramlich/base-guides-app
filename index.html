@@ -280,7 +280,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.19.0";
+    const APP_VERSION = "0.19.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -937,12 +937,19 @@
     function stateFull(t) { return STATE_NAMES[t] || t; }
     function stateLabel(s) { return stateTokens(s).map(stateFull).join(" / ") || "Other"; }
 
-    function Home({ bases, loading, onOpen, saved, onToggleSave }) {
+    function Home({ bases, loading, loadFailed, onRetry, onOpen, saved, onToggleSave }) {
       const [q, setQ] = useState("");
       const [branch, setBranch] = useState("all");
       const [loc, setLoc] = useState("all");
       const [sortBy, setSortBy] = useState("state");
       if (loading) return <div className="center"><div className="spin" /></div>;
+      // A failed load and a genuinely empty list are different things: only the second is "No bases yet".
+      if ((!bases || !bases.length) && loadFailed) return (
+        <div className="center">
+          <div>Couldn't load the base guides. Check your connection and try again.</div>
+          <button className="btn-quiet" style={{ marginTop: 12 }} onClick={onRetry}>Try again</button>
+        </div>
+      );
       if (!bases || !bases.length) return <div className="center">No bases yet.</div>;
 
       const ql = q.trim().toLowerCase();
@@ -1272,13 +1279,31 @@
       const [loading, setLoading] = useState(true);
       const [slug, setSlug] = useState(null);
       const [saved, setSaved] = useState(() => LS.get("bg_saved", []));
+      const [loadFailed, setLoadFailed] = useState(false);
 
-      useEffect(() => {
+      /* The base list loads once at launch. WARNING: a failed load used to fall through to an empty list, so Home said
+         "No bases yet" as if the data were gone (seen on Chris's phone 2026-11-10: the request never reached the server).
+         A failure is now its own state with a Try again button, and the app retries by itself when the phone comes back
+         online or the app returns to the foreground. On failure the other screens still get an empty list (not null),
+         because Map, Plan and Saved read `bases` directly. */
+      const loadBases = useCallback(() => {
+        setLoading(true);
         fetchJSON(indexUrl())
-          .then((d) => setBases(d.bases || []))
-          .catch(() => setBases([]))
+          .then((d) => { setBases(d.bases || []); setLoadFailed(false); })
+          .catch(() => { setBases((prev) => prev || []); setLoadFailed(true); })
           .finally(() => setLoading(false));
       }, []);
+      useEffect(() => { loadBases(); }, [loadBases]);
+      useEffect(() => {
+        if (!loadFailed) return undefined;
+        const retry = () => { if (document.visibilityState !== "hidden") loadBases(); };
+        window.addEventListener("online", retry);
+        document.addEventListener("visibilitychange", retry);
+        return () => {
+          window.removeEventListener("online", retry);
+          document.removeEventListener("visibilitychange", retry);
+        };
+      }, [loadFailed, loadBases]);
 
       const open = useCallback((s) => { setSlug(s); setTab("guide"); }, []);
       const back = useCallback(() => { setSlug(null); setTab("home"); }, []);
@@ -1288,7 +1313,7 @@
       }), []);
 
       let body;
-      if (tab === "home") body = <Home bases={bases} loading={loading} onOpen={open} saved={saved} onToggleSave={toggleSave} />;
+      if (tab === "home") body = <Home bases={bases} loading={loading} loadFailed={loadFailed} onRetry={loadBases} onOpen={open} saved={saved} onToggleSave={toggleSave} />;
       else if (tab === "guide") body = slug
         ? <BaseDetail slug={slug} onBack={back} saved={saved} onToggleSave={toggleSave} />
         : <Stub label="Guide" note="Pick a base from Home to open its guide." />;
