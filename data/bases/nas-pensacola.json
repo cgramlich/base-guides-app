@@ -8,8 +8,8 @@
   "tagline": "The 'Cradle of Naval Aviation' on Florida's Gulf Coast, home of the Blue Angels and Navy flight training.",
   "coords": { "lat": 30.35, "lng": -87.30, "label": "Pensacola, FL" },
   "tz": "America/Chicago",
-  "last_full_review": "2026-06-25",
-  "_note": "Navy aviation training hub (Pensacola FL panhandle; Central time zone). Home of the Blue Angels, Naval Aviation Schools Command, and the National Naval Aviation Museum. Facts verified from official sources (cnic.navy.mil NAS Pensacola, Naval Hospital Pensacola, DeCA/NEX, Wikipedia for corroborated headline facts). BAH MHA FL064 (Pensacola) via the bah_rates single source of truth. Florida is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 32507 (Pensacola/Warrington).",
+  "last_full_review": "2026-11-11",
+  "_note": "Navy aviation training hub (Pensacola FL panhandle; Central time zone). Home of the Blue Angels, Naval Aviation Schools Command, and the National Naval Aviation Museum. Facts verified from official sources (cnic.navy.mil NAS Pensacola, Naval Hospital Pensacola, DeCA/NEX, Wikipedia for corroborated headline facts). BAH MHA FL064 (Pensacola) via the bah_rates single source of truth. Florida is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 32507 (Pensacola/Warrington). Rechecked 2026-11-11 (research/pensacola-facts.md): Amendment 3 passed 11/3/26; Citizens flood rule for all homes by 1/1/27; Naval Hospital has no ER (Military OneSource); 531 Balfour Beatty homes and waits; base-housing schools; West Gate public access since 5/1/26; Alabama military rules are written for members stationed in Alabama.",
   "sections": [
     {
       "id": "quick_facts",
@@ -19,65 +19,65 @@
         "Branch": "U.S. Navy",
         "Location": "Pensacola, FL (western panhandle, Gulf Coast)",
         "Known as": "The Cradle of Naval Aviation",
-        "Mission": "Naval aviation training (NASC) and initial officer/aircrew training",
+        "Mission": "Naval aviation training: Naval Aviation Schools Command, the Naval Air Technical Training Center and the Naval Education and Training Command headquarters",
         "Home of": "The Blue Angels and the National Naval Aviation Museum",
         "Setting": "Gulf Coast beaches and a historic Navy town"
       },
-      "source": { "label": "NAS Pensacola (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/nas_pensacola.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NAS Pensacola overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/naval-air-station-pensacola" },
+      "verified": "2026-11-11"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Naval Air Station Pensacola is the Cradle of Naval Aviation, where the Navy's pilots, flight officers, and aircrew begin their training. It hosts Naval Aviation Schools Command and is the home base of the Blue Angels flight demonstration squadron.",
+        "Naval Air Station Pensacola, the Cradle of Naval Aviation, hosts Naval Aviation Schools Command, the Naval Air Technical Training Center, the headquarters of the Naval Education and Training Command and the Blue Angels. Most primary pilot training is at NAS Whiting Field near Milton, which conducts 60% of the Navy's primary flight training.",
         "On Florida's western Gulf Coast, it pairs a deep aviation history, including the National Naval Aviation Museum, with white-sand beaches and a relaxed coastal lifestyle."
       ],
-      "source": { "label": "NAS Pensacola (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/nas_pensacola.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NAS Pensacola overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/naval-air-station-pensacola" },
+      "verified": "2026-11-11"
     },
     {
       "id": "pensacola_decision",
       "title": "Gulf Coast Living: Beaches and an Easy Cost of Living",
       "type": "killer",
       "data": {
-        "subtitle": "Pensacola pairs Gulf-Coast beaches with an affordable cost of living. The main choice is which side of the bay fits your commute, schools, and how close to the water you want to be.",
+        "subtitle": "Florida has no income tax, so the choice is schools, bridges, insurance and prices: Escambia County, where children in base housing go to school, or Santa Rosa County across the bay. A few families look west to Alabama.",
         "intro": [
-          "The Pensacola area is one of the more affordable beach towns in the country, so BAH tends to stretch well, and the lifestyle draws many families. On-base housing is available; most live off base.",
-          "Where you live comes down to commute and how close to the beach you want to be, from communities near the station to family suburbs and the beach towns."
+          "Escambia County (Pensacola, Warrington, Perdido Key) is where children in base housing go to school: an A district for 2025-26 with 89.5% graduation in 2024-25. Santa Rosa County (Gulf Breeze, Pace, Milton) is also an A district, with 93.1% graduation, but every commute crosses a bay. Typical home values in September 2026 were $264,868 in Pensacola, $478,942 in Gulf Breeze and $325,892 in Pace (Zillow).",
+          "If you buy, check three things first. Florida homestead needs Florida as your one permanent residence, and from 2027 owners who weren't Florida permanent residents on December 31, 2026 get the smaller $50,000 exemption for four years. Citizens, Florida's state-backed insurer, requires flood insurance on all the homes it covers by January 1, 2027, even outside FEMA flood zones. And in Alabama, the state's military rules are written for members stationed in Alabama."
         ],
         "recommendations": [
-          { "who": "Closest to the station", "advice": "Warrington and the Navy Point area sit right by NAS Pensacola for the shortest commute." },
-          { "who": "Family suburbs", "advice": "Gulf Breeze and Pace/Milton offer well-regarded schools and newer neighborhoods a manageable drive out." },
-          { "who": "Beach life", "advice": "Perdido Key and Pensacola Beach put you on the Gulf, with a longer commute and higher costs." },
-          { "who": "On-base option", "advice": "On-base housing is available at NAS Pensacola and nearby Navy properties; weigh it against the affordable local market." }
+          { "who": "Closest to the station", "advice": "Warrington is about 11 minutes from the middle of the base with no traffic. Children in base housing go to Escambia schools: Pleasant Grove or Navy Point Elementary, Warrington Preparatory Academy and Pensacola High School." },
+          { "who": "Family suburbs", "advice": "Gulf Breeze (about 30 minutes, over the Pensacola Bay Bridge) and Pace (about 41, across Escambia Bay) are in Santa Rosa County, an A district with 93.1% graduation in 2024-25. Typical rents are higher: $2,075 and $1,929." },
+          { "who": "Beach life", "advice": "Perdido Key and Pensacola Beach are barrier islands, always asked to evacuate in a hurricane, and Pensacola Beach is reached by a toll bridge. Get flood and insurance quotes before you choose." },
+          { "who": "On-base option", "advice": "Balfour Beatty Communities runs 531 family homes. Estimated waits listed in July 2026 run from 3 to 6 weeks for E-1 to E-9 families needing 2 to 4 bedrooms to 18 to 24 months for O-5 and above." }
         ]
       },
-      "source": { "label": "NAS Pensacola (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/nas_pensacola.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Bilzin Sumberg, Florida Amendment 3 (September 2, 2026)", "url": "https://www.bilzin.com/insights/publications/2026/09/floridas-amendment-3-residency-deadline" },
+      "verified": "2026-11-11"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official NAS Pensacola site before you go."
+        "The Main Gate is at the south end of Navy Boulevard, with the Visitor Control Center (850-452-4153) and, just inside on the right, the Navy Housing Service Center. The West Gate, at the south end of Blue Angel Parkway, is the public gate for the National Naval Aviation Museum and Pensacola Lighthouse, open to visitors 9 a.m. to 3 p.m. daily since May 1, 2026.",
+        "Visitors 18 and older need a REAL ID or a U.S. passport, foreign visitors must be escorted by a U.S. citizen with proper ID, and security may check every adult's ID. Access rules changed several times in 2025 and 2026, so confirm before you go."
       ],
-      "source": { "label": "NAS Pensacola (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/nas_pensacola.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Fox10, daily public access resumes (May 1, 2026)", "url": "https://www.fox10tv.com/2026/05/02/daily-public-access-resumes-naval-air-station-pensacola/" },
+      "verified": "2026-11-11"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "NAS Pensacola and its associated Navy properties have privatized on-base family housing in several neighborhoods.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+        "Balfour Beatty Communities runs 531 privatized family homes at NAS Pensacola. Estimated waits listed by Military OneSource in July 2026: 3 to 6 weeks for E-1 to E-9 needing 2 to 4 bedrooms, 1 to 3 months for E-7 to E-9 and W-1 to O-4, and 18 to 24 months for O-5 and above.",
+        "Navy Housing Service Center: 1581 Duncan Road, Building 735, just inside the Main Gate, 850-452-5168, weekdays 8 a.m. to 5 p.m. Unaccompanied housing is space-available; if none is free, E-5 and above live off base."
       ],
-      "source": { "label": "NAS Pensacola (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrse/installations/nas_pensacola.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NAS Pensacola housing", "url": "https://installations.militaryonesource.mil/military-installation/naval-air-station-pensacola/housing/housing" },
+      "verified": "2026-11-11"
     },
     {
       "id": "bah",
@@ -102,11 +102,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools. Escambia County serves Pensacola, and neighboring Santa Rosa County (Gulf Breeze, Pace, Milton) is popular with families for its schools.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "There are no DoD schools at NAS Pensacola or in Escambia or Santa Rosa counties. Children in base housing attend Escambia County schools: Pleasant Grove or Navy Point Elementary, Warrington Preparatory Academy and Pensacola High School (92.1% graduation in 2024-25). Escambia and Santa Rosa were both A districts for 2025-26; graduation rates for 2024-25 were 89.5% in Escambia and 93.1% in Santa Rosa, against 92.2% statewide.",
+        "Off base, your school depends on the address, so confirm the zone for any neighborhood. School Liaison Officer: 4119 Children's Lane, 850-458-6588."
       ],
-      "source": { "label": "Santa Rosa County District Schools (official)", "url": "https://www.santarosa.k12.fl.us/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NAS Pensacola education", "url": "https://installations.militaryonesource.mil/military-installation/naval-air-station-pensacola/education/education" },
+      "verified": "2026-11-11"
     },
     {
       "id": "schools_live",
@@ -120,18 +120,18 @@
       "type": "facts",
       "data": {
         "Hospital": "Naval Hospital Pensacola",
-        "Care": "Primary and specialty outpatient care and a range of services; inpatient and emergency needs are coordinated with the network",
+        "Care": "Outpatient care and an urgent care center that does not offer emergency services, at 6000 West Highway 98. No labor and delivery since 2018; expectant mothers are referred to TRICARE network hospitals. In an emergency, call 911 or go to the nearest civilian ER.",
         "TRICARE region": "East (Humana Military)"
       },
-      "source": { "label": "Naval Hospital Pensacola (official)", "url": "https://pensacola.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NAS Pensacola health care", "url": "https://installations.militaryonesource.mil/military-installation/naval-air-station-pensacola/health/health-care" },
+      "verified": "2026-11-11"
     },
     {
       "id": "shopping",
       "title": "On-Base Shopping",
       "type": "facts",
       "data": {
-        "Commissary": "NAS Pensacola Commissary (DeCA)",
+        "Commissary": "Pensacola NAS Commissary, 5800 West Highway 98 (Building 3961), open 8 a.m. to 7 p.m. daily",
         "Exchange": "Navy Exchange (NEX) Pensacola"
       },
       "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
@@ -142,7 +142,7 @@
       "title": "Rent or Buy?",
       "type": "rentbuy",
       "data": {
-        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and Pensacola's affordable, steady market makes buying a real option for many families."],
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in Pensacola insurance, flood rules and Florida's homestead rules weigh as much as the price."],
         "rent": [
           "Your tour is short (about two years or less) or your orders feel uncertain.",
           "You want time to learn the area and decide which side of the bay fits.",
@@ -150,12 +150,12 @@
           "Your BAH comfortably covers rent in the areas you'd consider."
         ],
         "buy": [
-          "You expect to be here three or more years, common with training pipelines and follow-on tours.",
+          "You expect to be here three or more years.",
           "You want to use your VA loan and build equity instead of paying rent.",
-          "The affordable Gulf Coast market fits your budget for a home you like.",
+          "You have homeowners and flood insurance quotes for the address before you make an offer.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer, but Pensacola's affordability makes buying worth a look for longer tours. Factor in coastal insurance and run your BAH against the rent and home prices above, then talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. Florida homestead needs Florida as your one permanent residence, and from 2027 owners who weren't Florida permanent residents on December 31, 2026 get the smaller $50,000 exemption for four years. Citizens, Florida's state-backed insurer, requires flood insurance on all the homes it covers by January 1, 2027. Run your BAH against the rent and home prices above and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -165,10 +165,10 @@
       "data": {
         "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
         "steps": [
-          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
           { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the local areas before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and Florida vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Sort your vehicle and base access", "text": "If you live in Florida and keep another state's legal residence, you can keep a current home-state plate; a Florida plate is optional, and nonresident members can claim the initial registration fee exemption with form HSMV 82002. If you plan to claim Florida homestead, expect the appraiser to look for Florida plates. If you'll live in Alabama, ask NAS Pensacola legal assistance how to register your cars." },
           { "title": "Enroll the kids in school", "text": "Contact the gaining district (Escambia or Santa Rosa County) early and bring records and immunizations." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Hospital Pensacola or network providers." }
         ]
@@ -179,10 +179,13 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What happens at NAS Pensacola?", "a": "It's the Cradle of Naval Aviation, where Navy pilots, flight officers, and aircrew begin training. It's also home to the Blue Angels and the National Naval Aviation Museum." },
-        { "q": "Where do families live?", "a": "On-base housing is available; most live off base. Warrington is closest; Gulf Breeze, Pace, and Milton are popular for schools; Perdido Key and Pensacola Beach are the beach options." },
-        { "q": "Is it affordable?", "a": "Yes, relative to most beach areas. The Pensacola market is one of the more affordable Gulf Coast options, so BAH stretches well." },
-        { "q": "What is the BAH area?", "a": "NAS Pensacola is MHA FL064 (Pensacola). Use the calculator above for your grade." }
+        { "q": "What happens at NAS Pensacola?", "a": "It's the Cradle of Naval Aviation: home of Naval Aviation Schools Command, the Naval Air Technical Training Center, the Naval Education and Training Command headquarters, the Blue Angels and the National Naval Aviation Museum. Most primary pilot training is at NAS Whiting Field near Milton." },
+        { "q": "Where do families live?", "a": "Warrington is closest (about 11 minutes). Pensacola is about 19. Gulf Breeze (about 30) and Pace (about 41) are in Santa Rosa County across the bay, an A district with 93.1% graduation in 2024-25. Base housing has 531 family homes. Perdido Key and Pensacola Beach are the beach options." },
+        { "q": "Is it affordable?", "a": "Rent depends on the side of the bay: typical rents in September 2026 were $1,640 in Pensacola and $2,075 in Gulf Breeze, including apartments (Zillow). If you buy, add insurance: Florida premiums rose 75% from 2021 to 2025." },
+        { "q": "What is the BAH area?", "a": "NAS Pensacola is MHA FL064 (Pensacola). Use the calculator above for your grade." },
+        { "q": "Does Florida tax my military pay?", "a": "No, Florida has no personal income tax. If you'd live in Alabama, note that Alabama's military rules are written for members stationed in Alabama, so ask NAS Pensacola legal assistance how it would treat a working spouse's pay and your cars." },
+        { "q": "What about hurricanes?", "a": "Hurricane season runs June 1 to November 30. Hurricane Isaias cut power to most of Escambia County in October 2026, and Hurricane Sally collapsed part of the Pensacola Bay Bridge in 2020. Barrier islands are always asked to evacuate; look up any address's evacuation zone with Escambia County's Know Your Zone tool." },
+        { "q": "How does Florida's new homestead amendment affect buyers?", "a": "Amendment 3, approved November 3, 2026 with 62% of the vote on unofficial returns, raises the homestead exemption from non-school taxes to $150,000 in 2027 and $250,000 in 2028. Owners who weren't Florida permanent residents on December 31, 2026 get the old $50,000 exemption for their first four years, and we found no military exception. Homestead also needs the home to be your one permanent residence. Ask the county property appraiser." }
       ]
     },
     {
