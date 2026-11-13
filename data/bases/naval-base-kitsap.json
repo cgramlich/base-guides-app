@@ -5,11 +5,11 @@
   "short_name": "Kitsap",
   "branch": "U.S. Navy",
   "states": ["WA"],
-  "tagline": "The Navy's Pacific Northwest hub: ballistic-missile submarines, the Puget Sound shipyard, and carriers, across the Kitsap Peninsula.",
+  "tagline": "The Navy's Pacific Northwest hub: ballistic-missile submarines at Bangor and Puget Sound Naval Shipyard at Bremerton, across the Kitsap Peninsula.",
   "coords": { "lat": 47.56, "lng": -122.65, "label": "Bremerton / Silverdale, WA" },
   "tz": "America/Los_Angeles",
-  "last_full_review": "2026-06-25",
-  "_note": "Navy base (Kitsap Peninsula, WA; Bremerton + Bangor, merged 2004). Facts verified from official sources (cnrnw.cnic.navy.mil, Naval Hospital Bremerton, DeCA/NEX, Wikipedia for corroborated headline facts). BAH MHA WA306 (Bremerton) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the housing office). Washington is TRICARE West. Medium-confidence flags: base coords (approx), representative off-base ZIP 98311 (Bremerton/Silverdale).",
+  "last_full_review": "2026-11-12",
+  "_note": "Navy base (Kitsap Peninsula, WA; Bremerton + Bangor, merged 2004). Facts verified from official sources (cnrnw.cnic.navy.mil, Naval Hospital Bremerton, DeCA/NEX, Wikipedia for corroborated headline facts). BAH MHA WA306 (Bremerton) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the housing office). Washington is TRICARE West. Medium-confidence flags: base coords (approx), representative off-base ZIP 98311 (Bremerton/Silverdale). Rechecked 2026-11-12 (research/kitsap-facts.md): Poulsbo is North Kitsap SD; Hunt runs 1,733 homes (MOS), 41 at Bremerton; Naval Hospital Bremerton has no ER or L&D; Nimitz left 3/7/26; nonresident members keep home plates; gates matched to map, hours unverified.",
   "sections": [
     {
       "id": "quick_facts",
@@ -20,64 +20,64 @@
         "Location": "Kitsap Peninsula, WA (Bremerton + Bangor)",
         "Submarines": "Trident ballistic-missile submarine homeport (West Coast)",
         "Shipyard": "Puget Sound Naval Shipyard (one of the Navy's nuclear shipyards)",
-        "Also": "Carrier and surface-ship support; the only West Coast dry dock for a Nimitz-class carrier",
+        "Also": "Puget Sound Naval Shipyard & Intermediate Maintenance Facility at Bremerton; Naval Undersea Warfare Center at Keyport",
         "Region": "Commander, Navy Region Northwest"
       },
-      "source": { "label": "Naval Base Kitsap (official)", "url": "https://cnrnw.cnic.navy.mil/Installations/NAVBASE-Kitsap/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Naval Base Kitsap overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/naval-base-kitsap" },
+      "verified": "2026-11-12"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Naval Base Kitsap is the largest naval organization in the Pacific Northwest, formed in 2004 by merging Naval Station Bremerton with Naval Submarine Base Bangor. It supports surface ships, carriers, and the West Coast force of Trident ballistic-missile submarines.",
-        "It is home to the Puget Sound Naval Shipyard, one of the Navy's nuclear shipyards, and spans installations at Bremerton, Bangor, and several smaller sites across the Kitsap Peninsula."
+        "Naval Base Kitsap spans Bangor, Bremerton, Keyport, Manchester and Jackson Park on the Kitsap Peninsula. Bangor works with the submarine community, including the West Coast's Ohio-class submarines, and Bremerton with the ship community.",
+        "Bremerton is home to Puget Sound Naval Shipyard. The Navy plans to homeport up to eight Columbia-class submarines at Bangor, with the first expected in 2032. USS Nimitz left Bremerton for the last time on March 7, 2026."
       ],
-      "source": { "label": "Naval Base Kitsap (official)", "url": "https://cnrnw.cnic.navy.mil/Installations/NAVBASE-Kitsap/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Stars and Stripes, May 27, 2026", "url": "https://www.stripes.com/branches/navy/2026-05-27/columbia-class-subs-homeport-naval-base-kitsap-21798111.html" },
+      "verified": "2026-11-12"
     },
     {
       "id": "pnw_decision",
       "title": "Bremerton or Bangor? Puget Sound Living",
       "type": "killer",
       "data": {
-        "subtitle": "Kitsap is split across the peninsula, so which installation you report to (the Bremerton shipyard or the Bangor sub base) shapes where you live, all in the green, ferry-connected Puget Sound.",
+        "subtitle": "Kitsap's two main sites, Bangor near Silverdale and the Bremerton shipyard, are about 20 minutes apart, so the site you report to shapes where you live. Then the school district behind the address matters most.",
         "intro": [
-          "The base has two main centers: Bremerton (shipyard and surface side) to the south and Bangor (submarine side) to the north, near Silverdale. Which one you work at naturally pulls you toward that end of the peninsula.",
-          "Life here is quintessential Pacific Northwest: forests, water, and ferries to Seattle, with plenty of rain. Most families weigh commute and schools across Bremerton, Silverdale, and the surrounding towns."
+          "Bangor, near Silverdale, works with the submarine community; Bremerton is the shipyard side. Most base family housing is at Bangor and The Landings, and the Housing Service Center is at Bangor Plaza. Families who live south of Bremerton (Port Orchard, Gig Harbor) drive through Gorst, where WSDOT expects travel times to more than double within 10 years.",
+          "School districts differ more than taxes do: class of 2025 graduation runs from 72.8% in the Bremerton district to 95.0% on Bainbridge Island (state 82.6%), and a Bremerton mailing address can be in the Central Kitsap district. Washington has no personal income tax, and sales tax is 9.2% or 9.3% everywhere nearby."
         ],
         "recommendations": [
-          { "who": "Shipyard / Bremerton side", "advice": "Bremerton and East Bremerton sit closest to the shipyard, with the most affordable options on the peninsula." },
-          { "who": "Submarine / Bangor side", "advice": "Silverdale and Poulsbo are convenient to Bangor and popular with families (Central Kitsap schools)." },
-          { "who": "Commuting to Seattle", "advice": "Ferries connect Bremerton and Bainbridge Island to downtown Seattle; some families use them for a spouse's job or city access." },
-          { "who": "On-base option", "advice": "On-base housing spans both areas; start with the housing office, as on-base can ease the search in a tight market." }
+          { "who": "Shipyard / Bremerton side", "advice": "Bremerton is about 4 minutes from the shipyard's Naval Avenue Gate and has the lowest typical home value of the nearby towns ($479,232, Zillow, September 2026), but the Bremerton School District's class of 2025 graduated 72.8%; some Bremerton addresses are in Central Kitsap's district (84.5%). Port Orchard (South Kitsap, 84.8%) is about 15 minutes away, through Gorst." },
+          { "who": "Submarine / Bangor side", "advice": "Silverdale (Central Kitsap schools, 84.5%) is about 8 minutes from the Trident Main Gate and Poulsbo (North Kitsap schools, 89.8%) about 12. Typical home values are $601,583 and $663,190." },
+          { "who": "Commuting to Seattle", "advice": "The state ferry takes about 60 minutes from Bremerton and 35 from Bainbridge Island to Seattle ($11.35 walk-on). Kitsap Transit's Bremerton fast ferry takes 30 minutes but was due to cut weekday round trips from 20 to 13 in September 2026, so check its current schedule." },
+          { "who": "On-base option", "advice": "Hunt Military Communities runs the homes. Military OneSource counts 1,038 at Bangor, 632 at The Landings (formerly Jackson Park) in Bremerton and 41 on the Bremerton base itself. Families in EFMP categories 4 and 5 get wait-list priority." }
         ]
       },
-      "source": { "label": "Naval Base Kitsap (official)", "url": "https://cnrnw.cnic.navy.mil/Installations/NAVBASE-Kitsap/" },
-      "verified": "2026-06-25"
+      "source": { "label": "WA OSPI Report Card, graduation 2024-25", "url": "https://data.wa.gov/d/isxb-523t" },
+      "verified": "2026-11-12"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Navy Region Northwest site before you go."
+        "The Bangor Visitor Control Center is at the Trident Main Gate, 1035 Trident Boulevard (360-396-4665), open weekdays 7 a.m. to 3:20 p.m. and closed weekends and holidays, so plan guest visits ahead. Bremerton has its own visitor center; base operator 360-476-3636.",
+        "Family members over 10 need a dependent ID card. We couldn't confirm gate hours from an official page, so check with your sponsor or the base before you go."
       ],
-      "source": { "label": "Naval Base Kitsap (official)", "url": "https://cnrnw.cnic.navy.mil/Installations/NAVBASE-Kitsap/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NB Kitsap motor vehicles", "url": "https://installations.militaryonesource.mil/military-installation/naval-base-kitsap/transportation/motor-vehicles" },
+      "verified": "2026-11-12"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "Naval Base Kitsap has privatized military family housing across the Bremerton and Bangor areas.",
-        "Eligibility and availability vary by rank and family size, so start with the Navy housing office for the current manager, options, and waitlists."
+        "Hunt Military Communities runs the privatized family housing. Military OneSource counts 1,733 homes: 1,038 at Bangor, 632 at The Landings (formerly Jackson Park, near Naval Hospital Bremerton), 41 at Bremerton and 22 at Keyport (Hunt's own site says 1,100). Your control date is the first thing that sets your wait list place, families in EFMP categories 4 and 5 get priority, and we found no published wait times.",
+        "Housing Service Center: Bangor Plaza, 2720 Ohio Street, Silverdale, 360-396-4399, weekdays 7:30 a.m. to 4 p.m. Single E-4 and below with under four years of service live in unaccompanied housing."
       ],
-      "source": { "label": "Naval Base Kitsap (official)", "url": "https://cnrnw.cnic.navy.mil/Installations/NAVBASE-Kitsap/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NB Kitsap housing", "url": "https://installations.militaryonesource.mil/military-installation/naval-base-kitsap/housing/housing" },
+      "verified": "2026-11-12"
     },
     {
       "id": "bah",
@@ -102,11 +102,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools. Central Kitsap serves the Silverdale and Bangor area; Bremerton and South Kitsap districts serve the southern peninsula.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "There are no DoD schools here. Bangor housing feeds Central Kitsap or North Kitsap schools, The Landings feeds Bremerton or Central Kitsap, and Keyport feeds North Kitsap; Poulsbo and Kingston are North Kitsap. Class of 2025 four-year graduation: Bainbridge Island 95.0%, North Kitsap 89.8%, Peninsula (Gig Harbor) 88.7%, South Kitsap 84.8%, Central Kitsap 84.5%, Bremerton 72.8%; state 82.6%.",
+        "A Bremerton mailing address can be in the Central Kitsap district, so confirm the district for any address. School Liaison: 360-340-2824."
       ],
-      "source": { "label": "Central Kitsap School District (official)", "url": "https://www.ckschools.org/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NB Kitsap education", "url": "https://installations.militaryonesource.mil/military-installation/naval-base-kitsap/education/education" },
+      "verified": "2026-11-12"
     },
     {
       "id": "schools_live",
@@ -120,18 +120,18 @@
       "type": "facts",
       "data": {
         "Hospital": "Naval Hospital Bremerton",
-        "Care": "Inpatient and outpatient care, with branch clinics including one at Bangor",
+        "Care": "Outpatient care and an urgent care clinic (8 a.m. to 4 p.m. daily as of July 2025; call 360-475-4000 to check); no emergency room since 2013 or 2014 and no labor and delivery since spring 2022. It relies on St. Michael Medical Center in Silverdale, which has an ER, for deliveries; branch clinic at Bangor for active duty.",
         "TRICARE region": "West (TriWest)"
       },
-      "source": { "label": "Naval Hospital Bremerton (official)", "url": "https://bremerton.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Gig Harbor Now, December 23, 2025", "url": "https://www.gigharbornow.org/?p=48477" },
+      "verified": "2026-11-12"
     },
     {
       "id": "shopping",
       "title": "On-Base Shopping",
       "type": "facts",
       "data": {
-        "Commissary": "Commissary (DeCA) at Bangor and Bremerton",
+        "Commissary": "Commissaries at Bangor (2604 Ohio Street) and Bremerton (120 S. Dewey Street), both open 9 a.m. to 7 p.m. daily",
         "Exchange": "Navy Exchange (NEX) Kitsap"
       },
       "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
@@ -150,12 +150,12 @@
           "Your BAH comfortably covers rent in the areas you'd consider."
         ],
         "buy": [
-          "You expect to be here three or more years (shipyard tours can be long).",
+          "You expect to be here three or more years.",
           "You want to use your VA loan and build equity instead of paying rent.",
           "The Kitsap market fits your budget for a home you like.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer. Kitsap is more affordable than Seattle proper but still a solid Puget Sound market, and shipyard tours can run long, which favors buying for some. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. The Bremerton metro (Kitsap County) typical home value is about 20% below the Seattle metro's ($579,111 against $720,147, Zillow, September 2026), and Kitsap had the tightest supply in the NWMLS area in October 2026. Run your BAH against the rent and home prices above, weigh your tour length and your commute through Gorst, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -168,9 +168,9 @@
           { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
           { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the Bremerton and Bangor sides before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and Washington vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact the gaining district (Central Kitsap, Bremerton, or South Kitsap) early and bring records and immunizations." },
-          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Naval Hospital Bremerton or network providers." }
+          { "title": "Sort your vehicle and base access", "text": "If Washington isn't your legal residence, you can keep your home-state registration, and so can a spouse whose car is registered to you or jointly. If you register in Washington, you may be exempt from excise and regional transit taxes as a registered owner who certifies a home of record elsewhere (Form 420044 and your LES); 2009 and newer cars must meet California emission standards. Buying a car here after 90 days means Washington sales or use tax. Every car used on base must be registered with base Pass and ID." },
+          { "title": "Enroll the kids in school", "text": "Bangor housing feeds Central Kitsap or North Kitsap schools; The Landings feeds Bremerton or Central Kitsap; Keyport feeds North Kitsap. Off base, confirm the district for the exact address. School Liaison: 360-340-2824." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment. Naval Hospital Bremerton has no emergency room and no labor and delivery, so know where St. Michael Medical Center in Silverdale and the nearest civilian ER are." }
         ]
       }
     },
@@ -179,10 +179,12 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What's at Naval Base Kitsap?", "a": "It's the Navy's Pacific Northwest hub: the West Coast Trident ballistic-missile submarine force at Bangor, the Puget Sound Naval Shipyard at Bremerton, and surface-ship and carrier support across the peninsula." },
-        { "q": "Bremerton or Bangor?", "a": "Bremerton (south) is the shipyard and surface side; Bangor (north, near Silverdale) is the submarine side. Where you work pulls you toward that end of the peninsula." },
-        { "q": "Where do families live?", "a": "Bremerton and East Bremerton near the shipyard; Silverdale and Poulsbo near Bangor (Central Kitsap schools). Ferries connect to Seattle for some commuters." },
-        { "q": "What is the BAH area?", "a": "Naval Base Kitsap is MHA WA306 (Bremerton). Use the calculator above for your grade." }
+        { "q": "What's at Naval Base Kitsap?", "a": "Bangor, near Silverdale, works with the submarine community; Bremerton is home to Puget Sound Naval Shipyard; Keyport has the Naval Undersea Warfare Center. Military OneSource counts 15,293 active duty." },
+        { "q": "Bremerton or Bangor?", "a": "Your site decides it: the two main gates are about 20 minutes apart with no traffic. Most base family housing is at Bangor and The Landings, and families living south of Bremerton drive through Gorst, one of the busiest routes in Kitsap County." },
+        { "q": "Where do families live?", "a": "Near Bangor: Silverdale (Central Kitsap schools) and Poulsbo and Kingston (North Kitsap schools). Near the shipyard: Bremerton and Port Orchard (South Kitsap). Bainbridge Island has the highest graduation rate (95.0%) and the highest prices." },
+        { "q": "What is the BAH area?", "a": "Naval Base Kitsap is MHA WA306 (Bremerton). Use the calculator above for your grade." },
+        { "q": "Does Washington tax my military pay?", "a": "No. Washington has no personal income tax today; a 9.9% tax on income over $1 million starts in 2028. Sales tax is 9.2% in Bremerton, Silverdale and Bainbridge Island and 9.3% in Port Orchard and Poulsbo." },
+        { "q": "Is there an emergency room at Naval Hospital Bremerton?", "a": "No. It has an urgent care clinic (8 a.m. to 4 p.m. daily as of July 2025) and hasn't delivered babies since spring 2022. St. Michael Medical Center in Silverdale has an emergency department, and freestanding ERs opened in 2025 in East Bremerton, Bremerton and Port Orchard. In an emergency, call 911." }
       ]
     },
     {
