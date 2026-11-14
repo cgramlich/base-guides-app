@@ -5,11 +5,11 @@
   "short_name": "Twentynine Palms",
   "branch": "U.S. Marine Corps",
   "states": ["CA"],
-  "tagline": "The Marine Corps' largest base and premier live-fire training ground, deep in California's high desert.",
+  "tagline": "The Marine Corps' largest live-fire combat training base, in California's Mojave high desert.",
   "coords": { "lat": 34.23, "lng": -116.05, "label": "Twentynine Palms, CA" },
   "tz": "America/Los_Angeles",
-  "last_full_review": "2026-06-25",
-  "_note": "Marine Corps Air Ground Combat Center (MAGTFTC), the Corps' largest base, Mojave high desert (San Bernardino County, CA). CONUS full template (BAH MHA CA032 Twentynine Palms MCB; RentCast/SchoolDigger work). Premier combined-arms live-fire training. Remote; most families live on base. Medical: Robert E. Bush Naval Hospital. Schools: Morongo Unified + on-base campuses. Facts verified from official sources (29palms.marines.mil, Naval Hospital Twentynine Palms, DeCA/MCX, Wikipedia for corroborated headline facts). California is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 92277 (Twentynine Palms).",
+  "last_full_review": "2026-11-13",
+  "_note": "Marine Corps Air Ground Combat Center (MAGTFTC), Mojave high desert (San Bernardino County, CA). BAH MHA CA032 (Twentynine Palms MCB). Housing: Liberty Military Housing (formerly Lincoln), 2,210 homes and apartments, waits of 30 days to 12 months. Schools: Morongo Unified, Condor Elementary on base, no DoDEA. Medical: Naval Hospital Twentynine Palms (Robert E. Bush), 24/7 ER, inpatient care, labor and delivery. Corrected 2026-11-13 from Military OneSource, DHA, CDE DataQuest, CDTFA, California DMV, BOE, DeCA and MCCS (page-builder research/palms-facts.md). California is TRICARE West. Medium-confidence flags: base coords (approx; may sit on the base rather than the town), off-base ZIP 92277 is the town (base addresses use 92278).",
   "sections": [
     {
       "id": "quick_facts",
@@ -19,12 +19,12 @@
         "Branch": "U.S. Marine Corps",
         "Location": "Twentynine Palms, CA (Mojave high desert, San Bernardino County)",
         "Role": "Marine Air Ground Task Force Training Command (MAGTFTC)",
-        "Distinction": "The Marine Corps' largest base by area",
+        "Distinction": "The Marine Corps' largest live-fire combat training base",
         "Known for": "Premier large-scale, combined-arms live-fire training",
-        "Setting": "Remote high desert; most families live on base"
+        "Setting": "Remote high desert; 2,210 base homes and apartments, with waits of 30 days to 12 months"
       },
-      "source": { "label": "MCAGCC Twentynine Palms (official)", "url": "https://www.29palms.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, MCAGCC Twentynine Palms overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/twentynine-palms-mcagcc" },
+      "verified": "2026-11-13"
     },
     {
       "id": "mission",
@@ -32,52 +32,52 @@
       "type": "prose",
       "data": [
         "The Marine Corps Air Ground Combat Center at Twentynine Palms is the Corps' largest base and its premier live-fire, combined-arms training ground. Marine units from across the force rotate through its vast desert ranges to prepare for combat.",
-        "Set deep in California's Mojave high desert, it is remote and self-contained, which shapes life here: a tight-knit community, big desert skies, and a fair distance to the nearest cities."
+        "Set in California's Mojave high desert, it is remote and self-contained: Palm Springs Airport is about 60 miles away, and Highway 62 is the main road to the rest of Southern California."
       ],
-      "source": { "label": "MCAGCC Twentynine Palms (official)", "url": "https://www.29palms.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, MCAGCC Twentynine Palms overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/twentynine-palms-mcagcc" },
+      "verified": "2026-11-13"
     },
     {
       "id": "29palms_decision",
-      "title": "A Remote Desert Base: Plan to Live On Base",
+      "title": "How Far West on Highway 62?",
       "type": "killer",
       "data": {
-        "subtitle": "Twentynine Palms is genuinely isolated, so the on-base versus off-base question mostly answers itself: most families live on base, with the small town of Twentynine Palms just outside the gate.",
+        "subtitle": "Morongo Unified runs the basin's public schools and BAH is the same wherever you live, so the choice is how far west along Highway 62 you go. Each step west adds drive time, and rents and prices run higher than in the town of Twentynine Palms.",
         "intro": [
-          "The high-desert location means there's no large city next door, so the great majority of families live on base, close to work, schools, and the hospital. The base community is large and active to make up for the remoteness.",
-          "Off base, the town of Twentynine Palms and nearby Yucca Valley are the local options, with the Palm Springs area and Joshua Tree within driving distance for amenities and recreation."
+          "Base housing is the shortest commute, but waits run from 30 days to 12 months by rank and bedrooms (Military OneSource). Off base, the town of Twentynine Palms is about 11 minutes from the Main Gate (estimate, no traffic), with a typical rent of $1,494 and home value of $245,396 (Zillow, September 2026), below Joshua Tree's and Yucca Valley's.",
+          "Joshua Tree (about 32 minutes) and Yucca Valley (about 40) cost more: typical rent $2,005 and $1,827. The Coachella Valley is 73 minutes or more. Water and sewer differ too: Twentynine Palms relies on septic systems, and the regional water board has banned new and failing septic systems in Yucca Valley, which is building sewers in phases."
         ],
         "recommendations": [
-          { "who": "Most families: on base", "advice": "Given the isolation, the great majority of families live on base, close to schools and Naval Hospital Twentynine Palms; get on the housing list early." },
-          { "who": "Off base: in town", "advice": "The town of Twentynine Palms and nearby Yucca Valley are the practical off-base options for a short commute." },
-          { "who": "Plan for the desert", "advice": "Summers are extreme; plan for heat and budget for the drive when you stock up or travel." },
-          { "who": "Embrace the community", "advice": "Isolation makes the on-base community close; lean into unit and family programs, and explore Joshua Tree next door." }
+          { "who": "Shortest commute: base housing", "advice": "Liberty Military Housing runs 2,210 homes and apartments on base and in town. Waits run from 30 days to 12 months by rank and bedrooms; call the Military Housing Office at 760-830-6611 as soon as you have orders." },
+          { "who": "Off base: in town", "advice": "The town of Twentynine Palms is about 11 minutes from the Main Gate, with the lowest typical rent of the main towns ($1,494, Zillow, September 2026). Sales tax is 7.75% as of October 1, 2026; voters decided a 1% increase (Measure G) on November 3, 2026, so confirm the current rate." },
+          { "who": "Plan for the desert", "advice": "July averages a high of 104 degrees (NOAA normals). The National Park Service says flash floods nearby are most common in late summer and early fall, and a July 2024 storm closed part of Adobe Road for most of a week." },
+          { "who": "West on 62: Joshua Tree and Yucca Valley", "advice": "Joshua Tree and Yucca Valley are about 32 and 40 minutes from the Main Gate. Joshua Tree's typical rent rose 13.6% in a year, and San Bernardino County's Consolidated Plan says short-term rental housing may be negatively impacting the Joshua Tree area. In Yucca Valley, check the sewer status of any address." }
         ]
       },
-      "source": { "label": "MCAGCC Twentynine Palms (official)", "url": "https://www.29palms.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Twentynine Palms housing", "url": "https://installations.militaryonesource.mil/military-installation/twentynine-palms-mcagcc/housing/housing" },
+      "verified": "2026-11-13"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official MCAGCC Twentynine Palms site before you go."
+        "The Main Gate is on Adobe Road north of the town of Twentynine Palms. A March 2018 news report said it was open 24 hours and the Condor and Ocotillo commuter gates only at set weekday hours; confirm current hours with the base. Anyone driving on base needs a current REAL ID driver's license.",
+        "The Visitor Center is Building 901 at the Main Gate, 760-830-6794. Military OneSource lists weekday hours of 5 a.m. to 9 p.m.; other sources list shorter hours, so call first."
       ],
-      "source": { "label": "MCAGCC Twentynine Palms (official)", "url": "https://www.29palms.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Twentynine Palms motor vehicles", "url": "https://installations.militaryonesource.mil/military-installation/twentynine-palms-mcagcc/transportation/motor-vehicles" },
+      "verified": "2026-11-13"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "Twentynine Palms has extensive privatized on-base family housing across many neighborhoods, and because the base is remote, most families live on base.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+        "Liberty Military Housing (formerly Lincoln Military Housing) runs housing: 2,210 homes and apartments for married and bachelor personnel, in 10 family housing areas on base and in the town of Twentynine Palms, by Military OneSource's count (Liberty lists 15 communities). Neighborhoods include Ocotillo Heights on base and Vista Del Sol in town, and there are 83 RV spaces on base.",
+        "Waits run from 30 days to 12 months depending on rank and bedrooms, and summer is usually very busy. Military OneSource lists the Military Housing Office in Building 1525 on Fifth Street, 760-830-6611, Monday to Friday 8 a.m. to 4 p.m.; the base asks you to call it before you sign any private lease."
       ],
-      "source": { "label": "MCAGCC Twentynine Palms (official)", "url": "https://www.29palms.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Twentynine Palms housing", "url": "https://installations.militaryonesource.mil/military-installation/twentynine-palms-mcagcc/housing/housing" },
+      "verified": "2026-11-13"
     },
     {
       "id": "bah",
@@ -102,11 +102,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend public schools, including campuses serving the base operated by the Morongo Unified School District. Off base, Morongo Unified also serves the town and Yucca Valley.",
-        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+        "Military OneSource says Morongo Unified School District is responsible for all public K-12 schools in the Morongo Basin, including Condor Elementary on base and the schools in Twentynine Palms, Joshua Tree and Yucca Valley, and lists no DoD schools. The district's 2024-25 four-year graduation rate was 84.3%, against 87.5% statewide (California Department of Education).",
+        "Coachella Valley addresses such as Desert Hot Springs and Palm Springs are not in Morongo Unified, so confirm the district for any address. The School Liaison is in Building 1417 on Fourth Street, 760-830-1574."
       ],
-      "source": { "label": "Morongo Unified School District (official)", "url": "https://www.morongousd.com/" },
-      "verified": "2026-06-25"
+      "source": { "label": "CDE DataQuest, Morongo Unified graduation 2024-25", "url": "https://dq.cde.ca.gov/dataquest/DQCensus/CohRate.aspx?agglevel=district&year=2024-25&cds=3667777" },
+      "verified": "2026-11-13"
     },
     {
       "id": "schools_live",
@@ -119,43 +119,43 @@
       "title": "Healthcare",
       "type": "facts",
       "data": {
-        "Hospital": "Robert E. Bush Naval Hospital Twentynine Palms",
-        "Care": "A hospital on base with primary care, pediatrics, behavioral health, emergency care, pharmacy, and lab serving the remote community",
+        "Hospital": "Naval Hospital Twentynine Palms (Robert E. Bush Naval Hospital), 1145 Sturgis St.; main line 760-830-2190",
+        "Care": "24-hour emergency room, inpatient and outpatient care, and labor and delivery (259 births in 2024, per the Defense Health Agency)",
         "TRICARE region": "West (TriWest)"
       },
-      "source": { "label": "Naval Hospital Twentynine Palms (official)", "url": "https://twentynine-palms.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Defense Health Agency, June 2025", "url": "https://dha.mil/News/2025/06/05/15/11/Naval-Hospital-Twentynine-Palms-betters-maternal-infant-care-with-revitalized-Multi-Service-Ward" },
+      "verified": "2026-11-13"
     },
     {
       "id": "shopping",
       "title": "On-Base Shopping",
       "type": "facts",
       "data": {
-        "Commissary": "MCAGCC Twentynine Palms Commissary (DeCA)",
-        "Exchange": "Marine Corps Exchange (MCX) Twentynine Palms"
+        "Commissary": "Del Valle Drive, Building 1025, 442-214-6095; Monday to Friday 9 a.m. to 7 p.m., weekends 8 a.m. to 7 p.m. (DeCA)",
+        "Exchange": "Main MCX, Building 1502, Fifth Street, 760-830-6163; weekdays 7 a.m. to 8 p.m., weekends 10 a.m. to 6 p.m. (MCCS)"
       },
-      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
-      "verified": "2026-06-25"
+      "source": { "label": "DeCA, Twentynine Palms commissary", "url": "https://corp.commissaries.com/node/954" },
+      "verified": "2026-11-13"
     },
     {
       "id": "rent_buy",
       "title": "Rent or Buy?",
       "type": "rentbuy",
       "data": {
-        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. At remote Twentynine Palms most families take on-base housing, but here's the framework if you're weighing the small local market."],
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. Around Twentynine Palms it also depends on how far west you live, and on the water, sewer and flood risk for the address."],
         "rent": [
           "Your tour is short or your orders feel uncertain.",
           "You prefer on-base housing for the short commute and community.",
-          "You'd rather not own in a small, isolated desert market.",
-          "Your BAH comfortably covers rent if you go off base."
+          "You're waiting for base housing, which can take up to 12 months for some ranks.",
+          "Typical rent in the town of Twentynine Palms ($1,494, Zillow, September 2026) is below E-5 BAH; Joshua Tree's ($2,005) is above E-5 BAH with dependents ($1,980)."
         ],
         "buy": [
           "You expect to be here three or more years and want to settle in town.",
           "You want to use your VA loan and build equity.",
-          "You're comfortable with the remoteness and a small resale market.",
+          "You've checked the septic or sewer status and the flood risk for the address.",
           "You've found a home you're confident about."
         ],
-        "bottom_line": "There is no universal right answer, but the remoteness leads most Twentynine Palms families to live on base. If you consider buying in town, weigh the small, isolated market and desert maintenance. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. In the year to September 2026, Zillow's typical home value fell 1.1% in Twentynine Palms and 0.4% in Yucca Valley, and rose 2.4% in Joshua Tree. California's general property tax rate is 1% of assessed value, which starts at your purchase price, plus voter-approved bonds, and the $7,000 homeowners' exemption is for an owner-occupied principal residence on January 1. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -165,11 +165,11 @@
       "data": {
         "intro": ["The first month at a new duty station is mostly logistics, and at a remote desert base, planning ahead matters even more."],
         "steps": [
-          { "title": "Line up temporary lodging", "text": "Book on-base lodging before you arrive; off-base options are limited. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "Line up temporary lodging", "text": "Book lodging before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Start with the Housing Office", "text": "Most families live on base here; get on the housing list early." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and California vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact Morongo Unified (including on-base campuses) early and bring records and immunizations." },
+          { "title": "Start with the Housing Office", "text": "Call the Military Housing Office (760-830-6611) as soon as you have orders: waits run from 30 days to 12 months by rank and bedrooms. The base asks you to call before signing any private lease." },
+          { "title": "Sort base access and your vehicle", "text": "If California isn't your legal residence, you can keep your car's home-state registration if it's in your or your spouse's name and insured. A car registered only in a dependent's name must be registered in California within 20 days. Active-duty members are exempt from needing a California driver license. Anyone driving on base needs a current REAL ID driver's license." },
+          { "title": "Enroll the kids in school", "text": "Contact Morongo Unified early (Condor Elementary is on base) and bring records and immunizations. The School Liaison is at 760-830-1574." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at Robert E. Bush Naval Hospital." }
         ]
       }
@@ -180,8 +180,9 @@
       "type": "faq",
       "data": [
         { "q": "What is Twentynine Palms?", "a": "It's the Marine Corps Air Ground Combat Center, the Corps' largest base and its premier live-fire, combined-arms training ground, set in the Mojave high desert." },
-        { "q": "Do families live on or off base?", "a": "Mostly on base. The location is remote, so the great majority of families live on the installation, close to schools and the hospital." },
-        { "q": "What's nearby?", "a": "The town of Twentynine Palms and Yucca Valley are just outside; Joshua Tree National Park is next door, and the Palm Springs area is a drive away." },
+        { "q": "Do families live on or off base?", "a": "Both. Liberty Military Housing runs 2,210 homes and apartments on base and in town, with waits of 30 days to 12 months by rank. Off base, families live in Twentynine Palms or farther west along Highway 62 in Joshua Tree and Yucca Valley." },
+        { "q": "What's nearby?", "a": "The town of Twentynine Palms is just south of the base; Joshua Tree and Yucca Valley are farther west along Highway 62. Joshua Tree National Park is next door, and Palm Springs Airport is about 60 miles away." },
+        { "q": "Does California tax my military pay?", "a": "Per California Franchise Tax Board guidance, a member stationed in California is taxed on military pay only if California is their legal residence. Ask the base legal assistance office to confirm. For 2025 through 2029, California lets retirees exclude up to $20,000 a year of military retirement pay if federal adjusted gross income is no more than $125,000 (single) or $250,000 (joint)." },
         { "q": "What is the BAH area?", "a": "Twentynine Palms is MHA CA032. Use the calculator above for your grade." }
       ]
     },
@@ -192,7 +193,7 @@
       "note": "Live nearby places via Google Places. The base is remote, so tap 'Use my location' to re-center on where you are.",
       "picks": [
         { "name": "Joshua Tree National Park", "category": "Outdoors", "blurb": "Otherworldly rock formations and Joshua trees right next door.", "maps_query": "Joshua Tree National Park, CA" },
-        { "name": "Town of Twentynine Palms", "category": "In town", "blurb": "The local town just outside the gate, with murals, shops, and dining.", "maps_query": "Twentynine Palms, CA" },
+        { "name": "Town of Twentynine Palms", "category": "In town", "blurb": "The local town just south of the base, with shops and dining.", "maps_query": "Twentynine Palms, CA" },
         { "name": "Yucca Valley / Pioneertown", "category": "Day trip", "blurb": "Shopping in Yucca Valley and the quirky Old West Pioneertown nearby.", "maps_query": "Pioneertown, CA" },
         { "name": "Palm Springs", "category": "Day trip", "blurb": "Resorts, dining, and the desert tramway about an hour-plus away.", "maps_query": "Palm Springs, CA" }
       ]

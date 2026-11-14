@@ -8,8 +8,8 @@
   "tagline": "The Air Force's advanced combat-training hub, home of Red Flag and the Weapons School, in Las Vegas.",
   "coords": { "lat": 36.24, "lng": -115.03, "label": "Las Vegas, NV" },
   "tz": "America/Los_Angeles",
-  "last_full_review": "2026-06-25",
-  "_note": "Air Force base (Las Vegas, NV). Facts verified from official sources (nellis.af.mil, Mike O'Callaghan MMC, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA NV212 (Nellis AFB/Las Vegas) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the housing office). Nevada is TRICARE West. Medium-confidence flags: base coords (approx), representative off-base ZIP 89115 (Las Vegas).",
+  "last_full_review": "2026-11-13",
+  "_note": "Air Force base on the northeast edge of the Las Vegas Valley (Clark County, NV), home of the U.S. Air Force Warfare Center. BAH MHA NV212 (Nellis AFB/Las Vegas). Housing: Hunt Military Communities (about 1,200 homes, five neighborhoods, by Hunt's count). Schools: one district per county by law (NRS 386.010), so all of Clark County is CCSD; Coral Academy of Science Nellis Campus (charter, PreK-8) on base; no DoDEA. Corrected 2026-11-13 from Military OneSource, Hunt, Nevada DMV, Clark County Assessor, NRS, DeCA, Army.mil, DVIDS and TRICARE (page-builder research/nellis-facts.md). Nevada is TRICARE West. Medium-confidence flags: base coords (approx), representative off-base ZIP 89115.",
   "sections": [
     {
       "id": "quick_facts",
@@ -17,14 +17,14 @@
       "type": "facts",
       "data": {
         "Branch": "U.S. Air Force",
-        "Location": "Las Vegas, NV",
+        "Location": "About eight miles northeast of Las Vegas, NV",
         "Host wing": "99th Air Base Wing (U.S. Air Force Warfare Center)",
-        "Known for": "Red Flag exercises and the U.S. Air Force Weapons School",
-        "Range": "The Nevada Test and Training Range (2.9 million acres)",
-        "Setting": "Mojave Desert; no state income tax"
+        "Known for": "Red Flag exercises, the U.S. Air Force Weapons School and the Thunderbirds",
+        "Range": "The Nevada Test and Training Range (2.9 million acres, per a 2017 base fact sheet)",
+        "Setting": "Mojave Desert; Nevada has no state income tax on wages"
       },
-      "source": { "label": "Nellis Air Force Base (official)", "url": "https://www.nellis.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Nellis AFB overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/nellis-afb" },
+      "verified": "2026-11-13"
     },
     {
       "id": "mission",
@@ -32,52 +32,53 @@
       "type": "prose",
       "data": [
         "Nellis is the home of the Air Force's advanced aerial combat training, hosting the U.S. Air Force Warfare Center, the Weapons School, and the famous Red Flag exercises over the vast Nevada Test and Training Range.",
-        "The host 99th Air Base Wing runs the installation, which is one of the busiest and most storied flying bases in the Air Force, on the northeast edge of Las Vegas."
+        "The host 99th Air Base Wing runs the installation, about eight miles northeast of Las Vegas. The 57th Wing, the Air Force's largest and most diverse flying wing, runs Red Flag and supports the Thunderbirds. Military OneSource counts about 11,628 military members and 22,728 family members, and Nellis also supports Creech AFB, about 50 miles away."
       ],
-      "source": { "label": "Nellis Air Force Base (official)", "url": "https://www.nellis.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "DVIDS, June 15, 2026", "url": "https://www.dvidshub.net/news/printable/567857" },
+      "verified": "2026-11-13"
     },
     {
       "id": "vegas_decision",
-      "title": "Living in Las Vegas",
+      "title": "Zoned School and Tax Cap: The Nellis Decision",
       "type": "killer",
       "data": {
-        "subtitle": "Nellis comes with a full-size, fast-growing city and no state income tax. The main choice is which part of the Las Vegas valley fits your commute, schools, and budget.",
+        "subtitle": "One school district covers the whole valley, so the choices that matter are the school zoned to your exact address and, if you buy, whether you might rent the home out after you PCS.",
         "intro": [
-          "Las Vegas offers big-city amenities, an international airport, and Nevada's lack of a state income tax, which stretches take-home pay. Summers are very hot, but housing has historically been more attainable than coastal California.",
-          "Nellis sits on the northeast side of the valley, so commute is the main trade-off. North Las Vegas is closest; Henderson and Summerlin are popular for schools and amenities at a longer drive."
+          "Nevada law makes each school district match its county, so every address in the valley is in the Clark County School District. Ratings vary widely by school: in 2025-26, 14.2% of Nevada's schools earned five stars and 18.8% one star (Fox5). Check the zoned school for the exact address.",
+          "Nevada caps yearly growth in a property tax bill at 3% for an owner's designated primary residence, one that isn't rented out, and up to 8% for a home that isn't owner occupied (Clark County Assessor; NRS 361.4723). If you may keep the home as a rental after you PCS, plan for the higher cap and ask the Assessor how it applies to you."
         ],
         "recommendations": [
-          { "who": "Closest to base", "advice": "North Las Vegas and the northeast valley sit nearest Nellis for the shortest commute." },
-          { "who": "Schools and amenities", "advice": "Henderson and Summerlin are popular master-planned areas for families, at a longer commute across the valley." },
-          { "who": "No state income tax", "advice": "Nevada has no state income tax, which effectively stretches your pay; factor that into the rent-versus-buy math." },
-          { "who": "Plan for the heat", "advice": "Summer temperatures are extreme; budget for cooling and look for shade and a pool if that matters to you." }
+          { "who": "Closest to base", "advice": "North Las Vegas is about 9 minutes from the Main Gate at the end of Craig Road and Sunrise Manor about 13 (estimates, no traffic). Henderson is about 30." },
+          { "who": "Schools", "advice": "Every address is in the Clark County School District; check the zoned school's star rating by exact address. On base, Coral Academy of Science Nellis Campus (charter, PreK to 8) admits by lottery, with open enrollment each year from November 1 to February 28." },
+          { "who": "No state income tax", "advice": "Nevada's constitution bars a state income tax on wages. If your legal residence is another state, that state's rules may still apply to your pay, so ask legal assistance." },
+          { "who": "Split with Creech", "advice": "Military OneSource says many Creech personnel live in the northwest corner of the valley (ZIP codes 89130, 89131, 89143, 89166, 89084 and 89085). Creech is about 50 miles west-northwest of Nellis." },
+          { "who": "Plan for the heat", "advice": "Normal highs reach 105 degrees from July 10 to 31, and Harry Reid Airport hit an all-time record of 120 in July 2024. Flash flood season runs July through September. NV Energy's southern Nevada home bills carry a daily demand charge approved to start in April 2026, so ask what it would mean for a home." }
         ]
       },
-      "source": { "label": "Nellis Air Force Base (official)", "url": "https://www.nellis.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Clark County Assessor, tax abatement", "url": "https://www.clarkcountynv.gov/government/assessor/general_information/tax-abatement" },
+      "verified": "2026-11-13"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Nellis AFB site before you go."
+        "The Main Gate is east of Interstate 15 at the end of Craig Road; from I-15, take the Craig Road exit. The base lists it as open 24 hours, and its other gates (including Range Road, Landings, Beale and Simons) keep their own hours, some weekdays only, so check before you rely on one.",
+        "Drivers without base access get a pass at the Visitor Control Center, 4625 Fitzgerald Blvd, 702-652-3216; Military OneSource lists Monday to Friday, 7:30 a.m. to 4:30 p.m. KTNV reported the base suspended Trusted Traveler for visitors \"until further notice\", so ask whether it has resumed."
       ],
-      "source": { "label": "Nellis Air Force Base (official)", "url": "https://www.nellis.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Nellis check-in procedures", "url": "https://installations.militaryonesource.mil/military-installation/nellis-afb/base-essentials/check-in-procedures" },
+      "verified": "2026-11-13"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "Nellis has privatized on-base family housing across several neighborhoods.",
-        "Eligibility and availability vary by rank and family size, so start with the base housing office for the current manager, options, and waitlists."
+        "Hunt Military Communities runs family housing at Nellis: about 1,200 homes in five neighborhoods, including Nellis Terrace and The Landings, by Hunt's count. Hunt says its residents include active-duty members of every rank from Nellis and Creech, and rent is paid at the end of each month with no rent up front.",
+        "Check in with the Military Housing Office, 4601 Richard Kisling Drive (Military OneSource lists 702-652-1840), whether you'll live on or off base, and ask about eligibility and waits. Hunt's office is (725) 373-7682. Don't sign an off-base lease without inspecting the home, and make sure it has a military clause."
       ],
-      "source": { "label": "Nellis Air Force Base (official)", "url": "https://www.nellis.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Nellis housing", "url": "https://installations.militaryonesource.mil/military-installation/nellis-afb/housing/housing" },
+      "verified": "2026-11-13"
     },
     {
       "id": "bah",
@@ -102,11 +103,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools, all within the Clark County School District, one of the largest districts in the country, which covers the entire Las Vegas valley.",
-        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering, and ask about magnet and open-enrollment options."
+        "Military OneSource lists no DoD schools at Nellis. Nevada law makes each school district match its county, so every address in the valley is in the Clark County School District; its Class of 2025 graduation rate was 86.6% and the statewide rate 85.4%. Your zoned school depends on the exact address, and star ratings vary widely.",
+        "On base, Coral Academy of Science Nellis Campus is a public charter school for PreK to 8th grade at 107 Stafford Dr in the Nellis Landings housing area, with open enrollment each year from November 1 to February 28 and seats by lottery; check its current star rating. The district's School Choice application (magnet and open enrollment) for 2027-28 closes January 12, 2027 at 3 p.m. School Liaison: 702-652-2894."
       ],
-      "source": { "label": "Clark County School District (official)", "url": "https://www.ccsd.net/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Nellis education", "url": "https://installations.militaryonesource.mil/military-installation/nellis-afb/education/education" },
+      "verified": "2026-11-13"
     },
     {
       "id": "schools_live",
@@ -119,23 +120,23 @@
       "title": "Healthcare",
       "type": "facts",
       "data": {
-        "Hospital": "Mike O'Callaghan Military Medical Center (a DoD/VA joint facility at Nellis)",
-        "Care": "Inpatient, emergency, and specialty care",
+        "Hospital": "Mike O'Callaghan Military Medical Center, 4700 N Las Vegas Blvd, Building 1300; main line 702-653-2273",
+        "Care": "80-bed hospital with preventive, emergency and acute care; DVIDS reported in May 2026 that it was reverified as a Level III trauma center. Appointments through the Patient Portal",
         "TRICARE region": "West (TriWest)"
       },
-      "source": { "label": "Mike O'Callaghan Military Medical Center (official)", "url": "https://mikeocallaghan.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "TRICARE, Mike O'Callaghan Military Medical Center", "url": "https://www.tricare.mil/GettingCare/FindDoctor/MTF/Facilities/99th-Medical-Group-Mike-O-Callaghan-Military-Medical-Center" },
+      "verified": "2026-11-13"
     },
     {
       "id": "shopping",
       "title": "On-Base Shopping",
       "type": "facts",
       "data": {
-        "Commissary": "Nellis AFB Commissary (DeCA)",
+        "Commissary": "4200 Mountain Home St., 725-332-6494; Monday to Saturday 8 a.m. to 7 p.m., Sunday 8 a.m. to 6 p.m. (DeCA)",
         "Exchange": "Nellis AFB Exchange (AAFES / BX)"
       },
-      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
-      "verified": "2026-06-25"
+      "source": { "label": "DeCA, Nellis commissary", "url": "https://corp.commissaries.com/node/1103" },
+      "verified": "2026-11-13"
     },
     {
       "id": "rent_buy",
@@ -147,15 +148,15 @@
           "Your tour is short (about two years or less) or your orders feel uncertain.",
           "You want time to learn the valley before committing to a neighborhood.",
           "You'd rather not gamble on resale timing in a market that can swing.",
-          "Your BAH comfortably covers rent in the areas you'd consider."
+          "Typical rents in North Las Vegas, Las Vegas and Henderson ($1,700 to $1,866, Zillow, September 2026) sit below E-5 BAH with dependents ($2,070)."
         ],
         "buy": [
           "You expect to be here three or more years.",
           "You want to use your VA loan and build equity instead of paying rent.",
-          "You're comfortable with the Las Vegas market, which has risen in recent years.",
+          "You've checked the zoned school and the tax district, and priced in a tax cap of up to 8% a year if you might rent the home out after you PCS.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer. Nevada's lack of a state income tax helps your budget, and Las Vegas housing is generally more attainable than coastal California. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. Zillow's typical home values fell 1.4% to 2.8% in North Las Vegas, Las Vegas and Henderson in the year to September 2026, and Fox5, citing Las Vegas REALTORS, reported nearly six months of supply in October 2026. Check the zoned school and tax district for any address, run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -167,9 +168,9 @@
         "steps": [
           { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on the Las Vegas valley before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and Nevada vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Register with the Clark County School District early and bring records and immunizations; ask about magnet and open enrollment." },
+          { "title": "Start with the Housing Office", "text": "Check in with the Military Housing Office (Military OneSource lists 702-652-1840) whether you'll live on or off base, and don't sign a lease without inspecting the home." },
+          { "title": "Sort base access and your vehicle", "text": "If your home state is another state, the Nevada DMV says active-duty members aren't required to register in Nevada and may keep home-state plates; members, spouses and dependents with a valid home-state license don't need a Nevada license. If you do register, form VP 203 or VP 203S with a recent Leave and Earnings Statement can waive the Governmental Services Tax. Visitors without base access get a pass at the Visitor Control Center." },
+          { "title": "Enroll the kids in school", "text": "Call the School Liaison (702-652-2894). Coral Academy's open enrollment runs each year from November 1 to February 28, and the district's School Choice application for 2027-28 closes January 12, 2027; otherwise register at the school zoned to your address." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Mike O'Callaghan Military Medical Center or network providers." }
         ]
       }
@@ -180,8 +181,8 @@
       "type": "faq",
       "data": [
         { "q": "What's the mission at Nellis?", "a": "It's the Air Force's advanced combat-training hub, home of the Warfare Center, the Weapons School, and Red Flag exercises over the Nevada Test and Training Range." },
-        { "q": "Where do families live?", "a": "North Las Vegas and the northeast valley are closest; Henderson and Summerlin are popular for schools and amenities. The whole valley is the Clark County School District." },
-        { "q": "Any financial perks?", "a": "Nevada has no state income tax, which effectively stretches your pay, and Las Vegas housing is generally more attainable than coastal California." },
+        { "q": "Where do families live?", "a": "On base in Hunt housing, or off base across the valley. North Las Vegas is about 9 minutes from the Main Gate and Henderson about 30 (estimates, no traffic). The whole valley is the Clark County School District, so check the zoned school for the exact address." },
+        { "q": "Any financial perks?", "a": "Nevada has no state income tax on wages, though your legal residence's rules may still apply. If you buy, Nevada caps yearly growth in your tax bill at 3% while it's your designated primary residence and not rented out, and up to 8% for a home that isn't owner occupied." },
         { "q": "What is the BAH area?", "a": "Nellis is MHA NV212 (Nellis AFB/Las Vegas). Use the calculator above for your grade." }
       ]
     },
