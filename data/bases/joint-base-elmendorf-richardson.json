@@ -6,11 +6,11 @@
   "branch": "U.S. Air Force / U.S. Army",
   "states": ["AK"],
   "region": "OCONUS",
-  "tagline": "Alaska's premier joint base: the 11th Airborne Division and the 3rd Wing, guarding the far north in Anchorage.",
+  "tagline": "Alaska's joint base in Anchorage: the 11th Airborne Division, the 3rd Wing and Alaskan Command.",
   "coords": { "lat": 61.25, "lng": -149.79, "label": "Anchorage, AK" },
   "tz": "America/Anchorage",
-  "last_full_review": "2026-06-25",
-  "_note": "Alaska joint base (Elmendorf AFB + Fort Richardson, merged 2010), Anchorage. Marked OCONUS (an Alaska PCS is an overseas-style move with COLA and vehicle/HHG shipping) but BAH-rated: MHA AK404 (Anchorage), so the full live template stays. Unlike Hawaii/overseas, Alaska kids attend the local Anchorage School District (not DoDEA). Facts verified from official sources (jber.jb.mil, MilitaryINSTALLATIONS, DeCA/AAFES, Wikipedia for corroborated headline facts). Housing: Aurora (Balfour Beatty, AF side) + Army communities. Medium-confidence flags: base coords (approx), representative off-base ZIP 99504 (Anchorage).",
+  "last_full_review": "2026-11-14",
+  "_note": "Alaska joint base (Elmendorf AFB + Fort Richardson, merged 2010) inside the Municipality of Anchorage. Marked OCONUS but BAH-rated: MHA AK404 (Anchorage), so the full live template stays. Housing: Aurora Military Housing (JL Properties and Hunt), 3,262 family units. Schools: Anchorage School District runs the three elementary schools on base; the Mat-Su district enrolls families in Palmer and Wasilla; no DoDEA. Corrected 2026-11-14 from Military OneSource, Aurora, the Alaska PFD Division, Alaska DMV, DeCA, UAF Earthquake Center, Alaska Public Media and ADN (page-builder research/jber-facts.md). Gate hours and hospital details rest on search summaries (jber.jb.mil and the TRICARE site refuse automated readers). Medium-confidence flags: base coords (approx), off-base ZIP 99504.",
   "sections": [
     {
       "id": "quick_facts",
@@ -18,14 +18,14 @@
       "type": "facts",
       "data": {
         "Branch": "Air Force + Army (joint base)",
-        "Location": "Anchorage, AK",
+        "Location": "Inside the Municipality of Anchorage, AK",
         "Army": "11th Airborne Division ('Arctic Angels')",
         "Air Force": "3rd Wing (and the 673d Air Base Wing as host)",
         "Also hosts": "Alaskan Command, Alaskan NORAD Region, 11th Air Force",
-        "Region": "Alaska (OCONUS-style PCS, BAH-rated, COLA)"
+        "Region": "Alaska (BAH-rated; ask finance about the cost-of-living allowance)"
       },
-      "source": { "label": "Joint Base Elmendorf-Richardson (official)", "url": "https://www.jber.jb.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, JBER overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/joint-base-elmendorf-richardson-jber" },
+      "verified": "2026-11-14"
     },
     {
       "id": "mission",
@@ -33,52 +33,52 @@
       "type": "prose",
       "data": [
         "Joint Base Elmendorf-Richardson combines the Air Force's Elmendorf and the Army's Fort Richardson, merged in 2010, on the edge of Anchorage. The Army side is home to the 11th Airborne Division (the 'Arctic Angels'), and the Air Force side flies with the 3rd Wing.",
-        "JBER is the hub of U.S. defense in the far north, hosting Alaskan Command, the Alaskan NORAD Region, and Eleventh Air Force. It pairs a serious strategic mission with extraordinary access to the Alaskan outdoors."
+        "JBER hosts Alaskan Command, the Alaskan NORAD Region and Eleventh Air Force. Military OneSource counts a military-affiliated community of over 40,000 people, more than 10% of the local population."
       ],
-      "source": { "label": "Joint Base Elmendorf-Richardson (official)", "url": "https://www.jber.jb.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, JBER overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/joint-base-elmendorf-richardson-jber" },
+      "verified": "2026-11-14"
     },
     {
       "id": "alaska_decision",
-      "title": "The Last Frontier: An Alaska Tour",
+      "title": "Anchorage, Eagle River or the Mat-Su Valley?",
       "type": "killer",
       "data": {
-        "subtitle": "Alaska is a once-in-a-career adventure and a logistics project. The move works like an overseas PCS (ship a vehicle, plan for COLA), and the long winters are real, but so is the outdoor paradise out your door.",
+        "subtitle": "The area you live in sets the school district, the sales tax and the winter commute.",
         "intro": [
-          "Even though Alaska is a U.S. state, a PCS here is OCONUS-style: you can ship a vehicle and household goods the long way, and you receive a cost-of-living allowance to offset higher prices. You still get BAH set by Anchorage, not OHA.",
-          "Winters are long and dark and summers are bright and short, which shapes daily life. Most families embrace the trade: hiking, fishing, skiing, and wildlife are all minutes away. Anchorage is a full-size city, so amenities are close, unlike more remote Alaska posts."
+          "The Municipality of Anchorage says Eagle River and Chugiak are part of it, and their high schools are Anchorage School District schools; Anchorage had no city sales tax when we checked. Military OneSource says the Mat-Su district enrolls JBER families living in Palmer or Wasilla. Wasilla's city sales tax is 2.5%, and Palmer raised its rate from 3% to 4% on April 1, 2026, a temporary increase through October 31, 2027.",
+          "Our drive times from Eagle River and the Mat-Su Valley are to Richardson Gate, which the base lists as open 24 hours. Alaska has no state income tax (Alaska Tax Facts). The 2026 Permanent Fund Dividend is $1,200; the amount changes each year, a family arriving now would first qualify for a later year's, and claiming it means making Alaska your legal residence."
         ],
         "recommendations": [
-          { "who": "On-base convenience", "advice": "On-base housing (Aurora on the Air Force side, plus Army neighborhoods) keeps you close to work and is built for the climate." },
-          { "who": "City living", "advice": "Anchorage neighborhoods like Eagle River and the Hillside are popular with military families, with a range of prices and good access to the base." },
-          { "who": "Plan the logistics", "advice": "Arrange your vehicle and household-goods shipment early, budget for COLA-level prices, and gear up for winter before you arrive." },
-          { "who": "Embrace the outdoors", "advice": "Make the most of it: the fishing, hiking, and skiing around Anchorage are a big part of why families love this tour." }
+          { "who": "On-base convenience", "advice": "Aurora Military Housing (JL Properties and Hunt) counts 3,262 family housing units. Military OneSource lists no pet, move-in or application fee and a utility program; ask Aurora what it covers." },
+          { "who": "Anchorage and Eagle River", "advice": "Muldoon and downtown Anchorage are about 7 to 10 minutes from Boniface Gate, and Eagle River about 11 from Richardson Gate (estimates, no traffic). Confirm the zoned school for any address." },
+          { "who": "The Mat-Su Valley", "advice": "Wasilla and Palmer are about 43 minutes from Richardson Gate (estimates, no traffic), with the Mat-Su Borough School District and city sales tax." },
+          { "who": "Plan for winter and quakes", "advice": "Enstar says gas heating bills will likely rise in future winters, and the 2018 magnitude 7.1 earthquake caused significant damage in Anchorage, Eagle River and the Mat-Su Valley. Ask about heating costs and the foundation." }
         ]
       },
-      "source": { "label": "Joint Base Elmendorf-Richardson (official)", "url": "https://www.jber.jb.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, JBER education", "url": "https://installations.militaryonesource.mil/military-installation/joint-base-elmendorf-richardson-jber/education/education" },
+      "verified": "2026-11-14"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official JBER site before you go."
+        "The base's access page lists Boniface Gate and Richardson Gate as open 24 hours; the Muldoon, Post Road and Government Hill gates keep set hours. Our drive times from Eagle River and the Mat-Su Valley are to Richardson Gate.",
+        "Visitors requesting unescorted access need a REAL ID-compliant ID, per the base. Gate hours and visitor rules change, so confirm them before you go."
       ],
-      "source": { "label": "Joint Base Elmendorf-Richardson (official)", "url": "https://www.jber.jb.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "JBER base access (read in search results)", "url": "https://www.jber.jb.mil/Info/Base-Access" },
+      "verified": "2026-11-14"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "On-base family housing is privatized and split by service: the Air Force side is managed by Aurora (Balfour Beatty), and the Army side has its own communities. Homes are built for the Alaskan climate.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office and the partner for current options and waitlists."
+        "Aurora Military Housing, a partnership of JL Properties and Hunt, says it is responsible for 3,262 family housing units on JBER. Military OneSource lists no pet, move-in or application fee, a utility program (ask Aurora what it covers), snow removal and offices on both the Elmendorf and Richardson sides.",
+        "Incoming members not in the dorms must visit the Military Housing Office within two duty days of arrival (Richardson: Building 600, Room 106, 907-384-3907). You can apply to Aurora before you arrive (contact address 8517 20th Street, 907-552-1797). Family housing assignment isn't mandatory, except for key and essential positions."
       ],
-      "source": { "label": "Joint Base Elmendorf-Richardson (official)", "url": "https://www.jber.jb.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, JBER housing", "url": "https://installations.militaryonesource.mil/military-installation/joint-base-elmendorf-richardson-jber/housing/housing" },
+      "verified": "2026-11-14"
     },
     {
       "id": "bah",
@@ -103,11 +103,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local Anchorage School District. Three elementary schools sit on base (Aurora, Orion, and Ursa Minor), and students attend middle and high school off base within the district, with bus service.",
-        "Your assigned schools depend on your address, so confirm the campus for any neighborhood you are considering."
+        "Military OneSource says there are no DoDEA schools on JBER. The Anchorage School District runs the three elementary schools on base, with middle and high schools off base, and the Mat-Su Borough School District enrolls JBER families living in Palmer or Wasilla.",
+        "Your assigned school depends on your address. The School Liaison is at 600 Richardson Drive, Building 600, 907-384-1505, Monday to Friday 7:30 a.m. to 4:30 p.m."
       ],
-      "source": { "label": "Anchorage School District (official)", "url": "https://www.asdk12.org/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, JBER education", "url": "https://installations.militaryonesource.mil/military-installation/joint-base-elmendorf-richardson-jber/education/education" },
+      "verified": "2026-11-14"
     },
     {
       "id": "schools_live",
@@ -120,23 +120,23 @@
       "title": "Healthcare",
       "type": "facts",
       "data": {
-        "Hospital": "JBER Hospital (673d Medical Group, a DoD/VA joint venture)",
-        "Care": "Inpatient, 24/7 emergency, and specialty care on base",
+        "Hospital": "JBER hospital, run by the 673d Medical Group",
+        "Care": "TRICARE's JBER site describes inpatient care and a labor and delivery unit, and an older base page lists a 24-hour emergency department; confirm services there",
         "TRICARE region": "West (TriWest)"
       },
-      "source": { "label": "673d Medical Group (official)", "url": "https://jberhospital.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "TRICARE, JBER hospital", "url": "https://elmendorfrichardson.tricare.mil/" },
+      "verified": "2026-11-14"
     },
     {
       "id": "shopping",
       "title": "On-Base Shopping",
       "type": "facts",
       "data": {
-        "Commissary": "JBER Commissary (DeCA)",
+        "Commissary": "5800 Westover Ave., 907-213-6455; Monday to Saturday 8 a.m. to 8 p.m., Sunday 8 a.m. to 7 p.m. (DeCA)",
         "Exchange": "JBER Exchange (AAFES / BX)"
       },
-      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
-      "verified": "2026-06-25"
+      "source": { "label": "DeCA, JBER commissary", "url": "https://corp.commissaries.com/node/903" },
+      "verified": "2026-11-14"
     },
     {
       "id": "rent_buy",
@@ -148,15 +148,15 @@
           "Your tour is short (about two years or less) or your orders feel uncertain.",
           "You want time to learn Anchorage and the winters before committing.",
           "You'd rather not gamble on resale timing when you PCS out.",
-          "Your BAH comfortably covers rent in the areas you'd consider."
+          "Typical rents ($1,843 in Wasilla to $2,384 in Eagle River, Zillow, September 2026) sit below E-5 BAH with dependents ($2,874)."
         ],
         "buy": [
           "You expect to be here three or more years.",
           "You want to use your VA loan and build equity instead of paying rent.",
-          "The Anchorage market fits your budget for a home you like.",
+          "You've checked heating costs, the foundation and the winter drive for the exact address.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer. Anchorage is a real housing market with a cost-of-living premium; many families rent first to learn the area and winters. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. Zillow's typical home value rose 5% to 7% across Anchorage, Eagle River, Chugiak, Wasilla and Palmer in the year to September 2026, and Stacker, citing Redfin, put the Anchorage area at about 2 months of supply in early 2026. Run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -169,8 +169,8 @@
           { "title": "Plan your vehicle and household goods", "text": "Alaska shipments take time; arrange your vehicle and household-goods shipment early, and plan interim transportation until they arrive." },
           { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current so TRICARE and base access work. Confirm your cost-of-living allowance (COLA)." },
-          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Anchorage neighborhoods before you sign anything." },
-          { "title": "Enroll the kids in school", "text": "Contact the Anchorage School District early and bring records and immunizations." },
+          { "title": "Start with the Housing Office", "text": "Visit the Military Housing Office within two duty days of arrival (unless you're in the dorms), and apply to Aurora before you arrive if you want base housing." },
+          { "title": "Enroll the kids in school", "text": "Call the School Liaison (907-384-1505). Families in Palmer or Wasilla use the Mat-Su district; otherwise contact the Anchorage School District early and bring records and immunizations." },
           { "title": "Gear up for winter and set up healthcare", "text": "Plan for cold-weather gear and studded tires, and update TRICARE so you can be seen at the JBER hospital or network providers." }
         ]
       }
@@ -180,9 +180,11 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "Is Alaska an OCONUS move?", "a": "Yes, in practice. Though Alaska is a U.S. state, a PCS here is overseas-style: you can ship a vehicle and household goods, and you receive a cost-of-living allowance. You still get BAH (set by Anchorage), not OHA." },
+        { "q": "Is Alaska an OCONUS move?", "a": "In practice it has overseas-style steps: ask your transportation office about shipping a vehicle and household goods, and finance about the cost-of-living allowance, which changes. You still get BAH (set by Anchorage), not OHA." },
         { "q": "What's based at JBER?", "a": "The Army's 11th Airborne Division and the Air Force's 3rd Wing, plus Alaskan Command, the Alaskan NORAD Region, and Eleventh Air Force." },
         { "q": "How bad are the winters?", "a": "Long and dark, with short bright summers. Most families embrace it for the outdoors (hiking, fishing, skiing) and note Anchorage is a full-size city, so amenities are close." },
+        { "q": "Can my family get the Permanent Fund Dividend?", "a": "Possibly, but not right away. The 2026 dividend is $1,200, including a $200 energy relief payment, and the amount changes each year. An active-duty member must claim Alaska as their legal residence with the military by December 31 of the year before the qualifying year, be in Alaska by that date, take at least one more step such as an Alaska driver's license or voter registration, and keep Alaska residency through the qualifying year. Family members must meet the rules too, and the state warns that changing legal residence may affect benefits in your current state. Check pfd.alaska.gov and ask legal assistance." },
+        { "q": "Do I have to register my car in Alaska?", "a": "No, not if you're a service member whose legal residence is another state: the Alaska DMV says you can keep your home-state registration. If you register in Alaska, an LES from the last 90 days showing state taxes paid elsewhere means you pay only the state fee, not the community registration tax." },
         { "q": "What is the BAH area?", "a": "JBER is MHA AK404 (Anchorage). Use the calculator above for your grade." }
       ]
     },

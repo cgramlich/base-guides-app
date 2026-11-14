@@ -5,11 +5,11 @@
   "short_name": "Oceana",
   "branch": "U.S. Navy",
   "states": ["VA"],
-  "tagline": "The Navy's East Coast master jet base in Virginia Beach, home of the Atlantic Fleet's strike fighters.",
+  "tagline": "Home to 19 Navy fighter and attack squadrons, inside the Virginia Beach city limits.",
   "coords": { "lat": 36.82, "lng": -76.03, "label": "Virginia Beach, VA" },
   "tz": "America/New_York",
-  "last_full_review": "2026-06-25",
-  "_note": "Navy master jet base (Virginia Beach, Hampton Roads VA). CONUS full template (BAH MHA VA298 Norfolk/Portsmouth, which covers Virginia Beach; RentCast/SchoolDigger work). Home of Atlantic Fleet strike fighters (F/A-18E/F Super Hornet). Part of the Hampton Roads Navy complex (NS Norfolk already in app); JEB Little Creek nearby. Medical: branch clinic under Naval Medical Center Portsmouth. Facts verified from official sources (cnic.navy.mil NAS Oceana, NMC Portsmouth, DeCA/NEX, Wikipedia for corroborated headline facts). Virginia is TRICARE East. Medium-confidence flags: base coords (approx), off-base ZIP 23454 (Virginia Beach).",
+  "last_full_review": "2026-11-14",
+  "_note": "Navy air station inside Virginia Beach city limits (Hampton Roads, VA), with Dam Neck Annex. BAH MHA VA298 (Norfolk/Portsmouth). Housing: Liberty Military Housing (985 homes in five communities, shared with six other bases). Schools: Virginia Beach City Public Schools for most families, Chesapeake Public Schools for Chesapeake; no DoD schools in Hampton Roads. Medical: Oceana Branch Medical Clinic (no ER); NMC Portsmouth has the only military ER on the Southside. Corrected 2026-11-14 from Military OneSource, the Code of Virginia, City of Virginia Beach, Virginia Tax, VDOE, DeCA and REIN (page-builder research/oceana-facts.md). Virginia is TRICARE East. Gate names other than the main gate and gate hours are unverified (CNIC pages refuse automated readers). Medium-confidence flags: base coords (approx), off-base ZIP 23454.",
   "sections": [
     {
       "id": "quick_facts",
@@ -18,66 +18,66 @@
       "data": {
         "Branch": "U.S. Navy",
         "Location": "Virginia Beach, VA (Hampton Roads)",
-        "Role": "The Navy's East Coast master jet base",
-        "Aircraft": "F/A-18E/F Super Hornet strike fighters",
-        "Nearby": "JEB Little Creek and the larger Hampton Roads Navy complex",
+        "Role": "Home to 19 fighter and attack squadrons (Military OneSource)",
+        "Aircraft": "Navy fighter and attack jets; City Council has backed bringing the F-35 (WTKR)",
+        "Nearby": "Dam Neck Annex (its own gate at the end of Dam Neck Road); NS Norfolk and JEB Little Creek in Hampton Roads",
         "Setting": "A large coastal city with Atlantic beaches"
       },
-      "source": { "label": "NAS Oceana (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_oceana.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NAS Oceana overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/naval-air-station-oceana" },
+      "verified": "2026-11-14"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Naval Air Station Oceana is the Navy's East Coast master jet base, home to the Atlantic Fleet's strike fighter squadrons flying the F/A-18E/F Super Hornet. Its jets are a constant presence over Virginia Beach.",
-        "It's part of the dense Hampton Roads military region, which also includes Naval Station Norfolk and JEB Little Creek, in a large coastal city known for its Atlantic beaches and an affordable-for-the-coast cost of living."
+        "Naval Air Station Oceana, inside the Virginia Beach city limits, is home to 19 fighter and attack squadrons, with about 10,500 active-duty sailors, 10,000 family members and 4,500 civilians (Military OneSource). Jet noise is a live local issue, and Virginia Beach City Council has backed bringing newer jets such as the F-35 (WTKR).",
+        "It's part of the Hampton Roads military region, with Naval Station Norfolk and JEB Little Creek nearby, in a large coastal city known for its Atlantic beaches."
       ],
-      "source": { "label": "NAS Oceana (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_oceana.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NAS Oceana overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/naval-air-station-oceana" },
+      "verified": "2026-11-14"
     },
     {
       "id": "oceana_decision",
-      "title": "Big-City Beach Living in Hampton Roads",
+      "title": "How Close to the Jets?",
       "type": "killer",
       "data": {
-        "subtitle": "Virginia Beach is a large, military-friendly beach city. The main choice is balancing how close to the oceanfront you want to be against commute, schools, and price.",
+        "subtitle": "Virginia law requires sellers to disclose whether a home is in a noise zone or accident potential zone, and Virginia Beach requires written disclosure to buyers and renters of property inside those zones. We suggest checking the zone for any address first, then choosing a school division and a commute.",
         "intro": [
-          "Hampton Roads is one of the biggest military regions in the country, so the area is used to military families and offers a wide range of neighborhoods and prices. On-base housing is available; many live off base across Virginia Beach.",
-          "Where you live mostly comes down to commute and schools, balancing the beach areas against the more suburban, often more affordable parts of the city."
+          "The disclosure must name the specific zone, as shown on the official zoning map (Code of Virginia, section 55.1-704). In Virginia Beach, new homes built in noise zones of 65 Ldn (a day-night average noise level) or higher must include noise reduction.",
+          "Beyond the zones, the choice is the school division and the drive. In the state's 2025-26 results, 61 of Virginia Beach's 81 schools and 36 of Chesapeake's 45 rated Meets Expectations or Distinguished. Virginia Beach's real estate tax is $0.97 per $100 of assessed value for fiscal 2027 and Chesapeake's $1.01."
         ],
         "recommendations": [
-          { "who": "Closest to the gate", "advice": "Central Virginia Beach neighborhoods near Oceana keep the commute short." },
-          { "who": "Beach life", "advice": "The oceanfront and nearby areas put you by the Atlantic, lively and popular but busier in summer." },
-          { "who": "Family suburbs", "advice": "Southern and western Virginia Beach (and Chesapeake) offer newer homes, good schools, and more space." },
-          { "who": "On-base option", "advice": "On-base housing is available across the Hampton Roads complex; weigh it against the local market." }
+          { "who": "Closest to the gate", "advice": "Green Run and Salem are about 14 to 16 minutes from the main gate area on Tomcat Boulevard (estimates, no traffic). Ask for the noise and accident potential zone disclosure for any address." },
+          { "who": "Beach life", "advice": "The oceanfront is lively and busier in summer. Check the flood zone and the noise zone, and the city's short-term rental rules if you might rent the home out later." },
+          { "who": "Family suburbs", "advice": "Kempsville and Great Neck are about 19 to 20 minutes from the main gate area, and Chesapeake's Greenbrier and Great Bridge about 27 to 30 (estimates, no traffic). Check the zoned school for any address." },
+          { "who": "On-base option", "advice": "Liberty Military Housing runs 985 homes in five communities on and off base; Liberty serves Oceana and six other nearby bases. Waits depend on rank, date of application and bedroom entitlement." }
         ]
       },
-      "source": { "label": "NAS Oceana (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_oceana.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "City of Virginia Beach, AICUZ", "url": "https://planning.virginiabeach.gov/zoning/air-installation-compatible-use-zone-aicuz" },
+      "verified": "2026-11-14"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official NAS Oceana site before you go."
+        "Military OneSource's directions say to take I-264 east to Exit 21A at First Colonial Road, and to turn right on Tomcat Boulevard to reach the main gate (base address 1750 Tomcat Blvd.). Dam Neck Annex has its own main gate at the end of Dam Neck Road. On arrival, report to the Quarterdeck, Building 230 on Tomcat Boulevard, staffed 24 hours (757-433-2366).",
+        "We couldn't confirm gate hours or visitor rules from an official page, so check them with the base before guests arrive. There's no base transportation."
       ],
-      "source": { "label": "NAS Oceana (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_oceana.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NAS Oceana overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/naval-air-station-oceana" },
+      "verified": "2026-11-14"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "NAS Oceana and the surrounding Hampton Roads complex have privatized on-base family housing across several neighborhoods.",
-        "Eligibility and availability vary by rank and family size, so start with the housing office for the current manager, options, and waitlists."
+        "Liberty Military Housing (formerly Lincoln) runs 985 homes in five communities on and off base, serving Oceana and six other nearby bases, by Liberty's count. Liberty says it takes no deposits and includes average utility costs in rent.",
+        "The Housing Service Center is at 1596 Tomcat Blvd., Building 280, open Monday to Friday 8 a.m. to 4 p.m., closed weekends and holidays (www.cnic.navy.mil/OceanaHousing). Waits depend on rank, date of application and bedroom entitlement, and an advance application uses your detachment date as its control date."
       ],
-      "source": { "label": "NAS Oceana (official, CNIC)", "url": "https://www.cnic.navy.mil/regions/cnrma/installations/nas_oceana.html" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NAS Oceana housing", "url": "https://installations.militaryonesource.mil/military-installation/naval-air-station-oceana/housing/government-housing" },
+      "verified": "2026-11-14"
     },
     {
       "id": "bah",
@@ -102,11 +102,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools. Virginia Beach City Public Schools serves most military families, with neighboring Chesapeake and Norfolk districts depending on where you live.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "Military OneSource's Naval Station Norfolk page says there are no DoD or private schools on any installation in the Hampton Roads region. Oceana is inside Virginia Beach, served by Virginia Beach City Public Schools, and Chesapeake Public Schools serves Chesapeake addresses. In the state's 2025-26 results, 61 of Virginia Beach's 81 schools and 36 of Chesapeake's 45 rated Meets Expectations or Distinguished; Virginia Beach's Class of 2026 on-time graduation rate was 97%.",
+        "Your assigned school depends on your address, and the School Liaison can confirm the division and school: 875 D Avenue, Building 531, 757-433-2496, Monday to Friday 8 a.m. to 4:30 p.m."
       ],
-      "source": { "label": "Virginia Beach City Public Schools (official)", "url": "https://www.vbschools.com/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Virginia School Quality Profiles, Virginia Beach", "url": "https://schoolquality.virginia.gov/divisions/virginia-beach-city-public-schools" },
+      "verified": "2026-11-14"
     },
     {
       "id": "schools_live",
@@ -119,23 +119,23 @@
       "title": "Healthcare",
       "type": "facts",
       "data": {
-        "Clinic": "Branch Health Clinic Oceana (Boone Clinic)",
-        "Care": "Outpatient primary and some specialty care on base; inpatient and complex care via Naval Medical Center Portsmouth and the network",
+        "Clinic": "Oceana Branch Medical Clinic, 1550 Tomcat Blvd., Suite 150; 757-953-3805",
+        "Care": "Clinic care on base; Military OneSource says it isn't equipped for life-threatening emergencies, and Naval Medical Center Portsmouth has the only military emergency room on the Southside. Appointments: 866-645-4584",
         "TRICARE region": "East (Humana Military)"
       },
-      "source": { "label": "Naval Medical Center Portsmouth (official)", "url": "https://portsmouth.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, NAS Oceana health care", "url": "https://installations.militaryonesource.mil/military-installation/naval-air-station-oceana/health/health-care" },
+      "verified": "2026-11-14"
     },
     {
       "id": "shopping",
       "title": "On-Base Shopping",
       "type": "facts",
       "data": {
-        "Commissary": "NAS Oceana Commissary (DeCA)",
+        "Commissary": "1300 Oceana Blvd., 757-917-2805; Monday to Friday 8:30 a.m. to 9 p.m., weekends 8 a.m. to 9 p.m. (DeCA)",
         "Exchange": "Navy Exchange (NEX) Oceana"
       },
-      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
-      "verified": "2026-06-25"
+      "source": { "label": "DeCA, NAS Oceana commissary", "url": "https://corp.commissaries.com/node/1089" },
+      "verified": "2026-11-14"
     },
     {
       "id": "rent_buy",
@@ -147,15 +147,15 @@
           "Your tour is short (about two years or less) or your sea-duty rotation feels uncertain.",
           "You want time to learn the area and pick the right part of the city.",
           "You'd rather not gamble on resale timing when you PCS out.",
-          "Your BAH comfortably covers rent in the areas you'd consider."
+          "Typical rents are $2,098 in Virginia Beach and $2,063 in Chesapeake (Zillow, September 2026), below E-5 BAH with dependents ($2,430)."
         ],
         "buy": [
           "You expect a longer tour or repeat Hampton Roads assignments, which are common.",
           "You want to use your VA loan and build equity instead of paying rent.",
-          "The affordable-for-the-coast market fits your budget for a home you like.",
+          "You've checked the noise zone, the flood zone and the schools for the exact address.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer, but the large Navy presence and repeat tours make Hampton Roads a common place to buy. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. REIN reported the most homes for sale in Hampton Roads since April 2020 in September 2026, and Zillow's typical home value rose 3.1% in Virginia Beach over the year. Get the noise-zone and flood disclosures before you make an offer, run your BAH against the rent and home prices above, and talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -165,11 +165,11 @@
       "data": {
         "intro": ["The first month at a new duty station is mostly logistics. Knocking these out early makes everything else easier."],
         "steps": [
-          { "title": "Line up temporary lodging", "text": "Book Navy Gateway Inns & Suites or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
+          { "title": "Line up temporary lodging", "text": "Book the Navy Inn on base or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on Virginia Beach before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and Virginia vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
-          { "title": "Enroll the kids in school", "text": "Contact Virginia Beach City Public Schools (or your local district) early and bring records and immunizations." },
+          { "title": "Start with the Housing Office", "text": "Apply through the Housing Service Center (www.cnic.navy.mil/OceanaHousing); advance applications use your detachment date. Ask for the noise and accident potential zone disclosure before you sign anything off base." },
+          { "title": "Sort base access and your vehicle", "text": "If you're a service member whose legal residence is another state, Virginia Beach and Chesapeake can exempt your car from the yearly car tax when you give the city a current Leave and Earnings Statement each year (Chesapeake's form is due by March 1); a spouse's vehicle needs its own form. Learn the visitor process for guests." },
+          { "title": "Enroll the kids in school", "text": "Call the School Liaison (757-433-2496), then contact Virginia Beach City Public Schools or Chesapeake Public Schools early and bring records and immunizations." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Oceana clinic or Naval Medical Center Portsmouth." }
         ]
       }
@@ -179,9 +179,10 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What flies out of Oceana?", "a": "It's the Navy's East Coast master jet base, home to Atlantic Fleet strike fighter squadrons flying the F/A-18E/F Super Hornet." },
-        { "q": "Where do families live?", "a": "Across Virginia Beach. Central neighborhoods are close to the gate; the oceanfront is lively; southern and western Virginia Beach and Chesapeake offer more space and good schools. On-base housing is also available." },
+        { "q": "What flies out of Oceana?", "a": "Military OneSource says Oceana is home to 19 fighter and attack squadrons. Virginia Beach City Council has backed bringing newer jets such as the F-35 (WTKR)." },
+        { "q": "Where do families live?", "a": "Across Virginia Beach and in Chesapeake, plus Liberty's base housing. Check the noise and accident potential zone for any address first. Green Run and Salem are about 14 to 16 minutes from the main gate area, and Chesapeake's Greenbrier and Great Bridge about 27 to 30 (estimates, no traffic)." },
         { "q": "How does it relate to Norfolk?", "a": "Both are part of the Hampton Roads Navy region. Oceana is the Virginia Beach jet base; Naval Station Norfolk is the huge ship homeport nearby." },
+        { "q": "Does Virginia tax my military pay?", "a": "Not if your legal residence is another state: Virginia Tax says that active-duty pay is protected under the Servicemembers Civil Relief Act, though other income, such as a side job, can still be taxed. Virginia taxpayers on extended active duty of more than 90 days can subtract up to $15,000 of military basic pay; the subtraction shrinks as basic pay rises above $15,000 and ends at $30,000." },
         { "q": "What is the BAH area?", "a": "Oceana falls in MHA VA298 (Norfolk/Portsmouth, which covers Virginia Beach). Use the calculator above for your grade." }
       ]
     },
