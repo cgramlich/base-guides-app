@@ -6,11 +6,11 @@
   "branch": "U.S. Marine Corps",
   "states": ["HI"],
   "region": "OCONUS",
-  "tagline": "The Marine Corps' Pacific home on Oahu's windward shore at Kaneohe Bay.",
+  "tagline": "On Kaneohe Bay, windward Oahu: home of the 3rd Marine Littoral Regiment and Marine Aircraft Group 24.",
   "coords": { "lat": 21.45, "lng": -157.76, "label": "Kaneohe, Oahu, HI" },
   "tz": "Pacific/Honolulu",
-  "last_full_review": "2026-06-25",
-  "_note": "Marine Corps base on Mokapu Peninsula, Kaneohe Bay, windward Oahu. Region flagged OCONUS for the browse UX, but Hawaii is a BAH/RentCast/SchoolDigger state, so it KEEPS the full CONUS template (BAH MHA HI408 Kaneohe via bah_rates; realestate + schools_live feeds work). Home of 3rd Marine Littoral Regiment and Marine aviation. Facts verified from official sources (mcbhawaii.marines.mil, Naval Health Clinic Hawaii, DeCA/MCX, Wikipedia for corroborated headline facts). Hawaii is TRICARE West. High cost of living. Medium-confidence flags: base coords (approx), off-base ZIP 96744 (Kaneohe).",
+  "last_full_review": "2026-11-15",
+  "_note": "Marine Corps base at Kaneohe Bay, windward Oahu (base ZIP 96863). Region flagged OCONUS for the browse UX, but Hawaii is a BAH/RentCast/SchoolDigger state, so it KEEPS the full CONUS template (BAH MHA HI408 = Honolulu County, all of Oahu). Housing: Ohana Military Communities, managed by Hunt (13 neighborhoods incl. Camp Smith and Manana in Pearl City). Schools: Hawaii DOE; Mokapu Elementary is the only school on base (Kailua-Kalaheo complex area). Medical: Branch Health Clinic Kaneohe Bay (no ER); Tripler has the only military ER on Oahu. Corrected 2026-11-15 from Military OneSource (mcb-hawaii), Hunt, HIDOE, MCCS Hawaii and HDOT (page-builder research/mcbh-facts.md). Gate and Visitor Center hours unverified (base pages refuse automated readers). schools_live stays on Kaneohe because a SchoolDigger search for Kailua also returns Kailua-Kona schools. Hawaii is TRICARE West. Medium-confidence flags: base coords (approx), off-base ZIP 96744 (Kaneohe).",
   "sections": [
     {
       "id": "quick_facts",
@@ -18,67 +18,69 @@
       "type": "facts",
       "data": {
         "Branch": "U.S. Marine Corps",
-        "Location": "Mokapu Peninsula, Kaneohe Bay, windward Oahu, HI",
-        "Major units": "3rd Marine Littoral Regiment and Marine Corps aviation",
+        "Location": "Kaneohe Bay, windward Oahu, HI",
+        "Major units": "3rd Marine Littoral Regiment; Marine Aircraft Group 24 (MV-22B Ospreys, KC-130Js); 3rd Radio Battalion; the Navy's HSM-37 helicopters",
         "Setting": "Windward Oahu, between the Koolau mountains and the Pacific",
         "Cost of living": "High (island/Oahu market)",
-        "Note": "An accompanied tour for most; a true island posting"
+        "Note": "Over 25,000 Marines, sailors, family members and civilian employees live and work here (Military OneSource)"
       },
-      "source": { "label": "Marine Corps Base Hawaii (official)", "url": "https://www.mcbhawaii.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, MCB Hawaii overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/mcb-hawaii" },
+      "verified": "2026-11-15"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Marine Corps Base Hawaii is the Corps' main installation in the Pacific, on the Mokapu Peninsula at Kaneohe Bay on the windward side of Oahu. It hosts the 3rd Marine Littoral Regiment and Marine aviation units central to the Corps' Indo-Pacific role.",
-        "The setting is spectacular, framed by the Koolau mountains and the ocean, but it is still an island posting: housing is tight, the cost of living is high, and everything arrives by ship or plane."
+        "Marine Corps Base Hawaii sits at Kaneohe Bay on the windward side of Oahu. Over 25,000 Marines, sailors, family members and civilian employees live and work there, and Military OneSource gives its mission as providing facilities and services that support combat readiness. It hosts the 3rd Marine Littoral Regiment, Marine Aircraft Group 24 with MV-22B Osprey and KC-130J squadrons at Marine Corps Air Station Kaneohe Bay, 3rd Radio Battalion and the Navy's HSM-37 helicopter squadron.",
+        "The setting is spectacular, framed by the Koolau mountains and the ocean, but it is still an island posting: Oahu homes are often small, only one car ships at government cost, and the side of the mountains you live on shapes your commute, your school complex area and your flood and tsunami checks."
       ],
-      "source": { "label": "Marine Corps Base Hawaii (official)", "url": "https://www.mcbhawaii.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, MCB Hawaii overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/mcb-hawaii" },
+      "verified": "2026-11-15"
     },
     {
       "id": "hawaii_decision",
-      "title": "Paradise, With Island-Sized Costs",
+      "title": "Which Side of the Mountains?",
       "type": "killer",
       "data": {
-        "subtitle": "Oahu is beautiful but among the most expensive places the military sends families. On-base housing is the easiest path; off base means navigating a tight, pricey windward market.",
+        "subtitle": "Three highways cross the Koolau mountains between the base and the rest of Oahu: H-3, Likelike and Pali. The side you live on sets your commute and shapes your schools and your flood and tsunami checks.",
         "intro": [
-          "Almost everyone wants to live here, and the lifestyle delivers, but the cost of living is steep and housing is limited. On-base housing at MCB Hawaii is the most common choice and is in high demand.",
-          "Off base, most families stay on the windward side near Kaneohe to keep the commute short, since crossing the Koolau range to town adds time and traffic."
+          "The base is on the windward side of the Koolau mountains. Hawaii DOT sends drivers from one crossing to the others during work, Tropical Storm Lala closed the Pali Highway both ways on August 16, 2026, and an H-3 on-ramp in Kaneohe has been closed for emergency culvert repairs.",
+          "So where a spouse works matters too. Schools are assigned by address within complex areas: base housing at Kaneohe Bay and Kailua are in the Kailua-Kalaheo complex area, Kaneohe in Castle-Kahuku."
         ],
         "recommendations": [
-          { "who": "Most families: on base", "advice": "On-base housing is the simplest, most cost-effective option here; get on the list as early as your orders allow." },
-          { "who": "Windward side", "advice": "Kaneohe and Kailua keep you close to base with that famous windward scenery, but rents are high." },
-          { "who": "More for your money", "advice": "Areas over the pali or toward central Oahu can be cheaper, at the cost of a longer, traffic-heavy commute." },
-          { "who": "Plan island logistics", "advice": "Shipping a vehicle, higher prices, and limited inventory are all part of a Hawaii PCS; budget and plan ahead." }
+          { "who": "Base housing at Kaneohe Bay", "advice": "Ohana Military Communities (Hunt) runs 13 neighborhoods, with no damage deposit and what Hunt calls \"Average Utilities Included\" (features vary). Mokapu Elementary is on base. Contact the Family Housing Department (808-496-2676) as soon as you have orders." },
+          { "who": "Kailua", "advice": "About 10 minutes to the Mokapu Gate and 14 to the H-3 main gate (no-traffic estimates), in the same Kailua-Kalaheo school complex area as base housing at Kaneohe Bay. Zillow's typical home value is $1,526,023 and typical rent $3,753 (September 2026)." },
+          { "who": "Kaneohe", "advice": "About 13 minutes to the H-3 main gate (no-traffic estimate), in the Castle-Kahuku complex area. Typical home value $1,081,692 and rent $3,645 (Zillow, September 2026). Heavy rain flooded homes here on February 21, 2026, so check the flood zone." },
+          { "who": "Across the mountains", "advice": "Manana in Pearl City is part of the Marine housing system and open to active-duty Army, Navy, Air Force and Marines: an option for a dual-military family with one member at Pearl Harbor, or a spouse who works there. Aiea and Pearl City are about 25 to 29 minutes from the H-3 main gate (no-traffic estimates)." }
         ]
       },
-      "source": { "label": "Marine Corps Base Hawaii (official)", "url": "https://www.mcbhawaii.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Hawaii DOT, Oahu lane closures", "url": "https://hidot.hawaii.gov/highways/roadwork/oahu/" },
+      "verified": "2026-11-15"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official MCB Hawaii site before you go."
+        "Military OneSource says to enter through the main gate on the H-3 freeway; the Mokapu Gate is the back gate on the Kailua side.",
+        "Visitors need a sponsor. The Pass House (Visitor Center) is in Building 1637 at the main gate, 808-257-2047 (MyBaseGuide, 2021); call ahead for hours.",
+        "We couldn't confirm gate hours from an official page, so check them with the base before you go."
       ],
-      "source": { "label": "Marine Corps Base Hawaii (official)", "url": "https://www.mcbhawaii.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, MCB Hawaii overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/mcb-hawaii" },
+      "verified": "2026-11-15"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "MCB Hawaii has privatized on-base family housing across several neighborhoods on the peninsula, and it's the most common choice given the island's high costs.",
-        "Demand is high, so eligibility and waitlists matter. Start with the housing office as soon as you have orders for the current manager, options, and timelines."
+        "Ohana Military Communities, managed by Hunt Military Communities, runs base housing for Marine families at Kaneohe Bay and Camp H. M. Smith. Hunt lists 13 neighborhoods, including Camp Smith, where Marine Forces Pacific is based (E-9, O-4 and O-5 only), and Manana in Pearl City (144 single homes for staff NCO and officer families and 24 duplex homes for junior enlisted families, open to active-duty Army, Navy, Air Force and Marines).",
+        "Hunt lists no application fees, no damage deposit, no first and last month's rent and what it calls \"Average Utilities Included\" (features vary by floor plan and neighborhood). Leasing: 808-657-3386.",
+        "The Family Housing Department is at 1571 Lawrence Rd. (808-496-2676). Register there before you negotiate any off-base lease, or you can lose Temporary Lodging Allowance (Military OneSource)."
       ],
-      "source": { "label": "Marine Corps Base Hawaii (official)", "url": "https://www.mcbhawaii.marines.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, MCB Hawaii housing", "url": "https://installations.militaryonesource.mil/military-installation/mcb-hawaii/housing/housing" },
+      "verified": "2026-11-15"
     },
     {
       "id": "bah",
@@ -89,8 +91,8 @@
         "year": 2026,
         "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
       },
-      "source": { "label": "DoD 2026 BAH Rates, MHA HI408 (Kaneohe/MCB Hawaii)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
-      "verified": "2026-06-25"
+      "source": { "label": "DoD 2026 BAH Rates, MHA HI408 (Honolulu County)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
+      "verified": "2026-11-15"
     },
     {
       "id": "housing_costs",
@@ -103,11 +105,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend Hawaii's statewide public school system, the Hawaii State Department of Education, plus a Mokapu campus that serves base families. Private and charter options exist across Oahu.",
-        "Your assigned school depends on your address within the statewide system, so confirm the campus for any neighborhood you are considering."
+        "There are no DoD schools in Hawaii; children attend the Hawaii State Department of Education's public schools, assigned by home address. Mokapu Elementary is the only school on the base: pre-kindergarten to grade 6, more than 780 students; the first phase of its rebuilt campus opened in January 2026.",
+        "Mokapu is in the Kailua-Kalaheo complex area. The state's list of windward schools with many military children names Mokapu, Aikahi Elementary, Kailua Intermediate, Kainalu Elementary and Kalaheo High; Kaneohe schools are in the Castle-Kahuku complex area. This list isn't a zoning map, so check the schools for your address. School Liaison: 808-496-2019 (Military OneSource and the state list it; MCCS Hawaii's page also shows 808-257-2019)."
       ],
-      "source": { "label": "Hawaii State Department of Education (official)", "url": "https://www.hawaiipublicschools.org/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Hawaii DOE, military families", "url": "https://hawaiipublicschools.org/enrolling-in-school/military-families/" },
+      "verified": "2026-11-15"
     },
     {
       "id": "schools_live",
@@ -120,12 +122,12 @@
       "title": "Healthcare",
       "type": "facts",
       "data": {
-        "Clinic": "Naval Health Clinic Hawaii (Kaneohe Bay branch)",
-        "Care": "Outpatient primary and specialty care on base; inpatient and major specialty care via Tripler Army Medical Center and the network",
+        "Clinic": "Branch Health Clinic Kaneohe Bay, Bldg. 6905, Harris Ave.: 808-496-3365, weekdays 7 a.m. to 4 p.m.",
+        "Care": "Medical and dental clinics on base, no emergency room; clinic patients are often referred to Tripler Army Medical Center, which has the only military ER on Oahu (Military OneSource)",
         "TRICARE region": "West (TriWest)"
       },
-      "source": { "label": "Naval Health Clinic Hawaii (official)", "url": "https://hawaii.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, MCB Hawaii health care", "url": "https://installations.militaryonesource.mil/military-installation/mcb-hawaii/health/health-care" },
+      "verified": "2026-11-15"
     },
     {
       "id": "shopping",
@@ -133,17 +135,17 @@
       "type": "facts",
       "data": {
         "Commissary": "MCB Hawaii Commissary (DeCA)",
-        "Exchange": "Marine Corps Exchange (MCX) Hawaii"
+        "Exchange": "Marine Corps Exchange, Mokapu Mall, Building 6109: 808-496-4832"
       },
-      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
-      "verified": "2026-06-25"
+      "source": { "label": "MCCS Hawaii, Marine Corps Exchange", "url": "https://hawaii.usmc-mccs.org/shopping/marine-corps-exchange" },
+      "verified": "2026-11-15"
     },
     {
       "id": "rent_buy",
       "title": "Rent or Buy?",
       "type": "rentbuy",
       "data": {
-        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves, and in Hawaii's pricey island market most families rent or take on-base housing rather than buy."],
+        "intro": ["Whether to rent or buy is the biggest money decision of most PCS moves. On Oahu, price the property tax before you buy a home you might rent out later: with no home exemption, a home assessed at $1 million or more pays the Residential A rate, $11.40 per $1,000 above the first $1 million (fiscal 2027)."],
         "rent": [
           "Your tour is a standard length and you'll PCS off the island.",
           "Home prices on Oahu are out of comfortable reach for your budget.",
@@ -156,7 +158,7 @@
           "You're comfortable being a long-distance landlord after you PCS.",
           "You've found a property and location you're confident about."
         ],
-        "bottom_line": "There is no universal right answer, but Oahu's high prices lead most military families to rent or use on-base housing. Buying makes sense mainly for long or repeat tours and bigger budgets. Run your BAH against the rent and home prices above, and talk to a lender and an agent who know the island and military families before you commit."
+        "bottom_line": "There is no universal right answer. Zillow's typical home value is $1,526,023 in Kailua and $1,081,692 in Kaneohe (September 2026), so buying makes sense mainly for long or repeat tours and bigger budgets. Run your BAH against the rent and home prices above, and talk to a lender and an agent who know the island and military families before you commit."
       }
     },
     {
@@ -168,10 +170,10 @@
         "steps": [
           { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Allowance (TLA) for OCONUS/Hawaii while you house-hunt; know the rules before you travel." },
           { "title": "In-process and update DEERS", "text": "Report to your command and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Start with the Housing Office", "text": "On-base housing is the most common choice here; get on the list as soon as you have orders, and get the office's read on the windward market." },
-          { "title": "Sort your vehicle and access", "text": "Plan vehicle shipping early, handle Hawaii registration and safety inspection on arrival, and learn the visitor-pass process for guests." },
-          { "title": "Enroll the kids in school", "text": "Contact the Hawaii State DOE (or the Mokapu campus) early and bring records and immunizations; Hawaii has specific entry health requirements." },
-          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Kaneohe Bay clinic, with Tripler and network providers for specialty care." }
+          { "title": "Start with the Housing Office", "text": "Contact the Family Housing Department (808-496-2676) as soon as you have orders, and register there before you negotiate any off-base lease; Military OneSource says skipping it can cost you Temporary Lodging Allowance." },
+          { "title": "Sort your vehicle and access", "text": "Only one car ships at government cost; the Navy's Opportune Lift can carry a second from San Diego, but that can take up to a year. When your car arrives, take it for a Hawaii safety inspection (it fails at first only for lacking Honolulu registration), get an out-of-state permit or register in Honolulu, then go back within 30 days of that first check to pass. Learn the visitor-pass process for guests." },
+          { "title": "Enroll the kids in school", "text": "Call the School Liaison (808-496-2019). Hawaii assigns schools by address, so you can't enroll until you have one; bring records and immunizations, and a physical for students new to Hawaii." },
+          { "title": "Set up healthcare", "text": "Update your TRICARE enrollment for the Kaneohe Bay clinic. There's no ER on base; Tripler Army Medical Center has the only military ER on Oahu." }
         ]
       }
     },
@@ -181,9 +183,11 @@
       "type": "faq",
       "data": [
         { "q": "Is MCB Hawaii a real overseas tour?", "a": "It's in Hawaii, a U.S. state, so it uses stateside pay tools like BAH (not OHA). But it's a true island posting with shipping, high costs, and accompanied-tour planning, which is why we flag it under the OCONUS/island group." },
-        { "q": "Where do families live?", "a": "Most live in on-base housing given the island's high costs. Off base, Kaneohe and Kailua on the windward side keep the commute short but rents are high." },
-        { "q": "How expensive is it?", "a": "Oahu is one of the most expensive markets in the country. On-base housing is the most cost-effective option for many families." },
-        { "q": "What is the BAH area?", "a": "MCB Hawaii is MHA HI408 (Kaneohe). Because it's a U.S. state, you get BAH; use the calculator above for your grade." }
+        { "q": "Where do families live?", "a": "No official source says how many live on base. Base housing (Ohana Military Communities, Hunt) has 13 neighborhoods, including Manana in Pearl City; off base, Kailua and Kaneohe are about 10 to 13 minutes from a gate and Aiea and Pearl City about 25 to 29 (no-traffic estimates)." },
+        { "q": "How expensive is it?", "a": "Zillow's typical home value is $1,526,023 in Kailua and $1,081,692 in Kaneohe, and typical rent $3,753 and $3,645 (September 2026; rents include apartments). An E-5 with dependents receives $3,663 a month in BAH in 2026." },
+        { "q": "What is the BAH area?", "a": "MCB Hawaii is MHA HI408, which covers all of Oahu (Honolulu County). Because it's a U.S. state, you get BAH; use the calculator above for your grade." },
+        { "q": "Is there an ER on base?", "a": "No. The Branch Health Clinic Kaneohe Bay is open weekdays, 7 a.m. to 4 p.m., and Tripler Army Medical Center has the only military emergency room on Oahu. A civilian hospital may be closer to your home, so find your nearest ER before you need it. In an emergency, call 911." },
+        { "q": "Can we ship two cars?", "a": "Only one car ships at government cost per PCS order to Hawaii. The Navy's Opportune Lift program can carry a second vehicle from San Diego, but that can take up to a year." }
       ]
     },
     {

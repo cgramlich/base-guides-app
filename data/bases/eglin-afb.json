@@ -5,11 +5,11 @@
   "short_name": "Eglin",
   "branch": "U.S. Air Force",
   "states": ["FL"],
-  "tagline": "The Air Force's premier weapons test center and an F-35 training hub, on Florida's Emerald Coast.",
-  "coords": { "lat": 30.46, "lng": -86.55, "label": "Fort Walton Beach, FL" },
+  "tagline": "Home of the 96th Test Wing and F-35 training, on Florida's Emerald Coast.",
+  "coords": { "lat": 30.46, "lng": -86.55, "label": "Eglin AFB (Valparaiso), FL" },
   "tz": "America/Chicago",
-  "last_full_review": "2026-06-25",
-  "_note": "Large Air Force test/training base (FL Panhandle / Emerald Coast; Central time zone). Facts verified from official sources (eglin.af.mil, 96th Medical Group, DeCA/AAFES, Wikipedia for corroborated headline facts). BAH MHA FL056 (Eglin AFB) via the bah_rates single source of truth. Housing partner not named pending confirmation (start with the base housing office). Medium-confidence flags: base coords (approx), representative off-base ZIP 32547 (Fort Walton Beach).",
+  "last_full_review": "2026-11-15",
+  "_note": "Large Air Force test and training base about three miles southwest of Valparaiso, Okaloosa County, FL (Central time). BAH MHA FL056 (Eglin AFB) via the bah_rates single source of truth. Housing: Mayroad (bought the project from Corvias sold the project to Harrison Street in December 2021; renamed Mayroad); Military Housing Office 850-882-4533 ext. 3. Schools: Okaloosa County (A for 2025-26); Eglin Elementary on base. Medical: Eglin Hospital (96th Medical Group) with a 24/7 ER and labor and delivery. Corrected 2026-11-15 from Military OneSource, DeCA, WUWF, Get The Coast, Stars and Stripes, WLRN and the Mid-Bay Bridge Authority (page-builder research/eglin-facts.md). Gate hours, home count and neighborhood names unverified (eglin.af.mil refuses automated readers). Medium-confidence flags: base coords (approx), representative off-base ZIP 32547 (Fort Walton Beach).",
   "sections": [
     {
       "id": "quick_facts",
@@ -17,67 +17,68 @@
       "type": "facts",
       "data": {
         "Branch": "U.S. Air Force",
-        "Location": "Fort Walton Beach / Niceville, FL (Emerald Coast)",
+        "Location": "About three miles southwest of Valparaiso, Okaloosa County, FL",
         "Host wing": "96th Test Wing",
         "Major tenant": "33rd Fighter Wing (F-35 training)",
-        "Also hosts": "53rd Wing, Air Force Research Laboratory, U.S. Army 7th Special Forces Group",
-        "Setting": "Gulf Coast; one of the largest bases by area"
+        "Also hosts": "53rd Wing, the Army's 7th Special Forces Group (Camp Bull Simons), the Army Ranger Camp and the Navy EOD School; about 20,000 personnel (Military OneSource)",
+        "Setting": "Emerald Coast; hurricane season June 1 to November 30"
       },
-      "source": { "label": "Eglin Air Force Base (official)", "url": "https://www.eglin.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Eglin AFB overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/eglin-afb" },
+      "verified": "2026-11-15"
     },
     {
       "id": "mission",
       "title": "Mission & Identity",
       "type": "prose",
       "data": [
-        "Eglin is the Air Force's test and evaluation center for air-delivered weapons, guidance, and command-and-control systems, hosted by the 96th Test Wing. It is one of the largest bases in the Air Force by land area.",
-        "Its largest tenant is the 33rd Fighter Wing, which trains F-35 pilots and maintainers. Eglin also hosts the 53rd Wing, the Air Force Research Laboratory's munitions work, and the U.S. Army's 7th Special Forces Group, all on Florida's Emerald Coast."
+        "Eglin's host, the 96th Test Wing, carries out developmental test and evaluation of weapons. The base serves about 20,000 personnel, with five wings, four wing equivalents and 35 associate units, and hosts some 40 tenant units (Military OneSource).",
+        "The 33rd Fighter Wing trains F-35 pilots and maintainers. Eglin also hosts the 53rd Wing, the U.S. Army's 7th Special Forces Group at Camp Bull Simons, the Army Ranger Camp and the Navy EOD School. Hurlburt Field is a separate base five miles west of Fort Walton Beach."
       ],
-      "source": { "label": "Eglin Air Force Base (official)", "url": "https://www.eglin.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Eglin AFB overview", "url": "https://installations.militaryonesource.mil/in-depth-overview/eglin-afb" },
+      "verified": "2026-11-15"
     },
     {
       "id": "emerald_coast_decision",
-      "title": "Living on the Emerald Coast",
+      "title": "Coast or Crestview?",
       "type": "killer",
       "data": {
-        "subtitle": "Eglin sits on one of the prettiest stretches of the Gulf Coast, so the lifestyle is a real draw. Where you live trades beach proximity and schools against price along the Fort Walton Beach to Crestview corridor.",
+        "subtitle": "Start with where the sponsor works, then weigh the coast's storm exposure against the north side's drive through the range on State Road 85.",
         "intro": [
-          "The Emerald Coast's white-sand beaches and emerald water make Eglin a popular assignment, and the broader area also includes Hurlburt Field and Duke Field. Demand keeps coastal prices up, especially toward Destin.",
-          "Most families weigh commute, schools, and how close they want to be to the water. Niceville and Bluewater Bay near the base are known for strong schools; Fort Walton Beach is central; Crestview to the north is more affordable; and Destin is the priciest, beach-resort option."
+          "Eglin's main base is just southwest of Valparaiso, but its jobs are spread out: 7th Special Forces Group works at Camp Bull Simons, and Hurlburt Field is a separate base five miles west of Fort Walton Beach.",
+          "Near the coast, homes face storm risk: Hurricane Isaias made landfall near Destin in October 2026, and Citizens policyholders with wind coverage must add flood insurance by January 1, 2027. To the north, Crestview is cheaper on Zillow's index but a longer drive through the range."
         ],
         "recommendations": [
-          { "who": "Schools near base", "advice": "Niceville and Bluewater Bay (Okaloosa County schools) are popular with families and close to the main gate." },
-          { "who": "Central and convenient", "advice": "Fort Walton Beach sits between the installations with a range of prices and a short commute." },
-          { "who": "Stretch your budget", "advice": "Crestview, north up I-85/SR-85, is the most affordable and where BAH goes furthest, at a longer drive." },
-          { "who": "Beach life (for a price)", "advice": "Destin and the coastal areas offer resort living, but prices run high and traffic peaks in tourist season." }
+          { "who": "Niceville and Valparaiso", "advice": "About 4 to 8 minutes to the East Gate (no-traffic estimates). Niceville High earned an A for 2025-26 and graduated 98.6% in 2024-25; check the zoned school for any address. Parts of Niceville were in the zones ordered to evacuate for Hurricane Isaias." },
+          { "who": "Shalimar and Fort Walton Beach", "advice": "About 4 minutes from Shalimar and 15 from Fort Walton Beach to the West Gate (no-traffic estimates), between Eglin and Hurlburt. School grades are mixed for 2025-26 (Fort Walton Beach High B, Choctawhatchee High C), and the Brooks Bridge rebuild runs to early 2029 (June 2026 schedule)." },
+          { "who": "Crestview (north side)", "advice": "About 31 minutes to the West Gate on State Road 85 (no-traffic estimate). 60% of 7th Special Forces Group families live in Crestview (Military Times, 2024). Test missions have closed SR 85 and SR 123 in blocks of up to 90 minutes. Zillow's typical home value is $287,751 (September 2026)." },
+          { "who": "Destin and the beaches", "advice": "About 26 minutes to the West Gate (no-traffic estimate); Zillow's typical home value is $616,654. Hurricane Isaias made landfall near Destin on October 9, 2026, and Destin High's 2024-25 graduation rate was 83.8%." }
         ]
       },
-      "source": { "label": "Eglin Air Force Base (official)", "url": "https://www.eglin.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military Times, 7th Special Forces Group families (2024)", "url": "https://www.militarytimes.com/news/your-military/2024/08/01/will-new-child-care-plans-help-these-army-special-forces-families/" },
+      "verified": "2026-11-15"
     },
     {
       "id": "gates",
       "title": "Gates & Access",
       "type": "prose",
       "data": [
-        "Visitors without a DoD ID need a visitor pass and a REAL ID-compliant ID from the Visitor Control Center.",
-        "Gate hours and visitor requirements change, so confirm the current details on the official Eglin AFB site before you go."
+        "The East Gate is on State Road 397 in Valparaiso; the West Gate is off State Road 85 (Eglin Parkway), at Eglin Boulevard on map data.",
+        "Since May 7, 2025, visitors 18 and older need a REAL ID or a valid passport to get a pass. The Visitor Center is at the Air Force Armament Museum, 100 Museum Dr., 850-883-0948; call ahead for hours.",
+        "We couldn't confirm gate hours from an official page, so check them with the base before you go."
       ],
-      "source": { "label": "Eglin Air Force Base (official)", "url": "https://www.eglin.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Eglin check-in procedures", "url": "https://installations.militaryonesource.mil/military-installation/eglin-afb/base-essentials/check-in-procedures" },
+      "verified": "2026-11-15"
     },
     {
       "id": "housing",
       "title": "On-Base Housing",
       "type": "prose",
       "data": [
-        "Eglin has privatized on-base family housing across several neighborhoods, with thousands of homes serving the base community.",
-        "Eligibility and availability vary by rank and family size, so start with the 96th Civil Engineer Group housing office for the current manager, options, and waitlists."
+        "Mayroad owns and manages Eglin's family housing and leases directly to families (Military OneSource). Corvias, the original owner, sold the project to Harrison Street in December 2021, and it was renamed Mayroad (Niceville.com, 2022).",
+        "Contact the Military Housing Office as soon as you know you're moving: 2950 Azalea Dr., Building 38499, 850-882-4533, ext. 3, Monday to Friday, 8 a.m. to 4 p.m."
       ],
-      "source": { "label": "Eglin Air Force Base (official)", "url": "https://www.eglin.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Eglin housing", "url": "https://installations.militaryonesource.mil/military-installation/eglin-afb/housing/housing" },
+      "verified": "2026-11-15"
     },
     {
       "id": "bah",
@@ -89,7 +90,7 @@
         "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
       },
       "source": { "label": "DoD 2026 BAH Rates, MHA FL056 (Eglin AFB)", "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/" },
-      "verified": "2026-06-25"
+      "verified": "2026-11-15"
     },
     {
       "id": "housing_costs",
@@ -102,11 +103,11 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "There is no DoDEA district here; children attend the local civilian public schools. Okaloosa County School District covers Niceville, Fort Walton Beach, and Crestview, and is well-regarded; families toward Destin and Freeport fall in Okaloosa and Walton County districts.",
-        "Your assigned schools depend on your address, so confirm the district and campus for any neighborhood you are considering."
+        "Military OneSource says the Okaloosa County School District serves most families near Eglin and names no DoD school at Eglin. Base housing is served by Eglin Elementary on base (kindergarten to grade 4), then Lewis and Niceville High. In the state's 2025-26 grades, as reported by local news, Okaloosa earned an A, with 23 A schools and four C's; check the zoned school for any off-base address. Destin is in Okaloosa County and Freeport in Walton County.",
+        "2024-25 graduation rates: Okaloosa 91%, Florida 92.2%, Niceville High 98.6%, Crestview High 99%, Destin High 83.8%. Schools are assigned by address, so confirm the campus for any home. School Liaison: 850-882-4319 or 850-883-3545 (Military OneSource lists both)."
       ],
-      "source": { "label": "Okaloosa County School District (official)", "url": "https://www.okaloosaschools.com/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Eglin education", "url": "https://installations.militaryonesource.mil/military-installation/eglin-afb/education/education" },
+      "verified": "2026-11-15"
     },
     {
       "id": "schools_live",
@@ -120,22 +121,22 @@
       "type": "facts",
       "data": {
         "Hospital": "Eglin Hospital (96th Medical Group)",
-        "Care": "Inpatient and outpatient care; one of the Air Force's larger medical facilities",
+        "Care": "53 beds with an intensive care unit, a 24/7 emergency room (850-883-8227) and labor and delivery; Stars and Stripes reported on October 9, 2026 that all three would stay open during Hurricane Isaias",
         "TRICARE region": "East (Humana Military)"
       },
-      "source": { "label": "Eglin AFB / 96th Medical Group (official)", "url": "https://www.eglin.af.mil/" },
-      "verified": "2026-06-25"
+      "source": { "label": "Military OneSource, Eglin health care", "url": "https://installations.militaryonesource.mil/military-installation/eglin-afb/health/health-care" },
+      "verified": "2026-11-15"
     },
     {
       "id": "shopping",
       "title": "On-Base Shopping",
       "type": "facts",
       "data": {
-        "Commissary": "Eglin AFB Commissary (DeCA)",
+        "Commissary": "Eglin AFB Commissary, 1511 Memorial Trail: open 8 a.m. to 7 p.m. daily, closed Thanksgiving and Christmas Day",
         "Exchange": "Eglin AFB Exchange (AAFES / BX)"
       },
-      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
-      "verified": "2026-06-25"
+      "source": { "label": "DeCA, Eglin AFB commissary", "url": "https://corp.commissaries.com/node/990" },
+      "verified": "2026-11-15"
     },
     {
       "id": "rent_buy",
@@ -155,7 +156,7 @@
           "The market is steady and you could rent the home out later if needed.",
           "You've found a neighborhood and commute you're confident about."
         ],
-        "bottom_line": "There is no universal right answer. Coastal prices (especially toward Destin) run high, while Crestview and inland areas are more affordable. Run your BAH against the rent and home prices above, weigh your tour length, and talk to a lender and an agent who work with military families before you commit."
+        "bottom_line": "There is no universal right answer. Zillow's typical home value is $616,654 in Destin, $435,260 in Niceville and $287,751 in Crestview (September 2026). Before you buy, check the evacuation and flood zones, price wind and flood insurance, and ask how Amendment 3's residency date applies to you. Talk to a lender and an agent who work with military families before you commit."
       }
     },
     {
@@ -167,8 +168,8 @@
         "steps": [
           { "title": "Line up temporary lodging", "text": "Book on-base lodging or a short-term rental before you arrive. You can claim Temporary Lodging Expense (TLE) for a limited number of days while you house-hunt." },
           { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Start with the Housing Office", "text": "Check on-base availability and get the housing office's read on off-base neighborhoods before you sign anything." },
-          { "title": "Register your vehicle and sort access", "text": "Handle base access and Florida vehicle registration, and learn the visitor-pass process for guests. Bring your registration and insurance." },
+          { "title": "Start with the Housing Office", "text": "Contact the Military Housing Office (850-882-4533, ext. 3) as soon as you know you're moving, and check the evacuation and flood zones for any off-base home before you sign." },
+          { "title": "Sort your vehicle and access", "text": "If your legal residence is another state, you can keep a current home-state plate; Eglin stopped requiring on-base vehicle registration in 2007. Visitors 18 and older need a REAL ID or a valid passport for a pass from the Visitor Center at the Air Force Armament Museum; CAC and Uniformed Services ID holders don't need one." },
           { "title": "Enroll the kids in school", "text": "Contact Okaloosa County (or Walton County) schools early and bring records and immunizations." },
           { "title": "Set up healthcare", "text": "Update your TRICARE enrollment so you can be seen at the Eglin Hospital or network providers." }
         ]
@@ -179,10 +180,11 @@
       "title": "FAQ",
       "type": "faq",
       "data": [
-        { "q": "What's the mission at Eglin?", "a": "It's the Air Force's premier weapons test center (96th Test Wing) and a major F-35 training base (33rd Fighter Wing), plus the 53rd Wing, AFRL munitions work, and the Army's 7th Special Forces Group, on one of the largest base footprints in the Air Force." },
-        { "q": "Where do families live?", "a": "Niceville and Bluewater Bay are popular for schools near base; Fort Walton Beach is central; Crestview is the most affordable; Destin is the priciest, beach-resort option." },
-        { "q": "What's the lifestyle like?", "a": "Emerald Coast beach living, with white sand and warm water. It's a sought-after assignment, which keeps coastal prices up, especially in summer tourist season." },
-        { "q": "What is the BAH area?", "a": "Eglin AFB is MHA FL056. Use the calculator above for your grade." }
+        { "q": "What's the mission at Eglin?", "a": "The 96th Test Wing carries out developmental test and evaluation of weapons, and the 33rd Fighter Wing trains F-35 pilots and maintainers. Eglin also hosts the 53rd Wing, the Army's 7th Special Forces Group, the Army Ranger Camp and the Navy EOD School, about 20,000 personnel in all (Military OneSource)." },
+        { "q": "Where do families live?", "a": "Start with where the sponsor works. Niceville and Valparaiso are about 4 to 8 minutes from the East Gate, Shalimar and Fort Walton Beach 4 to 15 minutes from the West Gate, and Crestview about 31 minutes away (no-traffic estimates); 60% of 7th Special Forces Group families live in Crestview (Military Times, 2024)." },
+        { "q": "How bad are hurricanes here?", "a": "Hurricane season runs June 1 to November 30. Hurricane Isaias made landfall near Destin on October 9, 2026 with 105 mph winds, and Okaloosa ordered Zones A and B to evacuate, covering Okaloosa Island and parts of coastal Fort Walton Beach, Destin, Mary Esther and Niceville. Check the zone for any address." },
+        { "q": "What is the BAH area?", "a": "Eglin AFB is MHA FL056. Use the calculator above for your grade." },
+        { "q": "What does Amendment 3 mean for buyers?", "a": "Florida voters passed Amendment 3 on November 3, 2026 (results unofficial until certified). It takes effect January 1, 2027 and raises the non-school homestead exemption, but owners who aren't permanent Florida residents by December 31, 2026 get a smaller exemption until their fifth year of receiving a homestead exemption." }
       ]
     },
     {
