@@ -48,9 +48,9 @@
           "The single biggest factor is the Hampton Roads Bridge-Tunnel (HRBT) on Interstate 64, the link to the Peninsula. It is being widened, with contract completion set for 2027, and a backup there can stall the whole drive. Living on the Peninsula, in Hampton or Newport News, makes the HRBT part of your routine. Portsmouth and Suffolk usually mean a tolled tunnel instead."
         ],
         "recommendations": [
-          { "who": "Shortest commute", "advice": "Live in Norfolk itself. From Ghent the drive is about 17 minutes with no traffic, with no tunnel." },
+          { "who": "Shortest commute", "advice": "Live in Norfolk itself. From Ghent the drive is about 20 minutes with no traffic by a map estimate, with no tunnel." },
           { "who": "Suburban feel, still no tunnel", "advice": "Virginia Beach (Kempsville) and Chesapeake (Greenbrier, Great Bridge) are about 25 to 35 minutes with no traffic, with no tunnel crossing." },
-          { "who": "Portsmouth and Suffolk", "advice": "The Downtown and Midtown tunnels are tolled: in 2026, $3.40 each way at peak times and $2.42 off-peak with E-ZPass, more without it. There is no military discount." },
+          { "who": "Portsmouth and Suffolk", "advice": "The Downtown and Midtown tunnels are tolled: in 2026, $3.40 each way at peak times and $2.42 off-peak with E-ZPass, rising to $3.52 and $2.50 on January 1, 2027, and more without E-ZPass. There is no military discount." },
           { "who": "Think hard before the Peninsula", "advice": "Hampton and Newport News can be more affordable, but a daily HRBT crossing through a work zone is the least predictable commute in the region." },
           { "who": "Check flood risk", "advice": "NOAA expects 23 to 27 high-tide flood days at Sewells Point between May 2026 and April 2027. Look up any address in Virginia's VFRIS flood map and price flood insurance before you offer." }
         ]
@@ -184,7 +184,7 @@
       "type": "faq",
       "data": [
           {"q": "Which side of the water should I live on?", "a": "Families who want a predictable drive usually live on the Southside without a tunnel: Norfolk, Virginia Beach or Chesapeake. See the commute section above."},
-          {"q": "Do the tunnels charge tolls?", "a": "The Downtown and Midtown tunnels between Portsmouth and Norfolk do: $3.40 at peak and $2.42 off-peak with E-ZPass in 2026, with no military discount. The HRBT's general lanes are free; it is being widened until 2027."},
+          {"q": "Do the tunnels charge tolls?", "a": "The Downtown and Midtown tunnels between Portsmouth and Norfolk do: $3.40 at peak and $2.42 off-peak with E-ZPass in 2026, rising to $3.52 and $2.50 on January 1, 2027, with no military discount. The HRBT's general lanes are free; it is being widened until 2027."},
           {"q": "Who runs on-base housing?", "a": "Liberty Military Housing (formerly Lincoln Military Housing). Call the Navy Housing Service Center at 757-445-2832."},
           {"q": "What is the BAH area?", "a": "Naval Station Norfolk is MHA VA298 (Norfolk/Portsmouth). Use the calculator above for your grade."}
       ]

@@ -49,7 +49,7 @@
         ],
         "recommendations": [
           { "who": "Closest to the unit", "advice": "Spring Lake is about 13 minutes from main post with no traffic. Fayetteville and Hope Mills were 22 and 27 minutes through the All American Gate, so allow more while it is closed." },
-          { "who": "Most house for the money", "advice": "Median sale prices, January to September 2026: Fayetteville $247,000, Hope Mills $263,250, Raeford $295,000 (Longleaf Pine REALTORS)." },
+          { "who": "Most house for the money", "advice": "Median sale prices, January to October 2026: Fayetteville $246,000, Hope Mills $262,000, Raeford $295,000 (Longleaf Pine REALTORS)." },
           { "who": "Schools and a quieter feel", "advice": "Moore County (Southern Pines, Pinehurst) had 13 of 23 schools rated A or B in 2025-26, with the highest prices and a 43 to 53 minute drive with no traffic." },
           { "who": "Check the tax rate", "advice": "Combined property tax in Cumberland County runs from 0.699 per $100 of value outside towns to 1.29 in Spring Lake. Check it for the exact address." },
           { "who": "On-post option", "advice": "Corvias runs on-post family housing, and living on post opens the DoDEA schools for pre-K through grade 8." }
@@ -105,7 +105,7 @@
       "title": "Schools",
       "type": "prose",
       "data": [
-        "Families who live on post can use the DoDEA schools there, which run from pre-K through grade 8. There is no DoDEA high school: on-post students are zoned for E.E. Smith High School, and Linden Oaks families for Overhills High School in Harnett County. From 2026-27, on-post students may choose another Cumberland County high school if it has space, but buses run only to E.E. Smith.",
+        "Families who live on post can use the DoDEA schools there, which run from pre-K through grade 8. There is no DoDEA high school: on-post students are zoned for E.E. Smith High School, and Linden Oaks families for Overhills High School in Harnett County. From 2026-27, on-post students can apply for one of nine other Cumberland County high schools with the district's election form and must renew the choice each year, but buses run only to E.E. Smith.",
         "Off post, the county sets the district. In the 2025-26 state results, Cumberland County had 20 of 79 schools rated low-performing (down from 27), Hoke 5 of 13, Harnett 6 of 25, and Moore 2 of 23, with 13 Moore schools rated A or B.",
         "Your assigned schools depend on your address, so confirm the district and campus with the School Liaison Office at (910) 432-1023."
       ],
