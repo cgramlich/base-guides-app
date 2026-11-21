@@ -1,0 +1,82 @@
+{
+  "slug": "188wg",
+  "schema_version": "0.1",
+  "name": "188 WG",
+  "short_name": "188 WG",
+  "branch": "National Guard",
+  "states": [
+    "AR"
+  ],
+  "tagline": "Towns, schools, rent and risk near 188 WG, from public data.",
+  "coords": {
+    "lat": 35.355,
+    "lng": -94.3607,
+    "label": "Fort Smith, AR"
+  },
+  "guide_kind": "data",
+  "_note": "Data guide made by scripts/guides/make_data_guide.py on 2026-11-21 from src/data/installations.json and data/installations/master-list.json. No hand research.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "National Guard",
+        "Location": "Fort Smith, AR",
+        "Housing allowance area": "AR012"
+      },
+      "source": {
+        "label": "Military OneSource installation directory",
+        "url": "https://installations.militaryonesource.mil/military-installation/188wg"
+      }
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "This guide is built from public data that we store and check each month: the official installation directory, the housing allowance rates, Zillow, the Census Bureau, HUD, FEMA and the national school list.",
+        "It does not yet cover gates, on-base housing, healthcare or shopping. Check those on the installation's official website before you move."
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "AR012",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA AR012",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      }
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "72903",
+        "label": "Fort Smith, AR"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "AR",
+        "city": "Fort Smith"
+      }
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": []
+    }
+  ]
+}

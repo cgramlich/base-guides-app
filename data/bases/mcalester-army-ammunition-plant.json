@@ -1,0 +1,83 @@
+{
+  "slug": "mcalester-army-ammunition-plant",
+  "schema_version": "0.1",
+  "name": "McAlester Army Ammunition Plant",
+  "short_name": "McAlester Army Ammunition Plant",
+  "branch": "U.S. Army",
+  "states": [
+    "OK"
+  ],
+  "tagline": "Towns, schools, rent and risk near McAlester Army Ammunition Plant, from public data.",
+  "coords": {
+    "lat": 34.9842,
+    "lng": -95.7867,
+    "label": "McAlester, OK"
+  },
+  "guide_kind": "data",
+  "_note": "Data guide made by scripts/guides/make_data_guide.py on 2026-11-21 from src/data/installations.json and data/installations/master-list.json. No hand research.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "McAlester, OK",
+        "Housing allowance area": "ZZ670",
+        "Size": "The official directory says it 1,768 personnel and one active-duty member."
+      },
+      "source": {
+        "label": "Military OneSource installation directory",
+        "url": "https://installations.militaryonesource.mil/military-installation/mcalester-army-ammunition-plant"
+      }
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "This guide is built from public data that we store and check each month: the official installation directory, the housing allowance rates, Zillow, the Census Bureau, HUD, FEMA and the national school list.",
+        "It does not yet cover gates, on-base housing, healthcare or shopping. Check those on the installation's official website before you move."
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "ZZ670",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA ZZ670",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      }
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "74501",
+        "label": "McAlester, OK"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "OK",
+        "city": "McAlester"
+      }
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": []
+    }
+  ]
+}

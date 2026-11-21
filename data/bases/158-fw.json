@@ -1,0 +1,82 @@
+{
+  "slug": "158-fw",
+  "schema_version": "0.1",
+  "name": "158 FW",
+  "short_name": "158 FW",
+  "branch": "National Guard",
+  "states": [
+    "VT"
+  ],
+  "tagline": "Towns, schools, rent and risk near 158 FW, from public data.",
+  "coords": {
+    "lat": 44.4449,
+    "lng": -73.1735,
+    "label": "South Burlington, VT"
+  },
+  "guide_kind": "data",
+  "_note": "Data guide made by scripts/guides/make_data_guide.py on 2026-11-21 from src/data/installations.json and data/installations/master-list.json. No hand research.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "National Guard",
+        "Location": "South Burlington, VT",
+        "Housing allowance area": "VT305"
+      },
+      "source": {
+        "label": "Military OneSource installation directory",
+        "url": "https://installations.militaryonesource.mil/military-installation/158-fw"
+      }
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "This guide is built from public data that we store and check each month: the official installation directory, the housing allowance rates, Zillow, the Census Bureau, HUD, FEMA and the national school list.",
+        "It does not yet cover gates, on-base housing, healthcare or shopping. Check those on the installation's official website before you move."
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "VT305",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA VT305",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      }
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "05403",
+        "label": "South Burlington, VT"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "VT",
+        "city": "South Burlington"
+      }
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": []
+    }
+  ]
+}

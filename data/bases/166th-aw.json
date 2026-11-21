@@ -1,0 +1,82 @@
+{
+  "slug": "166th-aw",
+  "schema_version": "0.1",
+  "name": "166th AW",
+  "short_name": "166th AW",
+  "branch": "National Guard",
+  "states": [
+    "DE"
+  ],
+  "tagline": "Towns, schools, rent and risk near 166th AW, from public data.",
+  "coords": {
+    "lat": 39.6951,
+    "lng": -76.0318,
+    "label": "New Castle, DE"
+  },
+  "guide_kind": "data",
+  "_note": "Data guide made by scripts/guides/make_data_guide.py on 2026-11-21 from src/data/installations.json and data/installations/master-list.json. No hand research.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "National Guard",
+        "Location": "New Castle, DE",
+        "Housing allowance area": "MD127"
+      },
+      "source": {
+        "label": "Military OneSource installation directory",
+        "url": "https://installations.militaryonesource.mil/military-installation/166th-aw"
+      }
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "This guide is built from public data that we store and check each month: the official installation directory, the housing allowance rates, Zillow, the Census Bureau, HUD, FEMA and the national school list.",
+        "It does not yet cover gates, on-base housing, healthcare or shopping. Check those on the installation's official website before you move."
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MD127",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA MD127",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      }
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "21911",
+        "label": "New Castle, DE"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "DE",
+        "city": "New Castle"
+      }
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": []
+    }
+  ]
+}

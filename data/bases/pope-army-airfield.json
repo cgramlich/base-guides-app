@@ -1,0 +1,82 @@
+{
+  "slug": "pope-army-airfield",
+  "schema_version": "0.1",
+  "name": "Pope Army Airfield",
+  "short_name": "Pope Army Airfield",
+  "branch": "U.S. Air Force",
+  "states": [
+    "NC"
+  ],
+  "tagline": "Towns, schools, rent and risk near Pope Army Airfield, from public data.",
+  "coords": {
+    "lat": 35.172,
+    "lng": -79.015,
+    "label": "Pope Army Airfield, NC"
+  },
+  "guide_kind": "data",
+  "_note": "Data guide made by scripts/guides/make_data_guide.py on 2026-11-21 from src/data/installations.json and data/installations/master-list.json. No hand research.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force",
+        "Location": "Pope Army Airfield, NC",
+        "Housing allowance area": "NC182"
+      },
+      "source": {
+        "label": "Military OneSource installation directory",
+        "url": "https://installations.militaryonesource.mil/military-installation/pope-army-airfield"
+      }
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "This guide is built from public data that we store and check each month: the official installation directory, the housing allowance rates, Zillow, the Census Bureau, HUD, FEMA and the national school list.",
+        "It does not yet cover gates, on-base housing, healthcare or shopping. Check those on the installation's official website before you move."
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NC182",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA NC182",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      }
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "28308",
+        "label": "Pope Army Airfield, NC"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "NC",
+        "city": "Pope Army Airfield"
+      }
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": []
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "slug": "marine-corps-mountain-warfare-training-center-mwtc",
+  "schema_version": "0.1",
+  "name": "Marine Corps Mountain Warfare Training Center (MWTC)",
+  "short_name": "Marine Corps Mountain Warfare Training Center (MWTC)",
+  "branch": "U.S. Marine Corps",
+  "states": [
+    "CA"
+  ],
+  "tagline": "Towns, schools, rent and risk near Marine Corps Mountain Warfare Training Center (MWTC), from public data.",
+  "coords": {
+    "lat": 38.2781,
+    "lng": -119.2748,
+    "label": "Bridgeport, CA"
+  },
+  "guide_kind": "data",
+  "_note": "Data guide made by scripts/guides/make_data_guide.py on 2026-11-21 from src/data/installations.json and data/installations/master-list.json. No hand research.",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Bridgeport, CA",
+        "Housing allowance area": "CA393",
+        "Size": "The official directory says it approximately 250 active duty Marines and Sailors."
+      },
+      "source": {
+        "label": "Military OneSource installation directory",
+        "url": "https://installations.militaryonesource.mil/military-installation/marine-corps-mountain-warfare-training-center-mwtc"
+      }
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "This guide is built from public data that we store and check each month: the official installation directory, the housing allowance rates, Zillow, the Census Bureau, HUD, FEMA and the national school list.",
+        "It does not yet cover gates, on-base housing, healthcare or shopping. Check those on the installation's official website before you move."
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA393",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA CA393",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      }
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "93517",
+        "label": "Bridgeport, CA"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "CA",
+        "city": "Bridgeport"
+      }
+    },
+    {
+      "id": "nearby",
+      "title": "Food & Things Nearby",
+      "type": "places_live",
+      "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
+      "picks": []
+    }
+  ]
+}
