@@ -9,8 +9,8 @@
   ],
   "tagline": "Towns, schools, rent and risk near USCG Base Ketchikan, from public data.",
   "coords": {
-    "lat": 55.6629,
-    "lng": -131.3663,
+    "lat": 55.333,
+    "lng": -131.625,
     "label": "Ketchikan, AK"
   },
   "guide_kind": "data",
