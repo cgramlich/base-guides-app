@@ -1,0 +1,79 @@
+{
+  "slug": "raf-menwith-hill",
+  "schema_version": "0.1",
+  "name": "RAF Menwith Hill",
+  "short_name": "RAF Menwith Hill",
+  "branch": "U.S. Air Force",
+  "states": [
+    "England"
+  ],
+  "tagline": "A community of more than 2,000 in Yorkshire; families rent in the local towns.",
+  "coords": {
+    "lat": 54.009,
+    "lng": -1.689,
+    "label": "Yorkshire, England"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (421st Air Base Squadron)",
+        "Location": "Yorkshire, England",
+        "Community": "More than 2,000 military, civilian, contractor and family members",
+        "Housing allowance": "OHA"
+      },
+      "source": {
+        "label": "501st CSW, 421st Air Base Squadron",
+        "url": "https://www.501csw.usafe.af.mil/Units/423d-ABG/421st-ABS/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "RAF Menwith Hill has no on-base family housing; families rent in the local community with help from the Military Housing Office. Visit the office within 48 hours of arrival to get housing and to confirm your Temporary Lodging Allowance.",
+        "Members on accompanied tours can ship their full household goods allowance, and the furnishings office lends appliances for the whole tour. Preferred school districts and pet limits are not accepted reasons to turn down available housing while on temporary lodging."
+      ],
+      "source": {
+        "label": "Air Force Housing, RAF Menwith Hill",
+        "url": "https://www.housing.af.mil/Home/Installations/RAF-Menwith-Hill/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "The United Kingdom is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "The housing office refers families to the School Liaison Office for school options. Ask your sponsor early, before you choose where to live."
+      ],
+      "source": {
+        "label": "Air Force Housing, RAF Menwith Hill",
+        "url": "https://www.housing.af.mil/Home/Installations/RAF-Menwith-Hill/"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}

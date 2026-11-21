@@ -1,0 +1,92 @@
+{
+  "slug": "coast-guard-air-station-borinquen",
+  "schema_version": "0.1",
+  "name": "Coast Guard Air Station Borinquen",
+  "short_name": "Air Station Borinquen",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "Puerto Rico"
+  ],
+  "tagline": "The Coast Guard air station on the former Ramey Air Force Base in Aguadilla, with Coast Guard housing and a DoDEA school.",
+  "coords": {
+    "lat": 18.4949,
+    "lng": -67.1294,
+    "label": "Aguadilla, Puerto Rico"
+  },
+  "coords_source": "approximate point on the former Ramey AFB, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Aguadilla, northwest Puerto Rico (former Ramey Air Force Base)",
+        "Housing allowance": "OHA (Puerto Rico counts as overseas)",
+        "School": "Ramey School, DoDEA, pre-K to grade 12"
+      },
+      "source": {
+        "label": "Coast Guard Air Station Borinquen",
+        "url": "https://www.atlanticarea.uscg.mil/Our-Organization/Southeast-District/Units/Air-Station-Borinquen/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard family housing is less than a mile from the air station, in two-, three- and four-bedroom homes with air conditioning, an electric stove and a refrigerator. Families bring their own washer and dryer.",
+        "Assignment to Coast Guard family housing is mandatory when a home is available and adequate."
+      ],
+      "source": {
+        "label": "Coast Guard Base Detachment Borinquen, Housing Department",
+        "url": "https://www.dcms.uscg.mil/Our-Organization/Operational-Logistics-Command-LOGCOM/Bases/Base-San-Juan/Base-Detachment-Borinquen/Personnel-Support-Department/Housing-Department/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "Puerto Rico is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Ramey School is a DoDEA school for pre-K through grade 12 in Aguadilla, for children of Coast Guard and other federal personnel. The installation's school page says registration is usually the last week of July and classes start in mid-August."
+      ],
+      "source": {
+        "label": "Air Station Borinquen, Ramey School",
+        "url": "https://www.atlanticarea.uscg.mil/Our-Organization/Southeast-District/Units/Air-Station-Borinquen/Departments/Admin-Department/Ramey-School/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "child_care",
+      "title": "Child care",
+      "type": "prose",
+      "data": [
+        "The Borinquen Child Development Center is licensed by the Coast Guard and accredited by NAEYC. It serves infants through pre-K and runs a program for school-age children."
+      ],
+      "source": {
+        "label": "Borinquen CDC",
+        "url": "https://www.atlanticarea.uscg.mil/Our-Organization/Southeast-District/Units/Air-Station-Borinquen/Departments/MWR/CDC/"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}

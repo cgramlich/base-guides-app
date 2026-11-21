@@ -1,0 +1,93 @@
+{
+  "slug": "usag-benelux-brussels",
+  "schema_version": "0.1",
+  "name": "USAG Benelux-Brussels",
+  "short_name": "Benelux-Brussels",
+  "branch": "U.S. Army",
+  "states": [
+    "Belgium"
+  ],
+  "tagline": "Duty at NATO Headquarters and the U.S. missions in Brussels; families rent on the Belgian economy.",
+  "coords": {
+    "lat": 50.879,
+    "lng": 4.425,
+    "label": "Brussels, Belgium"
+  },
+  "coords_source": "approximate point near NATO Headquarters, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (USAG Benelux)",
+        "Location": "Brussels, Belgium",
+        "Housing allowance": "OHA",
+        "School": "Brussels American School"
+      },
+      "source": {
+        "label": "Military OneSource, USAG Benelux-Brussels",
+        "url": "https://installations.militaryonesource.mil/military-installation/usag-benelux-brussels-schinnen"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "There are no U.S. government housing areas in Brussels; families lease on the local market. Houses are plentiful but rents are high, and the directory gives about $7,000 as a typical move-in cost (one month's rent plus a two-month deposit), much of it covered by entitlements.",
+        "Register with the Housing Office within two days of arrival, and never sign a lease, a letter of intent or even promise to rent without the office: Belgian rental law is complex. Most houses are 180 to 220 square meters with three to five bedrooms and no built-in closets.",
+        "There is no housing in Brussels designated for exceptional family members."
+      ],
+      "source": {
+        "label": "Military OneSource, Brussels housing",
+        "url": "https://installations.militaryonesource.mil/military-installation/usag-benelux-brussels-schinnen/housing/housing"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "Belgium is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend the Brussels American School. Check its bus service area before you choose where to live."
+      ],
+      "source": {
+        "label": "Military OneSource, USAG Benelux-Brussels",
+        "url": "https://installations.militaryonesource.mil/military-installation/usag-benelux-brussels-schinnen"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "healthcare",
+      "title": "Medical care",
+      "type": "prose",
+      "data": [
+        "The Brussels Army Health Clinic at NATO offers basic outpatient care, physicals, immunizations, a basic pharmacy, routine lab and X-ray. It is a primary care clinic by appointment. EFMP screening is mandatory before an assignment to Brussels, where EFMP resources are limited."
+      ],
+      "source": {
+        "label": "Military OneSource, Brussels health care",
+        "url": "https://installations.militaryonesource.mil/military-installation/usag-benelux-brussels-schinnen/health/health-care"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}

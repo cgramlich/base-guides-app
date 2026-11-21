@@ -1,0 +1,107 @@
+{
+  "slug": "pmrf-barking-sands",
+  "schema_version": "0.1",
+  "name": "Pacific Missile Range Facility Barking Sands",
+  "short_name": "PMRF Barking Sands",
+  "branch": "U.S. Navy",
+  "states": [
+    "HI"
+  ],
+  "tagline": "The Navy's missile test range on the west side of Kauai, with a small family community near Kekaha.",
+  "coords": {
+    "lat": 22.0228,
+    "lng": -159.785,
+    "label": "Kekaha, Kauai, HI"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Kekaha, west side of Kauai, Hawaii",
+        "Housing allowance area": "HI414 (Kauai County)",
+        "Size": "The State of Hawaii names it the third largest employer on Kauai, with nearly 1,000 defense personnel and contractors."
+      },
+      "source": {
+        "label": "Hawaii Defense Economy, Pacific Missile Range Facility",
+        "url": "https://defenseeconomy.hawaii.gov/pmrf-2/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "Accompanied service members can live in Navy public-private venture family housing on the installation or rent in the local community. The Navy Housing Service Center is in Building 1261 on Tartar Drive.",
+        "Unaccompanied housing is on Nohili Road."
+      ],
+      "source": {
+        "label": "Navy Housing, PMRF Barking Sands",
+        "url": "https://ffr.cnic.navy.mil/Navy-Housing/Housing-By-Region/Hawaii/PMRF-Barking-Sands/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "HI414",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA HI414",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      }
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA school on Kauai. Children attend Hawaii public schools; the installation's welcome packet names Kekaha Elementary School nearby and notes school bus service for family housing.",
+        "The packet is older, so confirm current schools and bus routes with the Hawaii State Department of Education and the installation's school liaison."
+      ],
+      "source": {
+        "label": "Welcome to the Pacific Missile Range Facility (welcome packet, older)",
+        "url": "https://cnrh.cnic.navy.mil/Portals/79/PMRF_Barking_Sands/Documents/welcome%20aboard.pdf"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "healthcare",
+      "title": "Medical care",
+      "type": "prose",
+      "data": [
+        "The installation's welcome packet says a base corpsman gives limited routine care to active duty members. Family members use civilian doctors on Kauai under TRICARE Prime Remote.",
+        "Confirm current medical support with the installation before you move."
+      ],
+      "source": {
+        "label": "Welcome to the Pacific Missile Range Facility (welcome packet, older)",
+        "url": "https://cnrh.cnic.navy.mil/Portals/79/PMRF_Barking_Sands/Documents/welcome%20aboard.pdf"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "getting_here",
+      "title": "Getting here",
+      "type": "prose",
+      "data": [
+        "PMRF is on the west side of Kauai near Kekaha. The installation guide's Getting Here page describes the route from Lihue Airport."
+      ],
+      "source": {
+        "label": "PMRF Getting Here",
+        "url": "https://cnrh.cnic.navy.mil/Installations/PMRF-Barking-Sands/About/Installation-Guide/Getting-Here/"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}

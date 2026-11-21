@@ -1,0 +1,105 @@
+{
+  "slug": "raf-croughton",
+  "schema_version": "0.1",
+  "name": "RAF Croughton",
+  "short_name": "RAF Croughton",
+  "branch": "U.S. Air Force",
+  "states": [
+    "England"
+  ],
+  "tagline": "Home of the 422nd Air Base Group, which also supports RAF Fairford and RAF Welford.",
+  "coords": {
+    "lat": 51.997,
+    "lng": -1.195,
+    "label": "Croughton, Northamptonshire, England"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (422nd Air Base Group)",
+        "Location": "Croughton, England; RAF Fairford about 47 miles and RAF Welford about 46 miles away",
+        "Housing allowance": "OHA"
+      },
+      "source": {
+        "label": "Military OneSource, RAF Croughton, RAF Fairford",
+        "url": "https://installations.militaryonesource.mil/military-installation/raf-croughton-raf-fairford"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "mission",
+      "title": "Mission",
+      "type": "prose",
+      "data": [
+        "The 422nd Air Base Group at RAF Croughton delivers worldwide communications, enables global strike operations and supports mission partners. Personnel at RAF Welford use RAF Croughton for their services."
+      ],
+      "source": {
+        "label": "Military OneSource, RAF Croughton, RAF Fairford",
+        "url": "https://installations.militaryonesource.mil/military-installation/raf-croughton-raf-fairford"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "Report to the Housing Management Office within two workdays of arrival. The office advises on Temporary Lodging Allowance, military family housing and renting in the community."
+      ],
+      "source": {
+        "label": "Military OneSource, Croughton housing",
+        "url": "https://installations.militaryonesource.mil/military-installation/raf-croughton-raf-fairford/housing/housing"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "The United Kingdom is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your first steps",
+      "type": "pcs_first30",
+      "data": {
+        "intro": [
+          "An overseas move has extra steps. Start these before you leave."
+        ],
+        "steps": [
+          {
+            "title": "Travel in civilian clothes",
+            "text": "All members moving to the United Kingdom travel in civilian attire."
+          },
+          {
+            "title": "Leave U.S. cordless devices behind",
+            "text": "U.S. cordless phones and baby monitors can interfere with UK emergency radio and are illegal there."
+          },
+          {
+            "title": "Report to the personnel flight",
+            "text": "Active duty members report in uniform on the first duty day after arrival, with their final out-processing documents."
+          },
+          {
+            "title": "Visit the Housing Management Office",
+            "text": "Within two workdays of arrival."
+          }
+        ]
+      }
+    }
+  ]
+}

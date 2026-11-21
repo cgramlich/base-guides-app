@@ -1,0 +1,80 @@
+{
+  "slug": "mcb-camp-blaz",
+  "schema_version": "0.1",
+  "name": "Marine Corps Base Camp Blaz",
+  "short_name": "Camp Blaz",
+  "branch": "U.S. Marine Corps",
+  "states": [
+    "Guam"
+  ],
+  "tagline": "A Marine Corps base in northern Guam; its family housing is through Andersen Air Force Base.",
+  "coords": {
+    "lat": 13.577,
+    "lng": -144.871,
+    "label": "Dededo, Guam"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Marine Corps",
+        "Location": "Northern Guam",
+        "Housing allowance": "OHA (Guam counts as overseas)",
+        "Family housing": "Through the Andersen Air Force Base Housing Service Center"
+      },
+      "source": {
+        "label": "Marine Corps Base Camp Blaz, New Joins",
+        "url": "https://www.mcbblaz.marines.mil/New-Joins/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "Marines with dependents live on base unless an exception to policy is approved; each request is reviewed case by case. Housing is assigned by family size and the homes available at the time; requests for a specific home or area are not considered.",
+        "Andersen Air Force Base is the main source of family housing for Camp Blaz. When you get orders, start your housing application with the Andersen Housing Service Center before you arrive.",
+        "Off-base housing with OHA is possible, but the base warns never to sign a lease before you work with the housing office."
+      ],
+      "source": {
+        "label": "Marine Corps Base Camp Blaz, New Joins",
+        "url": "https://www.mcbblaz.marines.mil/New-Joins/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "Guam is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Children attend the DoDEA schools on Guam. The base FAQ says current assessments do not expect the DoDEA schools on Andersen Air Force Base to run out of room as Camp Blaz grows. The Joint Region Marianas school liaison is the contact for school questions."
+      ],
+      "source": {
+        "label": "Camp Blaz, New Joins FAQ",
+        "url": "https://www.mcbblaz.marines.mil/New-Joins/FAQ/"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}
