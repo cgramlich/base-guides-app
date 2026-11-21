@@ -81,6 +81,21 @@
       "verified": "2026-06-25"
     },
     {
+      "id": "smaller_cg_units",
+      "title": "Coast Guard units in Valdez, Cordova and Homer",
+      "type": "prose",
+      "data": [
+        "Coast Guard members permanently assigned to Homer, Cordova, Valdez, Seward and Dutch Harbor are served by the housing office at Coast Guard Base Kodiak, which runs Coast Guard housing for those towns as well as Kodiak and Anchorage.",
+        "In Cordova, the Coast Guard has awarded a contract to repair its family housing community of 26 homes (13 duplexes), with the work expected to finish by the end of 2027.",
+        "These are small towns with few rentals. Ask the Base Kodiak housing office about Coast Guard housing before you look on the local market."
+      ],
+      "source": {
+        "label": "Coast Guard Base Kodiak Housing, and Coast Guard acquisition news on the Cordova housing contract (Coast Guard pages, read through search results 2026-11-21)",
+        "url": "https://www.dcms.uscg.mil/Our-Organization/Operational-Logistics-Command-LOGCOM/Bases/Base-Kodiak/Departments-Staffs/Personnel-Support/Base-Kodiak-Housing/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
       "id": "bah",
       "title": "BAH Calculator",
       "type": "bah",

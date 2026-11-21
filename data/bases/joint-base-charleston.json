@@ -1,8 +1,8 @@
 {
   "slug": "joint-base-charleston",
   "schema_version": "0.1",
-  "name": "Joint Base Charleston",
-  "short_name": "Charleston",
+  "name": "Joint Base Lindsey Graham",
+  "short_name": "JB Lindsey Graham",
   "branch": "U.S. Air Force / U.S. Navy",
   "states": ["SC"],
   "tagline": "C-17 airlift at Charleston AFB and Navy nuclear-power training at the Weapons Station, in the heart of the Lowcountry.",
@@ -16,6 +16,7 @@
       "title": "Quick Facts",
       "type": "facts",
       "data": {
+        "Formerly": "Joint Base Charleston, renamed Joint Base Lindsey Graham on August 10, 2026",
         "Branch": "Air Force + Navy (joint base)",
         "Location": "North Charleston & Goose Creek, SC",
         "Host wing": "628th Air Base Wing",

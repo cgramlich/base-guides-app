@@ -10,7 +10,7 @@
     { "slug": "joint-base-langley-eustis", "name": "Joint Base Langley-Eustis", "branch": "Air Force / Army", "state": "VA", "ready": true },
     { "slug": "rock-island-arsenal", "name": "Rock Island Arsenal", "branch": "U.S. Army", "state": "IL / IA", "ready": true },
     { "slug": "wright-patterson-afb", "name": "Wright-Patterson AFB", "branch": "U.S. Air Force", "state": "OH", "ready": true },
-    { "slug": "joint-base-charleston", "name": "Joint Base Charleston", "branch": "Air Force / Navy", "state": "SC", "ready": true },
+    { "slug": "joint-base-charleston", "name": "Joint Base Lindsey Graham", "branch": "Air Force / Navy", "state": "SC", "ready": true },
     { "slug": "nas-kingsville", "name": "NAS Kingsville", "branch": "U.S. Navy", "state": "TX", "ready": true },
     { "slug": "hill-afb", "name": "Hill AFB", "branch": "U.S. Air Force", "state": "UT", "ready": true },
     { "slug": "offutt-afb", "name": "Offutt AFB", "branch": "U.S. Air Force", "state": "NE", "ready": true },
@@ -437,6 +437,10 @@
     { "slug":  "nsa-naples-gaeta", "name":  "Gaeta", "branch":  "U.S. Navy", "state":  "Italy", "region":  "OCONUS", "ready":  true },
     { "slug":  "nsa-singapore", "name":  "Singapore", "branch":  "U.S. Navy", "state":  "Singapore", "region":  "OCONUS", "ready":  true },
     { "slug":  "cfa-chinhae", "name":  "Chinhae", "branch":  "U.S. Navy", "state":  "South Korea", "region":  "OCONUS", "ready":  true },
-    { "slug":  "moron-air-base", "name":  "Moron AB", "branch":  "U.S. Air Force", "state":  "Spain", "region":  "OCONUS", "ready":  true }
+    { "slug":  "moron-air-base", "name":  "Moron AB", "branch":  "U.S. Air Force", "state":  "Spain", "region":  "OCONUS", "ready":  true },
+    { "slug":  "coast-guard-sector-humboldt-bay", "name":  "CG Humboldt Bay", "branch":  "U.S. Coast Guard", "state":  "CA", "ready":  true },
+    { "slug":  "coast-guard-sector-northern-great-lakes", "name":  "CG Northern Great Lakes", "branch":  "U.S. Coast Guard", "state":  "MI", "ready":  true },
+    { "slug":  "coast-guard-sector-north-bend", "name":  "CG North Bend", "branch":  "U.S. Coast Guard", "state":  "OR", "ready":  true },
+    { "slug":  "usag-poland", "name":  "USAG Poland", "branch":  "U.S. Army", "state":  "Poland", "region":  "OCONUS", "ready":  true }
   ]
 }

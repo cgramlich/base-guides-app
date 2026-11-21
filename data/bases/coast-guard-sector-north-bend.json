@@ -1,0 +1,84 @@
+{
+  "slug": "coast-guard-sector-north-bend",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector/Air Station North Bend",
+  "short_name": "CG North Bend",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "OR"
+  ],
+  "tagline": "The Coast Guard sector and air station on Coos Bay on the southern Oregon coast.",
+  "coords": {
+    "lat": 43.4167,
+    "lng": -124.2433,
+    "label": "North Bend, OR"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_pass2_guides.py from the official pages named in each section (second missed-bases check).",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "North Bend, Coos Bay area, Oregon",
+        "Housing allowance area": "OR242 (Coos Bay)",
+        "Air station built": "1974"
+      },
+      "source": {
+        "label": "Coast Guard Air Station North Bend history, read through search results",
+        "url": "https://www.history.uscg.mil/browse-by-topic/Aviation/Article/3062091/air-station-north-bend-oregon/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "The Coast Guard relies mainly on local rentals and owns housing only where the community cannot meet its needs. Where Coast Guard housing exists, assignment is generally mandatory when a home is available.",
+        "We found no official count of Coast Guard homes at North Bend. Ask the sector's local housing officer about government housing before you sign a lease."
+      ],
+      "source": {
+        "label": "Coast Guard, FAQ on mandatory assignment to government housing (version 2.9, July 2025), read through search results",
+        "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/psc/psd/docs/pdf/FAQ%20for%20CG%20Mandatory%20Assignment%20to%20Government%20Housing%20(Version%202_9)_1.pdf"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "OR242",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA OR242 (Coos Bay, OR)",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      }
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "97459",
+        "label": "North Bend, OR"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "OR",
+        "city": "North Bend"
+      }
+    }
+  ]
+}

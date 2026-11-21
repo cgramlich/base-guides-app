@@ -1,0 +1,117 @@
+{
+  "slug": "usag-poland",
+  "schema_version": "0.1",
+  "name": "U.S. Army Garrison Poland (Camp Kosciuszko)",
+  "short_name": "USAG Poland",
+  "branch": "U.S. Army",
+  "states": [
+    "Poland"
+  ],
+  "tagline": "The Army garrison at Camp Kosciuszko in Poznan, home of V Corps (Forward), with tours open to some families.",
+  "coords": {
+    "lat": 52.4113,
+    "lng": 16.8962,
+    "label": "Poznan, Poland"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_pass2_guides.py from the official pages named in each section (second missed-bases check).",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Camp Kosciuszko, Poznan, Poland",
+        "Supported population": "About 5,600 (the garrison says it is constantly in flux)",
+        "Housing allowance": "OHA"
+      },
+      "source": {
+        "label": "Military OneSource, USAG Poland in-depth overview",
+        "url": "https://installations.militaryonesource.mil/in-depth-overview/usag-poland"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "mission",
+      "title": "Mission",
+      "type": "prose",
+      "data": [
+        "U.S. Army Garrison Poland runs base operations at 11 Army sites in Poland that support rotational units of U.S. Army Europe and Africa and V Corps. Camp Kosciuszko in Poznan is the permanent home of V Corps (Forward) headquarters and of the garrison, on a base shared with the Polish military."
+      ],
+      "source": {
+        "label": "Military OneSource, USAG Poland in-depth overview",
+        "url": "https://installations.militaryonesource.mil/in-depth-overview/usag-poland"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing and settling in",
+      "type": "prose",
+      "data": [
+        "Work with the garrison's Housing Office and use the military lease contract to limit upfront costs. Without it, expect to pay about three months' rent at the start: the first month, a security deposit and a realtor fee. The directory says entitlements should cover these except the deposit, which the landlord returns at the end of the lease minus any damage.",
+        "The garrison has no child care, child and youth programs or Exceptional Family Member Program enrollment."
+      ],
+      "source": {
+        "label": "Military OneSource, USAG Poland in-depth overview",
+        "url": "https://installations.militaryonesource.mil/in-depth-overview/usag-poland"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "Poland is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA school within commuting distance. DoDEA supports command-sponsored, school-age children in Poznan through the Non-DoD Schools Program (NDSP): a local international or Polish school, a boarding school, or home study.",
+        "Admission to an international school is not guaranteed and can be competitive, and special education services range from none to very limited. Register with the NDSP as soon as you have orders."
+      ],
+      "source": {
+        "label": "Military OneSource, USAG Poland education",
+        "url": "https://installations.militaryonesource.mil/military-installation/usag-poland/education/education"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your first steps",
+      "type": "pcs_first30",
+      "data": {
+        "intro": [
+          "Poland is an overseas move. These steps come from the installation directory."
+        ],
+        "steps": [
+          {
+            "title": "Register with the NDSP",
+            "text": "If you have school-age children, register with the Non-DoD Schools Program as soon as you receive orders, and read its orientation on eligibility and school options."
+          },
+          {
+            "title": "Let your sponsor arrange gate access",
+            "text": "The directory says your sponsor arranges gate access before you arrive."
+          },
+          {
+            "title": "Plan for upfront rent",
+            "text": "Use the Housing Office and the military lease contract, or plan for about three months' rent at signing."
+          }
+        ]
+      }
+    }
+  ]
+}
