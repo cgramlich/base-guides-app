@@ -1,0 +1,84 @@
+{
+  "slug": "coast-guard-sector-northern-great-lakes",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector Northern Great Lakes",
+  "short_name": "CG Northern Great Lakes",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "MI"
+  ],
+  "tagline": "The Coast Guard sector on the St. Marys River at Sault Ste. Marie, with Coast Guard family housing in town.",
+  "coords": {
+    "lat": 46.4977,
+    "lng": -84.3375,
+    "label": "Sault Ste. Marie, MI"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_pass2_guides.py from the official pages named in each section (second missed-bases check).",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "Sault Ste. Marie, Michigan (Upper Peninsula)",
+        "Housing allowance area": "MI145 (Sault Ste. Marie)",
+        "Coast Guard housing": "59 homes, duplex style and single family"
+      },
+      "source": {
+        "label": "Sector Northern Great Lakes, Services (Coast Guard Atlantic Area), read through search results",
+        "url": "https://www.atlanticarea.uscg.mil/Our-Organization/Great-Lakes-District/Units/Sector-Northern-Great-Lakes/Services/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "Coast Guard housing in Sault Ste. Marie is 59 homes, duplex style and single family. The sector's housing office helps with both Coast Guard housing and renting in town. Its housing page shows the amenities, floor plans and photos of each house style.",
+        "In the Coast Guard, assignment to government housing is generally mandatory when a home is available. Ask the housing office for a release before you rent in town."
+      ],
+      "source": {
+        "label": "Sector Northern Great Lakes, Housing (Coast Guard Atlantic Area), read through search results",
+        "url": "https://www.atlanticarea.uscg.mil/Our-Organization/Great-Lakes-District/Units/Sector-Northern-Great-Lakes/Services/Housing/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MI145",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA MI145 (Sault Ste. Marie, MI)",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      }
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "49783",
+        "label": "Sault Ste. Marie, MI"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "MI",
+        "city": "Sault Ste. Marie"
+      }
+    }
+  ]
+}

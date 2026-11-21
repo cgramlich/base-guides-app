@@ -1,0 +1,84 @@
+{
+  "slug": "coast-guard-sector-humboldt-bay",
+  "schema_version": "0.1",
+  "name": "Coast Guard Sector/Air Station Humboldt Bay",
+  "short_name": "CG Humboldt Bay",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "CA"
+  ],
+  "tagline": "The Coast Guard sector and air station on California's far north coast, with its own family housing near Eureka.",
+  "coords": {
+    "lat": 40.978,
+    "lng": -124.108,
+    "label": "McKinleyville, CA"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_pass2_guides.py from the official pages named in each section (second missed-bases check).",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard",
+        "Location": "McKinleyville, Humboldt County, California",
+        "Housing allowance area": "CA042 (Humboldt County)",
+        "Coast Guard family housing": "58 family homes (2 to 4 bedrooms) at the Eureka housing site"
+      },
+      "source": {
+        "label": "Sector/Air Station Humboldt Bay, Housing Information (Coast Guard Pacific Area), read through search results",
+        "url": "https://www.pacificarea.uscg.mil/Our-Organization/Southwest-District/District-Units/Sector-Air-Station-Humboldt-Bay/SHB-Housing-Information/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "The Eureka housing site has 58 family homes of 2 to 4 bedrooms and 8 homes for unaccompanied members. The sector also has 4 leased apartments in Crescent City and 7 family homes in Fort Bragg, California, for members of Station Noyo River.",
+        "In the Coast Guard, assignment to government housing is generally mandatory when a home is available. A release from the housing officer is needed before you rent in town and before BAH starts."
+      ],
+      "source": {
+        "label": "Sector/Air Station Humboldt Bay, Housing Information (Coast Guard Pacific Area), read through search results",
+        "url": "https://www.pacificarea.uscg.mil/Our-Organization/Southwest-District/District-Units/Sector-Air-Station-Humboldt-Bay/SHB-Housing-Information/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "CA042",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA CA042 (Humboldt County, CA)",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      }
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "95519",
+        "label": "McKinleyville, CA"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "CA",
+        "city": "McKinleyville"
+      }
+    }
+  ]
+}

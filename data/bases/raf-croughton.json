@@ -47,6 +47,20 @@
       "verified": "2026-11-21"
     },
     {
+      "id": "raf_fairford",
+      "title": "RAF Fairford",
+      "type": "prose",
+      "data": [
+        "RAF Fairford is about 47 miles southwest of RAF Croughton. It is home to the 501st Combat Support Wing and the 420th Air Base Squadron, and is U.S. Air Forces in Europe's only bomber forward operating location. The U.S. Air Force has used it nearly continuously since it was built for D-Day operations in 1944.",
+        "Personnel assigned to RAF Fairford use RAF Croughton for their services, including the Military and Family Readiness Center, so this guide covers both."
+      ],
+      "source": {
+        "label": "Military OneSource, RAF Croughton, RAF Fairford",
+        "url": "https://installations.militaryonesource.mil/military-installation/raf-croughton-raf-fairford"
+      },
+      "verified": "2026-11-21"
+    },
+    {
       "id": "housing",
       "title": "Housing",
       "type": "prose",
