@@ -1,0 +1,122 @@
+{
+  "slug": "fort-buchanan",
+  "schema_version": "0.1",
+  "name": "Fort Buchanan",
+  "short_name": "Fort Buchanan",
+  "branch": "U.S. Army",
+  "states": [
+    "Puerto Rico"
+  ],
+  "tagline": "The Army's garrison in the San Juan metro area, with DoDEA schools on post and a small family housing area.",
+  "coords": {
+    "lat": 18.413,
+    "lng": -66.12,
+    "label": "Guaynabo, Puerto Rico"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (U.S. Army Garrison Fort Buchanan)",
+        "Location": "San Juan metropolitan area, Puerto Rico",
+        "Housing allowance": "OHA (Puerto Rico counts as overseas)",
+        "Schools on post": "DoDEA Puerto Rico Community Schools"
+      },
+      "source": {
+        "label": "Military OneSource, Fort Buchanan",
+        "url": "https://installations.militaryonesource.mil/military-installation/fort-buchanan"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "Las Colinas, the family housing area on Fort Buchanan, has 29 two-, three- and four-bedroom homes of 1,100 to 1,600 square feet, within walking distance of the schools on post. The homes are concrete with flat roofs built for storms, and come with central air conditioning, major appliances, a backup generator and a solar water heater.",
+        "The directory gives a normal wait of up to 12 months, and up to two years for a four-bedroom home, of which there are only two. Local rentals rarely include appliances or central air conditioning.",
+        "Because Puerto Rico counts as overseas, members who live off post receive the Overseas Housing Allowance (OHA). The Family Housing Office in Building 34 on South Gate Road helps with listings, leases in English and Spanish, and landlord disputes. There is no unaccompanied housing on Fort Buchanan."
+      ],
+      "source": {
+        "label": "Military OneSource, Fort Buchanan housing",
+        "url": "https://installations.militaryonesource.mil/military-installation/fort-buchanan/housing/housing"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "Puerto Rico is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "DoDEA runs the Puerto Rico Community Schools on Fort Buchanan, part of its Americas Mid-Atlantic district. Families who come on a non-command-sponsored tour may lose eligibility for the schools on post and for family housing, so request concurrent travel."
+      ],
+      "source": {
+        "label": "Military OneSource, Fort Buchanan check-in",
+        "url": "https://installations.militaryonesource.mil/military-installation/fort-buchanan/base-essentials/check-in-procedures"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "healthcare",
+      "title": "Medical care",
+      "type": "prose",
+      "data": [
+        "Rodriguez Army Health Clinic on Fort Buchanan serves active duty members and their family members over 2 years old. Family members must be command sponsored to enroll in TRICARE Prime.",
+        "The San Juan area has more than ten major hospitals, and most accept TRICARE. There is one private dental clinic on post, and dental insurance must be bought for members and families."
+      ],
+      "source": {
+        "label": "Military OneSource, Fort Buchanan health care",
+        "url": "https://installations.militaryonesource.mil/military-installation/fort-buchanan/health/health-care"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your first steps",
+      "type": "pcs_first30",
+      "data": {
+        "intro": [
+          "Puerto Rico is an overseas move for allowances. These steps come from the installation directory."
+        ],
+        "steps": [
+          {
+            "title": "Request concurrent travel",
+            "text": "Before you leave your current station, ask your personnel office for concurrent travel of your family to Fort Buchanan. The directory warns that a non-command-sponsored tour can cost the family schools on post and family housing."
+          },
+          {
+            "title": "Report to the Welcome Center",
+            "text": "On arrival, report to your unit for the in-processing checklist, then to the Welcome Center at 152 Patriot Boulevard."
+          },
+          {
+            "title": "Visit the Family Housing Office",
+            "text": "Building 34, South Gate Road, for government housing, OHA and the Temporary Lodging Allowance."
+          },
+          {
+            "title": "Enroll in TRICARE",
+            "text": "At the TRICARE Service Center in the Welcome Center, with a copy of your orders."
+          }
+        ]
+      }
+    }
+  ]
+}

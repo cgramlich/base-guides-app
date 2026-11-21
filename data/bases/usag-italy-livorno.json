@@ -1,0 +1,116 @@
+{
+  "slug": "usag-italy-livorno",
+  "schema_version": "0.1",
+  "name": "USAG Italy, Darby Military Community (Livorno)",
+  "short_name": "Livorno (Camp Darby)",
+  "branch": "U.S. Army",
+  "states": [
+    "Italy"
+  ],
+  "tagline": "Camp Darby on the Tuscan coast between Pisa and Livorno, with a DoDEA school for pre-K to grade 8.",
+  "coords": {
+    "lat": 43.676,
+    "lng": 10.337,
+    "label": "Camp Darby, near Livorno and Pisa, Italy"
+  },
+  "coords_source": "approximate point on Camp Darby, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army (USAG Italy)",
+        "Location": "Camp Darby, between Pisa and Livorno, Tuscany",
+        "Housing allowance": "OHA (government-leased housing first, see below)",
+        "School": "Livorno Elementary/Middle School, DoDEA, pre-K to grade 8"
+      },
+      "source": {
+        "label": "Military OneSource, USAG Italy - DMC",
+        "url": "https://installations.militaryonesource.mil/military-installation/usag-italy-darby-military-community"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "Contact the housing office (Building 725, above the Community Bank) within two business days of arrival, or the Temporary Lodging Allowance is not paid. Accompanied Soldiers of all grades must take available government quarters for their rank and bedroom count; government-leased quarters are offered first.",
+        "Off-post homes range from one to four bedrooms and can be scarce in some seasons. Italian homes are smaller, often come furnished, and rarely have closets; wardrobes are lent free. An Italian agency fee is about one month's rent plus 22% VAT, reimbursed only when the housing office has nothing suitable."
+      ],
+      "source": {
+        "label": "Military OneSource, Darby housing",
+        "url": "https://installations.militaryonesource.mil/military-installation/usag-italy-darby-military-community/housing/housing"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "Italy is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "DoDEA runs one school in Livorno, for pre-K through grade 8. Ask the school liaison about high school options before you move."
+      ],
+      "source": {
+        "label": "DoDEA, Livorno Community Schools",
+        "url": "https://www.dodea.edu/europe/eu-south/livorno-community-schools"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "healthcare",
+      "title": "Medical care",
+      "type": "prose",
+      "data": [
+        "There is no military medical clinic at Camp Darby. Care is given by a local Italian clinic or local hospitals, with patient liaisons for translation. Family members generally cannot be seen at Aviano or Vicenza."
+      ],
+      "source": {
+        "label": "Military OneSource, Darby health care",
+        "url": "https://installations.militaryonesource.mil/military-installation/usag-italy-darby-military-community/health/health-care"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your first steps",
+      "type": "pcs_first30",
+      "data": {
+        "intro": [
+          "An overseas move has extra steps. Start these before you leave."
+        ],
+        "steps": [
+          {
+            "title": "Get a visa for each family member",
+            "text": "The Italian 'Missione' visa is issued only by Italian consulates outside Italy. Without it, family members cannot stay legally in Italy for more than 90 days."
+          },
+          {
+            "title": "Do not ship weapons or large U.S. appliances",
+            "text": "Weapons are prohibited; Housing provides major 220-volt appliances for the tour."
+          },
+          {
+            "title": "Contact the housing office within two business days",
+            "text": "Building 725, Camp Darby."
+          }
+        ]
+      }
+    }
+  ]
+}

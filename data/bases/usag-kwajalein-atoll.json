@@ -1,0 +1,73 @@
+{
+  "slug": "usag-kwajalein-atoll",
+  "schema_version": "0.1",
+  "name": "U.S. Army Garrison Kwajalein Atoll",
+  "short_name": "Kwajalein",
+  "branch": "U.S. Army",
+  "states": [
+    "Marshall Islands"
+  ],
+  "tagline": "A small island garrison in the Marshall Islands, with Army family housing and its own schools.",
+  "coords": {
+    "lat": 8.72,
+    "lng": 167.731,
+    "label": "Kwajalein Atoll, Republic of the Marshall Islands"
+  },
+  "coords_source": "approximate point on Kwajalein Island, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army",
+        "Location": "Kwajalein Atoll, Republic of the Marshall Islands",
+        "Community": "The garrison describes a small town with K-12 schools, medical and dental care, housing and recreation"
+      },
+      "source": {
+        "label": "U.S. Army Garrison Kwajalein Atoll",
+        "url": "https://home.army.mil/kwajalein/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "This guide is written from the installation's official pages and the Military OneSource installation directory. It covers what those pages say about the mission, housing, schools and medical care.",
+        "Rules and offices change. Confirm the details with your sponsor and the housing office before you move."
+      ],
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "The garrison has Army family housing, and the Army has been rebuilding and replacing older homes in recent years. New arrivals are told to contact their on-island sponsor about transportation, housing and schools before they arrive."
+      ],
+      "source": {
+        "label": "Army Family Housing revitalization at USAG-KA",
+        "url": "https://www.army.mil/article/252479/army_family_housing_revitalization_continues_on_usag_ka"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "The garrison describes K-12 schools on the island. Ask your sponsor for enrollment details."
+      ],
+      "source": {
+        "label": "Welcome to USAG-KA",
+        "url": "https://www.army.mil/article/149373/welcome_to_usag_ka"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}

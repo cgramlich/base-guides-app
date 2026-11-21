@@ -1,0 +1,91 @@
+{
+  "slug": "moron-air-base",
+  "schema_version": "0.1",
+  "name": "Moron Air Base",
+  "short_name": "Moron AB",
+  "branch": "U.S. Air Force",
+  "states": [
+    "Spain"
+  ],
+  "tagline": "A small U.S. Air Force community near Seville, with a DoDEA elementary/middle school and no on-base hospital.",
+  "coords": {
+    "lat": 37.175,
+    "lng": -5.616,
+    "label": "Moron de la Frontera, near Seville, Spain"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (496th Air Base Squadron)",
+        "Location": "Moron de la Frontera, Andalusia, Spain",
+        "Housing allowance": "OHA",
+        "Medical": "Aid station for military members only"
+      },
+      "source": {
+        "label": "Military OneSource, Moron AB",
+        "url": "https://installations.militaryonesource.mil/military-installation/moron-ab"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "Families rent in the Spanish community with OHA. The furnishings office lends furniture for 90 days until household goods arrive, and 220-volt appliances, wardrobes and kitchen cabinets for the whole tour."
+      ],
+      "source": {
+        "label": "Military OneSource, Moron AB housing",
+        "url": "https://installations.militaryonesource.mil/military-installation/moron-ab/housing/housing"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "Spain is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "The base DoDEA school is elementary/middle only and cannot currently support students with an IEP or other special needs. Families with high-school-age children should contact the School Liaison Program Manager before arrival to weigh the options."
+      ],
+      "source": {
+        "label": "Military OneSource, Moron AB",
+        "url": "https://installations.militaryonesource.mil/military-installation/moron-ab"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "healthcare",
+      "title": "Medical care",
+      "type": "prose",
+      "data": [
+        "There is no on-base hospital or pharmacy; the medical aid station supports military members only. Families use local providers who accept TRICARE Overseas, after getting an authorization letter. The base has an arrangement with Santa Angela de la Cruz Viamed Hospital in Seville, and Naval Station Rota's hospital sees families on a space-available basis."
+      ],
+      "source": {
+        "label": "Military OneSource, Moron AB health care",
+        "url": "https://installations.militaryonesource.mil/military-installation/moron-ab/health/health-care"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}

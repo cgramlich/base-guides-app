@@ -1,0 +1,79 @@
+{
+  "slug": "nsa-naples-gaeta",
+  "schema_version": "0.1",
+  "name": "NSA Naples Department Gaeta",
+  "short_name": "Gaeta",
+  "branch": "U.S. Navy",
+  "states": [
+    "Italy"
+  ],
+  "tagline": "Support base for the Sixth Fleet flagship USS Mount Whitney, on the coast of Lazio, Italy.",
+  "coords": {
+    "lat": 41.213,
+    "lng": 13.571,
+    "label": "Gaeta, Italy"
+  },
+  "coords_source": "approximate point on the Gaeta pier, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy (Naval Support Activity Naples)",
+        "Location": "Gaeta, Lazio, Italy",
+        "Role": "Support to the Sixth Fleet flagship USS Mount Whitney and visiting ships",
+        "Housing allowance": "OHA"
+      },
+      "source": {
+        "label": "Military OneSource, NSA Naples Department Gaeta",
+        "url": "https://installations.militaryonesource.mil/military-installation/naval-support-activity-naples-department-gaeta"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "Families lease on the local market through the Housing Office on the pier, in Building 752, which keeps listings. Homes are apartments and town houses in Gaeta and villas in the countryside; towns such as Formia, Scauri and Minturno offer larger homes that fit U.S. furniture.",
+        "Expect to pay the first and last month's rent and a security deposit in cash, in euros, before move-in. OHA includes an amount for utilities."
+      ],
+      "source": {
+        "label": "Military OneSource, Gaeta",
+        "url": "https://installations.militaryonesource.mil/military-installation/naval-support-activity-naples-department-gaeta"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "Italy is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "Gaeta is served by the DoDEA schools at NSA Naples. The directory notes that new arrivals assigned to Gaeta units can no longer use the DoDEA school bus from Gaeta, and that families with school-age children are encouraged to live at the Naples support site or on a current bus route. Talk to the school liaison before you choose where to live."
+      ],
+      "source": {
+        "label": "Military OneSource, Gaeta schools",
+        "url": "https://installations.militaryonesource.mil/military-installation/naval-support-activity-naples-department-gaeta/education/overseas-schools"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}

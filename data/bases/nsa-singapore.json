@@ -1,0 +1,88 @@
+{
+  "slug": "nsa-singapore",
+  "schema_version": "0.1",
+  "name": "Naval Support Activity Singapore",
+  "short_name": "Singapore",
+  "branch": "U.S. Navy",
+  "states": [
+    "Singapore"
+  ],
+  "tagline": "Shore support for the Navy's logistics hub in Southeast Asia, with families in international schools.",
+  "coords": {
+    "lat": 1.463,
+    "lng": 103.834,
+    "label": "Sembawang, Singapore"
+  },
+  "coords_source": "approximate point at Sembawang, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Sembawang, Singapore",
+        "Established": "2007",
+        "Major command": "Commander, Task Force 73 / Logistics Group Western Pacific"
+      },
+      "source": {
+        "label": "Military OneSource, NSA Singapore major units",
+        "url": "https://installations.militaryonesource.mil/military-installation/naval-support-activity-singapore/base-essentials/major-units"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "The directory mentions government-leased housing at Sembawang, with a limit of two pets per home. Ask your sponsor how housing is assigned and what is available when you arrive."
+      ],
+      "source": {
+        "label": "Military OneSource, NSA Singapore",
+        "url": "https://installations.militaryonesource.mil/military-installation/naval-support-activity-singapore"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "There is no DoDEA school in Singapore. Families can enroll children in Singapore's international schools, but a U.S. military connection does not guarantee a place: apply early. Programs for special needs are very limited."
+      ],
+      "source": {
+        "label": "Military OneSource, NSA Singapore schools",
+        "url": "https://installations.militaryonesource.mil/military-installation/naval-support-activity-singapore/education/overseas-schools"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "pcs_first_30",
+      "title": "Your first steps",
+      "type": "pcs_first30",
+      "data": {
+        "intro": [
+          "An overseas move has extra steps. Start these before you leave."
+        ],
+        "steps": [
+          {
+            "title": "Request a sponsor",
+            "text": "Through your gaining command; the sponsor helps with schools, pet import and temporary lodging."
+          },
+          {
+            "title": "Start pet import early",
+            "text": "Most pets are quarantined at least 10 days, quarantine space books up from June to August, and some breeds cannot be imported."
+          },
+          {
+            "title": "Get passports",
+            "text": "Every member and family member needs a valid passport before travel."
+          }
+        ]
+      }
+    }
+  ]
+}
