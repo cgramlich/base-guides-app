@@ -1,0 +1,92 @@
+{
+  "slug": "cfa-chinhae",
+  "schema_version": "0.1",
+  "name": "Commander Fleet Activities Chinhae",
+  "short_name": "Chinhae",
+  "branch": "U.S. Navy",
+  "states": [
+    "South Korea"
+  ],
+  "tagline": "The Navy's base on Korea's southern coast near Busan, with a DoDEA school and a satellite clinic.",
+  "coords": {
+    "lat": 35.14,
+    "lng": 128.663,
+    "label": "Changwon (Jinhae), South Korea"
+  },
+  "coords_source": "approximate point on the installation, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Navy",
+        "Location": "Chinhae (Jinhae), on the southern coast of South Korea",
+        "Arrival airport": "Gimhae (Busan), about 45 to 60 minutes away",
+        "School": "Charles Turner Joy Elementary/Middle School, DoDEA"
+      },
+      "source": {
+        "label": "Military OneSource, CFA Chinhae",
+        "url": "https://installations.militaryonesource.mil/military-installation/commander-fleet-activities-chinhae/base-essentials/sponsorship"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "Command-sponsored families start the housing process by email with the housing office; the directory says a house is usually assigned in about a week. Unaccompanied members are assigned housing on arrival.",
+        "To be command sponsored, family members need Dependent Entry Approval and must be on the official orders. Family members not on orders can enter only on a 90-day tourist visa."
+      ],
+      "source": {
+        "label": "Military OneSource, CFA Chinhae",
+        "url": "https://installations.militaryonesource.mil/military-installation/commander-fleet-activities-chinhae/base-essentials/check-in-procedures"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "South Korea is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "DoDEA lists Charles Turner Joy Elementary/Middle School in Chinhae. Ask the school liaison about grades served and high school options."
+      ],
+      "source": {
+        "label": "DoDEA, National Blue Ribbon Schools",
+        "url": "https://www.dodea.edu/education/school-awards/national-blue-ribbon-schools"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "healthcare",
+      "title": "Medical care",
+      "type": "prose",
+      "data": [
+        "The clinic at Chinhae is a satellite of U.S. Naval Hospital Yokosuka. It gives outpatient adult, pediatric and women's health care, with X-ray, some lab tests and a small pharmacy. Inpatient care is at accredited Korean hospitals. Routine pregnancies get prenatal care at the clinic, with delivery at a Korean hospital. Overseas screening is required for members and family members before the move."
+      ],
+      "source": {
+        "label": "Military OneSource, CFA Chinhae health care",
+        "url": "https://installations.militaryonesource.mil/military-installation/commander-fleet-activities-chinhae/health/health-care"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}

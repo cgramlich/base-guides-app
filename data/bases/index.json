@@ -422,6 +422,21 @@
     { "slug":  "uscg-miami-beach", "name":  "USCG Miami Beach", "branch":  "U.S. Coast Guard", "state":  "FL", "ready":  true },
     { "slug":  "ussouthcom-u-s-army-garrison-miami", "name":  "USAG Miami", "branch":  "U.S. Army", "state":  "FL", "ready":  true },
     { "slug":  "vance-afb", "name":  "Vance AFB", "branch":  "U.S. Air Force", "state":  "OK", "ready":  true },
-    { "slug":  "westover-arb", "name":  "Westover ARB", "branch":  "U.S. Air Force", "state":  "MA", "ready":  true }
+    { "slug":  "westover-arb", "name":  "Westover ARB", "branch":  "U.S. Air Force", "state":  "MA", "ready":  true },
+    { "slug":  "pmrf-barking-sands", "name":  "PMRF Barking Sands", "branch":  "U.S. Navy", "state":  "HI", "ready":  true },
+    { "slug":  "fort-buchanan", "name":  "Fort Buchanan", "branch":  "U.S. Army", "state":  "Puerto Rico", "region":  "OCONUS", "ready":  true },
+    { "slug":  "coast-guard-air-station-borinquen", "name":  "Air Station Borinquen", "branch":  "U.S. Coast Guard", "state":  "Puerto Rico", "region":  "OCONUS", "ready":  true },
+    { "slug":  "mcb-camp-blaz", "name":  "Camp Blaz", "branch":  "U.S. Marine Corps", "state":  "Guam", "region":  "OCONUS", "ready":  true },
+    { "slug":  "usag-kwajalein-atoll", "name":  "Kwajalein", "branch":  "U.S. Army", "state":  "Marshall Islands", "region":  "OCONUS", "ready":  true },
+    { "slug":  "raf-alconbury-molesworth", "name":  "RAF Alconbury", "branch":  "U.S. Air Force", "state":  "England", "region":  "OCONUS", "ready":  true },
+    { "slug":  "usag-benelux-brunssum", "name":  "Benelux-Brunssum", "branch":  "U.S. Army / U.S. Air Force", "state":  "Netherlands", "region":  "OCONUS", "ready":  true },
+    { "slug":  "usag-benelux-brussels", "name":  "Benelux-Brussels", "branch":  "U.S. Army", "state":  "Belgium", "region":  "OCONUS", "ready":  true },
+    { "slug":  "raf-croughton", "name":  "RAF Croughton", "branch":  "U.S. Air Force", "state":  "England", "region":  "OCONUS", "ready":  true },
+    { "slug":  "raf-menwith-hill", "name":  "RAF Menwith Hill", "branch":  "U.S. Air Force", "state":  "England", "region":  "OCONUS", "ready":  true },
+    { "slug":  "usag-italy-livorno", "name":  "Livorno (Camp Darby)", "branch":  "U.S. Army", "state":  "Italy", "region":  "OCONUS", "ready":  true },
+    { "slug":  "nsa-naples-gaeta", "name":  "Gaeta", "branch":  "U.S. Navy", "state":  "Italy", "region":  "OCONUS", "ready":  true },
+    { "slug":  "nsa-singapore", "name":  "Singapore", "branch":  "U.S. Navy", "state":  "Singapore", "region":  "OCONUS", "ready":  true },
+    { "slug":  "cfa-chinhae", "name":  "Chinhae", "branch":  "U.S. Navy", "state":  "South Korea", "region":  "OCONUS", "ready":  true },
+    { "slug":  "moron-air-base", "name":  "Moron AB", "branch":  "U.S. Air Force", "state":  "Spain", "region":  "OCONUS", "ready":  true }
   ]
 }

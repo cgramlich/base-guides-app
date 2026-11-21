@@ -1,0 +1,106 @@
+{
+  "slug": "raf-alconbury-molesworth",
+  "schema_version": "0.1",
+  "name": "RAF Alconbury and RAF Molesworth",
+  "short_name": "RAF Alconbury",
+  "branch": "U.S. Air Force",
+  "states": [
+    "England"
+  ],
+  "tagline": "Home of the 501st Combat Support Wing in Cambridgeshire, with family housing and DoDEA schools on base.",
+  "coords": {
+    "lat": 52.364,
+    "lng": -0.221,
+    "label": "Huntingdon, Cambridgeshire, England"
+  },
+  "coords_source": "approximate point on RAF Alconbury, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Air Force (501st Combat Support Wing)",
+        "Location": "Near Huntingdon, Cambridgeshire, England",
+        "Housing allowance": "OHA",
+        "Schools": "Alconbury Elementary (PK-5) and Alconbury Middle/High (6-12), DoDEA"
+      },
+      "source": {
+        "label": "Military OneSource, RAF Alconbury, RAF Molesworth",
+        "url": "https://installations.militaryonesource.mil/military-installation/raf-alconbury-raf-molesworth"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "mission",
+      "title": "Mission",
+      "type": "prose",
+      "data": [
+        "The 501st Combat Support Wing supports nearly 70 U.S. military and government agencies across the United Kingdom and Norway, including intelligence analysis units at RAF Molesworth and the bomber location at RAF Fairford."
+      ],
+      "source": {
+        "label": "Military OneSource, RAF Alconbury, RAF Molesworth",
+        "url": "https://installations.militaryonesource.mil/military-installation/raf-alconbury-raf-molesworth"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "The Alconbury Housing Office manages 150 family homes on RAF Alconbury and nine at Brampton, about 7 miles away. The directory gives a wait of about six to 12 months or more. Every active duty member must report to the Housing Office within two days of arrival.",
+        "The local community has housing for every budget, from village cottages to houses and flats in Cambridge and Peterborough. The Housing Office lists inspected off-base homes of two to five bedrooms."
+      ],
+      "source": {
+        "label": "Military OneSource, Alconbury housing",
+        "url": "https://installations.militaryonesource.mil/military-installation/raf-alconbury-raf-molesworth/housing/housing"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "The United Kingdom is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "DoDEA runs Alconbury Elementary School (pre-K to grade 5) and Alconbury Middle/High School (grades 6 to 12) on RAF Alconbury."
+      ],
+      "source": {
+        "label": "DoDEA, Alconbury Community Schools",
+        "url": "https://www.dodea.edu/europe/eu-west/alconbury-community-schools"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "healthcare",
+      "title": "Medical care",
+      "type": "prose",
+      "data": [
+        "The 423d Medical Squadron runs an outpatient clinic with medical, mental health and dental care. There is no inpatient care, emergency room, ambulance, after-hours care, imaging or physical therapy at Alconbury. Pregnancy care is at RAF Lakenheath or civilian facilities, and specialty care is by referral.",
+        "Under the NATO Status of Forces Agreement, U.S. members and families in the UK can use the National Health Service free of charge, including its emergency departments."
+      ],
+      "source": {
+        "label": "Military OneSource, Alconbury health care",
+        "url": "https://installations.militaryonesource.mil/military-installation/raf-alconbury-raf-molesworth/health/health-care"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}

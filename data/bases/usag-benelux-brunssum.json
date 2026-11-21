@@ -1,0 +1,105 @@
+{
+  "slug": "usag-benelux-brunssum",
+  "schema_version": "0.1",
+  "name": "USAG Benelux-Brunssum and NATO Air Base Geilenkirchen",
+  "short_name": "Benelux-Brunssum",
+  "branch": "U.S. Army / U.S. Air Force",
+  "states": [
+    "Netherlands"
+  ],
+  "tagline": "NATO duty on the Dutch-German border: Joint Force Command Brunssum and the NATO AWACS base at Geilenkirchen.",
+  "coords": {
+    "lat": 50.944,
+    "lng": 5.971,
+    "label": "Brunssum, Netherlands (Geilenkirchen, Germany, nearby)"
+  },
+  "coords_source": "approximate point at Joint Force Command Brunssum, from public maps",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-21 by scripts/guides/write_missed_guides.py from the official pages named in each section. Not in the first installation list; added after the missed-bases check.",
+  "last_full_review": "2026-11-21",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Army garrison; U.S. Air Force element at NATO Air Base Geilenkirchen",
+        "Location": "Brunssum, Netherlands, and Geilenkirchen, Germany, about 10 minutes apart",
+        "Housing allowance": "OHA (government-leased housing first, see below)"
+      },
+      "source": {
+        "label": "Military OneSource, USAG Benelux-Brunssum",
+        "url": "https://installations.militaryonesource.mil/military-installation/united-states-army-garrison-benelux-schinnen"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "mission",
+      "title": "Mission",
+      "type": "prose",
+      "data": [
+        "USAG Benelux-Brunssum gives Army base support to the U.S. community at NATO in the Netherlands and northern Germany. Many service member support offices are run by Army and Air Force personnel at Joint Force Command Brunssum and at NATO Air Base Geilenkirchen, home of the NATO E-3A airborne early warning component."
+      ],
+      "source": {
+        "label": "Military OneSource, Geilenkirchen NATO Air Base",
+        "url": "https://installations.militaryonesource.mil/military-installation/geilenkirchen-nato-air-base"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing",
+      "title": "Housing",
+      "type": "prose",
+      "data": [
+        "At Brunssum, accompanied members of all grades are assigned to government-leased housing until it is full. These homes are in Dutch towns among local neighbors. A private rental is authorized only if no government-leased home is available within 30 days of arrival. Report to the Housing Office within two workdays of arrival.",
+        "Dutch homes are often smaller, with narrow stairs; the directory gives 15 by 12 feet as a common size for the largest bedroom. Housing issues 220-volt washers, dryers, freezers and refrigerators.",
+        "Geilenkirchen has no on-base housing; personnel there live in German or Dutch villages within a 10 to 30 minute drive."
+      ],
+      "source": {
+        "label": "Military OneSource, Brunssum housing",
+        "url": "https://installations.militaryonesource.mil/military-installation/united-states-army-garrison-benelux-schinnen/housing/housing"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "housing_allowance",
+      "title": "Housing allowance (OHA, not BAH)",
+      "type": "prose",
+      "data": [
+        "The Netherlands and Germany is an overseas location for housing allowances. Service members who live off base receive the Overseas Housing Allowance (OHA) instead of BAH. OHA is set by rank, dependents and the actual rent, up to a ceiling, with separate amounts for utilities and move-in costs.",
+        "Check your own figures with the official OHA calculator before you sign a lease."
+      ],
+      "source": {
+        "label": "Defense Travel Management Office, Overseas Housing Allowance",
+        "url": "https://www.travel.dod.mil/Allowances/Overseas-Housing-Allowance/"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "schools",
+      "title": "Schools",
+      "type": "prose",
+      "data": [
+        "The directory mentions the Allied Forces Northern Europe (AFNORTH) International School in the Brunssum community. Ask your sponsor and the school liaison office which school your children will attend."
+      ],
+      "source": {
+        "label": "Military OneSource, USAG Benelux-Brunssum health and community",
+        "url": "https://installations.militaryonesource.mil/military-installation/united-states-army-garrison-benelux-schinnen/health/health-care"
+      },
+      "verified": "2026-11-21"
+    },
+    {
+      "id": "healthcare",
+      "title": "Medical care",
+      "type": "prose",
+      "data": [
+        "The U.S. clinic at Geilenkirchen is the main health care provider for active duty members and families in the tri-border area. It is not a 24-hour clinic and has no emergency room; emergencies go through the Dutch emergency medical services. Families are often referred to English-speaking local specialists."
+      ],
+      "source": {
+        "label": "Military OneSource, Brunssum health care",
+        "url": "https://installations.militaryonesource.mil/military-installation/united-states-army-garrison-benelux-schinnen/health/health-care"
+      },
+      "verified": "2026-11-21"
+    }
+  ]
+}
