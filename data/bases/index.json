@@ -292,7 +292,7 @@
     { "slug":  "edwards-afb", "name":  "Edwards AFB", "branch":  "U.S. Air Force", "state":  "CA", "ready":  true },
     { "slug":  "eielson-afb", "name":  "Eielson AFB", "branch":  "U.S. Air Force", "state":  "AK", "ready":  true },
     { "slug":  "fairchild-afb", "name":  "Fairchild AFB", "branch":  "U.S. Air Force", "state":  "WA", "ready":  true },
-    { "slug":  "fort-george-g-meade-navy", "name":  "Fort George G. Meade - Navy", "branch":  "U.S. Navy", "state":  "MD", "ready":  true },
+    { "slug":  "fort-george-g-meade-navy", "name":  "Fort George G. Meade - Navy", "branch":  "U.S. Navy", "state":  "MD", "ready":  false },
     { "slug":  "fort-greely", "name":  "USAG Alaska, Greely", "branch":  "U.S. Army", "state":  "AK", "ready":  true },
     { "slug":  "fort-hamilton", "name":  "Fort Hamilton", "branch":  "U.S. Army", "state":  "NY", "ready":  true },
     { "slug":  "fort-mccoy", "name":  "Fort McCoy", "branch":  "U.S. Army", "state":  "WI", "ready":  true },
