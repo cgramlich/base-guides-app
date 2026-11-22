@@ -10,7 +10,7 @@
   "tagline": "A Marine Corps base in northern Guam; its family housing is through Andersen Air Force Base.",
   "coords": {
     "lat": 13.577,
-    "lng": -144.871,
+    "lng": 144.871,
     "label": "Dededo, Guam"
   },
   "coords_source": "approximate point on the installation, from public maps",
