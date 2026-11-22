@@ -6,6 +6,8 @@
   ON DEMAND (data/bases/<slug>.json now; backend API later) and cached by the
   service worker. One app, all bases, light forever. (Anti-Touch-Stay design.)
   Live layer (AI Q&A + nearby places) is served by the backend via API_BASE.
+  Long-form base stories come from the backend too (/api/bases/<slug>/story), the
+  same stories milspoliving.com shows, read from the shared database.
   Notes: all console/log output is plain ASCII (no emoji) by design.
 -->
 <html lang="en">
@@ -176,6 +178,27 @@
     .place-links{display:flex; flex-wrap:wrap; gap:16px;}
     .place-links a{color:var(--accent); font-size:13px; font-weight:600;}
     .live-note{border:1px dashed var(--accent-dim); border-radius:11px; padding:11px 13px; font-size:13px; color:#e0c486; background:rgba(231,178,76,0.06);}
+    /* Story section (the website's long-form story). */
+    .story-h{font-family:'Fraunces',serif; font-size:17px; color:var(--text); margin:16px 0 6px;}
+    .story-h:first-child{margin-top:2px;}
+    .story-sh{font-weight:700; font-size:14px; color:var(--text); margin:12px 0 4px;}
+    .story-quote{margin:12px 0; padding:4px 0 4px 12px; border-left:3px solid var(--accent-dim); font-family:'Crimson Pro',Georgia,serif; font-size:16.5px; color:var(--text); line-height:1.45;}
+    .story-box{margin:12px 0; padding:11px 13px; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:10px;}
+    .story-label{font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--accent-dim); font-weight:700;}
+    .story-title{font-weight:700; font-size:14px; color:var(--text); margin:3px 0 8px;}
+    .story-box ul{margin:6px 0; padding-left:18px;}
+    .story-box li{font-size:13.5px; line-height:1.5; margin-bottom:4px;}
+    .story-small{font-size:12.5px; color:var(--text-faint); margin-top:8px;}
+    table.dec tr.story-total td{color:var(--text); font-weight:700;}
+    table.dec tr.story-has-how td{border-bottom:none; padding-bottom:2px;}
+    table.dec tr.story-how td{padding-top:0; font-size:12px; color:var(--text-faint);}
+    table.dec td.num, table.dec th.num{text-align:right; white-space:nowrap;}
+    .story-disclaimer{font-size:12.5px; color:var(--text-faint); font-style:italic;}
+    .story-missing{margin-bottom:12px;}
+    .story-sources{margin-top:14px; padding-top:9px; border-top:1px solid var(--line-soft); font-size:12px; color:var(--text-faint);}
+    .story-sources ol{margin:4px 0 0; padding-left:18px;}
+    .story-sources li{margin-bottom:3px; line-height:1.45;}
+    .story-sources a{color:var(--accent-dim); word-break:break-word;}
     .srcline{margin-top:12px; padding-top:9px; border-top:1px solid var(--line-soft); font-size:11.5px; color:var(--text-faint);}
     .srcline a{color:var(--accent-dim);}
     .screen-h{font-family:'Fraunces',serif; font-size:22px; margin:2px 2px 14px;}
@@ -280,7 +303,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.19.1";
+    const APP_VERSION = "0.20.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -291,6 +314,8 @@
 
     function indexUrl() { return USING_API ? DATA_BASE : DATA_BASE + "/index.json"; }
     function baseUrl(slug) { return USING_API ? DATA_BASE + "/" + slug : DATA_BASE + "/" + slug + ".json"; }
+    // Stories live only in the shared database (served by the backend), so file mode has none: null.
+    function storyUrl(slug) { return USING_API ? DATA_BASE + "/" + slug + "/story" : null; }
     function apiUrl(path) { return API_BASE.replace(/\/$/, "") + path; }
 
     async function fetchJSON(url) {
@@ -349,7 +374,7 @@
       for (const k of Object.keys(BRANCH_COLORS)) if (s.indexOf(k) !== -1) return BRANCH_COLORS[k];
       return "var(--accent-dim)";
     }
-    const SECTION_ICONS = { quick_facts: "info", mission: "flag", two_state_decision: "compass", gates: "shield", housing: "home", bah: "dollar", housing_costs: "dollar", rent_buy: "dollar", pcs_first_30: "calendar", faq: "info", schools: "cap", schools_live: "cap", healthcare: "health", shopping: "cart", nearby: "map" };
+    const SECTION_ICONS = { quick_facts: "info", mission: "flag", two_state_decision: "compass", gates: "shield", housing: "home", bah: "dollar", housing_costs: "dollar", rent_buy: "dollar", pcs_first_30: "calendar", faq: "info", where_to_live: "home", schools: "cap", schools_live: "cap", healthcare: "health", shopping: "cart", nearby: "map" };
     function sectionIcon(id) { return SECTION_ICONS[id] || "info"; }
 
     /* ---------------- PWA self-update (ported from MenuCaptain) ---------------- */
@@ -765,6 +790,158 @@
       );
     }
 
+    /* ---------------- STORY (the website's long-form story, from the shared database) ----------------
+       RULE (Chris, decision card 2026-11-22): the app shows the same story as milspoliving.com.
+       The story files in the website repo are the source; the backend serves the copy in the
+       guide_stories table with its figures already filled by the database function the website
+       uses. So this code only draws what it is given. The one number it works out is the worked-
+       example total: each stored row is ONE year of dollars, times the years, then added up - the
+       website's rule (src/lib/guide-math.ts), so a typed total can never disagree with its rows.
+       ACCURACY: a figure the database could not fill arrives as "[figure missing]" and the backend
+       counts them (missing_figures); the story then shows a notice instead of passing it silently.
+       A block with the wrong shape is skipped, not guessed (the website's parseBlock rule). */
+    const STORY_SECTION_ID = "where_to_live";
+    const STORY_SECTION_TITLE = "Where to live"; // the website's name for the story part of a guide
+
+    /* WHERE THE STORY GOES: right after the decision section (type "killer"), which is where the
+       website shows it - inside the decision part, or as its own part just after it when the story
+       has a section title. Without a decision section it goes second. */
+    function withStorySection(sections, story) {
+      if (!story || !Array.isArray(story.blocks) || story.blocks.length === 0) return sections;
+      const storySection = { id: STORY_SECTION_ID, type: "story", title: story.section_title || STORY_SECTION_TITLE, data: story };
+      const decisionAt = sections.findIndex((s) => s.type === "killer");
+      const at = decisionAt >= 0 ? decisionAt + 1 : Math.min(1, sections.length);
+      return [...sections.slice(0, at), storySection, ...sections.slice(at)];
+    }
+
+    const storyText = (v) => (typeof v === "string" ? v.trim() : "");
+    const storyTextList = (v) => (Array.isArray(v) ? v.map(storyText).filter(Boolean) : []);
+    const storyDollars = (v) => (typeof v === "number" && isFinite(v) && v >= 0 ? Math.round(v) : null);
+    const formatDollars = (n) => "$" + n.toLocaleString("en-US");
+
+    // One block in the shape the renderer can draw, or null (the same checks as the website).
+    function storyBlockShape(raw) {
+      if (!raw || typeof raw !== "object") return null;
+      const t = storyText(raw.t);
+      if (["head", "subhead", "p", "pullquote", "disclaimer"].includes(t)) {
+        const text = storyText(raw.text);
+        return text ? { t, text } : null;
+      }
+      if (t === "math") {
+        const sides = storyTextList(raw.sides);
+        const years = storyDollars(raw.years);
+        const rows = (Array.isArray(raw.rows) ? raw.rows : []).map((r) => {
+          const a = storyDollars(r && r.a), b = storyDollars(r && r.b), label = storyText(r && r.label);
+          return a === null || b === null || !label ? null : { label, a, b, how: storyText(r.how) };
+        }).filter(Boolean);
+        if (sides.length !== 2 || !years || rows.length === 0) return null;
+        return { t, label: storyText(raw.label) || "By the numbers", title: storyText(raw.title), sides, years, rows,
+                 assumptions: storyTextList(raw.assumptions), note: storyText(raw.note) };
+      }
+      if (t === "sidebar") {
+        const paragraphs = storyTextList(raw.paragraphs);
+        const scenarios = (Array.isArray(raw.scenarios) ? raw.scenarios : [])
+          .map((x) => ({ tag: storyText(x && x.tag), text: storyText(x && x.text) })).filter((x) => x.text);
+        if (paragraphs.length === 0 && scenarios.length === 0) return null;
+        return { t, label: storyText(raw.label), title: storyText(raw.title), paragraphs, scenarios, foot: storyText(raw.foot) };
+      }
+      if (t === "places") {
+        const items = (Array.isArray(raw.items) ? raw.items : [])
+          .map((x) => ({ name: storyText(x && x.name), stat: storyText(x && x.stat), text: storyText(x && x.text) }))
+          .filter((x) => x.name && x.text);
+        return items.length ? { t, items } : null;
+      }
+      return null;
+    }
+
+    function StoryMath({ b }) {
+      const rows = b.rows.map((r) => ({ ...r, a: r.a * b.years, b: r.b * b.years }));
+      const totalA = rows.reduce((sum, r) => sum + r.a, 0);
+      const totalB = rows.reduce((sum, r) => sum + r.b, 0);
+      const span = b.years === 1 ? "one year" : b.years + " years";
+      return (
+        <div className="story-box">
+          <div className="story-label">{b.label}, cost over {span}</div>
+          {b.title ? <div className="story-title">{b.title}</div> : null}
+          <table className="dec">
+            <thead><tr><th>Cost</th><th className="num">{b.sides[0]}</th><th className="num">{b.sides[1]}</th></tr></thead>
+            <tbody>
+              {rows.map((r, i) => (
+                <React.Fragment key={i}>
+                  <tr className={r.how ? "story-has-how" : null}>
+                    <td>{r.label}</td><td className="num">{formatDollars(r.a)}</td><td className="num">{formatDollars(r.b)}</td>
+                  </tr>
+                  {/* The working of a row spans the table so the figures keep their width on a phone. */}
+                  {r.how ? <tr className="story-how"><td colSpan={3}>A year: {r.how}</td></tr> : null}
+                </React.Fragment>
+              ))}
+              <tr className="story-total"><td>Total over {span}</td><td className="num">{formatDollars(totalA)}</td><td className="num">{formatDollars(totalB)}</td></tr>
+            </tbody>
+          </table>
+          {b.assumptions.length ? (
+            <div className="story-small">What the example assumes:<ul>{b.assumptions.map((x, i) => <li key={i}>{x}</li>)}</ul></div>
+          ) : null}
+          {b.note ? <p style={{ marginTop: 8 }}>{b.note}</p> : null}
+        </div>
+      );
+    }
+
+    function StoryBlock({ b }) {
+      switch (b.t) {
+        case "head": return <h4 className="story-h">{b.text}</h4>;
+        case "subhead": return <div className="story-sh">{b.text}</div>;
+        case "p": return <p>{b.text}</p>;
+        case "pullquote": return <blockquote className="story-quote">{b.text}</blockquote>;
+        case "disclaimer": return <p className="story-disclaimer">{b.text}</p>;
+        case "math": return <StoryMath b={b} />;
+        case "sidebar":
+          return (
+            <div className="story-box">
+              {b.label ? <div className="story-label">{b.label}</div> : null}
+              {b.title ? <div className="story-title">{b.title}</div> : null}
+              {b.paragraphs.map((x, i) => <p key={i}>{x}</p>)}
+              {b.scenarios.length ? (
+                <ul>{b.scenarios.map((x, i) => <li key={i}>{x.tag ? <strong>{x.tag}: </strong> : null}{x.text}</li>)}</ul>
+              ) : null}
+              {b.foot ? <div className="story-small">{b.foot}</div> : null}
+            </div>
+          );
+        case "places":
+          return (
+            <ul className="lst" style={{ margin: "8px 0 12px" }}>
+              {b.items.map((x, i) => (
+                <li key={i}><div className="t">{x.name}{x.stat ? <span className="faint"> &middot; {x.stat}</span> : null}</div><div className="d">{x.text}</div></li>
+              ))}
+            </ul>
+          );
+        default: return null;
+      }
+    }
+
+    function StoryBody({ data }) {
+      const blocks = (data.blocks || []).map(storyBlockShape).filter(Boolean);
+      // Only labelled http(s) links, the website's rule (the backend applies it too).
+      const sources = (data.sources || []).filter((x) => x && x.label && /^https?:\/\//i.test(x.url || ""));
+      return (
+        <div>
+          {data.missing_figures > 0 ? (
+            <div className="live-note story-missing">Some figures in this story could not be loaded right now and show as "[figure missing]". Check the sources below.</div>
+          ) : null}
+          {blocks.map((b, i) => <StoryBlock key={i} b={b} />)}
+          {sources.length ? (
+            <div className="story-sources">
+              Sources
+              <ol>
+                {sources.map((x, i) => (
+                  <li key={i}><a href={x.url} target="_blank" rel="noopener noreferrer">{x.label}</a>{x.checked ? <span> &middot; checked {x.checked}</span> : null}</li>
+                ))}
+              </ol>
+            </div>
+          ) : null}
+        </div>
+      );
+    }
+
     function SectionBody({ s, coords }) {
       switch (s.type) {
         case "facts": return <Facts data={s.data} />;
@@ -778,6 +955,7 @@
         case "rentbuy": return <RentBuy data={s.data} />;
         case "pcs_first30": return <PCSFirst30 data={s.data} />;
         case "faq": return <FAQ data={s.data} />;
+        case "story": return <StoryBody data={s.data} />;
         case "places_pending":
           return <div className="live-note">{s.note || "Live nearby recommendations (Google Places) appear here in the app."}</div>;
         case "pending":
@@ -1032,12 +1210,17 @@
       const [data, setData] = useState(null);
       const [err, setErr] = useState(null);
       const [openId, setOpenId] = useState(null);
+      const [story, setStory] = useState(null);
       useEffect(() => {
         let live = true;
-        setData(null); setErr(null);
+        setData(null); setErr(null); setStory(null);
         fetchJSON(baseUrl(slug)) // per-base fetch ON DEMAND - the architecture in action
           .then((d) => { if (live) { setData(d); setOpenId(d.sections && d.sections[0] ? d.sections[0].id : null); } })
           .catch((e) => { if (live) setErr(e.message); });
+        // The story is a separate on-demand fetch. Most bases have none (404), and a failed story
+        // fetch must never block the guide, so any error just means "no story section".
+        const url = storyUrl(slug);
+        if (url) fetchJSON(url).then((d) => { if (live) setStory(d); }).catch(() => {});
         return () => { live = false; };
       }, [slug]);
 
@@ -1061,7 +1244,7 @@
           <LiveWeather coords={data.coords} />
           <AskBox slug={slug} />
           <div style={{ marginTop: 12 }}>
-            {(data.sections || []).map((s) => (
+            {withStorySection(data.sections || [], story).map((s) => (
               <Accordion key={s.id} s={s} coords={data.coords}
                 open={openId === s.id}
                 onToggle={() => setOpenId(openId === s.id ? null : s.id)} />

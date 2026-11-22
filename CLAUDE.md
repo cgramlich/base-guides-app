@@ -97,6 +97,10 @@ Base JSON is keyed to the schema: `CG Apps\Base Guides\MilHousing-Base-Guide-Sch
 Rendering is **schema-driven and generic** - a base's `sections[]` array drives the UI;
 adding bases/sections needs NO code change. Section `type`s so far: `facts`, `prose`,
 `killer`, `list`, `places_pending`, `pending`.
+The base's long-form story is NOT in the base JSON: it is fetched on demand from the backend
+(`/api/bases/<slug>/story`, the same story milspoliving.com shows, from the shared database) and
+drawn as a `story` section after the decision (`killer`) section. Its figures arrive filled by the
+database; one that could not be filled reads "[figure missing]" and the section shows a notice.
 
 ## How Chris works
 - Plain-English feedback; you read the code and edit directly. Iterate freely.
