@@ -9,9 +9,9 @@
   ],
   "tagline": "Towns, schools, rent and risk near Hunter Army Airfield, from public data.",
   "coords": {
-    "lat": 31.9069,
-    "lng": -81.6175,
-    "label": "Fort Stewart, GA"
+    "lat": 32.0094,
+    "lng": -81.1507,
+    "label": "Savannah, GA"
   },
   "guide_kind": "data",
   "_note": "Data guide made by scripts/guides/make_data_guide.py on 2026-11-21 from src/data/installations.json and data/installations/master-list.json. No hand research.",
@@ -22,8 +22,8 @@
       "type": "facts",
       "data": {
         "Branch": "U.S. Army",
-        "Location": "Fort Stewart, GA",
-        "Housing allowance area": "GA080"
+        "Location": "Savannah, GA",
+        "Housing allowance area": "GA077"
       },
       "source": {
         "label": "Military OneSource installation directory",
@@ -44,12 +44,12 @@
       "title": "BAH Calculator",
       "type": "bah",
       "data": {
-        "mha": "GA080",
+        "mha": "GA077",
         "year": 2026,
         "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
       },
       "source": {
-        "label": "DoD 2026 BAH Rates, MHA GA080",
+        "label": "DoD 2026 BAH Rates, MHA GA077",
         "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
       }
     },
@@ -58,8 +58,8 @@
       "title": "Housing Costs",
       "type": "realestate",
       "data": {
-        "zip": "31314",
-        "label": "Fort Stewart, GA"
+        "zip": "31409",
+        "label": "Savannah, GA"
       }
     },
     {
@@ -68,7 +68,7 @@
       "type": "schools_live",
       "data": {
         "state": "GA",
-        "city": "Fort Stewart"
+        "city": "Savannah"
       }
     },
     {
@@ -78,5 +78,6 @@
       "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
       "picks": []
     }
-  ]
+  ],
+  "coords_source": "installations.militaryonesource.mil Hunter Army Airfield overview (read 2026-11-23): Hunter Army Airfield is located in Savannah, GA; OpenStreetMap aerodrome relation 4843744 Hunter Army Airfield, 525 East Dutchtown Road, Savannah 31409"
 }

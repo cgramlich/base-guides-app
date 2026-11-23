@@ -9,8 +9,8 @@
   ],
   "tagline": "Towns, schools, rent and risk near USARD, Jacksonville Battalion, from public data.",
   "coords": {
-    "lat": 30.1753,
-    "lng": -81.472,
+    "lat": 30.2268,
+    "lng": -81.5818,
     "label": "Jacksonville, FL"
   },
   "guide_kind": "data",
@@ -78,5 +78,6 @@
       "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
       "picks": []
     }
-  ]
+  ],
+  "coords_source": "recruiting.army.mil/2ndbde/3ebn (read 2026-11-23): U.S. Army Recruiting Battalion - Jacksonville, 7910 Baymeadows Way, Suite 100, Jacksonville, FL 32256; OpenStreetMap address node 8691463840"
 }
