@@ -303,7 +303,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.20.0";
+    const APP_VERSION = "0.20.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -963,14 +963,33 @@
           return <div className="pending">{s.note || "Content pending verification."}</div>;
       }
     }
-    // Accuracy provenance: show a section's official source + last-verified date.
+    // Accuracy provenance: a section's official source travels with it, next to its check line.
+    //
+    // RULE (Chris, decision card 2026-11-23, "Convert to advice"): a June 2026 section that no
+    // official page could confirm has been rewritten as plain advice. It carries "advice": true and
+    // "confirm_with" (who to ask) and NO "verified" date, and shows "Our advice. Confirm with <who>."
+    // where other sections show their date - the same words milspoliving.com uses
+    // (src/lib/guide-check-notes.ts in the website repo).
+    // ACCURACY RULE: an advice section is NEVER shown as checked or dated. Advice is tested first,
+    // so even a stray "verified" left on one cannot surface: a date would claim an official page
+    // confirmed it, and nothing in advice is a fact a page can confirm. Its source link stays,
+    // because that is where the reader goes to confirm.
+    // A section with no date and no advice shows its source alone, or no line at all.
+    function sectionCheckLine(s) {
+      if (s.advice) {
+        const confirmWith = typeof s.confirm_with === "string" ? s.confirm_with.trim() : "";
+        return confirmWith ? "Our advice. Confirm with " + confirmWith + "." : "Our advice.";
+      }
+      return s.verified ? "Verified " + s.verified : "";
+    }
     function SrcLine({ s }) {
-      if (!s.source && !s.verified) return null;
+      const checkLine = sectionCheckLine(s);
+      if (!s.source && !checkLine) return null;
       return (
         <div className="srcline">
           {s.source ? <a href={s.source.url} target="_blank" rel="noopener noreferrer">Source: {s.source.label}</a> : null}
-          {s.source && s.verified ? " · " : null}
-          {s.verified ? <span>Verified {s.verified}</span> : null}
+          {s.source && checkLine ? " · " : null}
+          {checkLine ? <span>{checkLine}</span> : null}
         </div>
       );
     }
