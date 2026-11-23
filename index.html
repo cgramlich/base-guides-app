@@ -980,7 +980,9 @@
         const confirmWith = typeof s.confirm_with === "string" ? s.confirm_with.trim() : "";
         return confirmWith ? "Our advice. Confirm with " + confirmWith + "." : "Our advice.";
       }
-      return s.verified ? "Verified " + s.verified : "";
+      // Same word as the website ("Checked <date>"), so a family reads one term in both places
+      // (Chris, decision card 2026-11-23 "Use 'Checked' in the app").
+      return s.verified ? "Checked " + s.verified : "";
     }
     function SrcLine({ s }) {
       const checkLine = sectionCheckLine(s);
