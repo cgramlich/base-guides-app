@@ -101,6 +101,8 @@ The base's long-form story is NOT in the base JSON: it is fetched on demand from
 (`/api/bases/<slug>/story`, the same story milspoliving.com shows, from the shared database) and
 drawn as a `story` section after the decision (`killer`) section. Its figures arrive filled by the
 database; one that could not be filled reads "[figure missing]" and the section shows a notice.
+A section the website converted to advice (`"advice": true`, `"confirm_with"`, no `verified`) shows
+"Our advice. Confirm with <who>." in place of a date, never as checked (`SrcLine` in `index.html`).
 
 ## How Chris works
 - Plain-English feedback; you read the code and edit directly. Iterate freely.
