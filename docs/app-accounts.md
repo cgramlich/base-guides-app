@@ -1,0 +1,173 @@
+# The app's account: what was built, what Chris must do, how to test
+
+Built 2026-11-24 on the branch `app-same-account` from Chris's decision cards of 2026-11-24
+("Yes, account then look", "6-digit code", "Yes, both now", "No social logins") and the
+website's finished accounts slice (website repo, branch `accounts-slice-1`:
+`src/lib/account.ts`, `account-settings.ts`, `saved-bases*.ts`, `docs/accounts-build.md`).
+The code is in `index.html`, sections `ACCOUNT`, `SAVED BASES` and `ACCOUNT SCREENS`.
+
+Wording rule for every public text (Chris, 2026-11-23; memory section 152): the app says only
+that MilSpo Living is "affiliated with MilHousing Network" (`PUBLISHER_LINE`), nothing about
+ownership or company structure.
+
+## What a reader gets
+
+- "Sign in" (a person icon and the word) in the top bar; the address once signed in. Tapping it
+  opens the account screen. Nothing is offered on an empty screen: the Saved screen offers
+  "Sign in to keep them on every device" only under a list with something in it.
+- Sign-in by a 6-digit code emailed by Supabase Auth: the address and "Send me a code", then the
+  code field (numeric keypad, one-time-code autofill) and "Sign in". No password. No social
+  sign-in. The first code makes the account.
+- The account screen: email, role (Member / Editor / Owner, from `public.profiles`), the saved
+  bases with Remove, "Sign out" (this device only), "Delete my account".
+- Saved bases kept in the account once signed in, the same `public.saved_bases` rows the website
+  reads, so a base saved in the app or on milspoliving.com shows in both. Signed out, or with
+  accounts off, saved bases stay on the device exactly as before.
+
+Not in this slice: any restyle, the ranked list, the checklist ticks, the alert choices, a
+privacy screen (the app has none; the sign-in screen links the website's policy page).
+
+## The switch
+
+Accounts are ON when `SUPABASE_PUBLISHABLE_KEY` in the config block of `index.html` is set and
+OFF when it is `""`. Off: no "Sign in" anywhere, nothing reaches Supabase, the device list is the
+only list. The key is Supabase's publishable key, made for browsers; the two tables it can see
+are closed by row level security to the signed-in user's own rows (website migration
+`20261123210000_accounts_slice_1.sql`). If supabase-js fails to load from the CDN, accounts are
+off for that visit and the rest of the app is unchanged.
+
+ROAD NOT TAKEN: proxying auth through the Railway backend. It would add a hop and a session
+store for no security gain; the backend's "keys never reach the client" rule is about secret
+keys and still holds.
+
+## Why a code and not the website's link
+
+The website signs in with an emailed link that opens `/auth/callback` on the site. A store app
+(Capacitor wrapper, appId `com.baseguides.app`, later) cannot rely on an emailed link opening the
+app, and a link completes only on the device that asked for it (the PKCE verifier lives there).
+A code is typed wherever the reader is: the web, the installed PWA, the native builds. Same
+Supabase Auth, same user, same session storage (supabase-js keeps it in localStorage).
+
+Calls: `signInWithOtp({ email, options: { shouldCreateUser: true } })` with NO
+`emailRedirectTo`, then `verifyOtp({ email, token, type: 'email' })`. Supabase allows one code
+request per address every 60 seconds; that answer is "We sent you a code less than a minute
+ago". A wrong, expired or reused code answers "That code did not work. Check the digits or ask
+for a new code." The code is never logged; log lines carry a masked address (`c***@gmail.com`).
+
+## Chris's step in the Supabase dashboard (before the first test)
+
+WARNING: without this step readers get an email with a link and NO code, and the app cannot
+sign them in.
+
+Project base-guides, left menu Authentication, Emails, Templates, **Magic Link**. The template
+must print the code. Add a line such as:
+
+```
+<p>Your sign-in code: <strong>{{ .Token }}</strong></p>
+```
+
+Keep `{{ .ConfirmationURL }}` in the same template if the website's link sign-in should keep
+working from the same email (both can be in one message: the website's reader presses the link,
+the app's reader types the code). If the app is the only reader of that template, the link line
+can go. Subject suggestion: "Your MilSpo Living sign-in code".
+
+Also under Authentication, Providers, Email: "Enable email provider" on (it is). Under
+Authentication, Rate Limits: the built-in mailer sends 2 emails an hour per project; the
+website's build notes (`docs/accounts-build.md`, dashboard step 3) describe the Resend SMTP
+switch that lifts it. The app shares that setting; nothing app-specific to set.
+
+No redirect URL is needed for the app: the code flow never leaves it.
+
+## Saved bases: the facade and the merge rule
+
+`useSavedBases()` gives the screens `{ slugs, inAccount }`, `toggleSavedBase(slug)` is the one
+action. Behind it:
+
+- the DEVICE list, browser storage `bg_saved` (an array of slugs), when signed out, when
+  accounts are off, or while the account list has not loaded yet;
+- the ACCOUNT list, `public.saved_bases`, when signed in and loaded.
+
+Names are looked up from the base list the app already loads (`/api/bases`); a slug the list
+does not know (saved on the website for a base the app has no guide for) shows as its slug on
+the account screen.
+
+Merge rule (the website's `saved-bases-account.ts`; Chris approved the plan 2026-11-23): when
+the account's list first loads on a device with its own list, the account's bases stay; a device
+base the account lacks is added while there is room (up to 3, in the device order); nothing is
+deleted from the account; the device list is then cleared. Logged as
+`[ACCOUNT] saved bases merged: account=N device=M added=K`. Signing out therefore leaves the
+device with no saved bases; signing in brings them back.
+
+Cap: an account keeps at most 3 saved bases (the website's limit, because its compare page shows
+at most 3). The app refuses a 4th with "Your account keeps up to 3 saved bases. Remove one
+first." The database trigger `saved_bases_limit` is the guarantee; a write the database refuses
+is logged (`[SAVED]`) and the list is read again. The device list is NOT capped (Chris's card:
+saved bases stay on-device exactly as today when accounts are off); a longer device list is
+merged as far as it fits.
+
+## Delete my account (Apple rule 5.1.1(v); Chris 2026-11-23: 30 days, nothing sent while it waits)
+
+The website's delete slice, built in parallel, adds two database functions and one column; the
+app codes against this contract:
+
+| Call | What it does |
+| --- | --- |
+| `supabase.rpc('request_account_deletion')` | Records the request for `auth.uid()`; returns the timestamp. |
+| `supabase.rpc('cancel_account_deletion')` | Withdraws it. |
+| `profiles.deletion_requested_at` (timestamptz, null when none) | The pending request, read with the profile. |
+
+Screen: the button "Delete my account", then a confirm sheet ("Your account and your saved bases
+are removed 30 days from today. Nothing is sent to you while it waits. You can cancel any time
+before then by signing in."), then "Deletion requested on <date>. Your account is removed on
+<date + 30 days>." with "Cancel deletion". Until the migration is applied, Postgres answers
+"function does not exist" (or PostgREST `PGRST202`) and the screen says "Not available yet"; the
+profile read uses `select('*')` so a missing column cannot fail it.
+
+## Test procedure (Chris, on a phone and a laptop)
+
+Do not send a code to any address but your own. Every account made while testing is a test
+account: delete it in Supabase, Authentication, Users, before the store release.
+
+1. Do the dashboard step above first.
+2. Open the app, save one or two bases with the bookmark. Open Saved: "Saved on this phone only.
+   Sign in to keep them on every device".
+3. Press it (or the person icon). Enter your own address, press "Send me a code". The screen
+   moves to the code step.
+4. Open the email on any device, type the 6 digits, press "Sign in". The account screen shows
+   your address, "Member", and the bases from step 2, now in the account. The console (Safari
+   or Chrome remote debugging) shows `[ACCOUNT] saved bases merged: account=0 device=2 added=2`.
+5. On milspoliving.com (a preview with accounts on), sign in with the same address: the same
+   bases are there. Remove one on the website; the app shows it gone after a relaunch (or sign
+   out and in).
+6. Save a 4th base in the app: "Your account keeps up to 3 saved bases. Remove one first."
+7. "Sign out": the top bar shows "Sign in" again and Saved is empty on this device. Sign in
+   again: the bases are back.
+8. A second code asked within 60 seconds: "We sent you a code less than a minute ago". A wrong
+   code: "That code did not work".
+9. "Delete my account", confirm: the pending sentence with the two dates and "Cancel deletion".
+   If the website's delete migration is not applied yet: "Not available yet." Cancel it after
+   the test, or delete the test user in the dashboard.
+
+## Tests run on this branch (2026-11-24)
+
+- The JSX of `index.html` run through Babel standalone 7.23.6 in Node: clean. No new non-ASCII
+  text (the five pre-existing lines with a degree sign or a middle dot are untouched).
+- Playwright (Chromium, 390 px, the file served locally, the base list from the repo's own
+  `data/bases/index.json`):
+  - with the real key and the real supabase-js from the CDN: no console errors on load, the
+    Sign in entry, the sign-in screen with every sentence of `SIGN_IN_TEXT`, the two steps (the
+    code step hidden until a code is sent), the screen version on the element, no horizontal
+    overflow, the bad-address message with nothing sent;
+  - with a fake `window.supabase` in place of the CDN script (so no mailbox or network): the
+    code step after "Send me a code", a wrong code refused, a right code signing in, the
+    account screen (address, Member, three bases), the merge log and the cleared device list,
+    the 4th save refused, Remove writing through, a refused insert reloading the list, the
+    delete confirm sheet, the pending state with the dates, cancel, sign out emptying this
+    device, "Not available yet" when the functions are missing, the too-soon message, a masked
+    address and no code in any log line;
+  - with the key emptied: no Sign in entry, the device save and the Saved screen as before.
+  Screenshots: `app-account-shots/` in the session's scratchpad folder.
+- Not tested here: a real code round trip (needs a mailbox and the dashboard step), the
+  website's delete functions against the real database, the Capacitor wrapper.
+
+The repository has no unit test runner; none was added.
