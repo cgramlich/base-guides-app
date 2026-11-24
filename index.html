@@ -329,7 +329,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.21.1";
+    const APP_VERSION = "0.21.2";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1214,6 +1214,10 @@
       "bad-email": "Check the email address and try again.",
       // Supabase allows one request per address every 60 seconds (Supabase Auth docs, read 2026-11-23).
       "too-soon": "We sent you a code less than a minute ago. Wait a minute, then ask again.",
+      // Supabase's hourly cap on sign-in emails for the whole project (error code
+      // over_email_send_rate_limit): not the reader's fault, and not a minute's wait. Found on the
+      // first app test, 2026-11-24, when the 2-an-hour test mailer was still on.
+      "mailer-busy": "Our sign-in emails are paused for a short while. Please try again in an hour.",
       off: "Accounts are not available here yet.",
       failed: "The code did not go out. Try again in a few minutes.",
       "bad-code": "That code did not work. Check the digits or ask for a new code.",
@@ -1302,7 +1306,7 @@
     function accountSnapshot() { return accountState; }
     function useAccount() { return useSyncExternalStore(subscribeAccount, accountSnapshot); }
 
-    // Step 1: ask for the code. Answers "sent" | "bad-email" | "off" | "too-soon" | "failed".
+    // Step 1: ask for the code. Answers "sent" | "bad-email" | "off" | "too-soon" | "mailer-busy" | "failed".
     async function sendSignInCode(email) {
       const address = email.trim();
       if (!isValidEmail(address)) return "bad-email";
@@ -1313,7 +1317,9 @@
       const { error } = await supabase.auth.signInWithOtp({ email: address, options: { shouldCreateUser: true } });
       if (error) {
         console.warn(ACCOUNT_LOG + " code not sent for " + maskEmail(address) + ": " + (error.status || "") + " " + error.message);
-        return error.status === 429 ? "too-soon" : "failed";
+        // Two different 429s: the per-address minute (too-soon) and the project's hourly email cap.
+        if (error.status === 429) return error.code === "over_email_send_rate_limit" ? "mailer-busy" : "too-soon";
+        return "failed";
       }
       console.log(ACCOUNT_LOG + " sign-in code sent to " + maskEmail(address));
       return "sent";
