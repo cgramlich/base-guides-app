@@ -85,6 +85,59 @@ justification for the Pro subscription (a living, cloud-served service).
 - appId (permanent, when published): `com.baseguides.app`.
 - Data source: `API_BASE_DEFAULT` empty => reads `data/bases/*.json`. Set it to the
   backend URL to switch to the API (same JSON shape).
+- Accounts (`SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY` in the config block): the SAME
+  Supabase project as milspoliving.com, so the app and the website are one account and
+  saved bases (`public.saved_bases`) show in both. **The key is the switch:** empty key =
+  accounts OFF (no "Sign in" anywhere; saved bases on the device exactly as before). It is
+  Supabase's PUBLISHABLE key, made for browsers; every table it can see is closed by row
+  level security to the signed-in user's own rows. Secret keys still never reach the
+  client. Full notes, the Supabase dashboard step and the test procedure:
+  `docs/app-accounts.md`.
+
+## Account (sign in by emailed code) - the rules in one place
+Chris's cards 2026-11-24: "Yes, account then look" (account only, no restyle), "6-digit
+code", "Yes, both now" (Delete my account, Apple rule 5.1.1(v)), "No social logins".
+- Sign-in is a code emailed by Supabase Auth (length is a Supabase setting, 8 on 2026-11-24; the app accepts 6 to 10 digits) (`signInWithOtp` with no
+  `emailRedirectTo`, then `verifyOtp` type `email`). NOT a link: a store app cannot rely on
+  a link opening the app, and a link completes only on the device that asked. Email only,
+  no password, no Apple/Google (deliberate: it also avoids the Sign in with Apple rule).
+  WARNING: the Supabase "Magic Link" email template must print `{{ .Token }}` or readers
+  get a link and no code (`docs/app-accounts.md`).
+- The words on the sign-in screen are the website's (`SIGN_IN_TEXT`, version
+  `SIGN_IN_SCREEN_VERSION`, `2026-11-24-c` = the website's `-b` plus the optional First name
+  box), with "link" changed to "code".
+  Public text says only that MilSpo Living is "affiliated with MilHousing Network"
+  (`PUBLISHER_LINE`), nothing about ownership or company structure (Chris 2026-11-23).
+- THE HEADER RULE (Chris, 2026-11-24, after testing): the top bar must make the state obvious.
+  Signed out: person icon + "Sign in". Signed in: person icon + "Hi <first name>", or "Hi there"
+  when no name is stored. The address is never in the top bar (it is on the account screen).
+  While the session loads the entry keeps the signed-out look.
+- The first name is OPTIONAL, asked on the sign-in screen above the address (decision card "On
+  the sign-in screen"). Contract with the website: `profiles.first_name` (text, null, 40 max),
+  `rpc('set_first_name', { name })` (answers the stored name, null when blank), and the name as
+  `signInWithOtp` metadata `data.first_name` (a trigger copies it at account creation). After a
+  code is accepted the typed name is sent once through `set_first_name` when the profile has
+  none. The account screen's Name row ("What should we call you?" + Save, or the name + Change)
+  writes only through the function; missing function = "Not available yet". Never logged.
+- Saved bases: one facade (`useSavedBases`, `toggleSavedBase`) over two stores - the device
+  list (`bg_saved`, as before) or the account's rows. Merge rule on first sign-in: account
+  rows stay, device bases are added while there is room (up to 3), nothing is deleted from
+  the account, the device list is then cleared. Cap of 3 in the account (the database
+  trigger is the guarantee); the device list is not capped.
+- Delete my account calls the website's database functions `request_account_deletion` /
+  `cancel_account_deletion` (30 days, nothing sent while it waits); until that migration
+  is applied the button answers "Not available yet".
+- Pay grade stays on the phone, never in the account. Logs: `[ACCOUNT]`, `[SAVED]`, masked
+  address, never a code.
+- Store builds (Capacitor, appId `com.baseguides.app`, same pattern as
+  `menucaptain-native-build`): nothing here depends on a URL callback, so the code flow
+  works unchanged inside the wrapper; supabase-js must be vendored with React when the
+  wrapper precompiles the app (it is a CDN script tag today).
+
+## Pinned CDN libraries
+React, ReactDOM, Babel standalone and Leaflet from cdnjs; `@supabase/supabase-js` from
+jsdelivr at an exact version (the `<script>` tag in `<head>`). `sw.js` caches each as an
+immutable asset, so bump the version in BOTH the tag and `sw.js` `CRITICAL_ASSETS`.
 
 ## PWA self-update mechanism (why version bumps matter)
 On load, the app refetches `index.html` with `cache:"no-store"`, regexes out

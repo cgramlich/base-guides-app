@@ -10,7 +10,7 @@
    - OSM map tiles -> cache-first, size-capped (passive offline maps).
    VERSION is kept in lockstep with APP_VERSION in index.html.
 */
-const VERSION = "0.20.1";                      // keep in lockstep with APP_VERSION
+const VERSION = "0.22.0";                      // keep in lockstep with APP_VERSION
 const SHELL_CACHE = "bg-shell-" + VERSION;
 const ASSET_CACHE = "bg-assets-" + VERSION;
 const DATA_CACHE  = "bg-data-v1";              // base guides; un-versioned so it
@@ -23,6 +23,7 @@ const CRITICAL_ASSETS = [
   "https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js",
   "https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js",
   "https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.6/babel.min.js",
+  "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.min.js",
 ];
 
 self.addEventListener("install", (event) => {
@@ -62,6 +63,8 @@ self.addEventListener("message", (event) => {
 
 function isImmutableAsset(url) {
   if (url.hostname === "cdnjs.cloudflare.com") return true;
+  // supabase-js (ACCOUNT section of index.html): one exact, pinned version, so cache-first is safe.
+  if (url.hostname === "cdn.jsdelivr.net" && url.pathname.indexOf("/npm/@supabase/supabase-js@") === 0) return true;
   if (url.hostname === "fonts.googleapis.com") return true;
   if (url.hostname === "fonts.gstatic.com") return true;
   if (url.origin === self.location.origin &&

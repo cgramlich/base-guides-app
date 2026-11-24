@@ -8,6 +8,9 @@
   Live layer (AI Q&A + nearby places) is served by the backend via API_BASE.
   Long-form base stories come from the backend too (/api/bases/<slug>/story), the
   same stories milspoliving.com shows, read from the shared database.
+  Account: a reader can sign in (a code by email) against the SAME Supabase
+  project as milspoliving.com; saved bases are then the website's rows, so a base
+  saved in either place shows in both (ACCOUNT and SAVED BASES sections below).
   Notes: all console/log output is plain ASCII (no emoji) by design.
 -->
 <html lang="en">
@@ -35,6 +38,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.23.6/babel.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+  <!-- Supabase Auth + the account's own rows (ACCOUNT section in the script below). Exact version
+       pinned; sw.js caches this URL as an immutable asset. If it fails to load, accounts are off
+       for that visit and nothing else in the app changes. -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.min.js"></script>
 
   <style>
     :root{
@@ -263,6 +270,28 @@
     .leaflet-wrap{height:58vh; border-radius:13px; overflow:hidden; border:1px solid var(--line-soft);}
     .leaflet-wrap .leaflet-popup-content{font-family:'DM Sans',sans-serif; font-size:13px;}
 
+    /* ---- account (sign in / account screen) ---- */
+    .topbar-row{display:flex; align-items:flex-start; justify-content:space-between; gap:10px;}
+    .acct-entry{display:inline-flex; align-items:center; gap:6px; color:var(--accent); font-size:13px; font-weight:600; padding:6px 0 6px 8px; max-width:48%; flex:none; margin-top:4px;}
+    .acct-entry span{overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+    .acct-entry.on{color:var(--text);}
+    .acct-p{font-family:'Crimson Pro',Georgia,serif; color:var(--text-dim); font-size:15.5px; line-height:1.55; margin:0 0 12px;}
+    .acct-p.small{font-size:14px;}
+    .acct-p a{color:var(--accent);}
+    .acct-code{letter-spacing:0.3em; font-size:22px; font-family:'Fraunces',serif; text-align:center;}
+    .acct-msg{margin-top:10px; font-size:13.5px; color:#eab0a6;}
+    .acct-msg.ok{color:#a9c98f;}
+    .acct-h{font-family:'Fraunces',serif; font-size:17px; margin:22px 0 8px;}
+    .acct-actions{display:flex; gap:12px 18px; flex-wrap:wrap; align-items:center; margin-top:8px;}
+    .btn-danger{display:inline-block; background:transparent; border:1px solid var(--danger); color:#eab0a6; font-weight:600; padding:10px 16px; border-radius:10px; margin-top:10px;}
+    .btn-plain{display:inline-block; border:1px solid var(--line); color:var(--text-dim); font-weight:600; padding:10px 16px; border-radius:10px; margin-top:10px;}
+    .acct-list li{display:flex; align-items:center; justify-content:space-between; gap:10px;}
+    .acct-list .rm{color:var(--accent); font-size:13px; font-weight:600; padding:6px 0 6px 10px; flex:none;}
+    .acct-sheet{border-color:rgba(217,96,78,0.45);}
+    .acct-name{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+    .acct-name .fld{flex:1 1 140px; width:auto;}
+    .acct-name-form{margin:2px 0 4px;}
+
     .nav{
       position:fixed; bottom:0; left:50%; transform:translateX(-50%);
       width:100%; max-width:540px; display:flex; background:var(--bg-2);
@@ -292,7 +321,7 @@
   </script>
 
   <script type="text/babel" data-presets="react">
-    const { useState, useEffect, useCallback, useRef } = React;
+    const { useState, useEffect, useCallback, useRef, useSyncExternalStore } = React;
 
     /* ---------------- CONFIG (single source of brand/version) ----------------
        Renaming the app is a one-line change here. Bundle ID lives in the native
@@ -303,7 +332,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.20.1";
+    const APP_VERSION = "0.22.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -311,6 +340,21 @@
     const DATA_BASE = USING_API ? API_BASE_DEFAULT.replace(/\/$/, "") + "/api/bases" : "data/bases";
     // Backend for the LIVE layer (AI Q&A + nearby places).
     const API_BASE = API_BASE_DEFAULT || "http://localhost:8000";
+
+    // ACCOUNTS: the Supabase project milspoliving.com uses ("base-guides"), so the app and the
+    // website are the same account (Chris, decision card 2026-11-24 "Yes, account then look").
+    // THE SWITCH: accounts are ON when the publishable key is set and OFF when it is "". Off means
+    // no "Sign in" anywhere and saved bases on the device exactly as before accounts. There is no
+    // second switch on purpose: a second setting could disagree with the key.
+    // WHY a key may ship in the client: this is Supabase's PUBLISHABLE key, made for browsers.
+    // It gives no access on its own; every table it can see (profiles, saved_bases) is closed by
+    // row level security to the signed-in user's own rows (website repo,
+    // supabase/migrations/20261123210000_accounts_slice_1.sql). The backend's "keys never reach the
+    // client" rule is about SECRET keys and still holds. ROAD NOT TAKEN: proxying auth through the
+    // Railway backend - a hop and a session store for no security gain.
+    const SUPABASE_URL = "https://jmnhviumgulbcdlzuawa.supabase.co";
+    const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_Ds2HorZMHqHMsI1CrGANhg_0sbTixvB";
+    const ACCOUNTS_ON = !!SUPABASE_PUBLISHABLE_KEY;
 
     function indexUrl() { return USING_API ? DATA_BASE : DATA_BASE + "/index.json"; }
     function baseUrl(slug) { return USING_API ? DATA_BASE + "/" + slug : DATA_BASE + "/" + slug + ".json"; }
@@ -332,7 +376,9 @@
       return r.json();
     }
 
-    // Local user state (no account yet; Beehiiv identity comes later).
+    // Browser storage for what stays on the phone: the PCS plan, its ticks and the device's saved
+    // bases (see SAVED BASES). RULE (Chris, 2026-11-24): a pay grade stays on the device, never in
+    // the account (the website keeps it in browser storage as msl.rank; the app stores none yet).
     const LS = {
       get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
       set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* ignore */ } },
@@ -361,6 +407,7 @@
         case "bookmarkOn": return <svg {...p}><path d="M6 3h12v18l-6-4-6 4z" fill="currentColor" /></svg>;
         case "download": return <svg {...p}><path d="M12 3v12" /><path d="m7 11 5 5 5-5" /><path d="M5 20h14" /></svg>;
         case "dollar": return <svg {...p}><path d="M12 2.5v19" /><path d="M16.5 6.6C16.5 4.9 14.5 3.8 12 3.8S7.5 4.9 7.5 6.9 9.5 9.4 12 10s4.5 1.5 4.5 3.5-2 3-4.5 3-4.5-1-4.5-2.7" /></svg>;
+        case "person": return <svg {...p}><circle cx="12" cy="8" r="4" /><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" /></svg>;
         default: return null;
       }
     }
@@ -1095,6 +1142,465 @@
       );
     }
 
+    /* ---------------- ACCOUNT (the same account as milspoliving.com) ----------------
+       The reader signs in against the SAME Supabase project the website uses, so the app knows it
+       is the same person: saved bases are the website's public.saved_bases rows and a base saved in
+       either place shows in both (Chris, decision cards 2026-11-24: "Yes, account then look",
+       "6-digit code", "Yes, both now", "No social logins"). The website's finished slice is the
+       model (its src/lib/account.ts, account-settings.ts, saved-bases*.ts): the same sentences,
+       rules and names, without the Next.js plumbing. This slice is the account only; no restyle.
+
+       RULES
+       - No password, ever. Sign-in is a code emailed by Supabase Auth (email OTP).
+         WARNING: the code's LENGTH is a project setting (Supabase Auth, "email OTP length": 8 on
+         2026-11-24, 6 in older projects, up to 10). The app never assumes a length: it accepts
+         CODE_MIN_DIGITS to CODE_MAX_DIGITS. The first test (2026-11-24) failed because the app
+         demanded exactly six digits and cut an 8-digit code short.
+         WHY a code and not the website's link: a store app cannot rely on an emailed link opening
+         the app, and a link completes only on the device that asked for it; a code works on the
+         web, the installed PWA and the native builds alike.
+       - Email only. ROAD NOT TAKEN (Chris, "No social logins"): Apple or Google sign-in would tie
+         a military family to a third identity provider, and offering any third-party login brings
+         Apple's "Sign in with Apple" requirement with it.
+       - The first code makes the account (shouldCreateUser). There is no separate sign-up step.
+       - The role (member / editor / owner) is read from public.profiles, the account's own row,
+         and never set from here. editor and owner are set by hand in the database.
+       - The first name is OPTIONAL (Chris, 2026-11-24, after the first test: "the header must
+         make the state obvious", decision card "On the sign-in screen"). It is asked above the
+         address on the sign-in screen, kept in public.profiles.first_name (FIRST_NAME_MAX_CHARS)
+         and greets the reader in the top bar as "Hi <name>", or "Hi there" when none is stored.
+         It reaches the database two ways, both the website's contract (2026-11-24): as user
+         metadata on signInWithOtp (a database trigger copies it when the account is made), and
+         through the database function set_first_name once signed in. After every sign-in the
+         typed name is also sent through set_first_name when the profile has none yet, which gives
+         an existing account its name and covers a trigger that did not fire. ROAD NOT TAKEN:
+         updating profiles.first_name from the client; the function is the one place the trim and
+         length rules live, shared with the website. Until the website's migration is applied the
+         function is missing and the screen says "Not available yet", like the delete functions.
+         The name is never logged.
+       - Logs carry a masked address only (maskEmail) and never a code.
+       - Delete my account (Apple rule 5.1.1(v); Chris 2026-11-23): the request is recorded by the
+         database function request_account_deletion; the account and its rows are removed 30 days
+         later and nothing is sent while it waits; cancel_account_deletion withdraws it. The
+         pending request shows as profiles.deletion_requested_at.
+
+       WARNING (supabase-js): never call the client inside the onAuthStateChange callback; it can
+       deadlock. The profile read is put on the next tick for that reason.
+       WARNING (Supabase dashboard): the "Magic Link" email template must print {{ .Token }}, or the
+       reader gets a link and no code. docs/app-accounts.md has the step. */
+    const ACCOUNT_LOG = "[ACCOUNT]";
+    const SAVED_LOG = "[SAVED]";
+    const ACCOUNT_ROLES = ["member", "editor", "owner"];
+    const ROLE_LABEL = { member: "Member", editor: "Editor (MilSpo Living team)", owner: "Owner" };
+    // Days between the deletion request and the removal (Chris, 2026-11-23). The database job
+    // applies the same number; this one only tells the reader the date.
+    const DELETION_WAIT_DAYS = 30;
+    // The longest first name the database function set_first_name keeps (the website's contract,
+    // 2026-11-24). The boxes stop at the same length so the stored name is what the reader typed.
+    const FIRST_NAME_MAX_CHARS = 40;
+    // The greeting in the top bar. RULE (Chris, 2026-11-24): the header must make the state
+    // obvious - signed in reads "Hi <first name>", and "Hi there" while no name is stored, so the
+    // address is never the thing that says "signed in" (it stays on the account screen).
+    function greeting(firstName) { return firstName ? "Hi " + firstName : "Hi there"; }
+
+    // WORDING RULE (Chris 2026-11-23, memory 152): public text says only that MilSpo Living is
+    // "affiliated with MilHousing Network"; nothing about ownership or company structure.
+    const PUBLISHER_LINE = BRAND + " is published by MilSpo Life LLC. It is affiliated with MilHousing Network.";
+    const PRIVACY_URL = "https://milspoliving.com/privacy";
+
+    // The sign-in screen's words carry a version: the screen is the record of what a family agreed
+    // to (website, account-settings.ts, SIGN_IN_SCREEN_VERSION). The sentences are the website's
+    // with one change: the website emails a link, the app emails a code. "-c" (2026-11-24): the
+    // optional "First name" box above the address; a reader who signed up on "-b" was never asked.
+    const SIGN_IN_SCREEN_VERSION = "2026-11-24-c";
+    // The emailed code's length is set in Supabase Auth, not here (see the WARNING above): accept the
+    // whole range Supabase allows so a settings change never locks readers out.
+    const CODE_MIN_DIGITS = 6;
+    const CODE_MAX_DIGITS = 10;
+    const SIGN_IN_TEXT = {
+      label: "Sign in",
+      title: "Save my move",
+      whatYouGet: "We keep your saved bases, so you find them on any phone or computer. No password: we email you a code.",
+      firstNameLabel: "First name (optional)",
+      emailLabel: "Email address",
+      // WHY the weekly email is stated here although the sends are later slices on the website:
+      // Chris decided 2026-11-23 that every alert is ON from sign-up and that this screen is where
+      // that is said. A statement, not a tick box.
+      weeklyEmail: "You also get one weekly email: changes at your bases on top (housing allowance and rents, spouse jobs, new stories and guide updates, crime figures), then the MilSpo Minute. Be the first to know when new allowance rates come out. Unsubscribe at any time.",
+      noCallsNoTexts: PUBLISHER_LINE + " No calls, no texts.",
+      button: "Send me a code",
+      policyLine: "By continuing you accept our privacy policy.",
+      codeLabel: "Code from the email",
+      codeButton: "Sign in",
+      // The code's life is Supabase's default for an email OTP (one hour; Supabase Auth docs, read 2026-11-24).
+      sent: "Check your inbox and enter the code from the email. The code works for one hour. If it does not arrive, look in spam, then ask for a new one.",
+    };
+    const SIGN_IN_MESSAGE = {
+      "bad-email": "Check the email address and try again.",
+      // Supabase allows one request per address every 60 seconds (Supabase Auth docs, read 2026-11-23).
+      "too-soon": "We sent you a code less than a minute ago. Wait a minute, then ask again.",
+      // Supabase's hourly cap on sign-in emails for the whole project (error code
+      // over_email_send_rate_limit): not the reader's fault, and not a minute's wait. Found on the
+      // first app test, 2026-11-24, when the 2-an-hour test mailer was still on.
+      "mailer-busy": "Our sign-in emails are paused for a short while. Please try again in an hour.",
+      off: "Accounts are not available here yet.",
+      failed: "The code did not go out. Try again in a few minutes.",
+      "bad-code": "That code did not work. Check the digits or ask for a new code.",
+      "check-failed": "Could not check the code. Try again.",
+    };
+
+    /** "chris@gmail.com" -> "c***@gmail.com". A log line never holds a full address. */
+    function maskEmail(email) {
+      const at = email.lastIndexOf("@");
+      if (at < 1) return "***";
+      return email.charAt(0) + "***" + email.slice(at);
+    }
+    // The website's check (email-address.ts): only a sent email proves an address, so a strict
+    // pattern would turn away real addresses. Supabase answers with an error for a bad one.
+    function isValidEmail(email) {
+      if (email.length < 6 || email.length > 254) return false;
+      return /^[^\s@<>()",;:\\]+@[^\s@<>()",;:\\]+\.[^\s@<>()",;:\\.]{2,}$/.test(email);
+    }
+
+    // One client for the whole app. The session is kept by supabase-js in localStorage (its
+    // default), so an installed app stays signed in. detectSessionInUrl is off: nothing arrives in
+    // the address bar with a code flow, and the PWA's own ?vcheck= query must never be parsed.
+    let supabaseSingleton = null;
+    function supabaseClient() {
+      if (!ACCOUNTS_ON) return null;
+      if (supabaseSingleton) return supabaseSingleton;
+      if (!window.supabase || typeof window.supabase.createClient !== "function") {
+        console.warn(ACCOUNT_LOG + " supabase-js did not load; accounts are off for this visit");
+        return null;
+      }
+      supabaseSingleton = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
+        auth: { persistSession: true, autoRefreshToken: true, detectSessionInUrl: false },
+      });
+      return supabaseSingleton;
+    }
+
+    // The signed-in state, one store for the whole app (read with useAccount). Shapes:
+    //   { status: "off" } | { status: "loading" } | { status: "signed-out" } |
+    //   { status: "signed-in", user: { id, email }, role, firstName, deletionRequestedAt, profileRead }
+    // role, firstName and deletionRequestedAt are null until the profile row is read (or when the
+    // read failed); firstName stays null when the account has no name.
+    const accountListeners = new Set();
+    let accountState = ACCOUNTS_ON ? { status: "loading" } : { status: "off" };
+    let accountStarted = false;
+    function setAccountState(next) { accountState = next; accountListeners.forEach((fn) => fn()); }
+
+    // select("*") and not a column list: the deletion column arrives with the website's delete
+    // slice, and a column list naming it would fail the whole read where that migration is not
+    // applied yet. RLS returns the account's own row only.
+    async function readProfile(supabase, userId) {
+      const { data, error } = await supabase.from("profiles").select("*").eq("id", userId).maybeSingle();
+      if (error) { console.warn(ACCOUNT_LOG + " profile not read: " + error.message); return null; }
+      const firstName = data && typeof data.first_name === "string" ? data.first_name.trim() : "";
+      return {
+        role: data && ACCOUNT_ROLES.includes(data.role) ? data.role : null,
+        firstName: firstName || null,
+        deletionRequestedAt: data && typeof data.deletion_requested_at === "string" ? data.deletion_requested_at : null,
+      };
+    }
+    // The name typed on the sign-in screen, held until the profile is read after that sign-in: an
+    // account that has no name yet gets it through set_first_name (see the RULES above). Cleared
+    // after one attempt so a later token refresh never resends it.
+    let firstNameTypedAtSignIn = "";
+    async function refreshProfile() {
+      const supabase = supabaseClient();
+      if (!supabase || accountState.status !== "signed-in") return;
+      const userId = accountState.user.id;
+      const profile = await readProfile(supabase, userId);
+      if (accountState.status !== "signed-in" || accountState.user.id !== userId) return;
+      setAccountState({ ...accountState, role: profile ? profile.role : null, firstName: profile ? profile.firstName : null,
+        deletionRequestedAt: profile ? profile.deletionRequestedAt : null, profileRead: !!profile });
+      const typed = firstNameTypedAtSignIn;
+      firstNameTypedAtSignIn = "";
+      if (typed && profile && !profile.firstName) await setFirstName(typed);
+    }
+    function applySession(session) {
+      if (!session || !session.user) { setAccountState({ status: "signed-out" }); return; }
+      const user = { id: session.user.id, email: session.user.email || "" };
+      if (accountState.status === "signed-in" && accountState.user.id === user.id) {
+        setAccountState({ ...accountState, user }); // a token refresh: keep the profile already read
+        return;
+      }
+      setAccountState({ status: "signed-in", user, role: null, firstName: null, deletionRequestedAt: null, profileRead: false });
+      setTimeout(refreshProfile, 0); // next tick: see the deadlock WARNING above
+    }
+    function startAccount() {
+      if (accountStarted) return;
+      accountStarted = true;
+      const supabase = supabaseClient();
+      if (!supabase) { setAccountState({ status: "off" }); return; }
+      // INITIAL_SESSION arrives first with the stored session (or null), then every change:
+      // SIGNED_IN after verifyOtp, SIGNED_OUT, TOKEN_REFRESHED, USER_UPDATED.
+      supabase.auth.onAuthStateChange((_event, session) => applySession(session));
+    }
+    function subscribeAccount(fn) { accountListeners.add(fn); startAccount(); return () => accountListeners.delete(fn); }
+    function accountSnapshot() { return accountState; }
+    function useAccount() { return useSyncExternalStore(subscribeAccount, accountSnapshot); }
+
+    /** The name as the database keeps it: trimmed, at most FIRST_NAME_MAX_CHARS, "" when blank. */
+    function cleanFirstName(name) { return String(name || "").trim().slice(0, FIRST_NAME_MAX_CHARS); }
+
+    // Step 1: ask for the code. Answers "sent" | "bad-email" | "off" | "too-soon" | "mailer-busy" | "failed".
+    // A typed first name travels as user metadata so the database trigger can copy it into the
+    // profile when this code makes a new account; blank sends no metadata at all.
+    async function sendSignInCode(email, firstName) {
+      const address = email.trim();
+      if (!isValidEmail(address)) return "bad-email";
+      const supabase = supabaseClient();
+      if (!supabase) return "off";
+      const name = cleanFirstName(firstName);
+      const options = name ? { shouldCreateUser: true, data: { first_name: name } } : { shouldCreateUser: true };
+      // No emailRedirectTo: with none, Supabase's template still gets {{ .Token }} to print and the
+      // link in it (if the template keeps one) is not what signs the reader in here.
+      const { error } = await supabase.auth.signInWithOtp({ email: address, options });
+      if (error) {
+        console.warn(ACCOUNT_LOG + " code not sent for " + maskEmail(address) + ": " + (error.status || "") + " " + error.message);
+        // Two different 429s: the per-address minute (too-soon) and the project's hourly email cap.
+        if (error.status === 429) return error.code === "over_email_send_rate_limit" ? "mailer-busy" : "too-soon";
+        return "failed";
+      }
+      console.log(ACCOUNT_LOG + " sign-in code sent to " + maskEmail(address));
+      return "sent";
+    }
+    // Step 2: trade the code for a session. Answers "ok" | "bad-code" | "too-soon" | "off" | "check-failed".
+    // The session then arrives through onAuthStateChange, and the profile read that follows sends
+    // the typed first name to set_first_name when the account has none. The code is never logged.
+    async function verifySignInCode(email, code, firstName) {
+      const address = email.trim();
+      const token = String(code).replace(/\D/g, "");
+      if (token.length < CODE_MIN_DIGITS || token.length > CODE_MAX_DIGITS) return "bad-code";
+      const supabase = supabaseClient();
+      if (!supabase) return "off";
+      firstNameTypedAtSignIn = cleanFirstName(firstName);
+      const { error } = await supabase.auth.verifyOtp({ email: address, token, type: "email" });
+      if (error) {
+        firstNameTypedAtSignIn = "";
+        console.warn(ACCOUNT_LOG + " code not accepted for " + maskEmail(address) + ": " + (error.status || "") + " " + error.message);
+        if (error.status === 429) return "too-soon";
+        // 400/401/403/422: wrong, expired or already used. Anything else is the network or the service.
+        return error.status >= 400 && error.status < 500 ? "bad-code" : "check-failed";
+      }
+      console.log(ACCOUNT_LOG + " signed in: " + maskEmail(address));
+      return "ok";
+    }
+    /** Signs out on this device only. The store moves to signed-out through the auth listener. */
+    async function signOut() {
+      const supabase = supabaseClient();
+      if (!supabase) return;
+      const { error } = await supabase.auth.signOut();
+      if (error) console.warn(ACCOUNT_LOG + " sign-out failed: " + error.message);
+    }
+
+    // The website's delete slice (built in parallel) adds the two functions. Until its migration is
+    // applied, Postgres answers "function does not exist" (42883) or PostgREST PGRST202; the
+    // screen then says "Not available yet" instead of failing.
+    function isMissingFunction(error) {
+      return !!error && (error.code === "42883" || error.code === "PGRST202" ||
+        /does not exist|could not find the function/i.test(error.message || ""));
+    }
+    // Answers "ok" | "unavailable" | "failed" | "off". On "ok" the state carries the request time.
+    async function requestAccountDeletion() {
+      const supabase = supabaseClient();
+      if (!supabase || accountState.status !== "signed-in") return "off";
+      const { data, error } = await supabase.rpc("request_account_deletion");
+      if (error) {
+        console.warn(ACCOUNT_LOG + " deletion request " + (isMissingFunction(error) ? "not available yet" : "failed") + ": " + error.message);
+        return isMissingFunction(error) ? "unavailable" : "failed";
+      }
+      console.log(ACCOUNT_LOG + " account deletion requested");
+      if (accountState.status === "signed-in") {
+        setAccountState({ ...accountState, deletionRequestedAt: typeof data === "string" ? data : new Date().toISOString() });
+      }
+      refreshProfile();
+      return "ok";
+    }
+    async function cancelAccountDeletion() {
+      const supabase = supabaseClient();
+      if (!supabase || accountState.status !== "signed-in") return "off";
+      const { error } = await supabase.rpc("cancel_account_deletion");
+      if (error) {
+        console.warn(ACCOUNT_LOG + " deletion cancel " + (isMissingFunction(error) ? "not available yet" : "failed") + ": " + error.message);
+        return isMissingFunction(error) ? "unavailable" : "failed";
+      }
+      console.log(ACCOUNT_LOG + " account deletion cancelled");
+      if (accountState.status === "signed-in") setAccountState({ ...accountState, deletionRequestedAt: null });
+      refreshProfile();
+      return "ok";
+    }
+
+    // The name is written only through the website's database function set_first_name, which
+    // trims it, caps it at FIRST_NAME_MAX_CHARS and answers the stored name (null when blank).
+    // Answers "ok" | "unavailable" | "failed" | "off". The log line never carries the name.
+    async function setFirstName(name) {
+      const supabase = supabaseClient();
+      if (!supabase || accountState.status !== "signed-in") return "off";
+      const userId = accountState.user.id;
+      const { data, error } = await supabase.rpc("set_first_name", { name: cleanFirstName(name) });
+      if (error) {
+        console.warn(ACCOUNT_LOG + " first name " + (isMissingFunction(error) ? "not available yet" : "not saved") + " for " + maskEmail(accountState.user.email) + ": " + error.message);
+        return isMissingFunction(error) ? "unavailable" : "failed";
+      }
+      console.log(ACCOUNT_LOG + " first name saved for " + maskEmail(accountState.user.email));
+      if (accountState.status === "signed-in" && accountState.user.id === userId) {
+        const stored = typeof data === "string" ? data.trim() : "";
+        setAccountState({ ...accountState, firstName: stored || null });
+      }
+      return "ok";
+    }
+
+    /* ---------------- SAVED BASES (the device's list or the account's list) ----------------
+       Two stores behind one facade, chosen by the signed-in state (the website's saved-bases.ts):
+         - signed OUT, accounts off, or the account list not loaded yet: the DEVICE list, browser
+           storage "bg_saved", an array of slugs. Exactly what the app had before accounts.
+         - signed IN with the account list loaded: public.saved_bases, the website's rows, read and
+           written with the reader's own session.
+       The screens see one list of slugs and one action (toggleSavedBase); they do not know which.
+       Only slugs are stored; the names come from the base list the app already loads, so a renamed
+       base shows its new name.
+
+       RULES
+       - An account keeps at most 3 saved bases (MAX_SAVED_BASES): the website's limit, because its
+         compare page shows at most 3. The database trigger saved_bases_limit is the guarantee; the
+         app asks before it writes and tells the reader to remove one first.
+         ROAD NOT TAKEN: capping the device list too. Chris's card keeps saved bases on the device
+         exactly as today when accounts are off; a longer device list is merged as far as it fits.
+       - Writes show at once and go to the database behind them. A refused write is logged and the
+         list is read again, so the screen never shows a base that was not stored.
+
+       MERGE RULE (website, saved-bases-account.ts; Chris approved the plan 2026-11-23): when the
+       account's list first loads on a device that has its own list, the account's bases stay as
+       they are; a device base the account does not have is ADDED while the account has room (up to
+       3, in the device order); nothing is deleted from the account by signing in. The device list
+       is then CLEARED, so the app reads the account from here on and the merge runs once per
+       device sign-in. Logged as "[ACCOUNT] saved bases merged: account=N device=M added=K".
+       WARNING: that emptied device list is deliberate. Signing out leaves this device with no saved
+       bases (they live in the account now); signing in brings them back.
+
+       WARNING: the account list is null until the first read finishes (or when it fails). The facade
+       shows the device list in the meantime, and the merge picks up anything saved then. */
+    const MAX_SAVED_BASES = 3;
+    const DEVICE_SAVED_KEY = "bg_saved"; // stored on readers' devices: a change resets their lists
+    const SAVED_TABLE = "saved_bases";
+    const SLUG_SHAPE = /^[a-z0-9]+(-[a-z0-9]+)*$/; // the table's own check on base_slug
+
+    function readDeviceSaved() {
+      const stored = LS.get(DEVICE_SAVED_KEY, []);
+      return Array.isArray(stored) ? stored.filter((s) => typeof s === "string" && SLUG_SHAPE.test(s)) : [];
+    }
+
+    const savedListeners = new Set();
+    let savedUserId = null;    // the signed-in user whose account list is loaded or loading
+    let accountRows = null;    // [{ slug, position }] in position order, or null while not loaded
+    let savedLoadCount = 0;
+    let savedStarted = false;
+    let savedSnapshot = { slugs: readDeviceSaved(), inAccount: false };
+    function emitSaved() {
+      savedSnapshot = accountRows
+        ? { slugs: accountRows.map((r) => r.slug), inAccount: true }
+        : { slugs: readDeviceSaved(), inAccount: false };
+      savedListeners.forEach((fn) => fn());
+    }
+
+    async function readAccountRows(supabase, uid) {
+      const { data, error } = await supabase.from(SAVED_TABLE).select("base_slug, position").eq("user_id", uid).order("position");
+      if (error) { console.warn(SAVED_LOG + " saved bases not read: " + error.message); return null; }
+      return (data || []).filter((r) => typeof r.base_slug === "string")
+        .map((r) => ({ slug: r.base_slug, position: typeof r.position === "number" ? r.position : 0 }))
+        .slice(0, MAX_SAVED_BASES);
+    }
+    async function insertAccountRow(supabase, uid, slug, position) {
+      const { error } = await supabase.from(SAVED_TABLE).insert({ user_id: uid, base_slug: slug, position });
+      if (error) console.warn(SAVED_LOG + " saved base not stored (" + slug + "): " + error.message);
+      return !error;
+    }
+    async function deleteAccountRow(supabase, uid, slug) {
+      const { error } = await supabase.from(SAVED_TABLE).delete().eq("user_id", uid).eq("base_slug", slug);
+      if (error) console.warn(SAVED_LOG + " saved base not removed (" + slug + "): " + error.message);
+      return !error;
+    }
+    /** After a refused write: read the table again so the screen shows what is really stored. */
+    async function reloadAccountRows(uid) {
+      const supabase = supabaseClient();
+      if (!supabase) return;
+      const fresh = await readAccountRows(supabase, uid);
+      if (savedUserId !== uid) return;
+      if (fresh) accountRows = fresh;
+      emitSaved();
+    }
+    function nextPosition(rows) { return rows.reduce((max, r) => Math.max(max, r.position + 1), 0); }
+
+    /** The first load for a user: the table, then the merge of the device list (rule above). */
+    async function loadAccountRows(uid) {
+      const supabase = supabaseClient();
+      if (!supabase) return;
+      const thisLoad = ++savedLoadCount;
+      const fromTable = await readAccountRows(supabase, uid);
+      if (savedUserId !== uid || thisLoad !== savedLoadCount) return;
+      if (!fromTable) { accountRows = null; emitSaved(); return; } // read failed: keep the device list
+      const list = [...fromTable];
+      const device = readDeviceSaved();
+      let added = 0;
+      for (const slug of device) {
+        if (list.some((r) => r.slug === slug)) continue;
+        if (list.length >= MAX_SAVED_BASES) break;
+        const position = nextPosition(list);
+        if (await insertAccountRow(supabase, uid, slug, position)) { list.push({ slug, position }); added += 1; }
+      }
+      if (savedUserId !== uid || thisLoad !== savedLoadCount) return;
+      if (device.length > 0) {
+        LS.set(DEVICE_SAVED_KEY, []);
+        console.log(ACCOUNT_LOG + " saved bases merged: account=" + fromTable.length + " device=" + device.length + " added=" + added);
+      }
+      accountRows = list;
+      emitSaved();
+    }
+    function onAccountChangeForSaved() {
+      const account = accountSnapshot();
+      const uid = account.status === "signed-in" ? account.user.id : null;
+      if (uid === savedUserId) return;
+      savedUserId = uid;
+      accountRows = null;
+      emitSaved();
+      if (uid) loadAccountRows(uid);
+    }
+    function subscribeSaved(fn) {
+      savedListeners.add(fn);
+      if (!savedStarted) { savedStarted = true; subscribeAccount(onAccountChangeForSaved); onAccountChangeForSaved(); }
+      return () => savedListeners.delete(fn);
+    }
+    function savedBasesSnapshot() { return savedSnapshot; }
+    /** { slugs, inAccount }: the list shown, and whether it is the account's or this device's. */
+    function useSavedBases() { return useSyncExternalStore(subscribeSaved, savedBasesSnapshot); }
+
+    /** The one save action. Answers "saved" | "removed" | "full" ("full" only for an account list). */
+    function toggleSavedBase(slug) {
+      if (!accountRows) {
+        const slugs = readDeviceSaved();
+        const had = slugs.includes(slug);
+        LS.set(DEVICE_SAVED_KEY, had ? slugs.filter((x) => x !== slug) : [...slugs, slug]);
+        emitSaved();
+        return had ? "removed" : "saved";
+      }
+      const supabase = supabaseClient();
+      const uid = savedUserId;
+      if (accountRows.some((r) => r.slug === slug)) {
+        accountRows = accountRows.filter((r) => r.slug !== slug);
+        emitSaved();
+        deleteAccountRow(supabase, uid, slug).then((ok) => { if (!ok) reloadAccountRows(uid); });
+        return "removed";
+      }
+      if (accountRows.length >= MAX_SAVED_BASES) return "full";
+      const position = nextPosition(accountRows);
+      accountRows = [...accountRows, { slug, position }];
+      emitSaved();
+      insertAccountRow(supabase, uid, slug, position).then((ok) => { if (!ok) reloadAccountRows(uid); });
+      return "saved";
+    }
+
     /* ---------------- Screens ---------------- */
     // A single base card (shared by Home and Saved).
     function BaseCard({ b, onOpen, saved, onToggleSave }) {
@@ -1384,12 +1890,27 @@
       );
     }
 
-    function SavedScreen({ bases, saved, onToggleSave, onOpen }) {
+    // One line under the saved list about where the list lives. RULE (website; Chris, "After they
+    // try a tool"): the account is offered only after a tool was used, so the offer appears under a
+    // list that has something in it, never on an empty screen.
+    function SavedWhereLine({ account, inAccount, onOpenAccount }) {
+      if (account.status === "off" || account.status === "loading") return null;
+      if (inAccount) return <div className="faint tiny" style={{ margin: "2px 2px 12px" }}>Kept in your account and shown on every device you sign in on.</div>;
+      if (account.status === "signed-out") return (
+        <div className="muted small" style={{ margin: "2px 2px 12px" }}>
+          Saved on this phone only. <button className="btn-quiet" onClick={onOpenAccount}>Sign in to keep them on every device</button>
+        </div>
+      );
+      return null;
+    }
+
+    function SavedScreen({ bases, saved, onToggleSave, onOpen, account, inAccount, onOpenAccount }) {
       const list = (bases || []).filter((b) => saved.includes(b.slug));
       if (!list.length) return <div className="content"><h2 className="screen-h">Saved</h2><div className="center">No saved bases yet.<br />Tap the bookmark on a base to save it here.</div></div>;
       return (
         <div className="content">
           <h2 className="screen-h">Saved</h2>
+          <SavedWhereLine account={account} inAccount={inAccount} onOpenAccount={onOpenAccount} />
           {list.map((b) => (
             <div key={b.slug} className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)} style={{ borderLeft: "4px solid " + branchColor(b.branch) }}>
               <div className="between">
@@ -1404,6 +1925,218 @@
               </div>
             </div>
           ))}
+        </div>
+      );
+    }
+
+    /* ---------------- ACCOUNT SCREENS ---------------- */
+    // The sign-in screen: the fixed sentences, then two steps - the optional first name, the address
+    // and "Send me a code", then the code and "Sign in". The words live in SIGN_IN_TEXT; this is the
+    // behaviour. The typed name stays in this component through the code step: it is sent with the
+    // code request (new account) and again after the code is accepted (existing account).
+    // The screen version travels on the element (data-screen-version), the record of what was shown.
+    function SignInScreen() {
+      const [firstName, setFirstNameTyped] = useState("");
+      const [email, setEmail] = useState("");
+      const [code, setCode] = useState("");
+      const [step, setStep] = useState("email"); // "email" | "code"
+      const [busy, setBusy] = useState(false);
+      const [message, setMessage] = useState("");
+
+      const send = async (e) => {
+        e.preventDefault();
+        if (busy) return;
+        setBusy(true); setMessage("");
+        const result = await sendSignInCode(email, firstName);
+        setBusy(false);
+        if (result === "sent") { setStep("code"); setCode(""); return; }
+        setMessage(SIGN_IN_MESSAGE[result] || SIGN_IN_MESSAGE.failed);
+      };
+      const verify = async (e) => {
+        e.preventDefault();
+        if (busy) return;
+        setBusy(true); setMessage("");
+        const result = await verifySignInCode(email, code, firstName);
+        setBusy(false);
+        // On "ok" the auth listener moves the app to the account screen; nothing to do here.
+        if (result !== "ok") setMessage(SIGN_IN_MESSAGE[result] || SIGN_IN_MESSAGE["check-failed"]);
+      };
+      const askAgain = async () => {
+        if (busy) return;
+        setBusy(true); setMessage("");
+        const result = await sendSignInCode(email, firstName);
+        setBusy(false);
+        setMessage(result === "sent" ? "A new code is on its way." : (SIGN_IN_MESSAGE[result] || SIGN_IN_MESSAGE.failed));
+      };
+
+      return (
+        <div className="content" data-screen-version={SIGN_IN_SCREEN_VERSION}>
+          <h2 className="screen-h">{SIGN_IN_TEXT.title}</h2>
+          <p className="acct-p">{SIGN_IN_TEXT.whatYouGet}</p>
+          {step === "email" ? (
+            <form onSubmit={send}>
+              <label className="fld-l" htmlFor="acct-first-name">{SIGN_IN_TEXT.firstNameLabel}</label>
+              <input id="acct-first-name" className="fld" type="text" autoComplete="given-name" autoCapitalize="words" spellCheck={false} maxLength={FIRST_NAME_MAX_CHARS}
+                value={firstName} onChange={(e) => setFirstNameTyped(e.target.value)} style={{ marginBottom: 12 }} />
+              <label className="fld-l" htmlFor="acct-email">{SIGN_IN_TEXT.emailLabel}</label>
+              <input id="acct-email" className="fld" type="email" inputMode="email" autoComplete="email" autoCapitalize="none" spellCheck={false}
+                value={email} onChange={(e) => setEmail(e.target.value)} required />
+              <p className="acct-p small" style={{ marginTop: 14 }}>{SIGN_IN_TEXT.weeklyEmail}</p>
+              <p className="acct-p small">{SIGN_IN_TEXT.noCallsNoTexts}</p>
+              <button className="btn-gold" type="submit" disabled={busy}>{busy ? "Sending..." : SIGN_IN_TEXT.button}</button>
+              <p className="acct-p small" style={{ marginTop: 12 }}>
+                By continuing you accept our <a href={PRIVACY_URL} target="_blank" rel="noopener noreferrer">privacy policy</a>.
+              </p>
+              {message ? <div className="acct-msg" role="alert">{message}</div> : null}
+            </form>
+          ) : (
+            <form onSubmit={verify}>
+              <p className="acct-p" role="status">{SIGN_IN_TEXT.sent}</p>
+              <label className="fld-l" htmlFor="acct-code">{SIGN_IN_TEXT.codeLabel}</label>
+              <input id="acct-code" className="fld acct-code" type="text" inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]*" maxLength={CODE_MAX_DIGITS}
+                value={code} onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))} autoFocus />
+              <button className="btn-gold" type="submit" disabled={busy || code.length < CODE_MIN_DIGITS || code.length > CODE_MAX_DIGITS}>{busy ? "Checking..." : SIGN_IN_TEXT.codeButton}</button>
+              <div className="acct-actions">
+                <button type="button" className="btn-quiet" onClick={askAgain} disabled={busy}>Send a new code</button>
+                <button type="button" className="btn-quiet" onClick={() => { setStep("email"); setMessage(""); }} disabled={busy}>Use a different address</button>
+              </div>
+              {message ? <div className={"acct-msg" + (message.indexOf("on its way") !== -1 ? " ok" : "")} role="alert">{message}</div> : null}
+            </form>
+          )}
+        </div>
+      );
+    }
+
+    // Delete my account, the confirm sheet and the pending state. Words from Chris (2026-11-23,
+    // 2026-11-24): 30 days, nothing sent while it waits, cancel by signing in.
+    function DeleteAccountBlock({ account }) {
+      const [confirming, setConfirming] = useState(false);
+      const [busy, setBusy] = useState(false);
+      const [message, setMessage] = useState("");
+      const run = async (action) => {
+        if (busy) return;
+        setBusy(true); setMessage("");
+        const result = await action();
+        setBusy(false);
+        if (result === "ok") { setConfirming(false); return; }
+        setMessage(result === "unavailable" ? "Not available yet." : "That did not work. Try again in a few minutes.");
+      };
+      if (account.deletionRequestedAt) {
+        const requested = new Date(account.deletionRequestedAt);
+        return (
+          <div>
+            <h3 className="acct-h">Delete my account</h3>
+            <p className="acct-p">Deletion requested on {fmtDate(requested)}. Your account is removed on {fmtDate(addDays(requested, DELETION_WAIT_DAYS))}.</p>
+            <button className="btn-plain" onClick={() => run(cancelAccountDeletion)} disabled={busy}>{busy ? "One moment..." : "Cancel deletion"}</button>
+            {message ? <div className="acct-msg" role="alert">{message}</div> : null}
+          </div>
+        );
+      }
+      return (
+        <div>
+          <h3 className="acct-h">Delete my account</h3>
+          {!confirming ? (
+            <button className="btn-danger" onClick={() => { setConfirming(true); setMessage(""); }}>Delete my account</button>
+          ) : (
+            <div className="card acct-sheet" role="dialog" aria-label="Delete my account">
+              <p className="acct-p">Your account and your saved bases are removed {DELETION_WAIT_DAYS} days from today. Nothing is sent to you while it waits. You can cancel any time before then by signing in.</p>
+              <div className="acct-actions">
+                <button className="btn-danger" onClick={() => run(requestAccountDeletion)} disabled={busy}>{busy ? "One moment..." : "Delete my account"}</button>
+                <button className="btn-plain" onClick={() => setConfirming(false)} disabled={busy}>Keep my account</button>
+              </div>
+            </div>
+          )}
+          {message ? <div className="acct-msg" role="alert">{message}</div> : null}
+        </div>
+      );
+    }
+
+    // The Name row of the account screen. No name stored: the one-line prompt "What should we call
+    // you?" with a box and Save (how an account made before the name existed gets one). Stored: the
+    // name and "Change". Writes go through set_first_name; a missing function reads "Not available
+    // yet" (the website's migration is not applied), like the delete functions.
+    function FirstNameRow({ account }) {
+      const [editing, setEditing] = useState(false);
+      const [draft, setDraft] = useState("");
+      const [busy, setBusy] = useState(false);
+      const [message, setMessage] = useState("");
+      const stored = account.firstName;
+      const save = async (e) => {
+        e.preventDefault();
+        if (busy) return;
+        setBusy(true); setMessage("");
+        const result = await setFirstName(draft);
+        setBusy(false);
+        if (result === "ok") { setEditing(false); return; }
+        setMessage(result === "unavailable" ? "Not available yet." : "That did not work. Try again in a few minutes.");
+      };
+      if (!account.profileRead) return <dd>Reading.</dd>;
+      if (stored && !editing) {
+        return (
+          <dd className="acct-name">
+            <span>{stored}</span>
+            <button type="button" className="btn-quiet" onClick={() => { setDraft(stored); setEditing(true); setMessage(""); }}>Change</button>
+          </dd>
+        );
+      }
+      return (
+        <dd>
+          <form className="acct-name-form" onSubmit={save}>
+            <label className="fld-l" htmlFor="acct-name">What should we call you?</label>
+            <div className="acct-name">
+              <input id="acct-name" className="fld" type="text" autoComplete="given-name" autoCapitalize="words" spellCheck={false} maxLength={FIRST_NAME_MAX_CHARS}
+                value={draft} onChange={(e) => setDraft(e.target.value)} placeholder="First name" />
+              <button type="submit" className="btn-quiet" disabled={busy || !cleanFirstName(draft)}>{busy ? "Saving..." : "Save"}</button>
+              {stored ? <button type="button" className="btn-quiet" onClick={() => { setEditing(false); setMessage(""); }} disabled={busy}>Cancel</button> : null}
+            </div>
+            {message ? <div className="acct-msg" role="alert">{message}</div> : null}
+          </form>
+        </dd>
+      );
+    }
+
+    // The account screen: the name, the address, the role, the saved bases with Remove, sign out,
+    // delete.
+    // Signed out it IS the sign-in screen. Names come from the base list; a slug the list does not
+    // know (saved on the website for a base the app has no guide for yet) shows as its slug.
+    function AccountScreen({ account, saved, inAccount, bases, onToggleSave, onOpen }) {
+      if (account.status === "off") return <div className="content"><h2 className="screen-h">Account</h2><p className="acct-p">{SIGN_IN_MESSAGE.off}</p></div>;
+      if (account.status === "loading") return <div className="content"><h2 className="screen-h">Account</h2><p className="acct-p" role="status">Checking your sign-in.</p></div>;
+      if (account.status === "signed-out") return <SignInScreen />;
+      const nameOf = (slug) => { const b = (bases || []).find((x) => x.slug === slug); return b ? b.name : slug.replace(/-/g, " "); };
+      const readyOf = (slug) => { const b = (bases || []).find((x) => x.slug === slug); return !!(b && b.ready); };
+      return (
+        <div className="content">
+          <h2 className="screen-h">Your account</h2>
+          <div className="card">
+            <dl className="facts">
+              <dt>Name</dt><FirstNameRow account={account} />
+              <dt>Email</dt><dd style={{ wordBreak: "break-all" }}>{account.user.email}</dd>
+              <dt>Role</dt><dd>{account.role ? ROLE_LABEL[account.role] : "Reading."}</dd>
+            </dl>
+          </div>
+
+          <h3 className="acct-h">Your saved bases</h3>
+          {!inAccount ? <p className="muted small" role="status">Loading your saved bases.</p> : null}
+          {saved.length === 0 ? (
+            <p className="acct-p">None yet. Tap the bookmark on a base to save it here.</p>
+          ) : (
+            <ul className="lst acct-list">
+              {saved.map((slug) => (
+                <li key={slug}>
+                  <button className="t" style={{ textAlign: "left", padding: 0, cursor: readyOf(slug) ? "pointer" : "default" }} onClick={() => readyOf(slug) && onOpen(slug)}>{nameOf(slug)}</button>
+                  <button className="rm" onClick={() => onToggleSave(slug)} aria-label={"Remove " + nameOf(slug) + " from your saved bases"}>Remove</button>
+                </li>
+              ))}
+            </ul>
+          )}
+          <div className="faint tiny" style={{ marginTop: 8 }}>Up to {MAX_SAVED_BASES} bases, kept in your account and shown on every device you sign in on.</div>
+
+          <h3 className="acct-h">Sign out</h3>
+          <p className="acct-p">Signs you out on this device only. Your saved bases stay in your account.</p>
+          <button className="btn-plain" onClick={() => signOut()}>Sign out</button>
+
+          <DeleteAccountBlock account={account} />
         </div>
       );
     }
@@ -1482,8 +2215,12 @@
       const [bases, setBases] = useState(null);
       const [loading, setLoading] = useState(true);
       const [slug, setSlug] = useState(null);
-      const [saved, setSaved] = useState(() => LS.get("bg_saved", []));
       const [loadFailed, setLoadFailed] = useState(false);
+      // The account and the saved list come from the two stores above (ACCOUNT, SAVED BASES); the
+      // screens only ever see `saved` as an array of slugs, as they did before accounts.
+      const account = useAccount();
+      const { slugs: saved, inAccount } = useSavedBases();
+      const [notice, setNotice] = useState("");
 
       /* The base list loads once at launch. WARNING: a failed load used to fall through to an empty list, so Home said
          "No bases yet" as if the data were gone (seen on Chris's phone 2026-11-10: the request never reached the server).
@@ -1511,10 +2248,15 @@
 
       const open = useCallback((s) => { setSlug(s); setTab("guide"); }, []);
       const back = useCallback(() => { setSlug(null); setTab("home"); }, []);
-      const toggleSave = useCallback((s) => setSaved((prev) => {
-        const n = prev.includes(s) ? prev.filter((x) => x !== s) : [...prev, s];
-        LS.set("bg_saved", n); return n;
-      }), []);
+      const toggleSave = useCallback((s) => {
+        if (toggleSavedBase(s) === "full") setNotice("Your account keeps up to " + MAX_SAVED_BASES + " saved bases. Remove one first.");
+      }, []);
+      useEffect(() => {
+        if (!notice) return undefined;
+        const id = setTimeout(() => setNotice(""), 5000);
+        return () => clearTimeout(id);
+      }, [notice]);
+      const openAccount = useCallback(() => setTab("account"), []);
 
       let body;
       if (tab === "home") body = <Home bases={bases} loading={loading} loadFailed={loadFailed} onRetry={loadBases} onOpen={open} saved={saved} onToggleSave={toggleSave} />;
@@ -1523,7 +2265,23 @@
         : <Stub label="Guide" note="Pick a base from Home to open its guide." />;
       else if (tab === "map") body = <MapScreen slug={slug} bases={bases} onOpen={open} />;
       else if (tab === "plan") body = <PlanScreen bases={bases} onOpen={open} />;
-      else body = <SavedScreen bases={bases} saved={saved} onToggleSave={toggleSave} onOpen={open} />;
+      else if (tab === "account") body = <AccountScreen account={account} saved={saved} inAccount={inAccount} bases={bases} onToggleSave={toggleSave} onOpen={open} />;
+      else body = <SavedScreen bases={bases} saved={saved} onToggleSave={toggleSave} onOpen={open} account={account} inAccount={inAccount} onOpenAccount={openAccount} />;
+
+      // The account entry lives in the top bar (the app keeps account-ish things there, not in the
+      // five-tab nav). RULE (Chris, 2026-11-24, after testing): the header must make the state
+      // obvious - the person icon + "Sign in" when signed out, the person icon + "Hi <first name>"
+      // ("Hi there" without a name) when signed in. The address is NOT shown here any more; it
+      // stays on the account screen. Hidden entirely while accounts are off. During "loading" the
+      // entry keeps the signed-out look ("Sign in") and swaps once the stored session is read, so a
+      // signed-in reader sees that swap for a moment on each launch; a wrong "Hi there" before the
+      // session is known would be the worse lie.
+      const accountEntry = account.status === "off" ? null : (
+        <button className={"acct-entry" + (tab === "account" ? " on" : "")} onClick={openAccount} aria-label={account.status === "signed-in" ? "Your account" : SIGN_IN_TEXT.label}>
+          <Icon name="person" size={18} />
+          <span>{account.status === "signed-in" ? greeting(account.firstName) : SIGN_IN_TEXT.label}</span>
+        </button>
+      );
 
       const NavBtn = ({ id, icon, label }) => (
         <button className={tab === id ? "on" : ""} onClick={() => setTab(id)}>
@@ -1534,10 +2292,16 @@
       return (
         <div id="app-shell">
           <div className="topbar">
-            <h1>{APP_NAME}</h1>
-            <div className="sub">{BRAND}</div>
+            <div className="topbar-row">
+              <div>
+                <h1>{APP_NAME}</h1>
+                <div className="sub">{BRAND}</div>
+              </div>
+              {accountEntry}
+            </div>
           </div>
           <UpdateBanner />
+          {notice ? <div className="banner" role="status"><span>{notice}</span><button onClick={() => setNotice("")}>OK</button></div> : null}
           {body}
           <div className="nav">
             <NavBtn id="home" icon="home" label="HOME" />
