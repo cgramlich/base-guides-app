@@ -207,6 +207,7 @@
     .card.tap:active{opacity:0.7;}
     .base-name{font-family:var(--serif); font-size:20px; line-height:1.15; letter-spacing:0;}
     .meta-line{font-size:13.5px; color:var(--n-dim); margin-top:3px;}
+    .parent-line{font-size:12.5px; margin-top:1px;}
     /* Labels you cannot tap: a hairline edge in --line, --dim text (kit .chip.tag). */
     .pill{display:inline-block; font-size:11px; line-height:1.4; padding:1px 7px; border:1px solid var(--n-line); color:var(--n-dim); margin-left:8px; vertical-align:2px; font-family:'Outfit',sans-serif;}
     .card-go{color:var(--n-dim); flex:none; display:flex; align-items:center; margin-left:10px;}
@@ -469,7 +470,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.23.0";
+    const APP_VERSION = "0.23.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1807,7 +1808,16 @@
 
     /* ---------------- Screens ---------------- */
     // A single base card (shared by Home and Saved).
-    function BaseCard({ b, onOpen, saved, onToggleSave }) {
+    // The line under a post's name that names its hub ("Joint Base San Antonio"), so a reader who
+    // found "JBSA Lackland" knows which installation it belongs to. Nothing for a base without a parent.
+    function ParentLine({ b, bases }) {
+      if (!b.parent || !bases) return null;
+      const parent = bases.find((x) => x.slug === b.parent);
+      if (!parent) return null;
+      return <div className="meta-line parent-line">Part of {parent.name.replace(/\s*\(.*$/, "")}</div>;
+    }
+
+    function BaseCard({ b, onOpen, saved, onToggleSave, bases }) {
       return (
         <div className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)}>
           <div className="between">
@@ -1818,6 +1828,7 @@
                 {b.ready ? <span className="pill ready">Guide ready</span> : <span className="pill soon">Coming soon</span>}
               </div>
               <div className="meta-line">{[b.branch, b.state].filter(Boolean).join("  -  ")}</div>
+              <ParentLine b={b} bases={bases} />
             </div>
             <div className="card-actions">
               <button className="iconbtn" style={saved.includes(b.slug) ? { color: "var(--accent)" } : null} onClick={(e) => { e.stopPropagation(); onToggleSave(b.slug); }} aria-label="Save">
@@ -1877,7 +1888,20 @@
         const hay = (b.name + " " + (b.state || "") + " " + stateTokens(b.state).map(stateFull).join(" ")).toLowerCase();
         return hay.indexOf(ql) !== -1;
       };
-      const filtered = bases.filter((b) => matchBranch(b) && matchLoc(b) && matchQ(b));
+      // RULE (Chris, decision card 2026-11-24): a base is listed ONCE. A hub entry (index.json
+      // "hub": true, today Joint Base San Antonio) is the umbrella over posts that have their own
+      // guides ("parts"); the posts are what families look for, so the posts are always listed and
+      // the hub appears only when the reader types the hub's own name ("San Antonio", "Joint Base",
+      // "JBSA"), never for a post's name ("Lackland" used to return two results) and never in the
+      // unfiltered list, where its posts already stand. The hub's name in the index carries the
+      // post names in brackets, so the plain matchQ above would match it on "lackland": that is
+      // why the hub gets its own match on the name with the bracket part removed.
+      // ROAD NOT TAKEN: dropping the hub entry from the index. Rejected: its guide file still exists
+      // and saved-base rows may point at its slug, so the entry stays and is only hidden from search.
+      const hubSearchName = (b) => (b.name || "").replace(/\s*\(.*$/, "").toLowerCase();
+      const matchHub = (b) => !!ql && (hubSearchName(b).indexOf(ql) !== -1 || ql === "jbsa" || ql.indexOf("jbsa ") === 0);
+      const matchQOrHub = (b) => (b.hub ? matchHub(b) : matchQ(b));
+      const filtered = bases.filter((b) => matchBranch(b) && matchLoc(b) && matchQOrHub(b));
       const locOptions = Array.from(new Set(bases.flatMap((b) => stateTokens(b.state)))).sort((a, b) => stateFull(a).localeCompare(stateFull(b)));
 
       let body;
@@ -1885,7 +1909,7 @@
         body = <div className="pending">No bases match your filters.</div>;
       } else if (sortBy === "name") {
         body = [...filtered].sort((a, b) => a.name.localeCompare(b.name))
-          .map((b) => <BaseCard key={b.slug} b={b} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />);
+          .map((b) => <BaseCard key={b.slug} b={b} bases={bases} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />);
       } else {
         const groups = {};
         filtered.forEach((b) => { const k = b.state || "Other"; (groups[k] = groups[k] || []).push(b); });
@@ -1894,7 +1918,7 @@
         body = keys.map((k) => (
           <div key={k}>
             <div className="state-header">{stateLabel(k)}</div>
-            {groups[k].map((b) => <BaseCard key={b.slug} b={b} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />)}
+            {groups[k].map((b) => <BaseCard key={b.slug} b={b} bases={bases} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />)}
           </div>
         ));
       }
@@ -2121,6 +2145,7 @@
                 <div style={{ minWidth: 0 }}>
                   <div className="base-name">{b.name}{b.ready ? <span className="pill ready">Guide ready</span> : <span className="pill soon">Coming soon</span>}</div>
                   <div className="meta-line">{[b.branch, b.state].filter(Boolean).join("  -  ")}</div>
+                  <ParentLine b={b} bases={bases} />
                 </div>
                 <div className="card-actions">
                   <button className="iconbtn" style={{ color: "var(--accent)" }} onClick={(e) => { e.stopPropagation(); onToggleSave(b.slug); }} aria-label="Remove"><Icon name="bookmarkOn" size={18} /></button>
