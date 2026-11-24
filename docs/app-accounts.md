@@ -107,7 +107,7 @@ deleted from the account; the device list is then cleared. Logged as
 device with no saved bases; signing in brings them back.
 
 Cap: an account keeps at most 5 saved bases (the website's limit, because its compare page shows
-at most 3). The app refuses a 4th with "Your account keeps up to 5 saved bases. Remove one
+at most 3 side by side). The app refuses a 6th with "Your account keeps up to 5 saved bases. Remove one
 first." The database trigger `saved_bases_limit` is the guarantee; a write the database refuses
 is logged (`[SAVED]`) and the list is read again. The device list is NOT capped (Chris's card:
 saved bases stay on-device exactly as today when accounts are off); a longer device list is
@@ -170,7 +170,7 @@ account: delete it in Supabase, Authentication, Users, before the store release.
 5. On milspoliving.com (a preview with accounts on), sign in with the same address: the same
    bases are there. Remove one on the website; the app shows it gone after a relaunch (or sign
    out and in).
-6. Save a 4th base in the app: "Your account keeps up to 5 saved bases. Remove one first."
+6. Save a 6th base in the app: "Your account keeps up to 5 saved bases. Remove one first."
 7. "Sign out": the top bar shows "Sign in" again and Saved is empty on this device. Sign in
    again: the bases are back.
 7a. The name: sign in with "Chris" in the First name box; the top bar reads "Hi Chris" and the
@@ -197,7 +197,7 @@ account: delete it in Supabase, Authentication, Users, before the store release.
   - with a fake `window.supabase` in place of the CDN script (so no mailbox or network): the
     code step after "Send me a code", a wrong code refused, a right code signing in, the
     account screen (address, Member, three bases), the merge log and the cleared device list,
-    the 4th save refused, Remove writing through, a refused insert reloading the list, the
+    the save past the cap refused, Remove writing through, a refused insert reloading the list, the
     delete confirm sheet, the pending state with the dates, cancel, sign out emptying this
     device, "Not available yet" when the functions are missing, the too-soon message, a masked
     address and no code in any log line;
