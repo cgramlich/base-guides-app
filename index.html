@@ -332,7 +332,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.22.0";
+    const APP_VERSION = "0.22.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1463,8 +1463,9 @@
        base shows its new name.
 
        RULES
-       - An account keeps at most 3 saved bases (MAX_SAVED_BASES): the website's limit, because its
-         compare page shows at most 3. The database trigger saved_bases_limit is the guarantee; the
+       - An account keeps at most 5 saved bases (MAX_SAVED_BASES; Chris 2026-11-24, card "Saved cap",
+         up from 3): the website's limit too. WHY a cap: the weekly email leads with changes at the
+         saved bases and must stay short; the website's compare page still shows at most 3. The database trigger saved_bases_limit is the guarantee; the
          app asks before it writes and tells the reader to remove one first.
          ROAD NOT TAKEN: capping the device list too. Chris's card keeps saved bases on the device
          exactly as today when accounts are off; a longer device list is merged as far as it fits.
@@ -1482,7 +1483,7 @@
 
        WARNING: the account list is null until the first read finishes (or when it fails). The facade
        shows the device list in the meantime, and the merge picks up anything saved then. */
-    const MAX_SAVED_BASES = 3;
+    const MAX_SAVED_BASES = 5;
     const DEVICE_SAVED_KEY = "bg_saved"; // stored on readers' devices: a change resets their lists
     const SAVED_TABLE = "saved_bases";
     const SLUG_SHAPE = /^[a-z0-9]+(-[a-z0-9]+)*$/; // the table's own check on base_slug
