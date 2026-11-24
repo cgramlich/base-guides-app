@@ -433,6 +433,17 @@
     .acct-actions{display:flex; gap:12px 18px; flex-wrap:wrap; align-items:center; margin-top:8px;}
     .acct-list li{display:flex; align-items:center; justify-content:space-between; gap:10px;}
     .acct-list .rm{color:var(--n-ink); font-size:13.5px; font-weight:500; padding:6px 0 6px 10px; flex:none;}
+    /* MY BASE: the Home row, the guide button, the one-tap pick on a card. 44px targets. */
+    .mybase-row{display:flex; align-items:center; gap:8px; width:100%; margin:0 0 12px; padding:10px 12px; min-height:44px; border:1px solid var(--n-line); background:transparent; color:var(--text); font-size:14.5px; text-align:left;}
+    .mybase-row .mybase-lbl{color:var(--n-dim); flex:none;}
+    .mybase-row .mybase-name{font-weight:600; flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+    .mybase-none .btn-quiet{margin-left:auto; min-height:32px;}
+    .mybase-hint{margin-bottom:8px;}
+    .basehero-actions{display:flex; align-items:center; gap:6px; flex:none;}
+    .mybase-btn{display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:var(--n-ink); border:1px solid var(--n-ink); background:transparent; padding:6px 10px; min-height:36px;}
+    .mybase-btn.on{background:var(--n-solid); color:var(--n-onsolid); border-color:var(--n-solid);}
+    .mybase-pick{display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:var(--n-ink); border:1px solid var(--n-ink); background:transparent; padding:5px 10px; min-height:32px; margin-bottom:8px;}
+    .mybase-matches{margin-top:8px;}
     .acct-sheet{border:1px solid var(--n-danger); margin:10px 0 0; padding:14px;}
     .acct-name{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
     .acct-name .fld{flex:1 1 140px; width:auto;}
@@ -495,7 +506,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.25.0";
+    const APP_VERSION = "0.26.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1515,28 +1526,30 @@
       { label: "Compare bases", path: "/compare", note: "Two or three bases side by side." },
       { label: "Plan my move", path: "/plan", note: "The PCS checklist and where to start." },
     ];
-    /** The website address of a tool; Compare opens with the reader's first saved bases when there are any. */
-    function websiteToolUrl(tool, savedSlugs) {
-      if (tool.path === "/compare" && savedSlugs && savedSlugs.length > 0) {
-        return WEBSITE_URL + tool.path + "?" + WEBSITE_COMPARE_PARAM + "=" + savedSlugs.slice(0, WEBSITE_COMPARE_MAX).map(encodeURIComponent).join(",");
+    /** The website address of a tool; Compare opens with the given bases (the reader's base first,
+        then saved bases: compareOrder) when there are any. */
+    function websiteToolUrl(tool, compareSlugs) {
+      if (tool.path === "/compare" && compareSlugs && compareSlugs.length > 0) {
+        return WEBSITE_URL + tool.path + "?" + WEBSITE_COMPARE_PARAM + "=" + compareSlugs.slice(0, WEBSITE_COMPARE_MAX).map(encodeURIComponent).join(",");
       }
       return WEBSITE_URL + tool.path;
     }
-    function WebsiteTools({ saved }) {
+    function WebsiteTools({ saved, myBaseSlug }) {
+      const compareSlugs = compareOrder(myBaseSlug, saved);
       return (
         <div className="website-tools">
           <h3 className="acct-h">More tools on the website</h3>
           <ul className="lst acct-list website-tools-list">
             {WEBSITE_TOOLS.map((tool) => (
               <li key={tool.path}>
-                <a className="t website-tool" href={websiteToolUrl(tool, saved)} target="_blank" rel="noopener noreferrer">
+                <a className="t website-tool" href={websiteToolUrl(tool, compareSlugs)} target="_blank" rel="noopener noreferrer">
                   <span className="website-tool-label">{tool.label}</span>
                   <span className="meta-line">{tool.note}</span>
                 </a>
               </li>
             ))}
           </ul>
-          <div className="faint tiny" style={{ marginTop: 8 }}>These live on the website; your saved bases are the same there.</div>
+          <div className="faint tiny" style={{ marginTop: 8 }}>These live on the website; your base and your saved bases are the same there.</div>
         </div>
       );
     }
@@ -1614,9 +1627,10 @@
 
     // The signed-in state, one store for the whole app (read with useAccount). Shapes:
     //   { status: "off" } | { status: "loading" } | { status: "signed-out" } |
-    //   { status: "signed-in", user: { id, email }, role, firstName, deletionRequestedAt, profileRead }
-    // role, firstName and deletionRequestedAt are null until the profile row is read (or when the
-    // read failed); firstName stays null when the account has no name.
+    //   { status: "signed-in", user: { id, email }, role, firstName, deletionRequestedAt, currentBaseSlug, profileRead }
+    // role, firstName, deletionRequestedAt and currentBaseSlug are null until the profile row is read
+    // (or when the read failed); firstName stays null when the account has no name, currentBaseSlug
+    // when no base is listed.
     const accountListeners = new Set();
     let accountState = ACCOUNTS_ON ? { status: "loading" } : { status: "off" };
     let accountStarted = false;
@@ -1629,10 +1643,14 @@
       const { data, error } = await supabase.from("profiles").select("*").eq("id", userId).maybeSingle();
       if (error) { console.warn(ACCOUNT_LOG + " profile not read: " + error.message); return null; }
       const firstName = data && typeof data.first_name === "string" ? data.first_name.trim() : "";
+      // MY BASE: the slug of the base the holder calls theirs (see the MY BASE store below);
+      // null = none listed. A value the shape test refuses is treated as none, never shown.
+      const currentBaseSlug = data && typeof data.current_base_slug === "string" && SLUG_SHAPE.test(data.current_base_slug) ? data.current_base_slug : null;
       return {
         role: data && ACCOUNT_ROLES.includes(data.role) ? data.role : null,
         firstName: firstName || null,
         deletionRequestedAt: data && typeof data.deletion_requested_at === "string" ? data.deletion_requested_at : null,
+        currentBaseSlug,
       };
     }
     // The name typed on the sign-in screen, held until the profile is read after that sign-in: an
@@ -1646,10 +1664,12 @@
       const profile = await readProfile(supabase, userId);
       if (accountState.status !== "signed-in" || accountState.user.id !== userId) return;
       setAccountState({ ...accountState, role: profile ? profile.role : null, firstName: profile ? profile.firstName : null,
-        deletionRequestedAt: profile ? profile.deletionRequestedAt : null, profileRead: !!profile });
+        deletionRequestedAt: profile ? profile.deletionRequestedAt : null, currentBaseSlug: profile ? profile.currentBaseSlug : null,
+        profileRead: !!profile });
       const typed = firstNameTypedAtSignIn;
       firstNameTypedAtSignIn = "";
       if (typed && profile && !profile.firstName) await setFirstName(typed);
+      if (profile) await copyUpDeviceMyBase(profile.currentBaseSlug);
     }
     function applySession(session) {
       if (!session || !session.user) { setAccountState({ status: "signed-out" }); return; }
@@ -1658,7 +1678,7 @@
         setAccountState({ ...accountState, user }); // a token refresh: keep the profile already read
         return;
       }
-      setAccountState({ status: "signed-in", user, role: null, firstName: null, deletionRequestedAt: null, profileRead: false });
+      setAccountState({ status: "signed-in", user, role: null, firstName: null, deletionRequestedAt: null, currentBaseSlug: null, profileRead: false });
       setTimeout(refreshProfile, 0); // next tick: see the deadlock WARNING above
     }
     function startAccount() {
@@ -1935,6 +1955,118 @@
       return "saved";
     }
 
+    /* ---------------- MY BASE (the one base the reader calls theirs) ----------------
+       RULE (Chris, 2026-11-24, decision card "Yes, website and app": "once a base is set, say the
+       name of the base under the name; if one's not listed, 'no base listed' and make it easy to
+       add"): ONE current base per account, set only by the account holder, with NO history (a change
+       replaces the old value, clearing leaves none). It is shown back to its owner (the Home row, the
+       guide screen, the account screen) and filled into the reader's own tools (the website's
+       Compare link puts it first). Nothing else uses it: no list is built from it, no email is sent
+       because of it, no other reader sees it.
+       The website's migration profiles_current_base is the one contract for both:
+         - public.profiles.current_base_slug (text, null = none listed), read with the profile;
+         - supabase.rpc("set_current_base", { slug }): a slug sets it, null clears it, answers the
+           stored value; signed-in readers only, and only their own row.
+       Two stores behind one facade, as for saved bases: the DEVICE value ("bg_my_base", {slug, name})
+       while signed out or before the profile is read; the ACCOUNT value once it is read. On a sign-in
+       a device value with no account value is copied up ONCE through the function, then the account
+       wins and the device value is cleared (the website does the same, src/lib/current-base.ts).
+       WARNING: that cleared device value is deliberate: signing out leaves this device with no base
+       listed; signing in brings the account's back.
+       ROAD NOT TAKEN: a flag on a saved base ("this one is my current base"). Rejected: the saved
+       list is a capped shortlist of bases the reader is weighing, and the current base is one value
+       that need not be among the five (a family at Fort Hood weighing three next bases does not want
+       Fort Hood taking a place). The name travels with the slug on the device only so Home can show
+       it before the base list loads; once the list is here the name comes from the list, so a
+       renamed base shows its new name. */
+    const DEVICE_MY_BASE_KEY = "bg_my_base";
+    const MY_BASE_LOG = "[MYBASE]";
+    const NO_BASE_LISTED = "No base listed.";
+    const myBaseListeners = new Set();
+    let myBaseSnapshot = { slug: null, name: null, inAccount: false };
+    function readDeviceMyBase() {
+      const stored = LS.get(DEVICE_MY_BASE_KEY, null);
+      if (!stored || typeof stored.slug !== "string" || !SLUG_SHAPE.test(stored.slug)) return null;
+      return { slug: stored.slug, name: typeof stored.name === "string" ? stored.name : null };
+    }
+    /** { slug, name, inAccount }: the base shown, and whether it is the account's or this device's. */
+    function computeMyBase() {
+      const account = accountSnapshot();
+      if (account.status === "signed-in" && account.profileRead) {
+        return { slug: account.currentBaseSlug || null, name: null, inAccount: true };
+      }
+      const device = readDeviceMyBase();
+      return device ? { slug: device.slug, name: device.name, inAccount: false } : { slug: null, name: null, inAccount: false };
+    }
+    function emitMyBase() { myBaseSnapshot = computeMyBase(); myBaseListeners.forEach((fn) => fn()); }
+    let myBaseStarted = false;
+    function subscribeMyBase(fn) {
+      myBaseListeners.add(fn);
+      if (!myBaseStarted) { myBaseStarted = true; subscribeAccount(emitMyBase); emitMyBase(); }
+      return () => myBaseListeners.delete(fn);
+    }
+    function myBaseSnapshotGet() { return myBaseSnapshot; }
+    function useMyBase() { return useSyncExternalStore(subscribeMyBase, myBaseSnapshotGet); }
+    /** The name to show: from the base list when it knows the slug, else the device's copy, else the slug. */
+    function myBaseName(myBase, bases) {
+      if (!myBase || !myBase.slug) return null;
+      const b = (bases || []).find((x) => x.slug === myBase.slug);
+      return b ? b.name : (myBase.name || myBase.slug.replace(/-/g, " "));
+    }
+
+    // The account value goes only through set_current_base (the function limits the change to the
+    // caller's own row). Answers "ok" | "unavailable" | "failed". The log line carries the slug (a
+    // page address, not personal data), never the account's address.
+    async function writeAccountMyBase(slug) {
+      const supabase = supabaseClient();
+      if (!supabase || accountState.status !== "signed-in") return "failed";
+      const userId = accountState.user.id;
+      const { data, error } = await supabase.rpc("set_current_base", { slug: slug });
+      if (error) {
+        console.warn(ACCOUNT_LOG + " my base " + (isMissingFunction(error) ? "not available yet" : "not stored") + ": " + error.message);
+        return isMissingFunction(error) ? "unavailable" : "failed";
+      }
+      if (accountState.status === "signed-in" && accountState.user.id === userId) {
+        setAccountState({ ...accountState, currentBaseSlug: typeof data === "string" && SLUG_SHAPE.test(data) ? data : null });
+      }
+      return "ok";
+    }
+    /** The one action: set ({ slug, name }) or clear (null). Answers "ok" | "unavailable" | "failed". */
+    async function setMyBase(base) {
+      const slug = base && typeof base.slug === "string" && SLUG_SHAPE.test(base.slug) ? base.slug : null;
+      if (base && !slug) return "failed";
+      const account = accountSnapshot();
+      if (account.status === "signed-in" && account.profileRead) {
+        const result = await writeAccountMyBase(slug);
+        if (result === "ok") { console.log(MY_BASE_LOG + (slug ? " set to " + slug : " cleared") + " (account)"); emitMyBase(); }
+        return result;
+      }
+      LS.set(DEVICE_MY_BASE_KEY, slug ? { slug, name: base.name || null } : null);
+      console.log(MY_BASE_LOG + (slug ? " set to " + slug : " cleared") + " (device)");
+      emitMyBase();
+      return "ok";
+    }
+    // After a sign-in (called once the profile is read): a base chosen on this device before signing
+    // in goes to the account once, unless the account already has one (then the account wins).
+    // Either way the device value is cleared, so the app reads the account from here on.
+    async function copyUpDeviceMyBase(accountSlug) {
+      const device = readDeviceMyBase();
+      if (!device) return;
+      if (!accountSlug) {
+        const result = await writeAccountMyBase(device.slug);
+        console.log(ACCOUNT_LOG + " my base copied up from this device: " + result);
+        if (result !== "ok") return; // the device keeps its value for a later try
+      }
+      LS.set(DEVICE_MY_BASE_KEY, null);
+      emitMyBase();
+    }
+    /** Compare on the website: the reader's base first, then the saved bases, at most WEBSITE_COMPARE_MAX. */
+    function compareOrder(myBaseSlug, savedSlugs) {
+      const list = myBaseSlug ? [myBaseSlug] : [];
+      (savedSlugs || []).forEach((slug) => { if (!list.includes(slug)) list.push(slug); });
+      return list.slice(0, WEBSITE_COMPARE_MAX);
+    }
+
     /* ---------------- Screens ---------------- */
     // A single base card (shared by Home and Saved).
     // The line under a post's name that names its hub ("Joint Base San Antonio"), so a reader who
@@ -1948,9 +2080,14 @@
 
     // RULE (auditor round 2, item 3): the "Guide ready" label is gone. Every base in the index has a
     // guide, so the label told the reader nothing; only "Coming soon" (an entry not ready) is marked.
-    function BaseCard({ b, onOpen, saved, onToggleSave, bases }) {
+    function BaseCard({ b, onOpen, saved, onToggleSave, bases, onSetMyBase }) {
       return (
         <div className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)}>
+          {onSetMyBase && b.ready ? (
+            <button type="button" className="mybase-pick" onClick={(e) => { e.stopPropagation(); onSetMyBase({ slug: b.slug, name: b.name }); }}>
+              <Icon name="home" size={14} />This is my base
+            </button>
+          ) : null}
           <div className="between">
             <div style={{ minWidth: 0 }}>
               <div className="base-name">
@@ -2081,11 +2218,38 @@
       );
     }
 
-    function Home({ bases, loading, loadFailed, onRetry, onOpen, saved, onToggleSave }) {
+    // Home: one quiet row under the hero. "My base: <name>" opens the guide; with none listed,
+    // "No base listed. Add your base" turns on picking mode (Home above). Signed out it shows the
+    // device's value, signed in the account's; it never shows a base of anyone else's.
+    function MyBaseHomeRow({ myBase, bases, onOpen, onPick, picking }) {
+      const name = myBaseName(myBase, bases);
+      if (myBase.slug) {
+        return (
+          <button type="button" className="mybase-row" data-my-base="set" onClick={() => onOpen(myBase.slug)}>
+            <Icon name="home" size={16} /><span className="mybase-lbl">My base:</span><span className="mybase-name">{name}</span><Icon name="cardchev" size={16} />
+          </button>
+        );
+      }
+      return (
+        <div className="mybase-row mybase-none" data-my-base="none">
+          <Icon name="home" size={16} /><span className="mybase-lbl">{NO_BASE_LISTED}</span>
+          <button type="button" className="btn-quiet" onClick={onPick} aria-pressed={picking}>{picking ? "Pick it below" : "Add your base"}</button>
+        </div>
+      );
+    }
+
+    function Home({ bases, loading, loadFailed, onRetry, onOpen, saved, onToggleSave, myBase, onSetMyBase }) {
       const [q, setQ] = useState("");
       const [branch, setBranch] = useState("all");
       const [loc, setLoc] = useState("all");
       const [sortBy, setSortBy] = useState("state");
+      // Picking mode ("Add your base" on the row): the search box takes focus and every card gets a
+      // one-tap "This is my base"; the first pick ends it. Nothing else on Home changes.
+      const [picking, setPicking] = useState(false);
+      const searchRef = useRef(null);
+      const startPicking = () => { setPicking(true); setTimeout(() => { if (searchRef.current) searchRef.current.focus(); }, 0); };
+      const pickMyBase = (base) => { setPicking(false); onSetMyBase(base); };
+      const cardPick = picking ? pickMyBase : null;
       if (loading) return <div className="center"><div className="spin" /></div>;
       // A failed load and a genuinely empty list are different things: only the second is "No bases yet".
       if ((!bases || !bases.length) && loadFailed) return (
@@ -2133,7 +2297,7 @@
         body = <div className="pending">No bases match your filters.</div>;
       } else if (sortBy === "name") {
         body = [...filtered].sort(byTierThenName)
-          .map((b) => <BaseCard key={b.slug} b={b} bases={bases} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />);
+          .map((b) => <BaseCard key={b.slug} b={b} bases={bases} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} onSetMyBase={cardPick} />);
       } else {
         const groups = {};
         filtered.forEach((b) => { const k = b.state || "Other"; (groups[k] = groups[k] || []).push(b); });
@@ -2142,7 +2306,7 @@
         body = keys.map((k) => (
           <div key={k}>
             <div className="state-header">{stateLabel(k)}</div>
-            {groups[k].map((b) => <BaseCard key={b.slug} b={b} bases={bases} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />)}
+            {groups[k].map((b) => <BaseCard key={b.slug} b={b} bases={bases} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} onSetMyBase={cardPick} />)}
           </div>
         ));
       }
@@ -2153,9 +2317,11 @@
             <img className="home-logo" src={ASSETS.logoMark} alt={BRAND} />
             <div className="home-tag">Guides for your next duty station.</div>
           </div>
+          <MyBaseHomeRow myBase={myBase} bases={bases} onOpen={onOpen} onPick={startPicking} picking={picking} />
           <AddToHomeScreenHint />
           <div className="home-controls">
-            <input className="fld home-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search base or state" />
+            {picking ? <div className="pick-hint mybase-hint" role="status">Search for your base, then tap "This is my base" on it.</div> : null}
+            <input ref={searchRef} className="fld home-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search base or state" />
             <div className="home-selects">
               <select className="fld" value={loc} onChange={(e) => setLoc(e.target.value)}>
                 <option value="all">All locations</option>
@@ -2186,7 +2352,7 @@
       return <div className="localtime">{s} local time</div>;
     }
 
-    function BaseDetail({ slug, onBack, saved, onToggleSave }) {
+    function BaseDetail({ slug, onBack, saved, onToggleSave, myBase, onSetMyBase }) {
       const [data, setData] = useState(null);
       const [err, setErr] = useState(null);
       const [openId, setOpenId] = useState(null);
@@ -2213,9 +2379,17 @@
           <div className="basehero" style={{ borderTopColor: branchColor(data.branch) }}>
             <div className="between">
               <h1>{data.name}</h1>
-              <button className="iconbtn" style={saved.includes(slug) ? { color: "var(--accent)" } : null} onClick={() => onToggleSave(slug)} aria-label="Save">
-                <Icon name={saved.includes(slug) ? "bookmarkOn" : "bookmark"} size={20} />
-              </button>
+              <div className="basehero-actions">
+                {/* "This is my base" sets this guide as the reader's base (MY BASE store); pressed again it
+                    clears it. The App shows the outcome and names the base it replaced. */}
+                <button type="button" className={"mybase-btn" + (myBase.slug === slug ? " on" : "")} aria-pressed={myBase.slug === slug}
+                  onClick={() => onSetMyBase(myBase.slug === slug ? null : { slug, name: data.name })}>
+                  <Icon name="home" size={14} />{myBase.slug === slug ? "My base" : "This is my base"}
+                </button>
+                <button className="iconbtn" style={saved.includes(slug) ? { color: "var(--accent)" } : null} onClick={() => onToggleSave(slug)} aria-label="Save">
+                  <Icon name={saved.includes(slug) ? "bookmarkOn" : "bookmark"} size={20} />
+                </button>
+              </div>
             </div>
             {data.tagline ? <div className="tag">{data.tagline}</div> : null}
             <div className="basehero-meta">{[data.branch, (data.states || []).join(" / ")].filter(Boolean).join("  ·  ")}</div>
@@ -2558,7 +2732,52 @@
     // delete.
     // Signed out it IS the sign-in screen. Names come from the base list; a slug the list does not
     // know (saved on the website for a base the app has no guide for yet) shows as its slug.
-    function AccountScreen({ account, saved, inAccount, bases, onToggleSave, onOpen }) {
+    // The My base row of the account screen: the name (opens the guide) with Change and Clear; with
+    // none, "No base listed." and "Add your base", which opens a search box with a one-tap "This is
+    // my base" on each match. Writes go through set_current_base; a missing function answers "Not
+    // available yet" (the website's migration is not applied), like the name row.
+    function MyBaseRow({ myBase, bases, onSetMyBase, onOpen }) {
+      const [editing, setEditing] = useState(false);
+      const [q, setQ] = useState("");
+      const name = myBaseName(myBase, bases);
+      if (!myBase.inAccount) return <dd>Reading.</dd>;
+      const ql = q.trim().toLowerCase();
+      const matches = ql
+        ? (bases || []).filter((b) => b.ready && !b.hub && (b.name + " " + (b.state || "") + " " + stateTokens(b.state).map(stateFull).join(" ")).toLowerCase().indexOf(ql) !== -1).sort(byTierThenName).slice(0, 8)
+        : [];
+      if (!editing) {
+        return (
+          <dd className="acct-name" data-my-base-row={myBase.slug ? "set" : "none"}>
+            {myBase.slug
+              ? <button type="button" className="t" style={{ padding: 0, textAlign: "left" }} onClick={() => onOpen(myBase.slug)}>{name}</button>
+              : <span>{NO_BASE_LISTED}</span>}
+            <button type="button" className="btn-quiet" onClick={() => { setQ(""); setEditing(true); }}>{myBase.slug ? "Change" : "Add your base"}</button>
+            {myBase.slug ? <button type="button" className="btn-quiet" onClick={() => onSetMyBase(null)}>Clear</button> : null}
+          </dd>
+        );
+      }
+      return (
+        <dd>
+          <div className="acct-name-form">
+            <label className="fld-l" htmlFor="acct-my-base">Which base is yours?</label>
+            <input id="acct-my-base" className="fld" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search base or state" autoFocus />
+            {matches.length ? (
+              <ul className="lst acct-list mybase-matches">
+                {matches.map((b) => (
+                  <li key={b.slug}>
+                    <span>{b.name}</span>
+                    <button type="button" className="rm" onClick={() => { setEditing(false); onSetMyBase({ slug: b.slug, name: b.name }); }}>This is my base</button>
+                  </li>
+                ))}
+              </ul>
+            ) : (ql ? <div className="faint tiny" style={{ marginTop: 6 }}>No bases match.</div> : null)}
+            <button type="button" className="btn-quiet" style={{ marginTop: 6 }} onClick={() => setEditing(false)}>Cancel</button>
+          </div>
+        </dd>
+      );
+    }
+
+    function AccountScreen({ account, saved, inAccount, bases, onToggleSave, onOpen, myBase, onSetMyBase }) {
       if (account.status === "off") return <div className="content"><h2 className="screen-h">Account</h2><p className="acct-p">{SIGN_IN_MESSAGE.off}</p></div>;
       if (account.status === "loading") return <div className="content"><h2 className="screen-h">Account</h2><p className="acct-p" role="status">Checking your sign-in.</p></div>;
       if (account.status === "signed-out") return <SignInScreen />;
@@ -2570,6 +2789,7 @@
           <div className="card">
             <dl className="facts">
               <dt>Name</dt><FirstNameRow account={account} />
+              <dt>My base</dt><MyBaseRow myBase={myBase} bases={bases} onSetMyBase={onSetMyBase} onOpen={onOpen} />
               <dt>Email</dt><dd style={{ wordBreak: "break-all" }}>{account.user.email}</dd>
               <dt>Role</dt><dd>{account.role ? ROLE_LABEL[account.role] : "Reading."}</dd>
             </dl>
@@ -2591,7 +2811,7 @@
           )}
           <div className="faint tiny" style={{ marginTop: 8 }}>Up to {MAX_SAVED_BASES} bases, kept in your account and shown on every device you sign in on.</div>
 
-          <WebsiteTools saved={saved} />
+          <WebsiteTools saved={saved} myBaseSlug={myBase.slug} />
 
           <h3 className="acct-h">Sign out</h3>
           <p className="acct-p">Signs you out on this device only. Your saved bases stay in your account.</p>
@@ -2776,6 +2996,7 @@
       // screens only ever see `saved` as an array of slugs, as they did before accounts.
       const account = useAccount();
       const { slugs: saved, inAccount } = useSavedBases();
+      const myBase = useMyBase();
       const [notice, setNotice] = useState("");
 
       /* The base list loads once at launch. WARNING: a failed load used to fall through to an empty list, so Home said
@@ -2813,15 +3034,24 @@
         return () => clearTimeout(id);
       }, [notice]);
       const openAccount = useCallback(() => setTab("account"), []);
+      // Sets or clears the reader's base and says what happened, naming the base it replaced.
+      const setMyBaseAndTell = useCallback(async (base) => {
+        const before = myBaseSnapshotGet();
+        const beforeName = myBaseName(before, bases);
+        const result = await setMyBase(base);
+        if (result !== "ok") { setNotice(result === "unavailable" ? "My base is not available yet." : "That did not work. Try again in a few minutes."); return; }
+        if (!base) { setNotice("No base listed now."); return; }
+        setNotice(base.name + " is your base now." + (beforeName && before.slug !== base.slug ? " It replaces " + beforeName + "." : ""));
+      }, [bases]);
 
       let body;
-      if (tab === "home") body = <Home bases={bases} loading={loading} loadFailed={loadFailed} onRetry={loadBases} onOpen={open} saved={saved} onToggleSave={toggleSave} />;
+      if (tab === "home") body = <Home bases={bases} loading={loading} loadFailed={loadFailed} onRetry={loadBases} onOpen={open} saved={saved} onToggleSave={toggleSave} myBase={myBase} onSetMyBase={setMyBaseAndTell} />;
       else if (tab === "guide") body = slug
-        ? <BaseDetail slug={slug} onBack={back} saved={saved} onToggleSave={toggleSave} />
+        ? <BaseDetail slug={slug} onBack={back} saved={saved} onToggleSave={toggleSave} myBase={myBase} onSetMyBase={setMyBaseAndTell} />
         : <div className="content"><h2 className="screen-h">Guide</h2><PickABase bases={bases} saved={saved} onOpen={open} hint="Open a base to read its guide." /></div>;
       else if (tab === "map") body = <MapScreen slug={slug} bases={bases} saved={saved} onOpen={open} />;
       else if (tab === "plan") body = <PlanScreen bases={bases} onOpen={open} />;
-      else if (tab === "account") body = <AccountScreen account={account} saved={saved} inAccount={inAccount} bases={bases} onToggleSave={toggleSave} onOpen={open} />;
+      else if (tab === "account") body = <AccountScreen account={account} saved={saved} inAccount={inAccount} bases={bases} onToggleSave={toggleSave} onOpen={open} myBase={myBase} onSetMyBase={setMyBaseAndTell} />;
       else body = <SavedScreen bases={bases} saved={saved} onToggleSave={toggleSave} onOpen={open} account={account} inAccount={inAccount} onOpenAccount={openAccount} />;
 
       // The account entry lives in the top bar (the app keeps account-ish things there, not in the
