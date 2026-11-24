@@ -15,7 +15,7 @@ ownership or company structure.
 - "Sign in" (a person icon and the word) in the top bar; the address once signed in. Tapping it
   opens the account screen. Nothing is offered on an empty screen: the Saved screen offers
   "Sign in to keep them on every device" only under a list with something in it.
-- Sign-in by a 6-digit code emailed by Supabase Auth: the address and "Send me a code", then the
+- Sign-in by a code emailed by Supabase Auth (its length is a Supabase Auth setting, 8 on 2026-11-24; the app accepts 6 to 10 digits): the address and "Send me a code", then the
   code field (numeric keypad, one-time-code autofill) and "Sign in". No password. No social
   sign-in. The first code makes the account.
 - The account screen: email, role (Member / Editor / Owner, from `public.profiles`), the saved
@@ -133,7 +133,7 @@ account: delete it in Supabase, Authentication, Users, before the store release.
    Sign in to keep them on every device".
 3. Press it (or the person icon). Enter your own address, press "Send me a code". The screen
    moves to the code step.
-4. Open the email on any device, type the 6 digits, press "Sign in". The account screen shows
+4. Open the email on any device, type the code, press "Sign in". The account screen shows
    your address, "Member", and the bases from step 2, now in the account. The console (Safari
    or Chrome remote debugging) shows `[ACCOUNT] saved bases merged: account=0 device=2 added=2`.
 5. On milspoliving.com (a preview with accounts on), sign in with the same address: the same

@@ -97,7 +97,7 @@ justification for the Pro subscription (a living, cloud-served service).
 ## Account (sign in by emailed code) - the rules in one place
 Chris's cards 2026-11-24: "Yes, account then look" (account only, no restyle), "6-digit
 code", "Yes, both now" (Delete my account, Apple rule 5.1.1(v)), "No social logins".
-- Sign-in is a 6-digit code emailed by Supabase Auth (`signInWithOtp` with no
+- Sign-in is a code emailed by Supabase Auth (length is a Supabase setting, 8 on 2026-11-24; the app accepts 6 to 10 digits) (`signInWithOtp` with no
   `emailRedirectTo`, then `verifyOtp` type `email`). NOT a link: a store app cannot rely on
   a link opening the app, and a link completes only on the device that asked. Email only,
   no password, no Apple/Google (deliberate: it also avoids the Sign in with Apple rule).

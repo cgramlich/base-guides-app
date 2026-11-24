@@ -8,7 +8,7 @@
   Live layer (AI Q&A + nearby places) is served by the backend via API_BASE.
   Long-form base stories come from the backend too (/api/bases/<slug>/story), the
   same stories milspoliving.com shows, read from the shared database.
-  Account: a reader can sign in (6-digit code by email) against the SAME Supabase
+  Account: a reader can sign in (a code by email) against the SAME Supabase
   project as milspoliving.com; saved bases are then the website's rows, so a base
   saved in either place shows in both (ACCOUNT and SAVED BASES sections below).
   Notes: all console/log output is plain ASCII (no emoji) by design.
@@ -329,7 +329,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.21.0";
+    const APP_VERSION = "0.21.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1148,7 +1148,11 @@
        rules and names, without the Next.js plumbing. This slice is the account only; no restyle.
 
        RULES
-       - No password, ever. Sign-in is a 6-digit code emailed by Supabase Auth (email OTP).
+       - No password, ever. Sign-in is a code emailed by Supabase Auth (email OTP).
+         WARNING: the code's LENGTH is a project setting (Supabase Auth, "email OTP length": 8 on
+         2026-11-24, 6 in older projects, up to 10). The app never assumes a length: it accepts
+         CODE_MIN_DIGITS to CODE_MAX_DIGITS. The first test (2026-11-24) failed because the app
+         demanded exactly six digits and cut an 8-digit code short.
          WHY a code and not the website's link: a store app cannot rely on an emailed link opening
          the app, and a link completes only on the device that asked for it; a code works on the
          web, the installed PWA and the native builds alike.
@@ -1185,6 +1189,10 @@
     // to (website, account-settings.ts, SIGN_IN_SCREEN_VERSION). The sentences are the website's
     // (2026-11-24-b) with one change: the website emails a link, the app emails a code.
     const SIGN_IN_SCREEN_VERSION = "2026-11-24-b";
+    // The emailed code's length is set in Supabase Auth, not here (see the WARNING above): accept the
+    // whole range Supabase allows so a settings change never locks readers out.
+    const CODE_MIN_DIGITS = 6;
+    const CODE_MAX_DIGITS = 10;
     const SIGN_IN_TEXT = {
       label: "Sign in",
       title: "Save my move",
@@ -1197,10 +1205,10 @@
       noCallsNoTexts: PUBLISHER_LINE + " No calls, no texts.",
       button: "Send me a code",
       policyLine: "By continuing you accept our privacy policy.",
-      codeLabel: "6-digit code",
+      codeLabel: "Code from the email",
       codeButton: "Sign in",
       // The code's life is Supabase's default for an email OTP (one hour; Supabase Auth docs, read 2026-11-24).
-      sent: "Check your inbox and enter the 6-digit code from the email. The code works for one hour. If it does not arrive, look in spam, then ask for a new one.",
+      sent: "Check your inbox and enter the code from the email. The code works for one hour. If it does not arrive, look in spam, then ask for a new one.",
     };
     const SIGN_IN_MESSAGE = {
       "bad-email": "Check the email address and try again.",
@@ -1315,7 +1323,7 @@
     async function verifySignInCode(email, code) {
       const address = email.trim();
       const token = String(code).replace(/\D/g, "");
-      if (token.length !== 6) return "bad-code";
+      if (token.length < CODE_MIN_DIGITS || token.length > CODE_MAX_DIGITS) return "bad-code";
       const supabase = supabaseClient();
       if (!supabase) return "off";
       const { error } = await supabase.auth.verifyOtp({ email: address, token, type: "email" });
@@ -1852,7 +1860,7 @@
 
     /* ---------------- ACCOUNT SCREENS ---------------- */
     // The sign-in screen: the fixed sentences, then two steps - the address and "Send me a code",
-    // then the 6-digit code and "Sign in". The words live in SIGN_IN_TEXT; this is the behaviour.
+    // then the code and "Sign in". The words live in SIGN_IN_TEXT; this is the behaviour.
     // The screen version travels on the element (data-screen-version), the record of what was shown.
     function SignInScreen() {
       const [email, setEmail] = useState("");
@@ -1908,7 +1916,7 @@
             <form onSubmit={verify}>
               <p className="acct-p" role="status">{SIGN_IN_TEXT.sent}</p>
               <label className="fld-l" htmlFor="acct-code">{SIGN_IN_TEXT.codeLabel}</label>
-              <input id="acct-code" className="fld acct-code" type="text" inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]*" maxLength={6}
+              <input id="acct-code" className="fld acct-code" type="text" inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]*" maxLength={CODE_MAX_DIGITS}
                 value={code} onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))} autoFocus />
               <button className="btn-gold" type="submit" disabled={busy || code.length !== 6}>{busy ? "Checking..." : SIGN_IN_TEXT.codeButton}</button>
               <div className="acct-actions">
