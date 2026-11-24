@@ -26,7 +26,7 @@ the tab bar's dot, the rule beside a pull-quote.
 - Home: the MilSpo Living coin at 96px, the tagline as italic serif in --dim, an underline search
   field, underline selects, outlined chips (the chosen one solid ink), serif state headings (26px),
   and the bases as hairline rows running the full width (serif name 20px, the branch and state as
-  the --dim second line, "Guide ready" / "Coming soon" / "OCONUS" as hairline labels). The branch
+  the --dim second line, "Coming soon" / "OCONUS" as hairline labels; "Guide ready" was dropped on 2026-11-24 because every base carried it). The branch
   colour stripe on each row is gone with the box.
 - Guide: the base's name in serif (38px) under a 3px rule in the branch's colour (the one
   coloured edge kept), the tagline in Crimson Pro --dim, the ask box as an underline field and an
@@ -98,3 +98,15 @@ Appearance row switched and back, the Guide tab's empty state; home at 1280px in
 
 Screenshots: `/tmp/claude-0/-home-user/28f4d996-b9d2-5a0d-8247-293372a09df0/scratchpad/app-look-shots/`
 (named `<screen>-<mode>.png`, `home-<mode>-desktop.png`), not in the repo.
+
+## Lists and the empty tabs (auditor round 2, Chris 2026-11-24)
+- Every list of bases is ordered by tier, then name (`guideTier` in index.html, a mirror of the
+  website's src/lib/guide-tiers.ts): the places families live first, then smaller posts, then
+  Guard, Reserve, recruiting and ROTC. Sorting by name alone put the numbered Guard wings first.
+- The Map and Guide tabs with no base open show `PickABase`: the reader's saved bases as rows (the
+  Map tab draws them on a small map from each guide's stored point), or the search box plus the
+  tier 1 bases by state. The old chip grid and the one-sentence stub are gone.
+- The top bar wordmark carries "by MilSpo Living" (BRAND). A rating reads "Rating 4.5 of 5 (123
+  reviews)". The weather block reserves its height (`.wx-slot`). An answer ends with "From this
+  guide:" chips that open the matching section. A dismissible Add to Home Screen hint sits under
+  the Home hero in a browser tab (never once installed).

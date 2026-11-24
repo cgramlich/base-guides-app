@@ -210,6 +210,27 @@
     .parent-line{font-size:12.5px; margin-top:1px;}
     /* Labels you cannot tap: a hairline edge in --line, --dim text (kit .chip.tag). */
     .pill{display:inline-block; font-size:11px; line-height:1.4; padding:1px 7px; border:1px solid var(--n-line); color:var(--n-dim); margin-left:8px; vertical-align:2px; font-family:'Outfit',sans-serif;}
+    /* The publisher's line under the wordmark (auditor round 2, item 19): the first screen says who makes the app. */
+    .wordmark{ flex-direction:column; align-items:flex-start; gap:2px; }
+    .wordmark-by{ font-size:9px; letter-spacing:0.22em; text-transform:none; color:var(--n-dim); font-weight:400; }
+    /* The weather block keeps its height before the forecast arrives so the Ask box does not jump (auditor round 2, item 23). */
+    .wx-slot{ min-height:46px; }
+    /* Rows of bases on the Map and Guide tabs when no base is open (Chris's screenshots 2026-11-24). */
+    .pick-rows{ margin-top:6px; }
+    .pick-hint{ font-size:14px; color:var(--n-dim); margin:0 0 10px; }
+    .pick-h{ font-family:var(--serif); font-size:22px; line-height:1.15; margin:14px 0 4px; }
+    .pick-map{ height:200px; margin:6px 0 10px; background:var(--n-soft); }
+    /* Add to Home Screen hint (auditor round 2, item 25). */
+    .a2hs{ display:flex; gap:10px; align-items:flex-start; font-size:13px; color:var(--n-dim); padding:8px 0 10px; border-bottom:1px solid var(--n-line); margin-bottom:8px; }
+    .a2hs span{ flex:1; }
+    .a2hs button{ color:var(--n-ink); font-size:13px; font-weight:500; padding:0 2px; min-height:28px; }
+    /* Source chips under an answer (auditor round 2, item 21): the guide sections the answer drew on. */
+    .ask-chips{ display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; align-items:center; }
+    .ask-chips .lbl{ font-size:12px; color:var(--n-dim); margin-right:2px; }
+    .chip-src{ font-size:12px; padding:3px 9px; border:1px solid var(--n-line); color:var(--n-ink); background:transparent; min-height:28px; }
+    /* Map labels (auditor round 2, item 26). */
+    .leaflet-tooltip.map-label{ font-size:11px; padding:1px 5px; background:rgba(255,255,255,0.92); border:1px solid #c9ccd2; color:#1b1f26; box-shadow:none; }
+    .leaflet-tooltip.map-label.base{ font-weight:600; font-size:12px; }
     .card-go{color:var(--n-dim); flex:none; display:flex; align-items:center; margin-left:10px;}
     .card-actions{display:flex; align-items:center; gap:2px; flex:none;}
     .iconbtn{color:var(--n-dim); padding:6px; display:flex; align-items:center;}
@@ -317,6 +338,10 @@
     .feedback-q{ display:block; font-size:14px; color:var(--n-dim); margin-bottom:7px; }
     .feedback-link{ display:inline-block; color:var(--n-ink); font-weight:500; font-size:14.5px; }
     .feedback-note{ font-size:12.5px; color:var(--n-dim); margin-top:7px; }
+    .website-guide-link{ text-align:center; padding:10px 0 4px; font-size:13.5px; }
+    .website-guide-link a{ color:var(--n-dim); }
+    .website-tool{ display:block; padding:6px 0; color:inherit; text-decoration:none; }
+    .website-tool-label{ display:block; font-weight:500; color:var(--n-ink); }
 
     /* ---- fields and buttons (kit .field, .btn) ---- */
     .fld{width:100%; background:transparent; border:0; border-bottom:1px solid var(--n-faint); color:var(--text); padding:9px 0; font-size:16px;}
@@ -470,7 +495,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.23.1";
+    const APP_VERSION = "0.25.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -775,6 +800,14 @@
       { key: "pharmacy", label: "Pharmacy" }, { key: "hospital", label: "Hospitals" },
     ];
     // A nearby place: tap to expand rich details (photo/hours/phone/website), fetched on demand.
+    // RULE (auditor round 2, item 24; Chris 2026-11-24): a rating is written in words, "Rating 4.5 of 5
+    // (123 reviews)", never as an asterisk standing in for a star. The app's output is ASCII only, so
+    // there is no star glyph to use; the word is the honest form.
+    function ratingText(rating, total) {
+      const n = Number(total || 0);
+      return "Rating " + rating + " of 5 (" + n + (n === 1 ? " review)" : " reviews)");
+    }
+
     function PlaceRow({ p }) {
       const [open, setOpen] = useState(false);
       const [d, setD] = useState(null);
@@ -802,7 +835,7 @@
           <div className="place-head" onClick={toggle} style={{ cursor: p.place_id ? "pointer" : "default" }}>
             <div className="t">{p.name} {p.price_level ? <span className="faint">{PRICE[p.price_level] || ""}</span> : null}</div>
             <div className="d">
-              {p.rating ? ("* " + p.rating + " (" + (p.user_ratings_total || 0) + ")") : "no rating"}
+              {p.rating ? ratingText(p.rating, p.user_ratings_total) : "no rating"}
               {p.open_now === true ? " - open now" : (p.open_now === false ? " - closed" : "")}
               {p.vicinity ? " - " + p.vicinity : ""}
             </div>
@@ -915,15 +948,17 @@
           .catch(() => { if (live) setW(null); });
         return () => { live = false; };
       }, [coords]);
-      if (!w) return null;
+      // RULE (auditor round 2, item 23): the block's space is reserved from the first paint (wx-slot),
+      // so the Ask box under it does not move when the forecast arrives late or never.
+      if (!w) return <div className="wx-slot" />;
       const c = w.current; const alerts = w.alerts || [];
-      if (!c && !alerts.length) return null;
+      if (!c && !alerts.length) return <div className="wx-slot" />;
       const extra = [];
       if (w.high != null) extra.push("H " + w.high + "°");
       if (w.low != null) extra.push("L " + w.low + "°");
       if (w.precip != null) extra.push(w.precip + "% precip");
       return (
-        <div>
+        <div className="wx-slot">
           {alerts.map((a, i) => (
             <div key={i} className="wx-alert"><strong>Weather alert: {a.event}</strong>{a.headline ? <div className="wx-alert-h">{a.headline}</div> : null}</div>
           ))}
@@ -1248,7 +1283,7 @@
     }
     function Accordion({ s, open, onToggle, coords }) {
       return (
-        <div className={"acc" + (open ? " open" : "")}>
+        <div className={"acc" + (open ? " open" : "")} id={"sec-" + s.id}>
           <div className="acc-head" onClick={onToggle}>
             <span className="sec-ic"><Icon name={sectionIcon(s.id)} size={18} /></span>
             <h3>{s.title}</h3>
@@ -1262,15 +1297,24 @@
     // Tiny markdown renderer (AI answers come back as markdown). Builds React
     // nodes (no dangerouslySetInnerHTML). Handles bold, links, headings, lists,
     // blockquotes, and horizontal rules - enough for the assistant's output.
+    // RULE (auditor round 2, item 21; Chris 2026-11-24): no markdown mark may show as text. Bold,
+    // italic and links are drawn; a mark the model left unpaired (a lone "**" or "*") is dropped, and
+    // a doubled quote ("") becomes one quote. Dropping is safer than showing: a stray asterisk reads
+    // as a footnote that never comes.
+    function mdClean(text) {
+      return String(text).replace(/""+/g, '"').replace(/''+/g, "'");
+    }
+    function mdStripMarks(text) { return String(text).replace(/\*\*/g, "").replace(/(^|\s)\*(?=\s|$)/g, "$1"); }
     function mdInline(text, kp) {
-      const nodes = []; let rest = String(text); let k = 0;
-      const re = /(\*\*([^*]+)\*\*)|(\[([^\]]+)\]\((https?:[^)]+)\))/;
+      const nodes = []; let rest = mdClean(text); let k = 0;
+      const re = /(\*\*([^*]+)\*\*)|(\[([^\]]+)\]\((https?:[^)]+)\))|(\*([^*\s][^*]*?)\*)/;
       while (rest.length) {
         const m = rest.match(re);
-        if (!m) { nodes.push(rest); break; }
-        if (m.index > 0) nodes.push(rest.slice(0, m.index));
+        if (!m) { nodes.push(mdStripMarks(rest)); break; }
+        if (m.index > 0) nodes.push(mdStripMarks(rest.slice(0, m.index)));
         if (m[1]) nodes.push(<strong key={kp + "b" + (k++)}>{m[2]}</strong>);
-        else nodes.push(<a key={kp + "l" + (k++)} href={m[5]} target="_blank" rel="noopener noreferrer">{m[4]}</a>);
+        else if (m[3]) nodes.push(<a key={kp + "l" + (k++)} href={m[5]} target="_blank" rel="noopener noreferrer">{m[4]}</a>);
+        else nodes.push(<em key={kp + "i" + (k++)}>{m[7]}</em>);
         rest = rest.slice(m.index + m[0].length);
       }
       return nodes;
@@ -1286,6 +1330,7 @@
         if (/^###\s+/.test(s)) { flushP(); flushL(); blocks.push({ t: "h3", x: s.replace(/^###\s+/, "") }); }
         else if (/^#{1,2}\s+/.test(s)) { flushP(); flushL(); blocks.push({ t: "h2", x: s.replace(/^#{1,2}\s+/, "") }); }
         else if (/^[-*]\s+/.test(s)) { flushP(); list.push(s.replace(/^[-*]\s+/, "")); }
+        else if (/^\d+[.)]\s+/.test(s)) { flushP(); list.push(s.replace(/^\d+[.)]\s+/, "")); }
         else if (/^>\s?/.test(s)) { flushP(); flushL(); blocks.push({ t: "q", x: s.replace(/^>\s?/, "") }); }
         else if (/^---+$/.test(s)) { flushP(); flushL(); blocks.push({ t: "hr" }); }
         else { flushL(); para.push(s); }
@@ -1305,8 +1350,43 @@
       );
     }
 
+    // SOURCE CHIPS (auditor round 2, item 21; Chris 2026-11-24). RULE: every answer names the guide
+    // sections it drew on, as tappable chips that open that section. The backend relay returns only
+    // the answer text (no section list, checked 2026-11-24: {answer, model, base}), so the chips are
+    // found here by matching the answer against each section's own words: a section scores one point
+    // for every distinct word of six letters or more that the answer and the section share, plus
+    // three when the answer names the section's title. The three best sections with at least three
+    // points are shown. WARNING: this is a match, not the model's own citation; the chips say "From
+    // this guide", never "cited". When the relay starts returning section ids, read them instead.
+    function sectionText(sec) {
+      const d = sec && sec.data;
+      if (!d) return "";
+      if (typeof d === "string") return d;
+      if (Array.isArray(d)) return d.map((x) => (typeof x === "string" ? x : JSON.stringify(x))).join(" ");
+      return JSON.stringify(d);
+    }
+    function longWords(text) {
+      return new Set(String(text).toLowerCase().replace(/[^a-z0-9\s]/g, " ").split(/\s+/).filter((w) => w.length >= 6));
+    }
+    function sourceChips(answer, sections) {
+      if (!answer || !sections || !sections.length) return [];
+      const aw = longWords(answer);
+      const al = String(answer).toLowerCase();
+      return sections
+        .filter((sec) => sec && sec.id && sec.title && sec.type !== "pending" && sec.type !== "places_pending")
+        .map((sec) => {
+          let score = 0;
+          longWords(sectionText(sec)).forEach((w) => { if (aw.has(w)) score += 1; });
+          if (al.indexOf(String(sec.title).toLowerCase()) !== -1) score += 3;
+          return { id: sec.id, title: sec.title, score };
+        })
+        .filter((x) => x.score >= 3)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 3);
+    }
+
     // "Ask about this base" - grounded AI Q&A via the backend.
-    function AskBox({ slug }) {
+    function AskBox({ slug, sections, onOpenSection }) {
       const [q, setQ] = useState("");
       const [a, setA] = useState(null);
       const [loading, setLoading] = useState(false);
@@ -1340,7 +1420,12 @@
           </div>
           {loading ? <div className="ask-ans faint ask-thinking"><span className="spin spin-sm" />Thinking&hellip;</div> : null}
           {err ? <div className="ask-ans faint">Couldn't reach the assistant. Start the backend and try again.</div> : null}
-          {a ? <div className="ask-ans"><Markdown text={a} /></div> : null}
+          {a ? <div className="ask-ans"><Markdown text={a} />
+            {(() => { const chips = sourceChips(a, sections); return chips.length ? (
+              <div className="ask-chips"><span className="lbl">From this guide:</span>
+                {chips.map((c) => <button key={c.id} className="chip-src" onClick={() => onOpenSection && onOpenSection(c.id)}>{c.title}</button>)}
+              </div>) : null; })()}
+          </div> : null}
           <div className="faint tiny" style={{ marginTop: 6 }}>Answers come only from this guide's verified content.</div>
         </div>
       );
@@ -1411,6 +1496,50 @@
     // "affiliated with MilHousing Network"; nothing about ownership or company structure.
     const PUBLISHER_LINE = BRAND + " is published by MilSpo Life LLC. It is affiliated with MilHousing Network.";
     const PRIVACY_URL = "https://milspoliving.com/privacy";
+
+    /* ---------------- WEBSITE TOOLS (the app links to them, it does not rebuild them) ----------------
+       RULE (Chris, decision card 2026-11-24): the website is the front door; the app is the companion
+       for the move. A tool is built on the website first and comes to the app only when a family needs
+       it in their pocket (saved bases, the checklist, offline guides, alerts). Rank my options, Compare
+       bases and Plan my move stay on milspoliving.com; the app opens them in the browser. One account
+       serves both, so the saved bases a reader sees there are the same rows as here.
+       ROAD NOT TAKEN: rebuilding every website tool in the app. Rejected because each copy doubles the
+       work and the ways to be wrong, and these three are used at a desk while choosing, not on PCS day.
+       WEBSITE_COMPARE_PARAM and WEBSITE_COMPARE_MAX mirror the website's compare page
+       (milspoliving src/lib/compare-model.ts: COMPARE_PARAM = 'bases', MAX_COMPARED = 3). */
+    const WEBSITE_URL = "https://milspoliving.com";
+    const WEBSITE_COMPARE_PARAM = "bases";
+    const WEBSITE_COMPARE_MAX = 3;
+    const WEBSITE_TOOLS = [
+      { label: "Rank my options", path: "/rank", note: "Pick up to 8 bases and set what matters to your family." },
+      { label: "Compare bases", path: "/compare", note: "Two or three bases side by side." },
+      { label: "Plan my move", path: "/plan", note: "The PCS checklist and where to start." },
+    ];
+    /** The website address of a tool; Compare opens with the reader's first saved bases when there are any. */
+    function websiteToolUrl(tool, savedSlugs) {
+      if (tool.path === "/compare" && savedSlugs && savedSlugs.length > 0) {
+        return WEBSITE_URL + tool.path + "?" + WEBSITE_COMPARE_PARAM + "=" + savedSlugs.slice(0, WEBSITE_COMPARE_MAX).map(encodeURIComponent).join(",");
+      }
+      return WEBSITE_URL + tool.path;
+    }
+    function WebsiteTools({ saved }) {
+      return (
+        <div className="website-tools">
+          <h3 className="acct-h">More tools on the website</h3>
+          <ul className="lst acct-list website-tools-list">
+            {WEBSITE_TOOLS.map((tool) => (
+              <li key={tool.path}>
+                <a className="t website-tool" href={websiteToolUrl(tool, saved)} target="_blank" rel="noopener noreferrer">
+                  <span className="website-tool-label">{tool.label}</span>
+                  <span className="meta-line">{tool.note}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="faint tiny" style={{ marginTop: 8 }}>These live on the website; your saved bases are the same there.</div>
+        </div>
+      );
+    }
 
     // The sign-in screen's words carry a version: the screen is the record of what a family agreed
     // to (website, account-settings.ts, SIGN_IN_SCREEN_VERSION). The sentences are the website's
@@ -1817,6 +1946,8 @@
       return <div className="meta-line parent-line">Part of {parent.name.replace(/\s*\(.*$/, "")}</div>;
     }
 
+    // RULE (auditor round 2, item 3): the "Guide ready" label is gone. Every base in the index has a
+    // guide, so the label told the reader nothing; only "Coming soon" (an entry not ready) is marked.
     function BaseCard({ b, onOpen, saved, onToggleSave, bases }) {
       return (
         <div className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)}>
@@ -1825,7 +1956,7 @@
               <div className="base-name">
                 {b.name}
                 {b.region === "OCONUS" ? <span className="pill oconus">OCONUS</span> : null}
-                {b.ready ? <span className="pill ready">Guide ready</span> : <span className="pill soon">Coming soon</span>}
+                {b.ready ? null : <span className="pill soon">Coming soon</span>}
               </div>
               <div className="meta-line">{[b.branch, b.state].filter(Boolean).join("  -  ")}</div>
               <ParentLine b={b} bases={bases} />
@@ -1856,6 +1987,99 @@
     function stateTokens(s) { return (s || "").split("/").map((x) => x.trim()).filter(Boolean); }
     function stateFull(t) { return STATE_NAMES[t] || t; }
     function stateLabel(s) { return stateTokens(s).map(stateFull).join(" / ") || "Other"; }
+
+    /* ---------------- TIERS: main family bases first ----------------
+       RULE (auditor round 2, item 3; Chris's screenshots 2026-11-24): every list of bases puts the
+       places families live FIRST. Sorted by name alone, the Air National Guard wings ("101 ARW",
+       "102 IW" ...) led every list because a digit sorts before a letter, and a family saw a wall
+       of codes. The three tiers are the website's (Chris, decision card 2026-11-22):
+         1 where families live: main and joint bases, in the U.S., its territories and abroad, plus the
+           Coast Guard bases, the Academy and the training centers;
+         2 smaller and specialized posts: depots, arsenals, labs, ranges, schools, support sites, DLA
+           sites, and the Coast Guard's sectors, air stations, stations, units and offices;
+         3 Guard, Reserve, recruiting and ROTC: Air National Guard wings, Guard training sites, Reserve
+           bases, Army recruiting battalions, Army Cadet Command offices.
+       WARNING: this MIRRORS the website's rules in milspoliving src/lib/guide-tiers.ts (the slug lists
+       and the name rules are copied from there, 2026-11-24). The two must change together. The
+       website also reads the DoD directory's site type, which the backend index does not carry; here
+       a wing is "a name that starts with a digit", a recruiting battalion "a slug starting usard-",
+       and a Cadet Command office "a slug starting us-army-cadet-command". ROAD NOT TAKEN: a tier
+       field in the backend index, which would be the one place for the rule; proposed to the lead. */
+    const TIER1_BY_SLUG = new Set([
+      "redstone-arsenal", "aberdeen-proving-ground", "naval-support-activity-annapolis-u-s-naval-academy",
+      "mcrd-parris-island", "mcrd-san-diego",
+      "coast-guard-base-alameda", "coast-guard-base-boston", "coast-guard-base-honolulu", "coast-guard-base-kodiak",
+      "coast-guard-base-los-angeles-long-beach", "coast-guard-base-portsmouth", "coast-guard-base-seattle",
+      "ucsg-galveston", "ucsg-ketchikan", "ucsg-new-orleans", "uscg-cleveland", "uscg-miami-beach", "uscg-academy",
+      "tracen-cape-may", "tracen-petaluma", "tracen-yorktown", "coast-guard-atc-mobile",
+      "naval-air-weapons-station-china-lake", "u-s-army-garrison-white-sands-missile-range", "dugway-proving-ground",
+      "yuma-proving-ground", "naval-support-activity-bethesda-home-of-walter-reed-national-military-medical-center",
+      "naval-support-activity-mid-south", "naval-support-activity-hampton-roads",
+    ]);
+    const TIER2_BY_SLUG = new Set([
+      "carlisle-barracks", "presidio-of-monterey", "naval-support-activity-monterey", "marine-corps-mountain-warfare-training-center-mwtc",
+      "fort-a-p-hill", "fort-hunter-liggett", "fort-mccoy", "camp-parks", "pohakuloa-training-area", "avon-park-air-force-range",
+      "orchard-combat-training-center", "natick-soldier-systems-center-nssc", "fort-detrick", "arnold-afb", "stennis-space-center",
+      "surface-combat-systems-center-wallops-island", "newport-news-shipyard", "naval-medical-center-portsmouth", "pentagon-air-force",
+      "marine-barracks-washington", "mccs-hampton-roads", "blount-island-command", "mcsf-new-orleans", "marine-corps-logistics-base-albany",
+      "mclb-barstow", "nsf-thurmont", "ussouthcom-u-s-army-garrison-miami", "naval-air-station-oceana-dam-neck-annex", "rivanna-station",
+    ]);
+    const TIER2_NAME_RULES = [
+      /\bdepot\b/i, /\barsenal\b/i, /\bammunition plant\b/i, /\blaborator|\bresearch\b/i,
+      /\bproving ground\b|\bmissile range\b|\bweapons station\b/i, /\bspace force station\b/i,
+      /\bocean terminal\b|\bstorage activity\b/i, /^naval support activity\b/i,
+    ];
+    function inFiftyStates(state) {
+      const parts = stateTokens(state);
+      return parts.length > 0 && parts.every((t) => !!STATE_NAMES[t]);
+    }
+    function guideTier(b) {
+      const slug = b.slug || "", name = b.name || "", branch = b.branch || "", state = b.state || "";
+      if (slug.indexOf("usard-") === 0 || slug.indexOf("us-army-cadet-command") === 0) return 3;
+      if (/^\d/.test(name)) return 3;                      // an Air National Guard wing
+      if (branch === "Defense Logistics Agency") return 2;
+      if (TIER1_BY_SLUG.has(slug)) return 1;
+      if (TIER2_BY_SLUG.has(slug)) return 2;
+      if (branch === "National Guard") return 3;
+      if (branch === "U.S. Coast Guard") return 2;
+      if (/\breserve\b/i.test(branch)) return 3;
+      if (!inFiftyStates(state)) return 1;                 // the territories and places abroad
+      if (/\bair reserve (base|station)\b|\bARB\b|\bARS\b/i.test(name)) return 3;
+      if (TIER2_NAME_RULES.some((re) => re.test(name))) return 2;
+      return 1;
+    }
+    /** Tier first, then name, for every list of bases in the app. */
+    function byTierThenName(a, b) {
+      const ta = guideTier(a), tb = guideTier(b);
+      if (ta !== tb) return ta - tb;
+      return (a.name || "").localeCompare(b.name || "");
+    }
+
+    // ADD TO HOME SCREEN (auditor round 2, item 25; Chris 2026-11-24). RULE: one quiet line, only in a
+    // browser tab (not once the app is installed: display-mode standalone, or Safari's navigator.standalone),
+    // dismissible, and remembered on the device so it is never shown twice. The words follow the phone:
+    // Safari on iPhone and iPad has Share then "Add to Home Screen"; Chrome on Android has the menu then
+    // "Add to Home screen" or "Install app". Nothing is detected beyond the user agent string, and a wrong
+    // guess only changes the wording, never the behaviour.
+    function isInstalledApp() {
+      try { return (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) || window.navigator.standalone === true; } catch (e) { return false; }
+    }
+    function AddToHomeScreenHint() {
+      const [hidden, setHidden] = useState(() => isInstalledApp() || !!LS.get("bg_a2hs_dismissed", false));
+      if (hidden) return null;
+      const ua = navigator.userAgent || "";
+      const apple = /iPhone|iPad|iPod/i.test(ua);
+      const words = apple
+        ? "Keep this app on your phone: tap Share, then Add to Home Screen."
+        : "Keep this app on your phone: open the browser menu, then Add to Home screen or Install app.";
+      const dismiss = () => { LS.set("bg_a2hs_dismissed", true); setHidden(true); };
+      return (
+        <div className="a2hs" role="note">
+          <span>{words}</span>
+          <button onClick={dismiss} aria-label="Dismiss this hint">Got it</button>
+        </div>
+      );
+    }
 
     function Home({ bases, loading, loadFailed, onRetry, onOpen, saved, onToggleSave }) {
       const [q, setQ] = useState("");
@@ -1908,13 +2132,13 @@
       if (!filtered.length) {
         body = <div className="pending">No bases match your filters.</div>;
       } else if (sortBy === "name") {
-        body = [...filtered].sort((a, b) => a.name.localeCompare(b.name))
+        body = [...filtered].sort(byTierThenName)
           .map((b) => <BaseCard key={b.slug} b={b} bases={bases} onOpen={onOpen} saved={saved} onToggleSave={onToggleSave} />);
       } else {
         const groups = {};
         filtered.forEach((b) => { const k = b.state || "Other"; (groups[k] = groups[k] || []).push(b); });
         const keys = Object.keys(groups).sort((a, b) => stateLabel(a).localeCompare(stateLabel(b)));
-        keys.forEach((k) => groups[k].sort((a, b) => a.name.localeCompare(b.name)));
+        keys.forEach((k) => groups[k].sort(byTierThenName));
         body = keys.map((k) => (
           <div key={k}>
             <div className="state-header">{stateLabel(k)}</div>
@@ -1929,6 +2153,7 @@
             <img className="home-logo" src={ASSETS.logoMark} alt={BRAND} />
             <div className="home-tag">Guides for your next duty station.</div>
           </div>
+          <AddToHomeScreenHint />
           <div className="home-controls">
             <input className="fld home-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search base or state" />
             <div className="home-selects">
@@ -1997,7 +2222,10 @@
             <LocalTime tz={data.tz} />
           </div>
           <LiveWeather coords={data.coords} />
-          <AskBox slug={slug} />
+          <AskBox slug={slug} sections={data.sections || []} onOpenSection={(id) => {
+            setOpenId(id);
+            setTimeout(() => { const el = document.getElementById("sec-" + id); if (el && el.scrollIntoView) el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 50);
+          }} />
           <div style={{ marginTop: 12 }}>
             {withStorySection(data.sections || [], story).map((s) => (
               <Accordion key={s.id} s={s} coords={data.coords}
@@ -2010,12 +2238,14 @@
             <a className="feedback-link" href={"mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent("Base guide feedback: " + data.name) + "&body=" + encodeURIComponent("Base: " + data.name + "\n\nType (correction / clarification / enhancement):\n\nDetails:\n")} target="_blank" rel="noopener noreferrer">Suggest a correction or improvement</a>
             <div className="feedback-note">Real families keep these guides accurate. Thank you.</div>
           </div>
+          {/* Every guide here has the same page on the website (a post of a joint base has its own page too),
+              so the link always uses this guide's slug. The website has the parts the app leaves out: the map
+              of towns and schools, the compare and rank tools. */}
+          <div className="website-guide-link">
+            <a href={WEBSITE_URL + "/bases/" + encodeURIComponent(slug)} target="_blank" rel="noopener noreferrer">Read this guide on the website</a>
+          </div>
         </div>
       );
-    }
-
-    function Stub({ label, note }) {
-      return <div className="content"><div className="center"><strong style={{ color: "var(--text-dim)" }}>{label}</strong><br />{note}</div></div>;
     }
 
     // ---- PCS timeline (general guidance; user confirms specifics with orders/TMO) ----
@@ -2071,7 +2301,7 @@
             <label className="fld-l" style={{ marginTop: 12 }}>Moving to</label>
             <select className="fld" value={pcs.base} onChange={(e) => save({ ...pcs, base: e.target.value })}>
               <option value="">Select a base</option>
-              {(bases || []).map((b) => <option key={b.slug} value={b.slug}>{b.name}</option>)}
+              {[...(bases || [])].sort(byTierThenName).map((b) => <option key={b.slug} value={b.slug}>{b.name}</option>)}
             </select>
           </div>
           {!move ? <div className="pending" style={{ padding: "6px 2px" }}>Enter your move date to build a timeline.</div> : (
@@ -2143,7 +2373,7 @@
             <div key={b.slug} className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)}>
               <div className="between">
                 <div style={{ minWidth: 0 }}>
-                  <div className="base-name">{b.name}{b.ready ? <span className="pill ready">Guide ready</span> : <span className="pill soon">Coming soon</span>}</div>
+                  <div className="base-name">{b.name}{b.ready ? null : <span className="pill soon">Coming soon</span>}</div>
                   <div className="meta-line">{[b.branch, b.state].filter(Boolean).join("  -  ")}</div>
                   <ParentLine b={b} bases={bases} />
                 </div>
@@ -2361,6 +2591,8 @@
           )}
           <div className="faint tiny" style={{ marginTop: 8 }}>Up to {MAX_SAVED_BASES} bases, kept in your account and shown on every device you sign in on.</div>
 
+          <WebsiteTools saved={saved} />
+
           <h3 className="acct-h">Sign out</h3>
           <p className="acct-p">Signs you out on this device only. Your saved bases stay in your account.</p>
           <button className="btn-plain" onClick={() => signOut()}>Sign out</button>
@@ -2371,7 +2603,94 @@
     }
 
     // Map (Leaflet + free OpenStreetMap tiles): base + live nearby places + drive time.
-    function MapScreen({ slug, bases, onOpen }) {
+    /* ---------------- EMPTY STATES: Map and Guide tabs with no base open ----------------
+       RULE (Chris's screenshots 2026-11-24, "This was not fixed"; auditor round 2): a tab with no base
+       open shows something a family can use, never a wall of wing codes and never a blank screen.
+         - With saved bases: "Your saved bases" as rows, tap one to open it (the Map tab also draws them
+           on a small map, from each guide's stored point).
+         - With none: the search box, then the places families live (tier 1) grouped by state as rows.
+       ROAD NOT TAKEN: the old chip grid of every ready base (543 chips, alphabetical, wings first) and
+       the one-sentence stub. Both read as a broken app. */
+    function BaseRow({ b, bases, onOpen }) {
+      return (
+        <div className="card tap" onClick={() => onOpen(b.slug)}>
+          <div className="between">
+            <div style={{ minWidth: 0 }}>
+              <div className="base-name">{b.name}</div>
+              <div className="meta-line">{[b.branch, b.state].filter(Boolean).join("  -  ")}</div>
+              <ParentLine b={b} bases={bases} />
+            </div>
+            <span className="card-go"><Icon name="cardchev" size={20} /></span>
+          </div>
+        </div>
+      );
+    }
+    // The saved bases on one small map. Points come from each saved guide (at most MAX_SAVED_BASES
+    // fetches, the same files the guide screen reads and the service worker caches). The index has
+    // no points of its own; the backend could carry them later (proposed to the lead).
+    function SavedBasesMap({ saved, bases, onOpen }) {
+      const elRef = useRef(null);
+      const [points, setPoints] = useState([]);
+      useEffect(() => {
+        let live = true;
+        const slugs = (saved || []).slice(0, MAX_SAVED_BASES);
+        if (!slugs.length) { setPoints([]); return undefined; }
+        Promise.all(slugs.map((s) => fetchJSON(baseUrl(s)).then((d) => ({ slug: s, name: d.name, coords: d.coords })).catch(() => null)))
+          .then((rows) => { if (live) setPoints(rows.filter((r) => r && r.coords && r.coords.lat != null)); });
+        return () => { live = false; };
+      }, [saved]);
+      useEffect(() => {
+        if (!points.length || !elRef.current || !window.L) return undefined;
+        const map = L.map(elRef.current, { scrollWheelZoom: false, zoomControl: false, attributionControl: false });
+        L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 19 }).addTo(map);
+        const group = L.featureGroup(points.map((pt) => L.circleMarker([pt.coords.lat, pt.coords.lng], { radius: 7, color: "#e7b24c", fillColor: "#e7b24c", fillOpacity: 0.9, weight: 2 })
+          .bindTooltip(pt.name || pt.slug, { permanent: true, direction: "top", offset: [0, -8], className: "map-label base" })
+          .on("click", () => onOpen(pt.slug)))).addTo(map);
+        map.fitBounds(group.getBounds().pad(0.4), { maxZoom: 7 });
+        setTimeout(() => map.invalidateSize(), 120);
+        return () => map.remove();
+      }, [points, onOpen]);
+      if (!points.length) return null;
+      return <div ref={elRef} className="pick-map" />;
+    }
+    function PickABase({ bases, saved, onOpen, hint, withMap }) {
+      const [q, setQ] = useState("");
+      const all = bases || [];
+      const savedRows = all.filter((b) => (saved || []).includes(b.slug) && b.ready).sort(byTierThenName);
+      if (savedRows.length) {
+        return (
+          <div className="pick-rows">
+            <div className="pick-hint">{hint}</div>
+            {withMap ? <SavedBasesMap saved={saved} bases={all} onOpen={onOpen} /> : null}
+            <div className="pick-h">Your saved bases</div>
+            {savedRows.map((b) => <BaseRow key={b.slug} b={b} bases={all} onOpen={onOpen} />)}
+          </div>
+        );
+      }
+      const ql = q.trim().toLowerCase();
+      const matchQ = (b) => !ql || (b.name + " " + (b.state || "") + " " + stateTokens(b.state).map(stateFull).join(" ")).toLowerCase().indexOf(ql) !== -1;
+      const rows = all.filter((b) => b.ready && !b.hub && (ql ? matchQ(b) : guideTier(b) === 1));
+      const groups = {};
+      rows.forEach((b) => { const k = b.state || "Other"; (groups[k] = groups[k] || []).push(b); });
+      const keys = Object.keys(groups).sort((a, b) => stateLabel(a).localeCompare(stateLabel(b)));
+      keys.forEach((k) => groups[k].sort(byTierThenName));
+      return (
+        <div className="pick-rows">
+          <div className="pick-hint">{hint}</div>
+          <input className="fld home-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search base or state" />
+          {!rows.length ? <div className="pending" style={{ marginTop: 10 }}>No bases match.</div> : null}
+          {keys.map((k) => (
+            <div key={k}>
+              <div className="state-header">{stateLabel(k)}</div>
+              {groups[k].map((b) => <BaseRow key={b.slug} b={b} bases={all} onOpen={onOpen} />)}
+            </div>
+          ))}
+        </div>
+      );
+    }
+
+    const MAP_LABELLED_PLACES = 8;
+    function MapScreen({ slug, bases, saved, onOpen }) {
       const elRef = useRef(null);
       const [data, setData] = useState(null);
       const [places, setPlaces] = useState([]);
@@ -2399,8 +2718,17 @@
         if (!c || !elRef.current || !window.L) return;
         const map = L.map(elRef.current, { scrollWheelZoom: false }).setView([c.lat, c.lng], 12);
         L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { attribution: "(c) OpenStreetMap", maxZoom: 19 }).addTo(map);
-        L.circleMarker([c.lat, c.lng], { radius: 9, color: "#e7b24c", fillColor: "#e7b24c", fillOpacity: 0.9, weight: 2 }).addTo(map).bindPopup("<b>" + (data.name || "") + "</b>");
-        places.forEach((p) => { if (p.location) L.circleMarker([p.location.latitude, p.location.longitude], { radius: 5, color: "#8aa0bf", fillColor: "#8aa0bf", fillOpacity: 0.85, weight: 1 }).addTo(map).bindPopup((p.name || "") + (p.rating ? " - " + p.rating : "")); });
+        // RULE (auditor round 2, item 26): markers carry their names. The base's label is always shown;
+        // a place's label shows for the first MAP_LABELLED_PLACES places so the map stays readable, the
+        // rest keep their name in a tap popup.
+        L.circleMarker([c.lat, c.lng], { radius: 9, color: "#e7b24c", fillColor: "#e7b24c", fillOpacity: 0.9, weight: 2 }).addTo(map)
+          .bindTooltip(data.name || "", { permanent: true, direction: "top", offset: [0, -10], className: "map-label base" });
+        places.forEach((p, i) => {
+          if (!p.location) return;
+          const m = L.circleMarker([p.location.latitude, p.location.longitude], { radius: 5, color: "#8aa0bf", fillColor: "#8aa0bf", fillOpacity: 0.85, weight: 1 }).addTo(map)
+            .bindPopup((p.name || "") + (p.rating ? " - " + ratingText(p.rating, p.user_ratings_total) : ""));
+          if (i < MAP_LABELLED_PLACES) m.bindTooltip(p.name || "", { permanent: true, direction: "right", offset: [6, 0], className: "map-label" });
+        });
         setTimeout(() => map.invalidateSize(), 120);
         return () => map.remove();
       }, [data, places]);
@@ -2416,12 +2744,9 @@
       };
 
       if (!slug) {
-        const ready = (bases || []).filter((b) => b.ready);
         return (
           <div className="content"><h2 className="screen-h">Map</h2>
-            <div className="center">Open a base to see its map and nearby places.
-              {ready.length ? <div style={{ marginTop: 14, display: "flex", flexWrap: "wrap", gap: 8, justifyContent: "center" }}>{ready.map((b) => <button key={b.slug} className="btn-gold" onClick={() => onOpen(b.slug)}>{b.name}</button>)}</div> : null}
-            </div>
+            <PickABase bases={bases} saved={saved} onOpen={onOpen} withMap hint="Open a base to see its map and the places near it." />
           </div>
         );
       }
@@ -2434,6 +2759,8 @@
             <button className="btn-quiet" onClick={driveFromMe} disabled={geoBusy}>{geoBusy ? "Locating..." : "Drive time from me"}</button>
           </div>
           {drive ? (drive.error ? <div className="muted tiny" style={{ marginTop: 6 }}>Couldn't get drive time.</div> : <div className="muted small" style={{ marginTop: 6 }}>About {drive.duration_min} min ({drive.distance_mi} mi) from your location to {data.name}.</div>) : null}
+          {/* The space under the map holds the places themselves (auditor round 2, item 26), the same rows as the guide's "nearby" part. */}
+          {places.length ? <ul className="lst" style={{ marginTop: 12 }}>{places.slice(0, 10).map((p, i) => <PlaceRow key={p.place_id || i} p={p} />)}</ul> : null}
         </div>
       );
     }
@@ -2491,8 +2818,8 @@
       if (tab === "home") body = <Home bases={bases} loading={loading} loadFailed={loadFailed} onRetry={loadBases} onOpen={open} saved={saved} onToggleSave={toggleSave} />;
       else if (tab === "guide") body = slug
         ? <BaseDetail slug={slug} onBack={back} saved={saved} onToggleSave={toggleSave} />
-        : <Stub label="Guide" note="Pick a base from Home to open its guide." />;
-      else if (tab === "map") body = <MapScreen slug={slug} bases={bases} onOpen={open} />;
+        : <div className="content"><h2 className="screen-h">Guide</h2><PickABase bases={bases} saved={saved} onOpen={open} hint="Open a base to read its guide." /></div>;
+      else if (tab === "map") body = <MapScreen slug={slug} bases={bases} saved={saved} onOpen={open} />;
       else if (tab === "plan") body = <PlanScreen bases={bases} onOpen={open} />;
       else if (tab === "account") body = <AccountScreen account={account} saved={saved} inAccount={inAccount} bases={bases} onToggleSave={toggleSave} onOpen={open} />;
       else body = <SavedScreen bases={bases} saved={saved} onToggleSave={toggleSave} onOpen={open} account={account} inAccount={inAccount} onOpenAccount={openAccount} />;
@@ -2524,7 +2851,7 @@
               name is the wordmark; the publisher's mark and line are the Home hero. */}
           <div className="topbar">
             <div className="topbar-row">
-              <div className="wordmark">{APP_NAME}</div>
+              <div className="wordmark">{APP_NAME}<span className="wordmark-by">by {BRAND}</span></div>
               {accountEntry}
             </div>
           </div>

@@ -76,6 +76,15 @@ ONE app holds ALL bases; never load all bases into memory. This is the deliberat
 fix for the Touch Stay crash (it loaded content client-side and choked) and the core
 justification for the Pro subscription (a living, cloud-served service).
 
+**Website first (Chris, 2026-11-24):** a tool is built on milspoliving.com first and comes to the app
+only when a family needs it in their pocket (saved bases, checklist, offline guides, alerts). Rank,
+Compare and Plan stay on the website; the app links to them (`WEBSITE_TOOLS` in index.html).
+
+**Lists and empty tabs (Chris, 2026-11-24):** every list of bases is ordered by tier then name
+(`guideTier`, a mirror of the website's `src/lib/guide-tiers.ts`; change both together). The Map
+and Guide tabs with no base open show the saved bases or the tier 1 bases (`PickABase`), never a
+chip grid or a stub. Details: `docs/app-look.md`.
+
 ## Coordinates
 - Repo: `C:\Users\cjgra\base-guides-app` (outside Dropbox, like dining-log-app).
 - The ENTIRE app is one file: `index.html`. Deliverable file name is exactly `index.html`.
