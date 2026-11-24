@@ -31,7 +31,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet" />
+  <!-- The look's faces (see THE NEW LOOK in the style block): Instrument Serif for headings, Outfit
+       for body text and the wordmark, Crimson Pro for long-form reading. sw.js caches Google Fonts
+       by host, so a change here needs no change there. -->
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
@@ -44,268 +47,402 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.119.2/dist/umd/supabase.min.js"></script>
 
   <style>
+    /* ===== THE NEW LOOK (Navy and Gold) =====
+       WHAT THIS BLOCK IS: the whole look of the app, the MenuCaptain redesign applied to Base Guides.
+       Copied from menucaptain-native-build, www/index.html, "THE NEW LOOK" (Stage 1 releases 1.593.0
+       to 1.595.x), which carries Media's round 2 kit (Design review 2026-11/moments/round2/shared.css).
+       Every colour value here is the kit's Navy & Gold colourway; nothing was invented.
+       DECISION (Chris, 2026-11-24, cards "Yes, account then look" and "Navy and Gold"): slice 2 is the
+       look only, and the colourway is Navy & Gold - navy ink (#131b2e) on white by day, the navy
+       ground (#121621) with light text at night, gold details.
+       ROAD NOT TAKEN: a preview switch. MenuCaptain keeps its new look behind "Try the new look" for
+       two testers while members keep the old one; this app has no members yet, so the release IS
+       the look, the old dark palette is gone (git remembers it) and no screen asks which look to draw.
+
+       HOW: a token layer --n-* with a light set (--nl-*) and a dark set (--nd-*); the mode copies one
+       into --n-*; then today's names (--bg, --text, --accent and the rest) point at --n-*, so every
+       rule below repaints at once. The n- prefix keeps the kit's names (bg, ink, dim, faint, line,
+       soft, solid, onsolid, danger, accent) from colliding with --bg and --accent, which mean other
+       things. The mode: <html data-mode="light|dark">, set before first paint by the script under
+       this block and kept by applyLook (section LOOK of the app script) - the phone's setting unless
+       the reader chose Light or Dark in the Appearance row of the account screen.
+
+       THE RULES, in the kit's words:
+       - Square corners everywhere. Hairline rows, not boxes: a card is the page with a line under it.
+       - Buttons are solid ink or an ink outline. The accent (gold) is for SMALL details only - the
+         tab bar's dot, a count, an underline, a pull-quote's rule - never the fill of a button.
+       - Fields are underlines: --faint at rest, ink while typing. Labels in sentence case.
+       - Headings in the serif (Instrument Serif, one weight, 400); the line under a page title is
+         the italic serif in --dim; the wordmark is Outfit small caps with wide letter spacing.
+       - Placeholders in --faint. Second lines in --dim; --faint is never running text.
+       - The tab bar sits on the page ground with a hairline top, 11px labels, the active tab in
+         ink with a 4px gold dot under it.
+       - Red is for errors and delete only. A weather alert keeps red (it is a warning). */
     :root{
-      --bg:#121621; --bg-2:#161c29; --surface:#1c2433; --surface-2:#243041;
-      --line:#334053; --line-soft:#2b3647;
-      --text:#eef2f8; --text-dim:#aab6c8; --text-faint:#6f7c90;
-      --accent:#e7b24c; --accent-dim:#c5923a;
-      --ok:#7faa6b; --danger:#d9604e;
-      --shadow:0 8px 28px rgba(0,0,0,0.45);
+      --n-brass-metal:linear-gradient(135deg,#4a3109 0%,#b8821f 16%,#f0c04a 30%,#ffe9a0 40%,#c58f26 52%,#5a3b0a 68%,#d29a2c 84%,#7a5210 100%);
+      /* Navy & Gold, light set: navy ink on white, brass details (the kit's Navy & Gold over Brass). */
+      --nl-bg:#fff; --nl-ink:#131b2e; --nl-dim:#56627a; --nl-faint:#8794a8; --nl-line:#e0e5ee; --nl-soft:#f0f3f8;
+      --nl-solid:#131b2e; --nl-onsolid:#fff; --nl-danger:#b42318;
+      --nl-accent:var(--n-brass-metal); --nl-accent-flat:#a8741a; --nl-onaccent:#000;
+      --nl-accent-rgb:168,116,26; --nl-danger-rgb:180,35,24; --nl-ink-rgb:19,27,46; --nl-edge:#e0e5ee;
+      /* Navy & Gold, dark set: the navy ground the app always had, light text, flat gold details. */
+      --nd-bg:#121621; --nd-ink:#eef2f8; --nd-dim:#aab6c8; --nd-faint:#8291a6; --nd-line:#2b3647; --nd-soft:#1c2433;
+      --nd-solid:#eef2f8; --nd-onsolid:#121621; --nd-danger:#f97066;
+      --nd-accent:var(--n-brass-metal); --nd-accent-flat:#e7b24c; --nd-onaccent:#121621;
+      --nd-accent-rgb:231,178,76; --nd-danger-rgb:249,112,102; --nd-ink-rgb:238,242,248; --nd-edge:#334053;
+      /* The mode: light unless data-mode="dark" (or the phone is dark and nothing chose, below). */
+      --n-bg:var(--nl-bg); --n-ink:var(--nl-ink); --n-dim:var(--nl-dim); --n-faint:var(--nl-faint); --n-line:var(--nl-line);
+      --n-soft:var(--nl-soft); --n-solid:var(--nl-solid); --n-onsolid:var(--nl-onsolid); --n-danger:var(--nl-danger);
+      --n-accent:var(--nl-accent); --n-accent-flat:var(--nl-accent-flat); --n-onaccent:var(--nl-onaccent);
+      --n-accent-rgb:var(--nl-accent-rgb); --n-danger-rgb:var(--nl-danger-rgb); --n-ink-rgb:var(--nl-ink-rgb);
+      --n-sheet:var(--nl-bg); --n-sheet-edge:var(--nl-edge);
+      --n-shadow:0 6px 24px rgba(0,0,0,0.10);
+      color-scheme:light;
+    }
+    :root[data-mode="dark"]{
+      --n-bg:var(--nd-bg); --n-ink:var(--nd-ink); --n-dim:var(--nd-dim); --n-faint:var(--nd-faint); --n-line:var(--nd-line);
+      --n-soft:var(--nd-soft); --n-solid:var(--nd-solid); --n-onsolid:var(--nd-onsolid); --n-danger:var(--nd-danger);
+      --n-accent:var(--nd-accent); --n-accent-flat:var(--nd-accent-flat); --n-onaccent:var(--nd-onaccent);
+      --n-accent-rgb:var(--nd-accent-rgb); --n-danger-rgb:var(--nd-danger-rgb); --n-ink-rgb:var(--nd-ink-rgb);
+      --n-sheet:var(--nd-soft); --n-sheet-edge:var(--nd-edge);
+      --n-shadow:0 8px 28px rgba(0,0,0,0.55);
+      color-scheme:dark;
+    }
+    /* A dark phone before the script has run (or with scripts off) gets the dark set, so the page
+       never paints white and then switches. The same declarations as data-mode="dark" on purpose. */
+    @media (prefers-color-scheme: dark){
+      :root:not([data-mode="light"]){
+        --n-bg:var(--nd-bg); --n-ink:var(--nd-ink); --n-dim:var(--nd-dim); --n-faint:var(--nd-faint); --n-line:var(--nd-line);
+        --n-soft:var(--nd-soft); --n-solid:var(--nd-solid); --n-onsolid:var(--nd-onsolid); --n-danger:var(--nd-danger);
+        --n-accent:var(--nd-accent); --n-accent-flat:var(--nd-accent-flat); --n-onaccent:var(--nd-onaccent);
+        --n-accent-rgb:var(--nd-accent-rgb); --n-danger-rgb:var(--nd-danger-rgb); --n-ink-rgb:var(--nd-ink-rgb);
+        --n-sheet:var(--nd-soft); --n-sheet-edge:var(--nd-edge);
+        --n-shadow:0 8px 28px rgba(0,0,0,0.55);
+        color-scheme:dark;
+      }
+    }
+    /* Today's names, pointed at the tokens, so the rules below and the few inline colours in the app
+       script (color: var(--accent) on a saved bookmark, the Killer subtitle) follow the mode.
+       WARNING, the --accent-is-ink rule (kit; MenuCaptain 1.593.1): --accent is the INK, not the
+       gold. Everything the app paints with --accent (links, icons, a filled bookmark, the back link)
+       is drawn in ink by the kit; gold is kept for the small details, which name --n-accent or
+       --n-accent-flat themselves. The flat brass reads 4.06:1 on white, under the 4.5:1 text needs,
+       so pointing --accent at gold would fail every link in light mode. Do not "fix" this.
+       --text-faint is --dim for the same reason: second lines are --dim; only placeholders and
+       disabled things get --n-faint, by name. --surface-2 (chips, the second tier of a box) has no
+       drawing of its own: a whisker of ink over the ground. */
+    :root{
+      --bg:var(--n-bg); --bg-2:var(--n-bg); --surface:var(--n-soft); --surface-2:color-mix(in srgb, var(--n-ink) 7%, var(--n-bg));
+      --line:var(--n-line); --line-soft:var(--n-line);
+      --text:var(--n-ink); --text-dim:var(--n-dim); --text-faint:var(--n-dim);
+      --accent:var(--n-ink); --accent-dim:var(--n-ink);
+      --danger:var(--n-danger);
+      --serif:'Instrument Serif',Georgia,serif;
+      --shadow:var(--n-shadow);
     }
     *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
     html,body{margin:0; padding:0; background:var(--bg); color:var(--text);}
+    /* Body text is Outfit, the kit's body face (MenuCaptain's too). Long-form reading - a guide
+       section's prose, the story, an answer - stays Crimson Pro, the app's reading face: the kit
+       has no long-form page and a magazine read wants a serif. Headings are the kit's serif. */
     body{
-      font-family:'DM Sans',-apple-system,BlinkMacSystemFont,sans-serif;
+      font-family:'Outfit',-apple-system,BlinkMacSystemFont,sans-serif;
       font-size:16px; line-height:1.5; -webkit-font-smoothing:antialiased;
       overscroll-behavior-y:none;
     }
-    /* Editorial long-form reads in Crimson Pro; UI stays DM Sans; headlines Fraunces. */
     .acc-body, .acc-body p, .ask-ans, .md, .basehero .tag, .hero .tag{ font-family:'Crimson Pro',Georgia,serif; }
     .acc-body{ font-size:15.5px; line-height:1.6; }
-    .home-hero{ text-align:center; padding:4px 0 20px; }
-    .home-logo{ width:128px; height:128px; }
-    .home-tag{ font-family:'Crimson Pro',Georgia,serif; color:var(--text-dim); font-size:15px; margin-top:4px; }
-    .home-controls{ margin-bottom:6px; }
-    .home-search{ margin-bottom:9px; }
-    .home-selects{ display:flex; gap:8px; margin-bottom:10px; }
-    .home-selects select{ flex:1; min-width:0; }
-    .state-header{ font-family:'Fraunces',serif; font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-faint); margin:18px 2px 8px; }
-    .feedback{ margin:18px 0 4px; padding:14px; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:11px; text-align:center; }
-    .feedback-q{ display:block; font-size:13.5px; color:var(--text-dim); margin-bottom:7px; }
-    .feedback-link{ display:inline-block; color:var(--accent); font-weight:600; font-size:14px; }
-    .feedback-note{ font-size:11.5px; color:var(--text-faint); margin-top:7px; }
     input,textarea,select,button{font-family:inherit; font-size:16px;}
     button{cursor:pointer; border:none; background:none; color:inherit;}
-    h1,h2,h3{font-family:'Fraunces',Georgia,serif; font-weight:600; margin:0; line-height:1.18;}
+    h1,h2,h3{font-family:var(--serif); font-weight:400; margin:0; line-height:1.15; letter-spacing:0;}
+    ::placeholder{ color:var(--n-faint); opacity:1; }
+    a{ color:var(--n-ink); }
 
+    /* WARNING: every corner is square (Chris kept square corners everywhere, 2026-11-20), so ONE rule
+       squares them all, inline corners and Leaflet's included, and the short list under it keeps the
+       true circles: the brand coin, the spinner, the tab bar's dot. A new circle must be added to
+       that list or it draws as a square. Road not taken: squaring each rule by hand, which leaves
+       strays. */
+    *, *::before, *::after{ border-radius:0 !important; }
+    :is(.brandmark, .spin, .home-logo), .nav button.on::before{ border-radius:50% !important; }
+
+    /* ---- the shell: the top bar (kit t01b, t03, t17) and the page ---- */
     #app-shell{
       max-width:540px; margin:0 auto; min-height:100vh; background:var(--bg);
       position:relative; padding-bottom:calc(72px + env(safe-area-inset-bottom));
     }
-    .topbar{
-      position:sticky; top:0; z-index:30; background:var(--bg);
-      padding:calc(14px + env(safe-area-inset-top)) 20px 10px;
-      border-bottom:1px solid var(--line-soft);
-    }
-    .topbar h1{font-size:26px; letter-spacing:-0.02em;}
-    .topbar .sub{font-size:12px; color:var(--text-faint); margin-top:2px; letter-spacing:0.08em; text-transform:uppercase;}
-    .brandrow{display:flex; align-items:center; gap:12px;}
-    .brandmark{width:48px; height:48px; flex:none; border-radius:50%;}
-    .content{padding:14px 18px 24px;}
+    .topbar{ position:sticky; top:0; z-index:30; background:var(--n-bg); padding:calc(6px + env(safe-area-inset-top)) 20px 0; }
+    .topbar-row{display:flex; align-items:center; justify-content:space-between; gap:12px; min-height:46px;}
+    .wordmark{ display:flex; align-items:center; gap:8px; font-family:'Outfit',sans-serif; font-size:11px; font-weight:500;
+      letter-spacing:0.42em; text-transform:uppercase; color:var(--n-ink); white-space:nowrap; }
+    .content{padding:14px 20px 24px; overflow-x:clip;}
+    .screen-h{font-size:38px; line-height:1.1; margin:6px 0 14px;}
 
     .banner{
-      margin:10px 18px 0; padding:10px 13px; border-radius:11px; font-size:13.5px;
-      display:flex; align-items:center; gap:10px; border:1px solid var(--line);
-      background:rgba(231,178,76,0.12); color:#f0d79a; border-color:rgba(231,178,76,0.4);
+      margin:0 20px; padding:10px 2px; font-size:13.5px; color:var(--n-ink);
+      display:flex; align-items:center; gap:10px; border-top:1px solid var(--n-line); border-bottom:1px solid var(--n-line);
     }
-    .banner button{margin-left:auto; font-size:12.5px; color:var(--accent); font-weight:600;}
+    .banner + .banner{ border-top:0; }
+    .banner button{margin-left:auto; font-size:12.5px; color:var(--n-ink); font-weight:500;}
 
+    /* ---- Home ---- */
+    .home-hero{ text-align:center; padding:4px 0 18px; }
+    .home-logo{ width:96px; height:96px; }
+    .home-tag{ font-family:var(--serif); font-style:italic; font-size:18px; color:var(--n-dim); margin-top:6px; }
+    .home-controls{ margin-bottom:6px; }
+    .home-search{ margin-bottom:9px; }
+    .home-selects{ display:flex; gap:12px; margin-bottom:12px; }
+    .home-selects select{ flex:1; min-width:0; }
+    .state-header{ font-family:var(--serif); font-size:26px; line-height:1.15; color:var(--n-ink); margin:22px 0 2px; }
+
+    /* Rows: a card is the page with a hairline under it, running the full screen width with the
+       text 20px in (kit .row; the page margin is 20px). The branch colour that edged each row is
+       gone with the box (the kit has no tinted edges; the branch is the row's second line). */
     .card{
-      background:var(--surface); border:1px solid var(--line-soft);
-      border-radius:15px; padding:15px; margin-bottom:12px;
+      background:transparent; border:0; border-bottom:1px solid var(--n-line);
+      padding:14px 20px; margin:0 -20px;
     }
-    .card.tap{transition:transform 0.08s ease; cursor:pointer;}
-    .card.tap:active{transform:scale(0.985);}
-    .base-name{font-family:'Fraunces',serif; font-size:19px; font-weight:600; letter-spacing:-0.01em;}
-    .meta-line{font-size:12px; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.05em; margin-top:3px;}
-    .pill{display:inline-block; font-size:11px; padding:2px 9px; border-radius:999px; background:var(--surface-2); border:1px solid var(--line); color:var(--text-dim); margin-left:8px; vertical-align:middle;}
-    .pill.ready{background:rgba(127,170,107,0.14); border-color:rgba(127,170,107,0.4); color:#a9c98f;}
-    .pill.soon{background:rgba(231,178,76,0.12); border-color:rgba(231,178,76,0.35); color:#e0c486;}
-    .pill.oconus{background:rgba(111,159,201,0.16); border-color:rgba(111,159,201,0.4); color:#9cc0e0;}
+    .card .card{ margin:12px 0 0; padding:14px 0 0; border-bottom:0; border-top:1px solid var(--n-line); }
+    .card.tap{transition:opacity 0.08s ease; cursor:pointer;}
+    .card.tap:active{opacity:0.7;}
+    .base-name{font-family:var(--serif); font-size:20px; line-height:1.15; letter-spacing:0;}
+    .meta-line{font-size:13.5px; color:var(--n-dim); margin-top:3px;}
+    /* Labels you cannot tap: a hairline edge in --line, --dim text (kit .chip.tag). */
+    .pill{display:inline-block; font-size:11px; line-height:1.4; padding:1px 7px; border:1px solid var(--n-line); color:var(--n-dim); margin-left:8px; vertical-align:2px; font-family:'Outfit',sans-serif;}
+    .card-go{color:var(--n-dim); flex:none; display:flex; align-items:center; margin-left:10px;}
+    .card-actions{display:flex; align-items:center; gap:2px; flex:none;}
+    .iconbtn{color:var(--n-dim); padding:6px; display:flex; align-items:center;}
 
-    .back{font-size:14px; color:var(--accent); font-weight:500; display:inline-flex; gap:6px; align-items:center; margin-bottom:6px; cursor:pointer;}
+    /* ---- the guide ---- */
+    .back{font-size:14px; color:var(--n-ink); font-weight:500; display:inline-flex; gap:6px; align-items:center; margin-bottom:6px; cursor:pointer;}
     .hero{margin:2px 0 4px;}
-    .hero .tag{color:var(--text-dim); font-size:14px; margin-top:6px;}
-    .basehero{background:linear-gradient(160deg,var(--bg-2),var(--surface)); border:1px solid var(--line-soft); border-top:3px solid var(--accent-dim); border-radius:15px; padding:16px; margin-top:6px;}
-    .basehero h1{font-size:24px; letter-spacing:-0.01em;}
-    .basehero .tag{color:var(--text-dim); font-size:14px; margin-top:7px;}
-    .basehero-meta{margin-top:10px; font-size:11.5px; letter-spacing:0.06em; text-transform:uppercase; color:var(--text-faint);}
-    .localtime{margin-top:8px; font-size:12.5px; color:var(--text-dim);}
-    .sec-ic{color:var(--accent-dim); display:inline-flex; align-items:center; flex:none;}
+    .hero .tag{color:var(--n-dim); font-size:14px; margin-top:6px;}
+    /* The one coloured edge kept: the branch's 3px rule over the base's name (its colour is set
+       inline from BRANCH_COLORS). */
+    .basehero{border-top:3px solid var(--n-ink); border-bottom:1px solid var(--n-line); padding:14px 0 16px; margin-top:8px;}
+    .basehero h1{font-size:38px; line-height:1.1;}
+    .basehero .tag{color:var(--n-dim); font-size:15px; margin-top:7px;}
+    .basehero-meta{margin-top:10px; font-size:13.5px; color:var(--n-dim);}
+    .localtime{margin-top:6px; font-size:13.5px; color:var(--n-dim);}
+    .sec-ic{color:var(--n-ink); display:inline-flex; align-items:center; flex:none;}
 
     /* ---- ask box ---- */
-    .ask{ background:var(--surface); border:1px solid var(--line-soft); border-radius:13px; padding:13px; margin-top:12px; }
-    .ask-title{ font-family:'Fraunces',serif; font-size:16px; margin-bottom:9px; }
-    .ask-row{ display:flex; gap:8px; }
+    .ask{ padding:14px 0 12px; border-bottom:1px solid var(--n-line); }
+    .ask-title{ font-family:var(--serif); font-size:22px; line-height:1.15; margin-bottom:8px; }
+    .ask-row{ display:flex; gap:12px; align-items:flex-end; }
     .ask-inputwrap{ position:relative; flex:1; min-width:0; display:flex; }
-    .ask-row input{ flex:1; min-width:0; background:var(--bg-2); border:1px solid var(--line); border-radius:9px; color:var(--text); padding:9px 32px 9px 11px; }
-    .ask-clear{ position:absolute; right:5px; top:50%; transform:translateY(-50%); background:transparent; border:0; color:var(--text-faint); font-size:20px; line-height:1; padding:0 5px; cursor:pointer; }
+    .ask-row input{ flex:1; min-width:0; background:transparent; border:0; border-bottom:1px solid var(--n-faint); color:var(--text); padding:9px 28px 9px 0; }
+    .ask-row input:focus{ outline:none; border-bottom-color:var(--n-ink); }
+    .ask-clear{ position:absolute; right:0; top:50%; transform:translateY(-50%); background:transparent; border:0; color:var(--n-dim); font-size:20px; line-height:1; padding:0 5px; cursor:pointer; }
     .ask-clear:hover{ color:var(--text); }
-    .ask-row > button{ flex:0 0 auto; background:var(--accent); color:#10131b; font-weight:600; border-radius:9px; padding:9px 16px; }
+    .ask-row > button{ flex:0 0 auto; background:var(--n-solid); color:var(--n-onsolid); font-weight:500; padding:9px 18px; }
     .ask-row > button:disabled{ opacity:0.6; }
     .ask-thinking{ display:flex; align-items:center; gap:9px; }
     .spin-sm{ width:15px; height:15px; border-width:2px; }
-    .ask-ans{ margin-top:10px; font-size:14px; color:var(--text); line-height:1.55; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:9px; padding:11px; }
+    .ask-ans{ margin-top:12px; font-size:15px; color:var(--text); line-height:1.55; background:var(--n-soft); padding:12px 14px; }
     .md > :first-child{ margin-top:0; } .md > :last-child{ margin-bottom:0; }
     .md p{ margin:0 0 9px; }
-    .md-h{ font-family:'Fraunces',serif; font-size:15.5px; color:var(--text); margin:12px 0 6px; }
-    .md-h3{ font-size:13.5px; font-weight:600; color:var(--text); margin:10px 0 5px; }
+    .md-h{ font-family:var(--serif); font-size:20px; font-weight:400; color:var(--text); margin:12px 0 6px; }
+    .md-h3{ font-size:15px; font-weight:600; color:var(--text); margin:10px 0 5px; }
     .md-ul{ margin:6px 0 9px; padding-left:18px; } .md-ul li{ margin:3px 0; }
-    .md-quote{ border-left:3px solid var(--accent-dim); background:rgba(231,178,76,0.07); padding:8px 11px; border-radius:0 8px 8px 0; margin:9px 0; color:var(--text-dim); }
-    .md-hr{ border:none; border-top:1px solid var(--line-soft); margin:11px 0; }
-    .md a{ color:var(--accent); }
+    .md-quote{ border-left:2px solid var(--n-accent-flat); padding:4px 0 4px 12px; margin:9px 0; color:var(--n-dim); }
+    .md-hr{ border:none; border-top:1px solid var(--n-line); margin:11px 0; }
 
-    .acc{border:1px solid var(--line-soft); border-radius:13px; margin-bottom:11px; overflow:hidden; background:var(--surface);}
-    .acc-head{display:flex; align-items:center; gap:10px; padding:14px 15px; cursor:pointer;}
-    .acc-head h3{font-size:16px; flex:1;}
-    .acc-chev{color:var(--text-faint); display:inline-flex; align-items:center; transition:transform 0.18s ease;}
-    .card-go{color:var(--text-faint); flex:none; display:flex; align-items:center; margin-left:10px;}
+    /* ---- sections (accordions): serif names on hairline rows ---- */
+    .acc{border-bottom:1px solid var(--n-line); margin:0;}
+    .acc-head{display:flex; align-items:center; gap:12px; padding:14px 0; cursor:pointer;}
+    .acc-head h3{font-size:20px; flex:1;}
+    .acc-chev{color:var(--n-dim); display:inline-flex; align-items:center; transition:transform 0.18s ease;}
     .between{display:flex; align-items:center; justify-content:space-between; gap:10px;}
     .row{display:flex; align-items:center; gap:10px;}
-    .muted{color:var(--text-dim);}
-    .faint{color:var(--text-faint);}
-    .tiny{font-size:12px;}
+    .muted{color:var(--n-dim);}
+    .faint{color:var(--n-dim);}
+    .tiny{font-size:12.5px;}
     .small{font-size:13.5px;}
     .acc.open .acc-chev{transform:rotate(180deg);}
-    .acc-body{padding:0 15px 15px; font-size:14.5px; color:var(--text-dim);}
+    .acc-body{padding:0 0 16px; font-size:15px; color:var(--n-dim);}
     .acc-body p{margin:0 0 10px;}
 
     dl.facts{margin:0; display:grid; grid-template-columns:auto 1fr; gap:7px 14px;}
-    dl.facts dt{color:var(--text-faint); font-size:13px;}
-    dl.facts dd{margin:0; color:var(--text); font-size:14px;}
+    dl.facts dt{color:var(--n-dim); font-size:13.5px;}
+    dl.facts dd{margin:0; color:var(--text); font-size:14.5px;}
 
-    table.dec{width:100%; border-collapse:collapse; font-size:13px; margin-top:6px;}
-    table.dec th, table.dec td{text-align:left; padding:7px 8px; border-bottom:1px solid var(--line-soft); vertical-align:top;}
-    table.dec th{color:var(--text-faint); font-weight:500; font-size:11.5px; text-transform:uppercase; letter-spacing:0.04em;}
+    table.dec{width:100%; border-collapse:collapse; font-size:13.5px; margin-top:6px;}
+    table.dec th, table.dec td{text-align:left; padding:7px 8px; border-bottom:1px solid var(--n-line); vertical-align:top;}
+    table.dec th{color:var(--n-dim); font-weight:500; font-size:13px;}
     table.dec td:first-child{color:var(--text);}
 
     .lst{list-style:none; margin:0; padding:0;}
-    .lst li{padding:9px 0; border-top:1px solid var(--line-soft);}
+    .lst li{padding:9px 0; border-top:1px solid var(--n-line);}
     .lst li:first-child{border-top:none;}
-    .lst .t{color:var(--text); font-weight:500; font-size:14px;}
+    .lst .t{color:var(--text); font-weight:500; font-size:14.5px;}
     .lst .t .faint{font-weight:400;}
-    .lst .d{color:var(--text-dim); font-size:13px; margin-top:2px;}
+    .lst .d{color:var(--n-dim); font-size:13.5px; margin-top:2px;}
 
-    .pending{font-size:13.5px; color:var(--text-faint); font-style:italic;}
-    .place-detail{margin:8px 0 4px; padding:11px; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:10px;}
-    .place-photo{width:100%; height:150px; object-fit:cover; border-radius:8px; display:block; margin-bottom:9px;}
-    .place-summary{font-family:'Crimson Pro',Georgia,serif; font-size:14px; color:var(--text-dim); margin-bottom:9px; line-height:1.5;}
-    .place-hours{font-size:12px; color:var(--text-faint); margin-bottom:9px;}
+    .pending{font-size:14px; color:var(--n-dim); font-style:italic;}
+    .place-detail{margin:8px 0 4px; padding:12px 14px; background:var(--n-soft);}
+    .place-photo{width:100%; height:150px; object-fit:cover; display:block; margin-bottom:9px;}
+    .place-summary{font-family:'Crimson Pro',Georgia,serif; font-size:14.5px; color:var(--n-dim); margin-bottom:9px; line-height:1.5;}
+    .place-hours{font-size:12.5px; color:var(--n-dim); margin-bottom:9px;}
     .place-hours div{line-height:1.55;}
     .place-links{display:flex; flex-wrap:wrap; gap:16px;}
-    .place-links a{color:var(--accent); font-size:13px; font-weight:600;}
-    .live-note{border:1px dashed var(--accent-dim); border-radius:11px; padding:11px 13px; font-size:13px; color:#e0c486; background:rgba(231,178,76,0.06);}
+    .place-links a{color:var(--n-ink); font-size:13.5px; font-weight:500;}
+    /* A notice (kit .req-banner): hairlines above and below, ink text, no fill. */
+    .live-note{border-top:1px solid var(--n-line); border-bottom:1px solid var(--n-line); padding:10px 2px; font-size:13.5px; color:var(--n-ink);}
     /* Story section (the website's long-form story). */
-    .story-h{font-family:'Fraunces',serif; font-size:17px; color:var(--text); margin:16px 0 6px;}
+    .story-h{font-family:var(--serif); font-size:20px; font-weight:400; color:var(--text); margin:16px 0 6px;}
     .story-h:first-child{margin-top:2px;}
-    .story-sh{font-weight:700; font-size:14px; color:var(--text); margin:12px 0 4px;}
-    .story-quote{margin:12px 0; padding:4px 0 4px 12px; border-left:3px solid var(--accent-dim); font-family:'Crimson Pro',Georgia,serif; font-size:16.5px; color:var(--text); line-height:1.45;}
-    .story-box{margin:12px 0; padding:11px 13px; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:10px;}
-    .story-label{font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--accent-dim); font-weight:700;}
-    .story-title{font-weight:700; font-size:14px; color:var(--text); margin:3px 0 8px;}
+    .story-sh{font-weight:600; font-size:14.5px; color:var(--text); margin:12px 0 4px;}
+    .story-quote{margin:12px 0; padding:4px 0 4px 12px; border-left:2px solid var(--n-accent-flat); font-family:var(--serif); font-size:20px; color:var(--text); line-height:1.3;}
+    .story-box{margin:12px 0; padding:12px 14px; background:var(--n-soft);}
+    .story-label{font-size:13px; color:var(--n-dim); font-weight:500;}
+    .story-title{font-family:var(--serif); font-weight:400; font-size:20px; color:var(--text); margin:2px 0 8px;}
     .story-box ul{margin:6px 0; padding-left:18px;}
-    .story-box li{font-size:13.5px; line-height:1.5; margin-bottom:4px;}
-    .story-small{font-size:12.5px; color:var(--text-faint); margin-top:8px;}
-    table.dec tr.story-total td{color:var(--text); font-weight:700;}
+    .story-box li{font-size:14px; line-height:1.5; margin-bottom:4px;}
+    .story-small{font-size:13px; color:var(--n-dim); margin-top:8px;}
+    table.dec tr.story-total td{color:var(--text); font-weight:600;}
     table.dec tr.story-has-how td{border-bottom:none; padding-bottom:2px;}
-    table.dec tr.story-how td{padding-top:0; font-size:12px; color:var(--text-faint);}
+    table.dec tr.story-how td{padding-top:0; font-size:12.5px; color:var(--n-dim);}
     table.dec td.num, table.dec th.num{text-align:right; white-space:nowrap;}
-    .story-disclaimer{font-size:12.5px; color:var(--text-faint); font-style:italic;}
+    .story-disclaimer{font-size:13px; color:var(--n-dim); font-style:italic;}
     .story-missing{margin-bottom:12px;}
-    .story-sources{margin-top:14px; padding-top:9px; border-top:1px solid var(--line-soft); font-size:12px; color:var(--text-faint);}
+    .story-sources{margin-top:14px; padding-top:9px; border-top:1px solid var(--n-line); font-size:12.5px; color:var(--n-dim);}
     .story-sources ol{margin:4px 0 0; padding-left:18px;}
     .story-sources li{margin-bottom:3px; line-height:1.45;}
-    .story-sources a{color:var(--accent-dim); word-break:break-word;}
-    .srcline{margin-top:12px; padding-top:9px; border-top:1px solid var(--line-soft); font-size:11.5px; color:var(--text-faint);}
-    .srcline a{color:var(--accent-dim);}
-    .screen-h{font-family:'Fraunces',serif; font-size:22px; margin:2px 2px 14px;}
-    .fld{width:100%; background:var(--bg-2); border:1px solid var(--line); border-radius:9px; color:var(--text); padding:10px 11px; font-size:15px;}
-    .fld-l{display:block; font-size:11.5px; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:5px;}
-    .card-actions{display:flex; align-items:center; gap:2px; flex:none;}
-    .iconbtn{color:var(--text-faint); padding:6px; display:flex; align-items:center; border-radius:8px;}
-    .task{display:flex; align-items:flex-start; gap:10px; padding:7px 0; font-size:14.5px; color:var(--text-dim); cursor:pointer;}
-    .task input{margin-top:3px; width:17px; height:17px; accent-color:var(--accent); flex:none;}
-    .task-done{text-decoration:line-through; color:var(--text-faint);}
-    .btn-quiet{font-size:12.5px; color:var(--accent); display:inline-flex; align-items:center; gap:5px; font-weight:600;}
-    .btn-gold{display:inline-block; background:var(--accent); color:#10131b; font-weight:600; padding:10px 16px; border-radius:10px; text-decoration:none; margin-top:10px;}
-    .bridge{background:linear-gradient(160deg,rgba(231,178,76,0.13),var(--surface)); border:1px solid rgba(231,178,76,0.4); border-radius:14px; padding:15px; margin-bottom:14px;}
-    .bridge-h{font-family:'Fraunces',serif; font-size:17px; margin-bottom:7px;}
-    .bridge p{font-family:'Crimson Pro',Georgia,serif; color:var(--text-dim); font-size:15px; margin:0; line-height:1.55;}
+    .story-sources a{color:var(--n-ink); word-break:break-word;}
+    .srcline{margin-top:12px; padding-top:9px; border-top:1px solid var(--n-line); font-size:12.5px; color:var(--n-dim);}
+    .srcline a{color:var(--n-ink);}
+    .feedback{ margin:22px 0 4px; padding:14px 0; border-top:1px solid var(--n-line); border-bottom:1px solid var(--n-line); text-align:center; }
+    .feedback-q{ display:block; font-size:14px; color:var(--n-dim); margin-bottom:7px; }
+    .feedback-link{ display:inline-block; color:var(--n-ink); font-weight:500; font-size:14.5px; }
+    .feedback-note{ font-size:12.5px; color:var(--n-dim); margin-top:7px; }
+
+    /* ---- fields and buttons (kit .field, .btn) ---- */
+    .fld{width:100%; background:transparent; border:0; border-bottom:1px solid var(--n-faint); color:var(--text); padding:9px 0; font-size:16px;}
+    .fld:focus{outline:none; border-bottom-color:var(--n-ink);}
+    select.fld{ -webkit-appearance:none; appearance:none; padding-right:22px;
+      background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%23808080' stroke-width='1.6'/></svg>");
+      background-repeat:no-repeat; background-position:right 2px center; }
+    .fld-l{display:block; font-size:13px; color:var(--n-dim); margin-bottom:2px;}
+    .task{display:flex; align-items:flex-start; gap:10px; padding:7px 0; font-size:14.5px; color:var(--n-dim); cursor:pointer;}
+    .task input{margin-top:3px; width:17px; height:17px; accent-color:var(--n-ink); flex:none;}
+    .task-done{text-decoration:line-through; color:var(--n-faint);}
+    .btn-quiet{font-size:13.5px; color:var(--n-ink); display:inline-flex; align-items:center; gap:5px; font-weight:500;}
+    .btn-quiet:disabled{color:var(--n-faint);}
+    /* The primary button. Named for the fill it had; it is solid ink now (the kit's .btn.primary):
+       the accent is never a button's fill. The name stays because the screens carry it. */
+    .btn-gold{display:inline-block; background:var(--n-solid); color:var(--n-onsolid); font-weight:500; padding:11px 18px; text-decoration:none; margin-top:10px; border:1px solid var(--n-solid);}
+    .btn-gold:disabled{opacity:0.5;}
+    .btn-plain{display:inline-block; background:transparent; border:1px solid var(--n-ink); color:var(--n-ink); font-weight:500; padding:11px 18px; margin-top:10px;}
+    .btn-danger{display:inline-block; background:transparent; border:1px solid var(--n-danger); color:var(--n-danger); font-weight:500; padding:11px 18px; margin-top:10px;}
+    .bridge{border-top:1px solid var(--n-line); border-bottom:1px solid var(--n-line); padding:16px 0; margin-bottom:14px;}
+    .bridge-h{font-family:var(--serif); font-size:22px; margin-bottom:7px;}
+    .bridge p{font-family:'Crimson Pro',Georgia,serif; color:var(--n-dim); font-size:15.5px; margin:0; line-height:1.55;}
     .wx{display:flex; align-items:center; gap:9px; margin:12px 0 2px;}
-    .wx-temp{font-family:'Fraunces',serif; font-size:19px; color:var(--text);}
-    .wx-cond{font-size:13.5px; color:var(--text-dim);}
-    .wx-src{margin-left:auto; font-size:10.5px; letter-spacing:0.05em; color:var(--text-faint);}
-    .wx-alert{margin:12px 0 0; padding:10px 12px; border-radius:10px; background:rgba(217,96,78,0.14); border:1px solid rgba(217,96,78,0.45); color:#eab0a6; font-size:13px;}
-    .wx-alert-h{margin-top:3px; color:#e0b9b1; font-size:12.5px;}
-    .bah-row{display:flex; gap:8px; flex-wrap:wrap; margin-bottom:10px;}
+    .wx-temp{font-family:var(--serif); font-size:22px; color:var(--text);}
+    .wx-cond{font-size:13.5px; color:var(--n-dim);}
+    .wx-src{margin-left:auto; font-size:11px; letter-spacing:0.05em; color:var(--n-dim);}
+    .wx-alert{margin:12px 0 0; padding:8px 0 8px 12px; border-left:2px solid var(--n-danger); color:var(--n-danger); font-size:13.5px;}
+    .wx-alert-h{margin-top:3px; color:var(--n-dim); font-size:13px;}
+    .bah-row{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:10px; align-items:flex-end;}
     .bah-sel{flex:0 0 88px; width:88px;}
-    .seg{display:flex; border:1px solid var(--line); border-radius:9px; overflow:hidden; flex:1; min-width:200px;}
-    .seg button{flex:1; padding:9px 6px; font-size:12.5px; color:var(--text-dim); background:var(--bg-2);}
-    .seg button.on{background:var(--accent); color:#10131b; font-weight:600;}
+    /* A two-way switch: ink outline, the chosen side solid ink (kit .choice). */
+    .seg{display:flex; border:1px solid var(--n-ink); overflow:hidden; flex:1; min-width:200px;}
+    .seg button{flex:1 1 0; padding:9px 6px; font-size:13.5px; color:var(--n-ink); background:transparent;}
+    .seg button.on{background:var(--n-solid); color:var(--n-onsolid); font-weight:500;}
     .bah-out{display:flex; align-items:baseline; gap:8px; margin:6px 0 8px;}
-    .bah-amt{font-family:'Fraunces',serif; font-size:34px; color:var(--text); line-height:1;}
-    .bah-mo{color:var(--text-faint); font-size:13px;}
-    .bah-help{margin-top:8px; font-size:12px; line-height:1.5; color:var(--text-faint);}
-    .picks-title{font-family:'Fraunces',serif; font-size:15px; color:var(--text); margin:2px 0 9px;}
-    .picks{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:8px;}
-    .pick-card{padding:10px 12px; background:var(--bg-2); border:1px solid var(--line-soft); border-left:3px solid var(--accent); border-radius:10px;}
+    .bah-amt{font-family:var(--serif); font-size:38px; color:var(--text); line-height:1;}
+    .bah-mo{color:var(--n-dim); font-size:13.5px;}
+    .bah-help{margin-top:8px; font-size:12.5px; line-height:1.5; color:var(--n-dim);}
+    .picks-title{font-family:var(--serif); font-size:20px; color:var(--text); margin:2px 0 4px;}
+    .picks{list-style:none; margin:0; padding:0;}
+    .pick-card{padding:10px 0; border-bottom:1px solid var(--n-line);}
     .pick-top{display:flex; align-items:baseline; justify-content:space-between; gap:10px;}
-    .pick-name{font-weight:700; font-size:14px; color:var(--text);}
-    .pick-cat{font-size:11px; color:var(--text-faint); text-transform:uppercase; letter-spacing:.04em; white-space:nowrap;}
-    .pick-blurb{font-family:'Crimson Pro',Georgia,serif; font-size:14px; color:var(--text-dim); margin-top:3px; line-height:1.45;}
-    .pick-link{display:inline-block; margin-top:6px; color:var(--accent); font-size:12.5px; font-weight:600;}
-    .picks-divider{font-size:11px; text-transform:uppercase; letter-spacing:.05em; color:var(--text-faint); margin:14px 0 10px; border-top:1px solid var(--line-soft); padding-top:10px;}
-    .rb-grid{display:flex; gap:10px; margin:10px 0 4px; flex-wrap:wrap;}
-    .rb-card{flex:1 1 180px; min-width:0; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:10px; padding:11px 13px;}
-    .rb-h{font-weight:700; font-size:13px; color:var(--text); margin-bottom:7px;}
+    .pick-name{font-weight:500; font-size:14.5px; color:var(--text);}
+    .pick-cat{font-size:12.5px; color:var(--n-dim); white-space:nowrap;}
+    .pick-blurb{font-family:'Crimson Pro',Georgia,serif; font-size:14.5px; color:var(--n-dim); margin-top:3px; line-height:1.45;}
+    .pick-link{display:inline-block; margin-top:6px; color:var(--n-ink); font-size:13px; font-weight:500;}
+    .picks-divider{font-family:var(--serif); font-size:20px; color:var(--text); margin:16px 0 8px;}
+    .rb-grid{display:flex; gap:12px; margin:10px 0 4px; flex-wrap:wrap;}
+    .rb-card{flex:1 1 180px; min-width:0; background:var(--n-soft); padding:12px 14px;}
+    .rb-h{font-weight:500; font-size:14px; color:var(--text); margin-bottom:7px;}
     .rb-list{margin:0; padding-left:18px;}
-    .rb-list li{font-size:13.5px; color:var(--text-dim); line-height:1.5; margin-bottom:4px;}
-    .rb-bottom{margin-top:10px; font-size:14px; color:var(--text); line-height:1.5;}
+    .rb-list li{font-size:14px; color:var(--n-dim); line-height:1.5; margin-bottom:4px;}
+    .rb-bottom{margin-top:10px; font-size:14.5px; color:var(--text); line-height:1.5;}
     .pcs-steps{margin:8px 0 0; padding-left:22px;}
     .pcs-steps li{margin-bottom:11px;}
-    .pcs-t{font-weight:700; font-size:14px; color:var(--text);}
-    .pcs-d{font-size:13.5px; color:var(--text-dim); line-height:1.5; margin-top:2px;}
-    .faq-item{padding:10px 0; border-bottom:1px solid var(--line-soft);}
+    .pcs-t{font-weight:500; font-size:14.5px; color:var(--text);}
+    .pcs-d{font-size:14px; color:var(--n-dim); line-height:1.5; margin-top:2px;}
+    .faq-item{padding:10px 0; border-bottom:1px solid var(--n-line);}
     .faq-item:last-child{border-bottom:0;}
-    .faq-q{font-weight:700; font-size:14px; color:var(--text); margin-bottom:4px;}
-    .faq-a{font-size:14px; color:var(--text-dim); line-height:1.55;}
-    .chips{display:flex; flex-wrap:wrap; gap:7px;}
-    .chip{background:var(--surface-2); border:1px solid var(--line); color:var(--text-dim); font-size:12.5px; padding:5px 11px; border-radius:999px;}
-    .chip.pick{cursor:pointer;}
-    .chip-on{background:var(--accent); color:#10131b; border-color:var(--accent); font-weight:600;}
-    .re-grid{display:flex; gap:10px;}
-    .re-cell{flex:1; background:var(--bg-2); border:1px solid var(--line-soft); border-radius:11px; padding:12px;}
-    .re-num{font-family:'Fraunces',serif; font-size:22px; color:var(--text); line-height:1.1;}
-    .re-lab{font-size:11px; color:var(--text-faint); text-transform:uppercase; letter-spacing:0.04em; margin-top:3px;}
-    .leaflet-wrap{height:58vh; border-radius:13px; overflow:hidden; border:1px solid var(--line-soft);}
-    .leaflet-wrap .leaflet-popup-content{font-family:'DM Sans',sans-serif; font-size:13px;}
+    .faq-q{font-weight:500; font-size:14.5px; color:var(--text); margin-bottom:4px;}
+    .faq-a{font-size:14.5px; color:var(--n-dim); line-height:1.55;}
+    /* Chips (kit .chip): one you tap has an ink edge; the chosen one is solid ink. */
+    .chips{display:flex; flex-wrap:wrap; gap:8px;}
+    .chip{background:transparent; border:1px solid var(--n-line); color:var(--n-dim); font-size:13px; padding:5px 11px;}
+    .chip.pick{cursor:pointer; border-color:var(--n-ink); color:var(--n-ink);}
+    .chip-on, .chip.pick.chip-on{background:var(--n-solid); color:var(--n-onsolid); border-color:var(--n-solid); font-weight:500;}
+    .re-grid{display:flex; gap:12px;}
+    .re-cell{flex:1; background:var(--n-soft); padding:12px 14px;}
+    .re-num{font-family:var(--serif); font-size:26px; color:var(--text); line-height:1.1;}
+    .re-lab{font-size:12.5px; color:var(--n-dim); margin-top:3px;}
+    .leaflet-wrap{height:58vh; overflow:hidden; border:1px solid var(--n-line);}
+    .leaflet-wrap .leaflet-popup-content{font-family:'Outfit',sans-serif; font-size:13px;}
+    /* The map's tiles are light in both modes; the attribution keeps the kit's fixed colours so it
+       reads on them either way. */
+    .leaflet-control-attribution{ background:rgba(255,255,255,0.8) !important; color:#646b78 !important; }
+    .leaflet-control-attribution a{ color:#000 !important; }
 
     /* ---- account (sign in / account screen) ---- */
-    .topbar-row{display:flex; align-items:flex-start; justify-content:space-between; gap:10px;}
-    .acct-entry{display:inline-flex; align-items:center; gap:6px; color:var(--accent); font-size:13px; font-weight:600; padding:6px 0 6px 8px; max-width:48%; flex:none; margin-top:4px;}
+    .acct-entry{display:inline-flex; align-items:center; gap:6px; color:var(--n-ink); font-size:13px; font-weight:500; padding:6px 0 6px 8px; max-width:55%; flex:none;}
     .acct-entry span{overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
-    .acct-entry.on{color:var(--text);}
-    .acct-p{font-family:'Crimson Pro',Georgia,serif; color:var(--text-dim); font-size:15.5px; line-height:1.55; margin:0 0 12px;}
-    .acct-p.small{font-size:14px;}
-    .acct-p a{color:var(--accent);}
-    .acct-code{letter-spacing:0.3em; font-size:22px; font-family:'Fraunces',serif; text-align:center;}
-    .acct-msg{margin-top:10px; font-size:13.5px; color:#eab0a6;}
-    .acct-msg.ok{color:#a9c98f;}
-    .acct-h{font-family:'Fraunces',serif; font-size:17px; margin:22px 0 8px;}
+    .acct-entry.on span{text-decoration:underline; text-underline-offset:4px;}
+    .acct-p{font-family:'Crimson Pro',Georgia,serif; color:var(--n-dim); font-size:16px; line-height:1.55; margin:0 0 12px;}
+    .acct-p.small{font-size:14.5px;}
+    .acct-p a{color:var(--n-ink);}
+    .acct-code{letter-spacing:0.3em; font-size:24px; font-family:var(--serif); text-align:center;}
+    .acct-msg{margin-top:10px; font-size:13.5px; color:var(--n-danger);}
+    .acct-msg.ok{color:var(--n-ink);}
+    .acct-h{font-family:var(--serif); font-size:22px; margin:22px 0 8px;}
     .acct-actions{display:flex; gap:12px 18px; flex-wrap:wrap; align-items:center; margin-top:8px;}
-    .btn-danger{display:inline-block; background:transparent; border:1px solid var(--danger); color:#eab0a6; font-weight:600; padding:10px 16px; border-radius:10px; margin-top:10px;}
-    .btn-plain{display:inline-block; border:1px solid var(--line); color:var(--text-dim); font-weight:600; padding:10px 16px; border-radius:10px; margin-top:10px;}
     .acct-list li{display:flex; align-items:center; justify-content:space-between; gap:10px;}
-    .acct-list .rm{color:var(--accent); font-size:13px; font-weight:600; padding:6px 0 6px 10px; flex:none;}
-    .acct-sheet{border-color:rgba(217,96,78,0.45);}
+    .acct-list .rm{color:var(--n-ink); font-size:13.5px; font-weight:500; padding:6px 0 6px 10px; flex:none;}
+    .acct-sheet{border:1px solid var(--n-danger); margin:10px 0 0; padding:14px;}
     .acct-name{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
     .acct-name .fld{flex:1 1 140px; width:auto;}
     .acct-name-form{margin:2px 0 4px;}
+    /* The Appearance row (section LOOK of the app script): a device setting under the account screen. */
+    .look{padding:8px 20px 20px; border-top:1px solid var(--n-line); margin-top:8px;}
+    .look-l{font-size:13px; color:var(--n-dim); margin:12px 0 8px;}
 
+    /* ---- the tab bar (kit board t01) ---- */
     .nav{
       position:fixed; bottom:0; left:50%; transform:translateX(-50%);
-      width:100%; max-width:540px; display:flex; background:var(--bg-2);
-      border-top:1px solid var(--line); z-index:40;
+      width:100%; max-width:540px; display:flex; background:var(--n-bg);
+      border-top:1px solid var(--n-line); z-index:40;
       padding-bottom:env(safe-area-inset-bottom);
     }
-    .nav button{flex:1; padding:11px 0 9px; display:flex; flex-direction:column; align-items:center; gap:3px; color:var(--text-faint); font-size:11px; letter-spacing:0.03em;}
-    .nav button.on{color:var(--accent);}
+    .nav button{position:relative; flex:1; padding:11px 0 10px; display:flex; flex-direction:column; align-items:center; gap:3px; color:var(--n-dim); font-size:11px; letter-spacing:0;}
+    .nav button.on{color:var(--n-ink); font-weight:500;}
+    .nav button.on::before{content:""; position:absolute; left:50%; bottom:3px; margin-left:-2px; width:4px; height:4px; background:var(--n-accent);}
     .nav .ic{display:flex; align-items:center; justify-content:center; height:21px;}
 
-    .center{display:flex; flex-direction:column; align-items:center; justify-content:center; padding:50px 20px; text-align:center; color:var(--text-faint);}
-    .spin{width:22px;height:22px;border:2px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:sp 0.8s linear infinite;}
+    .center{display:flex; flex-direction:column; align-items:center; justify-content:center; padding:50px 20px; text-align:center; color:var(--n-dim);}
+    .spin{width:22px;height:22px;border:2px solid var(--n-line);border-top-color:var(--n-ink);animation:sp 0.8s linear infinite;}
     @keyframes sp{to{transform:rotate(360deg);}}
   </style>
+  <script>
+    /* The mode before first paint: the device's choice (Appearance row, bg_look_mode) or the phone's
+       setting. The same reading as getLookMode/applyLook in the app script, done here so a dark phone
+       never sees a white flash before the app script runs. */
+    (function () {
+      try {
+        var choice = localStorage.getItem("bg_look_mode");
+        var dark = choice === "dark" || (choice !== "light" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
+        document.documentElement.setAttribute("data-mode", dark ? "dark" : "light");
+      } catch (e) { /* storage blocked: the stylesheet follows the phone on its own */ }
+    })();
+  </script>
 </head>
 <body>
   <div id="root"></div>
@@ -332,7 +469,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.22.1";
+    const APP_VERSION = "0.23.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -453,6 +590,72 @@
         <div className="banner">
           <span>Update available (v{newer}).</span>
           <button onClick={reload}>Refresh</button>
+        </div>
+      );
+    }
+
+    /* ---------------- LOOK (light or dark) ----------------
+       The look's colours are CSS ("THE NEW LOOK" in the style block); this only sets data-mode on
+       <html>. RULE: the mode follows the phone unless the reader chose Light or Dark in the
+       Appearance row under the account screen (default: match the phone). It is a per-DEVICE
+       setting (browser storage bg_look_mode), never the account's: choosing Dark on a phone must
+       not change a laptop, and the account holds nothing about the look. The head script reads the
+       same key before first paint so a dark phone never sees a white flash.
+       The browser's own bar colour (Safari's tab bar, Android's status bar, the Home Screen app's
+       clock) follows the page: the theme-color meta is set from the ground; the Home Screen app's
+       status bar asks for a dark clock on the white ground and a light one at night. */
+    const LOOK_MODE_KEY = "bg_look_mode"; // "light" | "dark"; absent means match the phone
+    const LOOK_MODES = [["match", "Match my phone"], ["light", "Light"], ["dark", "Dark"]];
+    function getLookMode() {
+      try { const v = localStorage.getItem(LOOK_MODE_KEY); return v === "light" || v === "dark" ? v : "match"; }
+      catch (e) { return "match"; }
+    }
+    function lookIsDark(mode) {
+      if (mode === "dark") return true;
+      if (mode === "light") return false;
+      try { return !!(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches); }
+      catch (e) { return false; }
+    }
+    function applyLook(mode) {
+      const dark = lookIsDark(mode);
+      const el = document.documentElement;
+      el.setAttribute("data-mode", dark ? "dark" : "light");
+      try {
+        const ground = getComputedStyle(el).getPropertyValue("--n-bg").trim();
+        const themeMeta = document.querySelector('meta[name="theme-color"]');
+        if (themeMeta && ground) themeMeta.setAttribute("content", ground);
+        // The installed web app reads this as it opens: "black-translucent" draws a white clock, which
+        // would vanish on the white ground, so by day it asks for the default (dark) clock.
+        const barMeta = document.querySelector('meta[name="apple-mobile-web-app-status-bar-style"]');
+        if (barMeta) barMeta.setAttribute("content", dark ? "black-translucent" : "default");
+      } catch (e) { /* nothing to repaint beyond the page itself */ }
+    }
+    function setLookMode(mode) {
+      try { if (mode === "match") localStorage.removeItem(LOOK_MODE_KEY); else localStorage.setItem(LOOK_MODE_KEY, mode); }
+      catch (e) { /* storage blocked: the choice lasts this visit only */ }
+      applyLook(mode);
+    }
+    // "Match my phone" follows the phone when it changes (sunset, Control Center), not only at load.
+    try {
+      const phoneScheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)");
+      const follow = () => { if (getLookMode() === "match") applyLook("match"); };
+      if (phoneScheme && phoneScheme.addEventListener) phoneScheme.addEventListener("change", follow);
+      else if (phoneScheme && phoneScheme.addListener) phoneScheme.addListener(follow);
+    } catch (e) { /* no matchMedia: the stylesheet still follows the phone */ }
+    applyLook(getLookMode());
+    // The Appearance row: three choices, drawn under the account screen whatever its state (the
+    // account code does not know it exists - it is a device setting, not an account one).
+    function LookChooser() {
+      const [mode, setMode] = useState(getLookMode);
+      return (
+        <div className="look">
+          <div className="look-l">Appearance</div>
+          <div className="seg" role="radiogroup" aria-label="Appearance">
+            {LOOK_MODES.map(([key, label]) => (
+              <button key={key} type="button" role="radio" aria-checked={mode === key} className={mode === key ? "on" : ""}
+                onClick={() => { setLookMode(key); setMode(key); }}>{label}</button>
+            ))}
+          </div>
         </div>
       );
     }
@@ -1606,7 +1809,7 @@
     // A single base card (shared by Home and Saved).
     function BaseCard({ b, onOpen, saved, onToggleSave }) {
       return (
-        <div className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)} style={{ borderLeft: "4px solid " + branchColor(b.branch) }}>
+        <div className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)}>
           <div className="between">
             <div style={{ minWidth: 0 }}>
               <div className="base-name">
@@ -1699,7 +1902,7 @@
       return (
         <div className="content">
           <div className="home-hero">
-            <img className="home-logo" src={ASSETS.logoMark} alt="MilSpo Living" />
+            <img className="home-logo" src={ASSETS.logoMark} alt={BRAND} />
             <div className="home-tag">Guides for your next duty station.</div>
           </div>
           <div className="home-controls">
@@ -1913,7 +2116,7 @@
           <h2 className="screen-h">Saved</h2>
           <SavedWhereLine account={account} inAccount={inAccount} onOpenAccount={onOpenAccount} />
           {list.map((b) => (
-            <div key={b.slug} className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)} style={{ borderLeft: "4px solid " + branchColor(b.branch) }}>
+            <div key={b.slug} className={"card" + (b.ready ? " tap" : "")} onClick={() => b.ready && onOpen(b.slug)}>
               <div className="between">
                 <div style={{ minWidth: 0 }}>
                   <div className="base-name">{b.name}{b.ready ? <span className="pill ready">Guide ready</span> : <span className="pill soon">Coming soon</span>}</div>
@@ -2292,24 +2495,24 @@
 
       return (
         <div id="app-shell">
+          {/* The bar (kit t01b): the wordmark left, the account entry right; nothing else. The app's
+              name is the wordmark; the publisher's mark and line are the Home hero. */}
           <div className="topbar">
             <div className="topbar-row">
-              <div>
-                <h1>{APP_NAME}</h1>
-                <div className="sub">{BRAND}</div>
-              </div>
+              <div className="wordmark">{APP_NAME}</div>
               {accountEntry}
             </div>
           </div>
           <UpdateBanner />
           {notice ? <div className="banner" role="status"><span>{notice}</span><button onClick={() => setNotice("")}>OK</button></div> : null}
           {body}
+          {tab === "account" ? <LookChooser /> : null}
           <div className="nav">
-            <NavBtn id="home" icon="home" label="HOME" />
-            <NavBtn id="guide" icon="guide" label="GUIDE" />
-            <NavBtn id="map" icon="map" label="MAP" />
-            <NavBtn id="plan" icon="calendar" label="PLAN" />
-            <NavBtn id="saved" icon="bookmark" label="SAVED" />
+            <NavBtn id="home" icon="home" label="Home" />
+            <NavBtn id="guide" icon="guide" label="Guide" />
+            <NavBtn id="map" icon="map" label="Map" />
+            <NavBtn id="plan" icon="calendar" label="Plan" />
+            <NavBtn id="saved" icon="bookmark" label="Saved" />
           </div>
         </div>
       );

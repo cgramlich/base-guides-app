@@ -174,10 +174,21 @@ A section the website converted to advice (`"advice": true`, `"confirm_with"`, n
 
 ## Rebranding / swapping artwork (BUILD PRINCIPLE - applies to all Forever Apps)
 Brand assets are a **drop-in swap**, never hardcoded, so any app re-skins fast:
-- **Names/text:** `APP_NAME`, `BRAND` in the config block (top of the babel script).
+- **Names/text:** `APP_NAME`, `BRAND` in the config block (top of the babel script). `APP_NAME` is
+  the wordmark in the top bar; `BRAND` is the Home hero (the coin) and the sign-in words.
 - **Image assets:** routed through the `ASSETS` object (e.g. `ASSETS.logoMark`) - repoint or replace in place; don't inline image paths in components.
 - **Icon set (fixed filenames at repo root):** replace these same-named files - `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, `apple-touch-icon.png`, `favicon-32.png`, `logo-mark.png` (in-app coin, transparent bg).
-- **Colors:** CSS `:root` palette (`--bg`, `--accent`, ...) + `BRANCH_COLORS`.
+- **Colors:** the token layer at the top of the `<style>` block ("THE NEW LOOK", Navy and Gold,
+  Chris 2026-11-24): a light set `--nl-*` and a dark set `--nd-*`; the mode copies one into `--n-*`;
+  today's names (`--bg`, `--text`, `--accent`, ...) point at `--n-*`, so a re-skin is a new pair of
+  sets. WARNING: `--accent` is the INK, not the gold (the kit's rule; gold reads 4.06:1 on white);
+  gold is for small details only, named `--n-accent` / `--n-accent-flat`. Plus `BRANCH_COLORS`
+  (the 3px rule over a base's name).
+- **Light or dark:** `<html data-mode="light|dark">`, set before first paint by the head script and
+  kept by `applyLook` (section LOOK): the phone's setting unless the reader chose in the Appearance
+  row under the account screen (device setting `bg_look_mode`, never the account's). One rule squares
+  every corner; the circles kept are listed beside it. Fonts: Instrument Serif (headings), Outfit
+  (body, wordmark), Crimson Pro (long-form reading). Details and the test record: `docs/app-look.md`.
 - **Icon generation:** logo -> icon set via Pillow (navy square + white "coin" treatment for a light-background logo). Keep the generation approach repeatable for the next app.
 RULE: route every brand string/color/asset path through config + standard filenames - never inline.
 
