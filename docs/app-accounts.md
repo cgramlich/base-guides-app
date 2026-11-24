@@ -101,13 +101,13 @@ the account screen.
 
 Merge rule (the website's `saved-bases-account.ts`; Chris approved the plan 2026-11-23): when
 the account's list first loads on a device with its own list, the account's bases stay; a device
-base the account lacks is added while there is room (up to 3, in the device order); nothing is
+base the account lacks is added while there is room (up to 5, in the device order); nothing is
 deleted from the account; the device list is then cleared. Logged as
 `[ACCOUNT] saved bases merged: account=N device=M added=K`. Signing out therefore leaves the
 device with no saved bases; signing in brings them back.
 
-Cap: an account keeps at most 3 saved bases (the website's limit, because its compare page shows
-at most 3). The app refuses a 4th with "Your account keeps up to 3 saved bases. Remove one
+Cap: an account keeps at most 5 saved bases (the website's limit, because its compare page shows
+at most 3). The app refuses a 4th with "Your account keeps up to 5 saved bases. Remove one
 first." The database trigger `saved_bases_limit` is the guarantee; a write the database refuses
 is logged (`[SAVED]`) and the list is read again. The device list is NOT capped (Chris's card:
 saved bases stay on-device exactly as today when accounts are off); a longer device list is
@@ -170,7 +170,7 @@ account: delete it in Supabase, Authentication, Users, before the store release.
 5. On milspoliving.com (a preview with accounts on), sign in with the same address: the same
    bases are there. Remove one on the website; the app shows it gone after a relaunch (or sign
    out and in).
-6. Save a 4th base in the app: "Your account keeps up to 3 saved bases. Remove one first."
+6. Save a 4th base in the app: "Your account keeps up to 5 saved bases. Remove one first."
 7. "Sign out": the top bar shows "Sign in" again and Saved is empty on this device. Sign in
    again: the bases are back.
 7a. The name: sign in with "Chris" in the First name box; the top bar reads "Hi Chris" and the
