@@ -1,0 +1,130 @@
+{
+  "slug": "coast-guard-station-grays-harbor",
+  "schema_version": "0.1",
+  "name": "Coast Guard Station Grays Harbor (Westport)",
+  "short_name": "CG Grays Harbor",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "WA"
+  ],
+  "tagline": "A Coast Guard search and rescue station guarding the Grays Harbor bar at Westport, Washington, with Coast Guard family housing in town.",
+  "coords": {
+    "lat": 46.9036,
+    "lng": -124.1051,
+    "label": "Westport, WA"
+  },
+  "coords_source": "approximate point at 1600 North Nyhus Street, Westport, from public maps (OpenStreetMap, 2026-11-24); not a survey point",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-24 by scripts/guides/write_cg_housing_map_guides.py from the Coast Guard housing map (updated 10/30/2026) and the official pages named in each section (Chris, card 2026-11-24).",
+  "_left_out": {
+    "gates_access": "No gate or visitor rules on the pages read.",
+    "healthcare": "No clinic or medical page read for this unit.",
+    "shopping": "No exchange or commissary named on the pages read.",
+    "child_care": "No child care on the pages read.",
+    "special_needs": "No EFMP office on the pages read.",
+    "pets": "No pet rules on the pages read."
+  },
+  "last_full_review": "2026-11-24",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard (Sector Columbia River)",
+        "Location": "1600 North Nyhus Street, Westport, Grays Harbor County, Washington (undated fact sheet)",
+        "Role": "The northernmost station of Sector Columbia River, at the entrance to Grays Harbor; the current station was commissioned in 1973 (undated fact sheet)",
+        "Coast Guard housing": "Grays Harbor housing site: 17 active homes",
+        "Housing allowance area": "ZZ780 (County Cost Group 780)"
+      },
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Station Grays Harbor fact sheet (Northwest District, undated), read through search results",
+          "url": "https://pacificarea.uscg.mil/Portals/8/District_13/lib/doc/factsheet/USCG%20Sta%20Grays%20Harbor.pdf"
+        }
+      ]
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "Station Grays Harbor is a small-boat station in Westport, which the Coast Guard named its 28th Coast Guard City. The home count comes from the Coast Guard's housing map; the station facts come from an undated Coast Guard fact sheet read through search results.",
+        "Ask your sponsor before you move."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Station Grays Harbor fact sheet (Northwest District, undated), read through search results",
+          "url": "https://pacificarea.uscg.mil/Portals/8/District_13/lib/doc/factsheet/USCG%20Sta%20Grays%20Harbor.pdf"
+        },
+        {
+          "label": "Coast Guard news release: Coast Guard names Westport, WA, 28th Coast Guard City, read through search results",
+          "url": "https://content.govdelivery.com/accounts/USDHSCG/bulletins/31a08b7"
+        }
+      ]
+    },
+    {
+      "id": "on_base_housing",
+      "title": "Coast Guard Housing",
+      "type": "prose",
+      "data": [
+        "The Coast Guard's housing map lists 17 active homes at the Grays Harbor housing site.",
+        "In the Coast Guard, assignment to Coast Guard housing is generally mandatory when a home is available, and BAH starts only after the housing office releases you to rent in town. Ask your sponsor for the local housing officer before you look at rentals."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard, FAQ on mandatory assignment to government housing (version 2.9, July 2025), read through search results",
+          "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/psc/psd/docs/pdf/FAQ%20for%20CG%20Mandatory%20Assignment%20to%20Government%20Housing%20(Version%202_9)_1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "ZZ780",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA ZZ780 (County Cost Group 780), looked up for ZIP 98595",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "98595",
+        "label": "Westport, WA"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "WA",
+        "city": "Westport"
+      }
+    }
+  ]
+}

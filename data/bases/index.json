@@ -441,6 +441,15 @@
     { "slug":  "coast-guard-sector-humboldt-bay", "name":  "CG Humboldt Bay", "branch":  "U.S. Coast Guard", "state":  "CA", "ready":  true },
     { "slug":  "coast-guard-sector-northern-great-lakes", "name":  "CG Northern Great Lakes", "branch":  "U.S. Coast Guard", "state":  "MI", "ready":  true },
     { "slug":  "coast-guard-sector-north-bend", "name":  "CG North Bend", "branch":  "U.S. Coast Guard", "state":  "OR", "ready":  true },
-    { "slug":  "usag-poland", "name":  "USAG Poland", "branch":  "U.S. Army", "state":  "Poland", "region":  "OCONUS", "ready":  true }
+    { "slug":  "usag-poland", "name":  "USAG Poland", "branch":  "U.S. Army", "state":  "Poland", "region":  "OCONUS", "ready":  true },
+    { "slug": "coast-guard-station-chincoteague", "name": "CG Station Chincoteague", "branch": "U.S. Coast Guard", "state": "VA", "ready": true },
+    { "slug": "coast-guard-cheboygan", "name": "CG Cheboygan", "branch": "U.S. Coast Guard", "state": "MI", "ready": true },
+    { "slug": "coast-guard-station-yaquina-bay", "name": "CG Newport, OR", "branch": "U.S. Coast Guard", "state": "OR", "ready": true },
+    { "slug": "coast-guard-station-chetco-river", "name": "CG Chetco River", "branch": "U.S. Coast Guard", "state": "OR", "ready": true },
+    { "slug": "coast-guard-station-southwest-harbor", "name": "CG Southwest Harbor", "branch": "U.S. Coast Guard", "state": "ME", "ready": true },
+    { "slug": "coast-guard-station-grays-harbor", "name": "CG Grays Harbor", "branch": "U.S. Coast Guard", "state": "WA", "ready": true },
+    { "slug": "coast-guard-station-neah-bay", "name": "CG Neah Bay", "branch": "U.S. Coast Guard", "state": "WA", "ready": true },
+    { "slug": "coast-guard-station-sturgeon-bay", "name": "CG Sturgeon Bay", "branch": "U.S. Coast Guard", "state": "WI", "ready": true },
+    { "slug": "coast-guard-air-station-atlantic-city", "name": "CG Air Station Atlantic City", "branch": "U.S. Coast Guard", "state": "NJ", "ready": true }
   ]
 }

@@ -49,6 +49,62 @@
       "verified": "2026-11-21"
     },
     {
+      "id": "shopping",
+      "title": "On-Base Shopping",
+      "type": "facts",
+      "data": {
+        "Coast Guard Exchange": "CGX Coos Bay, 1684 Ocean Boulevard NW, Coos Bay, OR 97420"
+      },
+      "source": {
+        "label": "Coast Guard Exchange (CGX), store locations",
+        "url": "https://www.shopcgx.com/pages/locations"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "child_care",
+      "title": "Child Care",
+      "type": "prose",
+      "data": [
+        "MilitaryChildCare.com (https://militarychildcare.com) lists nine Coast Guard child development centers: the Coast Guard Academy, Base Borinquen, Base Cape Cod, Base National Capital Region, Base San Juan, Base Alameda, Base Kodiak, Training Center Cape May and Training Center Petaluma. None of them is at Sector North Bend.",
+        "For care off base, Coast Guard members on active duty, and reservists on active-duty orders of 180 days or more, can request Military Child Care in Your Neighborhood (MCCYN) fee assistance, which pays part of the cost of an approved community provider. Request it through MilitaryChildCare.com (https://militarychildcare.com)."
+      ],
+      "source": {
+        "label": "MilitaryChildCare.com (Department of Defense), Coast Guard Child Care",
+        "url": "https://public.militarychildcare.csd.disa.mil/mcc-central/mcchome/coast-guard-child-care"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "special_needs",
+      "title": "Special Needs (EFMP)",
+      "type": "prose",
+      "data": [
+        "The Coast Guard Special Needs Program contact list (February 9, 2026) assigns Oregon to the Family Resource Specialist of the Health, Safety and Work-Life Regional Practice detachment Seattle, 1519 Alaskan Way S., Building 1, Seattle, Washington.",
+        "Ask that office about enrolling a family member with special needs before your move."
+      ],
+      "source": {
+        "label": "Coast Guard Workforce and Family Services (CG-WFS), Special Needs Program points of contact (list dated February 9, 2026)",
+        "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/cg111/docs/pdf/Special%20Needs%20Contact%209%20Feb%202026.pdf"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "sector_housing_sites",
+      "title": "Coast Guard housing sites of the sector",
+      "type": "prose",
+      "data": [
+        "The Coast Guard's housing map (updated 10/30/2026) lists these Coast Guard family housing sites on the southern Oregon coast: Coos Bay with 24 active homes and Charleston with 10, both by the sector; Umpqua River (Winchester Bay) with 12; Siuslaw River (Florence) with 8; and Chetco River (Brookings) with 14, which has its own guide.",
+        "The earlier housing section says no official count was found; this map is that count.",
+        "In the Coast Guard, assignment to Coast Guard housing is generally mandatory when a home is available, and BAH starts only after the housing office releases you to rent in town."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24"
+    },
+    {
       "id": "bah",
       "title": "BAH Calculator",
       "type": "bah",

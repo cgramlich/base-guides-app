@@ -1,0 +1,147 @@
+{
+  "slug": "coast-guard-cheboygan",
+  "schema_version": "0.1",
+  "name": "Coast Guard Cheboygan (Cutter Mackinaw and Station St. Ignace)",
+  "short_name": "CG Cheboygan",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "MI"
+  ],
+  "tagline": "The home port of the Great Lakes icebreaker Mackinaw at Cheboygan, with Coast Guard family housing in Cheboygan and across the Straits in St. Ignace.",
+  "coords": {
+    "lat": 45.6358,
+    "lng": -84.4912,
+    "label": "Cheboygan, MI"
+  },
+  "coords_source": "approximate point at the Coast Guard moorings and housing in Cheboygan, from public maps (OpenStreetMap, 2026-11-24); not a survey point",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-24 by scripts/guides/write_cg_housing_map_guides.py from the Coast Guard housing map (updated 10/30/2026) and the official pages named in each section (Chris, card 2026-11-24).",
+  "_left_out": {
+    "gates_access": "No gate or visitor rules on the pages read.",
+    "shopping": "No exchange or commissary named on the pages read.",
+    "child_care": "No child care on the pages read.",
+    "special_needs": "No EFMP office on the pages read.",
+    "pets": "No pet rules on the pages read."
+  },
+  "last_full_review": "2026-11-24",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard (Great Lakes District)",
+        "Location": "Cheboygan, Michigan, on the Straits of Mackinac; Station St. Ignace is across the Mackinac Bridge at 1075 Huron Street, St. Ignace",
+        "Cutter": "Coast Guard Cutter Mackinaw (WLBB-30), the Coast Guard's only heavy icebreaker on the Great Lakes, moored at 632 Coast Guard Drive, Cheboygan",
+        "Coast Guard housing": "Cheboygan: 27 active homes. St. Ignace: 14 active homes",
+        "Housing allowance area": "ZZ670 (County Cost Group 670) for Cheboygan; MI145 (Sault Ste Marie, MI) for St. Ignace"
+      },
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Cutter Mackinaw, Unit Information Sheet (undated; Great Lakes District), read through search results",
+          "url": "https://www.atlanticarea.uscg.mil/Portals/7/Ninth%20District/Documents/Cutters/MACKINAW/MACKINAW_Unit_Info_Sheet.pdf"
+        },
+        {
+          "label": "Coast Guard Station St. Ignace (Sector Northern Great Lakes), read through search results",
+          "url": "https://www.atlanticarea.uscg.mil/Our-Organization/Great-Lakes-District/Units/Sector-Northern-Great-Lakes/Units/St-Ignace/"
+        }
+      ]
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "This guide covers two Coast Guard towns on the Straits of Mackinac: Cheboygan, where the icebreaker Mackinaw moors and most of the Coast Guard homes are, and St. Ignace, a small-boat station across the bridge. The home counts come from the Coast Guard's housing map (updated 10/30/2026); the cutter's undated unit information sheet gives the rest and is labelled as such.",
+        "Ask your sponsor before you move."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Cutter Mackinaw, Unit Information Sheet (undated; Great Lakes District), read through search results",
+          "url": "https://www.atlanticarea.uscg.mil/Portals/7/Ninth%20District/Documents/Cutters/MACKINAW/MACKINAW_Unit_Info_Sheet.pdf"
+        }
+      ]
+    },
+    {
+      "id": "on_base_housing",
+      "title": "Coast Guard Housing",
+      "type": "prose",
+      "data": [
+        "The Coast Guard's housing map lists 27 active homes at the Cheboygan housing site and 14 active homes at St. Ignace.",
+        "The Mackinaw's unit information sheet (undated) says members who report with dependents are eligible for government housing, that most families live in the 27 Coast Guard-owned units, and that single members without dependents typically live aboard the ship.",
+        "In the Coast Guard, assignment to Coast Guard housing is generally mandatory when a home is available, and BAH starts only after the housing office releases you to rent in town. Ask your sponsor for the local housing officer before you look at rentals."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Cutter Mackinaw, Unit Information Sheet (undated; Great Lakes District), read through search results",
+          "url": "https://www.atlanticarea.uscg.mil/Portals/7/Ninth%20District/Documents/Cutters/MACKINAW/MACKINAW_Unit_Info_Sheet.pdf"
+        },
+        {
+          "label": "Coast Guard, FAQ on mandatory assignment to government housing (version 2.9, July 2025), read through search results",
+          "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/psc/psd/docs/pdf/FAQ%20for%20CG%20Mandatory%20Assignment%20to%20Government%20Housing%20(Version%202_9)_1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Care (undated unit sheet)": "Most families use McLaren Hospital, Cheboygan Campus, under TRICARE Prime Remote"
+      },
+      "source": {
+        "label": "Coast Guard Cutter Mackinaw, Unit Information Sheet (undated; Great Lakes District), read through search results",
+        "url": "https://www.atlanticarea.uscg.mil/Portals/7/Ninth%20District/Documents/Cutters/MACKINAW/MACKINAW_Unit_Info_Sheet.pdf"
+      },
+      "verified": "2026-11-24"
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "ZZ670",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA ZZ670 (County Cost Group 670), looked up for ZIP 49721",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "49721",
+        "label": "Cheboygan, MI"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "MI",
+        "city": "Cheboygan"
+      }
+    }
+  ]
+}

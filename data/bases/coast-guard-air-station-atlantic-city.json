@@ -1,0 +1,125 @@
+{
+  "slug": "coast-guard-air-station-atlantic-city",
+  "schema_version": "0.1",
+  "name": "Coast Guard Air Station Atlantic City",
+  "short_name": "CG Air Station Atlantic City",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "NJ"
+  ],
+  "tagline": "The Coast Guard helicopter air station at Atlantic City International Airport in Egg Harbor Township, New Jersey, with a small Coast Guard housing site in Absecon.",
+  "coords": {
+    "lat": 39.4571,
+    "lng": -74.5703,
+    "label": "Egg Harbor Township, NJ"
+  },
+  "coords_source": "approximate point at Atlantic City International Airport, from public maps (OpenStreetMap, 2026-11-24); not a survey point",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-24 by scripts/guides/write_cg_housing_map_guides.py from the Coast Guard housing map (updated 10/30/2026) and the official pages named in each section (Chris, card 2026-11-24).",
+  "_left_out": {
+    "gates_access": "No gate or visitor rules on the pages read.",
+    "healthcare": "No clinic or medical page read for this unit.",
+    "shopping": "No exchange or commissary named on the pages read.",
+    "child_care": "No child care on the pages read.",
+    "special_needs": "No EFMP office on the pages read.",
+    "pets": "No pet rules on the pages read."
+  },
+  "last_full_review": "2026-11-24",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard (East District)",
+        "Location": "Aboard the FAA William J. Hughes Technical Center, Building 350, Atlantic City International Airport, Egg Harbor Township, NJ 08234 (official inbound page)",
+        "Coast Guard housing": "Absecon housing site: 11 active homes",
+        "Housing allowance area": "NJ196 (Atlantic City, NJ)"
+      },
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Air Station Atlantic City, Inbound Personnel (East District), read through search results",
+          "url": "https://www.atlanticarea.uscg.mil/Our-Organization/East-District/District-Units/Air-Station-Atlantic-City/Inbound-Personnel/"
+        }
+      ]
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "Air Station Atlantic City flies helicopters from the FAA's technical center at the Atlantic City airport. The home count comes from the Coast Guard's housing map; the address comes from the air station's inbound personnel page, read through search results.",
+        "Ask your sponsor before you move."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Air Station Atlantic City, Inbound Personnel (East District), read through search results",
+          "url": "https://www.atlanticarea.uscg.mil/Our-Organization/East-District/District-Units/Air-Station-Atlantic-City/Inbound-Personnel/"
+        }
+      ]
+    },
+    {
+      "id": "on_base_housing",
+      "title": "Coast Guard Housing",
+      "type": "prose",
+      "data": [
+        "The Coast Guard's housing map lists 11 active homes at an Absecon housing site, about 10 road miles from the air station (public maps). Most families rent in the surrounding towns on BAH; ask the air station for the local housing officer.",
+        "In the Coast Guard, assignment to Coast Guard housing is generally mandatory when a home is available, and BAH starts only after the housing office releases you to rent in town. Ask your sponsor for the local housing officer before you look at rentals."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard, FAQ on mandatory assignment to government housing (version 2.9, July 2025), read through search results",
+          "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/psc/psd/docs/pdf/FAQ%20for%20CG%20Mandatory%20Assignment%20to%20Government%20Housing%20(Version%202_9)_1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "NJ196",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA NJ196 (Atlantic City, NJ), looked up for ZIP 08234",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "08234",
+        "label": "Egg Harbor Township, NJ"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "NJ",
+        "city": "Egg Harbor Township"
+      }
+    }
+  ]
+}

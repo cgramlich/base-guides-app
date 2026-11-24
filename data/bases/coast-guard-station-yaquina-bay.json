@@ -1,0 +1,139 @@
+{
+  "slug": "coast-guard-station-yaquina-bay",
+  "schema_version": "0.1",
+  "name": "Coast Guard Station Yaquina Bay (Newport)",
+  "short_name": "CG Newport, OR",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "OR"
+  ],
+  "tagline": "The Coast Guard station and air facility at Newport on the central Oregon coast, with Coast Guard family housing in Newport and at Depoe Bay.",
+  "coords": {
+    "lat": 44.6255,
+    "lng": -124.0576,
+    "label": "Newport, OR"
+  },
+  "coords_source": "approximate point on Southwest Naterlin Drive by the Yaquina Bay bridge, from public maps (OpenStreetMap, 2026-11-24); not a survey point",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-24 by scripts/guides/write_cg_housing_map_guides.py from the Coast Guard housing map (updated 10/30/2026) and the official pages named in each section (Chris, card 2026-11-24).",
+  "_left_out": {
+    "gates_access": "No gate or visitor rules on the pages read.",
+    "healthcare": "No clinic or medical page read for this unit.",
+    "shopping": "No exchange or commissary named on the pages read.",
+    "child_care": "No child care on the pages read.",
+    "special_needs": "No EFMP office on the pages read.",
+    "pets": "No pet rules on the pages read."
+  },
+  "last_full_review": "2026-11-24",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard (Sector North Bend)",
+        "Location": "Newport, Lincoln County, Oregon",
+        "Units": "Station Yaquina Bay (Coast Guard Station No. 323); Station Depoe Bay, 13 miles north, a sub-unit since 1997 (undated fact sheet); Coast Guard Air Facility Newport at the Newport airport",
+        "Coast Guard housing": "Yaquina Bay: 18 active homes. Depoe Bay: 7 active homes",
+        "Housing allowance area": "OR245 (Corvallis, OR)"
+      },
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Historian's Office, Station Yaquina Bay, Oregon (Station No. 323), read through search results",
+          "url": "https://www.history.uscg.mil/Browse-by-Topic/Assets/Land/All/Article/2682199/station-yaquina-bay-oregon/"
+        },
+        {
+          "label": "Coast Guard Station Depoe Bay fact sheet (Northwest District, undated), read through search results",
+          "url": "https://www.pacificarea.uscg.mil/Portals/8/District_13/lib/doc/factsheet/station_depoe_bay.pdf"
+        }
+      ]
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "Newport has a Coast Guard small-boat station on Yaquina Bay, a smaller station at Depoe Bay to the north, and a helicopter air facility at the airport. The home counts come from the Coast Guard's housing map; the unit facts come from the Coast Guard Historian's Office and an undated Depoe Bay fact sheet.",
+        "WARNING on the air facility: a congressional letter of November 2025 says a helicopter was moved to North Bend and the facility's future was uncertain. Ask your sponsor what is current.",
+        "Ask your sponsor before you move."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Historian's Office, Station Yaquina Bay, Oregon (Station No. 323), read through search results",
+          "url": "https://www.history.uscg.mil/Browse-by-Topic/Assets/Land/All/Article/2682199/station-yaquina-bay-oregon/"
+        },
+        {
+          "label": "Coast Guard Station Depoe Bay fact sheet (Northwest District, undated), read through search results",
+          "url": "https://www.pacificarea.uscg.mil/Portals/8/District_13/lib/doc/factsheet/station_depoe_bay.pdf"
+        },
+        {
+          "label": "Letter of Representative Val Hoyle to the Coast Guard on the Newport helicopter (November 21, 2025), read through search results",
+          "url": "https://hoyle.house.gov/imo/media/doc/11-21-25_letter_to_the_coast_guard_re_newport_helicopter_relocation.pdf"
+        }
+      ]
+    },
+    {
+      "id": "on_base_housing",
+      "title": "Coast Guard Housing",
+      "type": "prose",
+      "data": [
+        "The Coast Guard's housing map lists 18 active homes at the Yaquina Bay housing site in Newport and 7 active homes at Depoe Bay.",
+        "In the Coast Guard, assignment to Coast Guard housing is generally mandatory when a home is available, and BAH starts only after the housing office releases you to rent in town. Ask your sponsor for the local housing officer before you look at rentals."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard, FAQ on mandatory assignment to government housing (version 2.9, July 2025), read through search results",
+          "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/psc/psd/docs/pdf/FAQ%20for%20CG%20Mandatory%20Assignment%20to%20Government%20Housing%20(Version%202_9)_1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "OR245",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA OR245 (Corvallis, OR), looked up for ZIP 97365",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "97365",
+        "label": "Newport, OR"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "OR",
+        "city": "Newport"
+      }
+    }
+  ]
+}

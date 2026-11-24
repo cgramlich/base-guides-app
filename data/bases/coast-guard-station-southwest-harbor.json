@@ -1,0 +1,130 @@
+{
+  "slug": "coast-guard-station-southwest-harbor",
+  "schema_version": "0.1",
+  "name": "Coast Guard Station Southwest Harbor (Downeast Maine)",
+  "short_name": "CG Southwest Harbor",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "ME"
+  ],
+  "tagline": "The Coast Guard stations of Downeast Maine, Southwest Harbor, Jonesport and Eastport, each with a small Coast Guard family housing site.",
+  "coords": {
+    "lat": 44.2751,
+    "lng": -68.3124,
+    "label": "Southwest Harbor, ME"
+  },
+  "coords_source": "approximate point at the station wharf in Manset, Southwest Harbor, from public maps (OpenStreetMap, 2026-11-24); not a survey point",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-24 by scripts/guides/write_cg_housing_map_guides.py from the Coast Guard housing map (updated 10/30/2026) and the official pages named in each section (Chris, card 2026-11-24).",
+  "_left_out": {
+    "gates_access": "No gate or visitor rules on the pages read.",
+    "healthcare": "No clinic or medical page read for this unit.",
+    "shopping": "No exchange or commissary named on the pages read.",
+    "child_care": "No child care on the pages read.",
+    "special_needs": "No EFMP office on the pages read.",
+    "pets": "No pet rules on the pages read."
+  },
+  "last_full_review": "2026-11-24",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard (Sector Northern New England)",
+        "Location": "Southwest Harbor on Mount Desert Island, Hancock County, Maine; Station Jonesport about 60 road miles east and Station Eastport about 115 (public maps, rounded)",
+        "Coast Guard housing": "Southwest Harbor: 20 active homes. Jonesport: 14 active homes. Eastport: 7 active homes",
+        "Housing allowance area": "ME141 (Coastal Maine, ME) for all three towns"
+      },
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Sector Northern New England, Units, read through search results",
+          "url": "https://www.atlanticarea.uscg.mil/Our-Organization/District-1/District-Units/Sector-Northern-New-England/Units"
+        }
+      ]
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "This guide covers three small-boat stations on the Maine coast east of Acadia, each with its own Coast Guard homes: Southwest Harbor, Jonesport and Eastport. The home counts come from the Coast Guard's housing map (updated 10/30/2026).",
+        "Ask your sponsor before you move."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Sector Northern New England, Units, read through search results",
+          "url": "https://www.atlanticarea.uscg.mil/Our-Organization/District-1/District-Units/Sector-Northern-New-England/Units"
+        }
+      ]
+    },
+    {
+      "id": "on_base_housing",
+      "title": "Coast Guard Housing",
+      "type": "prose",
+      "data": [
+        "The Coast Guard's housing map lists 20 active homes at Southwest Harbor, 14 active homes at Jonesport and 7 active homes at Eastport.",
+        "At Jonesport the Coast Guard finished a 12-unit family housing development in 2021 for Station Jonesport and the cutter Moray, and sold its older housing there at auction in 2025 (Coast Guard SHORE Spotlight, August 2025).",
+        "In the Coast Guard, assignment to Coast Guard housing is generally mandatory when a home is available, and BAH starts only after the housing office releases you to rent in town. Ask your sponsor for the local housing officer before you look at rentals."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard SHORE Spotlight: Jonesport housing sale (August 13, 2025), read through search results",
+          "url": "https://www.dcms.uscg.mil/Portals/10/CG-9/Shore/SHORE%20Spotlight_CEUP_Jonesport%20Housing%20Sale_13AUG25.pdf"
+        },
+        {
+          "label": "Coast Guard, FAQ on mandatory assignment to government housing (version 2.9, July 2025), read through search results",
+          "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/psc/psd/docs/pdf/FAQ%20for%20CG%20Mandatory%20Assignment%20to%20Government%20Housing%20(Version%202_9)_1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "ME141",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA ME141 (Coastal Maine, ME), looked up for ZIP 04679",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "04679",
+        "label": "Southwest Harbor, ME"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "ME",
+        "city": "Southwest Harbor"
+      }
+    }
+  ]
+}

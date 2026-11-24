@@ -1,0 +1,134 @@
+{
+  "slug": "coast-guard-station-neah-bay",
+  "schema_version": "0.1",
+  "name": "Coast Guard Station Neah Bay",
+  "short_name": "CG Neah Bay",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "WA"
+  ],
+  "tagline": "A Coast Guard search and rescue station at Neah Bay on the Makah Reservation, where the Strait of Juan de Fuca meets the Pacific, with Coast Guard family housing on site.",
+  "coords": {
+    "lat": 48.3701,
+    "lng": -124.597,
+    "label": "Neah Bay, WA"
+  },
+  "coords_source": "approximate point at the station at 31 Coast Guard Drive, Neah Bay, from public maps (OpenStreetMap, 2026-11-24); not a survey point",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-24 by scripts/guides/write_cg_housing_map_guides.py from the Coast Guard housing map (updated 10/30/2026) and the official pages named in each section (Chris, card 2026-11-24).",
+  "_left_out": {
+    "gates_access": "No gate or visitor rules on the pages read.",
+    "healthcare": "No clinic or medical page read for this unit.",
+    "shopping": "No exchange or commissary named on the pages read.",
+    "child_care": "No child care on the pages read.",
+    "special_needs": "No EFMP office on the pages read.",
+    "pets": "No pet rules on the pages read."
+  },
+  "last_full_review": "2026-11-24",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard (Northwest District)",
+        "Location": "31 Coast Guard Drive, Neah Bay, Clallam County, Washington, within the Makah Indian Reservation",
+        "Station": "Coast Guard Station No. 332; the current station was built in 1971 (undated fact sheet)",
+        "Coast Guard housing": "Neah Bay housing site: 13 active homes",
+        "Housing allowance area": "WA308 (Port Angeles, WA)"
+      },
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Northwest District, Units list (Station Neah Bay, 31 Coast Guard Drive), read through search results",
+          "url": "https://www.pacificarea.uscg.mil/Our-Organization/District-13/Units/"
+        },
+        {
+          "label": "Coast Guard Station Neah Bay fact sheet (Northwest District, undated), read through search results",
+          "url": "https://www.pacificarea.uscg.mil/Portals/8/District_13/lib/doc/factsheet/station_neah_bay.pdf"
+        }
+      ]
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "Station Neah Bay is a small-boat station at the far northwest tip of Washington, about 70 road miles west of Port Angeles (public maps). The home count comes from the Coast Guard's housing map; the station facts come from the Northwest District's unit list and an undated fact sheet, read through search results.",
+        "Ask your sponsor before you move."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Northwest District, Units list (Station Neah Bay, 31 Coast Guard Drive), read through search results",
+          "url": "https://www.pacificarea.uscg.mil/Our-Organization/District-13/Units/"
+        },
+        {
+          "label": "Coast Guard Station Neah Bay fact sheet (Northwest District, undated), read through search results",
+          "url": "https://www.pacificarea.uscg.mil/Portals/8/District_13/lib/doc/factsheet/station_neah_bay.pdf"
+        }
+      ]
+    },
+    {
+      "id": "on_base_housing",
+      "title": "Coast Guard Housing",
+      "type": "prose",
+      "data": [
+        "The Coast Guard's housing map lists 13 active homes at Neah Bay.",
+        "In the Coast Guard, assignment to Coast Guard housing is generally mandatory when a home is available, and BAH starts only after the housing office releases you to rent in town. Ask your sponsor for the local housing officer before you look at rentals."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard, FAQ on mandatory assignment to government housing (version 2.9, July 2025), read through search results",
+          "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/psc/psd/docs/pdf/FAQ%20for%20CG%20Mandatory%20Assignment%20to%20Government%20Housing%20(Version%202_9)_1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "WA308",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA WA308 (Port Angeles, WA), looked up for ZIP 98357",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "98357",
+        "label": "Neah Bay, WA"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "WA",
+        "city": "Neah Bay"
+      }
+    }
+  ]
+}
