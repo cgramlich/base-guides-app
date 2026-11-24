@@ -133,6 +133,11 @@ code", "Yes, both now" (Delete my account, Apple rule 5.1.1(v)), "No social logi
   rows stay, device bases are added while there is room (up to 3), nothing is deleted from
   the account, the device list is then cleared. Cap of 3 in the account (the database
   trigger is the guarantee); the device list is not capped.
+- My base (Chris 2026-11-24): one current base per account in `profiles.current_base_slug`,
+  written only through `set_current_base`; one facade (`useMyBase`, `setMyBase`) over the device
+  value (`bg_my_base`) or the account's; copied up once at sign-in, then the account wins. Shown
+  on Home, the guide screen and the account screen; first in the website Compare link. Nothing
+  else uses it. Details in `docs/app-accounts.md`.
 - Delete my account calls the website's database functions `request_account_deletion` /
   `cancel_account_deletion` (30 days, nothing sent while it waits); until that migration
   is applied the button answers "Not available yet".

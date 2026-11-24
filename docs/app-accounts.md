@@ -136,6 +136,37 @@ never carry the name.
 The sign-in screen's version moved to `2026-11-24-c` for the new box: a reader who signed up on
 `-b` was never asked for a name and sees the prompt on the account screen instead.
 
+## My base (Chris, 2026-11-24)
+
+The one base the reader calls theirs, so the app can greet them with it and fill it into their own
+tools instead of asking them to find their base every time (decision card "Yes, website and app").
+The website's migration `profiles_current_base` is the contract for both:
+
+| Piece | What it is |
+| --- | --- |
+| `public.profiles.current_base_slug` (text, null = none listed, slug shape `^[a-z0-9-]{1,80}$`) | Read with the profile (`select('*')`, the account's own row). |
+| `supabase.rpc('set_current_base', { slug })` | A slug sets it, null clears it; answers the stored value. Signed-in readers only, their own row only. |
+
+RULE: one current base per account, set only by the account holder, no history. It is shown
+back to its owner (the Home row, the guide screen's button, the account screen's row) and filled
+into the reader's own tools (the website's Compare link puts it first, then saved bases). Nothing
+else uses it. ROAD NOT TAKEN: a flag on a saved base; the saved list is a capped shortlist and the
+current base need not be among the five.
+
+Two stores behind one facade (`useMyBase`, `setMyBase`), as for saved bases: the device value
+(`bg_my_base`, `{slug, name}`) while signed out or before the profile is read; the account value
+once it is. On a sign-in a device value with no account value is copied up once through the
+function (`[ACCOUNT] my base copied up from this device: ok`), then the account wins and the
+device value is cleared, so signing out leaves the device with no base listed. Until the
+website's migration is applied the function is missing and the app answers "My base is not
+available yet", like the name and delete functions.
+
+Where it shows: Home, one row under the hero ("My base: Fort Hood" opens the guide; "No base
+listed. Add your base" turns on a picking mode where every card gets a one-tap "This is my
+base"); the guide screen, a "This is my base" button beside the bookmark (pressed again it clears,
+and the notice names the base it replaced); the account screen, a "My base" row with Change and
+Clear, or "Add your base" with a search box.
+
 ## Delete my account (Apple rule 5.1.1(v); Chris 2026-11-23: 30 days, nothing sent while it waits)
 
 The website's delete slice, built in parallel, adds two database functions and one column; the
