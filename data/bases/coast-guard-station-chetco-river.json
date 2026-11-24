@@ -1,0 +1,130 @@
+{
+  "slug": "coast-guard-station-chetco-river",
+  "schema_version": "0.1",
+  "name": "Coast Guard Station Chetco River (Brookings)",
+  "short_name": "CG Chetco River",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "OR"
+  ],
+  "tagline": "A Coast Guard search and rescue station at the Chetco River mouth in Brookings, on Oregon's far south coast, with Coast Guard family housing in town.",
+  "coords": {
+    "lat": 42.0513,
+    "lng": -124.2668,
+    "label": "Brookings, OR"
+  },
+  "coords_source": "approximate point at the Port of Brookings Harbor boat basin, from public maps (OpenStreetMap, 2026-11-24); not a survey point",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-24 by scripts/guides/write_cg_housing_map_guides.py from the Coast Guard housing map (updated 10/30/2026) and the official pages named in each section (Chris, card 2026-11-24).",
+  "_left_out": {
+    "gates_access": "No gate or visitor rules on the pages read.",
+    "healthcare": "No clinic or medical page read for this unit.",
+    "shopping": "No exchange or commissary named on the pages read.",
+    "child_care": "No child care on the pages read.",
+    "special_needs": "No EFMP office on the pages read.",
+    "pets": "No pet rules on the pages read."
+  },
+  "last_full_review": "2026-11-24",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard (Sector North Bend)",
+        "Location": "Brookings-Harbor, Curry County, Oregon, about seven miles north of the California line (undated fact sheet)",
+        "Area": "Cape Blanco south to the Oregon-California border (undated fact sheet); a seasonal search and rescue detachment at Gold Beach on the Rogue River opens each Memorial Day weekend",
+        "Coast Guard housing": "Chetco River housing site: 14 active homes",
+        "Housing allowance area": "ZZ810 (County Cost Group 810)"
+      },
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Station Chetco River fact sheet (Northwest District, undated), read through search results",
+          "url": "https://www.pacificarea.uscg.mil/Portals/8/District_13/lib/doc/factsheet/station_chetco_river.pdf"
+        },
+        {
+          "label": "Coast Guard news release: limited search and rescue detachment opening on the Rogue River, read through search results",
+          "url": "https://content.govdelivery.com/accounts/USDHSCG/bulletins/248197e"
+        }
+      ]
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "Station Chetco River is a small-boat station at the Brookings harbor. The home count comes from the Coast Guard's housing map; the station facts come from an undated Coast Guard fact sheet and a Coast Guard news release, both read through search results.",
+        "Ask your sponsor before you move."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard Station Chetco River fact sheet (Northwest District, undated), read through search results",
+          "url": "https://www.pacificarea.uscg.mil/Portals/8/District_13/lib/doc/factsheet/station_chetco_river.pdf"
+        }
+      ]
+    },
+    {
+      "id": "on_base_housing",
+      "title": "Coast Guard Housing",
+      "type": "prose",
+      "data": [
+        "The Coast Guard's housing map lists 14 active homes at the Chetco River housing site.",
+        "In the Coast Guard, assignment to Coast Guard housing is generally mandatory when a home is available, and BAH starts only after the housing office releases you to rent in town. Ask your sponsor for the local housing officer before you look at rentals."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard, FAQ on mandatory assignment to government housing (version 2.9, July 2025), read through search results",
+          "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/psc/psd/docs/pdf/FAQ%20for%20CG%20Mandatory%20Assignment%20to%20Government%20Housing%20(Version%202_9)_1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "ZZ810",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA ZZ810 (County Cost Group 810), looked up for ZIP 97415",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "97415",
+        "label": "Brookings, OR"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "OR",
+        "city": "Brookings"
+      }
+    }
+  ]
+}

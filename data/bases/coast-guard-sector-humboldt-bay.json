@@ -20,33 +20,81 @@
   "sections": [
     {
       "id": "quick_facts",
-      "title": "Quick Facts",
-      "type": "facts",
       "data": {
         "Branch": "U.S. Coast Guard",
         "Location": "McKinleyville, Humboldt County, California",
         "Housing allowance area": "CA042 (Humboldt County)",
-        "Coast Guard family housing": "58 family homes (2 to 4 bedrooms) at the Eureka housing site"
+        "Coast Guard family housing": "62 active family homes at the Eureka housing site (Coast Guard housing map, 10/30/2026); 2 to 4 bedrooms"
       },
+      "type": "facts",
+      "title": "Quick Facts",
       "source": {
-        "label": "Sector/Air Station Humboldt Bay, Housing Information (Coast Guard Pacific Area), read through search results",
-        "url": "https://www.pacificarea.uscg.mil/Our-Organization/Southwest-District/District-Units/Sector-Air-Station-Humboldt-Bay/SHB-Housing-Information/"
+        "label": "Coast Guard housing map, updated 10/30/2026 (home count); Sector/Air Station Humboldt Bay housing page for the rest, read through search results 2026-11-21",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
       },
-      "verified": "2026-11-21"
+      "verified": "2026-11-24"
     },
     {
       "id": "housing",
-      "title": "Housing",
-      "type": "prose",
       "data": [
-        "The Eureka housing site has 58 family homes of 2 to 4 bedrooms and 8 homes for unaccompanied members. The sector also has 4 leased apartments in Crescent City and 7 family homes in Fort Bragg, California, for members of Station Noyo River.",
+        "The Eureka housing site has 62 active family homes (Coast Guard housing map, updated 10/30/2026; the sector's housing page said 58 in November 2026) of 2 to 4 bedrooms, and 8 homes for unaccompanied members. The sector also has 4 leased apartments in Crescent City and 7 family homes in Fort Bragg, California, for members of Station Noyo River.",
         "In the Coast Guard, assignment to government housing is generally mandatory when a home is available. A release from the housing officer is needed before you rent in town and before BAH starts."
       ],
+      "type": "prose",
+      "title": "Housing",
       "source": {
-        "label": "Sector/Air Station Humboldt Bay, Housing Information (Coast Guard Pacific Area), read through search results",
-        "url": "https://www.pacificarea.uscg.mil/Our-Organization/Southwest-District/District-Units/Sector-Air-Station-Humboldt-Bay/SHB-Housing-Information/"
+        "label": "Coast Guard housing map, updated 10/30/2026 (home count); Sector/Air Station Humboldt Bay housing page for the rest, read through search results 2026-11-21",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
       },
-      "verified": "2026-11-21"
+      "verified": "2026-11-24"
+    },
+    {
+      "id": "healthcare",
+      "title": "Healthcare",
+      "type": "facts",
+      "data": {
+        "Clinic (2017 package)": "The sector's 2017 welcome package said a medical clinic at the sector, with a permanently assigned flight surgeon, offered acute care, immunizations, laboratory work, GYN exams, physicals, minor surgery and hearing exams for active-duty and reserve members, and did not treat family members.",
+        "TRICARE region": "West (tricare.mil lists California in the West Region)"
+      },
+      "source": {
+        "label": "Coast Guard Sector Humboldt Bay, Command Welcome Aboard Package (revised November 2017)",
+        "url": "https://www.dcms.uscg.mil/Portals/10/DOL/Base%20Alameda/Humboldt%20Command%20WelcomeAboardPackage_Rev_11-2017.docx"
+      },
+      "verified": "2026-11-22",
+      "more_sources": [
+        {
+          "label": "TRICARE, How do I know what region I'm in? (last updated January 9, 2026)",
+          "url": "https://tricare.mil/FAQs/General/GEN_Regions"
+        }
+      ]
+    },
+    {
+      "id": "child_care",
+      "title": "Child Care",
+      "type": "prose",
+      "data": [
+        "MilitaryChildCare.com (https://militarychildcare.com) lists nine Coast Guard child development centers: the Coast Guard Academy, Base Borinquen, Base Cape Cod, Base National Capital Region, Base San Juan, Base Alameda, Base Kodiak, Training Center Cape May and Training Center Petaluma. None of them is at Sector Humboldt Bay.",
+        "For care off base, Coast Guard members on active duty, and reservists on active-duty orders of 180 days or more, can request Military Child Care in Your Neighborhood (MCCYN) fee assistance, which pays part of the cost of an approved community provider. Request it through MilitaryChildCare.com (https://militarychildcare.com)."
+      ],
+      "source": {
+        "label": "MilitaryChildCare.com (Department of Defense), Coast Guard Child Care",
+        "url": "https://public.militarychildcare.csd.disa.mil/mcc-central/mcchome/coast-guard-child-care"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "special_needs",
+      "title": "Special Needs (EFMP)",
+      "type": "prose",
+      "data": [
+        "The Coast Guard Special Needs Program contact list (February 9, 2026) assigns Northern California to the Family Resource Specialist of the Health, Safety and Work-Life Regional Practice Alameda, Coast Guard Island, Building 1, Alameda, California.",
+        "Ask that office about enrolling a family member with special needs before your move."
+      ],
+      "source": {
+        "label": "Coast Guard Workforce and Family Services (CG-WFS), Special Needs Program points of contact (list dated February 9, 2026)",
+        "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/cg111/docs/pdf/Special%20Needs%20Contact%209%20Feb%202026.pdf"
+      },
+      "verified": "2026-11-22"
     },
     {
       "id": "bah",

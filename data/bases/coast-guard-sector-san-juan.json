@@ -4,10 +4,16 @@
   "name": "Coast Guard Sector San Juan",
   "short_name": "San Juan",
   "branch": "U.S. Coast Guard",
-  "states": ["Puerto Rico"],
+  "states": [
+    "Puerto Rico"
+  ],
   "region": "OCONUS",
   "tagline": "The Coast Guard's Caribbean hub, guarding the waters around Puerto Rico and the U.S. Virgin Islands.",
-  "coords": { "lat": 18.46, "lng": -66.10, "label": "San Juan, Puerto Rico" },
+  "coords": {
+    "lat": 18.46,
+    "lng": -66.1,
+    "label": "San Juan, Puerto Rico"
+  },
   "tz": "America/Puerto_Rico",
   "last_full_review": "2026-06-25",
   "_note": "Coast Guard Sector San Juan (San Juan, Puerto Rico). Region flagged OCONUS. Puerto Rico is a NON-FOREIGN OCONUS U.S. territory: it's NOT in the BAH file -> uses OHA (Overseas Housing Allowance), like Guam. So OHA/territory template: no BAH/RentCast/SchoolDigger/rent-buy (US-only feeds), OHA housing, DoDEA Antilles schools (at Ft Buchanan). Caribbean SAR + interdiction hub. Medical: CG clinic + local/TRICARE (confirm region). Facts verified from official sources (uscg.mil, TRICARE, DoDEA, Wikipedia for corroborated headline facts). Medium-confidence flags: base coords (approx); TRICARE region for PR not asserted (confirm on arrival).",
@@ -18,14 +24,14 @@
       "type": "facts",
       "data": {
         "Branch": "U.S. Coast Guard",
-        "Location": "San Juan, Puerto Rico (Caribbean)",
-        "Role": "The Coast Guard's Caribbean hub",
-        "Mission": "Search and rescue, migrant and drug interdiction, and port security around Puerto Rico and the U.S. Virgin Islands",
-        "Status": "Puerto Rico is a U.S. territory; treated as a non-foreign overseas tour (OHA, not BAH)",
-        "Setting": "Tropical Caribbean island"
+        "Location": "Base San Juan",
+        "Coast Guard district": "Southeast District (Atlantic Area)"
       },
-      "source": { "label": "Coast Guard Sector San Juan (official)", "url": "https://www.uscg.mil/" },
-      "verified": "2026-06-25"
+      "source": {
+        "label": "U.S. Coast Guard Atlantic Area: Sector San Juan unit page (read 2026-11-23)",
+        "url": "https://www.atlanticarea.uscg.mil/Our-Organization/Southeast-District/Units/Sector-San-Juan/"
+      },
+      "verified": "2026-11-23"
     },
     {
       "id": "mission",
@@ -35,7 +41,10 @@
         "Coast Guard Sector San Juan is the service's Caribbean hub, running search and rescue, migrant and drug interdiction, and port security across the waters around Puerto Rico and the U.S. Virgin Islands.",
         "Puerto Rico is a U.S. territory, so it's American soil, but a tour here is treated as a non-foreign overseas assignment for pay and logistics: you use the Overseas Housing Allowance (OHA) rather than BAH, with a tropical island setting and a rich Puerto Rican culture."
       ],
-      "source": { "label": "Coast Guard Sector San Juan (official)", "url": "https://www.uscg.mil/" },
+      "source": {
+        "label": "Coast Guard Sector San Juan (official)",
+        "url": "https://www.uscg.mil/"
+      },
       "verified": "2026-06-25"
     },
     {
@@ -49,97 +58,190 @@
           "Spanish is the primary language, and island logistics (shipping, power reliability, higher prices for imported goods) are part of the experience, balanced against beaches, culture, and a warm climate year-round."
         ],
         "recommendations": [
-          { "who": "Use OHA on the economy", "advice": "Most families rent around San Juan and the metro using OHA; the housing office helps with the local market and leases." },
-          { "who": "Lean on the community", "advice": "The base and the DoDEA Antilles school community (Ft Buchanan) anchor family life." },
-          { "who": "Plan island logistics", "advice": "Shipping a vehicle, higher prices for imports, and weather (hurricane season) are part of a PR tour; budget and plan ahead." },
-          { "who": "Embrace it", "advice": "Beaches, El Yunque rainforest, and Puerto Rican food and culture make this a memorable tour." }
+          {
+            "who": "Use OHA on the economy",
+            "advice": "Most families rent around San Juan and the metro using OHA; the housing office helps with the local market and leases."
+          },
+          {
+            "who": "Lean on the community",
+            "advice": "The base and the DoDEA Antilles school community (Ft Buchanan) anchor family life."
+          },
+          {
+            "who": "Plan island logistics",
+            "advice": "Shipping a vehicle, higher prices for imports, and weather (hurricane season) are part of a PR tour; budget and plan ahead."
+          },
+          {
+            "who": "Embrace it",
+            "advice": "Beaches, El Yunque rainforest, and Puerto Rican food and culture make this a memorable tour."
+          }
         ]
       },
-      "source": { "label": "Coast Guard Sector San Juan (official)", "url": "https://www.uscg.mil/" },
+      "source": {
+        "label": "Coast Guard Sector San Juan (official)",
+        "url": "https://www.uscg.mil/"
+      },
       "verified": "2026-06-25"
     },
     {
       "id": "gates",
-      "title": "Gates & Access",
       "type": "prose",
+      "title": "Access",
       "data": [
-        "Visitors without a DoD/CG ID need to check in at the visitor control point.",
-        "Requirements can change with the security environment, so confirm the current details on the official Coast Guard site before you go."
+        "If family or guests don't have a military ID, ask the sector how visitors get on base before they come."
       ],
-      "source": { "label": "Coast Guard Sector San Juan (official)", "url": "https://www.uscg.mil/" },
-      "verified": "2026-06-25"
+      "source": {
+        "label": "Coast Guard Sector San Juan (official)",
+        "url": "https://www.uscg.mil/"
+      },
+      "advice": true,
+      "confirm_with": "the sector"
     },
     {
       "id": "housing",
-      "title": "Housing (OHA)",
+      "type": "prose",
+      "title": "Housing",
+      "data": [
+        "Ask your sponsor and the Coast Guard housing office what housing is open to your family, and whether there is a wait, before you sign a lease."
+      ],
+      "source": {
+        "label": "Coast Guard Sector San Juan (official)",
+        "url": "https://www.uscg.mil/"
+      },
+      "advice": true,
+      "confirm_with": "the Coast Guard housing office"
+    },
+    {
+      "id": "rio_bayamon_housing",
+      "title": "Coast Guard housing at Rio Bayamon",
       "type": "prose",
       "data": [
-        "Because Puerto Rico is non-foreign OCONUS, most families rent on the local economy and receive the Overseas Housing Allowance (OHA) to offset rent and utilities, rather than the stateside BAH. Some government housing exists in the area.",
-        "The housing office helps with the local market, leases, and OHA. Start there as soon as you have orders."
+        "The Coast Guard's housing map (updated 10/30/2026) lists the Rio Bayamon housing site, in the Bayamon area west of San Juan, with 141 active homes, the Coast Guard's largest housing site in Puerto Rico.",
+        "In the Coast Guard, assignment to Coast Guard housing is generally mandatory when a home is available, and BAH starts only after the housing office releases you to rent in town."
       ],
-      "source": { "label": "Coast Guard Sector San Juan (official)", "url": "https://www.uscg.mil/" },
-      "verified": "2026-06-25"
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24"
     },
     {
       "id": "schools",
-      "title": "Schools (DoDEA)",
       "type": "prose",
+      "title": "Schools",
       "data": [
-        "Children of eligible personnel can attend the Department of Defense Education Activity (DoDEA) Antilles schools (at Fort Buchanan), serving the military community in Puerto Rico. Local and private schools are also options.",
-        "Confirm current eligibility, schools, and registration through DoDEA and the command, and bring records and immunizations when you register."
+        "Before you choose a home, ask the public school district for that address which schools your children would attend."
       ],
-      "source": { "label": "DoDEA (official)", "url": "https://www.dodea.edu/" },
-      "verified": "2026-06-25"
+      "source": {
+        "label": "DoDEA (official)",
+        "url": "https://www.dodea.edu/"
+      },
+      "advice": true,
+      "confirm_with": "the school district"
     },
     {
       "id": "healthcare",
-      "title": "Healthcare",
       "type": "facts",
+      "title": "Healthcare",
       "data": {
-        "Clinic": "Coast Guard clinic, Sector San Juan",
-        "Care": "On-base clinic care plus local civilian providers; complex care may involve referral, including off-island",
-        "TRICARE": "TRICARE (confirm your plan and region for Puerto Rico on arrival)"
+        "What to do": "Ask your sponsor or the sector where your family will get care, and check your TRICARE plan before you move."
       },
-      "source": { "label": "TRICARE", "url": "https://www.tricare.mil/" },
-      "verified": "2026-06-25"
+      "source": {
+        "label": "TRICARE",
+        "url": "https://www.tricare.mil/"
+      },
+      "advice": true,
+      "confirm_with": "your sponsor and TRICARE"
     },
     {
       "id": "shopping",
-      "title": "On-Base Shopping",
       "type": "facts",
+      "title": "Shopping",
       "data": {
-        "Exchange": "Coast Guard Exchange (CGX) / access to area military exchanges",
-        "Commissary": "Access to the commissary at Fort Buchanan (San Juan)"
+        "What to do": "Ask your sponsor or the sector where the nearest commissary and exchange are."
       },
-      "source": { "label": "DeCA store locations", "url": "https://corp.commissaries.com/shopping/store-locations" },
-      "verified": "2026-06-25"
+      "source": {
+        "label": "DeCA store locations",
+        "url": "https://corp.commissaries.com/shopping/store-locations"
+      },
+      "advice": true,
+      "confirm_with": "your sponsor"
     },
     {
       "id": "pcs_first_30",
-      "title": "Your First 30 Days (OCONUS)",
       "type": "pcs_first30",
+      "title": "Your First 30 Days (OCONUS)",
       "data": {
-        "intro": ["A Puerto Rico PCS is treated as a non-foreign overseas move, with island-specific steps like vehicle shipping. Start early."],
+        "intro": [
+          "A Puerto Rico PCS is treated as a non-foreign overseas move, with island-specific steps like vehicle shipping. Start early."
+        ],
         "steps": [
-          { "title": "Confirm your entitlements", "text": "Verify OHA, COLA, DoDEA eligibility, and travel entitlements for a non-foreign OCONUS tour with finance early." },
-          { "title": "In-process and update DEERS", "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work." },
-          { "title": "Sort housing and OHA", "text": "See the housing office first; most families rent on the economy with OHA. Claim temporary lodging allowances while you look." },
-          { "title": "Plan your vehicle and getting around", "text": "Arrange vehicle shipping early and handle local registration; learn the area and driving conditions." },
-          { "title": "Enroll the kids in school", "text": "If eligible, register with the DoDEA Antilles schools (Fort Buchanan) early, or arrange local/private school; bring records and immunizations." },
-          { "title": "Set up healthcare", "text": "Confirm your TRICARE plan and region for Puerto Rico; the CG clinic plus local providers serve the community." }
+          {
+            "text": "Verify OHA, COLA, DoDEA eligibility, and travel entitlements for a non-foreign OCONUS tour with finance early.",
+            "title": "Confirm your entitlements"
+          },
+          {
+            "text": "Report to your unit and finance, and make sure DEERS and ID cards are current for every family member so TRICARE and base access work.",
+            "title": "In-process and update DEERS"
+          },
+          {
+            "text": "See the housing office first; most families rent on the economy with OHA. Claim temporary lodging allowances while you look.",
+            "title": "Sort housing and OHA"
+          },
+          {
+            "text": "Arrange vehicle shipping early and handle local registration; learn the area and driving conditions.",
+            "title": "Plan your vehicle and getting around"
+          },
+          {
+            "text": "If eligible, register with the DoDEA Antilles schools (Fort Buchanan) early, or arrange local/private school; bring records and immunizations.",
+            "title": "Enroll the kids in school"
+          },
+          {
+            "text": "Confirm your TRICARE plan and region for Puerto Rico; the CG clinic plus local providers serve the community.",
+            "title": "Set up healthcare"
+          }
         ]
-      }
+      },
+      "advice": true,
+      "confirm_with": "your command and your sponsor"
+    },
+    {
+      "id": "pets",
+      "title": "Pets",
+      "type": "prose",
+      "data": [
+        "Puerto Rico's animal entry rules, as the Military OneSource directory gives them on its Fort Buchanan page: every dog and cat entering Puerto Rico needs an official Certificate of Veterinary Inspection (valid 30 days) stating it did not come from an area under rabies quarantine, a rabies vaccination within six months before shipment for dogs and cats older than 4 months, official identification such as a microchip or a collar with a metal tag, and treatment for external parasites within 72 hours before entry, recorded on the certificate. Dogs and cats coming from a US state do not need a Puerto Rico Department of Agriculture import permit; pets from outside the United States do. Pets arriving by air are picked up at the airline's cargo facility.",
+        "According to the Puerto Rico Department of Natural Resources, exotic pets such as snakes, birds and reptiles need pre-approval before they come to the island. Check current rules with USDA APHIS and the Puerto Rico Department of Agriculture before you travel."
+      ],
+      "source": {
+        "label": "Military OneSource installation directory, Fort Buchanan shipping pets (Puerto Rico entry rules)",
+        "url": "https://installations.militaryonesource.mil/military-installation/fort-buchanan/moving/shipping-pets"
+      },
+      "verified": "2026-11-22"
     },
     {
       "id": "faq",
-      "title": "FAQ",
       "type": "faq",
+      "title": "FAQ",
       "data": [
-        { "q": "Do I get BAH in Puerto Rico?", "a": "No. Puerto Rico is non-foreign OCONUS, so you receive the Overseas Housing Allowance (OHA) for rentals (plus COLA), not the stateside BAH. That's why this guide shows OHA instead of a BAH calculator." },
-        { "q": "Is it an overseas tour?", "a": "Puerto Rico is a U.S. territory, so it's American soil, but it's treated as a non-foreign overseas assignment for pay and logistics, which is why we group it under OCONUS." },
-        { "q": "Where do families live?", "a": "Most rent on the local economy around San Juan with OHA, with the base and DoDEA Antilles school community anchoring family life." },
-        { "q": "What's the tour like?", "a": "Tropical and culturally rich, with beaches and rainforest, balanced against island logistics, Spanish as the main language, and hurricane season." }
-      ]
+        {
+          "a": "No. Puerto Rico is non-foreign OCONUS, so you receive the Overseas Housing Allowance (OHA) for rentals (plus COLA), not the stateside BAH. That's why this guide shows OHA instead of a BAH calculator.",
+          "q": "Do I get BAH in Puerto Rico?"
+        },
+        {
+          "a": "Puerto Rico is a U.S. territory, so it's American soil, but it's treated as a non-foreign overseas assignment for pay and logistics, which is why we group it under OCONUS.",
+          "q": "Is it an overseas tour?"
+        },
+        {
+          "a": "Most rent on the local economy around San Juan with OHA, with the base and DoDEA Antilles school community anchoring family life.",
+          "q": "Where do families live?"
+        },
+        {
+          "a": "Tropical and culturally rich, with beaches and rainforest, balanced against island logistics, Spanish as the main language, and hurricane season.",
+          "q": "What's the tour like?"
+        }
+      ],
+      "advice": true,
+      "confirm_with": "your command, your sponsor and your finance office"
     },
     {
       "id": "nearby",
@@ -147,10 +249,30 @@
       "type": "places_live",
       "note": "Live nearby places via Google Places. Tap 'Use my location' to re-center on where you are.",
       "picks": [
-        { "name": "Old San Juan", "category": "History", "blurb": "Colorful colonial streets and the El Morro and San Cristóbal forts.", "maps_query": "Old San Juan, Puerto Rico" },
-        { "name": "El Yunque National Forest", "category": "Outdoors", "blurb": "The only tropical rainforest in the U.S. national forest system.", "maps_query": "El Yunque National Forest, Puerto Rico" },
-        { "name": "San Juan beaches (Condado/Isla Verde)", "category": "Beach", "blurb": "Popular city beaches and resorts.", "maps_query": "Condado Beach, San Juan Puerto Rico" },
-        { "name": "Bioluminescent bays", "category": "Outdoors", "blurb": "Glowing waters at night, including on nearby Vieques and at Fajardo.", "maps_query": "Laguna Grande bioluminescent bay, Fajardo Puerto Rico" }
+        {
+          "name": "Old San Juan",
+          "category": "History",
+          "blurb": "Colorful colonial streets and the El Morro and San Cristóbal forts.",
+          "maps_query": "Old San Juan, Puerto Rico"
+        },
+        {
+          "name": "El Yunque National Forest",
+          "category": "Outdoors",
+          "blurb": "The only tropical rainforest in the U.S. national forest system.",
+          "maps_query": "El Yunque National Forest, Puerto Rico"
+        },
+        {
+          "name": "San Juan beaches (Condado/Isla Verde)",
+          "category": "Beach",
+          "blurb": "Popular city beaches and resorts.",
+          "maps_query": "Condado Beach, San Juan Puerto Rico"
+        },
+        {
+          "name": "Bioluminescent bays",
+          "category": "Outdoors",
+          "blurb": "Glowing waters at night, including on nearby Vieques and at Fajardo.",
+          "maps_query": "Laguna Grande bioluminescent bay, Fajardo Puerto Rico"
+        }
       ]
     }
   ]

@@ -1,0 +1,127 @@
+{
+  "slug": "coast-guard-station-chincoteague",
+  "schema_version": "0.1",
+  "name": "Coast Guard Station Chincoteague",
+  "short_name": "CG Station Chincoteague",
+  "branch": "U.S. Coast Guard",
+  "states": [
+    "VA"
+  ],
+  "tagline": "A Coast Guard search and rescue station on Chincoteague Island, Virginia's Eastern Shore, with Coast Guard family housing at Wallops Island.",
+  "coords": {
+    "lat": 37.9314,
+    "lng": -75.383,
+    "label": "Chincoteague, VA"
+  },
+  "coords_source": "approximate point at the station on Chincoteague Island, from public maps (OpenStreetMap, 2026-11-24); not a survey point",
+  "guide_kind": "sourced",
+  "_note": "Written on 2026-11-24 by scripts/guides/write_cg_housing_map_guides.py from the Coast Guard housing map (updated 10/30/2026) and the official pages named in each section (Chris, card 2026-11-24).",
+  "_left_out": {
+    "gates_access": "No gate or visitor rules on the pages read.",
+    "healthcare": "No clinic or medical page read for this unit.",
+    "shopping": "No exchange or commissary named on the pages read.",
+    "child_care": "No child care on the pages read.",
+    "special_needs": "No EFMP office on the pages read.",
+    "pets": "No pet rules on the pages read."
+  },
+  "last_full_review": "2026-11-24",
+  "sections": [
+    {
+      "id": "quick_facts",
+      "title": "Quick Facts",
+      "type": "facts",
+      "data": {
+        "Branch": "U.S. Coast Guard (Sector Virginia)",
+        "Location": "Chincoteague Island, Accomack County, Virginia",
+        "Boats": "A 47-foot motor lifeboat and a 45-foot response boat (news releases and photos, 2021 to 2025)",
+        "Coast Guard housing": "Wallops Island housing site: 28 active homes",
+        "Housing allowance area": "MD432 (Eastern Shore, MD; the DoD table puts Virginia's Eastern Shore in it)"
+      },
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard news releases on Station Chincoteague rescues (Sector Virginia, 2021 to 2025), read through search results",
+          "url": "https://www.news.uscg.mil/Press-Releases/Article/3448580/coast-guard-assists-5-people-aboard-disabled-vessel-in-chincoteague-bay/"
+        }
+      ]
+    },
+    {
+      "id": "about_this_guide",
+      "title": "About this guide",
+      "type": "prose",
+      "data": [
+        "Station Chincoteague is a small-boat search and rescue station of Sector Virginia. Its home count comes from the Coast Guard's housing map; the rest comes from Coast Guard news releases about the station.",
+        "Ask your sponsor before you move."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard news releases on Station Chincoteague rescues (Sector Virginia, 2021 to 2025), read through search results",
+          "url": "https://www.news.uscg.mil/Press-Releases/Article/3448580/coast-guard-assists-5-people-aboard-disabled-vessel-in-chincoteague-bay/"
+        }
+      ]
+    },
+    {
+      "id": "on_base_housing",
+      "title": "Coast Guard Housing",
+      "type": "prose",
+      "data": [
+        "The Coast Guard's housing map lists a Wallops Island housing site for this station with 28 active homes. Wallops Island is about 10 road miles from the station (public maps).",
+        "The Navy's Surface Combat Systems Center at Wallops Island runs its own housing office; it is not the Coast Guard's. Ask the station for the Coast Guard local housing officer.",
+        "In the Coast Guard, assignment to Coast Guard housing is generally mandatory when a home is available, and BAH starts only after the housing office releases you to rent in town. Ask your sponsor for the local housing officer before you look at rentals."
+      ],
+      "source": {
+        "label": "Coast Guard housing map, updated 10/30/2026 (Housing Map Calculator, Coast Guard Personnel Support Division housing page; the PDF is kept at data/sources/uscg/)",
+        "url": "https://www.dcms.uscg.mil/PSD/fs/Housing/"
+      },
+      "verified": "2026-11-24",
+      "more_sources": [
+        {
+          "label": "Coast Guard, FAQ on mandatory assignment to government housing (version 2.9, July 2025), read through search results",
+          "url": "https://www.dcms.uscg.mil/Portals/10/CG-1/psc/psd/docs/pdf/FAQ%20for%20CG%20Mandatory%20Assignment%20to%20Government%20Housing%20(Version%202_9)_1.pdf"
+        }
+      ]
+    },
+    {
+      "id": "bah",
+      "title": "BAH Calculator",
+      "type": "bah",
+      "data": {
+        "mha": "MD432",
+        "year": 2026,
+        "calc_url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "source": {
+        "label": "DoD 2026 BAH Rates, MHA MD432 (Eastern Shore, MD), looked up for ZIP 23336",
+        "url": "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/"
+      },
+      "verified": "2026-11-22"
+    },
+    {
+      "id": "housing_costs",
+      "title": "Housing Costs",
+      "type": "realestate",
+      "data": {
+        "zip": "23336",
+        "label": "Chincoteague, VA"
+      }
+    },
+    {
+      "id": "schools_live",
+      "title": "Schools Near Base",
+      "type": "schools_live",
+      "data": {
+        "state": "VA",
+        "city": "Chincoteague"
+      }
+    }
+  ]
+}
