@@ -329,7 +329,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.21.2";
+    const APP_VERSION = "0.21.3";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1924,7 +1924,7 @@
               <label className="fld-l" htmlFor="acct-code">{SIGN_IN_TEXT.codeLabel}</label>
               <input id="acct-code" className="fld acct-code" type="text" inputMode="numeric" autoComplete="one-time-code" pattern="[0-9]*" maxLength={CODE_MAX_DIGITS}
                 value={code} onChange={(e) => setCode(e.target.value.replace(/\D/g, ""))} autoFocus />
-              <button className="btn-gold" type="submit" disabled={busy || code.length !== 6}>{busy ? "Checking..." : SIGN_IN_TEXT.codeButton}</button>
+              <button className="btn-gold" type="submit" disabled={busy || code.length < CODE_MIN_DIGITS || code.length > CODE_MAX_DIGITS}>{busy ? "Checking..." : SIGN_IN_TEXT.codeButton}</button>
               <div className="acct-actions">
                 <button type="button" className="btn-quiet" onClick={askAgain} disabled={busy}>Send a new code</button>
                 <button type="button" className="btn-quiet" onClick={() => { setStep("email"); setMessage(""); }} disabled={busy}>Use a different address</button>
