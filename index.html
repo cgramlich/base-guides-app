@@ -317,6 +317,10 @@
     .feedback-q{ display:block; font-size:14px; color:var(--n-dim); margin-bottom:7px; }
     .feedback-link{ display:inline-block; color:var(--n-ink); font-weight:500; font-size:14.5px; }
     .feedback-note{ font-size:12.5px; color:var(--n-dim); margin-top:7px; }
+    .website-guide-link{ text-align:center; padding:10px 0 4px; font-size:13.5px; }
+    .website-guide-link a{ color:var(--n-dim); }
+    .website-tool{ display:block; padding:6px 0; color:inherit; text-decoration:none; }
+    .website-tool-label{ display:block; font-weight:500; color:var(--n-ink); }
 
     /* ---- fields and buttons (kit .field, .btn) ---- */
     .fld{width:100%; background:transparent; border:0; border-bottom:1px solid var(--n-faint); color:var(--text); padding:9px 0; font-size:16px;}
@@ -470,7 +474,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.23.1";
+    const APP_VERSION = "0.24.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1412,6 +1416,50 @@
     const PUBLISHER_LINE = BRAND + " is published by MilSpo Life LLC. It is affiliated with MilHousing Network.";
     const PRIVACY_URL = "https://milspoliving.com/privacy";
 
+    /* ---------------- WEBSITE TOOLS (the app links to them, it does not rebuild them) ----------------
+       RULE (Chris, decision card 2026-11-24): the website is the front door; the app is the companion
+       for the move. A tool is built on the website first and comes to the app only when a family needs
+       it in their pocket (saved bases, the checklist, offline guides, alerts). Rank my options, Compare
+       bases and Plan my move stay on milspoliving.com; the app opens them in the browser. One account
+       serves both, so the saved bases a reader sees there are the same rows as here.
+       ROAD NOT TAKEN: rebuilding every website tool in the app. Rejected because each copy doubles the
+       work and the ways to be wrong, and these three are used at a desk while choosing, not on PCS day.
+       WEBSITE_COMPARE_PARAM and WEBSITE_COMPARE_MAX mirror the website's compare page
+       (milspoliving src/lib/compare-model.ts: COMPARE_PARAM = 'bases', MAX_COMPARED = 3). */
+    const WEBSITE_URL = "https://milspoliving.com";
+    const WEBSITE_COMPARE_PARAM = "bases";
+    const WEBSITE_COMPARE_MAX = 3;
+    const WEBSITE_TOOLS = [
+      { label: "Rank my options", path: "/rank", note: "Pick up to 8 bases and set what matters to your family." },
+      { label: "Compare bases", path: "/compare", note: "Two or three bases side by side." },
+      { label: "Plan my move", path: "/plan", note: "The PCS checklist and where to start." },
+    ];
+    /** The website address of a tool; Compare opens with the reader's first saved bases when there are any. */
+    function websiteToolUrl(tool, savedSlugs) {
+      if (tool.path === "/compare" && savedSlugs && savedSlugs.length > 0) {
+        return WEBSITE_URL + tool.path + "?" + WEBSITE_COMPARE_PARAM + "=" + savedSlugs.slice(0, WEBSITE_COMPARE_MAX).map(encodeURIComponent).join(",");
+      }
+      return WEBSITE_URL + tool.path;
+    }
+    function WebsiteTools({ saved }) {
+      return (
+        <div className="website-tools">
+          <h3 className="acct-h">More tools on the website</h3>
+          <ul className="lst acct-list website-tools-list">
+            {WEBSITE_TOOLS.map((tool) => (
+              <li key={tool.path}>
+                <a className="t website-tool" href={websiteToolUrl(tool, saved)} target="_blank" rel="noopener noreferrer">
+                  <span className="website-tool-label">{tool.label}</span>
+                  <span className="meta-line">{tool.note}</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <div className="faint tiny" style={{ marginTop: 8 }}>These live on the website; your saved bases are the same there.</div>
+        </div>
+      );
+    }
+
     // The sign-in screen's words carry a version: the screen is the record of what a family agreed
     // to (website, account-settings.ts, SIGN_IN_SCREEN_VERSION). The sentences are the website's
     // with one change: the website emails a link, the app emails a code. "-c" (2026-11-24): the
@@ -2010,6 +2058,12 @@
             <a className="feedback-link" href={"mailto:" + CONTACT_EMAIL + "?subject=" + encodeURIComponent("Base guide feedback: " + data.name) + "&body=" + encodeURIComponent("Base: " + data.name + "\n\nType (correction / clarification / enhancement):\n\nDetails:\n")} target="_blank" rel="noopener noreferrer">Suggest a correction or improvement</a>
             <div className="feedback-note">Real families keep these guides accurate. Thank you.</div>
           </div>
+          {/* Every guide here has the same page on the website (a post of a joint base has its own page too),
+              so the link always uses this guide's slug. The website has the parts the app leaves out: the map
+              of towns and schools, the compare and rank tools. */}
+          <div className="website-guide-link">
+            <a href={WEBSITE_URL + "/bases/" + encodeURIComponent(slug)} target="_blank" rel="noopener noreferrer">Read this guide on the website</a>
+          </div>
         </div>
       );
     }
@@ -2360,6 +2414,8 @@
             </ul>
           )}
           <div className="faint tiny" style={{ marginTop: 8 }}>Up to {MAX_SAVED_BASES} bases, kept in your account and shown on every device you sign in on.</div>
+
+          <WebsiteTools saved={saved} />
 
           <h3 className="acct-h">Sign out</h3>
           <p className="acct-p">Signs you out on this device only. Your saved bases stay in your account.</p>
