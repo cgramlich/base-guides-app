@@ -104,9 +104,21 @@ code", "Yes, both now" (Delete my account, Apple rule 5.1.1(v)), "No social logi
   WARNING: the Supabase "Magic Link" email template must print `{{ .Token }}` or readers
   get a link and no code (`docs/app-accounts.md`).
 - The words on the sign-in screen are the website's (`SIGN_IN_TEXT`, version
-  `SIGN_IN_SCREEN_VERSION` = the website's `2026-11-24-b`), with "link" changed to "code".
+  `SIGN_IN_SCREEN_VERSION`, `2026-11-24-c` = the website's `-b` plus the optional First name
+  box), with "link" changed to "code".
   Public text says only that MilSpo Living is "affiliated with MilHousing Network"
   (`PUBLISHER_LINE`), nothing about ownership or company structure (Chris 2026-11-23).
+- THE HEADER RULE (Chris, 2026-11-24, after testing): the top bar must make the state obvious.
+  Signed out: person icon + "Sign in". Signed in: person icon + "Hi <first name>", or "Hi there"
+  when no name is stored. The address is never in the top bar (it is on the account screen).
+  While the session loads the entry keeps the signed-out look.
+- The first name is OPTIONAL, asked on the sign-in screen above the address (decision card "On
+  the sign-in screen"). Contract with the website: `profiles.first_name` (text, null, 40 max),
+  `rpc('set_first_name', { name })` (answers the stored name, null when blank), and the name as
+  `signInWithOtp` metadata `data.first_name` (a trigger copies it at account creation). After a
+  code is accepted the typed name is sent once through `set_first_name` when the profile has
+  none. The account screen's Name row ("What should we call you?" + Save, or the name + Change)
+  writes only through the function; missing function = "Not available yet". Never logged.
 - Saved bases: one facade (`useSavedBases`, `toggleSavedBase`) over two stores - the device
   list (`bg_saved`, as before) or the account's rows. Merge rule on first sign-in: account
   rows stay, device bases are added while there is room (up to 3), nothing is deleted from

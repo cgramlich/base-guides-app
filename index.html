@@ -288,6 +288,9 @@
     .acct-list li{display:flex; align-items:center; justify-content:space-between; gap:10px;}
     .acct-list .rm{color:var(--accent); font-size:13px; font-weight:600; padding:6px 0 6px 10px; flex:none;}
     .acct-sheet{border-color:rgba(217,96,78,0.45);}
+    .acct-name{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
+    .acct-name .fld{flex:1 1 140px; width:auto;}
+    .acct-name-form{margin:2px 0 4px;}
 
     .nav{
       position:fixed; bottom:0; left:50%; transform:translateX(-50%);
@@ -329,7 +332,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.21.3";
+    const APP_VERSION = "0.22.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1162,6 +1165,19 @@
        - The first code makes the account (shouldCreateUser). There is no separate sign-up step.
        - The role (member / editor / owner) is read from public.profiles, the account's own row,
          and never set from here. editor and owner are set by hand in the database.
+       - The first name is OPTIONAL (Chris, 2026-11-24, after the first test: "the header must
+         make the state obvious", decision card "On the sign-in screen"). It is asked above the
+         address on the sign-in screen, kept in public.profiles.first_name (FIRST_NAME_MAX_CHARS)
+         and greets the reader in the top bar as "Hi <name>", or "Hi there" when none is stored.
+         It reaches the database two ways, both the website's contract (2026-11-24): as user
+         metadata on signInWithOtp (a database trigger copies it when the account is made), and
+         through the database function set_first_name once signed in. After every sign-in the
+         typed name is also sent through set_first_name when the profile has none yet, which gives
+         an existing account its name and covers a trigger that did not fire. ROAD NOT TAKEN:
+         updating profiles.first_name from the client; the function is the one place the trim and
+         length rules live, shared with the website. Until the website's migration is applied the
+         function is missing and the screen says "Not available yet", like the delete functions.
+         The name is never logged.
        - Logs carry a masked address only (maskEmail) and never a code.
        - Delete my account (Apple rule 5.1.1(v); Chris 2026-11-23): the request is recorded by the
          database function request_account_deletion; the account and its rows are removed 30 days
@@ -1179,6 +1195,13 @@
     // Days between the deletion request and the removal (Chris, 2026-11-23). The database job
     // applies the same number; this one only tells the reader the date.
     const DELETION_WAIT_DAYS = 30;
+    // The longest first name the database function set_first_name keeps (the website's contract,
+    // 2026-11-24). The boxes stop at the same length so the stored name is what the reader typed.
+    const FIRST_NAME_MAX_CHARS = 40;
+    // The greeting in the top bar. RULE (Chris, 2026-11-24): the header must make the state
+    // obvious - signed in reads "Hi <first name>", and "Hi there" while no name is stored, so the
+    // address is never the thing that says "signed in" (it stays on the account screen).
+    function greeting(firstName) { return firstName ? "Hi " + firstName : "Hi there"; }
 
     // WORDING RULE (Chris 2026-11-23, memory 152): public text says only that MilSpo Living is
     // "affiliated with MilHousing Network"; nothing about ownership or company structure.
@@ -1187,8 +1210,9 @@
 
     // The sign-in screen's words carry a version: the screen is the record of what a family agreed
     // to (website, account-settings.ts, SIGN_IN_SCREEN_VERSION). The sentences are the website's
-    // (2026-11-24-b) with one change: the website emails a link, the app emails a code.
-    const SIGN_IN_SCREEN_VERSION = "2026-11-24-b";
+    // with one change: the website emails a link, the app emails a code. "-c" (2026-11-24): the
+    // optional "First name" box above the address; a reader who signed up on "-b" was never asked.
+    const SIGN_IN_SCREEN_VERSION = "2026-11-24-c";
     // The emailed code's length is set in Supabase Auth, not here (see the WARNING above): accept the
     // whole range Supabase allows so a settings change never locks readers out.
     const CODE_MIN_DIGITS = 6;
@@ -1197,6 +1221,7 @@
       label: "Sign in",
       title: "Save my move",
       whatYouGet: "We keep your saved bases, so you find them on any phone or computer. No password: we email you a code.",
+      firstNameLabel: "First name (optional)",
       emailLabel: "Email address",
       // WHY the weekly email is stated here although the sends are later slices on the website:
       // Chris decided 2026-11-23 that every alert is ON from sign-up and that this screen is where
@@ -1256,8 +1281,9 @@
 
     // The signed-in state, one store for the whole app (read with useAccount). Shapes:
     //   { status: "off" } | { status: "loading" } | { status: "signed-out" } |
-    //   { status: "signed-in", user: { id, email }, role, deletionRequestedAt, profileRead }
-    // role and deletionRequestedAt are null until the profile row is read (or when the read failed).
+    //   { status: "signed-in", user: { id, email }, role, firstName, deletionRequestedAt, profileRead }
+    // role, firstName and deletionRequestedAt are null until the profile row is read (or when the
+    // read failed); firstName stays null when the account has no name.
     const accountListeners = new Set();
     let accountState = ACCOUNTS_ON ? { status: "loading" } : { status: "off" };
     let accountStarted = false;
@@ -1269,19 +1295,28 @@
     async function readProfile(supabase, userId) {
       const { data, error } = await supabase.from("profiles").select("*").eq("id", userId).maybeSingle();
       if (error) { console.warn(ACCOUNT_LOG + " profile not read: " + error.message); return null; }
+      const firstName = data && typeof data.first_name === "string" ? data.first_name.trim() : "";
       return {
         role: data && ACCOUNT_ROLES.includes(data.role) ? data.role : null,
+        firstName: firstName || null,
         deletionRequestedAt: data && typeof data.deletion_requested_at === "string" ? data.deletion_requested_at : null,
       };
     }
+    // The name typed on the sign-in screen, held until the profile is read after that sign-in: an
+    // account that has no name yet gets it through set_first_name (see the RULES above). Cleared
+    // after one attempt so a later token refresh never resends it.
+    let firstNameTypedAtSignIn = "";
     async function refreshProfile() {
       const supabase = supabaseClient();
       if (!supabase || accountState.status !== "signed-in") return;
       const userId = accountState.user.id;
       const profile = await readProfile(supabase, userId);
       if (accountState.status !== "signed-in" || accountState.user.id !== userId) return;
-      setAccountState({ ...accountState, role: profile ? profile.role : null,
+      setAccountState({ ...accountState, role: profile ? profile.role : null, firstName: profile ? profile.firstName : null,
         deletionRequestedAt: profile ? profile.deletionRequestedAt : null, profileRead: !!profile });
+      const typed = firstNameTypedAtSignIn;
+      firstNameTypedAtSignIn = "";
+      if (typed && profile && !profile.firstName) await setFirstName(typed);
     }
     function applySession(session) {
       if (!session || !session.user) { setAccountState({ status: "signed-out" }); return; }
@@ -1290,7 +1325,7 @@
         setAccountState({ ...accountState, user }); // a token refresh: keep the profile already read
         return;
       }
-      setAccountState({ status: "signed-in", user, role: null, deletionRequestedAt: null, profileRead: false });
+      setAccountState({ status: "signed-in", user, role: null, firstName: null, deletionRequestedAt: null, profileRead: false });
       setTimeout(refreshProfile, 0); // next tick: see the deadlock WARNING above
     }
     function startAccount() {
@@ -1306,15 +1341,22 @@
     function accountSnapshot() { return accountState; }
     function useAccount() { return useSyncExternalStore(subscribeAccount, accountSnapshot); }
 
+    /** The name as the database keeps it: trimmed, at most FIRST_NAME_MAX_CHARS, "" when blank. */
+    function cleanFirstName(name) { return String(name || "").trim().slice(0, FIRST_NAME_MAX_CHARS); }
+
     // Step 1: ask for the code. Answers "sent" | "bad-email" | "off" | "too-soon" | "mailer-busy" | "failed".
-    async function sendSignInCode(email) {
+    // A typed first name travels as user metadata so the database trigger can copy it into the
+    // profile when this code makes a new account; blank sends no metadata at all.
+    async function sendSignInCode(email, firstName) {
       const address = email.trim();
       if (!isValidEmail(address)) return "bad-email";
       const supabase = supabaseClient();
       if (!supabase) return "off";
+      const name = cleanFirstName(firstName);
+      const options = name ? { shouldCreateUser: true, data: { first_name: name } } : { shouldCreateUser: true };
       // No emailRedirectTo: with none, Supabase's template still gets {{ .Token }} to print and the
       // link in it (if the template keeps one) is not what signs the reader in here.
-      const { error } = await supabase.auth.signInWithOtp({ email: address, options: { shouldCreateUser: true } });
+      const { error } = await supabase.auth.signInWithOtp({ email: address, options });
       if (error) {
         console.warn(ACCOUNT_LOG + " code not sent for " + maskEmail(address) + ": " + (error.status || "") + " " + error.message);
         // Two different 429s: the per-address minute (too-soon) and the project's hourly email cap.
@@ -1325,15 +1367,18 @@
       return "sent";
     }
     // Step 2: trade the code for a session. Answers "ok" | "bad-code" | "too-soon" | "off" | "check-failed".
-    // The session then arrives through onAuthStateChange. The code itself is never logged.
-    async function verifySignInCode(email, code) {
+    // The session then arrives through onAuthStateChange, and the profile read that follows sends
+    // the typed first name to set_first_name when the account has none. The code is never logged.
+    async function verifySignInCode(email, code, firstName) {
       const address = email.trim();
       const token = String(code).replace(/\D/g, "");
       if (token.length < CODE_MIN_DIGITS || token.length > CODE_MAX_DIGITS) return "bad-code";
       const supabase = supabaseClient();
       if (!supabase) return "off";
+      firstNameTypedAtSignIn = cleanFirstName(firstName);
       const { error } = await supabase.auth.verifyOtp({ email: address, token, type: "email" });
       if (error) {
+        firstNameTypedAtSignIn = "";
         console.warn(ACCOUNT_LOG + " code not accepted for " + maskEmail(address) + ": " + (error.status || "") + " " + error.message);
         if (error.status === 429) return "too-soon";
         // 400/401/403/422: wrong, expired or already used. Anything else is the network or the service.
@@ -1384,6 +1429,26 @@
       console.log(ACCOUNT_LOG + " account deletion cancelled");
       if (accountState.status === "signed-in") setAccountState({ ...accountState, deletionRequestedAt: null });
       refreshProfile();
+      return "ok";
+    }
+
+    // The name is written only through the website's database function set_first_name, which
+    // trims it, caps it at FIRST_NAME_MAX_CHARS and answers the stored name (null when blank).
+    // Answers "ok" | "unavailable" | "failed" | "off". The log line never carries the name.
+    async function setFirstName(name) {
+      const supabase = supabaseClient();
+      if (!supabase || accountState.status !== "signed-in") return "off";
+      const userId = accountState.user.id;
+      const { data, error } = await supabase.rpc("set_first_name", { name: cleanFirstName(name) });
+      if (error) {
+        console.warn(ACCOUNT_LOG + " first name " + (isMissingFunction(error) ? "not available yet" : "not saved") + " for " + maskEmail(accountState.user.email) + ": " + error.message);
+        return isMissingFunction(error) ? "unavailable" : "failed";
+      }
+      console.log(ACCOUNT_LOG + " first name saved for " + maskEmail(accountState.user.email));
+      if (accountState.status === "signed-in" && accountState.user.id === userId) {
+        const stored = typeof data === "string" ? data.trim() : "";
+        setAccountState({ ...accountState, firstName: stored || null });
+      }
       return "ok";
     }
 
@@ -1865,10 +1930,13 @@
     }
 
     /* ---------------- ACCOUNT SCREENS ---------------- */
-    // The sign-in screen: the fixed sentences, then two steps - the address and "Send me a code",
-    // then the code and "Sign in". The words live in SIGN_IN_TEXT; this is the behaviour.
+    // The sign-in screen: the fixed sentences, then two steps - the optional first name, the address
+    // and "Send me a code", then the code and "Sign in". The words live in SIGN_IN_TEXT; this is the
+    // behaviour. The typed name stays in this component through the code step: it is sent with the
+    // code request (new account) and again after the code is accepted (existing account).
     // The screen version travels on the element (data-screen-version), the record of what was shown.
     function SignInScreen() {
+      const [firstName, setFirstNameTyped] = useState("");
       const [email, setEmail] = useState("");
       const [code, setCode] = useState("");
       const [step, setStep] = useState("email"); // "email" | "code"
@@ -1879,7 +1947,7 @@
         e.preventDefault();
         if (busy) return;
         setBusy(true); setMessage("");
-        const result = await sendSignInCode(email);
+        const result = await sendSignInCode(email, firstName);
         setBusy(false);
         if (result === "sent") { setStep("code"); setCode(""); return; }
         setMessage(SIGN_IN_MESSAGE[result] || SIGN_IN_MESSAGE.failed);
@@ -1888,7 +1956,7 @@
         e.preventDefault();
         if (busy) return;
         setBusy(true); setMessage("");
-        const result = await verifySignInCode(email, code);
+        const result = await verifySignInCode(email, code, firstName);
         setBusy(false);
         // On "ok" the auth listener moves the app to the account screen; nothing to do here.
         if (result !== "ok") setMessage(SIGN_IN_MESSAGE[result] || SIGN_IN_MESSAGE["check-failed"]);
@@ -1896,7 +1964,7 @@
       const askAgain = async () => {
         if (busy) return;
         setBusy(true); setMessage("");
-        const result = await sendSignInCode(email);
+        const result = await sendSignInCode(email, firstName);
         setBusy(false);
         setMessage(result === "sent" ? "A new code is on its way." : (SIGN_IN_MESSAGE[result] || SIGN_IN_MESSAGE.failed));
       };
@@ -1907,6 +1975,9 @@
           <p className="acct-p">{SIGN_IN_TEXT.whatYouGet}</p>
           {step === "email" ? (
             <form onSubmit={send}>
+              <label className="fld-l" htmlFor="acct-first-name">{SIGN_IN_TEXT.firstNameLabel}</label>
+              <input id="acct-first-name" className="fld" type="text" autoComplete="given-name" autoCapitalize="words" spellCheck={false} maxLength={FIRST_NAME_MAX_CHARS}
+                value={firstName} onChange={(e) => setFirstNameTyped(e.target.value)} style={{ marginBottom: 12 }} />
               <label className="fld-l" htmlFor="acct-email">{SIGN_IN_TEXT.emailLabel}</label>
               <input id="acct-email" className="fld" type="email" inputMode="email" autoComplete="email" autoCapitalize="none" spellCheck={false}
                 value={email} onChange={(e) => setEmail(e.target.value)} required />
@@ -1980,7 +2051,52 @@
       );
     }
 
-    // The account screen: the address, the role, the saved bases with Remove, sign out, delete.
+    // The Name row of the account screen. No name stored: the one-line prompt "What should we call
+    // you?" with a box and Save (how an account made before the name existed gets one). Stored: the
+    // name and "Change". Writes go through set_first_name; a missing function reads "Not available
+    // yet" (the website's migration is not applied), like the delete functions.
+    function FirstNameRow({ account }) {
+      const [editing, setEditing] = useState(false);
+      const [draft, setDraft] = useState("");
+      const [busy, setBusy] = useState(false);
+      const [message, setMessage] = useState("");
+      const stored = account.firstName;
+      const save = async (e) => {
+        e.preventDefault();
+        if (busy) return;
+        setBusy(true); setMessage("");
+        const result = await setFirstName(draft);
+        setBusy(false);
+        if (result === "ok") { setEditing(false); return; }
+        setMessage(result === "unavailable" ? "Not available yet." : "That did not work. Try again in a few minutes.");
+      };
+      if (!account.profileRead) return <dd>Reading.</dd>;
+      if (stored && !editing) {
+        return (
+          <dd className="acct-name">
+            <span>{stored}</span>
+            <button type="button" className="btn-quiet" onClick={() => { setDraft(stored); setEditing(true); setMessage(""); }}>Change</button>
+          </dd>
+        );
+      }
+      return (
+        <dd>
+          <form className="acct-name-form" onSubmit={save}>
+            <label className="fld-l" htmlFor="acct-name">What should we call you?</label>
+            <div className="acct-name">
+              <input id="acct-name" className="fld" type="text" autoComplete="given-name" autoCapitalize="words" spellCheck={false} maxLength={FIRST_NAME_MAX_CHARS}
+                value={draft} onChange={(e) => setDraft(e.target.value)} placeholder="First name" />
+              <button type="submit" className="btn-quiet" disabled={busy || !cleanFirstName(draft)}>{busy ? "Saving..." : "Save"}</button>
+              {stored ? <button type="button" className="btn-quiet" onClick={() => { setEditing(false); setMessage(""); }} disabled={busy}>Cancel</button> : null}
+            </div>
+            {message ? <div className="acct-msg" role="alert">{message}</div> : null}
+          </form>
+        </dd>
+      );
+    }
+
+    // The account screen: the name, the address, the role, the saved bases with Remove, sign out,
+    // delete.
     // Signed out it IS the sign-in screen. Names come from the base list; a slug the list does not
     // know (saved on the website for a base the app has no guide for yet) shows as its slug.
     function AccountScreen({ account, saved, inAccount, bases, onToggleSave, onOpen }) {
@@ -1994,6 +2110,7 @@
           <h2 className="screen-h">Your account</h2>
           <div className="card">
             <dl className="facts">
+              <dt>Name</dt><FirstNameRow account={account} />
               <dt>Email</dt><dd style={{ wordBreak: "break-all" }}>{account.user.email}</dd>
               <dt>Role</dt><dd>{account.role ? ROLE_LABEL[account.role] : "Reading."}</dd>
             </dl>
@@ -2152,13 +2269,17 @@
       else body = <SavedScreen bases={bases} saved={saved} onToggleSave={toggleSave} onOpen={open} account={account} inAccount={inAccount} onOpenAccount={openAccount} />;
 
       // The account entry lives in the top bar (the app keeps account-ish things there, not in the
-      // five-tab nav): a person icon + "Sign in" when signed out, the address when signed in. Hidden
-      // entirely while accounts are off. During "loading" it reads "Sign in" and swaps once the
-      // stored session is read; a signed-in reader sees that swap for a moment on each launch.
+      // five-tab nav). RULE (Chris, 2026-11-24, after testing): the header must make the state
+      // obvious - the person icon + "Sign in" when signed out, the person icon + "Hi <first name>"
+      // ("Hi there" without a name) when signed in. The address is NOT shown here any more; it
+      // stays on the account screen. Hidden entirely while accounts are off. During "loading" the
+      // entry keeps the signed-out look ("Sign in") and swaps once the stored session is read, so a
+      // signed-in reader sees that swap for a moment on each launch; a wrong "Hi there" before the
+      // session is known would be the worse lie.
       const accountEntry = account.status === "off" ? null : (
         <button className={"acct-entry" + (tab === "account" ? " on" : "")} onClick={openAccount} aria-label={account.status === "signed-in" ? "Your account" : SIGN_IN_TEXT.label}>
           <Icon name="person" size={18} />
-          <span>{account.status === "signed-in" ? account.user.email : SIGN_IN_TEXT.label}</span>
+          <span>{account.status === "signed-in" ? greeting(account.firstName) : SIGN_IN_TEXT.label}</span>
         </button>
       );
 

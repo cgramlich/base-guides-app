@@ -12,13 +12,20 @@ ownership or company structure.
 
 ## What a reader gets
 
-- "Sign in" (a person icon and the word) in the top bar; the address once signed in. Tapping it
-  opens the account screen. Nothing is offered on an empty screen: the Saved screen offers
-  "Sign in to keep them on every device" only under a list with something in it.
-- Sign-in by a code emailed by Supabase Auth (its length is a Supabase Auth setting, 8 on 2026-11-24; the app accepts 6 to 10 digits): the address and "Send me a code", then the
+- The top bar makes the state obvious (Chris's rule, 2026-11-24, after the first test): a person
+  icon and "Sign in" when signed out; the person icon and "Hi Chris" (the first name) when signed
+  in, "Hi there" while no name is stored. The address is not in the top bar; it is on the account
+  screen. Tapping the entry opens the account screen. While the stored session is still being
+  read at launch the entry keeps the signed-out look and swaps once the session is known.
+  Nothing is offered on an empty screen: the Saved screen offers "Sign in to keep them on every
+  device" only under a list with something in it.
+- Sign-in by a code emailed by Supabase Auth (its length is a Supabase Auth setting, 8 on 2026-11-24; the app accepts 6 to 10 digits): an OPTIONAL "First name" box above the address
+  (decision card "On the sign-in screen", 2026-11-24), the address and "Send me a code", then the
   code field (numeric keypad, one-time-code autofill) and "Sign in". No password. No social
   sign-in. The first code makes the account.
-- The account screen: email, role (Member / Editor / Owner, from `public.profiles`), the saved
+- The account screen: the name (a "Name" row: "What should we call you?" with Save when the
+  account has none - the one-line prompt an account made before the name existed sees - or the
+  name and "Change"), email, role (Member / Editor / Owner, from `public.profiles`), the saved
   bases with Remove, "Sign out" (this device only), "Delete my account".
 - Saved bases kept in the account once signed in, the same `public.saved_bases` rows the website
   reads, so a base saved in the app or on milspoliving.com shows in both. Signed out, or with
@@ -48,8 +55,9 @@ app, and a link completes only on the device that asked for it (the PKCE verifie
 A code is typed wherever the reader is: the web, the installed PWA, the native builds. Same
 Supabase Auth, same user, same session storage (supabase-js keeps it in localStorage).
 
-Calls: `signInWithOtp({ email, options: { shouldCreateUser: true } })` with NO
-`emailRedirectTo`, then `verifyOtp({ email, token, type: 'email' })`. Supabase allows one code
+Calls: `signInWithOtp({ email, options: { shouldCreateUser: true, data: { first_name } } })` with NO
+`emailRedirectTo` (the `data` is left out when no name was typed), then
+`verifyOtp({ email, token, type: 'email' })`. Supabase allows one code
 request per address every 60 seconds; that answer is "We sent you a code less than a minute
 ago". A wrong, expired or reused code answers "That code did not work. Check the digits or ask
 for a new code." The code is never logged; log lines carry a masked address (`c***@gmail.com`).
@@ -105,6 +113,29 @@ is logged (`[SAVED]`) and the list is read again. The device list is NOT capped 
 saved bases stay on-device exactly as today when accounts are off); a longer device list is
 merged as far as it fits.
 
+## The first name (Chris, 2026-11-24)
+
+The website's name slice, built in parallel, adds one column and one function; the app codes
+against this contract:
+
+| Piece | What it is |
+| --- | --- |
+| `public.profiles.first_name` (text, null, at most 40 characters) | Read with the profile (`select('*')`, the account's own row). |
+| `supabase.rpc('set_first_name', { name })` | Trims, caps at 40 and stores the name; answers the stored name, null when blank. |
+| `signInWithOtp(..., options.data.first_name)` | The typed name as user metadata; a database trigger copies it into the profile when the account is made. |
+
+The app sends the typed name both ways: as metadata with the code request, and once more through
+`set_first_name` right after a code is accepted when the profile has no name yet (an existing
+account typing a name for the first time, or a trigger that did not copy it). The Name row on the
+account screen writes only through `set_first_name`. Until the website's migration is applied
+the function is missing and the row answers "Not available yet", exactly like the delete
+functions; sign-in itself is not affected. `FIRST_NAME_MAX_CHARS` (40) caps the boxes so the
+stored name is what was typed. Log lines say that a name was saved for a masked address and
+never carry the name.
+
+The sign-in screen's version moved to `2026-11-24-c` for the new box: a reader who signed up on
+`-b` was never asked for a name and sees the prompt on the account screen instead.
+
 ## Delete my account (Apple rule 5.1.1(v); Chris 2026-11-23: 30 days, nothing sent while it waits)
 
 The website's delete slice, built in parallel, adds two database functions and one column; the
@@ -142,6 +173,11 @@ account: delete it in Supabase, Authentication, Users, before the store release.
 6. Save a 4th base in the app: "Your account keeps up to 3 saved bases. Remove one first."
 7. "Sign out": the top bar shows "Sign in" again and Saved is empty on this device. Sign in
    again: the bases are back.
+7a. The name: sign in with "Chris" in the First name box; the top bar reads "Hi Chris" and the
+   account screen's Name row shows Chris with "Change". Sign out, sign in with the box empty on
+   an account that has no name: "Hi there" and the prompt "What should we call you?"; type a
+   name, Save: "Hi <name>". On milspoliving.com the same account shows the same name. If the
+   website's name migration is not applied yet, Save says "Not available yet."
 8. A second code asked within 60 seconds: "We sent you a code less than a minute ago". A wrong
    code: "That code did not work".
 9. "Delete my account", confirm: the pending sentence with the two dates and "Cancel deletion".
@@ -169,5 +205,14 @@ account: delete it in Supabase, Authentication, Users, before the store release.
   Screenshots: `app-account-shots/` in the session's scratchpad folder.
 - Not tested here: a real code round trip (needs a mailbox and the dashboard step), the
   website's delete functions against the real database, the Capacitor wrapper.
+- 2026-11-24, the first name (0.22.0), the same Babel and Playwright set-up: the signed-out top
+  bar (icon + "Sign in"), the name box above the email box (optional, 40 characters, given-name
+  autofill), the typed name as `signInWithOtp` metadata (none when blank), "Hi Chris" with a
+  profile that carries `first_name`, "Hi there" without one, the Name row's Change and Save
+  through `set_first_name`, the one `set_first_name` call after a sign-in that typed a name into
+  an account without one, "Not available yet." with the function missing (sign-in still
+  completes), no name and no full address in any log line, no console errors. Screenshots:
+  `app-name-shots/` in the session's scratchpad folder. Not tested: the real trigger and
+  function against the database (the website's migration).
 
 The repository has no unit test runner; none was added.
