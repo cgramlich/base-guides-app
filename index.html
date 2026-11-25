@@ -1682,7 +1682,10 @@
     // to (website, account-settings.ts, SIGN_IN_SCREEN_VERSION). The sentences are the website's
     // with one change: the website emails a link, the app emails a code. "-c" (2026-11-24): the
     // optional "First name" box above the address; a reader who signed up on "-b" was never asked.
-    const SIGN_IN_SCREEN_VERSION = "2026-11-24-c";
+    // "-d" (2026-11-25): one word dropped, "then MilSpo Minute" (was "then the MilSpo Minute"). The
+    // newsletter's one name has no "the" (NAMES, auditor round 3 item 1); the website made the same
+    // change to its own copy of the sentence. Nothing a family agreed to changed.
+    const SIGN_IN_SCREEN_VERSION = "2026-11-24-d";
     // The emailed code's length is set in Supabase Auth, not here (see the WARNING above): accept the
     // whole range Supabase allows so a settings change never locks readers out.
     const CODE_MIN_DIGITS = 6;
@@ -1696,7 +1699,7 @@
       // WHY the weekly email is stated here although the sends are later slices on the website:
       // Chris decided 2026-11-23 that every alert is ON from sign-up and that this screen is where
       // that is said. A statement, not a tick box.
-      weeklyEmail: "You also get one weekly email: changes at your bases on top (housing allowance and rents, spouse jobs, new stories and guide updates, crime figures), then the MilSpo Minute. Be the first to know when new allowance rates come out. Unsubscribe at any time.",
+      weeklyEmail: "You also get one weekly email: changes at your bases on top (housing allowance and rents, spouse jobs, new stories and guide updates, crime figures), then MilSpo Minute. Be the first to know when new allowance rates come out. Unsubscribe at any time.",
       noCallsNoTexts: PUBLISHER_LINE + " No calls, no texts.",
       button: "Send me a code",
       policyLine: "By continuing you accept our privacy policy.",
