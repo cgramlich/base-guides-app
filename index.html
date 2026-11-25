@@ -761,7 +761,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.28.0";
+    const APP_VERSION = "0.28.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1144,6 +1144,26 @@
       { key: "supermarket", label: "Groceries" }, { key: "gas_station", label: "Gas" },
       { key: "pharmacy", label: "Pharmacy" }, { key: "hospital", label: "Hospitals" },
     ];
+    // RULE (Chris, 2026-11-25, on a screen that read "About 321 min (304.2 mi)": "321 min?"): a drive
+    // is said the way a person says it. An hour or more is hours and minutes ("5 hr 21 min"); under an
+    // hour is minutes. Miles are whole from 10 up ("304 miles"); under 10 they keep one decimal,
+    // because 0.6 and 1.4 miles are different walks. ONE wording for both places that show a drive
+    // from the reader's location (the first screen and the Map tab), so they can never disagree.
+    // Road not taken: "5.4 hours" (a family plans a stop by the clock, not by a decimal).
+    function driveWords(minutes, miles) {
+      const wholeMinutes = Math.round(Number(minutes));
+      if (!Number.isFinite(wholeMinutes) || wholeMinutes < 0) return "";
+      const hours = Math.floor(wholeMinutes / 60);
+      const rest = wholeMinutes % 60;
+      const time = hours === 0 ? wholeMinutes + " min" : (rest === 0 ? hours + " hr" : hours + " hr " + rest + " min");
+      const milesNumber = Number(miles);
+      if (miles === null || miles === undefined || !Number.isFinite(milesNumber)) return "About " + time;
+      const distance = milesNumber >= 10
+        ? Math.round(milesNumber).toLocaleString("en-US") + " miles"
+        : (Math.round(milesNumber * 10) / 10) + (milesNumber === 1 ? " mile" : " miles");
+      return "About " + time + " (" + distance + ")";
+    }
+
     // A nearby place: tap to expand rich details (photo/hours/phone/website), fetched on demand.
     // RULE (auditor round 2, item 24; Chris 2026-11-24): a rating is written in words, "Rating 4.5 of 5
     // (123 reviews)", never as an asterisk standing in for a star. The app's output is ASCII only, so
@@ -2892,7 +2912,7 @@
       if (drive.status === "ready") {
         outcome = (
           <>
-            <p className="fs-result w-display" data-first="drive-result">About {drive.minutes} min{typeof drive.miles === "number" ? " (" + drive.miles + " mi)" : ""}</p>
+            <p className="fs-result w-display" data-first="drive-result">{driveWords(drive.minutes, drive.miles)}</p>
             <p className="w-caption">From where you are now to {baseName}. {drive.source === "osrm" ? "A driving estimate from OpenStreetMap roads (OSRM), without live traffic." : "A driving estimate."}</p>
           </>
         );
@@ -3936,7 +3956,7 @@
             <span className="faint tiny">{places.length ? places.length + " places nearby" : "Loading map..."}</span>
             <button className="btn-quiet" onClick={driveFromMe} disabled={geoBusy}>{geoBusy ? "Locating..." : "Drive time from me"}</button>
           </div>
-          {drive ? (drive.error ? <div className="muted tiny" style={{ marginTop: 6 }}>Couldn't get drive time.</div> : <div className="muted small" style={{ marginTop: 6 }}>About {drive.duration_min} min ({drive.distance_mi} mi) from your location to {data.name}.</div>) : null}
+          {drive ? (drive.error ? <div className="muted tiny" style={{ marginTop: 6 }}>Couldn't get drive time.</div> : <div className="muted small" style={{ marginTop: 6 }}>{driveWords(drive.duration_min, drive.distance_mi)} from your location to {data.name}.</div>) : null}
           {/* The space under the map holds the places themselves (auditor round 2, item 26), the same rows as the guide's "nearby" part. */}
           {places.length ? <ul className="lst" style={{ marginTop: 12 }}>{places.slice(0, 10).map((p, i) => <PlaceRow key={p.place_id || i} p={p} />)}</ul> : null}
         </div>
