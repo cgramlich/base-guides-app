@@ -199,7 +199,9 @@
       display:flex; align-items:center; gap:10px; border-top:1px solid var(--n-line); border-bottom:1px solid var(--n-line);
     }
     .banner + .banner{ border-top:0; }
-    .banner button{margin:-8px 0 -8px auto; font-size:12.5px; color:var(--n-ink); font-weight:500;}
+    /* -3px up, not -8px: a notice sits right under the top bar, and its button must stay 8px
+       clear of the account entry there (TAP TARGETS). */
+    .banner button{margin:-3px 0 -8px auto; font-size:12.5px; color:var(--n-ink); font-weight:500;}
 
     /* ---- Home ---- */
     .home-hero{ text-align:center; padding:4px 0 18px; }
@@ -371,7 +373,9 @@
     .task{display:flex; align-items:flex-start; gap:10px; padding:11px 0; min-height:44px; font-size:14.5px; color:var(--n-dim); cursor:pointer;}
     .task input{margin-top:3px; width:17px; height:17px; accent-color:var(--n-ink); flex:none;}
     .task-done{text-decoration:line-through; color:var(--n-faint);}
-    .btn-quiet{font-size:13.5px; color:var(--n-ink); display:inline-flex; align-items:center; gap:5px; font-weight:500;}
+    /* min-height here too: a link can wear this class (the allowance part's link to the DoD calculator),
+       and the TAP TARGETS floor names buttons, not links. */
+    .btn-quiet{font-size:13.5px; color:var(--n-ink); display:inline-flex; align-items:center; gap:5px; font-weight:500; min-height:44px;}
     .btn-quiet:disabled{color:var(--n-faint);}
     /* The primary button. Named for the fill it had; it is solid ink now (the kit's .btn.primary):
        the accent is never a button's fill. The name stays because the screens carry it. */
@@ -440,6 +444,10 @@
     .plan-base-matches li{ padding:0; }
     .plan-base-match{ display:block; width:100%; text-align:left; padding:8px 0; }
     .plan-base-match .t, .plan-base-match .d{ display:block; }
+    /* The note over the saved list: the sentence, then its button on the same left edge (a 44px
+       button inside a sentence pushed the two lines apart and sat 6px to the right). */
+    .saved-where{ display:flex; flex-wrap:wrap; align-items:center; gap:0 8px; margin:2px 0 12px; }
+    .saved-where .btn-quiet{ padding:0; }
     .saved-compare{ margin:18px 0 4px; }
     .saved-compare-link{ margin-top:0; text-decoration:none; }
     .saved-explained{ margin:14px 0 0; }
@@ -2731,8 +2739,9 @@
       if (account.status === "off" || account.status === "loading") return null;
       if (inAccount) return <div className="faint tiny" style={{ margin: "2px 2px 12px" }}>Kept in your account and shown on every device you sign in on.</div>;
       if (account.status === "signed-out") return (
-        <div className="muted small" style={{ margin: "2px 2px 12px" }}>
-          Saved on this phone only. <button className="btn-quiet" onClick={onOpenAccount}>Sign in to keep them on every device</button>
+        <div className="muted small saved-where">
+          <span>Saved on this phone only.</span>
+          <button className="btn-quiet" onClick={onOpenAccount}>Sign in to keep them on every device</button>
         </div>
       );
       return null;
