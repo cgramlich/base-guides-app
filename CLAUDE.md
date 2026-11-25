@@ -80,6 +80,21 @@ justification for the Pro subscription (a living, cloud-served service).
 only when a family needs it in their pocket (saved bases, checklist, offline guides, alerts). Rank,
 Compare and Plan stay on the website; the app links to them (`WEBSITE_TOOLS` in index.html).
 
+**Names and small rules from auditor round 3 (Chris's cards 2026-11-24; app 0.27.0):**
+- One name per thing, the website's (`NAMES` in index.html): "MilSpo Minute", "Find a base" (the list of bases
+  and the way back from a guide), "PCS checklist" (the Plan tab's screen), "Compare bases". The five tab labels
+  are unchanged; the tab redesign is a separate, unapproved proposal.
+- A guide part is named by its TYPE where the website has a name for it (`SECTION_NAMES_BY_TYPE`): "Housing
+  allowance (BAH)", "Schools near the base", "Questions families ask"; other types keep the stored title.
+- Every tappable thing is at least 44 x 44 px, 8px from a small neighbour (`TAP TARGETS` in the style block).
+- The HTML holds a launch mark inside `#root` (wordmark and Home hero) so the first paint is not blank while the
+  script compiles. Its words are a COPY of `APP_NAME`, `BRAND`, `HOME_TAGLINE`, `ASSETS.logoMark`;
+  `checkLaunchMark` logs `[LAUNCH] ... differ` when a rename changed one side only.
+- One search rule for Home and the PCS checklist's "Moving to" (`BASE SEARCH`, `PlanBaseField`).
+- My base and Saved stay two things; each screen says so in one sentence (`MY_BASE_EXPLAINED`, `savedExplained`).
+- Saved shows "Compare bases on the website" once two saved bases have a guide (`CompareSavedLink`); the app
+  still builds no Compare of its own.
+
 **Lists and empty tabs (Chris, 2026-11-24):** every list of bases is ordered by tier then name
 (`guideTier`, a mirror of the website's `src/lib/guide-tiers.ts`; change both together). The Map
 and Guide tabs with no base open show the saved bases or the tier 1 bases (`PickABase`), never a
@@ -113,7 +128,7 @@ code", "Yes, both now" (Delete my account, Apple rule 5.1.1(v)), "No social logi
   WARNING: the Supabase "Magic Link" email template must print `{{ .Token }}` or readers
   get a link and no code (`docs/app-accounts.md`).
 - The words on the sign-in screen are the website's (`SIGN_IN_TEXT`, version
-  `SIGN_IN_SCREEN_VERSION`, `2026-11-24-c` = the website's `-b` plus the optional First name
+  `SIGN_IN_SCREEN_VERSION`, `2026-11-24-d` = `-c` with "then MilSpo Minute" (no "the"); `-c` = the website's `-b` plus the optional First name
   box), with "link" changed to "code".
   Public text says only that MilSpo Living is "affiliated with MilHousing Network"
   (`PUBLISHER_LINE`), nothing about ownership or company structure (Chris 2026-11-23).
@@ -188,7 +203,8 @@ A section the website converted to advice (`"advice": true`, `"confirm_with"`, n
 
 ## Rebranding / swapping artwork (BUILD PRINCIPLE - applies to all Forever Apps)
 Brand assets are a **drop-in swap**, never hardcoded, so any app re-skins fast:
-- **Names/text:** `APP_NAME`, `BRAND` in the config block (top of the babel script). `APP_NAME` is
+- **Names/text:** `APP_NAME`, `BRAND`, `HOME_TAGLINE` in the config block (top of the babel script), AND the
+  launch mark in the HTML inside `#root`, which carries a copy of each (the app logs when they differ). `APP_NAME` is
   the wordmark in the top bar; `BRAND` is the Home hero (the coin) and the sign-in words.
 - **Image assets:** routed through the `ASSETS` object (e.g. `ASSETS.logoMark`) - repoint or replace in place; don't inline image paths in components.
 - **Icon set (fixed filenames at repo root):** replace these same-named files - `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, `apple-touch-icon.png`, `favicon-32.png`, `logo-mark.png` (in-app coin, transparent bg).
