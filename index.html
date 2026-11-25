@@ -305,7 +305,8 @@
     .acc-body{padding:0 0 16px; font-size:15px; color:var(--n-dim);}
     .acc-body p{margin:0 0 10px;}
 
-    dl.facts{margin:0; display:grid; grid-template-columns:auto 1fr; gap:7px 14px;}
+    /* 8px between rows, not 7: on the account screen each row ends in a 44px button (TAP TARGETS). */
+    dl.facts{margin:0; display:grid; grid-template-columns:auto 1fr; gap:8px 14px;}
     dl.facts dt{color:var(--n-dim); font-size:13.5px;}
     dl.facts dd{margin:0; color:var(--text); font-size:14.5px;}
 
@@ -470,7 +471,7 @@
     .acct-h{font-family:var(--serif); font-size:22px; margin:22px 0 8px;}
     .acct-actions{display:flex; gap:12px 18px; flex-wrap:wrap; align-items:center; margin-top:8px;}
     .acct-list li{display:flex; align-items:center; justify-content:space-between; gap:10px;}
-    .acct-list .rm{color:var(--n-ink); font-size:13.5px; font-weight:500; padding:6px 0 6px 10px; margin:-9px 0; flex:none;}
+    .acct-list .rm{color:var(--n-ink); font-size:13.5px; font-weight:500; padding:6px 0 6px 10px; margin:-5px 0; flex:none;}
     /* MY BASE: the Home row, the guide button, the one-tap pick on a card. 44px targets. */
     .mybase-row{display:flex; align-items:center; gap:8px; width:100%; margin:0 0 12px; padding:10px 12px; min-height:44px; border:1px solid var(--n-line); background:transparent; color:var(--text); font-size:14.5px; text-align:left;}
     .mybase-row .mybase-lbl{color:var(--n-dim); flex:none;}
