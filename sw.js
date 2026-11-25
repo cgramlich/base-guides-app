@@ -10,7 +10,7 @@
    - OSM map tiles -> cache-first, size-capped (passive offline maps).
    VERSION is kept in lockstep with APP_VERSION in index.html.
 */
-const VERSION = "0.27.0";                      // keep in lockstep with APP_VERSION
+const VERSION = "0.28.0";                      // keep in lockstep with APP_VERSION
 const SHELL_CACHE = "bg-shell-" + VERSION;
 const ASSET_CACHE = "bg-assets-" + VERSION;
 const DATA_CACHE  = "bg-data-v1";              // base guides; un-versioned so it
@@ -142,8 +142,14 @@ self.addEventListener("fetch", (event) => {
   let url;
   try { url = new URL(req.url); } catch (e) { return; }
 
+  // The app document is the folder the app is served from, or its index.html.
+  // WARNING: that folder is "/base-guides-app/" on GitHub Pages, not "/". Through 0.27 this line
+  // compared with "/" only, so the address the installed app opens (manifest start_url ".") was
+  // never answered from the cache and the app did not open without a connection (found by the
+  // 0.28 offline check, 2026-11-25). The scope is where this worker was registered from.
+  const appRootPath = new URL(self.registration.scope).pathname;
   const isAppDoc = url.origin === self.location.origin &&
-                   (url.pathname === "/" || /\/index\.html$/.test(url.pathname));
+                   (url.pathname === appRootPath || /\/index\.html$/.test(url.pathname));
   if (isAppDoc && (req.mode === "navigate" || !url.search)) {
     event.respondWith(shellNetworkFirst(req));
     return;
