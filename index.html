@@ -306,7 +306,9 @@
     .acc-body p{margin:0 0 10px;}
 
     /* 8px between rows, not 7: on the account screen each row ends in a 44px button (TAP TARGETS). */
-    dl.facts{margin:0; display:grid; grid-template-columns:auto 1fr; gap:8px 14px;}
+    /* align-items:baseline: a label sits on the first line of its value, also when the value is a
+       row of 44px buttons (the account screen) or runs to several lines (a guide's quick facts). */
+    dl.facts{margin:0; display:grid; grid-template-columns:auto 1fr; gap:8px 14px; align-items:baseline;}
     dl.facts dt{color:var(--n-dim); font-size:13.5px;}
     dl.facts dd{margin:0; color:var(--text); font-size:14.5px;}
 
