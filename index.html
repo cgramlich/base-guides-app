@@ -3034,7 +3034,6 @@
               </p>
             </div>
           ) : null}
-          <div className="fs-section fs-hint"><AddToHomeScreenHint /></div>
           {/* RULE: a warning from the weather service is never hidden. Every alert's name is always
               on the screen. One alert shows its notice with it; with more than one the notices open
               on a tap, so three warnings do not push the actions off a phone's screen. */}
@@ -3048,6 +3047,9 @@
               </p>
             </div>
           ) : null}
+          {/* RULE (2026-11-25): the install hint sits UNDER the weather alerts. A warning is the first
+              thing under the hero; a tip about the app never pushes it down the screen. */}
+          <div className="fs-section fs-hint"><AddToHomeScreenHint /></div>
 
           <DriveTimeFromHere baseName={base.name} lat={lat} lng={lng} recordStatus={record.status} />
           <NextStepBlock bases={bases} onOpenPlan={() => onOpenTab("plan")} />
