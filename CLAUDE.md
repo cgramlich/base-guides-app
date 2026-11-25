@@ -186,6 +186,29 @@ database; one that could not be filled reads "[figure missing]" and the section 
 A section the website converted to advice (`"advice": true`, `"confirm_with"`, no `verified`) shows
 "Our advice. Confirm with <who>." in place of a date, never as checked (`SrcLine` in `index.html`).
 
+## The first screen (Home tab), from 0.28
+Chris's decision cards 2026-11-25: the job is "the website is where a family decides; the app is
+what they carry on the way and on the ground"; first build "My base first screen only"; look "Yes,
+match the website"; paid lookups "Free data first, then a cap"; stores "Stay a web app for now".
+- **With a My base** (the two MY BASE stores, unchanged): a hero in the website's guide-hero style
+  (branch tone from `BRANCH_TONES`, the website's table), local time, weather, "Drive time from where
+  you are now" as a button, the next step of the move (the first PCS checklist step not ticked) or
+  "Set your move date", three actions (open the guide; ask a question, which opens the guide with the
+  Ask field ready and sends nothing; places near the base, which opens the Map tab), then saved bases.
+- **Without one:** one question, "Where are you headed?", with the BASE SEARCH picker; a pick sets
+  My base. "Browse all bases" opens the list Home used to be (`BrowseAllBases`, kept whole).
+- **Rules stated in the code** (section FIRST SCREEN in `index.html`): no paid lookup without a tap
+  (`LIVE_DATA_COST` in CONFIG says which lookups are free; today weather = National Weather Service
+  and directions = OSRM are free, places = Google and the AI relay are paid); the Ask box is not
+  called from this screen; location is asked only at the drive time tap; a value that could not
+  load says so.
+- **Launch mark:** with a base, a script under the mark draws that base's hero at first paint from
+  `bg_first_screen` (a copy the screen keeps on the phone; deleted when the reader has no base). Its
+  markup is a COPY of the hero in `MyBaseFirstScreen`; change both together.
+- **NOT built, on purpose** (same cards; each needs its own go-ahead): the guide kept in the pocket,
+  Near me, the shared checklist, reminders, a tab redesign, the other screens in the website's look.
+- Checks and how they were run: `docs/first-screen.md`.
+
 ## How Chris works
 - Plain-English feedback; you read the code and edit directly. Iterate freely.
 - Ask before building: feature work gets a SHORT proposal + sign-off first. One step
@@ -205,7 +228,7 @@ A section the website converted to advice (`"advice": true`, `"confirm_with"`, n
 Brand assets are a **drop-in swap**, never hardcoded, so any app re-skins fast:
 - **Names/text:** `APP_NAME`, `BRAND`, `HOME_TAGLINE` in the config block (top of the babel script), AND the
   launch mark in the HTML inside `#root`, which carries a copy of each (the app logs when they differ). `APP_NAME` is
-  the wordmark in the top bar; `BRAND` is the Home hero (the coin) and the sign-in words.
+  the wordmark in the top bar; `BRAND` is the coin over the first screen's question and the sign-in words.
 - **Image assets:** routed through the `ASSETS` object (e.g. `ASSETS.logoMark`) - repoint or replace in place; don't inline image paths in components.
 - **Icon set (fixed filenames at repo root):** replace these same-named files - `icon-192.png`, `icon-512.png`, `icon-maskable-512.png`, `apple-touch-icon.png`, `favicon-32.png`, `logo-mark.png` (in-app coin, transparent bg).
 - **Colors:** the token layer at the top of the `<style>` block ("THE NEW LOOK", Navy and Gold,
@@ -214,6 +237,14 @@ Brand assets are a **drop-in swap**, never hardcoded, so any app re-skins fast:
   sets. WARNING: `--accent` is the INK, not the gold (the kit's rule; gold reads 4.06:1 on white);
   gold is for small details only, named `--n-accent` / `--n-accent-flat`. Plus `BRANCH_COLORS`
   (the 3px rule over a base's name).
+- **The website's look (first screen only so far):** the block "FIRST SCREEN LOOK" in the `<style>`
+  block: tokens `--w-*` (light set `--wl-*`, dark set `--wd-*`) and roles `w-label`, `w-caption`,
+  `w-display`, `w-btn-primary`, `w-btn-secondary`, `w-btn-quiet`, taken from milspoliving.com's
+  `globals.css`; faces Playfair Display 500, Archivo 400/600, IBM Plex Mono 400 (second fonts link).
+  The rest of the app follows screen by screen (Chris's card 2026-11-25); a screen moves over by
+  using these tokens and roles. While the first screen is up, `<html data-screen="first">` points
+  the shell's `--n-*` tokens at this look so the top bar and the tab bar sit on its ground.
+  `BRANCH_TONES` is the website's branch colour table (hero ground and mark).
 - **Light or dark:** `<html data-mode="light|dark">`, set before first paint by the head script and
   kept by `applyLook` (section LOOK): the phone's setting unless the reader chose in the Appearance
   row under the account screen (device setting `bg_look_mode`, never the account's). One rule squares
