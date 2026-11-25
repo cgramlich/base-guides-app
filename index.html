@@ -35,6 +35,9 @@
        for body text and the wordmark, Crimson Pro for long-form reading. sw.js caches Google Fonts
        by host, so a change here needs no change there. -->
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@400;500;600&family=Crimson+Pro:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+  <!-- The first screen's faces (FIRST SCREEN LOOK in the style block): the website's three, only
+       the weights that screen uses. Cached by sw.js like the link above. -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Archivo:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet" />
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
@@ -176,11 +179,12 @@
 
     /* WARNING: every corner is square (Chris kept square corners everywhere, 2026-11-20), so ONE rule
        squares them all, inline corners and Leaflet's included, and the short list under it keeps the
-       true circles: the brand coin, the spinner, the tab bar's dot. A new circle must be added to
+       true circles: the brand coin, the spinner, the tab bar's dot, the first screen's branch dot.
+       A new circle must be added to
        that list or it draws as a square. Road not taken: squaring each rule by hand, which leaves
        strays. */
     *, *::before, *::after{ border-radius:0 !important; }
-    :is(.brandmark, .spin, .home-logo), .nav button.on::before{ border-radius:50% !important; }
+    :is(.brandmark, .spin, .home-logo, .fs-dot), .nav button.on::before{ border-radius:50% !important; }
 
     /* ---- the shell: the top bar (kit t01b, t03, t17) and the page ---- */
     #app-shell{
@@ -204,9 +208,12 @@
     .banner button{margin:-3px 0 -8px auto; font-size:12.5px; color:var(--n-ink); font-weight:500;}
 
     /* ---- Home ---- */
-    .home-hero{ text-align:center; padding:4px 0 18px; }
-    .home-logo{ width:96px; height:96px; }
-    .home-tag{ font-family:var(--serif); font-style:italic; font-size:18px; color:var(--n-dim); margin-top:6px; }
+    /* The coin and its line: a small masthead over the first screen's question, in the website's
+       caption style (FIRST SCREEN LOOK, below). WARNING: the launch mark in the HTML draws these
+       same three classes before the app has compiled; change them and both change together. */
+    .home-hero{ display:flex; align-items:center; gap:14px; padding:4px 0 26px; }
+    .home-logo{ flex:none; width:56px; height:56px; }
+    .home-tag{ font-family:var(--w-sans); font-size:14px; line-height:1.45; color:var(--n-dim); }
     .home-controls{ margin-bottom:6px; }
     .home-search{ margin-bottom:9px; }
     .home-selects{ display:flex; gap:12px; margin-bottom:12px; }
@@ -509,12 +516,151 @@
     .center{display:flex; flex-direction:column; align-items:center; justify-content:center; padding:50px 20px; text-align:center; color:var(--n-dim);}
     .spin{width:22px;height:22px;border:2px solid var(--n-line);border-top-color:var(--n-ink);animation:sp 0.8s linear infinite;}
     @keyframes sp{to{transform:rotate(360deg);}}
+
+    /* ===== FIRST SCREEN LOOK (the website's look; one screen so far) =====
+       WHAT THIS BLOCK IS: milspoliving.com's type and colour as tokens (--w-*) and a few roles
+       (w-label, w-caption, w-display, w-btn-*), used by the first screen (FIRST SCREEN in the app
+       script) and by nothing else yet.
+       DECISION (Chris, decision card 2026-11-25, look: "Yes, match the website"; first build: "My
+       base first screen only"): the first screen is drawn in the website's look, and THE REST OF
+       THE APP FOLLOWS SCREEN BY SCREEN. Until then every other screen keeps THE NEW LOOK above. A
+       screen moves over by using these tokens and roles; nothing here has to change for it.
+       WHERE THE VALUES COME FROM: the website repo, src/app/globals.css (the :root palette, the
+       label, caption and figure styles, the button roles btn, btn-lg, btn-primary, btn-secondary
+       and btn-quiet, the dark-section rules) and src/lib/branch-colors.ts, read 2026-11-25. Nothing
+       was invented: light is the website's page (ink on paper), dark is the website's dark section
+       (paper on its night ground, hairlines at 28% paper).
+       WARNING, one difference from the website: in a dark section the website draws second lines
+       in paper at 72%. Here that holds on the night ground (9.3:1), but text ON A BRANCH COLOUR
+       (the hero) is always full paper: at 72% it reads 3.5:1 on the Coast Guard blue and 4.2:1 on
+       the Marine Corps red, under the 4.5:1 small text needs (computed 2026-11-25). The signal red
+       is 4.2:1 on paper, so it is used as a rule beside a notice, never as the colour of its words.
+
+       THE SEAM WITH THE REST OF THE APP: while the first screen is up, <html data-screen="first">
+       points the shell's own tokens (--n-bg, --n-ink, --n-dim, --n-line, --n-soft, --n-solid) at
+       this look, so the top bar, a notice and the tab bar sit on the same ground with the same
+       hairline as the screen between them. The attribute is set before first paint by the script
+       under the style block and kept by useFirstScreenLook. On every other tab it is absent and
+       the shell is THE NEW LOOK again. ROAD NOT TAKEN: restyling the top bar and the tab bar
+       themselves; that is "a tab redesign", which Chris's card left out.
+
+       THE FACES: Playfair Display 500 (display), Archivo 400 and 600 (text), IBM Plex Mono 400
+       (labels and figures), the website's three, only the weights this screen uses, from the
+       second fonts link in the head. sw.js caches Google Fonts by host, cache-first.
+       WHY display=swap and not optional: with optional a face that is not in hand within about
+       100ms is dropped for the whole visit, and a cold start behind the service worker often
+       misses that, so the screen would open in the fallback faces. With swap, the launch script
+       under the launch mark starts fetching the faces at once and the app takes a second or more
+       to compile, so they are in hand before the screen is drawn. What can still move is the base
+       name in the launch mark, once, if the fallback wraps it differently. */
+    :root{
+      --wl-surface:#f5f4f0; --wl-raise:#ffffff; --wl-text:#151514; --wl-dim:#55534e; --wl-line:#cfcdc6; --wl-tint:#eae8e2;
+      --wl-solid:#151514; --wl-solid-hover:#1b1b1a; --wl-onsolid:#f5f4f0;
+      --wd-surface:#0b0e10; --wd-raise:#1b1b1a; --wd-text:#f5f4f0; --wd-dim:rgb(245 244 240 / 0.72); --wd-line:rgb(245 244 240 / 0.28); --wd-tint:#1b1b1a;
+      --wd-solid:#f5f4f0; --wd-solid-hover:#eae8e2; --wd-onsolid:#151514;
+      --w-signal:#d2412a; --w-ontone:#f5f4f0; --w-ontone-line:rgb(245 244 240 / 0.28);
+      --w-display:'Playfair Display',Georgia,'Times New Roman',serif;
+      --w-sans:'Archivo',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+      --w-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+      --w-ease:cubic-bezier(0.2, 0.7, 0.2, 1);
+      --w-surface:var(--wl-surface); --w-raise:var(--wl-raise); --w-text:var(--wl-text); --w-dim:var(--wl-dim); --w-line:var(--wl-line);
+      --w-tint:var(--wl-tint); --w-solid:var(--wl-solid); --w-solid-hover:var(--wl-solid-hover); --w-onsolid:var(--wl-onsolid);
+    }
+    :root[data-mode="dark"]{
+      --w-surface:var(--wd-surface); --w-raise:var(--wd-raise); --w-text:var(--wd-text); --w-dim:var(--wd-dim); --w-line:var(--wd-line);
+      --w-tint:var(--wd-tint); --w-solid:var(--wd-solid); --w-solid-hover:var(--wd-solid-hover); --w-onsolid:var(--wd-onsolid);
+    }
+    /* The same declarations as data-mode="dark", for a dark phone before the script has run. */
+    @media (prefers-color-scheme: dark){
+      :root:not([data-mode="light"]){
+        --w-surface:var(--wd-surface); --w-raise:var(--wd-raise); --w-text:var(--wd-text); --w-dim:var(--wd-dim); --w-line:var(--wd-line);
+        --w-tint:var(--wd-tint); --w-solid:var(--wd-solid); --w-solid-hover:var(--wd-solid-hover); --w-onsolid:var(--wd-onsolid);
+      }
+    }
+    /* THE SEAM (above). WARNING: this must stay BELOW the three --n-* blocks of THE NEW LOOK; it
+       has the same weight as they do and wins only by coming later. */
+    :root[data-screen="first"]{
+      --n-bg:var(--w-surface); --n-ink:var(--w-text); --n-dim:var(--w-dim); --n-line:var(--w-line); --n-soft:var(--w-tint);
+      --n-solid:var(--w-solid); --n-onsolid:var(--w-onsolid);
+    }
+
+    /* ---- roles (the website's, by its names) ---- */
+    .fs{ font-family:var(--w-sans); color:var(--w-text); overflow-x:clip; }
+    .fs p{ margin:0; }
+    .w-label{ font-family:var(--w-mono); font-size:12px; line-height:1.4; letter-spacing:0.08em; text-transform:uppercase; }
+    .w-caption{ font-size:14px; line-height:1.45; color:var(--w-dim); }
+    .w-display{ font-family:var(--w-display); font-weight:500; letter-spacing:-0.01em; text-wrap:balance; }
+    .w-btn{ display:flex; align-items:center; justify-content:center; gap:8px; width:100%; min-height:48px; padding:6px 24px;
+      border:1px solid transparent; font-size:17px; font-weight:600; line-height:1.2; text-align:center;
+      transition:background-color 200ms var(--w-ease), border-color 200ms var(--w-ease), color 200ms var(--w-ease); }
+    .w-btn-primary{ background:var(--w-solid); border-color:var(--w-solid); color:var(--w-onsolid); }
+    .w-btn-primary:hover{ background:var(--w-solid-hover); }
+    .w-btn-secondary{ background:var(--w-raise); border-color:var(--w-text); color:var(--w-text); }
+    .w-btn-secondary:hover{ background:var(--w-tint); }
+    .w-btn:disabled{ opacity:0.6; cursor:default; }
+    .w-btn-quiet{ display:inline-flex; align-items:center; min-height:44px; padding:0; font-size:14px; font-weight:600; color:var(--w-text);
+      text-decoration:underline; text-decoration-color:var(--w-line); text-underline-offset:0.2em; text-align:left; }
+
+    /* ---- the hero: the website's guide hero (a branch-colour ground, a dot and a bar in the
+       branch's mark colour, the name in the display face). --fs-tone-* come from BRANCH_TONES. ---- */
+    .fs-hero{ background:var(--fs-tone-main, #1b1b1a); color:var(--w-ontone); padding:22px 20px 0; }
+    .fs-name{ font-size:32px; line-height:1.08; margin:6px 0 0; color:var(--w-ontone); overflow-wrap:anywhere; }
+    .fs-bar{ width:96px; height:6px; margin-top:14px; background:var(--fs-tone-mark, #cec185); }
+    .fs-branch{ display:flex; align-items:center; gap:8px; min-height:21px; margin-top:14px; font-size:14px; font-weight:600; line-height:1.45; }
+    .fs-dot{ flex:none; width:10px; height:10px; background:var(--fs-tone-mark, #cec185); }
+    /* The time and the weather. RULE (auditor round 2, item 23, kept here): the block has its full
+       height from the first paint, also in the launch mark, so nothing under it moves when the
+       weather arrives late or never. 144px = two 44px rows, 40px for two lines of forecast, 16px. */
+    .fs-facts{ margin-top:16px; min-height:144px; padding-bottom:16px; }
+    .fs-fact{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; min-height:44px; padding-top:12px; border-top:1px solid var(--w-ontone-line); }
+    .fs-fact .w-label{ flex:none; }
+    .fs-fact-v{ font-family:var(--w-mono); font-variant-numeric:tabular-nums; font-size:17px; line-height:1.3; text-align:right; }
+    .fs-fact-sub{ min-height:40px; font-size:14px; line-height:1.45; }
+    .fs-hero .w-btn-quiet{ color:var(--w-ontone); text-decoration-color:var(--w-ontone-line); margin:-12px 0; }
+
+    /* ---- under the hero ---- */
+    .fs-section{ padding:22px 20px 0; }
+    .fs-section > .w-label{ display:block; color:var(--w-dim); margin-bottom:8px; }
+    .fs-section > .w-caption{ margin-top:6px; }
+    .fs-step{ font-size:20px; line-height:1.25; }
+    .fs-result{ font-size:24px; line-height:1.25; margin-top:14px; }
+    .fs-actions{ display:grid; gap:8px; }
+    /* A notice in words: a warning from the weather service, or something that could not load. */
+    .fs-note{ border-left:2px solid var(--w-signal); padding:2px 0 2px 12px; font-size:14px; line-height:1.45; }
+    .fs-note strong{ font-weight:600; }
+    .fs-note .w-btn-quiet{ margin:-4px 0 -12px; }
+    /* Rows of bases: joined rows with a hairline between, the whole row is the target. */
+    .fs-rows{ list-style:none; margin:0; padding:0; border-top:1px solid var(--w-line); }
+    .fs-rows li{ border-bottom:1px solid var(--w-line); }
+    .fs-row{ display:flex; align-items:center; justify-content:space-between; gap:12px; width:100%; min-height:60px; padding:9px 0; text-align:left; color:var(--w-text); }
+    .fs-row-name{ display:block; font-family:var(--w-display); font-weight:500; font-size:20px; line-height:1.25; letter-spacing:-0.01em; }
+    .fs-row-meta{ display:block; font-size:14px; line-height:1.45; color:var(--w-dim); }
+    .fs-row-go{ flex:none; display:flex; color:var(--w-dim); }
+    .fs-foot{ display:flex; flex-wrap:wrap; gap:8px 28px; padding-bottom:28px; }
+    /* The Add to Home Screen hint (its rule is beside AddToHomeScreenHint). Its wrapper takes no
+       room once the hint is dismissed or the app is installed. */
+    .fs-hint:empty{ display:none; }
+    .fs-hint .a2hs{ margin:0; padding:0 0 12px; font-size:14px; line-height:1.45; }
+
+    /* ---- the question ("Where are you headed?"), drawn inside .content so the coin sits where
+       the launch mark drew it ---- */
+    .fs-question{ font-size:32px; line-height:1.08; margin:0 0 16px; }
+    .fs-field{ display:block; width:100%; min-height:48px; padding:0 14px; border:1px solid var(--w-text); background:var(--w-raise); color:var(--w-text); font-size:17px; -webkit-appearance:none; appearance:none; }
+    .fs-field::placeholder{ color:var(--w-dim); }
+    .fs-field:focus{ outline:2px solid var(--w-text); outline-offset:2px; }
+    .fs-matches{ margin-top:10px; }
+    .fs-what{ margin-top:14px; }
+    .fs-ask .fs-section{ padding-left:0; padding-right:0; }
+    .fs-keep{ margin:-10px 0 4px; }
   </style>
   <script>
     /* The mode before first paint: the device's choice (Appearance row, bg_look_mode) or the phone's
        setting. The same reading as getLookMode/applyLook in the app script, done here so a dark phone
        never sees a white flash before the app script runs. */
     (function () {
+      /* The app always opens on the first screen, so the shell takes that screen's ground from the
+         first paint (THE SEAM, in FIRST SCREEN LOOK); the app removes it on every other tab. */
+      document.documentElement.setAttribute("data-screen", "first");
       try {
         var choice = localStorage.getItem("bg_look_mode");
         var dark = choice === "dark" || (choice !== "light" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches);
@@ -535,7 +681,12 @@
        launch the app compares the two (checkLaunchMark) and logs "[LAUNCH] ... differ" when a rename
        changed one side only. Change both together.
        ROAD NOT TAKEN: precompiling the app so the wait itself goes away. That needs a build step,
-       which this single-file web app does not have by design; it is planned for the store wrapper. -->
+       which this single-file web app does not have by design; it is planned for the store wrapper.
+       THE FIRST SCREEN AT FIRST PAINT (0.28): the mark below is the first screen WITHOUT a base (the
+       coin over the question). For a reader WITH a base the script right under it hides the coin and
+       draws that base's hero from what the phone kept (FIRST SCREEN MEMORY in the app script), in
+       the classes and heights the app draws it in. The coin stays in the page, hidden, so
+       checkLaunchMark still has all four copies to compare. -->
   <div id="root"><div id="app-shell" data-launch-mark="true" aria-busy="true">
     <div class="topbar"><div class="topbar-row">
       <div class="wordmark"><span data-launch="app-name">Base Guides</span><span class="wordmark-by">by <span data-launch="brand">MilSpo Living</span></span></div>
@@ -545,6 +696,44 @@
       <div class="home-tag" data-launch="tagline">Guides for your next duty station.</div>
     </div></div>
   </div></div>
+
+  <script>
+    /* THE FIRST SCREEN AT FIRST PAINT (see LAUNCH MARK above and FIRST SCREEN in the app script).
+       Two jobs, both before the app has compiled:
+       1. start fetching the first screen's faces, so they are in hand when the screen is drawn
+          (FIRST SCREEN LOOK, "WHY display=swap");
+       2. for a reader with a base, draw its hero from the phone's own copy ("bg_first_screen").
+       WARNING: the markup built here is a COPY of the hero in MyBaseFirstScreen. Change one and
+       change the other, or the hero jumps when the app takes over. The name and the line are set
+       as text, never as markup; the two colours are used only if they are plain hex values. */
+    (function () {
+      try {
+        if (document.fonts && document.fonts.load) {
+          ["500 32px 'Playfair Display'", "400 14px Archivo", "600 14px Archivo", "400 12px 'IBM Plex Mono'"].forEach(function (face) {
+            document.fonts.load(face).catch(function () { /* a face that cannot load leaves its fallback, which is readable */ });
+          });
+        }
+        var kept = JSON.parse(localStorage.getItem("bg_first_screen") || "null");
+        var hex = /^#[0-9a-f]{6}$/i;
+        if (!kept || typeof kept.name !== "string" || !kept.name || !hex.test(kept.toneMain || "") || !hex.test(kept.toneMark || "")) return;
+        var shell = document.querySelector("[data-launch-mark]");
+        var coin = shell && shell.querySelector(".content");
+        if (!coin) return;
+        var screen = document.createElement("div");
+        screen.className = "fs";
+        screen.setAttribute("data-launch-first", "base");
+        screen.innerHTML = '<header class="fs-hero"><div class="w-label">My base</div><h1 class="fs-name w-display"></h1>' +
+          '<div class="fs-bar"></div><div class="fs-branch"><span class="fs-dot"></span><span></span></div><div class="fs-facts"></div></header>';
+        var hero = screen.firstChild;
+        hero.style.setProperty("--fs-tone-main", kept.toneMain);
+        hero.style.setProperty("--fs-tone-mark", kept.toneMark);
+        hero.querySelector(".fs-name").textContent = kept.name;
+        hero.querySelector(".fs-branch").lastChild.textContent = typeof kept.line === "string" ? kept.line : "";
+        coin.hidden = true;
+        shell.appendChild(screen);
+      } catch (e) { /* storage blocked or an old value: the coin stays, which is right for a reader with no base */ }
+    })();
+  </script>
 
   <script>
     if ("serviceWorker" in navigator) {
@@ -571,7 +760,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.27.0";
+    const APP_VERSION = "0.28.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -579,6 +768,20 @@
     const DATA_BASE = USING_API ? API_BASE_DEFAULT.replace(/\/$/, "") + "/api/bases" : "data/bases";
     // Backend for the LIVE layer (AI Q&A + nearby places).
     const API_BASE = API_BASE_DEFAULT || "http://localhost:8000";
+
+    // WHAT EACH LIVE LOOKUP COSTS, and so whether a screen may load it by itself.
+    // RULE (Chris, decision card 2026-11-25, paid lookups: "Free data first, then a cap"): a
+    // lookup marked "free" may load when a screen opens; one marked "paid" loads only after a tap
+    // that asks for it. The first screen reads this table (FIRST SCREEN, rule 1). The cap is not
+    // built yet, and the older screens (the guide's Ask box, the Map tab) are not moved onto this
+    // table yet either.
+    // The providers, read from the backend's main.py on 2026-11-25: weather = the National Weather
+    // Service (api.weather.gov; no key, no charge, U.S. places only); directions = OSRM's public
+    // server over OpenStreetMap roads (no key, no charge); places = Google Places (charged per
+    // call); ask = the AI relay (charged per question).
+    // WARNING: this is a COPY of what the backend does. If the backend moves a lookup to a paid
+    // provider, change its word here in the same release, or the app goes on loading it unasked.
+    const LIVE_DATA_COST = { weather: "free", directions: "free", places: "paid", ask: "paid" };
 
     // ACCOUNTS: the Supabase project milspoliving.com uses ("base-guides"), so the app and the
     // website are the same account (Chris, decision card 2026-11-24 "Yes, account then look").
@@ -659,6 +862,39 @@
       if (s.indexOf("/") !== -1) return BRANCH_COLORS.joint;
       for (const k of Object.keys(BRANCH_COLORS)) if (s.indexOf(k) !== -1) return BRANCH_COLORS[k];
       return "var(--accent-dim)";
+    }
+    // BRANCH TONES: the first screen's hero colours, by branch. This is the WEBSITE'S table
+    // (milspoliving src/lib/branch-colors.ts, read 2026-11-25), so a base wears the same colour on
+    // the website's guide and here. main = the hero's ground; mark = its dot and bar; the words
+    // on it are always the paper colour (--w-ontone).
+    // RULE, the website's (its mapBranch): "U.S. " is dropped; a joint base wears the branch named
+    // FIRST; "... Reserve" wears its service; any "... National Guard" wears National Guard;
+    // anything else (the Defense Logistics Agency, a branch nobody listed) wears the neutral tone.
+    // WARNING (carried over from the website's file): these values are not confirmed against the
+    // branches' own brand guides.
+    // ROAD NOT TAKEN: reusing BRANCH_COLORS above. Those are light accents for a thin edge on a
+    // light page; a hero needs the website's dark grounds. The two tables become one when the
+    // guide screen moves to the website's look.
+    const BRANCH_TONE_NEUTRAL = { main: "#1b1b1a", mark: "#cec185" };
+    const BRANCH_TONES = {
+      "Army": { main: "#221f20", mark: "#ffcc01" },
+      "Navy": { main: "#022a3a", mark: "#e8b010" },
+      "Air Force": { main: "#00308f", mark: "#a6a6a8" },
+      "Marine Corps": { main: "#a6192e", mark: "#cc9900" },
+      "Coast Guard": { main: "#006ba6", mark: "#e03c31" },
+      "Space Force": { main: "#000000", mark: "#97a3ae" },
+      "National Guard": { main: "#00308f", mark: "#a6a6a8" },
+    };
+    function branchTone(branchText) {
+      const known = (name) => Object.prototype.hasOwnProperty.call(BRANCH_TONES, name);
+      let first = (branchText || "").trim();
+      const joint = /^Joint\s*\((.+)\)\s*$/i.exec(first);
+      if (joint) first = joint[1];
+      first = first.split(/[/,]/)[0].trim().replace(/^U\.S\.\s+/i, "");
+      if (known(first)) return BRANCH_TONES[first];
+      if (/\bNational Guard$/i.test(first)) return BRANCH_TONES["National Guard"];
+      const withoutReserve = first.replace(/\s+Reserve$/i, "");
+      return known(withoutReserve) ? BRANCH_TONES[withoutReserve] : BRANCH_TONE_NEUTRAL;
     }
     const SECTION_ICONS = { quick_facts: "info", mission: "flag", two_state_decision: "compass", gates: "shield", housing: "home", bah: "dollar", housing_costs: "dollar", rent_buy: "dollar", pcs_first_30: "calendar", faq: "info", where_to_live: "home", schools: "cap", schools_live: "cap", healthcare: "health", shopping: "cart", nearby: "map" };
     function sectionIcon(id) { return SECTION_ICONS[id] || "info"; }
@@ -1497,12 +1733,20 @@
     }
 
     // "Ask about this base" - grounded AI Q&A via the backend.
-    function AskBox({ slug, sections, onOpenSection }) {
+    function AskBox({ slug, sections, onOpenSection, focusOnOpen }) {
       const [q, setQ] = useState("");
       const [a, setA] = useState(null);
       const [loading, setLoading] = useState(false);
       const [err, setErr] = useState(false);
       const inputRef = useRef(null);
+      // The first screen's "Ask a question about this base" lands here: the field is brought into
+      // view and takes the cursor. RULE (FIRST SCREEN, rule 2): nothing is sent by arriving; the
+      // paid call below still happens only when the reader sends a question.
+      useEffect(() => {
+        if (!focusOnOpen || !inputRef.current) return;
+        inputRef.current.scrollIntoView({ block: "center" });
+        inputRef.current.focus({ preventScroll: true });
+      }, [focusOnOpen]);
       const ask = async () => {
         const question = q.trim();
         if (!question) return;
@@ -2219,8 +2463,9 @@
     const FIND_A_BASE = "Find a base";
     const PCS_CHECKLIST = "PCS checklist";
     /** The way back from a guide to the list of bases (Home). A button, so a keyboard reaches it. */
-    function BackToList({ onBack }) {
-      return <button type="button" className="back" onClick={onBack}><Icon name="back" size={15} /> {FIND_A_BASE}</button>;
+    // `label` is where Back goes: "Home" (the first screen) or the list's own name. The App knows which.
+    function BackToList({ onBack, label }) {
+      return <button type="button" className="back" onClick={onBack}><Icon name="back" size={15} /> {label || FIND_A_BASE}</button>;
     }
 
     /* ---------------- Screens ---------------- */
@@ -2371,6 +2616,7 @@
 
     // ADD TO HOME SCREEN (auditor round 2, item 25; Chris 2026-11-24). RULE: one quiet line, only in a
     // browser tab (not once the app is installed: display-mode standalone, or Safari's navigator.standalone),
+    // on the first screen only and near its top (under the hero, or under the question's one line),
     // dismissible, and remembered on the device so it is never shown twice. The words follow the phone:
     // Safari on iPhone and iPad has Share then "Add to Home Screen"; Chrome on Android has the menu then
     // "Add to Home screen" or "Install app". Nothing is detected beyond the user agent string, and a wrong
@@ -2395,9 +2641,10 @@
       );
     }
 
-    // Home: one quiet row under the hero. "My base: <name>" opens the guide; with none listed,
-    // "No base listed. Add your base" turns on picking mode (Home above). Signed out it shows the
-    // device's value, signed in the account's; it never shows a base of anyone else's.
+    // The list view only (BrowseAllBases, below): one quiet row above the list. "My base: <name>"
+    // opens the guide; with none listed, "No base listed. Add your base" turns on picking mode
+    // there. Signed out it shows the device's value, signed in the account's; it never shows a
+    // base of anyone else's.
     function MyBaseHomeRow({ myBase, bases, onOpen, onPick, picking }) {
       const name = myBaseName(myBase, bases);
       if (myBase.slug) {
@@ -2418,39 +2665,521 @@
       );
     }
 
-    function Home({ bases, loading, loadFailed, onRetry, onOpen, saved, onToggleSave, myBase, onSetMyBase }) {
+    /* ---------------- FIRST SCREEN: "My base" (the Home tab) ----------------
+       WHAT THIS IS: the screen the app opens on. With a base set (MY BASE, above) it is that base:
+       its name, the local time there, the weather, a drive time on request, the next step of the
+       move, three actions and the saved bases. With none set it asks one question, "Where are you
+       headed?". The list of every base, which Home used to be, is BrowseAllBases at the end of
+       this section, behind "Browse all bases".
+       DECISION (Chris, two decision cards 2026-11-25): the job, "the website is where a family
+       decides; the app is what they carry on the way and on the ground"; first build, "My base
+       first screen only"; look, "Yes, match the website" (FIRST SCREEN LOOK in the style block);
+       paid lookups, "Free data first, then a cap"; stores, "Stay a web app for now".
+       WHAT IT DELIBERATELY DOES NOT DO (left out by the same cards; do not start them from here):
+       the guide kept in the pocket, Near me, the shared checklist, reminders, a new tab bar, the
+       other screens in this look.
+
+       THE RULES OF THIS SCREEN (each is repeated beside the code that keeps it):
+       1. NO PAID LOOKUP WITHOUT A TAP. Drawing this screen calls only what LIVE_DATA_COST (CONFIG)
+          marks "free": the base's own guide record and the weather. A lookup marked "paid" waits
+          for a tap that asks for it.
+       2. THE ASK BOX IS NOT CALLED FROM HERE. "Ask a question about this base" opens the guide
+          with the question field ready. A question is sent, and costs, only when the reader sends
+          it there.
+       3. LOCATION IS ASKED ONLY AT THE TAP THAT NEEDS IT: the drive time button. Opening the screen
+          never raises the phone's location prompt.
+       4. NOTHING INVENTED (the accuracy rule). A value that could not be loaded says so in words;
+          it is never a guess and never an old number shown as today's. */
+    const FIRST_LOG = "[FIRST]";
+
+    /* FIRST SCREEN MEMORY: what this phone keeps about the base on the first screen, under
+       "bg_first_screen": { slug, name, line, toneMain, toneMark, tz, lat, lng }.
+       WHY it exists: (1) the launch mark in the HTML draws this hero before the app has compiled,
+       and all it can read is browser storage (LAUNCH MARK, "the first screen at first paint");
+       (2) while a signed-in reader's account is still being read, and with no connection at all,
+       the screen can open on the base it showed last time instead of on the question.
+       It is a copy for drawing, never a source: each value is replaced as soon as the real one loads.
+       RULE: it is kept only while a base is shown here. Once the reader is known to have none
+       (cleared, or signed out: MY BASE's WARNING) it is deleted, so signing out still leaves no
+       base on this device.
+       ROAD NOT TAKEN: reading the guide the service worker cached. It holds the same facts, but
+       only after an asynchronous cache read, which is too late for the first paint. */
+    const FIRST_SCREEN_MEMORY_KEY = "bg_first_screen";
+    const HEX_COLOUR = /^#[0-9a-f]{6}$/i;
+    function readFirstScreenMemory() {
+      const kept = LS.get(FIRST_SCREEN_MEMORY_KEY, null);
+      return kept && typeof kept.slug === "string" && SLUG_SHAPE.test(kept.slug) ? kept : null;
+    }
+    function forgetFirstScreen() {
+      try { localStorage.removeItem(FIRST_SCREEN_MEMORY_KEY); } catch (e) { /* storage blocked: nothing was kept either */ }
+    }
+    /** True while nobody can say yet whether a signed-in reader has a base (the profile is not read). */
+    function accountNotReadYet(account) {
+      return account.status === "loading" || (account.status === "signed-in" && !account.profileRead);
+    }
+    /** The base the first screen shows: the reader's (MY BASE); or, only while the account is still
+        being read, the one this phone showed last time; or null, which draws the question. */
+    function baseShownFirst(myBase, account, bases) {
+      if (myBase.slug) return { slug: myBase.slug, name: myBaseName(myBase, bases) };
+      const kept = accountNotReadYet(account) ? readFirstScreenMemory() : null;
+      return kept ? { slug: kept.slug, name: kept.name || kept.slug.replace(/-/g, " ") } : null;
+    }
+
+    // THE SEAM (FIRST SCREEN LOOK in the style block): while the first screen is up, the top bar
+    // and the tab bar take its ground. A layout effect, not an effect, so the bars and the screen
+    // change in the same paint when the reader comes back to Home from another tab.
+    function useFirstScreenLook(active) {
+      React.useLayoutEffect(() => {
+        const root = document.documentElement;
+        if (active) root.setAttribute("data-screen", "first"); else root.removeAttribute("data-screen");
+        return () => root.removeAttribute("data-screen");
+      }, [active]);
+    }
+
+    // The base's own guide record, for its time zone and its place on the map. The base index
+    // carries neither, so this is the one fetch the first screen makes for its base.
+    // WHY the whole guide: it is the record the guide screen fetches and the service worker keeps
+    // (sw.js, per-base data: network first, then the last good copy), so a base opened before
+    // loads here with no connection, and "Open the guide" then opens from the same copy.
+    // ROAD NOT TAKEN: a small backend route with only tz and coords. It would be a second thing
+    // to cache and keep in step with the guide, to save one request the app makes anyway.
+    function useGuideRecord(slug, attempt) {
+      const [record, setRecord] = useState({ slug: null, status: "loading", guide: null });
+      useEffect(() => {
+        let live = true;
+        setRecord({ slug, status: "loading", guide: null });
+        console.log(FIRST_LOG + " guide record for " + slug + ": loading (try " + (attempt + 1) + ")");
+        fetchJSON(baseUrl(slug))
+          .then((guide) => {
+            if (!live) return;
+            console.log(FIRST_LOG + " guide record for " + slug + ": loaded (time zone " + (guide.tz || "none") + ", place " + (guide.coords ? "yes" : "none") + ")");
+            setRecord({ slug, status: "ready", guide });
+          })
+          .catch((error) => {
+            if (!live) return;
+            console.warn(FIRST_LOG + " guide record for " + slug + ": not loaded (" + error.message + ")");
+            setRecord({ slug, status: "failed", guide: null });
+          });
+        return () => { live = false; };
+      }, [slug, attempt]);
+      return record.slug === slug ? record : { slug, status: "loading", guide: null };
+    }
+
+    // The weather at a point, from the backend's /api/weather. `wanted` is RULE 1: false means
+    // "do not load it yet" (a paid provider waits for the reader's tap).
+    function useWeatherAt(lat, lng, wanted) {
+      const [weather, setWeather] = useState({ status: "idle", data: null });
+      useEffect(() => {
+        if (!wanted || lat == null || lng == null) { setWeather({ status: "idle", data: null }); return undefined; }
+        let live = true;
+        setWeather({ status: "loading", data: null });
+        fetchJSON(apiUrl("/api/weather?lat=" + lat + "&lng=" + lng))
+          .then((data) => {
+            if (!live) return;
+            console.log(FIRST_LOG + " weather: loaded (" + (data && data.current ? "a forecast" : "no forecast for this place") + ", " + ((data && data.alerts) || []).length + " alerts)");
+            setWeather({ status: "ready", data: data || {} });
+          })
+          .catch((error) => {
+            if (!live) return;
+            console.warn(FIRST_LOG + " weather: not loaded (" + error.message + ")");
+            setWeather({ status: "failed", data: null });
+          });
+        return () => { live = false; };
+      }, [lat, lng, wanted]);
+      return weather;
+    }
+
+    // The clock at the base, as words ("Tue 9:41 PM"); null without a time zone. Ticks twice a minute.
+    function useClockAt(tz) {
+      const [, tick] = useState(0);
+      useEffect(() => { const id = setInterval(() => tick((n) => n + 1), 30000); return () => clearInterval(id); }, []);
+      if (!tz) return null;
+      try { return new Intl.DateTimeFormat([], { timeZone: tz, weekday: "short", hour: "numeric", minute: "2-digit" }).format(new Date()); }
+      catch (e) { return null; }
+    }
+
+    /* The next step of the move: the FIRST step of the PCS checklist that is not ticked, in the
+       checklist's own order (PCS_BUCKETS, the Plan tab). Nothing is worked out beyond that: the
+       words are the checklist's, the date is the move date plus that part's offset, exactly as
+       the Plan tab shows it. Answers null with no move date, { allDone: true } with every step
+       ticked. The plan and its ticks stay on the phone ("bg_pcs", "bg_pcs_done"), as before. */
+    function nextPcsStep(moveDateText, tickedById) {
+      if (!moveDateText) return null;
+      const move = new Date(moveDateText + "T00:00:00");
+      if (isNaN(move.getTime())) return null;
+      for (const part of PCS_BUCKETS) {
+        for (let index = 0; index < part.tasks.length; index += 1) {
+          if (!tickedById[part.key + "-" + index]) return { allDone: false, move, task: part.tasks[index], partLabel: part.label, due: addDays(move, part.offset) };
+        }
+      }
+      return { allDone: true, move };
+    }
+    function NextStepBlock({ bases, onOpenPlan }) {
+      // Read when the screen opens. The plan changes only on the Plan tab, and coming back from
+      // there draws this screen anew, so it cannot go stale while it is on screen.
+      const [plan] = useState(() => LS.get("bg_pcs", { moveDate: "", base: "" }));
+      const [ticked] = useState(() => LS.get("bg_pcs_done", {}));
+      const step = nextPcsStep(plan.moveDate, ticked);
+      if (!step) {
+        return (
+          <section className="fs-section" data-first="move-not-set">
+            <span className="w-label">Your move</span>
+            <button type="button" className="w-btn-quiet" onClick={onOpenPlan}>Set your move date</button>
+            <p className="w-caption">It puts a date on each step of the {PCS_CHECKLIST}, and the next step shows here.</p>
+          </section>
+        );
+      }
+      const daysLeft = daysUntil(step.move);
+      const movingTo = plan.base ? (bases || []).find((b) => b.slug === plan.base) : null;
+      const countdown = daysLeft >= 0
+        ? (daysLeft === 1 ? "1 day" : daysLeft + " days") + " until your move (" + fmtDate(step.move) + ")"
+        : "Your move date was " + fmtDate(step.move);
+      return (
+        <section className="fs-section" data-first="move-set">
+          <span className="w-label">Next step</span>
+          {step.allDone
+            ? <p className="fs-step w-display">Every step on your checklist is ticked.</p>
+            : <><p className="fs-step w-display">{step.task}</p><p className="w-caption">{step.partLabel}, around {fmtDate(step.due)}.</p></>}
+          <p className="w-caption">{countdown}{movingTo ? ", to " + movingTo.name : ""}.</p>
+          <button type="button" className="w-btn-quiet" onClick={onOpenPlan}>Open the {PCS_CHECKLIST}</button>
+        </section>
+      );
+    }
+
+    /* "Drive time from where you are now": a BUTTON, never automatic.
+       RULE 3 (Chris, card 2026-11-25; the browser's own rule too): the phone's location is asked
+       for inside this button's tap and nowhere else on the screen. Opening the screen calls
+       neither the phone's location nor /api/directions.
+       WHAT IT CALLS, once per tap: the backend's /api/directions, which today asks OSRM's public
+       server (OpenStreetMap roads, no key, no charge, no live traffic; backend main.py, read
+       2026-11-25). So this lookup is "free" in LIVE_DATA_COST, and it still waits for the tap
+       because of the location. WARNING: if the backend moves directions to a paid provider this
+       stays correct (it is already tap-only); change LIVE_DATA_COST with it.
+       The location goes into that one request and is not stored by the app or written to the log. */
+    function DriveTimeFromHere({ baseName, lat, lng, recordStatus }) {
+      const [drive, setDrive] = useState({ status: "idle" });
+      const live = useRef(true);
+      useEffect(() => () => { live.current = false; }, []);
+      const hasPlace = lat != null && lng != null;
+      const ask = () => {
+        if (!navigator.geolocation) { console.warn(FIRST_LOG + " drive time: this browser has no location service"); setDrive({ status: "no-location" }); return; }
+        console.log(FIRST_LOG + " drive time: the reader tapped; asking the phone for its location");
+        setDrive({ status: "locating" });
+        navigator.geolocation.getCurrentPosition((position) => {
+          if (!live.current) return;
+          console.log(FIRST_LOG + " drive time: location given; asking the backend for the drive");
+          setDrive({ status: "loading" });
+          fetchJSON(apiUrl("/api/directions?from_lat=" + position.coords.latitude + "&from_lng=" + position.coords.longitude + "&to_lat=" + lat + "&to_lng=" + lng))
+            .then((answer) => {
+              if (!live.current) return;
+              const usable = answer && typeof answer.duration_min === "number";
+              console.log(FIRST_LOG + " drive time: " + (usable ? "answered (" + answer.duration_min + " min, source " + (answer.source || "not named") + ")" : "the answer had no time in it"));
+              setDrive(usable ? { status: "ready", minutes: answer.duration_min, miles: answer.distance_mi, source: answer.source } : { status: "failed" });
+            })
+            .catch((error) => { if (!live.current) return; console.warn(FIRST_LOG + " drive time: not loaded (" + error.message + ")"); setDrive({ status: "failed" }); });
+        }, (error) => {
+          if (!live.current) return;
+          // code 1 is the browser's "permission denied"; 2 and 3 mean it could not find the phone in time.
+          const refused = !!error && error.code === 1;
+          console.warn(FIRST_LOG + " drive time: " + (refused ? "location not shared" : "the phone gave no location"));
+          setDrive({ status: refused ? "refused" : "no-location" });
+        }, { enableHighAccuracy: false, timeout: 15000, maximumAge: 300000 });
+      };
+      const busy = drive.status === "locating" || drive.status === "loading";
+      const buttonWords = drive.status === "locating" ? "Finding where you are..." : drive.status === "loading" ? "Working out the drive..." : "Drive time from where you are now";
+      let outcome = null;
+      if (drive.status === "ready") {
+        outcome = (
+          <>
+            <p className="fs-result w-display" data-first="drive-result">About {drive.minutes} min{typeof drive.miles === "number" ? " (" + drive.miles + " mi)" : ""}</p>
+            <p className="w-caption">From where you are now to {baseName}. {drive.source === "osrm" ? "A driving estimate from OpenStreetMap roads (OSRM), without live traffic." : "A driving estimate."}</p>
+          </>
+        );
+      } else if (drive.status === "refused") {
+        outcome = <p className="fs-note" data-first="drive-refused">Your location was not shared, so there is no drive time. To get one, allow location for this site in your browser, then tap again.</p>;
+      } else if (drive.status === "no-location") {
+        outcome = <p className="fs-note" data-first="drive-no-location">Your phone could not give a location just now. Try again in a moment.</p>;
+      } else if (drive.status === "failed") {
+        outcome = <p className="fs-note" data-first="drive-failed">The drive time could not be loaded. Check your connection and try again.</p>;
+      }
+      return (
+        <section className="fs-section" data-first="drive">
+          <span className="w-label">Getting there</span>
+          {hasPlace ? (
+            <>
+              <button type="button" className="w-btn w-btn-secondary" onClick={ask} disabled={busy}>{buttonWords}</button>
+              {drive.status === "idle" ? <p className="w-caption">Your phone asks for your location when you tap this, not before.</p> : null}
+              {outcome}
+            </>
+          ) : (
+            <p className="w-caption" data-first="drive-no-place">{recordStatus === "loading" ? "Loading where this base is..."
+              : recordStatus === "failed" ? "A drive time needs to know where this base is, and that could not be loaded."
+              : "No drive time for this base yet: its place on the map is not in the guide."}</p>
+          )}
+        </section>
+      );
+    }
+
+    // "Saved bases" under the first screen, as a short list. The reader's own base is left out:
+    // it is the screen. RULE kept from the Saved tab (SavedWhereLine; Chris, "After they try a
+    // tool"): the sign-in line is offered only under a list that has something in it.
+    const FIRST_SCREEN_SAVED_SHOWN = 5; // "a short list"; an account keeps at most MAX_SAVED_BASES, a phone's own list has no cap
+    function SavedBasesShort({ bases, saved, myBaseSlug, account, inAccount, onOpen, onOpenSavedTab, onOpenAccount }) {
+      const others = (saved || []).filter((slug) => slug !== myBaseSlug);
+      if (!others.length) return null;
+      const rows = others.slice(0, FIRST_SCREEN_SAVED_SHOWN).map((slug) => {
+        const listed = (bases || []).find((b) => b.slug === slug);
+        // Before the base list has loaded the slug is all there is; it reads well enough for a moment.
+        return listed
+          ? { slug, name: listed.name, meta: [listed.branch, listed.state].filter(Boolean).join(" · "), opens: !!listed.ready }
+          : { slug, name: slug.replace(/-/g, " "), meta: "", opens: true };
+      });
+      return (
+        <section className="fs-section" data-first="saved">
+          <span className="w-label">Saved bases</span>
+          <ul className="fs-rows">
+            {rows.map((row) => (
+              <li key={row.slug}>
+                {row.opens ? (
+                  <button type="button" className="fs-row" onClick={() => onOpen(row.slug)}>
+                    <span><span className="fs-row-name">{row.name}</span>{row.meta ? <span className="fs-row-meta">{row.meta}</span> : null}</span>
+                    <span className="fs-row-go"><Icon name="cardchev" size={20} /></span>
+                  </button>
+                ) : (
+                  <div className="fs-row"><span><span className="fs-row-name">{row.name}</span><span className="fs-row-meta">{[row.meta, "Guide coming soon"].filter(Boolean).join(" · ")}</span></span></div>
+                )}
+              </li>
+            ))}
+          </ul>
+          {others.length > rows.length ? <button type="button" className="w-btn-quiet" onClick={onOpenSavedTab}>All {others.length} saved bases</button> : null}
+          <p className="w-caption">{savedExplained(inAccount)}</p>
+          <SavedWhereLine account={account} inAccount={inAccount} onOpenAccount={onOpenAccount} />
+        </section>
+      );
+    }
+
+    // The first screen WITH a base. `base` is { slug, name } from baseShownFirst.
+    function MyBaseFirstScreen({ base, bases, saved, account, inAccount, onOpen, onOpenAsk, onOpenMap, onOpenTab, onOpenAccount, onBrowse, onChoose }) {
+      const [attempt, setAttempt] = useState(0);
+      const record = useGuideRecord(base.slug, attempt);
+      const guide = record.guide;
+      // What the phone kept from last time, for this same base only (FIRST SCREEN MEMORY).
+      const [keptAtOpen] = useState(readFirstScreenMemory);
+      const kept = keptAtOpen && keptAtOpen.slug === base.slug ? keptAtOpen : null;
+      const listed = (bases || []).find((b) => b.slug === base.slug) || null;
+
+      const branch = (listed && listed.branch) || (guide && guide.branch) || "";
+      const stateWords = listed && listed.state ? stateLabel(listed.state) : (guide && Array.isArray(guide.states) ? guide.states.map(stateFull).join(" / ") : "");
+      const line = [branch, stateWords].filter(Boolean).join(" · ") || (kept && typeof kept.line === "string" ? kept.line : "");
+      const keptTone = kept && HEX_COLOUR.test(kept.toneMain || "") && HEX_COLOUR.test(kept.toneMark || "") ? { main: kept.toneMain, mark: kept.toneMark } : null;
+      const tone = branch ? branchTone(branch) : (keptTone || BRANCH_TONE_NEUTRAL);
+      // RULE 4: the guide's own values when it loaded; else what the phone kept; else none, said in words below.
+      const tz = guide ? (guide.tz || null) : (kept && typeof kept.tz === "string" ? kept.tz : null);
+      const place = guide ? (guide.coords || null) : (kept && typeof kept.lat === "number" && typeof kept.lng === "number" ? { lat: kept.lat, lng: kept.lng } : null);
+      const lat = place && typeof place.lat === "number" ? place.lat : null;
+      const lng = place && typeof place.lng === "number" ? place.lng : null;
+
+      useEffect(() => {
+        LS.set(FIRST_SCREEN_MEMORY_KEY, { slug: base.slug, name: base.name, line, toneMain: tone.main, toneMark: tone.mark, tz, lat, lng });
+      }, [base.slug, base.name, line, tone.main, tone.mark, tz, lat, lng]);
+
+      // RULE 1 (NO PAID LOOKUP WITHOUT A TAP): the weather loads by itself only while its provider
+      // is marked free in LIVE_DATA_COST (today the National Weather Service). Marked paid, it
+      // waits for the reader's tap on "Show the weather".
+      const [weatherAsked, setWeatherAsked] = useState(false);
+      const weatherWanted = LIVE_DATA_COST.weather === "free" || weatherAsked;
+      const weather = useWeatherAt(lat, lng, weatherWanted);
+      const clock = useClockAt(tz);
+
+      const waitingWords = record.status === "loading" ? "Loading..." : "Could not load";
+      const timeWords = clock || (record.status === "ready" ? "Not in the guide" : waitingWords);
+      let weatherWords; let weatherLine = "";
+      const now = weather.status === "ready" ? weather.data.current : null;
+      if (lat == null) weatherWords = record.status === "ready" ? "Not for this base" : waitingWords;
+      else if (!weatherWanted) weatherWords = <button type="button" className="w-btn-quiet" onClick={() => { console.log(FIRST_LOG + " weather: the reader asked for it"); setWeatherAsked(true); }}>Show the weather</button>;
+      else if (weather.status === "failed") weatherWords = "Could not load";
+      else if (weather.status !== "ready") weatherWords = "Loading...";
+      else if (!now) { weatherWords = "No forecast"; weatherLine = "The weather service has no forecast for this base right now."; }
+      else {
+        weatherWords = now.temp + "°" + (now.unit || "");
+        const parts = [now.short];
+        if (weather.data.high != null) parts.push("high " + weather.data.high + "°");
+        if (weather.data.low != null) parts.push("low " + weather.data.low + "°");
+        if (weather.data.precip != null) parts.push(weather.data.precip + "% chance of precipitation");
+        weatherLine = parts.filter(Boolean).join(", ") + ".";
+      }
+      const alerts = weather.status === "ready" ? (weather.data.alerts || []) : [];
+
+      return (
+        <div className="fs" data-first-screen="base">
+          <header className="fs-hero" style={{ "--fs-tone-main": tone.main, "--fs-tone-mark": tone.mark }}>
+            <div className="w-label">My base</div>
+            <h1 className="fs-name w-display">{base.name}</h1>
+            <div className="fs-bar" />
+            <div className="fs-branch"><span className="fs-dot" /><span>{line}</span></div>
+            <div className="fs-facts">
+              <div className="fs-fact"><span className="w-label">Local time</span><span className="fs-fact-v" data-first="time">{timeWords}</span></div>
+              <div className="fs-fact"><span className="w-label">Weather</span><span className="fs-fact-v" data-first="weather">{weatherWords}</span></div>
+              <div className="fs-fact-sub" data-first="weather-line">{weatherLine}{now ? " National Weather Service." : ""}</div>
+            </div>
+          </header>
+
+          {record.status === "failed" ? (
+            <div className="fs-section">
+              <p className="fs-note" data-first="record-failed">
+                This base's details could not be loaded{kept && (kept.tz || kept.lat != null) ? ", so the time above comes from what this phone kept last time" : ""}. Check your connection.
+                <br /><button type="button" className="w-btn-quiet" onClick={() => setAttempt((n) => n + 1)}>Try again</button>
+              </p>
+            </div>
+          ) : null}
+          <div className="fs-section fs-hint"><AddToHomeScreenHint /></div>
+          {alerts.length ? (
+            <div className="fs-section">
+              {alerts.map((alert, index) => (
+                <p key={index} className="fs-note" style={index ? { marginTop: 10 } : null}><strong>Weather alert: {alert.event}</strong>{alert.headline ? <><br />{alert.headline}</> : null}</p>
+              ))}
+            </div>
+          ) : null}
+
+          <DriveTimeFromHere baseName={base.name} lat={lat} lng={lng} recordStatus={record.status} />
+          <NextStepBlock bases={bases} onOpenPlan={() => onOpenTab("plan")} />
+
+          <section className="fs-section" data-first="actions">
+            <span className="w-label">This base</span>
+            <div className="fs-actions">
+              <button type="button" className="w-btn w-btn-primary" onClick={() => onOpen(base.slug)}>Open the guide</button>
+              {/* RULE 2 (THE ASK BOX IS NOT CALLED FROM HERE): this opens the guide with the question
+                  field ready. Nothing is sent to /api/ai until the reader sends a question there. */}
+              <button type="button" className="w-btn w-btn-secondary" onClick={() => onOpenAsk(base.slug)}>Ask a question about this base</button>
+              {/* This screen never calls /api/places. WARNING: the Map tab it opens loads the
+                  Google-backed places by itself (MapScreen), which costs; this tap is the reader
+                  asking for them, so RULE 1 holds. Do not load places here "to save a tap". */}
+              <button type="button" className="w-btn w-btn-secondary" onClick={() => onOpenMap(base.slug)}>Places near the base</button>
+            </div>
+          </section>
+
+          <SavedBasesShort bases={bases} saved={saved} myBaseSlug={base.slug} account={account} inAccount={inAccount}
+            onOpen={onOpen} onOpenSavedTab={() => onOpenTab("saved")} onOpenAccount={onOpenAccount} />
+
+          <div className="fs-section fs-foot">
+            <button type="button" className="w-btn-quiet" onClick={onBrowse}>Browse all bases</button>
+            <button type="button" className="w-btn-quiet" onClick={onChoose}>Change my base</button>
+          </div>
+        </div>
+      );
+    }
+
+    /* The first screen WITHOUT a base: one question. Typing finds a base by BASE SEARCH (the rule
+       Home's list and the PCS checklist use, so the Joint Base San Antonio hub is hidden here the
+       same way); tapping one makes it My base through the MY BASE store, unchanged, and the screen
+       then opens on it. A base without a guide yet is listed but cannot be picked, as on the list.
+       `currentName` is set when the reader came here from "Change my base". */
+    function WhereHeadedScreen({ bases, loading, loadFailed, onRetry, saved, account, inAccount, currentName, onPick, onKeep, onOpen, onOpenTab, onOpenAccount, onBrowse }) {
+      const [typed, setTyped] = useState("");
+      const typedLower = typed.trim().toLowerCase();
+      const allMatches = typedLower ? (bases || []).filter((b) => baseMatchesSearch(b, typedLower)).sort(byTierThenName) : [];
+      const matches = allMatches.slice(0, PLAN_BASE_MATCHES_SHOWN);
+      const noList = !bases || !bases.length;
+      return (
+        <div className="content fs fs-ask" data-first-screen="question">
+          {currentName ? <button type="button" className="w-btn-quiet fs-keep" onClick={onKeep}><Icon name="back" size={15} />&nbsp;Keep {currentName}</button> : null}
+          {/* The coin and the line are what the launch mark in the HTML draws before the app has
+              compiled (LAUNCH MARK), in the same box, so nothing moves when the app takes over. */}
+          <div className="home-hero">
+            <img className="home-logo" src={ASSETS.logoMark} alt={BRAND} />
+            <div className="home-tag">{HOME_TAGLINE}</div>
+          </div>
+          <h1 className="fs-question w-display">Where are you headed?</h1>
+          <input className="fs-field" type="search" value={typed} onChange={(e) => setTyped(e.target.value)} placeholder="Search base or state" aria-label="Search for the base you are headed to" autoComplete="off" />
+          {noList && loading ? <p className="w-caption fs-what" role="status">Loading the list of bases...</p> : null}
+          {/* A failed load and an empty list are different things (App, loadBases): only the first offers Try again. */}
+          {noList && !loading && loadFailed ? (
+            <p className="fs-note fs-what" data-first="index-failed">Couldn't load the base guides. Check your connection and try again.
+              <br /><button type="button" className="w-btn-quiet" onClick={onRetry}>Try again</button></p>
+          ) : null}
+          {matches.length ? (
+            <ul className="fs-rows fs-matches">
+              {matches.map((b) => (
+                <li key={b.slug}>
+                  {b.ready ? (
+                    <button type="button" className="fs-row" data-first="match" onClick={() => onPick({ slug: b.slug, name: b.name })}>
+                      <span><span className="fs-row-name">{b.name}</span><span className="fs-row-meta">{[b.branch, b.state].filter(Boolean).join(" · ")}</span></span>
+                      <span className="fs-row-go"><Icon name="cardchev" size={20} /></span>
+                    </button>
+                  ) : (
+                    <div className="fs-row"><span><span className="fs-row-name">{b.name}</span><span className="fs-row-meta">{[b.branch, b.state, "Guide coming soon"].filter(Boolean).join(" · ")}</span></span></div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          ) : (typedLower && !noList ? <p className="w-caption fs-what">No bases match.</p> : null)}
+          {allMatches.length > matches.length ? <p className="w-caption fs-what">Showing the first {matches.length}. Keep typing to narrow the list.</p> : null}
+          <p className="w-caption fs-what">Pick a base and it becomes My base: this screen then opens on it, with its local time, weather, guide and your next step.</p>
+          <div className="fs-section fs-hint"><AddToHomeScreenHint /></div>
+          <button type="button" className="w-btn-quiet" onClick={onBrowse}>Browse all bases</button>
+          <SavedBasesShort bases={bases} saved={saved} myBaseSlug={null} account={account} inAccount={inAccount}
+            onOpen={onOpen} onOpenSavedTab={() => onOpenTab("saved")} onOpenAccount={onOpenAccount} />
+        </div>
+      );
+    }
+
+    // The Home tab: the first screen, or the list behind "Browse all bases". `view` lives in the
+    // App ("first" | "choose" | "browse") so that Back from a guide returns to the list the reader
+    // opened it from; tapping the Home tab always returns to the first screen.
+    function Home(props) {
+      const { view, onView, bases, myBase, account, onSetMyBase } = props;
+      useFirstScreenLook(view !== "browse");
+      const shown = baseShownFirst(myBase, account, bases);
+      // FIRST SCREEN MEMORY's rule: once the reader is known to have no base, the phone forgets the last one.
+      const knownToHaveNone = !myBase.slug && !accountNotReadYet(account);
+      useEffect(() => { if (knownToHaveNone) forgetFirstScreen(); }, [knownToHaveNone]);
+
+      if (view === "browse") return <BrowseAllBases {...props} onBackToFirst={() => onView("first")} />;
+      if (shown && view !== "choose") {
+        return <MyBaseFirstScreen base={shown} bases={bases} saved={props.saved} account={account} inAccount={props.inAccount}
+          onOpen={props.onOpen} onOpenAsk={props.onOpenAsk} onOpenMap={props.onOpenMap} onOpenTab={props.onOpenTab} onOpenAccount={props.onOpenAccount}
+          onBrowse={() => onView("browse")} onChoose={() => onView("choose")} />;
+      }
+      const pick = (base) => { console.log(FIRST_LOG + " picked " + base.slug + " as My base"); onView("first"); onSetMyBase(base); };
+      return <WhereHeadedScreen bases={bases} loading={props.loading} loadFailed={props.loadFailed} onRetry={props.onRetry}
+        saved={props.saved} account={account} inAccount={props.inAccount} currentName={shown ? shown.name : null}
+        onPick={pick} onKeep={() => onView("first")} onOpen={props.onOpen} onOpenTab={props.onOpenTab} onOpenAccount={props.onOpenAccount}
+        onBrowse={() => onView("browse")} />;
+    }
+
+    // The list of every base: what Home was through 0.27, now behind "Browse all bases" on the
+    // first screen. Kept whole (search, location, sort, the branch chips, picking My base on a
+    // row); it lost only the coin, which belongs to the first screen, and gained a way back.
+    function BrowseAllBases({ bases, loading, loadFailed, onRetry, onOpen, saved, onToggleSave, myBase, onSetMyBase, onBackToFirst }) {
       const [q, setQ] = useState("");
       const [branch, setBranch] = useState("all");
       const [loc, setLoc] = useState("all");
       const [sortBy, setSortBy] = useState("state");
       // Picking mode ("Add your base" on the row): the search box takes focus and every card gets a
-      // one-tap "This is my base"; the first pick ends it. Nothing else on Home changes.
+      // one-tap "This is my base"; the first pick ends it. Nothing else on the list changes.
       const [picking, setPicking] = useState(false);
       const searchRef = useRef(null);
       const startPicking = () => { setPicking(true); setTimeout(() => { if (searchRef.current) searchRef.current.focus(); }, 0); };
       const pickMyBase = (base) => { setPicking(false); onSetMyBase(base); };
       const cardPick = picking ? pickMyBase : null;
-      // The hero is drawn in EVERY state of Home, loading included. WHY: the launch mark in the HTML
-      // draws this same hero before the app has compiled (LAUNCH MARK, above the scripts); a loading
-      // state without it made the coin vanish and come back.
-      const hero = (
-        <div className="home-hero">
-          <img className="home-logo" src={ASSETS.logoMark} alt={BRAND} />
-          <div className="home-tag">{HOME_TAGLINE}</div>
-        </div>
+      const top = (
+        <>
+          <button type="button" className="back" onClick={onBackToFirst}><Icon name="back" size={15} /> Home</button>
+          <h2 className="screen-h">{FIND_A_BASE}</h2>
+        </>
       );
-      if (loading) return <div className="content">{hero}<div className="center"><div className="spin" /></div></div>;
+      if (loading) return <div className="content">{top}<div className="center"><div className="spin" /></div></div>;
       // A failed load and a genuinely empty list are different things: only the second is "No bases yet".
       if ((!bases || !bases.length) && loadFailed) return (
         <div className="content">
-          {hero}
+          {top}
           <div className="center">
             <div>Couldn't load the base guides. Check your connection and try again.</div>
             <button className="btn-quiet" style={{ marginTop: 12 }} onClick={onRetry}>Try again</button>
           </div>
         </div>
       );
-      if (!bases || !bases.length) return <div className="content">{hero}<div className="center">No bases yet.</div></div>;
+      if (!bases || !bases.length) return <div className="content">{top}<div className="center">No bases yet.</div></div>;
 
       const ql = q.trim().toLowerCase();
       const isJoint = (b) => {
@@ -2487,9 +3216,8 @@
 
       return (
         <div className="content">
-          {hero}
+          {top}
           <MyBaseHomeRow myBase={myBase} bases={bases} onOpen={onOpen} onPick={startPicking} picking={picking} />
-          <AddToHomeScreenHint />
           <div className="home-controls">
             {picking ? <div className="pick-hint mybase-hint" role="status">Search for your base, then tap "This is my base" on it.</div> : null}
             <input ref={searchRef} className="fld home-search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search base or state" />
@@ -2514,16 +3242,11 @@
 
     // Local time at the base (ticks). tz is an IANA zone on the base record.
     function LocalTime({ tz }) {
-      const [, tick] = useState(0);
-      useEffect(() => { const id = setInterval(() => tick((n) => n + 1), 30000); return () => clearInterval(id); }, []);
-      if (!tz) return null;
-      let s;
-      try { s = new Intl.DateTimeFormat([], { timeZone: tz, weekday: "short", hour: "numeric", minute: "2-digit" }).format(new Date()); }
-      catch (e) { return null; }
-      return <div className="localtime">{s} local time</div>;
+      const words = useClockAt(tz);
+      return words ? <div className="localtime">{words} local time</div> : null;
     }
 
-    function BaseDetail({ slug, onBack, saved, onToggleSave, myBase, onSetMyBase }) {
+    function BaseDetail({ slug, onBack, backLabel, focusAsk, saved, onToggleSave, myBase, onSetMyBase }) {
       const [data, setData] = useState(null);
       const [err, setErr] = useState(null);
       const [openId, setOpenId] = useState(null);
@@ -2541,12 +3264,12 @@
         return () => { live = false; };
       }, [slug]);
 
-      if (err) return <div className="content"><BackToList onBack={onBack} /><div className="center">Could not load this guide.<br />{err}</div></div>;
-      if (!data) return <div className="content"><BackToList onBack={onBack} /><div className="center"><div className="spin" /></div></div>;
+      if (err) return <div className="content"><BackToList onBack={onBack} label={backLabel} /><div className="center">Could not load this guide.<br />{err}</div></div>;
+      if (!data) return <div className="content"><BackToList onBack={onBack} label={backLabel} /><div className="center"><div className="spin" /></div></div>;
 
       return (
         <div className="content">
-          <BackToList onBack={onBack} />
+          <BackToList onBack={onBack} label={backLabel} />
           <div className="basehero" style={{ borderTopColor: branchColor(data.branch) }}>
             <div className="between">
               <h1>{data.name}</h1>
@@ -2567,7 +3290,7 @@
             <LocalTime tz={data.tz} />
           </div>
           <LiveWeather coords={data.coords} />
-          <AskBox slug={slug} sections={data.sections || []} onOpenSection={(id) => {
+          <AskBox slug={slug} sections={data.sections || []} focusOnOpen={focusAsk} onOpenSection={(id) => {
             setOpenId(id);
             setTimeout(() => { const el = document.getElementById("sec-" + id); if (el && el.scrollIntoView) el.scrollIntoView({ behavior: "smooth", block: "start" }); }, 50);
           }} />
@@ -3245,8 +3968,20 @@
         };
       }, [loadFailed, loadBases]);
 
-      const open = useCallback((s) => { setSlug(s); setTab("guide"); }, []);
-      const back = useCallback(() => { setSlug(null); setTab("home"); }, []);
+      // What the Home tab shows: "first" (the first screen), "choose" (its question, reached from
+      // "Change my base") or "browse" (the list of every base). It lives here, not in Home, so that
+      // Back from a guide returns to the list the reader opened it from. RULE: tapping the Home tab
+      // always returns to the first screen.
+      const [homeView, setHomeView] = useState("first");
+      // "ask" when the first screen's "Ask a question about this base" opened the guide: the guide
+      // then opens with the question field ready (AskBox, focusOnOpen). Nothing is sent by that.
+      const [guideIntent, setGuideIntent] = useState(null);
+      const open = useCallback((s, intent) => { setSlug(s); setGuideIntent(intent === "ask" ? "ask" : null); setTab("guide"); }, []);
+      const openAsk = useCallback((s) => open(s, "ask"), [open]);
+      // The first screen's "Places near the base": the Map tab's view of that base, as it is.
+      const openMap = useCallback((s) => { setSlug(s); setGuideIntent(null); setTab("map"); }, []);
+      const back = useCallback(() => { setSlug(null); setGuideIntent(null); setTab("home"); }, []);
+      const goToTab = useCallback((id) => { if (id === "home") setHomeView("first"); setTab(id); }, []);
       const toggleSave = useCallback((s) => {
         if (toggleSavedBase(s) === "full") setNotice("Your account keeps up to " + MAX_SAVED_BASES + " saved bases. Remove one first.");
       }, []);
@@ -3267,9 +4002,11 @@
       }, [bases]);
 
       let body;
-      if (tab === "home") body = <Home bases={bases} loading={loading} loadFailed={loadFailed} onRetry={loadBases} onOpen={open} saved={saved} onToggleSave={toggleSave} myBase={myBase} onSetMyBase={setMyBaseAndTell} />;
+      if (tab === "home") body = <Home view={homeView} onView={setHomeView} bases={bases} loading={loading} loadFailed={loadFailed} onRetry={loadBases}
+        onOpen={open} onOpenAsk={openAsk} onOpenMap={openMap} onOpenTab={goToTab} onOpenAccount={openAccount}
+        saved={saved} onToggleSave={toggleSave} account={account} inAccount={inAccount} myBase={myBase} onSetMyBase={setMyBaseAndTell} />;
       else if (tab === "guide") body = slug
-        ? <BaseDetail slug={slug} onBack={back} saved={saved} onToggleSave={toggleSave} myBase={myBase} onSetMyBase={setMyBaseAndTell} />
+        ? <BaseDetail slug={slug} onBack={back} backLabel={homeView === "browse" ? FIND_A_BASE : "Home"} focusAsk={guideIntent === "ask"} saved={saved} onToggleSave={toggleSave} myBase={myBase} onSetMyBase={setMyBaseAndTell} />
         : <div className="content"><h2 className="screen-h">{FIND_A_BASE}</h2><PickABase bases={bases} saved={saved} onOpen={open} hint="Open a base to read its guide." /></div>;
       else if (tab === "map") body = <MapScreen slug={slug} bases={bases} saved={saved} onOpen={open} />;
       else if (tab === "plan") body = <PlanScreen bases={bases} onOpen={open} />;
@@ -3292,7 +4029,7 @@
       );
 
       const NavBtn = ({ id, icon, label }) => (
-        <button className={tab === id ? "on" : ""} onClick={() => setTab(id)}>
+        <button className={tab === id ? "on" : ""} onClick={() => goToTab(id)}>
           <span className="ic"><Icon name={icon} size={21} /></span>{label}
         </button>
       );
@@ -3300,7 +4037,8 @@
       return (
         <div id="app-shell">
           {/* The bar (kit t01b): the wordmark left, the account entry right; nothing else. The app's
-              name is the wordmark; the publisher's mark and line are the Home hero. */}
+              name is the wordmark; the publisher's mark and line are the coin on the first screen's
+              question. While the first screen is up the bar takes its ground (THE SEAM). */}
           <div className="topbar">
             <div className="topbar-row">
               <div className="wordmark">{APP_NAME}<span className="wordmark-by">by {BRAND}</span></div>
@@ -3323,7 +4061,7 @@
     }
 
     /* ---------------- LAUNCH MARK check ----------------
-       The HTML draws the wordmark and the Home hero before this script has compiled (LAUNCH MARK,
+       The HTML draws the wordmark and the first screen's coin before this script has compiled (LAUNCH MARK,
        above the scripts). Its words are a copy of the config; this says so in the log when a rename
        changed one side only. It never blocks the launch: a stale mark is a half-second of old words. */
     function checkLaunchMark() {
