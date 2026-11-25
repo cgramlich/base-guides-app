@@ -154,6 +154,22 @@
     .acc-body{ font-size:15.5px; line-height:1.6; }
     input,textarea,select,button{font-family:inherit; font-size:16px;}
     button{cursor:pointer; border:none; background:none; color:inherit;}
+    /* ---- TAP TARGETS (auditor round 3, item 28; Chris's card 2026-11-24 "The clear fixes, one batch") ----
+       RULE: everything a finger taps is at least 44 x 44 px, with at least 8px between two small
+       neighbours. Measured before this rule: row bookmark 30 x 30, guide bookmark 32 x 32, "This is
+       my base" 36 high, the back link 76 x 21, "Sign in" 70 x 30, chips 28 high, fields 39 high.
+       HOW: one floor for every button, field and dropdown, so a control added later starts at the
+       right size without anyone remembering this rule. The glyph or the words keep their size; the
+       box grows around them. Where a taller box would push its row apart (the back link, "Remove",
+       a notice's button), a negative margin lets the box reach into the padding around it, which
+       holds nothing else to tap.
+       NOT covered, on purpose: a link inside a sentence (a source line, a link in an answer, the
+       privacy policy). Making one 44px tall opens gaps between lines of text, and WCAG's target
+       size rule leaves inline links out for that reason. A tick box in the checklist: its whole
+       row is the target. A dot on the map: the same places are rows under the map.
+       WARNING: a later rule that gives a button a smaller min-height or a fixed height undoes this. */
+    button, select, textarea, input:not([type="checkbox"]):not([type="radio"]){ min-height:44px; }
+    button{ min-width:44px; }
     h1,h2,h3{font-family:var(--serif); font-weight:400; margin:0; line-height:1.15; letter-spacing:0;}
     ::placeholder{ color:var(--n-faint); opacity:1; }
     a{ color:var(--n-ink); }
@@ -183,7 +199,7 @@
       display:flex; align-items:center; gap:10px; border-top:1px solid var(--n-line); border-bottom:1px solid var(--n-line);
     }
     .banner + .banner{ border-top:0; }
-    .banner button{margin-left:auto; font-size:12.5px; color:var(--n-ink); font-weight:500;}
+    .banner button{margin:-8px 0 -8px auto; font-size:12.5px; color:var(--n-ink); font-weight:500;}
 
     /* ---- Home ---- */
     .home-hero{ text-align:center; padding:4px 0 18px; }
@@ -223,20 +239,22 @@
     /* Add to Home Screen hint (auditor round 2, item 25). */
     .a2hs{ display:flex; gap:10px; align-items:flex-start; font-size:13px; color:var(--n-dim); padding:8px 0 10px; border-bottom:1px solid var(--n-line); margin-bottom:8px; }
     .a2hs span{ flex:1; }
-    .a2hs button{ color:var(--n-ink); font-size:13px; font-weight:500; padding:0 2px; min-height:28px; }
+    .a2hs button{ color:var(--n-ink); font-size:13px; font-weight:500; padding:0 2px; margin:-8px 0; }
     /* Source chips under an answer (auditor round 2, item 21): the guide sections the answer drew on. */
     .ask-chips{ display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; align-items:center; }
     .ask-chips .lbl{ font-size:12px; color:var(--n-dim); margin-right:2px; }
-    .chip-src{ font-size:12px; padding:3px 9px; border:1px solid var(--n-line); color:var(--n-ink); background:transparent; min-height:28px; }
+    .chip-src{ font-size:12px; padding:3px 9px; border:1px solid var(--n-line); color:var(--n-ink); background:transparent; }
     /* Map labels (auditor round 2, item 26). */
     .leaflet-tooltip.map-label{ font-size:11px; padding:1px 5px; background:rgba(255,255,255,0.92); border:1px solid #c9ccd2; color:#1b1f26; box-shadow:none; }
     .leaflet-tooltip.map-label.base{ font-weight:600; font-size:12px; }
     .card-go{color:var(--n-dim); flex:none; display:flex; align-items:center; margin-left:10px;}
     .card-actions{display:flex; align-items:center; gap:2px; flex:none;}
-    .iconbtn{color:var(--n-dim); padding:6px; display:flex; align-items:center;}
+    .iconbtn{color:var(--n-dim); padding:6px; display:flex; align-items:center; justify-content:center;}
 
     /* ---- the guide ---- */
-    .back{font-size:14px; color:var(--n-ink); font-weight:500; display:inline-flex; gap:6px; align-items:center; margin-bottom:6px; cursor:pointer;}
+    /* A button 44px tall whose box reaches 10px up and 6px down into the page's own padding, so
+       the guide starts where it did when this was a 21px line of text. */
+    .back{font-size:14px; color:var(--n-ink); font-weight:500; display:inline-flex; gap:6px; align-items:center; margin:-10px 0 -6px; padding:0; cursor:pointer;}
     .hero{margin:2px 0 4px;}
     .hero .tag{color:var(--n-dim); font-size:14px; margin-top:6px;}
     /* The one coloured edge kept: the branch's 3px rule over the base's name (its colour is set
@@ -253,7 +271,7 @@
     .ask-title{ font-family:var(--serif); font-size:22px; line-height:1.15; margin-bottom:8px; }
     .ask-row{ display:flex; gap:12px; align-items:flex-end; }
     .ask-inputwrap{ position:relative; flex:1; min-width:0; display:flex; }
-    .ask-row input{ flex:1; min-width:0; background:transparent; border:0; border-bottom:1px solid var(--n-faint); color:var(--text); padding:9px 28px 9px 0; }
+    .ask-row input{ flex:1; min-width:0; background:transparent; border:0; border-bottom:1px solid var(--n-faint); color:var(--text); padding:9px 44px 9px 0; }
     .ask-row input:focus{ outline:none; border-bottom-color:var(--n-ink); }
     .ask-clear{ position:absolute; right:0; top:50%; transform:translateY(-50%); background:transparent; border:0; color:var(--n-dim); font-size:20px; line-height:1; padding:0 5px; cursor:pointer; }
     .ask-clear:hover{ color:var(--text); }
@@ -308,7 +326,7 @@
     .place-hours{font-size:12.5px; color:var(--n-dim); margin-bottom:9px;}
     .place-hours div{line-height:1.55;}
     .place-links{display:flex; flex-wrap:wrap; gap:16px;}
-    .place-links a{color:var(--n-ink); font-size:13.5px; font-weight:500;}
+    .place-links a{color:var(--n-ink); font-size:13.5px; font-weight:500; display:inline-flex; align-items:center; min-height:44px; min-width:44px;}
     /* A notice (kit .req-banner): hairlines above and below, ink text, no fill. */
     .live-note{border-top:1px solid var(--n-line); border-bottom:1px solid var(--n-line); padding:10px 2px; font-size:13.5px; color:var(--n-ink);}
     /* Story section (the website's long-form story). */
@@ -336,10 +354,10 @@
     .srcline a{color:var(--n-ink);}
     .feedback{ margin:22px 0 4px; padding:14px 0; border-top:1px solid var(--n-line); border-bottom:1px solid var(--n-line); text-align:center; }
     .feedback-q{ display:block; font-size:14px; color:var(--n-dim); margin-bottom:7px; }
-    .feedback-link{ display:inline-block; color:var(--n-ink); font-weight:500; font-size:14.5px; }
+    .feedback-link{ display:inline-flex; align-items:center; min-height:44px; color:var(--n-ink); font-weight:500; font-size:14.5px; }
     .feedback-note{ font-size:12.5px; color:var(--n-dim); margin-top:7px; }
     .website-guide-link{ text-align:center; padding:10px 0 4px; font-size:13.5px; }
-    .website-guide-link a{ color:var(--n-dim); }
+    .website-guide-link a{ color:var(--n-dim); display:inline-flex; align-items:center; min-height:44px; }
     .website-tool{ display:block; padding:6px 0; color:inherit; text-decoration:none; }
     .website-tool-label{ display:block; font-weight:500; color:var(--n-ink); }
 
@@ -350,7 +368,7 @@
       background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' fill='none' stroke='%23808080' stroke-width='1.6'/></svg>");
       background-repeat:no-repeat; background-position:right 2px center; }
     .fld-l{display:block; font-size:13px; color:var(--n-dim); margin-bottom:2px;}
-    .task{display:flex; align-items:flex-start; gap:10px; padding:7px 0; font-size:14.5px; color:var(--n-dim); cursor:pointer;}
+    .task{display:flex; align-items:flex-start; gap:10px; padding:11px 0; min-height:44px; font-size:14.5px; color:var(--n-dim); cursor:pointer;}
     .task input{margin-top:3px; width:17px; height:17px; accent-color:var(--n-ink); flex:none;}
     .task-done{text-decoration:line-through; color:var(--n-faint);}
     .btn-quiet{font-size:13.5px; color:var(--n-ink); display:inline-flex; align-items:center; gap:5px; font-weight:500;}
@@ -387,7 +405,7 @@
     .pick-name{font-weight:500; font-size:14.5px; color:var(--text);}
     .pick-cat{font-size:12.5px; color:var(--n-dim); white-space:nowrap;}
     .pick-blurb{font-family:'Crimson Pro',Georgia,serif; font-size:14.5px; color:var(--n-dim); margin-top:3px; line-height:1.45;}
-    .pick-link{display:inline-block; margin-top:6px; color:var(--n-ink); font-size:13px; font-weight:500;}
+    .pick-link{display:inline-flex; align-items:center; min-height:44px; color:var(--n-ink); font-size:13px; font-weight:500;}
     .picks-divider{font-family:var(--serif); font-size:20px; color:var(--text); margin:16px 0 8px;}
     .rb-grid{display:flex; gap:12px; margin:10px 0 4px; flex-wrap:wrap;}
     .rb-card{flex:1 1 180px; min-width:0; background:var(--n-soft); padding:12px 14px;}
@@ -414,6 +432,18 @@
     .re-lab{font-size:12.5px; color:var(--n-dim); margin-top:3px;}
     .leaflet-wrap{height:58vh; overflow:hidden; border:1px solid var(--n-line);}
     .leaflet-wrap .leaflet-popup-content{font-family:'Outfit',sans-serif; font-size:13px;}
+    /* Leaflet draws its zoom buttons 30 x 30; 44 here (TAP TARGETS). */
+    .leaflet-bar a, .leaflet-touch .leaflet-bar a{ width:44px; height:44px; line-height:44px; }
+    /* The PCS checklist's "Moving to" field (PlanBaseField) and the Saved screen's compare link. */
+    .plan-base{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; min-height:44px; border-bottom:1px solid var(--n-faint); }
+    .plan-base-name{ flex:1 1 140px; min-width:0; font-size:16px; color:var(--text); }
+    .plan-base-matches li{ padding:0; }
+    .plan-base-match{ display:block; width:100%; text-align:left; padding:8px 0; }
+    .plan-base-match .t, .plan-base-match .d{ display:block; }
+    .saved-compare{ margin:18px 0 4px; }
+    .saved-compare-link{ margin-top:0; text-decoration:none; }
+    .saved-explained{ margin:14px 0 0; }
+    .center .saved-explained, .center + .saved-explained{ text-align:center; }
     /* The map's tiles are light in both modes; the attribution keeps the kit's fixed colours so it
        reads on them either way. */
     .leaflet-control-attribution{ background:rgba(255,255,255,0.8) !important; color:#646b78 !important; }
@@ -432,17 +462,18 @@
     .acct-h{font-family:var(--serif); font-size:22px; margin:22px 0 8px;}
     .acct-actions{display:flex; gap:12px 18px; flex-wrap:wrap; align-items:center; margin-top:8px;}
     .acct-list li{display:flex; align-items:center; justify-content:space-between; gap:10px;}
-    .acct-list .rm{color:var(--n-ink); font-size:13.5px; font-weight:500; padding:6px 0 6px 10px; flex:none;}
+    .acct-list .rm{color:var(--n-ink); font-size:13.5px; font-weight:500; padding:6px 0 6px 10px; margin:-9px 0; flex:none;}
     /* MY BASE: the Home row, the guide button, the one-tap pick on a card. 44px targets. */
     .mybase-row{display:flex; align-items:center; gap:8px; width:100%; margin:0 0 12px; padding:10px 12px; min-height:44px; border:1px solid var(--n-line); background:transparent; color:var(--text); font-size:14.5px; text-align:left;}
     .mybase-row .mybase-lbl{color:var(--n-dim); flex:none;}
     .mybase-row .mybase-name{font-weight:600; flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
-    .mybase-none .btn-quiet{margin-left:auto; min-height:32px;}
+    .mybase-none .btn-quiet{margin:-10px 0 -10px auto;}
+    .mybase-explained{margin:-6px 0 12px;}
     .mybase-hint{margin-bottom:8px;}
-    .basehero-actions{display:flex; align-items:center; gap:6px; flex:none;}
-    .mybase-btn{display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:var(--n-ink); border:1px solid var(--n-ink); background:transparent; padding:6px 10px; min-height:36px;}
+    .basehero-actions{display:flex; align-items:center; gap:8px; flex:none;}
+    .mybase-btn{display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:var(--n-ink); border:1px solid var(--n-ink); background:transparent; padding:6px 10px;}
     .mybase-btn.on{background:var(--n-solid); color:var(--n-onsolid); border-color:var(--n-solid);}
-    .mybase-pick{display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:var(--n-ink); border:1px solid var(--n-ink); background:transparent; padding:5px 10px; min-height:32px; margin-bottom:8px;}
+    .mybase-pick{display:inline-flex; align-items:center; gap:6px; font-size:13px; font-weight:500; color:var(--n-ink); border:1px solid var(--n-ink); background:transparent; padding:5px 10px; margin-bottom:8px;}
     .mybase-matches{margin-top:8px;}
     .acct-sheet{border:1px solid var(--n-danger); margin:10px 0 0; padding:14px;}
     .acct-name{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
@@ -482,7 +513,27 @@
   </script>
 </head>
 <body>
-  <div id="root"></div>
+  <!-- LAUNCH MARK (auditor round 3, item 21; Chris's card 2026-11-24 "The clear fixes, one batch").
+       WHY this is in the HTML: the app script is compiled in the browser on every launch (about a
+       second on a fast machine, about three on a mid-range phone, measured 2026-11-25), and until
+       then React has drawn nothing: the page was blank. This is what the reader sees meanwhile:
+       the top bar's wordmark and the Home hero, in the same boxes and classes the app draws them
+       in, so nothing moves when React takes over (React empties #root on its first render).
+       WARNING: the three texts and the image below are a COPY of APP_NAME, BRAND, HOME_TAGLINE and
+       ASSETS.logoMark in the app script; HTML cannot read those before the script has run. On every
+       launch the app compares the two (checkLaunchMark) and logs "[LAUNCH] ... differ" when a rename
+       changed one side only. Change both together.
+       ROAD NOT TAKEN: precompiling the app so the wait itself goes away. That needs a build step,
+       which this single-file web app does not have by design; it is planned for the store wrapper. -->
+  <div id="root"><div id="app-shell" data-launch-mark="true" aria-busy="true">
+    <div class="topbar"><div class="topbar-row">
+      <div class="wordmark"><span data-launch="app-name">Base Guides</span><span class="wordmark-by">by <span data-launch="brand">MilSpo Living</span></span></div>
+    </div></div>
+    <div class="content"><div class="home-hero">
+      <img class="home-logo" src="logo-mark.png" alt="MilSpo Living" data-launch="logo" />
+      <div class="home-tag" data-launch="tagline">Guides for your next duty station.</div>
+    </div></div>
+  </div></div>
 
   <script>
     if ("serviceWorker" in navigator) {
@@ -502,11 +553,14 @@
        config and is independent of this display name. */
     const APP_NAME = "Base Guides";
     const BRAND = "MilSpo Living";
+    // The line under the coin on Home. A constant because the launch mark in the HTML carries a copy
+    // of it (LAUNCH MARK, above the scripts) and checkLaunchMark compares the two on every launch.
+    const HOME_TAGLINE = "Guides for your next duty station.";
     // Brand artwork behind named files so a rebrand is a drop-in swap (see CLAUDE.md
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.26.0";
+    const APP_VERSION = "0.27.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -597,6 +651,38 @@
     }
     const SECTION_ICONS = { quick_facts: "info", mission: "flag", two_state_decision: "compass", gates: "shield", housing: "home", bah: "dollar", housing_costs: "dollar", rent_buy: "dollar", pcs_first_30: "calendar", faq: "info", where_to_live: "home", schools: "cap", schools_live: "cap", healthcare: "health", shopping: "cart", nearby: "map" };
     function sectionIcon(id) { return SECTION_ICONS[id] || "info"; }
+
+    /* ---------------- SECTION NAMES (one name per part, the website's) ----------------
+       RULE (auditor round 3, item 29; Chris's cards 2026-11-24 "The clear fixes, one batch" and names
+       "Use all four"): a part of a guide has ONE name, the same in the app and on milspoliving.com.
+       A guide's file stores its own title for each section ("BAH Calculator", "Schools Near Base",
+       "FAQ") and the website calls the same part something else. For the section types in this
+       table the app shows the website's name and ignores the stored title.
+       Where each name comes from (website repo, src/lib/guide-outline.ts): "Housing allowance (BAH)"
+       and "Questions families ask" in sectionShortTitle; "Schools near the base" is
+       SCHOOLS_PART_TITLE. Change both sides together.
+       "realestate" has no part of its kind on the website (rents and home values are shown per town
+       there, under "Towns compared"). Its stored title, "Housing Costs", is kept in the website's
+       sentence case, so it does not read as a second name for the allowance.
+       NOT in the table, on purpose: facts, prose, killer, list, rentbuy, pcs_first30, places_live and
+       story. One type covers many different parts there ("Healthcare", "Pets" and "Gates & Access"
+       are all prose or facts), or the title is the guide's own wording, so the stored title IS the
+       name, as it is on the website. A type the table does not know shows its stored title.
+       ROAD NOT TAKEN: renaming the sections in the 550 guide files. Rejected: the website and the
+       backend read the same files, and one table here is one place to keep right. */
+    const SECTION_NAMES_BY_TYPE = {
+      bah: "Housing allowance (BAH)",
+      schools_live: "Schools near the base",
+      faq: "Questions families ask",
+      realestate: "Housing costs",
+    };
+    const STORED_FAQ_TITLE = "FAQ";
+    function sectionName(section) {
+      // The website renames a questions part only when its stored title is the bare "FAQ"; a guide
+      // that gave its questions a title of their own keeps it. The same here.
+      if (section.type === "faq" && section.title !== STORED_FAQ_TITLE) return section.title;
+      return SECTION_NAMES_BY_TYPE[section.type] || section.title;
+    }
 
     /* ---------------- PWA self-update (ported from MenuCaptain) ---------------- */
     function useUpdateCheck() {
@@ -1297,7 +1383,7 @@
         <div className={"acc" + (open ? " open" : "")} id={"sec-" + s.id}>
           <div className="acc-head" onClick={onToggle}>
             <span className="sec-ic"><Icon name={sectionIcon(s.id)} size={18} /></span>
-            <h3>{s.title}</h3>
+            <h3>{sectionName(s)}</h3>
             <span className="acc-chev"><Icon name="chevron" size={18} /></span>
           </div>
           {open ? <div className="acc-body"><SectionBody s={s} coords={coords} /><SrcLine s={s} /></div> : null}
@@ -1388,8 +1474,11 @@
         .map((sec) => {
           let score = 0;
           longWords(sectionText(sec)).forEach((w) => { if (aw.has(w)) score += 1; });
-          if (al.indexOf(String(sec.title).toLowerCase()) !== -1) score += 3;
-          return { id: sec.id, title: sec.title, score };
+          // An answer may name a part by its stored title (what the model was given) or by the
+          // name on screen (SECTION NAMES); either counts. The chip shows the name on screen.
+          const shownName = sectionName(sec);
+          if ([sec.title, shownName].some((name) => al.indexOf(String(name).toLowerCase()) !== -1)) score += 3;
+          return { id: sec.id, title: shownName, score };
         })
         .filter((x) => x.score >= 3)
         .sort((a, b) => b.score - a.score)
@@ -1550,6 +1639,30 @@
             ))}
           </ul>
           <div className="faint tiny" style={{ marginTop: 8 }}>These live on the website; your base and your saved bases are the same there.</div>
+        </div>
+      );
+    }
+
+    // Saved screen: the link to the website's Compare, once two or more saved bases have a guide.
+    // RULE (auditor round 3, item 27; Chris's card 2026-11-24 "The clear fixes, one batch"): the app
+    // still builds no Compare of its own (WEBSITE TOOLS, above). Until now the link sat only on the
+    // signed-in account screen, so a signed-out reader never saw it. The bases travel in the
+    // address, so it works signed out too: the website cannot know this phone's list.
+    // WHY the bases as the Saved screen lists them, and not "My base first" as on the account
+    // screen (compareOrder): this link sits under that list, so it carries what the reader sees
+    // there. Compare shows at most WEBSITE_COMPARE_MAX, so a longer list sends its first three and
+    // the line under the link says so.
+    function CompareSavedLink({ slugs }) {
+      if (slugs.length < 2) return null;
+      const compareTool = WEBSITE_TOOLS.find((tool) => tool.path === "/compare");
+      const moreThanFit = slugs.length > WEBSITE_COMPARE_MAX;
+      return (
+        <div className="saved-compare" data-compare-count={Math.min(slugs.length, WEBSITE_COMPARE_MAX)}>
+          <a className="btn-plain saved-compare-link" href={websiteToolUrl(compareTool, slugs)} target="_blank" rel="noopener noreferrer">{compareTool.label} on the website</a>
+          <div className="faint tiny" style={{ marginTop: 8 }}>
+            Opens milspoliving.com with {moreThanFit ? "the first " + WEBSITE_COMPARE_MAX + " of these bases" : "these bases"} side by side.
+            {moreThanFit ? " It shows " + WEBSITE_COMPARE_MAX + " at a time; you can change them there." : ""}
+          </div>
         </div>
       );
     }
@@ -1982,6 +2095,17 @@
     const DEVICE_MY_BASE_KEY = "bg_my_base";
     const MY_BASE_LOG = "[MYBASE]";
     const NO_BASE_LISTED = "No base listed.";
+    // MY BASE AND SAVED, SAID ONCE EACH (auditor round 3, item 24; Chris's card 2026-11-24).
+    // The two stay two things (the rule and its road not taken are above). What was missing was a
+    // sentence: with one base saved, Home still read "No base listed." and nothing said why. The
+    // words follow the website's account page (milspoliving src/components/account-view.tsx: "Your
+    // own base (My base, above) is separate and does not take one of the 5 places.").
+    // WHY the count is said only for an account: the list kept on a phone has no cap (SAVED BASES).
+    const MY_BASE_EXPLAINED = "My base is the base you are at now. It is separate from your saved bases.";
+    function savedExplained(inAccount) {
+      return "Saved bases are the ones you are weighing. Your own base (My base, on Home) is separate"
+        + (inAccount ? " and does not take one of the " + MAX_SAVED_BASES + " places." : ".");
+    }
     const myBaseListeners = new Set();
     let myBaseSnapshot = { slug: null, name: null, inAccount: false };
     function readDeviceMyBase() {
@@ -2065,6 +2189,24 @@
       const list = myBaseSlug ? [myBaseSlug] : [];
       (savedSlugs || []).forEach((slug) => { if (!list.includes(slug)) list.push(slug); });
       return list.slice(0, WEBSITE_COMPARE_MAX);
+    }
+
+    /* ---------------- NAMES (one word per thing, the website's) ----------------
+       RULE (auditor round 3, items 1 to 4; Chris's card 2026-11-24, names "Use all four"): the
+       newsletter is "MilSpo Minute", the list of bases is "Find a base", the checklist is "PCS
+       checklist", the tool is "Compare bases". The app says the same words as milspoliving.com.
+       Where the app already agreed: "MilSpo Minute" in the sign-in sentence (SIGN_IN_TEXT) and
+       "Compare bases" in WEBSITE_TOOLS. Changed here: the way back from a guide and the heading of
+       the list read "Find a base" (they said "All bases" and "Guide"), and the Plan screen is headed
+       "PCS checklist" (it said "Your PCS plan").
+       NOT changed: the five tab labels (Home, Guide, Map, Plan, Saved). The auditor's tab redesign
+       is a separate proposal Chris has not approved, so the tab that holds the checklist is still
+       called "Plan" and the tab that lists the bases "Home". */
+    const FIND_A_BASE = "Find a base";
+    const PCS_CHECKLIST = "PCS checklist";
+    /** The way back from a guide to the list of bases (Home). A button, so a keyboard reaches it. */
+    function BackToList({ onBack }) {
+      return <button type="button" className="back" onClick={onBack}><Icon name="back" size={15} /> {FIND_A_BASE}</button>;
     }
 
     /* ---------------- Screens ---------------- */
@@ -2192,6 +2334,27 @@
       return (a.name || "").localeCompare(b.name || "");
     }
 
+    /* ---------------- BASE SEARCH: one rule for every box that finds a base by typing ----------------
+       Used by Home's search box and by "Moving to" on the PCS checklist (PlanBaseField), so the two
+       can never find different things for the same letters.
+       RULE (Chris, decision card 2026-11-24): a base is listed ONCE. A hub entry (index.json
+       "hub": true, today Joint Base San Antonio) is the umbrella over posts that have their own
+       guides ("parts"); the posts are what families look for, so the posts are always listed and
+       the hub appears only when the reader types the hub's own name ("San Antonio", "Joint Base",
+       "JBSA"), never for a post's name ("Lackland" used to return two results) and never in an
+       unfiltered list, where its posts already stand. The hub's name in the index carries the
+       post names in brackets, so a plain match on the name would find it for "lackland": that is
+       why the hub is matched on its name with the bracket part removed.
+       ROAD NOT TAKEN: dropping the hub entry from the index. Rejected: its guide file still exists
+       and saved-base rows may point at its slug, so the entry stays and is only hidden from search.
+       `typed` is what the reader typed, trimmed and in lower case. "" matches every base but a hub. */
+    function baseSearchText(b) { return (b.name + " " + (b.state || "") + " " + stateTokens(b.state).map(stateFull).join(" ")).toLowerCase(); }
+    function hubSearchName(b) { return (b.name || "").replace(/\s*\(.*$/, "").toLowerCase(); }
+    function baseMatchesSearch(b, typed) {
+      if (b.hub) return !!typed && (hubSearchName(b).indexOf(typed) !== -1 || typed === "jbsa" || typed.indexOf("jbsa ") === 0);
+      return !typed || baseSearchText(b).indexOf(typed) !== -1;
+    }
+
     // ADD TO HOME SCREEN (auditor round 2, item 25; Chris 2026-11-24). RULE: one quiet line, only in a
     // browser tab (not once the app is installed: display-mode standalone, or Safari's navigator.standalone),
     // dismissible, and remembered on the device so it is never shown twice. The words follow the phone:
@@ -2231,10 +2394,13 @@
         );
       }
       return (
-        <div className="mybase-row mybase-none" data-my-base="none">
-          <Icon name="home" size={16} /><span className="mybase-lbl">{NO_BASE_LISTED}</span>
-          <button type="button" className="btn-quiet" onClick={onPick} aria-pressed={picking}>{picking ? "Pick it below" : "Add your base"}</button>
-        </div>
+        <>
+          <div className="mybase-row mybase-none" data-my-base="none">
+            <Icon name="home" size={16} /><span className="mybase-lbl">{NO_BASE_LISTED}</span>
+            <button type="button" className="btn-quiet" onClick={onPick} aria-pressed={picking}>{picking ? "Pick it below" : "Add your base"}</button>
+          </div>
+          <div className="faint tiny mybase-explained">{MY_BASE_EXPLAINED}</div>
+        </>
       );
     }
 
@@ -2250,15 +2416,27 @@
       const startPicking = () => { setPicking(true); setTimeout(() => { if (searchRef.current) searchRef.current.focus(); }, 0); };
       const pickMyBase = (base) => { setPicking(false); onSetMyBase(base); };
       const cardPick = picking ? pickMyBase : null;
-      if (loading) return <div className="center"><div className="spin" /></div>;
-      // A failed load and a genuinely empty list are different things: only the second is "No bases yet".
-      if ((!bases || !bases.length) && loadFailed) return (
-        <div className="center">
-          <div>Couldn't load the base guides. Check your connection and try again.</div>
-          <button className="btn-quiet" style={{ marginTop: 12 }} onClick={onRetry}>Try again</button>
+      // The hero is drawn in EVERY state of Home, loading included. WHY: the launch mark in the HTML
+      // draws this same hero before the app has compiled (LAUNCH MARK, above the scripts); a loading
+      // state without it made the coin vanish and come back.
+      const hero = (
+        <div className="home-hero">
+          <img className="home-logo" src={ASSETS.logoMark} alt={BRAND} />
+          <div className="home-tag">{HOME_TAGLINE}</div>
         </div>
       );
-      if (!bases || !bases.length) return <div className="center">No bases yet.</div>;
+      if (loading) return <div className="content">{hero}<div className="center"><div className="spin" /></div></div>;
+      // A failed load and a genuinely empty list are different things: only the second is "No bases yet".
+      if ((!bases || !bases.length) && loadFailed) return (
+        <div className="content">
+          {hero}
+          <div className="center">
+            <div>Couldn't load the base guides. Check your connection and try again.</div>
+            <button className="btn-quiet" style={{ marginTop: 12 }} onClick={onRetry}>Try again</button>
+          </div>
+        </div>
+      );
+      if (!bases || !bases.length) return <div className="content">{hero}<div className="center">No bases yet.</div></div>;
 
       const ql = q.trim().toLowerCase();
       const isJoint = (b) => {
@@ -2271,25 +2449,7 @@
         return (b.branch || "").toLowerCase().indexOf(branch) !== -1;  // a joint base shows under each of its services too
       };
       const matchLoc = (b) => loc === "all" || stateTokens(b.state).indexOf(loc) !== -1;
-      const matchQ = (b) => {
-        if (!ql) return true;
-        const hay = (b.name + " " + (b.state || "") + " " + stateTokens(b.state).map(stateFull).join(" ")).toLowerCase();
-        return hay.indexOf(ql) !== -1;
-      };
-      // RULE (Chris, decision card 2026-11-24): a base is listed ONCE. A hub entry (index.json
-      // "hub": true, today Joint Base San Antonio) is the umbrella over posts that have their own
-      // guides ("parts"); the posts are what families look for, so the posts are always listed and
-      // the hub appears only when the reader types the hub's own name ("San Antonio", "Joint Base",
-      // "JBSA"), never for a post's name ("Lackland" used to return two results) and never in the
-      // unfiltered list, where its posts already stand. The hub's name in the index carries the
-      // post names in brackets, so the plain matchQ above would match it on "lackland": that is
-      // why the hub gets its own match on the name with the bracket part removed.
-      // ROAD NOT TAKEN: dropping the hub entry from the index. Rejected: its guide file still exists
-      // and saved-base rows may point at its slug, so the entry stays and is only hidden from search.
-      const hubSearchName = (b) => (b.name || "").replace(/\s*\(.*$/, "").toLowerCase();
-      const matchHub = (b) => !!ql && (hubSearchName(b).indexOf(ql) !== -1 || ql === "jbsa" || ql.indexOf("jbsa ") === 0);
-      const matchQOrHub = (b) => (b.hub ? matchHub(b) : matchQ(b));
-      const filtered = bases.filter((b) => matchBranch(b) && matchLoc(b) && matchQOrHub(b));
+      const filtered = bases.filter((b) => matchBranch(b) && matchLoc(b) && baseMatchesSearch(b, ql));
       const locOptions = Array.from(new Set(bases.flatMap((b) => stateTokens(b.state)))).sort((a, b) => stateFull(a).localeCompare(stateFull(b)));
 
       let body;
@@ -2313,10 +2473,7 @@
 
       return (
         <div className="content">
-          <div className="home-hero">
-            <img className="home-logo" src={ASSETS.logoMark} alt={BRAND} />
-            <div className="home-tag">Guides for your next duty station.</div>
-          </div>
+          {hero}
           <MyBaseHomeRow myBase={myBase} bases={bases} onOpen={onOpen} onPick={startPicking} picking={picking} />
           <AddToHomeScreenHint />
           <div className="home-controls">
@@ -2370,12 +2527,12 @@
         return () => { live = false; };
       }, [slug]);
 
-      if (err) return <div className="content"><span className="back" onClick={onBack}><Icon name="back" size={15} /> All bases</span><div className="center">Could not load this guide.<br />{err}</div></div>;
-      if (!data) return <div className="content"><span className="back" onClick={onBack}><Icon name="back" size={15} /> All bases</span><div className="center"><div className="spin" /></div></div>;
+      if (err) return <div className="content"><BackToList onBack={onBack} /><div className="center">Could not load this guide.<br />{err}</div></div>;
+      if (!data) return <div className="content"><BackToList onBack={onBack} /><div className="center"><div className="spin" /></div></div>;
 
       return (
         <div className="content">
-          <span className="back" onClick={onBack}><Icon name="back" size={15} /> All bases</span>
+          <BackToList onBack={onBack} />
           <div className="basehero" style={{ borderTopColor: branchColor(data.branch) }}>
             <div className="between">
               <h1>{data.name}</h1>
@@ -2458,6 +2615,54 @@
       document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(u);
     }
 
+    // "Moving to" on the PCS checklist: type a few letters, tap the base.
+    // RULE (auditor round 3, item 26; Chris's card 2026-11-24 "The clear fixes, one batch"): this was
+    // a dropdown of every base in the index (553 options on a phone), and it listed the Joint Base
+    // San Antonio hub entry that Home hides. It now finds a base by BASE SEARCH, the rule Home uses.
+    // The move date beside it stays the phone's own date picker: the most reliable date control.
+    // The stored value is unchanged (bg_pcs.base, a slug), so a plan made before this still shows,
+    // also one that names the hub.
+    const PLAN_BASE_MATCHES_SHOWN = 8; // the same count as the account screen's My base search
+    function PlanBaseField({ bases, slug, onChange }) {
+      const [typed, setTyped] = useState("");
+      const [searching, setSearching] = useState(false);
+      const chosen = slug ? (bases || []).find((b) => b.slug === slug) : null;
+      // Before the base list has loaded the slug is all there is; it reads well enough for a moment.
+      const chosenName = chosen ? chosen.name : (slug ? slug.replace(/-/g, " ") : "");
+      const typedLower = typed.trim().toLowerCase();
+      const allMatches = typedLower ? (bases || []).filter((b) => baseMatchesSearch(b, typedLower)).sort(byTierThenName) : [];
+      const matches = allMatches.slice(0, PLAN_BASE_MATCHES_SHOWN);
+      const pick = (b) => { onChange(b.slug); setTyped(""); setSearching(false); };
+      if (slug && !searching) {
+        return (
+          <div className="plan-base" data-plan-base="set">
+            <span className="plan-base-name">{chosenName}</span>
+            <button type="button" className="btn-quiet" onClick={() => { setTyped(""); setSearching(true); }}>Change</button>
+            <button type="button" className="btn-quiet" onClick={() => onChange("")}>Clear</button>
+          </div>
+        );
+      }
+      return (
+        <div data-plan-base="search">
+          <input id="plan-base" className="fld" type="search" value={typed} onChange={(e) => setTyped(e.target.value)} placeholder="Search base or state" autoFocus={searching} />
+          {matches.length ? (
+            <ul className="lst plan-base-matches">
+              {matches.map((b) => (
+                <li key={b.slug}>
+                  <button type="button" className="plan-base-match" onClick={() => pick(b)}>
+                    <span className="t">{b.name}</span>
+                    <span className="d">{[b.branch, b.state].filter(Boolean).join("  -  ")}</span>
+                  </button>
+                </li>
+              ))}
+            </ul>
+          ) : (typedLower ? <div className="faint tiny" style={{ marginTop: 6 }}>No bases match.</div> : null)}
+          {allMatches.length > matches.length ? <div className="faint tiny" style={{ marginTop: 6 }}>Showing the first {matches.length}. Keep typing to narrow the list.</div> : null}
+          {slug ? <button type="button" className="btn-quiet" style={{ marginTop: 6 }} onClick={() => setSearching(false)}>Cancel</button> : null}
+        </div>
+      );
+    }
+
     function PlanScreen({ bases, onOpen }) {
       const [pcs, setPcs] = useState(() => LS.get("bg_pcs", { moveDate: "", base: "" }));
       const [done, setDone] = useState(() => LS.get("bg_pcs_done", {}));
@@ -2468,17 +2673,14 @@
       const until = move ? daysUntil(move) : null;
       return (
         <div className="content">
-          <h2 className="screen-h">Your PCS plan</h2>
+          <h2 className="screen-h">{PCS_CHECKLIST}</h2>
           <div className="card">
-            <label className="fld-l">Move date</label>
-            <input className="fld" type="date" value={pcs.moveDate} onChange={(e) => save({ ...pcs, moveDate: e.target.value })} />
-            <label className="fld-l" style={{ marginTop: 12 }}>Moving to</label>
-            <select className="fld" value={pcs.base} onChange={(e) => save({ ...pcs, base: e.target.value })}>
-              <option value="">Select a base</option>
-              {[...(bases || [])].sort(byTierThenName).map((b) => <option key={b.slug} value={b.slug}>{b.name}</option>)}
-            </select>
+            <label className="fld-l" htmlFor="plan-move-date">Move date</label>
+            <input id="plan-move-date" className="fld" type="date" value={pcs.moveDate} onChange={(e) => save({ ...pcs, moveDate: e.target.value })} />
+            <label className="fld-l" htmlFor="plan-base" style={{ marginTop: 12 }}>Moving to</label>
+            <PlanBaseField bases={bases} slug={pcs.base} onChange={(slug) => save({ ...pcs, base: slug })} />
           </div>
-          {!move ? <div className="pending" style={{ padding: "6px 2px" }}>Enter your move date to build a timeline.</div> : (
+          {!move ? <div className="pending" style={{ padding: "6px 2px" }}>Enter your move date to put a date on each step.</div> : (
             <div>
               <div className="muted small" style={{ margin: "4px 2px 12px" }}>{until >= 0 ? until + " days until your move (" + fmtDate(move) + ")" : "Move date was " + fmtDate(move)}</div>
               {baseObj && until != null && until >= 0 && until <= 90 ? (
@@ -2489,7 +2691,7 @@
                 </div>
               ) : null}
               <div className="between" style={{ margin: "4px 2px 10px" }}>
-                <h3 style={{ fontSize: 16 }}>Timeline</h3>
+                <h3 style={{ fontSize: 16 }}>Your steps, by date</h3>
                 <button className="btn-quiet" onClick={() => downloadFile(buildICS(move, baseObj ? baseObj.name : ""), "pcs-timeline.ics", "text/calendar")}><Icon name="download" size={15} /> Add to calendar</button>
               </div>
               {PCS_BUCKETS.map((bk) => {
@@ -2538,7 +2740,10 @@
 
     function SavedScreen({ bases, saved, onToggleSave, onOpen, account, inAccount, onOpenAccount }) {
       const list = (bases || []).filter((b) => saved.includes(b.slug));
-      if (!list.length) return <div className="content"><h2 className="screen-h">Saved</h2><div className="center">No saved bases yet.<br />Tap the bookmark on a base to save it here.</div></div>;
+      const explained = <p className="faint tiny saved-explained">{savedExplained(inAccount)}</p>;
+      if (!list.length) return <div className="content"><h2 className="screen-h">Saved</h2><div className="center">No saved bases yet.<br />Tap the bookmark on a base to save it here.</div>{explained}</div>;
+      // Only a base with a guide can be compared ("Coming soon" has no page on the website).
+      const slugsWithGuide = list.filter((b) => b.ready).map((b) => b.slug);
       return (
         <div className="content">
           <h2 className="screen-h">Saved</h2>
@@ -2558,6 +2763,8 @@
               </div>
             </div>
           ))}
+          <CompareSavedLink slugs={slugsWithGuide} />
+          {explained}
         </div>
       );
     }
@@ -2809,7 +3016,7 @@
               ))}
             </ul>
           )}
-          <div className="faint tiny" style={{ marginTop: 8 }}>Up to {MAX_SAVED_BASES} bases, kept in your account and shown on every device you sign in on.</div>
+          <div className="faint tiny" style={{ marginTop: 8 }}>Up to {MAX_SAVED_BASES} bases, kept in your account and shown on every device you sign in on. Your own base (My base, above) is separate and does not take one of the {MAX_SAVED_BASES} places.</div>
 
           <WebsiteTools saved={saved} myBaseSlug={myBase.slug} />
 
@@ -3048,7 +3255,7 @@
       if (tab === "home") body = <Home bases={bases} loading={loading} loadFailed={loadFailed} onRetry={loadBases} onOpen={open} saved={saved} onToggleSave={toggleSave} myBase={myBase} onSetMyBase={setMyBaseAndTell} />;
       else if (tab === "guide") body = slug
         ? <BaseDetail slug={slug} onBack={back} saved={saved} onToggleSave={toggleSave} myBase={myBase} onSetMyBase={setMyBaseAndTell} />
-        : <div className="content"><h2 className="screen-h">Guide</h2><PickABase bases={bases} saved={saved} onOpen={open} hint="Open a base to read its guide." /></div>;
+        : <div className="content"><h2 className="screen-h">{FIND_A_BASE}</h2><PickABase bases={bases} saved={saved} onOpen={open} hint="Open a base to read its guide." /></div>;
       else if (tab === "map") body = <MapScreen slug={slug} bases={bases} saved={saved} onOpen={open} />;
       else if (tab === "plan") body = <PlanScreen bases={bases} onOpen={open} />;
       else if (tab === "account") body = <AccountScreen account={account} saved={saved} inAccount={inAccount} bases={bases} onToggleSave={toggleSave} onOpen={open} myBase={myBase} onSetMyBase={setMyBaseAndTell} />;
@@ -3099,6 +3306,25 @@
         </div>
       );
     }
+
+    /* ---------------- LAUNCH MARK check ----------------
+       The HTML draws the wordmark and the Home hero before this script has compiled (LAUNCH MARK,
+       above the scripts). Its words are a copy of the config; this says so in the log when a rename
+       changed one side only. It never blocks the launch: a stale mark is a half-second of old words. */
+    function checkLaunchMark() {
+      const mark = document.querySelector("[data-launch-mark]");
+      if (!mark) { console.warn("[LAUNCH] no launch mark in the page: the first paint is blank until the app has compiled"); return; }
+      const shown = (name) => {
+        const el = mark.querySelector('[data-launch="' + name + '"]');
+        if (!el) return null;
+        return name === "logo" ? el.getAttribute("src") : el.textContent.trim();
+      };
+      const expected = [["app-name", APP_NAME], ["brand", BRAND], ["tagline", HOME_TAGLINE], ["logo", ASSETS.logoMark]];
+      const differ = expected.filter(([name, want]) => shown(name) !== want).map(([name]) => name);
+      if (differ.length) console.warn("[LAUNCH] the launch mark in the HTML and the config differ on: " + differ.join(", ") + ". Change the mark to match.");
+      else console.log("[LAUNCH] launch mark matches the config (v" + APP_VERSION + ")");
+    }
+    checkLaunchMark();
 
     ReactDOM.createRoot(document.getElementById("root")).render(<App />);
   </script>
