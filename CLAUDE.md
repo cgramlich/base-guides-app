@@ -209,6 +209,13 @@ match the website"; paid lookups "Free data first, then a cap"; stores "Stay a w
   Near me, the shared checklist, reminders, a tab redesign, the other screens in the website's look.
 - Checks and how they were run: `docs/first-screen.md`.
 
+## Ask about this base: where the chips come from
+The app sends `want_sections: true` to the backend's `/api/ai/relay` (backend 0.4.0) and shows a
+"From this guide" chip for each section the backend says the answer used (`namedChips`). When the
+answer used none, or the model did not say, NO chip is shown (Chris, decision card 2026-11-26,
+"App chips"). The older word-matching guess (`sourceChips`) is kept only for a backend that sends
+no `sections` list.
+
 ## How Chris works
 - Plain-English feedback; you read the code and edit directly. Iterate freely.
 - Ask before building: feature work gets a SHORT proposal + sign-off first. One step
