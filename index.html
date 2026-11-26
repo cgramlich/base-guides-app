@@ -761,7 +761,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.28.1";
+    const APP_VERSION = "0.29.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1716,13 +1716,21 @@
     }
 
     // SOURCE CHIPS (auditor round 2, item 21; Chris 2026-11-24). RULE: every answer names the guide
-    // sections it drew on, as tappable chips that open that section. The backend relay returns only
-    // the answer text (no section list, checked 2026-11-24: {answer, model, base}), so the chips are
-    // found here by matching the answer against each section's own words: a section scores one point
-    // for every distinct word of six letters or more that the answer and the section share, plus
-    // three when the answer names the section's title. The three best sections with at least three
-    // points are shown. WARNING: this is a match, not the model's own citation; the chips say "From
-    // this guide", never "cited". When the relay starts returning section ids, read them instead.
+    // sections it drew on, as tappable chips that open that section.
+    //
+    // WHERE THE CHIPS COME FROM (Chris, decision card 2026-11-26, "App chips": "Build it"): the
+    // backend names the sections an answer used (relay field `sections`, asked for with
+    // `want_sections`; backend 0.4.0). Those are the chips: see namedChips below.
+    // RULE (same card): when the answer used no section, or the model did not say, NO chip is
+    // shown. A guessed chip under an "I don't have that" answer would point at a source that
+    // did not answer the question.
+    //
+    // THE GUESS BELOW (sourceChips) IS THE FALLBACK FOR AN OLD BACKEND ONLY: one that answers
+    // without a `sections` field. It matches the answer against each section's own words: one
+    // point for every distinct word of six letters or more that the answer and the section share,
+    // plus three when the answer names the section's title; the three best with at least three
+    // points are shown. WARNING: that is a match, not the model's own statement. ROAD NOT TAKEN:
+    // using the guess whenever the backend names nothing (the second option on the card).
     function sectionText(sec) {
       const d = sec && sec.data;
       if (!d) return "";
@@ -1753,10 +1761,29 @@
         .slice(0, 3);
     }
 
+    // The chips for the sections the backend named, in the backend's order.
+    // RULE (accuracy; the same rule as the backend's own check): a chip is shown only for a
+    // section this guide really has on screen and that is not unverified. An id the app does not
+    // know is left out: a chip that opens nothing is worse than no chip.
+    function namedChips(named, sections) {
+      const byId = new Map((sections || [])
+        .filter((sec) => sec && sec.id && sec.type !== "pending" && sec.type !== "places_pending")
+        .map((sec) => [sec.id, sec]));
+      const chips = [];
+      (named || []).forEach((entry) => {
+        const sec = entry && byId.get(entry.id);
+        if (sec && !chips.some((chip) => chip.id === sec.id)) chips.push({ id: sec.id, title: sectionName(sec) });
+      });
+      return chips.slice(0, 3);
+    }
+
     // "Ask about this base" - grounded AI Q&A via the backend.
     function AskBox({ slug, sections, onOpenSection, focusOnOpen }) {
       const [q, setQ] = useState("");
       const [a, setA] = useState(null);
+      // The sections the backend named for the answer on screen. null = the backend sent no list
+      // (an old backend): only then is the guess used.
+      const [named, setNamed] = useState(null);
       const [loading, setLoading] = useState(false);
       const [err, setErr] = useState(false);
       const inputRef = useRef(null);
@@ -1771,15 +1798,17 @@
       const ask = async () => {
         const question = q.trim();
         if (!question) return;
-        setLoading(true); setA(null); setErr(false);
+        setLoading(true); setA(null); setNamed(null); setErr(false);
         try {
-          const d = await postJSON(apiUrl("/api/ai/relay"), { slug, question });
+          const d = await postJSON(apiUrl("/api/ai/relay"), { slug, question, want_sections: true });
           setA(d.answer || "(no answer)");
-        } catch (e) { setErr(true); }
+          setNamed(Array.isArray(d.sections) ? d.sections : null);
+          console.log("[ASK] answer received: sections named by the backend =", Array.isArray(d.sections) ? d.sections.map((s) => s.id).join(",") || "none" : "no list (old backend)", "stated =", d.sections_stated);
+        } catch (e) { setErr(true); console.log("[ASK] the question could not be answered:", e && e.message); }
         setLoading(false);
       };
       const clear = () => {
-        setQ(""); setA(null); setErr(false);
+        setQ(""); setA(null); setNamed(null); setErr(false);
         if (inputRef.current) inputRef.current.focus();
       };
       return (
@@ -1797,7 +1826,7 @@
           {loading ? <div className="ask-ans faint ask-thinking"><span className="spin spin-sm" />Thinking&hellip;</div> : null}
           {err ? <div className="ask-ans faint">Couldn't reach the assistant. Start the backend and try again.</div> : null}
           {a ? <div className="ask-ans"><Markdown text={a} />
-            {(() => { const chips = sourceChips(a, sections); return chips.length ? (
+            {(() => { const chips = named ? namedChips(named, sections) : sourceChips(a, sections); return chips.length ? (
               <div className="ask-chips"><span className="lbl">From this guide:</span>
                 {chips.map((c) => <button key={c.id} className="chip-src" onClick={() => onOpenSection && onOpenSection(c.id)}>{c.title}</button>)}
               </div>) : null; })()}
