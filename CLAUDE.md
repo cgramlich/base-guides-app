@@ -146,8 +146,9 @@ grade). The contract with the website for both: `docs/app-accounts.md`.
   the key is absent does a session opened with a password count (`sessionUsedPassword`, the
   token's amr). NEVER logged, never in an address.
 - The words on the sign-in screen are the website's (`SIGN_IN_TEXT`, version
-  `SIGN_IN_SCREEN_VERSION`, `2026-11-27-a` = `-d` plus "Use a password instead" and "We email you a code;
-  a password is optional." (was "No password: we email you a code."); `-d` = `-c` with "then MilSpo Minute"
+  `SIGN_IN_SCREEN_VERSION`, `2026-11-27-b` = `-d` plus "Use a password instead" and "We email you a code.
+  A password is optional." (Chris's card "Sign-in line", 2026-11-27; was "No password: we email you a code.";
+  `-a` was the same with a semicolon, never released); `-d` = `-c` with "then MilSpo Minute"
   (no "the"); `-c` = the website's `-b` plus the optional First name box), with "link" changed to "code".
   Public text says only that MilSpo Living is "affiliated with MilHousing Network"
   (`PUBLISHER_LINE`), nothing about ownership or company structure (Chris 2026-11-23).

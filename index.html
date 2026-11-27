@@ -2070,9 +2070,10 @@
     // change to its own copy of the sentence. Nothing a family agreed to changed.
     // "2026-11-27-a": the optional password (the contract with the website of 2026-11-27). The
     // screen offers "Use a password instead" beside the code; "No password: we email you a code."
-    // became "We email you a code; a password is optional." The website's copy of the sentence is
-    // the website's to change (PROPOSED WORDING, not yet read by Chris).
-    const SIGN_IN_SCREEN_VERSION = "2026-11-27-a";
+    // became "We email you a code; a password is optional." (proposed wording, never released).
+    // "2026-11-27-b" (Chris, decision card "Sign-in line", 2026-11-27): "We email you a code. A
+    // password is optional." The website shows the same words.
+    const SIGN_IN_SCREEN_VERSION = "2026-11-27-b";
     // The emailed code's length is set in Supabase Auth, not here (see the WARNING above): accept the
     // whole range Supabase allows so a settings change never locks readers out.
     const CODE_MIN_DIGITS = 6;
@@ -2080,7 +2081,7 @@
     const SIGN_IN_TEXT = {
       label: "Sign in",
       title: "Save my move",
-      whatYouGet: "We keep your saved bases, so you find them on any phone or computer. We email you a code; a password is optional.",
+      whatYouGet: "We keep your saved bases, so you find them on any phone or computer. We email you a code. A password is optional.",
       firstNameLabel: "First name (optional)",
       emailLabel: "Email address",
       // WHY the weekly email is stated here although the sends are later slices on the website:

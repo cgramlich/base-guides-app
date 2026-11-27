@@ -309,8 +309,9 @@ The repository has no unit test runner; none was added.
 
 - Babel standalone 7.23.6 transform of the app script: clean. No new non-ASCII text.
 - Playwright (Chromium, 390 px, the file served locally on port 3270; the base list and Fort Hood's
-  guide from the repo, Fort Hood's real `/api/bah` table fetched once and served to the page), 68 of
-  68 passed: the sign-in screen with the real supabase-js (version `2026-11-27-a`, "Use a password
+  guide from the repo, Fort Hood's real `/api/bah` table fetched once and served to the page), 72 of
+  72 passed: the sign-in screen with the real supabase-js (version `2026-11-27-b`, the first line "We
+  email you a code. A password is optional." (Chris's card "Sign-in line", 2026-11-27), "Use a password
   instead", the 12-character rule: Sign in disabled at 11, enabled at 12, Show/Hide, autocomplete,
   maxlength 72; nothing submitted); the pay grade on the device (set from the card, the table's E-5
   figures, kept over a reload, O-8 with no figure, removed); with a stand-in supabase-js (no network,
