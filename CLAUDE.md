@@ -118,18 +118,34 @@ chip grid or a stub. Details: `docs/app-look.md`.
   client. Full notes, the Supabase dashboard step and the test procedure:
   `docs/app-accounts.md`.
 
-## Account (sign in by emailed code) - the rules in one place
+## Account (sign in by emailed code, or an optional password) - the rules in one place
 Chris's cards 2026-11-24: "Yes, account then look" (account only, no restyle), "6-digit
-code", "Yes, both now" (Delete my account, Apple rule 5.1.1(v)), "No social logins".
+code", "Yes, both now" (Delete my account, Apple rule 5.1.1(v)), "No social logins"; 2026-11-26
+"Sign-in" ("Code now, password next") and 2026-11-27 "Do next" (the password), "Pay grade" ("One
+pay grade that can be edited with changes like a promotion"), "Match" (app and website keep the one
+grade). The contract with the website for both: `docs/app-accounts.md`.
 - Sign-in is a code emailed by Supabase Auth (length is a Supabase setting, 8 on 2026-11-24; the app accepts 6 to 10 digits) (`signInWithOtp` with no
   `emailRedirectTo`, then `verifyOtp` type `email`). NOT a link: a store app cannot rely on
-  a link opening the app, and a link completes only on the device that asked. Email only,
-  no password, no Apple/Google (deliberate: it also avoids the Sign in with Apple rule).
+  a link opening the app, and a link completes only on the device that asked. No Apple/Google
+  (deliberate: it also avoids the Sign in with Apple rule).
   WARNING: the Supabase "Magic Link" email template must print `{{ .Token }}` or readers
   get a link and no code (`docs/app-accounts.md`).
+- PASSWORD (optional, from 0.30.0): the code stays the main way in; nobody is asked for a password.
+  Set or changed only while signed in (account screen, Password row: "Set a password" / "Change",
+  `updateUser`); signed in with "Use a password instead" (`signInWithPassword`), landing where the
+  code lands. No reset flow: "Forgot it? Sign in with a code, then set a new one." At least 12
+  characters (`PASSWORD_MIN_CHARS`, said beside every box and enforced by the form; Supabase's own
+  minimum 12 and leaked-password protection were set by Chris 2026-11-27), Show/Hide,
+  autocomplete current-password / new-password. "Change" asks for the current password
+  (`current_password`, for "secure password change"); a refusal for an old session reads "Sign in
+  again with a code, then change it.", a leaked one "That password has appeared in a data leak.
+  Choose another." A wrong password never says which part was wrong. Supabase does not tell a
+  client whether an account has a password, so "Change" shows only when the session was opened
+  with one or one was set in it (`sessionUsedPassword`). NEVER logged, never in an address.
 - The words on the sign-in screen are the website's (`SIGN_IN_TEXT`, version
-  `SIGN_IN_SCREEN_VERSION`, `2026-11-24-d` = `-c` with "then MilSpo Minute" (no "the"); `-c` = the website's `-b` plus the optional First name
-  box), with "link" changed to "code".
+  `SIGN_IN_SCREEN_VERSION`, `2026-11-27-a` = `-d` plus "Use a password instead" and "We email you a code;
+  a password is optional." (was "No password: we email you a code."); `-d` = `-c` with "then MilSpo Minute"
+  (no "the"); `-c` = the website's `-b` plus the optional First name box), with "link" changed to "code".
   Public text says only that MilSpo Living is "affiliated with MilHousing Network"
   (`PUBLISHER_LINE`), nothing about ownership or company structure (Chris 2026-11-23).
 - THE HEADER RULE (Chris, 2026-11-24, after testing): the top bar must make the state obvious.
@@ -156,8 +172,19 @@ code", "Yes, both now" (Delete my account, Apple rule 5.1.1(v)), "No social logi
 - Delete my account calls the website's database functions `request_account_deletion` /
   `cancel_account_deletion` (30 days, nothing sent while it waits); until that migration
   is applied the button answers "Not available yet".
-- Pay grade stays on the phone, never in the account. Logs: `[ACCOUNT]`, `[SAVED]`, masked
-  address, never a code.
+- PAY GRADE (Chris 2026-11-27; section PAY GRADE in index.html): ONE grade per reader, in
+  `profiles.pay_grade`, written only through `rpc('set_pay_grade', { g })`; one facade (`usePayGrade`,
+  `setPayGrade`) over the device value (`bg_pay_grade`) or the account's. At sign-in the account's
+  grade wins, a grade only the phone has is copied up once, then the device copy is cleared (as My
+  base). A missing column or function = "Not available yet. Your pay grade stays on this phone."
+  The list is a COPY of the website's `PAY_GRADES` (src/lib/pay-grade-rules.ts; change both).
+  Shown and changed on the account screen (Pay grade row) and the guide's housing allowance card:
+  with a grade, "Your rate, E-5" with dependents and without, and "Change grade"; without one, the
+  calculator as before and "Set your pay grade to see your rate". Only figures from the backend's
+  `/api/bah` table are shown; a grade the table lacks (O-8 to O-10, O-1E to O-3E) says so and links
+  the DoD calculator. ROAD NOT TAKEN: the rule until 2026-11-27, "pay grade stays on the phone,
+  never in the account".
+- Logs: `[ACCOUNT]`, `[SAVED]`, `[PAYGRADE]`, masked address, never a code, a password or a grade.
 - Store builds (Capacitor, appId `com.baseguides.app`, same pattern as
   `menucaptain-native-build`): nothing here depends on a URL callback, so the code flow
   works unchanged inside the wrapper; supabase-js must be vendored with React when the

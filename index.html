@@ -8,9 +8,10 @@
   Live layer (AI Q&A + nearby places) is served by the backend via API_BASE.
   Long-form base stories come from the backend too (/api/bases/<slug>/story), the
   same stories milspoliving.com shows, read from the shared database.
-  Account: a reader can sign in (a code by email) against the SAME Supabase
-  project as milspoliving.com; saved bases are then the website's rows, so a base
-  saved in either place shows in both (ACCOUNT and SAVED BASES sections below).
+  Account: a reader can sign in (a code by email, or an optional password) against
+  the SAME Supabase project as milspoliving.com; saved bases are then the website's
+  rows, so a base saved in either place shows in both (ACCOUNT and SAVED BASES
+  sections below). The one pay grade is kept the same way (PAY GRADE section).
   Notes: all console/log output is plain ASCII (no emoji) by design.
 -->
 <html lang="en">
@@ -497,6 +498,13 @@
     .acct-name{display:flex; align-items:center; gap:10px; flex-wrap:wrap;}
     .acct-name .fld{flex:1 1 140px; width:auto;}
     .acct-name-form{margin:2px 0 4px;}
+    /* The password box (PasswordField) and the pay grade (PAY GRADE). The rule line sits right
+       under its box; the grade's list is wide enough for "No pay grade". */
+    .pw-field{margin-bottom:12px;}
+    .pw-rule{margin-top:4px;}
+    .acct-name .pay-grade-sel{flex:0 1 180px; width:auto; min-width:140px;}
+    .bah-mine-h{font-size:13.5px; font-weight:500; color:var(--n-ink); margin:0 0 4px;}
+    .bah-mine .bah-out{margin:4px 0 6px;}
     /* The Appearance row (section LOOK of the app script): a device setting under the account screen. */
     .look{padding:8px 20px 20px; border-top:1px solid var(--n-line); margin-top:8px;}
     .look-l{font-size:13px; color:var(--n-dim); margin:12px 0 8px;}
@@ -761,7 +769,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.29.0";
+    const APP_VERSION = "0.30.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -819,9 +827,8 @@
       return r.json();
     }
 
-    // Browser storage for what stays on the phone: the PCS plan, its ticks and the device's saved
-    // bases (see SAVED BASES). RULE (Chris, 2026-11-24): a pay grade stays on the device, never in
-    // the account (the website keeps it in browser storage as msl.rank; the app stores none yet).
+    // Browser storage for what stays on the phone: the PCS plan, its ticks, and the device copies of
+    // the saved bases, My base and the pay grade while signed out (SAVED BASES, MY BASE, PAY GRADE).
     const LS = {
       get(k, d) { try { const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
       set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* ignore */ } },
@@ -1334,12 +1341,21 @@
 
     // BAH calculator - rates come from the single source of truth (/api/bah, backed
     // by the bah_rates table). Falls back to inline data.rates if the table is unreachable.
+    // THE READER'S OWN RATE (Chris, decision card "Pay grade", 2026-11-27; PAY GRADE): with a pay
+    // grade kept, the card shows that grade's rate with dependents and without (the app does not know
+    // which applies) and "Change grade"; with none, the calculator as before and "Set your pay grade
+    // to see your rate". ACCURACY RULE: every figure shown is a row of the table the backend sent.
+    // A grade the table has no row for (the backend's table stops at O-7 and leaves out O-1E to O-3E)
+    // says so and points to the DoD calculator; the app never derives a rate from another grade's.
     const BAH_FALLBACK_URL = "https://www.travel.dod.mil/Allowances/Basic-Allowance-for-Housing/BAH-Rate-Lookup/";
     function BAHCalc({ data }) {
       const [table, setTable] = useState(data.rates ? data : null);
       const [state, setState] = useState(data.rates ? "ok" : (data.mha ? "loading" : "err"));
       const [grade, setGrade] = useState("");
       const [deps, setDeps] = useState(true);
+      const payGrade = usePayGrade();
+      const [pickingGrade, setPickingGrade] = useState(false);
+      const [gradeNote, setGradeNote] = useState("");
       useEffect(() => {
         if (data.rates || !data.mha) return;
         let live = true; setState("loading");
@@ -1359,8 +1375,36 @@
       );
       const grades = Object.keys(table.rates || {});
       const r = table.rates[grade] ? table.rates[grade][deps ? "w" : "wo"] : null;
+      const picker = (
+        <PayGradePicker idSuffix="bah" initial={payGrade.grade || grade}
+          onSaved={(result) => { setPickingGrade(false); setGradeNote(result === "unavailable" ? PAY_GRADE_TEXT.unavailable : ""); }}
+          onCancel={() => setPickingGrade(false)} />
+      );
+      const noteLine = gradeNote ? <div className="faint tiny" role="status" style={{ marginTop: 6 }}>{gradeNote}</div> : null;
+      if (payGrade.grade) {
+        const mine = table.rates[payGrade.grade] || null;
+        const amount = (value) => (value != null ? "$" + value.toLocaleString() : "-");
+        return (
+          <div data-bah-mode="mine" data-bah-grade={payGrade.grade}>
+            <div className="bah-mine-h">Your rate, {payGrade.grade}</div>
+            {mine ? (
+              <div className="bah-mine">
+                <div className="bah-out"><span className="bah-amt">{amount(mine.w)}</span><span className="bah-mo">/ month with dependents</span></div>
+                <div className="bah-out"><span className="bah-amt">{amount(mine.wo)}</span><span className="bah-mo">/ month without dependents</span></div>
+              </div>
+            ) : (
+              <div className="pending" data-bah-no-row>This table has no rate for {payGrade.grade}. <a className="srclink" href={calc} target="_blank" rel="noopener noreferrer">Check the official DoD calculator.</a></div>
+            )}
+            <div className="muted tiny">Tax-free &middot; MHA {table.mha} &middot; CY{table.year}</div>
+            {pickingGrade ? picker : <button type="button" className="btn-quiet" onClick={() => { setGradeNote(""); setPickingGrade(true); }}>{PAY_GRADE_TEXT.changeGrade}</button>}
+            {noteLine}
+            <div className="bah-help">"With dependents" is the rate for a service member with a spouse or family; "without" is the single rate. The amount is set by your pay grade and the base's ZIP code, not by how many dependents you have.</div>
+            <a className="btn-quiet" style={{ marginTop: 12, display: "inline-flex" }} href={calc} target="_blank" rel="noopener noreferrer">Other ranks or verify on the official DoD calculator</a>
+          </div>
+        );
+      }
       return (
-        <div>
+        <div data-bah-mode="browse">
           <div className="bah-row">
             <select className="fld bah-sel" value={grade} onChange={(e) => setGrade(e.target.value)}>
               {grades.map((g) => <option key={g} value={g}>{g}</option>)}
@@ -1375,6 +1419,8 @@
             <span className="bah-mo">/ month, tax-free</span>
           </div>
           <div className="muted tiny">{grade}{deps ? ", with dependents" : ", without dependents"} &middot; MHA {table.mha} &middot; CY{table.year}</div>
+          {pickingGrade ? picker : <button type="button" className="btn-quiet" onClick={() => { setGradeNote(""); setPickingGrade(true); }}>{PAY_GRADE_TEXT.setToSee}</button>}
+          {noteLine}
           <div className="bah-help">"With dependents" is the rate for a service member with a spouse or family; "without" is the single rate. The amount is set by your pay grade and the base's ZIP code, not by how many dependents you have.</div>
           <a className="btn-quiet" style={{ marginTop: 12, display: "inline-flex" }} href={calc} target="_blank" rel="noopener noreferrer">Other ranks or verify on the official DoD calculator</a>
         </div>
@@ -1845,7 +1891,14 @@
        rules and names, without the Next.js plumbing. This slice is the account only; no restyle.
 
        RULES
-       - No password, ever. Sign-in is a code emailed by Supabase Auth (email OTP).
+       - The main way in is a code emailed by Supabase Auth (email OTP). A PASSWORD IS OPTIONAL
+         (Chris, decision card "Sign-in", 2026-11-26: "Code now, password next", and 2026-11-27 "Do
+         next"; the shared contract with the website of 2026-11-27): a signed-in reader may set one
+         on the account screen and then sign in with it ("Use a password instead"). Nobody is ever
+         asked for one. There is no reset flow: a forgotten password is replaced by signing in with a
+         code and setting a new one. The rules of the password are with PASSWORD_MIN_CHARS below.
+         ROAD NOT TAKEN (the rule before 2026-11-26): "no password, ever". Chris asked for a way in
+         that never needs the mailbox, kept beside the code.
          WARNING: the code's LENGTH is a project setting (Supabase Auth, "email OTP length": 8 on
          2026-11-24, 6 in older projects, up to 10). The app never assumes a length: it accepts
          CODE_MIN_DIGITS to CODE_MAX_DIGITS. The first test (2026-11-24) failed because the app
@@ -1872,7 +1925,8 @@
          length rules live, shared with the website. Until the website's migration is applied the
          function is missing and the screen says "Not available yet", like the delete functions.
          The name is never logged.
-       - Logs carry a masked address only (maskEmail) and never a code.
+       - Logs carry a masked address only (maskEmail), never a code, never a password and never a
+         pay grade.
        - Delete my account (Apple rule 5.1.1(v); Chris 2026-11-23): the request is recorded by the
          database function request_account_deletion; the account and its rows are removed 30 days
          later and nothing is sent while it waits; cancel_account_deletion withdraws it. The
@@ -1972,6 +2026,41 @@
       );
     }
 
+    // THE PASSWORD (optional; the rule and its history are in ACCOUNT, RULES, above). The contract
+    // with the website (2026-11-27) and Chris's Supabase settings of the same day:
+    //   - At least PASSWORD_MIN_CHARS characters, said beside every password box and enforced by the
+    //     form. Supabase Auth also enforces it (minimum length 12, set in the dashboard 2026-11-27),
+    //     but the app does not rely on that setting: a dashboard change must not let a short one in.
+    //   - Leaked password protection is on: Supabase refuses a password seen in a data breach
+    //     (a weak_password error with the reason "pwned"); the reader is told so in one sentence.
+    //   - "Secure password change" may be on: a change can be refused as "reauthentication needed"
+    //     when the session is old, and the CURRENT password can be required to change an existing
+    //     one. So "Change" asks for the current one (supabase-js 2.119.2, updateUser's
+    //     current_password), and a refusal says "Sign in again with a code, then change it." A fresh
+    //     code sign-in passes both checks, so a FIRST password set right after one needs nothing else.
+    //     ROAD NOT TAKEN: supabase.auth.reauthenticate(), which emails a second code to type before
+    //     the change. Signing in again with a code is the same proof with one screen the reader
+    //     already knows.
+    //   - A wrong password answers one sentence that never says which part was wrong.
+    //   - A password is never logged, never put in an address and never kept by the app: it goes
+    //     from the box to supabase-js and the box is emptied.
+    // PASSWORD_MAX_CHARS: Supabase Auth refuses a password longer than 72 characters (the bcrypt
+    // limit); the box stops there so the reader is not refused for a length they cannot see.
+    const PASSWORD_MIN_CHARS = 12;
+    const PASSWORD_MAX_CHARS = 72;
+    const PASSWORD_MESSAGE = {
+      "wrong": "That email and password do not match. Try again or sign in with a code.",
+      "too-short": "Use at least " + PASSWORD_MIN_CHARS + " characters.",
+      "leaked": "That password has appeared in a data leak. Choose another.",
+      "weak": "Choose a stronger password.",
+      "same": "That is the password you have now. Choose a new one.",
+      "reauth": "Sign in again with a code, then change it.",
+      "current-needed": "Enter your current password too.",
+      "current-wrong": "Your current password did not match. Try again, or sign in again with a code, then change it.",
+      "too-many": "Too many tries. Wait a minute, then try again.",
+      "failed": "That did not work. Try again in a few minutes.",
+    };
+
     // The sign-in screen's words carry a version: the screen is the record of what a family agreed
     // to (website, account-settings.ts, SIGN_IN_SCREEN_VERSION). The sentences are the website's
     // with one change: the website emails a link, the app emails a code. "-c" (2026-11-24): the
@@ -1979,7 +2068,11 @@
     // "-d" (2026-11-25): one word dropped, "then MilSpo Minute" (was "then the MilSpo Minute"). The
     // newsletter's one name has no "the" (NAMES, auditor round 3 item 1); the website made the same
     // change to its own copy of the sentence. Nothing a family agreed to changed.
-    const SIGN_IN_SCREEN_VERSION = "2026-11-24-d";
+    // "2026-11-27-a": the optional password (the contract with the website of 2026-11-27). The
+    // screen offers "Use a password instead" beside the code; "No password: we email you a code."
+    // became "We email you a code; a password is optional." The website's copy of the sentence is
+    // the website's to change (PROPOSED WORDING, not yet read by Chris).
+    const SIGN_IN_SCREEN_VERSION = "2026-11-27-a";
     // The emailed code's length is set in Supabase Auth, not here (see the WARNING above): accept the
     // whole range Supabase allows so a settings change never locks readers out.
     const CODE_MIN_DIGITS = 6;
@@ -1987,7 +2080,7 @@
     const SIGN_IN_TEXT = {
       label: "Sign in",
       title: "Save my move",
-      whatYouGet: "We keep your saved bases, so you find them on any phone or computer. No password: we email you a code.",
+      whatYouGet: "We keep your saved bases, so you find them on any phone or computer. We email you a code; a password is optional.",
       firstNameLabel: "First name (optional)",
       emailLabel: "Email address",
       // WHY the weekly email is stated here although the sends are later slices on the website:
@@ -2001,6 +2094,13 @@
       codeButton: "Sign in",
       // The code's life is Supabase's default for an email OTP (one hour; Supabase Auth docs, read 2026-11-24).
       sent: "Check your inbox and enter the code from the email. The code works for one hour. If it does not arrive, look in spam, then ask for a new one.",
+      // The password step: the contract's words (2026-11-27).
+      usePassword: "Use a password instead",
+      useCode: "Use a code instead",
+      passwordLabel: "Password",
+      passwordRule: "At least " + PASSWORD_MIN_CHARS + " characters.",
+      passwordButton: "Sign in",
+      forgot: "Forgot it? Sign in with a code, then set a new one.",
     };
     const SIGN_IN_MESSAGE = {
       "bad-email": "Check the email address and try again.",
@@ -2048,10 +2148,14 @@
 
     // The signed-in state, one store for the whole app (read with useAccount). Shapes:
     //   { status: "off" } | { status: "loading" } | { status: "signed-out" } |
-    //   { status: "signed-in", user: { id, email }, role, firstName, deletionRequestedAt, currentBaseSlug, profileRead }
-    // role, firstName, deletionRequestedAt and currentBaseSlug are null until the profile row is read
-    // (or when the read failed); firstName stays null when the account has no name, currentBaseSlug
-    // when no base is listed.
+    //   { status: "signed-in", user: { id, email }, role, firstName, deletionRequestedAt, currentBaseSlug,
+    //     payGrade, payGradeInAccount, profileRead, passwordKnown }
+    // role, firstName, deletionRequestedAt, currentBaseSlug and payGrade are null until the profile row
+    // is read (or when the read failed); firstName stays null when the account has no name,
+    // currentBaseSlug when no base is listed, payGrade when no grade is kept. payGradeInAccount is
+    // false until the row is read and while the database has no pay_grade column yet (PAY GRADE).
+    // passwordKnown: true when this session is known to belong to an account with a password (see
+    // sessionUsedPassword).
     const accountListeners = new Set();
     let accountState = ACCOUNTS_ON ? { status: "loading" } : { status: "off" };
     let accountStarted = false;
@@ -2067,12 +2171,32 @@
       // MY BASE: the slug of the base the holder calls theirs (see the MY BASE store below);
       // null = none listed. A value the shape test refuses is treated as none, never shown.
       const currentBaseSlug = data && typeof data.current_base_slug === "string" && SLUG_SHAPE.test(data.current_base_slug) ? data.current_base_slug : null;
+      // PAY GRADE: the column arrives with the website's migration profiles_pay_grade. A row without
+      // the key means the column is not in the database yet; the grade then stays on the device.
+      const payGradeInAccount = !!data && Object.prototype.hasOwnProperty.call(data, "pay_grade");
       return {
         role: data && ACCOUNT_ROLES.includes(data.role) ? data.role : null,
         firstName: firstName || null,
         deletionRequestedAt: data && typeof data.deletion_requested_at === "string" ? data.deletion_requested_at : null,
         currentBaseSlug,
+        payGrade: payGradeInAccount ? cleanPayGrade(data.pay_grade) : null,
+        payGradeInAccount,
       };
+    }
+    // Whether this session was opened with a password: the "amr" claim of the access token lists the
+    // ways the session was proven ([{ method: "password" | "otp" | ..., timestamp }]).
+    // WHY this, and so WHY it is only a hint: Supabase does not tell a client whether an account has
+    // a password. A session opened by a code says nothing either way, so the account screen then
+    // offers "Set a password" (which replaces one set elsewhere). ROAD NOT TAKEN: a flag of our own
+    // in the user's metadata. The website does not write one, so the two would disagree.
+    function sessionUsedPassword(session) {
+      try {
+        const part = String(session.access_token || "").split(".")[1] || "";
+        const claims = JSON.parse(atob(part.replace(/-/g, "+").replace(/_/g, "/")));
+        return Array.isArray(claims.amr) && claims.amr.some((entry) => entry && entry.method === "password");
+      } catch (e) {
+        return false;
+      }
     }
     // The name typed on the sign-in screen, held until the profile is read after that sign-in: an
     // account that has no name yet gets it through set_first_name (see the RULES above). Cleared
@@ -2086,20 +2210,25 @@
       if (accountState.status !== "signed-in" || accountState.user.id !== userId) return;
       setAccountState({ ...accountState, role: profile ? profile.role : null, firstName: profile ? profile.firstName : null,
         deletionRequestedAt: profile ? profile.deletionRequestedAt : null, currentBaseSlug: profile ? profile.currentBaseSlug : null,
+        payGrade: profile ? profile.payGrade : null, payGradeInAccount: !!profile && profile.payGradeInAccount,
         profileRead: !!profile });
       const typed = firstNameTypedAtSignIn;
       firstNameTypedAtSignIn = "";
       if (typed && profile && !profile.firstName) await setFirstName(typed);
       if (profile) await copyUpDeviceMyBase(profile.currentBaseSlug);
+      if (profile && profile.payGradeInAccount) await copyUpDevicePayGrade(profile.payGrade);
     }
     function applySession(session) {
       if (!session || !session.user) { setAccountState({ status: "signed-out" }); return; }
       const user = { id: session.user.id, email: session.user.email || "" };
       if (accountState.status === "signed-in" && accountState.user.id === user.id) {
-        setAccountState({ ...accountState, user }); // a token refresh: keep the profile already read
+        // A token refresh or USER_UPDATED: keep the profile already read, and never forget a password
+        // the reader just set (the refreshed token still names the way the session was opened).
+        setAccountState({ ...accountState, user, passwordKnown: accountState.passwordKnown || sessionUsedPassword(session) });
         return;
       }
-      setAccountState({ status: "signed-in", user, role: null, firstName: null, deletionRequestedAt: null, currentBaseSlug: null, profileRead: false });
+      setAccountState({ status: "signed-in", user, role: null, firstName: null, deletionRequestedAt: null, currentBaseSlug: null,
+        payGrade: null, payGradeInAccount: false, profileRead: false, passwordKnown: sessionUsedPassword(session) });
       setTimeout(refreshProfile, 0); // next tick: see the deadlock WARNING above
     }
     function startAccount() {
@@ -2159,6 +2288,59 @@
         return error.status >= 400 && error.status < 500 ? "bad-code" : "check-failed";
       }
       console.log(ACCOUNT_LOG + " signed in: " + maskEmail(address));
+      return "ok";
+    }
+    // Sign in with the optional password. Answers "ok" | "wrong" | "too-short" | "too-many" | "off" |
+    // "failed"; the keys are PASSWORD_MESSAGE's. The session then arrives through onAuthStateChange
+    // and the app lands exactly where a code sign-in lands. RULE (the contract): "wrong" covers an
+    // unknown address, an account with no password and a wrong password alike, so the answer never
+    // says which part was wrong. The password is never logged.
+    async function signInWithPasswordFor(email, password) {
+      const address = email.trim();
+      if (!isValidEmail(address)) return "wrong";
+      if (String(password).length < PASSWORD_MIN_CHARS) return "too-short";
+      const supabase = supabaseClient();
+      if (!supabase) return "off";
+      const { error } = await supabase.auth.signInWithPassword({ email: address, password: String(password) });
+      if (error) {
+        console.warn(ACCOUNT_LOG + " password sign-in refused for " + maskEmail(address) + ": " + (error.status || "") + " " + (error.code || ""));
+        if (error.status === 429) return "too-many";
+        return error.status >= 400 && error.status < 500 ? "wrong" : "failed";
+      }
+      console.log(ACCOUNT_LOG + " signed in with a password: " + maskEmail(address));
+      return "ok";
+    }
+    // Set the first password, or change it (currentPassword: the one the reader has now, "" when
+    // setting a first one). Answers "ok" or a PASSWORD_MESSAGE key. Only while signed in.
+    // WARNING: the error codes below are Supabase Auth's (auth-js 2.119.2 error-codes, read
+    // 2026-11-27). "current password required" and "current password mismatch" have no stable code
+    // in that list, so they are also recognised by their message; a change of Supabase's wording
+    // makes them read "That did not work", never a wrong statement.
+    async function setPassword(newPassword, currentPassword) {
+      const supabase = supabaseClient();
+      if (!supabase || accountState.status !== "signed-in") return "failed";
+      const next = String(newPassword);
+      if (next.length < PASSWORD_MIN_CHARS) return "too-short";
+      const attributes = currentPassword ? { password: next, current_password: String(currentPassword) } : { password: next };
+      const { error } = await supabase.auth.updateUser(attributes);
+      const who = maskEmail(accountState.user.email);
+      if (error) {
+        const code = error.code || "";
+        const words = error.message || "";
+        console.warn(ACCOUNT_LOG + " password not set for " + who + ": " + (error.status || "") + " " + code);
+        if (code === "weak_password") {
+          const reasons = Array.isArray(error.reasons) ? error.reasons : [];
+          if (reasons.includes("pwned")) return "leaked";
+          return reasons.includes("length") ? "too-short" : "weak";
+        }
+        if (code === "same_password") return "same";
+        if (code === "reauthentication_needed" || code === "reauthentication_not_valid" || code === "reauth_nonce_missing") return "reauth";
+        if (/current password/i.test(code + " " + words)) return /match|invalid|incorrect|wrong/i.test(code + " " + words) ? "current-wrong" : "current-needed";
+        if (error.status === 429) return "too-many";
+        return "failed";
+      }
+      console.log(ACCOUNT_LOG + " password " + (currentPassword ? "changed" : "set") + " for " + who);
+      if (accountState.status === "signed-in") setAccountState({ ...accountState, passwordKnown: true });
       return "ok";
     }
     /** Signs out on this device only. The store moves to signed-out through the auth listener. */
@@ -2497,6 +2679,196 @@
       const list = myBaseSlug ? [myBaseSlug] : [];
       (savedSlugs || []).forEach((slug) => { if (!list.includes(slug)) list.push(slug); });
       return list.slice(0, WEBSITE_COMPARE_MAX);
+    }
+
+    /* ---------------- PAY GRADE (the reader's one grade) ----------------
+       DECISION (Chris, decision card "Pay grade", 2026-11-27: "One pay grade that can be edited with
+       changes like a promotion."; in chat the same day, "2. Match": the app and the website keep the
+       SAME one grade). One grade per reader, or none. Shown and changed on the account screen and on
+       a guide's housing allowance card, where it picks the reader's own rate ("Change grade").
+       ROAD NOT TAKEN (the rule until 2026-11-27): "a pay grade stays on the device, never in the
+       account". It kept the grade away from an email address, but a promotion then had to be typed
+       again on every device, which is what the card ends.
+       The contract with the website (2026-11-27; its migration profiles_pay_grade, written by the
+       website, applied by the lead):
+         - public.profiles.pay_grade (text, null = none), read with the profile;
+         - supabase.rpc("set_pay_grade", { g }): sets the caller's own row, null clears, answers the
+           stored value.
+       Two stores behind one facade, as for My base: the DEVICE value ("bg_pay_grade") while signed
+       out, before the profile is read, or while the database has no pay_grade column or no
+       set_pay_grade function yet ("Not available yet", the grade stays on the phone); the ACCOUNT
+       value once the row is read. MERGE at sign-in (the contract): the account's grade wins; a grade
+       only this phone holds is copied up once. Then the device copy is cleared, as for My base.
+       WARNING: that cleared copy is deliberate: signing out leaves this phone with no grade; signing
+       in brings the account's back. A failed copy-up keeps the device copy for the next sign-in.
+       PRIVACY: a pay grade is never logged (the log says "a grade"), never put in an address and never
+       sent anywhere but the reader's own profile row. */
+    const DEVICE_PAY_GRADE_KEY = "bg_pay_grade";
+    const PAY_GRADE_LOG = "[PAYGRADE]";
+    // THE ALLOWED GRADES, in the order every list shows them. RULE (the contract: "match the website's
+    // existing grade list exactly"): a COPY of the website's PAY_GRADES (milspoliving
+    // src/lib/pay-grade-rules.ts, read 2026-11-27), which its migration's check constraint holds too.
+    // WARNING: change both together. A grade the account holds that is not in this list is read as
+    // none, never shown.
+    const PAY_GRADES = [
+      "E-1", "E-2", "E-3", "E-4", "E-5", "E-6", "E-7", "E-8", "E-9",
+      "W-1", "W-2", "W-3", "W-4", "W-5",
+      "O-1E", "O-2E", "O-3E",
+      "O-1", "O-2", "O-3", "O-4", "O-5", "O-6", "O-7", "O-8", "O-9", "O-10",
+    ];
+    const PAY_GRADE_GROUPS = [
+      { label: "Enlisted", grades: PAY_GRADES.filter((g) => g.startsWith("E-")) },
+      { label: "Warrant officer", grades: PAY_GRADES.filter((g) => g.startsWith("W-")) },
+      { label: "Officer with prior enlisted service", grades: PAY_GRADES.filter((g) => g.startsWith("O-") && g.endsWith("E")) },
+      { label: "Officer", grades: PAY_GRADES.filter((g) => g.startsWith("O-") && !g.endsWith("E")) },
+    ];
+    // PROPOSED WORDING, not yet read by Chris. "Set your pay grade to see your rate" and "Change
+    // grade" are the contract's.
+    const PAY_GRADE_TEXT = {
+      label: "Pay grade",
+      none: "No pay grade yet",
+      add: "Add your pay grade",
+      change: "Change",
+      changeGrade: "Change grade",
+      setToSee: "Set your pay grade to see your rate",
+      pickLabel: "Your pay grade",
+      noGrade: "No pay grade",
+      save: "Save",
+      cancel: "Cancel",
+      inAccount: "Kept in your account. Change it after a promotion.",
+      onPhone: "Kept on this phone. Change it after a promotion.",
+      unavailable: "Not available yet. Your pay grade stays on this phone.",
+      failed: "That did not work. Try again in a few minutes.",
+    };
+    function cleanPayGrade(stored) { return typeof stored === "string" && PAY_GRADES.includes(stored) ? stored : null; }
+    function readDevicePayGrade() { return cleanPayGrade(LS.get(DEVICE_PAY_GRADE_KEY, null)); }
+
+    const payGradeListeners = new Set();
+    let payGradeSnapshot = { grade: null, inAccount: false, unavailable: false };
+    /** { grade, inAccount, unavailable }: the grade shown, whether it is the account's, and whether a
+        signed-in reader's grade is on the phone only because the database is not ready for it. */
+    function computePayGrade() {
+      const account = accountSnapshot();
+      const signedInRead = account.status === "signed-in" && account.profileRead;
+      if (signedInRead && account.payGradeInAccount) return { grade: account.payGrade || null, inAccount: true, unavailable: false };
+      return { grade: readDevicePayGrade(), inAccount: false, unavailable: signedInRead };
+    }
+    function emitPayGrade() {
+      const next = computePayGrade();
+      const same = next.grade === payGradeSnapshot.grade && next.inAccount === payGradeSnapshot.inAccount && next.unavailable === payGradeSnapshot.unavailable;
+      if (!same) { payGradeSnapshot = next; payGradeListeners.forEach((fn) => fn()); }
+    }
+    let payGradeStarted = false;
+    function subscribePayGrade(fn) {
+      payGradeListeners.add(fn);
+      if (!payGradeStarted) { payGradeStarted = true; subscribeAccount(emitPayGrade); emitPayGrade(); }
+      return () => payGradeListeners.delete(fn);
+    }
+    function payGradeSnapshotGet() { return payGradeSnapshot; }
+    function usePayGrade() { return useSyncExternalStore(subscribePayGrade, payGradeSnapshotGet); }
+
+    // The account value goes only through set_pay_grade. Answers "ok" | "unavailable" | "failed".
+    // A missing function (the migration only half there) moves the reader to the device store.
+    async function writeAccountPayGrade(grade) {
+      const supabase = supabaseClient();
+      if (!supabase || accountState.status !== "signed-in") return "failed";
+      const userId = accountState.user.id;
+      const { data, error } = await supabase.rpc("set_pay_grade", { g: grade });
+      if (error) {
+        const missing = isMissingFunction(error);
+        console.warn(ACCOUNT_LOG + " pay grade " + (missing ? "not available yet" : "not stored") + ": " + error.message);
+        if (missing && accountState.status === "signed-in" && accountState.user.id === userId) setAccountState({ ...accountState, payGradeInAccount: false });
+        return missing ? "unavailable" : "failed";
+      }
+      if (accountState.status === "signed-in" && accountState.user.id === userId) setAccountState({ ...accountState, payGrade: cleanPayGrade(data) });
+      return "ok";
+    }
+    /** The one action: a grade from PAY_GRADES, or null to remove it. Answers "ok" | "unavailable" | "failed".
+        "unavailable": kept on this phone because the account cannot hold it yet. */
+    async function setPayGrade(grade) {
+      const next = cleanPayGrade(grade);
+      if (grade && !next) return "failed";
+      if (computePayGrade().inAccount) {
+        const result = await writeAccountPayGrade(next);
+        if (result === "ok") { console.log(PAY_GRADE_LOG + " " + (next ? "a grade set" : "grade removed") + " (account)"); emitPayGrade(); return "ok"; }
+        if (result !== "unavailable") return result;
+      }
+      LS.set(DEVICE_PAY_GRADE_KEY, next);
+      console.log(PAY_GRADE_LOG + " " + (next ? "a grade set" : "grade removed") + " (device)");
+      emitPayGrade();
+      return computePayGrade().unavailable ? "unavailable" : "ok";
+    }
+    // After a sign-in (called once the profile is read and the column is there): THE MERGE RULE above.
+    async function copyUpDevicePayGrade(accountGrade) {
+      const device = readDevicePayGrade();
+      if (!device) return;
+      if (!accountGrade) {
+        const result = await writeAccountPayGrade(device);
+        console.log(ACCOUNT_LOG + " pay grade copied up from this device: " + result);
+        if (result !== "ok") return; // the device keeps its grade for a later try
+      }
+      LS.set(DEVICE_PAY_GRADE_KEY, null);
+      emitPayGrade();
+    }
+
+    // The picker: the grades in the website's groups, "No pay grade" to remove it, Save and Cancel.
+    function PayGradePicker({ initial, onSaved, onCancel, idSuffix }) {
+      const [choice, setChoice] = useState(initial || "");
+      const [busy, setBusy] = useState(false);
+      const [message, setMessage] = useState("");
+      const id = "pay-grade-" + idSuffix;
+      const save = async (e) => {
+        e.preventDefault();
+        if (busy) return;
+        setBusy(true); setMessage("");
+        const result = await setPayGrade(choice || null);
+        setBusy(false);
+        if (result === "failed") { setMessage(PAY_GRADE_TEXT.failed); return; }
+        onSaved(result);
+      };
+      return (
+        <form className="acct-name-form" onSubmit={save} data-pay-grade-picker={idSuffix}>
+          <label className="fld-l" htmlFor={id}>{PAY_GRADE_TEXT.pickLabel}</label>
+          <div className="acct-name">
+            <select id={id} className="fld pay-grade-sel" value={choice} onChange={(e) => setChoice(e.target.value)}>
+              <option value="">{PAY_GRADE_TEXT.noGrade}</option>
+              {PAY_GRADE_GROUPS.map((group) => (
+                <optgroup key={group.label} label={group.label}>
+                  {group.grades.map((g) => <option key={g} value={g}>{g}</option>)}
+                </optgroup>
+              ))}
+            </select>
+            <button type="submit" className="btn-quiet" disabled={busy}>{busy ? "Saving..." : PAY_GRADE_TEXT.save}</button>
+            <button type="button" className="btn-quiet" onClick={onCancel} disabled={busy}>{PAY_GRADE_TEXT.cancel}</button>
+          </div>
+          {message ? <div className="acct-msg" role="alert">{message}</div> : null}
+        </form>
+      );
+    }
+
+    // The Pay grade row of the account screen: the grade and "Change", or "No pay grade yet" and
+    // "Add your pay grade"; the line under it says where the grade is kept.
+    function PayGradeRow({ account }) {
+      const payGrade = usePayGrade();
+      const [editing, setEditing] = useState(false);
+      const [note, setNote] = useState("");
+      if (!account.profileRead) return <dd>Reading.</dd>;
+      const where = payGrade.unavailable ? PAY_GRADE_TEXT.unavailable : (payGrade.inAccount ? PAY_GRADE_TEXT.inAccount : PAY_GRADE_TEXT.onPhone);
+      return (
+        <dd data-pay-grade-row={payGrade.grade ? "set" : "none"} data-pay-grade-where={payGrade.inAccount ? "account" : "device"}>
+          {editing ? (
+            <PayGradePicker idSuffix="account" initial={payGrade.grade}
+              onSaved={(result) => { setEditing(false); setNote(result === "unavailable" ? PAY_GRADE_TEXT.unavailable : ""); }}
+              onCancel={() => setEditing(false)} />
+          ) : (
+            <div className="acct-name">
+              <span>{payGrade.grade || PAY_GRADE_TEXT.none}</span>
+              <button type="button" className="btn-quiet" onClick={() => { setNote(""); setEditing(true); }}>{payGrade.grade ? PAY_GRADE_TEXT.change : PAY_GRADE_TEXT.add}</button>
+            </div>
+          )}
+          <div className="faint tiny" style={{ marginTop: 4 }}>{note || where}</div>
+        </dd>
+      );
     }
 
     /* ---------------- NAMES (one word per thing, the website's) ----------------
@@ -3570,18 +3942,104 @@
     }
 
     /* ---------------- ACCOUNT SCREENS ---------------- */
+    // A password box with its rule beside it and a Show / Hide switch (the contract: "at least 12
+    // characters, say so beside the field; show/hide toggle"). autoComplete is "current-password" to
+    // sign in and "new-password" to set one, so a password manager offers the right thing.
+    function PasswordField({ id, label, autoComplete, value, onChange, showRule = true }) {
+      const [shown, setShown] = useState(false);
+      return (
+        <div className="pw-field">
+          <label className="fld-l" htmlFor={id}>{label}</label>
+          <div className="acct-name">
+            <input id={id} className="fld" type={shown ? "text" : "password"} autoComplete={autoComplete} autoCapitalize="none" autoCorrect="off" spellCheck={false}
+              maxLength={PASSWORD_MAX_CHARS} value={value} onChange={(e) => onChange(e.target.value)} aria-describedby={showRule ? id + "-rule" : undefined} />
+            <button type="button" className="btn-quiet" aria-pressed={shown} aria-controls={id} onClick={() => setShown(!shown)}>{shown ? "Hide" : "Show"}</button>
+          </div>
+          {showRule ? <div id={id + "-rule"} className="faint tiny pw-rule" data-pw-rule={value.length >= PASSWORD_MIN_CHARS ? "met" : "short"}>{SIGN_IN_TEXT.passwordRule}</div> : null}
+        </div>
+      );
+    }
+
+    // The Password row of the account screen (optional; ACCOUNT, RULES, and PASSWORD_MIN_CHARS).
+    // Known to have one (passwordKnown): "Set" and "Change", which asks for the current password too
+    // ("secure password change" may require it). Not known: "Optional" and "Set a password", new
+    // password only; if Supabase answers that it wants the current one, that box appears. Both
+    // boxes are emptied after every try, whatever the answer.
+    function PasswordRow({ account }) {
+      const [editing, setEditing] = useState(false);
+      const [askCurrent, setAskCurrent] = useState(false);
+      const [current, setCurrent] = useState("");
+      const [next, setNext] = useState("");
+      const [busy, setBusy] = useState(false);
+      const [message, setMessage] = useState("");
+      const [done, setDone] = useState("");
+      const known = !!account.passwordKnown;
+      const needCurrent = known || askCurrent;
+      const open = () => { setEditing(true); setAskCurrent(false); setCurrent(""); setNext(""); setMessage(""); setDone(""); };
+      const close = () => { setEditing(false); setCurrent(""); setNext(""); setMessage(""); };
+      const save = async (e) => {
+        e.preventDefault();
+        if (busy) return;
+        setBusy(true); setMessage("");
+        const result = await setPassword(next, needCurrent ? current : "");
+        setBusy(false);
+        setCurrent(""); setNext("");
+        if (result === "ok") { setEditing(false); setDone(known ? "Your password is changed." : "Your password is set. You can sign in with it or with a code."); return; }
+        if (result === "current-needed") setAskCurrent(true);
+        setMessage(PASSWORD_MESSAGE[result] || PASSWORD_MESSAGE.failed);
+      };
+      if (!editing) {
+        return (
+          <dd data-password-row={known ? "set" : "unknown"}>
+            <div className="acct-name">
+              <span>{known ? "Set" : "Optional"}</span>
+              <button type="button" className="btn-quiet" onClick={open}>{known ? "Change" : "Set a password"}</button>
+            </div>
+            <div className="faint tiny" role={done ? "status" : undefined} style={{ marginTop: 4 }}>{done || "The emailed code always works too."}</div>
+          </dd>
+        );
+      }
+      return (
+        <dd>
+          <form className="acct-name-form" onSubmit={save} data-password-form={needCurrent ? "change" : "set"}>
+            {needCurrent ? <PasswordField id="acct-pw-current" label="Current password" autoComplete="current-password" value={current} onChange={setCurrent} showRule={false} /> : null}
+            <PasswordField id="acct-pw-new" label={needCurrent ? "New password" : "Password"} autoComplete="new-password" value={next} onChange={setNext} />
+            {!known ? <div className="faint tiny" style={{ marginTop: 4 }}>If you set one before, this one replaces it.</div> : null}
+            <div className="acct-actions">
+              <button type="submit" className="btn-quiet" disabled={busy || next.length < PASSWORD_MIN_CHARS || (needCurrent && !current)}>{busy ? "Saving..." : "Save"}</button>
+              <button type="button" className="btn-quiet" onClick={close} disabled={busy}>Cancel</button>
+            </div>
+            {message ? <div className="acct-msg" role="alert">{message}</div> : null}
+          </form>
+        </dd>
+      );
+    }
     // The sign-in screen: the fixed sentences, then two steps - the optional first name, the address
     // and "Send me a code", then the code and "Sign in". The words live in SIGN_IN_TEXT; this is the
     // behaviour. The typed name stays in this component through the code step: it is sent with the
     // code request (new account) and again after the code is accepted (existing account).
     // The screen version travels on the element (data-screen-version), the record of what was shown.
+    // "Use a password instead" swaps the email step for the password step (address and password);
+    // the password is held only in this component's box and emptied after every try.
     function SignInScreen() {
       const [firstName, setFirstNameTyped] = useState("");
       const [email, setEmail] = useState("");
       const [code, setCode] = useState("");
-      const [step, setStep] = useState("email"); // "email" | "code"
+      const [password, setPasswordTyped] = useState("");
+      const [step, setStep] = useState("email"); // "email" | "code" | "password"
       const [busy, setBusy] = useState(false);
       const [message, setMessage] = useState("");
+      const signInWithPassword = async (e) => {
+        e.preventDefault();
+        if (busy) return;
+        setBusy(true); setMessage("");
+        const result = await signInWithPasswordFor(email, password);
+        setBusy(false);
+        setPasswordTyped("");
+        // On "ok" the auth listener moves the app to the account screen, as after a code.
+        if (result !== "ok") setMessage(result === "off" ? SIGN_IN_MESSAGE.off : (PASSWORD_MESSAGE[result] || PASSWORD_MESSAGE.failed));
+      };
+      const switchTo = (next) => { setStep(next); setMessage(""); setPasswordTyped(""); };
 
       const send = async (e) => {
         e.preventDefault();
@@ -3624,6 +4082,25 @@
               <p className="acct-p small" style={{ marginTop: 14 }}>{SIGN_IN_TEXT.weeklyEmail}</p>
               <p className="acct-p small">{SIGN_IN_TEXT.noCallsNoTexts}</p>
               <button className="btn-gold" type="submit" disabled={busy}>{busy ? "Sending..." : SIGN_IN_TEXT.button}</button>
+              <div className="acct-actions">
+                <button type="button" className="btn-quiet" data-use-password onClick={() => switchTo("password")} disabled={busy}>{SIGN_IN_TEXT.usePassword}</button>
+              </div>
+              <p className="acct-p small" style={{ marginTop: 12 }}>
+                By continuing you accept our <a href={PRIVACY_URL} target="_blank" rel="noopener noreferrer">privacy policy</a>.
+              </p>
+              {message ? <div className="acct-msg" role="alert">{message}</div> : null}
+            </form>
+          ) : step === "password" ? (
+            <form onSubmit={signInWithPassword} data-sign-in-step="password">
+              <label className="fld-l" htmlFor="acct-email-pw">{SIGN_IN_TEXT.emailLabel}</label>
+              <input id="acct-email-pw" className="fld" type="email" inputMode="email" autoComplete="email" autoCapitalize="none" spellCheck={false}
+                value={email} onChange={(e) => setEmail(e.target.value)} required style={{ marginBottom: 12 }} />
+              <PasswordField id="acct-password" label={SIGN_IN_TEXT.passwordLabel} autoComplete="current-password" value={password} onChange={setPasswordTyped} />
+              <button className="btn-gold" type="submit" disabled={busy || password.length < PASSWORD_MIN_CHARS || !email.trim()}>{busy ? "Checking..." : SIGN_IN_TEXT.passwordButton}</button>
+              <p className="acct-p small" style={{ marginTop: 12 }}>{SIGN_IN_TEXT.forgot}</p>
+              <div className="acct-actions">
+                <button type="button" className="btn-quiet" onClick={() => switchTo("email")} disabled={busy}>{SIGN_IN_TEXT.useCode}</button>
+              </div>
               <p className="acct-p small" style={{ marginTop: 12 }}>
                 By continuing you accept our <a href={PRIVACY_URL} target="_blank" rel="noopener noreferrer">privacy policy</a>.
               </p>
@@ -3735,8 +4212,8 @@
       );
     }
 
-    // The account screen: the name, the address, the role, the saved bases with Remove, sign out,
-    // delete.
+    // The account screen: the name, My base, the pay grade, the address, the password, the role, the
+    // saved bases with Remove, sign out, delete.
     // Signed out it IS the sign-in screen. Names come from the base list; a slug the list does not
     // know (saved on the website for a base the app has no guide for yet) shows as its slug.
     // The My base row of the account screen: the name (opens the guide) with Change and Clear; with
@@ -3797,7 +4274,9 @@
             <dl className="facts">
               <dt>Name</dt><FirstNameRow account={account} />
               <dt>My base</dt><MyBaseRow myBase={myBase} bases={bases} onSetMyBase={onSetMyBase} onOpen={onOpen} />
+              <dt>{PAY_GRADE_TEXT.label}</dt><PayGradeRow account={account} />
               <dt>Email</dt><dd style={{ wordBreak: "break-all" }}>{account.user.email}</dd>
+              <dt>Password</dt><PasswordRow account={account} />
               <dt>Role</dt><dd>{account.role ? ROLE_LABEL[account.role] : "Reading."}</dd>
             </dl>
           </div>
