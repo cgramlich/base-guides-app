@@ -2035,8 +2035,10 @@
     //     (a weak_password error with the reason "pwned"); the reader is told so in one sentence.
     //   - "Secure password change" may be on: a change can be refused as "reauthentication needed"
     //     when the session is old, and the CURRENT password can be required to change an existing
-    //     one. So "Change" asks for the current one (supabase-js 2.119.2, updateUser's
-    //     current_password), and a refusal says "Sign in again with a code, then change it." A fresh
+    //     one (Chris turned that one off 2026-11-27, card "Forgot flow"). So "Change" offers an
+    //     optional current-password box, sent only when filled (supabase-js 2.119.2, updateUser's
+    //     current_password; the rule is beside PasswordRow), and an old session's refusal says "Sign
+    //     in again with a code, then change it." A fresh
     //     code sign-in passes both checks, so a FIRST password set right after one needs nothing else.
     //     ROAD NOT TAKEN: supabase.auth.reauthenticate(), which emails a second code to type before
     //     the change. Signing in again with a code is the same proof with one screen the reader
@@ -3961,26 +3963,31 @@
     // A password box with its rule beside it and a Show / Hide switch (the contract: "at least 12
     // characters, say so beside the field; show/hide toggle"). autoComplete is "current-password" to
     // sign in and "new-password" to set one, so a password manager offers the right thing.
-    function PasswordField({ id, label, autoComplete, value, onChange, showRule = true }) {
+    function PasswordField({ id, label, autoComplete, value, onChange, showRule = true, hint = "" }) {
       const [shown, setShown] = useState(false);
       return (
         <div className="pw-field">
           <label className="fld-l" htmlFor={id}>{label}</label>
           <div className="acct-name">
             <input id={id} className="fld" type={shown ? "text" : "password"} autoComplete={autoComplete} autoCapitalize="none" autoCorrect="off" spellCheck={false}
-              maxLength={PASSWORD_MAX_CHARS} value={value} onChange={(e) => onChange(e.target.value)} aria-describedby={showRule ? id + "-rule" : undefined} />
+              maxLength={PASSWORD_MAX_CHARS} value={value} onChange={(e) => onChange(e.target.value)} aria-describedby={showRule ? id + "-rule" : (hint ? id + "-hint" : undefined)} />
             <button type="button" className="btn-quiet" aria-pressed={shown} aria-controls={id} onClick={() => setShown(!shown)}>{shown ? "Hide" : "Show"}</button>
           </div>
           {showRule ? <div id={id + "-rule"} className="faint tiny pw-rule" data-pw-rule={value.length >= PASSWORD_MIN_CHARS ? "met" : "short"}>{SIGN_IN_TEXT.passwordRule}</div> : null}
+          {hint ? <div id={id + "-hint"} className="faint tiny pw-rule">{hint}</div> : null}
         </div>
       );
     }
 
     // The Password row of the account screen (optional; ACCOUNT, RULES, and PASSWORD_MIN_CHARS).
-    // With one (account.passwordSet, from the metadata flag): "Set" and "Change", which asks for the
-    // current password too ("secure password change" may require it). Without: "Not set" and "Set a
-    // password", new password only; if Supabase still answers that it wants the current one, that
-    // box appears. Both boxes are emptied after every try, whatever the answer.
+    // With one (account.passwordSet, from the metadata flag): "Set" and "Change". Without: "Not set"
+    // and "Set a password", new password only. Both boxes are emptied after every try.
+    // RULE (Chris, decision card "Forgot flow", 2026-11-27: "Turn it off"; Supabase's "require
+    // current password when changing" is off): on Change the current-password box is OPTIONAL and
+    // sent only when filled, so a reader who forgot it and signed in with a code can set a new one
+    // ("Forgot it? Sign in with a code, then set a new one."). If Supabase still answers that it
+    // wants the current one (the setting turned back on), the box is shown again as required.
+    // ROAD NOT TAKEN: always requiring it on Change. That locked the forgot flow out of the app.
     function PasswordRow({ account }) {
       const [editing, setEditing] = useState(false);
       const [askCurrent, setAskCurrent] = useState(false);
@@ -3990,14 +3997,15 @@
       const [message, setMessage] = useState("");
       const [done, setDone] = useState("");
       const known = !!account.passwordSet;
-      const needCurrent = known || askCurrent;
+      const showCurrent = known || askCurrent;
+      const currentRequired = askCurrent;
       const open = () => { setEditing(true); setAskCurrent(false); setCurrent(""); setNext(""); setMessage(""); setDone(""); };
       const close = () => { setEditing(false); setCurrent(""); setNext(""); setMessage(""); };
       const save = async (e) => {
         e.preventDefault();
         if (busy) return;
         setBusy(true); setMessage("");
-        const result = await setPassword(next, needCurrent ? current : "");
+        const result = await setPassword(next, showCurrent ? current : "");
         setBusy(false);
         setCurrent(""); setNext("");
         if (result === "ok") { setEditing(false); setDone(known ? "Your password is changed." : "Your password is set. You can sign in with it or with a code."); return; }
@@ -4017,11 +4025,12 @@
       }
       return (
         <dd>
-          <form className="acct-name-form" onSubmit={save} data-password-form={needCurrent ? "change" : "set"}>
-            {needCurrent ? <PasswordField id="acct-pw-current" label="Current password" autoComplete="current-password" value={current} onChange={setCurrent} showRule={false} /> : null}
-            <PasswordField id="acct-pw-new" label={needCurrent ? "New password" : "Password"} autoComplete="new-password" value={next} onChange={setNext} />
+          <form className="acct-name-form" onSubmit={save} data-password-form={showCurrent ? "change" : "set"} data-current-required={currentRequired ? "yes" : "no"}>
+            {showCurrent ? <PasswordField id="acct-pw-current" label="Current password" autoComplete="current-password" value={current} onChange={setCurrent} showRule={false}
+              hint={currentRequired ? "" : "Forgot it? Leave this empty: you signed in with a code."} /> : null}
+            <PasswordField id="acct-pw-new" label={showCurrent ? "New password" : "Password"} autoComplete="new-password" value={next} onChange={setNext} />
             <div className="acct-actions">
-              <button type="submit" className="btn-quiet" disabled={busy || next.length < PASSWORD_MIN_CHARS || (needCurrent && !current)}>{busy ? "Saving..." : "Save"}</button>
+              <button type="submit" className="btn-quiet" disabled={busy || next.length < PASSWORD_MIN_CHARS || (currentRequired && !current)}>{busy ? "Saving..." : "Save"}</button>
               <button type="button" className="btn-quiet" onClick={close} disabled={busy}>Cancel</button>
             </div>
             {message ? <div className="acct-msg" role="alert">{message}</div> : null}

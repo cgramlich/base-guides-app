@@ -136,8 +136,10 @@ grade). The contract with the website for both: `docs/app-accounts.md`.
   code lands. No reset flow: "Forgot it? Sign in with a code, then set a new one." At least 12
   characters (`PASSWORD_MIN_CHARS`, said beside every box and enforced by the form; Supabase's own
   minimum 12 and leaked-password protection were set by Chris 2026-11-27), Show/Hide,
-  autocomplete current-password / new-password. "Change" asks for the current password
-  (`current_password`, for "secure password change"); a refusal for an old session reads "Sign in
+  autocomplete current-password / new-password. "Change" offers an OPTIONAL current-password box
+  ("Forgot it? Leave this empty: you signed in with a code."), sent as `current_password` only when
+  filled (Chris's card "Forgot flow", 2026-11-27: Supabase's "require current password" is off); if
+  Supabase still asks for it, the box comes back as required; a refusal for an old session reads "Sign in
   again with a code, then change it.", a leaked one "That password has appeared in a data leak.
   Choose another." A wrong password never says which part was wrong. Supabase does not tell a
   client whether an account has a password, so the website and the app keep the SAME flag: every

@@ -175,7 +175,7 @@ for a password to use anything.
 | Piece | What it is |
 | --- | --- |
 | Sign-in screen, "Use a password instead" | Address + password, `signInWithPassword({ email, password })`; lands where a code sign-in lands. "Forgot it? Sign in with a code, then set a new one." (there is no reset flow). |
-| Account screen, Password row | "Not set" + "Set a password" (new password only), or "Set" + "Change" (current and new, `updateUser({ password, current_password })`). Every successful set or change also sends `data: { password_set: true }`. |
+| Account screen, Password row | "Not set" + "Set a password" (new password only), or "Set" + "Change" (new, and an OPTIONAL current box with "Forgot it? Leave this empty: you signed in with a code.", sent as `current_password` only when filled; Chris's card "Forgot flow", 2026-11-27). Every successful set or change also sends `data: { password_set: true }`. |
 | Rules | At least 12 characters (`PASSWORD_MIN_CHARS`, said beside every box, enforced by the form), at most 72 (Supabase's limit), Show/Hide, autocomplete `current-password` / `new-password`. |
 | Answers | Wrong: "That email and password do not match. Try again or sign in with a code." (never which part). Leaked (`weak_password`, reason `pwned`): "That password has appeared in a data leak. Choose another." Old session (`reauthentication_needed`): "Sign in again with a code, then change it." Current password demanded: "Enter your current password too." and the box appears. |
 
@@ -309,16 +309,17 @@ The repository has no unit test runner; none was added.
 
 - Babel standalone 7.23.6 transform of the app script: clean. No new non-ASCII text.
 - Playwright (Chromium, 390 px, the file served locally on port 3270; the base list and Fort Hood's
-  guide from the repo, Fort Hood's real `/api/bah` table fetched once and served to the page), 72 of
-  72 passed: the sign-in screen with the real supabase-js (version `2026-11-27-b`, the first line "We
+  guide from the repo, Fort Hood's real `/api/bah` table fetched once and served to the page), 76 of
+  76 passed: the sign-in screen with the real supabase-js (version `2026-11-27-b`, the first line "We
   email you a code. A password is optional." (Chris's card "Sign-in line", 2026-11-27), "Use a password
   instead", the 12-character rule: Sign in disabled at 11, enabled at 12, Show/Hide, autocomplete,
   maxlength 72; nothing submitted); the pay grade on the device (set from the card, the table's E-5
   figures, kept over a reload, O-8 with no figure, removed); with a stand-in supabase-js (no network,
-  no mailbox): password sign-in wrong and right, "Change" sending `current_password`, a first
+  no mailbox): password sign-in wrong and right, "Change" sending `current_password` when the box is
+  filled and none when it is left empty, a first
   password sent without it, `data.password_set: true` sent with every set and change, the row read
-  from `user_metadata.password_set` (true over a code session = "Set" + Change asking for the current
-  one; false = "Not set" even over a password session), the leak and reauthentication sentences, the
+  from `user_metadata.password_set` (true over a code session = "Set" + Change with the optional
+  current box; false = "Not set" even over a password session), the leak and reauthentication sentences, the
   current password asked after a refusal, the pay grade copied up / account wins / column missing / function missing, no
   password or grade in any log line, no console errors from the app.
 - Not tested here: the real Supabase password calls and settings, the website's pay grade migration.
