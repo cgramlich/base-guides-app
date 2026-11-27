@@ -326,3 +326,17 @@ The repository has no unit test runner; none was added.
   button sits beside its box, at least 44 x 44 and inside the screen, with no sideways scroll; the
   sign-in screen's Show the same.
 - Not tested here: the real Supabase password calls and settings, the website's pay grade migration.
+
+## Tests run for 0.31.0 (2026-11-27, the newsletter box on the sign-in screen)
+
+- Babel standalone 7.23.6 transform of the app script: clean.
+- Playwright (Chromium, 390 px, the file served locally on port 4517, service worker blocked; the
+  website's `GET /consent-region` and `POST /newsletter/signup` and Supabase Auth stood in for inside
+  the browser: no real sign-up, no email), 17 of 17 passed: the box, "Send me MilSpo Minute", the
+  line and "See past issues" (milspo-minute.beehiiv.com), version `2026-11-27-d`, no "weekly" on the
+  screen, the box row at least 44 px, no sideways scroll; ticked for a U.S. answer, unticked for a
+  Europe answer; no box on the password form; ticked: the code asked for, no signup call, then
+  exactly one after the code is accepted, body `email=family@example.com, from=app-sign-in,
+  newsletter=yes, website=` (empty); unticked by the reader, and Europe left unticked: no call.
+- Not tested here: the live website's answers to this origin (they need the website branch
+  `newsletter-signin` live; its own checks run the routes with the app's origin), a real beehiiv call.

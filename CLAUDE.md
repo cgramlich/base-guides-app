@@ -148,12 +148,26 @@ grade). The contract with the website for both: `docs/app-accounts.md`.
   the key is absent does a session opened with a password count (`sessionUsedPassword`, the
   token's amr). NEVER logged, never in an address.
 - The words on the sign-in screen are the website's (`SIGN_IN_TEXT`, version
-  `SIGN_IN_SCREEN_VERSION`, `2026-11-27-b` = `-d` plus "Use a password instead" and "We email you a code.
+  `SIGN_IN_SCREEN_VERSION`, `2026-11-27-d` = the website's version of the same name: `2026-11-27-b` with the
+  weekly-email sentence replaced by the "Send me MilSpo Minute" box and its line, "MilSpo Minute comes out
+  twice a month: tips, recipes, giveaways and helpful information for military families. See past issues."
+  (link: milspo-minute.beehiiv.com); `2026-11-27-b` = `-d` plus "Use a password instead" and "We email you a code.
   A password is optional." (Chris's card "Sign-in line", 2026-11-27; was "No password: we email you a code.";
   `-a` was the same with a semicolon, never released); `-d` = `-c` with "then MilSpo Minute"
   (no "the"); `-c` = the website's `-b` plus the optional First name box), with "link" changed to "code".
   Public text says only that MilSpo Living is "affiliated with MilHousing Network"
   (`PUBLISHER_LINE`), nothing about ownership or company structure (Chris 2026-11-23).
+- THE NEWSLETTER BOX (Chris, decision card "Sign-in", 2026-11-27: "Box, ticked outside Europe
+  (Recommended)"; in chat the same day: our code sends a subscriber NOTHING but beehiiv's welcome email,
+  the newsletter goes out twice a month from beehiiv, and the weekly "changes at your bases" email is
+  DROPPED). Section SIGN-IN NEWSLETTER BOX in index.html: the box starts unticked and is ticked only when
+  the website's `GET /consent-region` answers `boxMayStartTicked: true` (never in Europe, the UK,
+  Switzerland or an unknown country); the reader's touch wins. The tick as it was when the code was SENT
+  is acted on ONCE, only after `verifyOtp` answers ok: one `POST https://milspoliving.com/newsletter/signup`
+  with `from=app-sign-in`, `newsletter=yes`. Unticked = no call. The website allows exactly the origin
+  `https://cgramlich.github.io` for these two routes (its `APP_ORIGIN`), and only this box from it.
+  WARNING: until that website change is live, the box stays unticked and a post fails (logged; the
+  sign-in is never held up). The password form has no box.
 - THE HEADER RULE (Chris, 2026-11-24, after testing): the top bar must make the state obvious.
   Signed out: person icon + "Sign in". Signed in: person icon + "Hi <first name>", or "Hi there"
   when no name is stored. The address is never in the top bar (it is on the account screen).
