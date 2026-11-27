@@ -21,8 +21,8 @@ ownership or company structure.
   device" only under a list with something in it.
 - Sign-in by a code emailed by Supabase Auth (its length is a Supabase Auth setting, 8 on 2026-11-24; the app accepts 6 to 10 digits): an OPTIONAL "First name" box above the address
   (decision card "On the sign-in screen", 2026-11-24), the address and "Send me a code", then the
-  code field (numeric keypad, one-time-code autofill) and "Sign in". No password. No social
-  sign-in. The first code makes the account.
+  code field (numeric keypad, one-time-code autofill) and "Sign in". An optional password (from
+  0.30.0, section "The password" below). No social sign-in. The first code makes the account.
 - The account screen: the name (a "Name" row: "What should we call you?" with Save when the
   account has none - the one-line prompt an account made before the name existed sees - or the
   name and "Change"), email, role (Member / Editor / Owner, from `public.profiles`), the saved
@@ -167,6 +167,54 @@ base"); the guide screen, a "This is my base" button beside the bookmark (presse
 and the notice names the base it replaced); the account screen, a "My base" row with Change and
 Clear, or "Add your base" with a search box.
 
+## The password (optional; Chris 2026-11-26 "Code now, password next", 2026-11-27 "Do next")
+
+The shared contract with the website (2026-11-27). The code stays the main way in; nobody is asked
+for a password to use anything.
+
+| Piece | What it is |
+| --- | --- |
+| Sign-in screen, "Use a password instead" | Address + password, `signInWithPassword({ email, password })`; lands where a code sign-in lands. "Forgot it? Sign in with a code, then set a new one." (there is no reset flow). |
+| Account screen, Password row | "Not set" + "Set a password" (new password only), or "Set" + "Change" (new, and an OPTIONAL current box with "Forgot it? Leave this empty: you signed in with a code.", sent as `current_password` only when filled; Chris's card "Forgot flow", 2026-11-27). Every successful set or change also sends `data: { password_set: true }`. |
+| Rules | At least 12 characters (`PASSWORD_MIN_CHARS`, said beside every box, enforced by the form), at most 72 (Supabase's limit), Show/Hide, autocomplete `current-password` / `new-password`. |
+| Answers | Wrong: "That email and password do not match. Try again or sign in with a code." (never which part). Leaked (`weak_password`, reason `pwned`): "That password has appeared in a data leak. Choose another." Old session (`reauthentication_needed`): "Sign in again with a code, then change it." Current password demanded: "Enter your current password too." and the box appears. |
+
+Chris's Supabase settings (2026-11-27, dashboard, not code): minimum length 12, leaked password
+protection on; "secure password change" may be on. A fresh code sign-in passes the reauthentication
+check, so a FIRST password set right after one needs nothing else.
+
+WARNING: Supabase does not tell a client whether an account has a password, so the website and the
+app keep the same flag in the user's metadata: `user_metadata.password_set`, written `true` with
+every successful set or change. The row reads it: true = "Set" + "Change", otherwise "Not set" + "Set
+a password". Only when the key is absent (a password set outside both clients, in the dashboard) does
+a session opened with a password (the access token's `amr` claim) count as "Set". If the project
+demands the current password, the form asks for it after the first refusal.
+
+A password is never logged, never put in an address, and the boxes are emptied after every try.
+
+## The pay grade (Chris 2026-11-27, card "Pay grade": "One pay grade that can be edited with changes like a promotion.")
+
+ROAD NOT TAKEN: the rule until 2026-11-27, "a pay grade stays on the device, never in the account".
+
+| Piece | What it is |
+| --- | --- |
+| `public.profiles.pay_grade` (text, null) | Read with the profile (`select('*')`); a row without the key means the column is not there yet. |
+| `supabase.rpc('set_pay_grade', { g })` | Sets the caller's own row, null clears, answers the stored value. The website's migration `profiles_pay_grade`, applied by the lead. |
+| The grades | E-1 to E-9, W-1 to W-5, O-1E to O-3E, O-1 to O-10: a copy of the website's `PAY_GRADES` (`src/lib/pay-grade-rules.ts`). |
+
+Two stores behind one facade (`usePayGrade`, `setPayGrade`): the device (`bg_pay_grade`) while signed
+out, before the profile is read, or while the column or function is missing ("Not available yet.
+Your pay grade stays on this phone."); the account once the row is read. At sign-in the account's
+grade wins, a grade only the phone has is copied up once (`[ACCOUNT] pay grade copied up from this
+device: ok`), then the device copy is cleared. The log never carries the grade.
+
+Where it shows: the account screen's "Pay grade" row (Change / Add your pay grade, and where it is
+kept), and the guide's housing allowance card: with a grade, "Your rate, E-5" with dependents and
+without (the app does not know which applies) and "Change grade"; without one, the calculator as
+before with "Set your pay grade to see your rate". ACCURACY: every figure is a row of the backend's
+`/api/bah` table; the backend's table stops at O-7 and leaves out O-1E to O-3E, so those grades read
+"This table has no rate for O-8. Check the official DoD calculator." and no figure is derived.
+
 ## Delete my account (Apple rule 5.1.1(v); Chris 2026-11-23: 30 days, nothing sent while it waits)
 
 The website's delete slice, built in parallel, adds two database functions and one column; the
@@ -215,6 +263,15 @@ account: delete it in Supabase, Authentication, Users, before the store release.
    If the website's delete migration is not applied yet: "Not available yet." Cancel it after
    the test, or delete the test user in the dashboard.
 
+10. Password (0.30.0): signed in by code, account screen, Password, "Set a password", a 12-character
+   password, Save: "Your password is set." Sign out, "Use a password instead", sign in with it: the
+   account screen. A wrong one: "That email and password do not match...". "Change": current + new.
+   Try a well-known leaked password (for example "password1234"): the leak sentence.
+11. Pay grade (0.30.0, after the website's migration): signed out, set E-5 on a guide's housing
+   allowance card, sign in: the account screen's Pay grade row shows E-5 "Kept in your account";
+   milspoliving.com shows the same grade on My move. Change it on the website; the app shows it after
+   a relaunch. Before the migration: "Not available yet. Your pay grade stays on this phone."
+
 ## Tests run on this branch (2026-11-24)
 
 - The JSX of `index.html` run through Babel standalone 7.23.6 in Node: clean. No new non-ASCII
@@ -247,3 +304,25 @@ account: delete it in Supabase, Authentication, Users, before the store release.
   function against the database (the website's migration).
 
 The repository has no unit test runner; none was added.
+
+## Tests run for 0.30.0 (2026-11-27, password and pay grade)
+
+- Babel standalone 7.23.6 transform of the app script: clean. No new non-ASCII text.
+- Playwright (Chromium, 390 px, the file served locally on port 3270; the base list and Fort Hood's
+  guide from the repo, Fort Hood's real `/api/bah` table fetched once and served to the page), 98 of
+  98 passed: the sign-in screen with the real supabase-js (version `2026-11-27-b`, the first line "We
+  email you a code. A password is optional." (Chris's card "Sign-in line", 2026-11-27), "Use a password
+  instead", the 12-character rule: Sign in disabled at 11, enabled at 12, Show/Hide, autocomplete,
+  maxlength 72; nothing submitted); the pay grade on the device (set from the card, the table's E-5
+  figures, kept over a reload, O-8 with no figure, removed); with a stand-in supabase-js (no network,
+  no mailbox): password sign-in wrong and right, "Change" sending `current_password` when the box is
+  filled and none when it is left empty, a first
+  password sent without it, `data.password_set: true` sent with every set and change, the row read
+  from `user_metadata.password_set` (true over a code session = "Set" + Change with the optional
+  current box; false = "Not set" even over a password session), the leak and reauthentication sentences, the
+  current password asked after a refusal, the pay grade copied up / account wins / column missing / function missing, no
+  password or grade in any log line, no console errors from the app.
+- At 320 and 390 px: the account screen's password form takes the card's full width, each Show
+  button sits beside its box, at least 44 x 44 and inside the screen, with no sideways scroll; the
+  sign-in screen's Show the same.
+- Not tested here: the real Supabase password calls and settings, the website's pay grade migration.
