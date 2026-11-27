@@ -140,8 +140,11 @@ grade). The contract with the website for both: `docs/app-accounts.md`.
   (`current_password`, for "secure password change"); a refusal for an old session reads "Sign in
   again with a code, then change it.", a leaked one "That password has appeared in a data leak.
   Choose another." A wrong password never says which part was wrong. Supabase does not tell a
-  client whether an account has a password, so "Change" shows only when the session was opened
-  with one or one was set in it (`sessionUsedPassword`). NEVER logged, never in an address.
+  client whether an account has a password, so the website and the app keep the SAME flag: every
+  successful set or change sends `data: { password_set: true }`, and the row reads
+  `user.user_metadata.password_set` ("Set" + Change, else "Not set" + Set a password). Only when
+  the key is absent does a session opened with a password count (`sessionUsedPassword`, the
+  token's amr). NEVER logged, never in an address.
 - The words on the sign-in screen are the website's (`SIGN_IN_TEXT`, version
   `SIGN_IN_SCREEN_VERSION`, `2026-11-27-a` = `-d` plus "Use a password instead" and "We email you a code;
   a password is optional." (was "No password: we email you a code."); `-d` = `-c` with "then MilSpo Minute"

@@ -175,7 +175,7 @@ for a password to use anything.
 | Piece | What it is |
 | --- | --- |
 | Sign-in screen, "Use a password instead" | Address + password, `signInWithPassword({ email, password })`; lands where a code sign-in lands. "Forgot it? Sign in with a code, then set a new one." (there is no reset flow). |
-| Account screen, Password row | "Optional" + "Set a password" (new password only), or "Set" + "Change" (current and new, `updateUser({ password, current_password })`). |
+| Account screen, Password row | "Not set" + "Set a password" (new password only), or "Set" + "Change" (current and new, `updateUser({ password, current_password })`). Every successful set or change also sends `data: { password_set: true }`. |
 | Rules | At least 12 characters (`PASSWORD_MIN_CHARS`, said beside every box, enforced by the form), at most 72 (Supabase's limit), Show/Hide, autocomplete `current-password` / `new-password`. |
 | Answers | Wrong: "That email and password do not match. Try again or sign in with a code." (never which part). Leaked (`weak_password`, reason `pwned`): "That password has appeared in a data leak. Choose another." Old session (`reauthentication_needed`): "Sign in again with a code, then change it." Current password demanded: "Enter your current password too." and the box appears. |
 
@@ -183,10 +183,12 @@ Chris's Supabase settings (2026-11-27, dashboard, not code): minimum length 12, 
 protection on; "secure password change" may be on. A fresh code sign-in passes the reauthentication
 check, so a FIRST password set right after one needs nothing else.
 
-WARNING: Supabase does not tell a client whether an account has a password. The row shows "Change"
-only when this session was opened with a password (the access token's `amr` claim) or one was set in
-it; otherwise "Set a password", whose form says "If you set one before, this one replaces it." If
-the project demands the current password, the form asks for it after the first refusal.
+WARNING: Supabase does not tell a client whether an account has a password, so the website and the
+app keep the same flag in the user's metadata: `user_metadata.password_set`, written `true` with
+every successful set or change. The row reads it: true = "Set" + "Change", otherwise "Not set" + "Set
+a password". Only when the key is absent (a password set outside both clients, in the dashboard) does
+a session opened with a password (the access token's `amr` claim) count as "Set". If the project
+demands the current password, the form asks for it after the first refusal.
 
 A password is never logged, never put in an address, and the boxes are emptied after every try.
 
@@ -313,7 +315,9 @@ The repository has no unit test runner; none was added.
   maxlength 72; nothing submitted); the pay grade on the device (set from the card, the table's E-5
   figures, kept over a reload, O-8 with no figure, removed); with a stand-in supabase-js (no network,
   no mailbox): password sign-in wrong and right, "Change" sending `current_password`, a first
-  password sent without it, the leak and reauthentication sentences, the current password asked
-  after a refusal, the pay grade copied up / account wins / column missing / function missing, no
+  password sent without it, `data.password_set: true` sent with every set and change, the row read
+  from `user_metadata.password_set` (true over a code session = "Set" + Change asking for the current
+  one; false = "Not set" even over a password session), the leak and reauthentication sentences, the
+  current password asked after a refusal, the pay grade copied up / account wins / column missing / function missing, no
   password or grade in any log line, no console errors from the app.
 - Not tested here: the real Supabase password calls and settings, the website's pay grade migration.

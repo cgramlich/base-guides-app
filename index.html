@@ -2149,13 +2149,12 @@
     // The signed-in state, one store for the whole app (read with useAccount). Shapes:
     //   { status: "off" } | { status: "loading" } | { status: "signed-out" } |
     //   { status: "signed-in", user: { id, email }, role, firstName, deletionRequestedAt, currentBaseSlug,
-    //     payGrade, payGradeInAccount, profileRead, passwordKnown }
+    //     payGrade, payGradeInAccount, profileRead, passwordSet }
     // role, firstName, deletionRequestedAt, currentBaseSlug and payGrade are null until the profile row
     // is read (or when the read failed); firstName stays null when the account has no name,
     // currentBaseSlug when no base is listed, payGrade when no grade is kept. payGradeInAccount is
     // false until the row is read and while the database has no pay_grade column yet (PAY GRADE).
-    // passwordKnown: true when this session is known to belong to an account with a password (see
-    // sessionUsedPassword).
+    // passwordSet: whether the account has a password (passwordSetFor).
     const accountListeners = new Set();
     let accountState = ACCOUNTS_ON ? { status: "loading" } : { status: "off" };
     let accountStarted = false;
@@ -2183,12 +2182,20 @@
         payGradeInAccount,
       };
     }
-    // Whether this session was opened with a password: the "amr" claim of the access token lists the
-    // ways the session was proven ([{ method: "password" | "otp" | ..., timestamp }]).
-    // WHY this, and so WHY it is only a hint: Supabase does not tell a client whether an account has
-    // a password. A session opened by a code says nothing either way, so the account screen then
-    // offers "Set a password" (which replaces one set elsewhere). ROAD NOT TAKEN: a flag of our own
-    // in the user's metadata. The website does not write one, so the two would disagree.
+    // WHETHER THE ACCOUNT HAS A PASSWORD. Supabase does not tell a client, so the website and the app
+    // keep a flag of their own in the user's metadata: every successful set or change writes
+    // user_metadata.password_set = true (setPassword), and the Password row reads it ("Set" + Change,
+    // or "Not set" + Set a password). RULE: the same key and meaning as the website (the lead's
+    // instruction, 2026-11-27); change both together.
+    // Answers true / false from the flag, or null when the account has no such key yet.
+    function metadataPasswordSet(user) {
+      const meta = user && user.user_metadata;
+      if (!meta || !Object.prototype.hasOwnProperty.call(meta, "password_set")) return null;
+      return meta.password_set === true;
+    }
+    // THE FALLBACK, only when the key is absent (a password set outside both clients, in the
+    // Supabase dashboard for example): a session opened WITH a password proves one exists. The "amr"
+    // claim of the access token lists how the session was proven ([{ method: "password" | "otp" }]).
     function sessionUsedPassword(session) {
       try {
         const part = String(session.access_token || "").split(".")[1] || "";
@@ -2197,6 +2204,10 @@
       } catch (e) {
         return false;
       }
+    }
+    function passwordSetFor(session) {
+      const flag = metadataPasswordSet(session.user);
+      return flag !== null ? flag : sessionUsedPassword(session);
     }
     // The name typed on the sign-in screen, held until the profile is read after that sign-in: an
     // account that has no name yet gets it through set_first_name (see the RULES above). Cleared
@@ -2222,13 +2233,14 @@
       if (!session || !session.user) { setAccountState({ status: "signed-out" }); return; }
       const user = { id: session.user.id, email: session.user.email || "" };
       if (accountState.status === "signed-in" && accountState.user.id === user.id) {
-        // A token refresh or USER_UPDATED: keep the profile already read, and never forget a password
-        // the reader just set (the refreshed token still names the way the session was opened).
-        setAccountState({ ...accountState, user, passwordKnown: accountState.passwordKnown || sessionUsedPassword(session) });
+        // A token refresh or USER_UPDATED: keep the profile already read; the metadata flag, when
+        // present, is the answer (USER_UPDATED brings the one setPassword just wrote).
+        const flag = metadataPasswordSet(session.user);
+        setAccountState({ ...accountState, user, passwordSet: flag !== null ? flag : (accountState.passwordSet || sessionUsedPassword(session)) });
         return;
       }
       setAccountState({ status: "signed-in", user, role: null, firstName: null, deletionRequestedAt: null, currentBaseSlug: null,
-        payGrade: null, payGradeInAccount: false, profileRead: false, passwordKnown: sessionUsedPassword(session) });
+        payGrade: null, payGradeInAccount: false, profileRead: false, passwordSet: passwordSetFor(session) });
       setTimeout(refreshProfile, 0); // next tick: see the deadlock WARNING above
     }
     function startAccount() {
@@ -2321,7 +2333,10 @@
       if (!supabase || accountState.status !== "signed-in") return "failed";
       const next = String(newPassword);
       if (next.length < PASSWORD_MIN_CHARS) return "too-short";
-      const attributes = currentPassword ? { password: next, current_password: String(currentPassword) } : { password: next };
+      // data.password_set: the flag both clients read (metadataPasswordSet). Supabase merges "data"
+      // into the user's metadata, so nothing else stored there is touched.
+      const attributes = { password: next, data: { password_set: true } };
+      if (currentPassword) attributes.current_password = String(currentPassword);
       const { error } = await supabase.auth.updateUser(attributes);
       const who = maskEmail(accountState.user.email);
       if (error) {
@@ -2340,7 +2355,7 @@
         return "failed";
       }
       console.log(ACCOUNT_LOG + " password " + (currentPassword ? "changed" : "set") + " for " + who);
-      if (accountState.status === "signed-in") setAccountState({ ...accountState, passwordKnown: true });
+      if (accountState.status === "signed-in") setAccountState({ ...accountState, passwordSet: true });
       return "ok";
     }
     /** Signs out on this device only. The store moves to signed-out through the auth listener. */
@@ -3961,10 +3976,10 @@
     }
 
     // The Password row of the account screen (optional; ACCOUNT, RULES, and PASSWORD_MIN_CHARS).
-    // Known to have one (passwordKnown): "Set" and "Change", which asks for the current password too
-    // ("secure password change" may require it). Not known: "Optional" and "Set a password", new
-    // password only; if Supabase answers that it wants the current one, that box appears. Both
-    // boxes are emptied after every try, whatever the answer.
+    // With one (account.passwordSet, from the metadata flag): "Set" and "Change", which asks for the
+    // current password too ("secure password change" may require it). Without: "Not set" and "Set a
+    // password", new password only; if Supabase still answers that it wants the current one, that
+    // box appears. Both boxes are emptied after every try, whatever the answer.
     function PasswordRow({ account }) {
       const [editing, setEditing] = useState(false);
       const [askCurrent, setAskCurrent] = useState(false);
@@ -3973,7 +3988,7 @@
       const [busy, setBusy] = useState(false);
       const [message, setMessage] = useState("");
       const [done, setDone] = useState("");
-      const known = !!account.passwordKnown;
+      const known = !!account.passwordSet;
       const needCurrent = known || askCurrent;
       const open = () => { setEditing(true); setAskCurrent(false); setCurrent(""); setNext(""); setMessage(""); setDone(""); };
       const close = () => { setEditing(false); setCurrent(""); setNext(""); setMessage(""); };
@@ -3990,9 +4005,9 @@
       };
       if (!editing) {
         return (
-          <dd data-password-row={known ? "set" : "unknown"}>
+          <dd data-password-row={known ? "set" : "not-set"}>
             <div className="acct-name">
-              <span>{known ? "Set" : "Optional"}</span>
+              <span>{known ? "Set" : "Not set"}</span>
               <button type="button" className="btn-quiet" onClick={open}>{known ? "Change" : "Set a password"}</button>
             </div>
             <div className="faint tiny" role={done ? "status" : undefined} style={{ marginTop: 4 }}>{done || "The emailed code always works too."}</div>
@@ -4004,7 +4019,6 @@
           <form className="acct-name-form" onSubmit={save} data-password-form={needCurrent ? "change" : "set"}>
             {needCurrent ? <PasswordField id="acct-pw-current" label="Current password" autoComplete="current-password" value={current} onChange={setCurrent} showRule={false} /> : null}
             <PasswordField id="acct-pw-new" label={needCurrent ? "New password" : "Password"} autoComplete="new-password" value={next} onChange={setNext} />
-            {!known ? <div className="faint tiny" style={{ marginTop: 4 }}>If you set one before, this one replaces it.</div> : null}
             <div className="acct-actions">
               <button type="submit" className="btn-quiet" disabled={busy || next.length < PASSWORD_MIN_CHARS || (needCurrent && !current)}>{busy ? "Saving..." : "Save"}</button>
               <button type="button" className="btn-quiet" onClick={close} disabled={busy}>Cancel</button>
