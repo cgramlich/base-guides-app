@@ -309,8 +309,8 @@ The repository has no unit test runner; none was added.
 
 - Babel standalone 7.23.6 transform of the app script: clean. No new non-ASCII text.
 - Playwright (Chromium, 390 px, the file served locally on port 3270; the base list and Fort Hood's
-  guide from the repo, Fort Hood's real `/api/bah` table fetched once and served to the page), 76 of
-  76 passed: the sign-in screen with the real supabase-js (version `2026-11-27-b`, the first line "We
+  guide from the repo, Fort Hood's real `/api/bah` table fetched once and served to the page), 98 of
+  98 passed: the sign-in screen with the real supabase-js (version `2026-11-27-b`, the first line "We
   email you a code. A password is optional." (Chris's card "Sign-in line", 2026-11-27), "Use a password
   instead", the 12-character rule: Sign in disabled at 11, enabled at 12, Show/Hide, autocomplete,
   maxlength 72; nothing submitted); the pay grade on the device (set from the card, the table's E-5
@@ -322,4 +322,7 @@ The repository has no unit test runner; none was added.
   current box; false = "Not set" even over a password session), the leak and reauthentication sentences, the
   current password asked after a refusal, the pay grade copied up / account wins / column missing / function missing, no
   password or grade in any log line, no console errors from the app.
+- At 320 and 390 px: the account screen's password form takes the card's full width, each Show
+  button sits beside its box, at least 44 x 44 and inside the screen, with no sideways scroll; the
+  sign-in screen's Show the same.
 - Not tested here: the real Supabase password calls and settings, the website's pay grade migration.
