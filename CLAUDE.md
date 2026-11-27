@@ -162,7 +162,7 @@ grade). The contract with the website for both: `docs/app-accounts.md`.
   the newsletter goes out twice a month from beehiiv, and the weekly "changes at your bases" email is
   DROPPED). Section SIGN-IN NEWSLETTER BOX in index.html: the box starts unticked and is ticked only when
   the website's `GET /consent-region` answers `boxMayStartTicked: true` (never in Europe, the UK,
-  Switzerland or an unknown country); the reader's touch wins. The tick as it was when the code was SENT
+  Switzerland, Canada (Chris's card "Canada", 2026-11-27) or an unknown country; the list is the website's); the reader's touch wins. The tick as it was when the code was SENT
   is acted on ONCE, only after `verifyOtp` answers ok: one `POST https://milspoliving.com/newsletter/signup`
   with `from=app-sign-in`, `newsletter=yes`. Unticked = no call. The website allows exactly the origin
   `https://cgramlich.github.io` for these two routes (its `APP_ORIGIN`), and only this box from it.
