@@ -799,7 +799,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.33.2";
+    const APP_VERSION = "0.33.3";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -3409,7 +3409,9 @@
       if (isNaN(move.getTime())) return null;
       const daysLeft = daysUntil(move);
       if (daysLeft < -MOVE_STEPS_GRACE_DAYS) return { passed: true, move };
-      const parts = daysLeft < 0 ? PCS_BUCKETS.filter((part) => part.offset >= 0) : PCS_BUCKETS;
+      // WARNING: daysUntil rounds up, so it reads 0 (not below 0) all through move day itself; "from move day"
+      // therefore means daysLeft <= 0 (found by the review bot on app PR 29, 2026-11-28).
+      const parts = daysLeft <= 0 ? PCS_BUCKETS.filter((part) => part.offset >= 0) : PCS_BUCKETS;
       for (const part of parts) {
         for (let index = 0; index < part.tasks.length; index += 1) {
           if (!tickedById[part.key + "-" + index]) return { allDone: false, move, task: part.tasks[index], partLabel: part.label, due: addDays(move, part.offset) };
