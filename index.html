@@ -187,6 +187,17 @@
     *, *::before, *::after{ border-radius:0 !important; }
     :is(.brandmark, .spin, .home-logo, .fs-dot), .nav button.on::before{ border-radius:50% !important; }
 
+    /* ---- the phone's side safe areas ----
+       The app kept clear of the top (the clock) and the bottom (the home bar) with
+       env(safe-area-inset-top/bottom) but never read the sides. On the iPhone Duo's outer screen the clock
+       sits in a column down the right edge and the phone reports it as env(safe-area-inset-right), so the
+       top bar's "Sign in" ran under it (Chris, 2026-11-28; MenuCaptain had the same fault and the same fix,
+       its 1.596.3). These rules read the sides the phone reports, on any phone: an upright ordinary iPhone
+       reports 0, so nothing moves there. No device check on purpose.
+       - The page: the body is padded, so the shell and its top bar sit inside the safe area.
+       - The tab bar, pinned to the screen: its left and right edges follow the safe area (see .nav). */
+    body{ padding-left:env(safe-area-inset-left); padding-right:env(safe-area-inset-right); }
+
     /* ---- the shell: the top bar (kit t01b, t03, t17) and the page ---- */
     #app-shell{
       max-width:540px; margin:0 auto; min-height:100vh; background:var(--bg);
@@ -528,8 +539,8 @@
 
     /* ---- the tab bar (kit board t01) ---- */
     .nav{
-      position:fixed; bottom:0; left:50%; transform:translateX(-50%);
-      width:100%; max-width:540px; display:flex; background:var(--n-bg);
+      position:fixed; bottom:0; left:env(safe-area-inset-left); right:env(safe-area-inset-right); margin:0 auto;
+      max-width:540px; display:flex; background:var(--n-bg);
       border-top:1px solid var(--n-line); z-index:40;
       padding-bottom:env(safe-area-inset-bottom);
     }
@@ -788,7 +799,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.33.0";
+    const APP_VERSION = "0.33.1";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
