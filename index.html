@@ -799,7 +799,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.33.1";
+    const APP_VERSION = "0.33.2";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -3394,11 +3394,23 @@
        words are the checklist's, the date is the move date plus that part's offset, exactly as
        the Plan tab shows it. Answers null with no move date, { allDone: true } with every step
        ticked. The plan and its ticks stay on the phone ("bg_pcs", "bg_pcs_done"), as before. */
+    /* THE MOVE DATE ONCE IT HAS PASSED (Chris, decision card "Past date", 2026-11-28: "Yes, as written").
+       He saw Home offer a step "around Jun 18" for a move date of Sep 16 that had already gone by.
+       - Before the move: the first unticked step of the whole checklist, as before.
+       - From move day to MOVE_STEPS_GRACE_DAYS after: only the parts that start on or after move day
+         (Arrival, First 30 days; offset >= 0). Steps meant for before the move are skipped, not offered.
+       - Later than that: no step. Home says the date has passed and offers to set a new one
+         (NextStepBlock, data-first="move-passed").
+       ROAD NOT TAKEN: clearing the date by itself. The reader may still want the checklist as it is. */
+    const MOVE_STEPS_GRACE_DAYS = 30;
     function nextPcsStep(moveDateText, tickedById) {
       if (!moveDateText) return null;
       const move = new Date(moveDateText + "T00:00:00");
       if (isNaN(move.getTime())) return null;
-      for (const part of PCS_BUCKETS) {
+      const daysLeft = daysUntil(move);
+      if (daysLeft < -MOVE_STEPS_GRACE_DAYS) return { passed: true, move };
+      const parts = daysLeft < 0 ? PCS_BUCKETS.filter((part) => part.offset >= 0) : PCS_BUCKETS;
+      for (const part of parts) {
         for (let index = 0; index < part.tasks.length; index += 1) {
           if (!tickedById[part.key + "-" + index]) return { allDone: false, move, task: part.tasks[index], partLabel: part.label, due: addDays(move, part.offset) };
         }
@@ -3417,6 +3429,16 @@
             <span className="w-label">Your move</span>
             <button type="button" className="w-btn-quiet" onClick={onOpenPlan}>Set your move date</button>
             <p className="w-caption">It puts a date on each step of the {PCS_CHECKLIST}, and the next step shows here.</p>
+          </section>
+        );
+      }
+      if (step.passed) {
+        return (
+          <section className="fs-section" data-first="move-passed">
+            <span className="w-label">Your move</span>
+            <p className="w-caption">Your move date, {fmtDate(step.move)}, has passed.</p>
+            <button type="button" className="w-btn-quiet" onClick={onOpenPlan}>Set a new move date</button>
+            <p className="w-caption">A new date puts the steps of the {PCS_CHECKLIST} back on the calendar.</p>
           </section>
         );
       }

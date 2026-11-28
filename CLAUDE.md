@@ -221,6 +221,12 @@ grade). The contract with the website for both: `docs/app-accounts.md`.
   works unchanged inside the wrapper; supabase-js must be vendored with React when the
   wrapper precompiles the app (it is a CDN script tag today).
 
+## A move date that has passed (app 0.33.2, Chris's card "Past date" 2026-11-28)
+Home's next step (nextPcsStep, NextStepBlock): before the move, the first unticked step as always; from move
+day to 30 days after (MOVE_STEPS_GRACE_DAYS), only the Arrival and First 30 days parts; later, no step but
+"Your move date, <date>, has passed." with "Set a new move date" (opens the Plan tab). The date is never cleared
+by itself.
+
 ## Side safe areas (app 0.33.1, Chris 2026-11-28)
 The body is padded by env(safe-area-inset-left/right) and the tab bar's edges follow them (style block, "the
 phone's side safe areas"). The iPhone Duo's outer screen puts the clock in a column down the right edge and
