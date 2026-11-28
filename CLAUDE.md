@@ -80,6 +80,15 @@ justification for the Pro subscription (a living, cloud-served service).
 only when a family needs it in their pocket (saved bases, checklist, offline guides, alerts). Rank,
 Compare and Plan stay on the website; the app links to them (`WEBSITE_TOOLS` in index.html).
 
+**Housing help link (Chris, decision card "App links", 2026-11-28; app 0.32.0):** the app has no housing
+request. A guide in the 50 states or DC (`inFiftyStates`, the mirror of the website's rule; change both)
+shows "Get housing help near <base>" right after its housing allowance part (type `bah`; else after the
+decision part; else at the end), with "Free. A member of the MilSpo Living support team contacts you
+within 24 hours." under it. It opens `https://milspoliving.com/go/housing-help/<guide slug>` in a new tab;
+the website sends it to that base's request form, or to /housing-help when its page has no form. Hidden
+abroad and in the territories. Section HOUSING HELP in index.html. NOT built (same card): a link abroad,
+app analytics.
+
 **Names and small rules from auditor round 3 (Chris's cards 2026-11-24; app 0.27.0):**
 - One name per thing, the website's (`NAMES` in index.html): "MilSpo Minute", "Find a base" (the list of bases
   and the way back from a guide), "PCS checklist" (the Plan tab's screen), "Compare bases". The five tab labels
