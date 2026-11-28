@@ -799,7 +799,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.33.3";
+    const APP_VERSION = "0.33.4";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -3417,7 +3417,12 @@
           if (!tickedById[part.key + "-" + index]) return { allDone: false, move, task: part.tasks[index], partLabel: part.label, due: addDays(move, part.offset) };
         }
       }
-      return { allDone: true, move };
+      // "Every step is ticked" must be true of the whole checklist. In the weeks after the move only the
+      // after-move parts are searched, so when those are all ticked but a step from before the move is
+      // not, there is no step to offer and no "all ticked" to claim: the block shows only the move date
+      // line (found by the review bot on app PR 29, 2026-11-28).
+      const everyStepTicked = PCS_BUCKETS.every((part) => part.tasks.every((_, index) => tickedById[part.key + "-" + index]));
+      return everyStepTicked ? { allDone: true, move } : { noStep: true, move };
     }
     function NextStepBlock({ bases, onOpenPlan }) {
       // Read when the screen opens. The plan changes only on the Plan tab, and coming back from
@@ -3451,10 +3456,10 @@
         : "Your move date was " + fmtDate(step.move);
       return (
         <section className="fs-section" data-first="move-set">
-          <span className="w-label">Next step</span>
+          <span className="w-label">{step.noStep ? "Your move" : "Next step"}</span>
           {step.allDone
             ? <p className="fs-step w-display">Every step on your checklist is ticked.</p>
-            : <><p className="fs-step w-display">{step.task}</p><p className="w-caption">{step.partLabel}, around {fmtDate(step.due)}.</p></>}
+            : !step.noStep && <><p className="fs-step w-display">{step.task}</p><p className="w-caption">{step.partLabel}, around {fmtDate(step.due)}.</p></>}
           <p className="w-caption">{countdown}{movingTo ? ", to " + movingTo.name : ""}.</p>
           <button type="button" className="w-btn-quiet" onClick={onOpenPlan}>Open the {PCS_CHECKLIST}</button>
         </section>
