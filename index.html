@@ -461,6 +461,11 @@
     .saved-where .btn-quiet{ padding:0; }
     .saved-compare{ margin:18px 0 4px; }
     .saved-compare-link{ margin-top:0; text-decoration:none; }
+    /* The housing help link under a U.S. guide's housing part (HOUSING HELP). A link, so the TAP TARGETS
+       floor (buttons only) does not reach it: its 44px is set here. */
+    .housing-help{ margin:10px 0 14px; }
+    .housing-help-link{ display:inline-flex; align-items:center; min-height:44px; margin-top:0; text-decoration:none; }
+    .housing-help-note{ margin-top:6px; }
     .saved-explained{ margin:14px 0 0; }
     .center .saved-explained, .center + .saved-explained{ text-align:center; }
     /* The map's tiles are light in both modes; the attribution keeps the kit's fixed colours so it
@@ -781,7 +786,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.31.0";
+    const APP_VERSION = "0.32.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -1994,6 +1999,50 @@
       }
       return WEBSITE_URL + tool.path;
     }
+
+    /* ---------------- HOUSING HELP (the website's request form, from a U.S. guide) ----------------
+       RULE (Chris, decision card "App links", 2026-11-28: "Housing help link (Recommended)"): the app
+       has no housing request of its own. A guide in the 50 states or DC shows "Get housing help near
+       <base>", which opens the website's address /go/housing-help/<guide slug>; the website sends it to
+       that base's request form (where "What to expect" sits under it), or to its housing help start
+       page. NOT chosen on the same card: a link on guides abroad, and app analytics; neither is built.
+       WHY one website address and not the base page's own: the website alone knows which page shows the
+       form (its page slug can differ from the guide slug, and a U.S. guide whose page has no form, or a
+       time when requests are off, is sent to /housing-help). So a U.S. guide always gets the link here,
+       and the website settles where it lands (milspoliving src/lib/partnership.ts, housingHelpHrefForGuide).
+       WHO GETS IT: inFiftyStates (section TIERS), the mirror of the website's rule of the same name in
+       src/lib/guide-tiers.ts; change both together. Hidden abroad and in the territories, where the
+       website's form is not offered.
+       WORDS: the promise is the website's approved one (its CONTACT_TEAM and "within 24 hours"). Never
+       "match" or "refer", and never "no account needed" (the website's wording rules). */
+    const HOUSING_HELP_GO_PATH = "/go/housing-help/";
+    // A Symbol, so it can never equal a section id.
+    const HOUSING_HELP_AT_END = Symbol("after the last part");
+    const HOUSING_HELP_TEXT = {
+      link: (baseName) => "Get housing help near " + baseName,
+      promise: "Free. A member of the " + BRAND + " support team contacts you within 24 hours.",
+    };
+    function housingHelpUrl(slug) {
+      return WEBSITE_URL + HOUSING_HELP_GO_PATH + encodeURIComponent(slug);
+    }
+    function showsHousingHelp(guide) {
+      return inFiftyStates((guide.states || []).join(" / "));
+    }
+    /** The section the link follows: the housing allowance part (type "bah", the website's housing part
+        on a guide), else the decision part, else none (the link then closes the list of parts). */
+    function housingHelpAfterSectionId(sections) {
+      const housing = sections.find((s) => s.type === "bah") || sections.find((s) => s.type === "killer");
+      return housing ? housing.id : null;
+    }
+    function HousingHelpLink({ slug, baseName }) {
+      return (
+        <div className="housing-help">
+          <a className="btn-plain housing-help-link" href={housingHelpUrl(slug)} target="_blank" rel="noopener noreferrer">{HOUSING_HELP_TEXT.link(baseName)}</a>
+          <div className="faint tiny housing-help-note">{HOUSING_HELP_TEXT.promise}</div>
+        </div>
+      );
+    }
+
     function WebsiteTools({ saved, myBaseSlug }) {
       const compareSlugs = compareOrder(myBaseSlug, saved);
       return (
@@ -3800,6 +3849,8 @@
 
       if (err) return <div className="content"><BackToList onBack={onBack} label={backLabel} /><div className="center">Could not load this guide.<br />{err}</div></div>;
       if (!data) return <div className="content"><BackToList onBack={onBack} label={backLabel} /><div className="center"><div className="spin" /></div></div>;
+      // Where "Get housing help near <base>" stands (HOUSING HELP): only on a guide in the 50 states or DC.
+      const housingHelpAt = showsHousingHelp(data) ? (housingHelpAfterSectionId(data.sections || []) || HOUSING_HELP_AT_END) : null;
 
       return (
         <div className="content">
@@ -3830,10 +3881,14 @@
           }} />
           <div style={{ marginTop: 12 }}>
             {withStorySection(data.sections || [], story).map((s) => (
-              <Accordion key={s.id} s={s} coords={data.coords}
-                open={openId === s.id}
-                onToggle={() => setOpenId(openId === s.id ? null : s.id)} />
+              <React.Fragment key={s.id}>
+                <Accordion s={s} coords={data.coords}
+                  open={openId === s.id}
+                  onToggle={() => setOpenId(openId === s.id ? null : s.id)} />
+                {housingHelpAt === s.id ? <HousingHelpLink slug={slug} baseName={data.name} /> : null}
+              </React.Fragment>
             ))}
+            {housingHelpAt === HOUSING_HELP_AT_END ? <HousingHelpLink slug={slug} baseName={data.name} /> : null}
           </div>
           <div className="feedback">
             <span className="feedback-q">Stationed here or spot something off?</span>
