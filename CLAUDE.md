@@ -87,7 +87,9 @@ decision part; else at the end), with "Free. A member of the MilSpo Living suppo
 within 24 hours." under it. It opens `https://milspoliving.com/go/housing-help/<guide slug>` in a new tab;
 the website sends it to that base's request form, or to /housing-help when its page has no form. Hidden
 abroad and in the territories. Section HOUSING HELP in index.html. NOT built (same card): a link abroad,
-app analytics.
+app analytics. Since 0.33.0 (card "Home button", 2026-11-28) the first screen has the same link as a fourth
+button under "This base" for a U.S. My base; My base is stored without its state, so the state is read from the
+bases index (no button until the index has loaded).
 
 **Names and small rules from auditor round 3 (Chris's cards 2026-11-24; app 0.27.0):**
 - One name per thing, the website's (`NAMES` in index.html): "MilSpo Minute", "Find a base" (the list of bases

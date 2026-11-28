@@ -622,6 +622,8 @@
     .w-btn-primary{ background:var(--w-solid); border-color:var(--w-solid); color:var(--w-onsolid); }
     .w-btn-primary:hover{ background:var(--w-solid-hover); }
     .w-btn-secondary{ background:var(--w-raise); border-color:var(--w-text); color:var(--w-text); }
+    /* A link drawn as a button (the first screen's housing help) keeps the button look, no underline. */
+    a.w-btn{ text-decoration:none; }
     .w-btn-secondary:hover{ background:var(--w-tint); }
     .w-btn:disabled{ opacity:0.6; cursor:default; }
     .w-btn-quiet{ display:inline-flex; align-items:center; min-height:44px; padding:0; font-size:14px; font-weight:600; color:var(--w-text);
@@ -786,7 +788,7 @@
     // "Rebranding"): replace these + the icon-*/apple-touch/favicon PNGs + CSS :root.
     const ASSETS = { logoMark: "logo-mark.png" };
     const CONTACT_EMAIL = "support@milspoliving.com"; // realtor-intro inbox (Porkbun forwarding)
-    const APP_VERSION = "0.32.0";
+    const APP_VERSION = "0.33.0";
     // Deployed backend (Railway). Content + live layer both come from here.
     // Empty string would fall back to local static data/ files for content.
     const API_BASE_DEFAULT = "https://web-production-43053.up.railway.app";
@@ -2013,6 +2015,9 @@
        WHO GETS IT: inFiftyStates (section TIERS), the mirror of the website's rule of the same name in
        src/lib/guide-tiers.ts; change both together. Hidden abroad and in the territories, where the
        website's form is not offered.
+       WHERE: in a guide, after its housing allowance part (housingHelpAfterSectionId); and on the first
+       screen, the fourth button under "This base" when My base is a U.S. base (Chris, decision card
+       "Home button", 2026-11-28: "Yes, add it to Home"; he looked for it on Home after the 0.32.0 update).
        WORDS: the promise is the website's approved one (its CONTACT_TEAM and "within 24 hours"). Never
        "match" or "refer", and never "no account needed" (the website's wording rules). */
     const HOUSING_HELP_GO_PATH = "/go/housing-help/";
@@ -2025,8 +2030,12 @@
     function housingHelpUrl(slug) {
       return WEBSITE_URL + HOUSING_HELP_GO_PATH + encodeURIComponent(slug);
     }
+    /** `place` is the guide's state text as the bases index writes it ("TX", "KY / TN", "Germany"). */
+    function housingHelpOffered(place) {
+      return inFiftyStates(place || "");
+    }
     function showsHousingHelp(guide) {
-      return inFiftyStates((guide.states || []).join(" / "));
+      return housingHelpOffered((guide.states || []).join(" / "));
     }
     /** The section the link follows: the housing allowance part (type "bah", the website's housing part
         on a guide), else the decision part, else none (the link then closes the list of parts). */
@@ -3531,6 +3540,8 @@
 
     // The first screen WITH a base. `base` is { slug, name } from baseShownFirst.
     function MyBaseFirstScreen({ base, bases, saved, account, inAccount, onOpen, onOpenAsk, onOpenMap, onOpenTab, onOpenAccount, onBrowse, onChoose }) {
+      const indexEntry = (bases || []).find((b) => b.slug === base.slug);
+      const housingHelpHere = Boolean(indexEntry) && housingHelpOffered(indexEntry.state);
       const [attempt, setAttempt] = useState(0);
       const record = useGuideRecord(base.slug, attempt);
       const guide = record.guide;
@@ -3624,6 +3635,8 @@
           <DriveTimeFromHere baseName={base.name} lat={lat} lng={lng} recordStatus={record.status} />
           <NextStepBlock bases={bases} onOpenPlan={() => onOpenTab("plan")} />
 
+          {/* WARNING: My base is stored as {slug, name} only, so its state comes from the bases index. Until
+              the index has loaded, the button is left out rather than guessed. */}
           <section className="fs-section" data-first="actions">
             <span className="w-label">This base</span>
             <div className="fs-actions">
@@ -3635,7 +3648,11 @@
                   Google-backed places by itself (MapScreen), which costs; this tap is the reader
                   asking for them, so RULE 1 holds. Do not load places here "to save a tap". */}
               <button type="button" className="w-btn w-btn-secondary" onClick={() => onOpenMap(base.slug)}>Places near the base</button>
+              {housingHelpHere && (
+                <a className="w-btn w-btn-secondary" data-first="housing-help" href={housingHelpUrl(base.slug)} target="_blank" rel="noopener noreferrer">{HOUSING_HELP_TEXT.link(base.name)}</a>
+              )}
             </div>
+            {housingHelpHere && <p className="w-caption">{HOUSING_HELP_TEXT.promise}</p>}
           </section>
 
           <SavedBasesShort bases={bases} saved={saved} myBaseSlug={base.slug} account={account} inAccount={inAccount}
